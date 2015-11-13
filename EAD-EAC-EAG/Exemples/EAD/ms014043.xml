@@ -1,0 +1,3432 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ========== Enhanced: ==========
+ Transformed with schema2schema.06_mfer.xsl 
+Generated: Wed, 27 May 2015 01:00:09 PM EDT
+URL: http://hdl.loc.gov/loc.mss/eadmss.ms014043
+ ===================================== --><!--name="eadidNode" select="normalize-space(//ead:eadid[1])": http://hdl.loc.gov/loc.mss/eadmss.ms014043--><!--name="eadidIdentifier" select="substring-after(//ead:eadid/@identifier, '/')": eadmss.ms014043--><!--name="eadidId" select="substring-after($eadidIdentifier, '.')": ms014043--><ead xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd" id="mferd437e2">
+   <eadheader repositoryencoding="iso15511" relatedencoding="MARC21" countryencoding="iso3166-1" scriptencoding="iso15924" dateencoding="iso8601" langencoding="iso639-2b" id="mferd437e3">
+      <eadid mainagencycode="US-DLC" countrycode="US" identifier="hdl:loc.mss/eadmss.ms014043" encodinganalog="856$u">http://hdl.loc.gov/loc.mss/eadmss.ms014043</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A. Hildebrandt Papers</titleproper>
+            <subtitle>A Finding Aid to the Collection in the Library of Congress </subtitle>
+            <author>Prepared by Jack Crawford, Wesley T. Brandhorst, and Fred Hershey</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="260$b">
+               <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" xlink:href="http://lcweb2.loc.gov/xmlcommon/lcseal.jpg"/>Manuscript Division,
+               Library of Congress</publisher>
+            <address>
+               <addressline>Washington, D.C. </addressline>
+            </address>
+            <date normal="2014" encodinganalog="260$c" era="ce" calendar="gregorian">2014</date>
+         </publicationstmt>
+         <notestmt>
+            <note>
+               <p>Contact information: <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:show="new" xlink:actuate="onRequest" xlink:href="http://hdl.loc.gov/loc.mss/mss.contact">http://hdl.loc.gov/loc.mss/mss.contact</extref>
+               </p>
+            </note>
+            <note id="lccnNote">
+               <p>Catalog Record: <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lccn.loc.gov/mm81025916" xlink:actuate="onRequest" xlink:title="MARC record for collection" xlink:type="simple">http://lccn.loc.gov/mm81025916</extref>
+               </p>
+            </note>
+         </notestmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Finding aid encoded by Library of Congress Manuscript Division, <date normal="2014" era="ce" calendar="gregorian">2014</date>
+         </creation>
+         <langusage>Finding aid written in <language encodinganalog="041" langcode="eng">English.</language>
+         </langusage>
+      </profiledesc>
+   </eadheader>
+   <archdesc level="collection" relatedencoding="MARC21" type="register">
+      <did id="mferd437e46">
+         <head>Collection Summary</head>
+         <unittitle encodinganalog="245$a" label="Title">A. Hildebrandt Papers <unitdate label="Span Dates" type="inclusive" normal="1826/1943" encodinganalog="245$f" era="ce" calendar="gregorian">1826-1943</unitdate>
+            <unitdate label="Bulk Dates" type="bulk" normal="1910/1930" encodinganalog="245$g" era="ce" calendar="gregorian">(bulk
+               1910-1930)</unitdate>
+         </unittitle>
+         <unitid label="ID No." encodinganalog="590" countrycode="US" repositorycode="US-DLC">MSS25916</unitid>
+         <origination label="Creator">
+            <persname encodinganalog="100" source="lcnaf">Hildebrandt, A. (Alfred), 1870-1949</persname>
+         </origination>
+         <physdesc label="Extent">
+            <extent encodinganalog="300">9,000 items</extent>
+            <extent encodinganalog="300">98 containers plus 1 oversize</extent>
+            <extent encodinganalog="300">40 linear feet</extent>
+           
+         </physdesc>
+         <langmaterial label="Language">Collection material in <language encodinganalog="041" langcode="ger">German</language> with some <language encodinganalog="041" langcode="eng">English</language> and <language encodinganalog="041" langcode="fre">French</language>
+         </langmaterial>
+         <repository label="Location" encodinganalog="852">
+            <corpname>
+               <subarea>Manuscript Division</subarea> Library of Congress</corpname>
+            <address>
+               <addressline>Washington, D.C.</addressline>
+            </address>
+         </repository>
+         <abstract label="Summary" encodinganalog="520$a">German author on aeronautical subjects, pioneer in aviation, and the first European to support the experiments of the Wright Brothers, full name: Alfred Louis Heinrich Hildebrandt. Correspondence, notes, diaries, clippings, scrapbooks, pamphlets, periodicals, books, maps and charts, pictures and photographs, and other material collected by Hildebrandt on the history and development of aviation, with the focus on Germany, including personal papers relating to his career as a pioneer and advocate of aeronautics.</abstract>
+      </did>
+      <!--ead:controlaccess template--><!--ead:controlaccess template: otherwise--><controlaccess id="ead.controlaccess_m.mm81025916.10001" altrender=":::F005=^20140708010106.0^">
+         <head>Selected Search Terms</head>
+         <note>
+            <p>The following terms have been used to index the description of this collection in the Library's online catalog. They are grouped by name of person or organization, by subject or location, and by occupation and listed alphabetically therein.</p>
+         </note>
+         <controlaccess id="mferd437e105">
+            <head>People</head>
+            <persname encodinganalog="600" role="subject" source="unspecified" altrender=":::PWEBRECON=^Albert%2C+Prince+of+Schleswig-Holstein-Gl%C3%BCcksburg+Correspondence.^">Albert, Prince of Schleswig-Holstein-Glücksburg--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Alexander%2C+Patrick+Young%2C+1867-1943+Correspondence.^">Alexander, Patrick Young, 1867-1943--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Chanute%2C+Octave%2C+1832-1910+Correspondence.^">Chanute, Octave, 1832-1910--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Damm%2C+Ernst+A.+Correspondence.^">Damm, Ernst A.--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Feldhaus%2C+Gilbert+W.+Correspondence.^">Feldhaus, Gilbert W.--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Grade%2C+Hans%2C+1879-1946+Correspondence.^">Grade, Hans, 1879-1946--Correspondence.</persname>
+            <persname encodinganalog="100" role="creator" source="lcnaf" altrender=":::PWEBRECON=^Hildebrandt%2C+A.+%28Alfred%29%2C+1870-1949.^">Hildebrandt, A. (Alfred), 1870-1949.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Ravenstein%2C+Hans+Correspondence.^">Ravenstein, Hans--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Scheimpflug%2C+Karl+Correspondence.^">Scheimpflug, Karl--Correspondence.</persname>
+            <persname encodinganalog="600" role="subject" source="lcnaf" altrender=":::PWEBRECON=^Zeppelin%2C+Ferdinand%2C+Graf+von%2C+1838-1917+Correspondence.^">Zeppelin, Ferdinand, Graf von, 1838-1917--Correspondence.</persname>
+         </controlaccess>
+         <controlaccess id="mferd437e128">
+            <head>Subjects</head>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautical+sports.^">Aeronautical sports.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautics%2C+Commercial.^">Aeronautics, Commercial.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautics%2C+Military.^">Aeronautics, Military.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautics+Germany.^">Aeronautics--Germany.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautics+Law+and+legislation.^">Aeronautics--Law and legislation.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautics+Societies%2C+etc.^">Aeronautics--Societies, etc.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Aeronautics.^">Aeronautics.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Inventions.^">Inventions.</subject>
+            <subject encodinganalog="650" source="lcsh" altrender=":::PWEBRECON=^Meteorology.^">Meteorology.</subject>
+         </controlaccess>
+         <controlaccess id="mferd437e149">
+            <head>Occupations</head>
+            <occupation encodinganalog="656" source="itoamc" altrender=":::PWEBRECON=^Authors.+itoamc^">Authors.</occupation>
+            <occupation encodinganalog="656" source="itoamc" altrender=":::PWEBRECON=^Aviators.+itoamc^">Aviators.</occupation>
+         </controlaccess>
+      </controlaccess>
+      <descgrp type="admininfo" id="mferd437e156">
+         <head>Administrative Information</head>
+         <acqinfo encodinganalog="541" id="mferd437e159">
+            <head>Provenance</head>
+            <p>The papers of A. Hildebrandt, German writer on aeronautical subjects, pioneer in aviation, and the first European to support the experiments of Wilbur and Orville Wright, were received in two collections. The first was purchased for the Aeronautics Division of the Library of Congress in 1932; the second was received as a gift in 1947. The collection was transferred to the Manuscript Division from the Aeronautics Division in 1954.
+            </p>
+         </acqinfo>
+         <processinfo encodinganalog="583" id="mferd437e164">
+            <head>Processing History</head>
+            <p>The papers of A. Hildebrandt were described in 1958. The finding aid was revised in 2014.
+            </p>
+         </processinfo>
+         <otherfindaid encodinganalog="555" id="mferd437e169">
+            <head>Additional Guides</head>
+            <p>The Hildebrandt Papers were described at the time of the second acquisition in the Library of Congress <title>Quarterly Journal of Current Acquisitions</title> 4, no. 4 (August 1947): 25-26; and mentioned in the <title>Quarterly Journal of Current Acquisitions</title> 12, no. 3 (May 1955): 121. </p>
+         </otherfindaid>
+         <userestrict encodinganalog="540" id="mferd437e180">
+            <head>Copyright Status</head>
+            <p>It is the researcher's responsibility to determine requirements of domestic copyright laws and international treaties and conventions.</p>
+         </userestrict>
+         <accessrestrict encodinganalog="506 0" id="mferd437e185">
+            <head>Access and Restrictions</head>
+            <p>The papers of A. Hildebrandt are open to research. Researchers are advised to contact the
+               Manuscript Reading Room prior to visiting. Many collections are stored off-site and
+               advance notice is needed to retrieve these items for research use.</p>
+         </accessrestrict>
+         <prefercite encodinganalog="524" id="mferd437e190">
+            <head>Preferred Citation</head>
+            <p>Researchers wishing to cite this collection should include the following information:
+               Container number, A. Hildebrandt Papers, Manuscript Division, Library of Congress, Washington,
+               D.C. </p>
+         </prefercite>
+      </descgrp>
+      <bioghist encodinganalog="545" id="mferd437e195">
+         <head>Biographical Note</head>
+         <chronlist>
+            <listhead>
+               <head01>Date</head01>
+               <head02>Event</head02>
+            </listhead>
+            <chronitem>
+               <date>1870</date>
+               <eventgrp>
+                  <event>Born, Wittingen, Kreis Isenhagen, Germany</event>
+                  <event>Educated: Kriegschule; Universität (Naturwissenschaftliche Fakultät); Technische Hochschule; Bergakademie; received doctor of philosophy degree</event>
+               </eventgrp>
+            </chronitem>
+            <chronitem>
+               <date>1893</date>
+               <eventgrp>
+                  <event>First association with aeronautics</event>
+                  <event>Artillery officer</event>
+               </eventgrp>
+            </chronitem>
+            <chronitem>
+               <date>1898</date>
+               <eventgrp>
+                  <event>Commander of airship detachment</event>
+                  <event>Teacher of aviation in Officer's Institute</event>
+                  <event>Member, editorial board of Moedebeck's <title>Illustrierte Aeronautische Mitteilungen</title>
+                  </event>
+               </eventgrp>
+            </chronitem>
+            <chronitem>
+               <date>circa 1902</date>
+               <event>Edited <title>Die Königlich preussische Luftschiffer Abteilung Berlin</title>
+               </event>
+            </chronitem>
+            <chronitem>
+               <date>1907</date>
+               <eventgrp>
+                  <event>Made trip to United States </event>
+                  <event>Member, Kriege International Kommission für wissenschaftlicne Luftschiffahrt</event>
+                  <event>President, International Kommission zur Herstellung von aeronitischen Landkarten</event>
+                  <event>Published <title>Die Luftschiffahrt nach ihrer geschichtlichen und gegenwärtigen Entwicklung</title> (tanslated into English and Spanish)</event>
+               </eventgrp>
+            </chronitem>
+            <chronitem>
+               <date>1908</date>
+               <event>Published <title>Graf Ferdinand von Zeppelin</title>
+               </event>
+            </chronitem>
+            <chronitem>
+               <date>1909</date>
+               <eventgrp>
+                  <event>Published <title>Aviatik</title>
+                  </event>
+                  <event>Published <title>Die Brüder Wright; enine Studie über die Entwicklung der Flugmaschine von Lilienthal bis Wright</title>
+                  </event>
+               </eventgrp>
+            </chronitem>
+            <chronitem>
+               <date>1910</date>
+               <event>President, International Kommission für Luftschifferkarten</event>
+            </chronitem>
+            <chronitem>
+               <date>1911</date>
+               <eventgrp>
+                  <event>Published <title>Flugwesen</title>
+                  </event>
+                  <event>Published <title>Vergleich der Temperatur suf dem Brocken und in der gleichen Höhe der freien Atmosphäre auf grundneuerer Ballon-und Drachenaufstiege</title>
+                  </event>
+               </eventgrp>
+            </chronitem>
+            <chronitem>
+               <date>1914</date>
+               <event>Edited <title>Die Arbeiten der "Rostocker Luftware" in Friedrichshöle bei Rostock im Jahre 1913</title>
+               </event>
+            </chronitem>
+            <chronitem>
+               <date>1918</date>
+               <event>Published <title>Deutsches Flugwesen</title>
+               </event>
+            </chronitem>
+            <chronitem>
+               <date>1930</date>
+               <event>Joined National Socialist Party</event>
+            </chronitem>
+            <chronitem>
+               <date>1938</date>
+               <event>Dropped from membership in National Socialist Party</event>
+            </chronitem>
+            <chronitem>
+               <date>1949</date>
+               <event>Died in Germany</event>
+            </chronitem>
+         </chronlist>
+      </bioghist>
+      <scopecontent encodinganalog="520" id="mferd437e320">
+         <head>Scope and Content Note</head>
+         <p>The papers of Alfred Louis Heinrich Hildebrandt (1870-1949) extend from 1826 to 1943,
+            with the bulk of the material concentrated in the period 1910-1930. A pioneer in
+            aviation, Hildebrandt was a German author on aeronautical subjects and the first
+            European to support the experiments of the Wright Brothers. His collection focuses on
+            the history of aviation in Germany from the time of balloon experiments to the
+            development of airplanes in World War II. Included is material on aviation sports,
+            inventions, laws, meteorology, aviation societies, transportation, and other activities,
+            both national and international, in addition to personal papers on his career and
+            aeronautics. The papers consist of correspondence, notes, diaries, clippings,
+            scrapbooks, pamphlets, periodicals, books, maps and charts, pictures and photographs,
+            and indexes.</p>
+         <p>Correspondents include Albert, Prince of Schleswig-Holstein-Glücksburg, Patrick Young Alexander, Octave Chanute, Ernst A. Damm, Hans Grade, Hans Ravenstein, and Graf Ferdinand von Zeppelin.</p>
+      </scopecontent>
+      <arrangement encodinganalog="351$a" id="mferd437e327">
+         <head>Arrangement of the Papers</head>
+         <p>This collection is arranged alphabetically by subject or type of material.</p>
+      </arrangement>
+      <otherfindaid encodinganalog="555$a" id="lccnURI">
+         <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://lccn.loc.gov/mm81025916" xlink:actuate="onRequest" xlink:title="MARC record for collection" xlink:type="simple">http://lccn.loc.gov/mm81025916</extref>
+      </otherfindaid>
+      <!--$otherfindiaidTestCheck: yes--><dsc id="mferd437e335" type="combined">
+         <head>Container List</head>
+         <thead valign="bottom">
+            <row>
+               <entry morerows="0">Container</entry>
+               <entry morerows="0">Contents</entry>
+            </row>
+         </thead>
+         <c01 level="file" id="mferd437e344">
+            <did>
+               <container type="box">1</container>
+               <unittitle encodinganalog="245$a">Accidents</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e350">
+               <did>
+                  <unittitle encodinganalog="245$a">Airplanes, accident at Schleiz</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e354">
+               <did>
+                  <unittitle encodinganalog="245$a">Airships</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e358">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Dixmude</title> (German) </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e364">
+                  <did>
+                     <unittitle encodinganalog="245$a">Nobile, Umberto, tragedy of <title>Italia</title> (Italian airship) on an expedition to the North Pole</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e371">
+                     <did>
+                        <unittitle encodinganalog="245$a">I) Until 30 June 1928</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e375">
+                     <did>
+                        <container type="box">2</container>
+                        <unittitle encodinganalog="245$a">II) From 1 July 1928 until 1 Jan. 1929</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e381">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>R 101</title> (British), its fall on 5 Oct. 1930 (as told in newspaper clippings)</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e387">
+               <did>
+                  <unittitle encodinganalog="245$a">Balloons</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e391">
+               <did>
+                  <container type="box">3</container>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e397">
+                  <did>
+                     <unittitle encodinganalog="245$a">1926 (organized first according to commercial, military and private; then according to country)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e401">
+                  <did>
+                     <unittitle encodinganalog="245$a">General observations; then according to country, 1927-1928</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e405">
+            <did>
+               <container type="box">4</container>
+               <unittitle encodinganalog="245$a">Aerodynamics</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e411">
+               <did>
+                  <unittitle encodinganalog="245$a">Periodical articles</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e415">
+               <did>
+                  <unittitle encodinganalog="245$a">Reprints</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e419">
+               <did>
+                  <unittitle encodinganalog="245$a">Special articles</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e423">
+               <did>
+                  <unittitle encodinganalog="245$a">Work of special institutes</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e427">
+            <did>
+               <container type="box">5</container>
+               <unittitle encodinganalog="245$a">Africa (including Hildebrandt's correspondence to Theobald von Bethmann-Hollweg)</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e433">
+            <did>
+               <unittitle encodinganalog="245$a">Airlines</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e437">
+               <did>
+                  <unittitle encodinganalog="245$a">Advertisements</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e441">
+               <did>
+                  <container type="box">6</container>
+                  <unittitle encodinganalog="245$a">Luft Hansa</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e447">
+               <did>
+                  <unittitle encodinganalog="245$a">Non-German</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e451">
+            <did>
+               <container type="box">7</container>
+               <unittitle encodinganalog="245$a">Air mail</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e457">
+            <did>
+               <unittitle encodinganalog="245$a">Air raid protection</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e461">
+            <did>
+               <unittitle encodinganalog="245$a">Aircraft industry</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e465">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific factories</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e469">
+                  <did>
+                     <unittitle encodinganalog="245$a">BFW-Bavarian Airplane Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e473">
+                  <did>
+                     <unittitle encodinganalog="245$a">BMW-Bavarian Motor Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e477">
+                  <did>
+                     <unittitle encodinganalog="245$a">Dietrich-Gobiet Airplane Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e481">
+                  <did>
+                     <unittitle encodinganalog="245$a">Dornier</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e485">
+                  <did>
+                     <unittitle encodinganalog="245$a">Focke-Wulf</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e489">
+                  <did>
+                     <unittitle encodinganalog="245$a">Gustav Otto Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e493">
+                  <did>
+                     <unittitle encodinganalog="245$a">Hannover Wagon Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e497">
+                  <did>
+                     <container type="box">8</container>
+                     <unittitle encodinganalog="245$a">Heinkel</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e503">
+                  <did>
+                     <unittitle encodinganalog="245$a">Junkers I and II and Junkers private</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e507">
+                  <did>
+                     <container type="box">9</container>
+                     <unittitle encodinganalog="245$a">Rhine Aero Works GMBH Dusseldorf-Ober Rassel</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e514">
+                  <did>
+                     <unittitle encodinganalog="245$a">Rohrbach</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e518">
+                  <did>
+                     <unittitle encodinganalog="245$a">Rumpler Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e522">
+                  <did>
+                     <unittitle encodinganalog="245$a">Non-German</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e526">
+               <did>
+                  <unittitle encodinganalog="245$a">Catalogues of industries from A-H</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e530">
+               <did>
+                  <unittitle encodinganalog="245$a">Aeronautical Chamber of Commerce of America</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e534">
+               <did>
+                  <unittitle encodinganalog="245$a">Articles on the management of industry</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e538">
+               <did>
+                  <container type="box">10</container>
+                  <unittitle encodinganalog="245$a">General articles</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e544">
+               <did>
+                  <unittitle encodinganalog="245$a">
+                     <title>Prager Press</title>
+                  </unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e549">
+            <did>
+               <container type="box">11</container>
+               <unittitle encodinganalog="245$a">Airports</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e555">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific airports</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e559">
+                  <did>
+                     <unittitle encodinganalog="245$a">Berlin-Tempelhof</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e563">
+                  <did>
+                     <unittitle encodinganalog="245$a">Essen-Mulheim</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e567">
+                  <did>
+                     <unittitle encodinganalog="245$a">Hamburg</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e571">
+               <did>
+                  <unittitle encodinganalog="245$a">Observatories</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e575">
+                  <did>
+                     <unittitle encodinganalog="245$a">Rostock</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e579">
+                  <did>
+                     <unittitle encodinganalog="245$a">Urkinnden</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e583">
+               <did>
+                  <container type="box">12</container>
+                  <unittitle encodinganalog="245$a">Non-German</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e589">
+               <did>
+                  <unittitle encodinganalog="245$a">Clubs</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e593">
+                  <did>
+                     <unittitle encodinganalog="245$a">Berlin-Johannisthal</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e597">
+                  <did>
+                     <unittitle encodinganalog="245$a">Flug und Hafen</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e601">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e605">
+                  <did>
+                     <unittitle encodinganalog="245$a">1926</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e609">
+                  <did>
+                     <container type="box">13</container>
+                     <unittitle encodinganalog="245$a">1927-1928</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e615">
+                  <did>
+                     <unittitle encodinganalog="245$a">All years</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e619">
+            <did>
+               <container type="box">14</container>
+               <unittitle encodinganalog="245$a">Airships</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e625">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e629">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>RK27</title> Airship</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e635">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>LZ 127</title>
+                     </unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e640">
+                     <did>
+                        <unittitle encodinganalog="245$a">Important articles</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e644">
+                     <did>
+                        <unittitle encodinganalog="245$a">Until Aug. 1928</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e648">
+                     <did>
+                        <unittitle encodinganalog="245$a">From Sept. 1928 on</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e652">
+                     <did>
+                        <unittitle encodinganalog="245$a">1929</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e656">
+                     <did>
+                        <container type="box">15</container>
+                        <unittitle encodinganalog="245$a">From 1930 on, important articles</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e662">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>ZR III</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e667">
+                  <did>
+                     <unittitle encodinganalog="245$a">Zeppelins</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e671">
+                     <did>
+                        <unittitle encodinganalog="245$a">30 July 1924-30 Oct. 1924</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e675">
+                     <did>
+                        <unittitle encodinganalog="245$a">1 Nov. 1924-30 Dec. 1925</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e679">
+                     <did>
+                        <container type="box">16</container>
+                        <unittitle encodinganalog="245$a">3 Jan. 1927-1929</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e685">
+                     <did>
+                        <unittitle encodinganalog="245$a">Jan. 1930 on</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e689">
+                     <did>
+                        <unittitle encodinganalog="245$a">General</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e693">
+               <did>
+                  <unittitle encodinganalog="245$a">Systems</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e697">
+                  <did>
+                     <unittitle encodinganalog="245$a">Boernier system-ocean crossing airships</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e701">
+                  <did>
+                     <unittitle encodinganalog="245$a">Description of the airship system LEPS</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e705">
+               <did>
+                  <unittitle encodinganalog="245$a">Zeppelin, Graf Ferdinand von</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e709">
+                  <did>
+                     <unittitle encodinganalog="245$a">Zeppelin personally</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e713">
+                  <did>
+                     <unittitle encodinganalog="245$a">Graf Zeppelin and his gains from air ship travel</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e717">
+               <did>
+                  <container type="box">17</container>
+                  <unittitle encodinganalog="245$a">Periodicals</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e723">
+                  <did>
+                     <unittitle encodinganalog="245$a">Hildebrandt articles on Graf Ferdinand von Zeppelin</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e727">
+                  <did>
+                     <unittitle encodinganalog="245$a">Moedebeck's <title>Handbuch der Luftshiffahrt</title>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e733">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Zeitschrift fur Luftschiffahrt</title>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e738">
+                  <did>
+                     <unittitle encodinganalog="245$a">Zeppelin airships in <title>Frankfurter Zeitung</title> (Dr. Hugo Eckener)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e745">
+                  <did>
+                     <unittitle encodinganalog="245$a">Newspaper clippings</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e749">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e753">
+                  <did>
+                     <unittitle encodinganalog="245$a">Airship or airplane</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e757">
+                  <did>
+                     <unittitle encodinganalog="245$a">World airship travel</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e761">
+                  <did>
+                     <container type="box">18</container>
+                     <unittitle encodinganalog="245$a">Zeppelin-Eckener charity</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e767">
+                  <did>
+                     <unittitle encodinganalog="245$a">Pictures</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e771">
+                  <did>
+                     <unittitle encodinganalog="245$a">Statistics</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e775">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e780">
+            <did>
+               <unittitle encodinganalog="245$a">America, 1923-1924</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e784">
+            <did>
+               <container type="box">19</container>
+               <unittitle encodinganalog="245$a">Altitude flying</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e790">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e794">
+                  <did>
+                     <unittitle encodinganalog="245$a">Rubber balloons</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e798">
+                  <did>
+                     <unittitle encodinganalog="245$a">Research</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e802">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e806">
+                  <did>
+                     <unittitle encodinganalog="245$a">Until 1928</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e810">
+                  <did>
+                     <unittitle encodinganalog="245$a">1929-1934</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e814">
+                  <did>
+                     <unittitle encodinganalog="245$a">1933-1935</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e818">
+                  <did>
+                     <unittitle encodinganalog="245$a">Articles</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e822">
+            <did>
+               <container type="box">20</container>
+               <unittitle encodinganalog="245$a">Aviators</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e828">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e832">
+                  <did>
+                     <unittitle encodinganalog="245$a">Byrd, Richard E.</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e836">
+                  <did>
+                     <unittitle encodinganalog="245$a">Chamberlain, Clarence</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e840">
+                  <did>
+                     <unittitle encodinganalog="245$a">Euler, August, and Hans Grade</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e844">
+                  <did>
+                     <unittitle encodinganalog="245$a">Fieseler, Gerhard, and Marcel Doret duel on 23 Oct. 1927</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e848">
+                  <did>
+                     <container type="box">21</container>
+                     <unittitle encodinganalog="245$a">Köhl, Hermann, ocean flight</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e854">
+                  <did>
+                     <unittitle encodinganalog="245$a">Könnecke, Otto, ocean Asia flight</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e858">
+                  <did>
+                     <unittitle encodinganalog="245$a">Lilienthal, Ottto</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e862">
+                  <did>
+                     <unittitle encodinganalog="245$a">Lindbergh, Charles</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e866">
+                  <did>
+                     <container type="box">22</container>
+                     <unittitle encodinganalog="245$a">Mittelholzer, Walter-Gouzy, Rene, Africa flight, 1926</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e872">
+                  <did>
+                     <unittitle encodinganalog="245$a">Nungesser, Charles Eugène Jules Marie, and Francois Coli</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e877">
+                  <did>
+                     <unittitle encodinganalog="245$a">De Pinedo, Francesco</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e881">
+                  <did>
+                     <unittitle encodinganalog="245$a">Dumont, Santos</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e885">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e889">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air captains</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e893">
+                  <did>
+                     <unittitle encodinganalog="245$a">Officers and engineers</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e897">
+                  <did>
+                     <unittitle encodinganalog="245$a">Personal histories</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e901">
+                  <did>
+                     <unittitle encodinganalog="245$a">Prewar pilots</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e905">
+                  <did>
+                     <unittitle encodinganalog="245$a">Pictures</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e909">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e913">
+            <did>
+               <container type="box">23</container>
+               <unittitle encodinganalog="245$a">Awards</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e919">
+            <did>
+               <unittitle encodinganalog="245$a">Balloons</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e923">
+               <did>
+                  <unittitle encodinganalog="245$a">Air currents on balloons</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e927">
+               <did>
+                  <unittitle encodinganalog="245$a">History including particular flights</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e931">
+               <did>
+                  <unittitle encodinganalog="245$a">Materials</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e935">
+               <did>
+                  <unittitle encodinganalog="245$a">Meteorological</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e939">
+               <did>
+                  <unittitle encodinganalog="245$a">Military</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e943">
+               <did>
+                  <unittitle encodinganalog="245$a">Passengers: de'Argenson and Montgolfier</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e947">
+               <did>
+                  <unittitle encodinganalog="245$a">Periodicals: <title>Der Freiballoon</title>
+                  </unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e953">
+            <did>
+               <container type="box">24</container>
+               <unittitle encodinganalog="245$a">Races</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e959">
+               <did>
+                  <unittitle encodinganalog="245$a">Gordon Bennett Cup</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e963">
+                  <did>
+                     <unittitle encodinganalog="245$a">1908</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e967">
+                  <did>
+                     <unittitle encodinganalog="245$a">1907-1912</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e971">
+                  <did>
+                     <unittitle encodinganalog="245$a">1927</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e975">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e979">
+               <did>
+                  <container type="box">25</container>
+                  <unittitle encodinganalog="245$a">Types</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e985">
+                  <did>
+                     <unittitle encodinganalog="245$a">Barrage balloons</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e989">
+                  <did>
+                     <unittitle encodinganalog="245$a">Fixed balloons</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e993">
+                  <did>
+                     <unittitle encodinganalog="245$a">Free balloons</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e997">
+                  <did>
+                     <unittitle encodinganalog="245$a">Hot air balloons</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1001">
+                     <did>
+                        <unittitle encodinganalog="245$a">Berlin's</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1005">
+                     <did>
+                        <unittitle encodinganalog="245$a">Brunner's</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1009">
+                     <did>
+                        <unittitle encodinganalog="245$a">Marek-Emma system</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1013">
+                     <did>
+                        <container type="box">26</container>
+                        <unittitle encodinganalog="245$a">Hildebrandt's articles on hot air balloons</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1019">
+                     <did>
+                        <unittitle encodinganalog="245$a">Newspaper clippings and periodicals</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1023">
+               <did>
+                  <unittitle encodinganalog="245$a">Postcards (mostly comic)</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1027">
+            <did>
+               <container type="box">27</container>
+               <unittitle encodinganalog="245$a">Bibliography</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1033">
+               <did>
+                  <unittitle encodinganalog="245$a">Book reviews</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1037">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1041">
+            <did>
+               <unittitle encodinganalog="245$a">Budges</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1045">
+            <did>
+               <unittitle encodinganalog="245$a">Charity, Luftfahrerspende</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1049">
+            <did>
+               <unittitle encodinganalog="245$a">Control, automatic</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1053">
+            <did>
+               <container type="box">28</container>
+               <unittitle encodinganalog="245$a">Design</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1059">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1063">
+                  <did>
+                     <unittitle encodinganalog="245$a">Avia</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1067">
+                  <did>
+                     <unittitle encodinganalog="245$a">BMW</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1071">
+                  <did>
+                     <unittitle encodinganalog="245$a">Boerner</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1075">
+                  <did>
+                     <unittitle encodinganalog="245$a">Budig airplane</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1079">
+                  <did>
+                     <unittitle encodinganalog="245$a">Dornier</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1083">
+                  <did>
+                     <unittitle encodinganalog="245$a">Focke-Wulf</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1087">
+                  <did>
+                     <unittitle encodinganalog="245$a">Junkers</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1091">
+               <did>
+                  <unittitle encodinganalog="245$a">Airplane spotting</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1095">
+               <did>
+                  <unittitle encodinganalog="245$a">Altitude planes</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1099">
+               <did>
+                  <unittitle encodinganalog="245$a">Czechoslovakian military planes</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1103">
+               <did>
+                  <unittitle encodinganalog="245$a">Non-German</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1107">
+               <did>
+                  <container type="box">29</container>
+                  <unittitle encodinganalog="245$a">Sport planes</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1113">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1117">
+                  <did>
+                     <unittitle encodinganalog="245$a">Blueprints</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1121">
+                  <did>
+                     <unittitle encodinganalog="245$a">Pictures</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1125">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1129">
+               <did>
+                  <unittitle encodinganalog="245$a">Education and propaganda</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1134">
+            <did>
+               <container type="box">30</container>
+               <unittitle encodinganalog="245$a">Engines</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1140">
+               <did>
+                  <unittitle encodinganalog="245$a">Airplane</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1144">
+                  <did>
+                     <unittitle encodinganalog="245$a">Specific</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1148">
+                     <did>
+                        <unittitle encodinganalog="245$a">Airship and balloon engines</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1152">
+                     <did>
+                        <unittitle encodinganalog="245$a">BMW airplane engines</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1156">
+                     <did>
+                        <unittitle encodinganalog="245$a">German airplane engines</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1160">
+                     <did>
+                        <unittitle encodinganalog="245$a">Non-German airplane engines</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1164">
+                  <did>
+                     <unittitle encodinganalog="245$a">Periodicals</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1168">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Illustrierte Motor Zeitung</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1173">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Luftfahrt Rundschau</title>, periodical for aviation technique and airship flight, 1930</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1179">
+                     <did>
+                        <unittitle encodinganalog="245$a">Technical part of the reports for air travel, 1921</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1183">
+                  <did>
+                     <unittitle encodinganalog="245$a">Accessories and parts</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1187">
+                  <did>
+                     <unittitle encodinganalog="245$a">Propellers</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1191">
+               <did>
+                  <unittitle encodinganalog="245$a">Non-airplane</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1195">
+            <did>
+               <container type="box">31</container>
+               <unittitle encodinganalog="245$a">Exhibitions</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1201">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1205">
+                  <did>
+                     <unittitle encodinganalog="245$a">Aero-Salon, Paris, France</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1209">
+                     <did>
+                        <unittitle encodinganalog="245$a">1926</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1213">
+                     <did>
+                        <unittitle encodinganalog="245$a">1930</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1217">
+                  <did>
+                     <unittitle encodinganalog="245$a">Airships, Dusseldorf, 1925-1926</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1221">
+                  <did>
+                     <unittitle encodinganalog="245$a">Exhibitions for charity, Dusseldorf, 1926</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1225">
+                  <did>
+                     <unittitle encodinganalog="245$a">ILA (Internationale Luft-und Raumfahrtausstellung), Berlin, 1928</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1229">
+                  <did>
+                     <container type="box">32</container>
+                     <unittitle encodinganalog="245$a">Ghent, Belgium, 1913</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1235">
+                  <did>
+                     <unittitle encodinganalog="245$a">Oldenburg, 1927</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1239">
+                  <did>
+                     <unittitle encodinganalog="245$a">Prague, Czechoslovakia, 1927</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1243">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1247">
+               <did>
+                  <unittitle encodinganalog="245$a">Dec. 1911-Nov. 1913</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1251">
+               <did>
+                  <unittitle encodinganalog="245$a">1924</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1255">
+               <did>
+                  <unittitle encodinganalog="245$a">Undated</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1259">
+            <did>
+               <container type="box">33</container>
+               <unittitle encodinganalog="245$a">Explorations</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1265">
+            <did>
+               <unittitle encodinganalog="245$a">Flight of animals</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1269">
+            <did>
+               <unittitle encodinganalog="245$a">Fuel</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1273">
+            <did>
+               <unittitle encodinganalog="245$a">Gliders</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1277">
+               <did>
+                  <unittitle encodinganalog="245$a">Ursinus</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1281">
+               <did>
+                  <unittitle encodinganalog="245$a">Good articles on gliding</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1285">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1289">
+            <did>
+               <unittitle encodinganalog="245$a">Goering, Hermann</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1293">
+            <did>
+               <container type="box">34</container>
+               <unittitle encodinganalog="245$a">Hangars</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1299">
+            <did>
+               <unittitle encodinganalog="245$a">History</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1303">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1307">
+                  <did>
+                     <unittitle encodinganalog="245$a">Balloons</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1311">
+                  <did>
+                     <unittitle encodinganalog="245$a">Gliders</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1315">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1319">
+                  <did>
+                     <unittitle encodinganalog="245$a">Early French periodicals</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1323">
+                  <did>
+                     <unittitle encodinganalog="245$a">General history of aviation in America (Wright's <title>Scientific American</title>, 1890, etc.)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1330">
+                  <did>
+                     <unittitle encodinganalog="245$a">General history of aviation in Germany</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1334">
+                  <did>
+                     <unittitle encodinganalog="245$a">History of flying from Icarus to 1904</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1338">
+                  <did>
+                     <container type="box">35</container>
+                     <unittitle encodinganalog="245$a">History of flying from the Middle Ages to 1910</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1344">
+                  <did>
+                     <unittitle encodinganalog="245$a">History of flying (alphabetical from M to Z)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1348">
+                  <did>
+                     <unittitle encodinganalog="245$a">Newspapers of the nineteenth century, American and English</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1352">
+                  <did>
+                     <unittitle encodinganalog="245$a">Humor and poetry </unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1356">
+                     <did>
+                        <unittitle encodinganalog="245$a">About locks and keys</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1360">
+                     <did>
+                        <unittitle encodinganalog="245$a">Folk songs about Zeppelins</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1364">
+                     <did>
+                        <unittitle encodinganalog="245$a">Humor and caricatures</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1368">
+                     <did>
+                        <unittitle encodinganalog="245$a">Nonsense in German newspapers</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1372">
+                     <did>
+                        <unittitle encodinganalog="245$a">Rotschenrenther, <title>About Winged Wheels and Eagle Wings</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1378">
+                     <did>
+                        <unittitle encodinganalog="245$a">General</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1382">
+            <did>
+               <container type="box">36</container>
+               <unittitle encodinganalog="245$a">Indexes</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1388">
+            <did>
+               <unittitle encodinganalog="245$a">Instruments</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1392">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1396">
+                  <did>
+                     <unittitle encodinganalog="245$a">Compass</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1400">
+                  <did>
+                     <unittitle encodinganalog="245$a">Lights</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1404">
+                  <did>
+                     <unittitle encodinganalog="245$a">Radio</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1408">
+                  <did>
+                     <unittitle encodinganalog="245$a">Sound waves</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1412">
+                  <did>
+                     <unittitle encodinganalog="245$a">General radio</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1416">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1420">
+                  <did>
+                     <unittitle encodinganalog="245$a">Measuring instruments</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1424">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1429">
+            <did>
+               <container type="box">37</container>
+               <unittitle encodinganalog="245$a">Insurance</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1435">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1439">
+                  <did>
+                     <unittitle encodinganalog="245$a">Balloons in Denmark</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1443">
+                  <did>
+                     <unittitle encodinganalog="245$a">Kasko case</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1447">
+                  <did>
+                     <unittitle encodinganalog="245$a">Nopitsch, Heinrich, in Würzburg</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1451">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1455">
+                  <did>
+                     <unittitle encodinganalog="245$a">Accident damage</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1459">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Iduna Zeitung</title>
+                     </unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1464">
+            <did>
+               <unittitle encodinganalog="245$a">International relations</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1468">
+               <did>
+                  <unittitle encodinganalog="245$a">Commissions</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1472">
+                  <did>
+                     <unittitle encodinganalog="245$a">Comité juridique international de l'aviation</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1476">
+                  <did>
+                     <unittitle encodinganalog="245$a">International Commission for Scientific Airship Travel (2 pieces)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1480">
+                  <did>
+                     <unittitle encodinganalog="245$a">International Commission's Observations, 1903 (4 vols.)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1484">
+                  <did>
+                     <container type="box">38</container>
+                     <unittitle encodinganalog="245$a">Permanent International Commission for Aviation</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1490">
+               <did>
+                  <unittitle encodinganalog="245$a">Congresses</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1494">
+                  <did>
+                     <unittitle encodinganalog="245$a">First International Congress for Aerial Security</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1498">
+                  <did>
+                     <unittitle encodinganalog="245$a">International Aeronautical Federation Conference in Zurich, Switzerland, 1911</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1502">
+                  <did>
+                     <unittitle encodinganalog="245$a">International Commission for Aerial Navigation</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1506">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1510">
+                  <did>
+                     <unittitle encodinganalog="245$a">Freedom of the air</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1514">
+                  <did>
+                     <unittitle encodinganalog="245$a">Scientific</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1518">
+                  <did>
+                     <unittitle encodinganalog="245$a">General articles</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1522">
+                  <did>
+                     <unittitle encodinganalog="245$a">General conferences</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1526">
+            <did>
+               <container type="box">39</container>
+               <unittitle encodinganalog="245$a">Inventions and patents</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1532">
+               <did>
+                  <unittitle encodinganalog="245$a">French</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1536">
+               <did>
+                  <unittitle encodinganalog="245$a">German</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1540">
+                  <did>
+                     <unittitle encodinganalog="245$a">Patentschrifte</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1544">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1548">
+                  <did>
+                     <unittitle encodinganalog="245$a">Kites</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1552">
+                  <did>
+                     <unittitle encodinganalog="245$a">Laws</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1556">
+               <did>
+                  <unittitle encodinganalog="245$a">Government</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1560">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air Board, 1926</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1564">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air mail traffic</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1568">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air Ministry (budget 1928)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1572">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air Ministry (general I and II)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1576">
+                  <did>
+                     <container type="box">40</container>
+                     <unittitle encodinganalog="245$a">Bulletin for the Prussian Administration of the Interior</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1582">
+                  <did>
+                     <unittitle encodinganalog="245$a">Reichstag meetings</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1586">
+                  <did>
+                     <unittitle encodinganalog="245$a">Secretary of state for air, Erhard Milch</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1590">
+                  <did>
+                     <unittitle encodinganalog="245$a">Swiss Confederation's Air Board</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1594">
+               <did>
+                  <unittitle encodinganalog="245$a">Law</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1598">
+                  <did>
+                     <unittitle encodinganalog="245$a">Case of Arthur Miller, accused of corruption</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1602">
+                  <did>
+                     <unittitle encodinganalog="245$a">German lawyers' paper</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1606">
+                  <did>
+                     <unittitle encodinganalog="245$a">Reich's <title>Bulletin of Laws</title>
+                     </unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1612">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1616">
+                  <did>
+                     <unittitle encodinganalog="245$a">By state</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1620">
+                  <did>
+                     <container type="box">41</container>
+                     <unittitle encodinganalog="245$a">General I and II</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1626">
+            <did>
+               <unittitle encodinganalog="245$a">Literature</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1630">
+            <did>
+               <unittitle encodinganalog="245$a">Locomotives</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1634">
+            <did>
+               <container type="box">42</container>
+               <unittitle encodinganalog="245$a">Maps and charts</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1640">
+               <did>
+                  <unittitle encodinganalog="245$a">Russia </unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1644">
+               <did>
+                  <unittitle encodinganalog="245$a">Strassburg and environs</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1648">
+               <did>
+                  <unittitle encodinganalog="245$a">Illustrations</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1652">
+                  <did>
+                     <unittitle encodinganalog="245$a">Chart paper</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1656">
+                  <did>
+                     <unittitle encodinganalog="245$a">Photogrammetry</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1660">
+                  <did>
+                     <container type="box">43</container>
+                     <unittitle encodinganalog="245$a">Route of the sea planes, 1926</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1666">
+               <did>
+                  <unittitle encodinganalog="245$a">Writings</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1670">
+                  <did>
+                     <unittitle encodinganalog="245$a">Articles about maps</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1674">
+                  <did>
+                     <unittitle encodinganalog="245$a">Cartographic clubs</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1678">
+                  <did>
+                     <unittitle encodinganalog="245$a">Correspondence about maps</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1682">
+                  <did>
+                     <unittitle encodinganalog="245$a">Dr. Peuker</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1686">
+                  <did>
+                     <unittitle encodinganalog="245$a">Zeppelin, Grad Ferdinand von, urges the importance of maps, and miscellany</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1690">
+            <did>
+               <container type="box">44</container>
+               <unittitle encodinganalog="245$a">Materials</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1696">
+            <did>
+               <unittitle encodinganalog="245$a">Medicine</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1700">
+               <did>
+                  <unittitle encodinganalog="245$a">Dreams and flying</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e1704">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1708">
+            <did>
+               <unittitle encodinganalog="245$a">Meteorology</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1712">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1716">
+                  <did>
+                     <unittitle encodinganalog="245$a">Lindenburg</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1720">
+                     <did>
+                        <unittitle encodinganalog="245$a">Observatory</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1724">
+                     <did>
+                        <unittitle encodinganalog="245$a">Temperature over Lindenburg (chart)</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1728">
+                     <did>
+                        <container type="box">45</container>
+                        <unittitle encodinganalog="245$a">German Flying Weather Service (I and II)</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1734">
+                     <did>
+                        <unittitle encodinganalog="245$a">Royal Russian Academy of Scientists</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1738">
+                  <did>
+                     <unittitle encodinganalog="245$a">Articles</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1742">
+                     <did>
+                        <unittitle encodinganalog="245$a">Radiation in the stratosphere I and II</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1746">
+                     <did>
+                        <container type="box">46</container>
+                        <unittitle encodinganalog="245$a">Sky</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1752">
+                     <did>
+                        <unittitle encodinganalog="245$a">Troposphere and stratosphere</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1756">
+                  <did>
+                     <unittitle encodinganalog="245$a">Periodicals</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1760">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Annals of Hydrography and Maritime Meteorological</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1765">
+                     <did>
+                        <unittitle encodinganalog="245$a">German Meteorological Yearbook</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1769">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Meteorologishe Zeitschrift</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1774">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Das Wetter</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1779">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1783">
+                     <did>
+                        <unittitle encodinganalog="245$a">Non-German articles</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1787">
+                     <did>
+                        <container type="box">47</container>
+                        <unittitle encodinganalog="245$a">Scientific German articles</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1793">
+                     <did>
+                        <unittitle encodinganalog="245$a">General</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1797">
+            <did>
+               <container type="box">48</container>
+               <unittitle encodinganalog="245$a">Military</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1803">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1807">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air force</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1811">
+                  <did>
+                     <unittitle encodinganalog="245$a">Prussian airship troops</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1815">
+                  <did>
+                     <unittitle encodinganalog="245$a">Zeppelin airships in the war</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1819">
+               <did>
+                  <unittitle encodinganalog="245$a">Periodicals</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1823">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Krieger Zeitung</title>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1828">
+                  <did>
+                     <unittitle encodinganalog="245$a">Memories of the war, 1914</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1832">
+                  <did>
+                     <unittitle encodinganalog="245$a">Military magazines, general</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1836">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1840">
+                  <did>
+                     <unittitle encodinganalog="245$a">History</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1844">
+                  <did>
+                     <unittitle encodinganalog="245$a">Non-German articles</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1848">
+                  <did>
+                     <container type="box">49</container>
+                     <unittitle encodinganalog="245$a">Various things about the war (1914-1918) collected by Hildebrandt</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1854">
+                  <did>
+                     <unittitle encodinganalog="245$a">General I and II</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1858">
+            <did>
+               <unittitle encodinganalog="245$a">Models</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1863">
+            <did>
+               <unittitle encodinganalog="245$a">Navigation</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e1867">
+            <did>
+               <container type="box">50</container>
+               <unittitle encodinganalog="245$a">Newspapers</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1873">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1877">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Dingler's Polytechnisches journal</title>, 1826-1859</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1883">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Dusseldorfer Stadtanzeiger</title>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1888">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Frankfurter Zeitung</title>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1893">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Kölnische Zeitung</title>
+                     </unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1898">
+                     <did>
+                        <unittitle encodinganalog="245$a">1923</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1902">
+                     <did>
+                        <unittitle encodinganalog="245$a">1924</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1906">
+                     <did>
+                        <container type="box">51</container>
+                        <unittitle encodinganalog="245$a">1930</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1912">
+                     <did>
+                        <unittitle encodinganalog="245$a">1931</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1916">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Königsberger Hartungsche Zeitung</title>, 1925</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1922">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>La Plata</title> (Argentina)</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1928">
+                     <did>
+                        <unittitle encodinganalog="245$a">Aug.-Sept. 1924</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1932">
+                     <did>
+                        <unittitle encodinganalog="245$a">1 Jan.-24 Mar. 1925</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e1936">
+                  <did>
+                     <container type="box">52</container>
+                     <unittitle encodinganalog="245$a">
+                        <title>Preussische Zeitung</title>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1943">
+                  <did>
+                     <unittitle encodinganalog="245$a">
+                        <title>Volkischer Beobachter</title>, 1933-1936</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e1949">
+               <did>
+                  <unittitle encodinganalog="245$a">Collections of clippings from various newspapers</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1953">
+                  <did>
+                     <unittitle encodinganalog="245$a">1908-1909</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1957">
+                  <did>
+                     <unittitle encodinganalog="245$a">1928-1929</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1961">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e1965">
+                  <did>
+                     <container type="box">53</container>
+                     <unittitle encodinganalog="245$a">1907</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e1971">
+            <did>
+               <container type="box">54</container>
+               <unittitle encodinganalog="245$a">Personal</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e1977">
+               <did>
+                  <unittitle encodinganalog="245$a">Hildebrandt's writings</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e1981">
+                  <did>
+                     <unittitle encodinganalog="245$a">Articles</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e1985">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Airship Flight</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1990">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Aviation</title> (1908-1909)</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e1996">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Luftfahrt Rundschau</title>, 1911-1912</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2002">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Weser Zeitung</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2007">
+               <did>
+                  <container type="box">55</container>
+                  <unittitle encodinganalog="245$a">Articles in newspapers by and about Hildebrandt</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2013">
+                  <did>
+                     <unittitle encodinganalog="245$a">1885-1907</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2017">
+                  <did>
+                     <unittitle encodinganalog="245$a">1908-1910</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2021">
+                  <did>
+                     <container type="box">56</container>
+                     <unittitle encodinganalog="245$a">1911-1934</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2027">
+                  <did>
+                     <unittitle encodinganalog="245$a">1935-1937</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2031">
+               <did>
+                  <container type="box">57</container>
+                  <unittitle encodinganalog="245$a">Articles by Hildebrandt</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2037">
+               <did>
+                  <container type="box">58</container>
+                  <unittitle encodinganalog="245$a">Articles by and about Hildebrandt in the newspapers, 1938-1939</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2043">
+               <did>
+                  <unittitle encodinganalog="245$a">Lectures</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2047">
+                  <did>
+                     <unittitle encodinganalog="245$a">1911</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2051">
+                  <did>
+                     <unittitle encodinganalog="245$a">Celebration speech</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2055">
+                  <did>
+                     <unittitle encodinganalog="245$a">Club</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2059">
+                  <did>
+                     <unittitle encodinganalog="245$a">General (including Officers Institute lecture on balloons) and advertisements</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2063">
+               <did>
+                  <unittitle encodinganalog="245$a">Correspondence</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2067">
+                  <did>
+                     <unittitle encodinganalog="245$a">Business, Albatross Works</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2071">
+                  <did>
+                     <unittitle encodinganalog="245$a">Deutscher Luftfahrt Verband</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2075">
+                     <did>
+                        <unittitle encodinganalog="245$a">Confidential</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2079">
+                     <did>
+                        <container type="box">59</container>
+                        <unittitle encodinganalog="245$a">Until Oct. 1910</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2085">
+                     <did>
+                        <unittitle encodinganalog="245$a">1910-1911</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2089">
+                     <did>
+                        <unittitle encodinganalog="245$a">1911</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2093">
+                     <did>
+                        <unittitle encodinganalog="245$a">1912</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2097">
+                     <did>
+                        <unittitle encodinganalog="245$a">1922</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2101">
+                     <did>
+                        <unittitle encodinganalog="245$a">1925</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2105">
+                  <did>
+                     <container type="box">60</container>
+                     <unittitle encodinganalog="245$a">Ring freier Luftfahrtsachverstandiger (Circle of free aviation experts)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2111">
+                  <did>
+                     <unittitle encodinganalog="245$a">Societies, regarding lectures Hildebrandt should give</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2115">
+                  <did>
+                     <unittitle encodinganalog="245$a">Government</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2119">
+                     <did>
+                        <unittitle encodinganalog="245$a">Air Traffic Ministry</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2123">
+                     <did>
+                        <unittitle encodinganalog="245$a">Legal advisor for aviation</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2127">
+                     <did>
+                        <unittitle encodinganalog="245$a">Nationalsozialistische Deutsche Arbeiterpartei</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2131">
+                  <did>
+                     <unittitle encodinganalog="245$a">Periodicals and publishers</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2135">
+                     <did>
+                        <unittitle encodinganalog="245$a">Brockhaus</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2139">
+                     <did>
+                        <unittitle encodinganalog="245$a">Exchange "Luftflette" for foreign magazines <title>Kölnische Zeitung</title>
+                        </unittitle>
+                     </did>
+                     <c05 level="file" id="mferd437e2145">
+                        <did>
+                           <unittitle encodinganalog="245$a">General, 1928-1929</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2149">
+                        <did>
+                           <unittitle encodinganalog="245$a">Rossman</unittitle>
+                        </did>
+                     </c05>
+                  </c04>
+                  <c04 level="file" id="mferd437e2153">
+                     <did>
+                        <container type="box">61</container>
+                        <unittitle encodinganalog="245$a">
+                           <title>Königersberger Allgemeine Zeitung</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2160">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Lokal Anzeiger</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2165">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Sonntag Morgen-Stuart</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2170">
+                     <did>
+                        <unittitle encodinganalog="245$a">Publishers I and II</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2174">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2178">
+                     <did>
+                        <unittitle encodinganalog="245$a">Boerner, Arno</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2182">
+                     <did>
+                        <unittitle encodinganalog="245$a">Frauds</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2186">
+                     <did>
+                        <unittitle encodinganalog="245$a">International Aeronautical Federation, 1911-1914</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2190">
+                     <did>
+                        <unittitle encodinganalog="245$a">Lufthansa</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2194">
+                     <did>
+                        <unittitle encodinganalog="245$a">St. Andreasberger's Flying Week</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2198">
+                     <did>
+                        <container type="box">62</container>
+                        <unittitle encodinganalog="245$a">World exhibition in Ghent, Belgium, 1913</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2204">
+                  <did>
+                     <unittitle encodinganalog="245$a">Personal</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2208">
+                     <did>
+                        <unittitle encodinganalog="245$a">1910-1911</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2212">
+                     <did>
+                        <unittitle encodinganalog="245$a">1920-1925  <ref target="con631925">
+                              <emph render="italic">See Container 63,</emph> 1925-1928</ref>
+                        </unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2220">
+                     <did>
+                        <unittitle encodinganalog="245$a">1927-1928</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2224">
+                     <did>
+                        <unittitle encodinganalog="245$a">Alexander, Patrick Young</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2228">
+                     <did>
+                        <unittitle encodinganalog="245$a">Americans: U.S. War Department, aviation clubs, etc., 1900-1915</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2232">
+                     <did>
+                        <unittitle encodinganalog="245$a">Chanute, Octave, including letter of introduction to Wilbur Wright for Hildebrandt</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2236">
+                     <did>
+                        <unittitle encodinganalog="245$a">Charities</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2240">
+                     <did>
+                        <unittitle encodinganalog="245$a">Damm, Ernst A., 1927</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2244">
+                     <did>
+                        <container type="box">63</container>
+                        <unittitle encodinganalog="245$a" id="con631925">1920-1928</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2250">
+                     <did>
+                        <container type="box">64</container>
+                        <unittitle encodinganalog="245$a">Feldhaus, Gilbert;, Sauer, Otto; etc.</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2257">
+                     <did>
+                        <unittitle encodinganalog="245$a">Ravenstein, Hans</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2261">
+                     <did>
+                        <unittitle encodinganalog="245$a">Royalty (Albert, Prince of Schleswig-Holstein-Gluckernurg)</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2265">
+                     <did>
+                        <unittitle encodinganalog="245$a">Scheimpflug, Karl</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2269">
+                     <did>
+                        <unittitle encodinganalog="245$a">Siegert, Wilhelm</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2273">
+                     <did>
+                        <unittitle encodinganalog="245$a">Zeppelin, Grad Ferdinand von, photostats of letters to Hildebrandt</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2277">
+                     <did>
+                        <unittitle encodinganalog="245$a">Miscellaneous I-II</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2281">
+                     <did>
+                        <container type="box">65</container>
+                        <unittitle encodinganalog="245$a">Miscellaneous III-V</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2287">
+               <did>
+                  <container type="box">66</container>
+                  <unittitle encodinganalog="245$a">Miscellany</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2293">
+                  <did>
+                     <unittitle encodinganalog="245$a">America, album with mementos and correspondence, including with Octave Chanute, 1906-1909</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2297">
+                  <did>
+                     <unittitle encodinganalog="245$a">Autobiography of early life</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2301">
+                  <did>
+                     <unittitle encodinganalog="245$a">Hildebrandt's World War I diary, photographs and souvenir</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2305">
+                  <did>
+                     <unittitle encodinganalog="245$a">Flag dropped from Zeppelin</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2309">
+                  <did>
+                     <unittitle encodinganalog="245$a">Flyers Reserve Division 4 (pictures)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2313">
+                  <did>
+                     <unittitle encodinganalog="245$a">Jubilee (fifty years) for Hildebrandt as an aviator, 12 May 1943</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2317">
+                  <did>
+                     <container type="box">67</container>
+                     <unittitle encodinganalog="245$a">Lists of flyers</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2323">
+            <did>
+               <unittitle encodinganalog="245$a">Locks, keys, and coats of arms</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2327">
+               <did>
+                  <unittitle encodinganalog="245$a">
+                     <title>Locks and Keys and the Locksmith's Trade</title> by Hildebrandt and Ernst A. Damm</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2333">
+                  <did>
+                     <unittitle encodinganalog="245$a">Manuscripts I-III</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2337">
+               <did>
+                  <unittitle encodinganalog="245$a">Linguistic studies</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2341">
+                  <did>
+                     <unittitle encodinganalog="245$a">Of the words: locks, etc.</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2345">
+                  <did>
+                     <container type="box">68</container>
+                     <unittitle encodinganalog="245$a">Of the words: chamberlain</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2351">
+               <did>
+                  <unittitle encodinganalog="245$a">History</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2355">
+                  <did>
+                     <unittitle encodinganalog="245$a">Ancient history</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2359">
+                  <did>
+                     <unittitle encodinganalog="245$a">Burglary in the times of the old Greeks and Romans</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2363">
+               <did>
+                  <unittitle encodinganalog="245$a">Bibliography</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2367">
+               <did>
+                  <unittitle encodinganalog="245$a">Material for citing for an article about locks</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2371">
+               <did>
+                  <unittitle encodinganalog="245$a">Pictures </unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2375">
+               <did>
+                  <unittitle encodinganalog="245$a">Coats of arms</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2379">
+               <did>
+                  <unittitle encodinganalog="245$a">Explanations and pictures</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2383">
+               <did>
+                  <unittitle encodinganalog="245$a">Stereotype plates I-V</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2387">
+               <did>
+                  <unittitle encodinganalog="245$a">Stereotype plates I-V</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2391">
+            <did>
+               <container type="box">69</container>
+               <unittitle encodinganalog="245$a">Personal</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2397">
+               <did>
+                  <unittitle encodinganalog="245$a">
+                     <title>Luftflotte</title>, 1910-1911, under editorship of Hildebrandt</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2403">
+               <did>
+                  <unittitle encodinganalog="245$a">Possessions and photographs</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2407">
+               <did>
+                  <unittitle encodinganalog="245$a">Postcard album</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2411">
+               <did>
+                  <unittitle encodinganalog="245$a">Review of Hildebrandt's book <title>Vom Flugahnen to Altitude Flying</title> (From Presentiments of flight to Altitude Flying)</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2418">
+               <did>
+                  <unittitle encodinganalog="245$a">Roeloff, W. M., speech</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2422">
+               <did>
+                  <unittitle encodinganalog="245$a">Pictures, general</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2426">
+            <did>
+               <container type="box">70</container>
+               <unittitle encodinganalog="245$a">Photography</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e2432">
+            <did>
+               <unittitle encodinganalog="245$a">Records</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e2436">
+            <did>
+               <unittitle encodinganalog="245$a">Religion and superstitions</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2440">
+               <did>
+                  <unittitle encodinganalog="245$a">Patron saints</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2444">
+               <did>
+                  <unittitle encodinganalog="245$a">Superstitions</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2448">
+            <did>
+               <unittitle encodinganalog="245$a">Rotor planes</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2452">
+               <did>
+                  <unittitle encodinganalog="245$a">Manuscript on Flettner-Rotor planes</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2456">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2460">
+            <did>
+               <unittitle encodinganalog="245$a">Safety equipment, parachutes</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e2464">
+            <did>
+               <container type="box">71</container>
+               <unittitle encodinganalog="245$a">Schools</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2470">
+               <did>
+                  <unittitle encodinganalog="245$a">Problems of education and schools</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2474">
+               <did>
+                  <unittitle encodinganalog="245$a">Types of schools</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2479">
+            <did>
+               <unittitle encodinganalog="245$a">Societies</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2483">
+               <did>
+                  <unittitle encodinganalog="245$a">Specific</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2487">
+                  <did>
+                     <unittitle encodinganalog="245$a">Aero clubs</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2491">
+                  <did>
+                     <container type="box">72</container>
+                     <unittitle encodinganalog="245$a">Les aeronautes</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2497">
+                  <did>
+                     <unittitle encodinganalog="245$a">Akademische Fliegerschaft</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2501">
+                  <did>
+                     <container type="box">73</container>
+                     <unittitle encodinganalog="245$a">Berliner Verein fűr Luftshiffahrt</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2507">
+                  <did>
+                     <unittitle encodinganalog="245$a">Bundes Deutscher Flieger</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2511">
+                  <did>
+                     <unittitle encodinganalog="245$a">Deutscher Luftfaht Verband</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2515">
+                     <did>
+                        <unittitle encodinganalog="245$a">I, Part 1</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2519">
+                     <did>
+                        <container type="box">74</container>
+                        <unittitle encodinganalog="245$a">I, Part 2-II</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2525">
+                  <did>
+                     <container type="box">75</container>
+                     <unittitle encodinganalog="245$a">Deutscher Verein zur Forderung der Luftschiffahrt</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2531">
+                  <did>
+                     <unittitle encodinganalog="245$a">Lilienthal Gesellschaft</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2535">
+                  <did>
+                     <unittitle encodinganalog="245$a">Oberheinischer Verin fűr Luftshiffahrt</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2539">
+                  <did>
+                     <unittitle encodinganalog="245$a">Rheinische-Westfalische Fluggellschaft</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2544">
+                  <did>
+                     <unittitle encodinganalog="245$a">Vereins einemaliger Kameraden der Luftschiffer Truppen</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2548">
+                  <did>
+                     <unittitle encodinganalog="245$a">Vereins Flugmachine</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2552">
+                  <did>
+                     <unittitle encodinganalog="245$a">Wissenschaftliche Gesellschaft fűr Luftfahrt I</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2556">
+                  <did>
+                     <container type="box">76</container>
+                     <unittitle encodinganalog="245$a">Wissenschaftliche Gesellschaft fűr Luftfahrt II</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2562">
+               <did>
+                  <unittitle encodinganalog="245$a">Types</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2566">
+                  <did>
+                     <unittitle encodinganalog="245$a">British clubs except Aero Club</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2570">
+                  <did>
+                     <unittitle encodinganalog="245$a">Italian clubs</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2574">
+                  <did>
+                     <unittitle encodinganalog="245$a">French</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2578">
+                  <did>
+                     <unittitle encodinganalog="245$a">German club, scientific</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2582">
+                  <did>
+                     <container type="box">77</container>
+                     <unittitle encodinganalog="245$a">German clubs, general</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2588">
+                  <did>
+                     <unittitle encodinganalog="245$a">General I and II, including Luftschiffbau Zeppelin Gesellschaft</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2592">
+            <did>
+               <unittitle encodinganalog="245$a">Speed</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2596">
+               <did>
+                  <unittitle encodinganalog="245$a">Speed and range</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2600">
+               <did>
+                  <container type="box">78</container>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2606">
+            <did>
+               <unittitle encodinganalog="245$a">Sport</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2610">
+               <did>
+                  <unittitle encodinganalog="245$a">Races</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2614">
+                  <did>
+                     <unittitle encodinganalog="245$a">Germany</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2618">
+                     <did>
+                        <unittitle encodinganalog="245$a">Gliding</unittitle>
+                     </did>
+                     <c05 level="file" id="mferd437e2622">
+                        <did>
+                           <unittitle encodinganalog="245$a">Coastal gliding competitions</unittitle>
+                        </did>
+                        <c06 level="file" id="mferd437e2626">
+                           <did>
+                              <unittitle encodinganalog="245$a">1923</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2630">
+                           <did>
+                              <unittitle encodinganalog="245$a">1923-1925</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2634">
+                           <did>
+                              <unittitle encodinganalog="245$a">1924</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2638">
+                           <did>
+                              <unittitle encodinganalog="245$a">1927 (Rossitten)</unittitle>
+                           </did>
+                        </c06>
+                     </c05>
+                     <c05 level="file" id="mferd437e2642">
+                        <did>
+                           <unittitle encodinganalog="245$a">Rhon Gliding Competition</unittitle>
+                        </did>
+                        <c06 level="file" id="mferd437e2646">
+                           <did>
+                              <unittitle encodinganalog="245$a">1924</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2650">
+                           <did>
+                              <unittitle encodinganalog="245$a">1925</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2654">
+                           <did>
+                              <unittitle encodinganalog="245$a">1926</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2658">
+                           <did>
+                              <container type="box">79</container>
+                              <unittitle encodinganalog="245$a">1927</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2664">
+                           <did>
+                              <unittitle encodinganalog="245$a">1928</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2668">
+                           <did>
+                              <unittitle encodinganalog="245$a">1930</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2672">
+                           <did>
+                              <unittitle encodinganalog="245$a">1931</unittitle>
+                           </did>
+                        </c06>
+                     </c05>
+                     <c05 level="file" id="mferd437e2676">
+                        <did>
+                           <unittitle encodinganalog="245$a">St. Andreasberger Gliding Competition</unittitle>
+                        </did>
+                     </c05>
+                  </c04>
+                  <c04 level="file" id="mferd437e2680">
+                     <did>
+                        <unittitle encodinganalog="245$a">Powered flying</unittitle>
+                     </did>
+                     <c05 level="file" id="mferd437e2684">
+                        <did>
+                           <unittitle encodinganalog="245$a">Airman's Day</unittitle>
+                        </did>
+                        <c06 level="file" id="mferd437e2688">
+                           <did>
+                              <unittitle encodinganalog="245$a">1925 (June 11-16)</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2692">
+                           <did>
+                              <unittitle encodinganalog="245$a">1926</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2696">
+                           <did>
+                              <unittitle encodinganalog="245$a">1927</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2700">
+                           <did>
+                              <unittitle encodinganalog="245$a">1928</unittitle>
+                           </did>
+                        </c06>
+                     </c05>
+                     <c05 level="file" id="mferd437e2704">
+                        <did>
+                           <unittitle encodinganalog="245$a">Berlin Flying Week, 1909</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2708">
+                        <did>
+                           <container type="box">80</container>
+                           <unittitle encodinganalog="245$a">D.L.V. Reliability Flight</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2714">
+                        <did>
+                           <unittitle encodinganalog="245$a">Flying Day at Goslar, 1927</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2718">
+                        <did>
+                           <unittitle encodinganalog="245$a">Flying days</unittitle>
+                        </did>
+                        <c06 level="file" id="mferd437e2722">
+                           <did>
+                              <unittitle encodinganalog="245$a">1926</unittitle>
+                           </did>
+                        </c06>
+                        <c06 level="file" id="mferd437e2726">
+                           <did>
+                              <unittitle encodinganalog="245$a">1927-1928</unittitle>
+                           </did>
+                        </c06>
+                     </c05>
+                     <c05 level="file" id="mferd437e2730">
+                        <did>
+                           <unittitle encodinganalog="245$a">German round-trip flight, 1925</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2734">
+                        <did>
+                           <container type="box">81</container>
+                           <unittitle encodinganalog="245$a">German Seaflight Competition, 1926 (I and II)</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2740">
+                        <did>
+                           <unittitle encodinganalog="245$a">Rhine Flying Competition (I and II)</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2744">
+                        <did>
+                           <unittitle encodinganalog="245$a">Rhineland Liberation Flight, 1930, and D.L.V.</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2748">
+                        <did>
+                           <unittitle encodinganalog="245$a">Reliability flight</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2753">
+                        <did>
+                           <unittitle encodinganalog="245$a">Saxon flight, 1927</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2757">
+                        <did>
+                           <container type="box">82</container>
+                           <unittitle encodinganalog="245$a">South German flight, 1926</unittitle>
+                        </did>
+                     </c05>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2763">
+                  <did>
+                     <unittitle encodinganalog="245$a">Italy</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2767">
+                     <did>
+                        <unittitle encodinganalog="245$a">Coppa d'Italia</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2771">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>La Gazetta dello Sport</title>
+                        </unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2776">
+                  <did>
+                     <unittitle encodinganalog="245$a">International</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2780">
+                     <did>
+                        <unittitle encodinganalog="245$a">Air meet, Zurich, Switzerland, 1927</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2784">
+                     <did>
+                        <unittitle encodinganalog="245$a">European Return Trip Race, 1929</unittitle>
+                     </did>
+                     <c05 level="file" id="mferd437e2788">
+                        <did>
+                           <unittitle encodinganalog="245$a">List of participating airplanes and candidates</unittitle>
+                        </did>
+                     </c05>
+                     <c05 level="file" id="mferd437e2792">
+                        <did>
+                           <container type="box">83</container>
+                           <unittitle encodinganalog="245$a">Newspaper write-ups</unittitle>
+                        </did>
+                     </c05>
+                  </c04>
+                  <c04 level="file" id="mferd437e2798">
+                     <did>
+                        <unittitle encodinganalog="245$a">International Flying Competition in Munich, Sept. 1925</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2802">
+                  <did>
+                     <unittitle encodinganalog="245$a">Schneider Trophy</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2806">
+                     <did>
+                        <unittitle encodinganalog="245$a">1927</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2810">
+                     <did>
+                        <unittitle encodinganalog="245$a">1929-1931</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2814">
+                  <did>
+                     <unittitle encodinganalog="245$a">General races</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2818">
+                     <did>
+                        <unittitle encodinganalog="245$a">Races, 1912</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2822">
+                     <did>
+                        <unittitle encodinganalog="245$a">1924 (world circling)</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2826">
+                     <did>
+                        <container type="box">84</container>
+                        <unittitle encodinganalog="245$a">1925</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2832">
+                     <did>
+                        <unittitle encodinganalog="245$a">1928-1930</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2836">
+                  <did>
+                     <unittitle encodinganalog="245$a">Competition notices</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2840">
+                  <did>
+                     <unittitle encodinganalog="245$a">Periodicals about sports</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2844">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Flugsport</title> sea flight competitions</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2850">
+                     <did>
+                        <unittitle encodinganalog="245$a">
+                           <title>Der Sportflieger</title>, 1926-1929</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2856">
+                     <did>
+                        <container type="box">85</container>
+                        <unittitle encodinganalog="245$a">General articles, newspaper write-ups</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2862">
+                  <did>
+                     <container type="box">86</container>
+                     <unittitle encodinganalog="245$a">General articles</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2868">
+                     <did>
+                        <unittitle encodinganalog="245$a">German air sports, 1930</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2872">
+                     <did>
+                        <unittitle encodinganalog="245$a">Sport and the German Air Ministry, 1927</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2876">
+                     <did>
+                        <unittitle encodinganalog="245$a">Youth and flying for sport</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 level="file" id="mferd437e2880">
+                  <did>
+                     <unittitle encodinganalog="245$a">Convocations of various flying celebrations</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2884">
+                  <did>
+                     <unittitle encodinganalog="245$a">Sport Press Club</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2889">
+                  <did>
+                     <unittitle encodinganalog="245$a">General</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2893">
+            <did>
+               <container type="box">87</container>
+               <unittitle encodinganalog="245$a">Terminology</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2899">
+               <did>
+                  <unittitle encodinganalog="245$a">Airplane names</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2903">
+               <did>
+                  <unittitle encodinganalog="245$a">Luftwaffe technical dictionary</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e2907">
+               <did>
+                  <unittitle encodinganalog="245$a">General</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e2911">
+            <did>
+               <unittitle encodinganalog="245$a">Test flights</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e2915">
+            <did>
+               <container type="box">88</container>
+               <unittitle encodinganalog="245$a">Transportation</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e2921">
+               <did>
+                  <unittitle encodinganalog="245$a">Management</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2925">
+                  <did>
+                     <unittitle encodinganalog="245$a">Freight</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2929">
+                  <did>
+                     <container type="box">89</container>
+                     <unittitle encodinganalog="245$a">Timetables (I and II)</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2935">
+                  <did>
+                     <container type="box">90</container>
+                     <unittitle encodinganalog="245$a">Special flights</unittitle>
+                  </did>
+                  <c04 level="file" id="mferd437e2941">
+                     <did>
+                        <unittitle encodinganalog="245$a">Flights over the ocean in Junkers, 1927</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2945">
+                     <did>
+                        <unittitle encodinganalog="245$a">Flights, 1914, peaceful</unittitle>
+                     </did>
+                  </c04>
+                  <c04 level="file" id="mferd437e2949">
+                     <did>
+                        <container type="box">91</container>
+                        <unittitle encodinganalog="245$a">Flights, particular</unittitle>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2955">
+               <did>
+                  <unittitle encodinganalog="245$a">Articles</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2959">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air, the ideal medium for travel</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2963">
+                  <did>
+                     <unittitle encodinganalog="245$a">Dusseldorf's place in air traffic</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2967">
+                  <did>
+                     <unittitle encodinganalog="245$a">Transportation in Krefeld</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2971">
+                  <did>
+                     <unittitle encodinganalog="245$a">French articles</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2975">
+                  <did>
+                     <unittitle encodinganalog="245$a">General German articles</unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 level="file" id="mferd437e2979">
+               <did>
+                  <unittitle encodinganalog="245$a">Periodicals</unittitle>
+               </did>
+               <c03 level="file" id="mferd437e2983">
+                  <did>
+                     <unittitle encodinganalog="245$a">Air travel until 1928 described in newspaper clippings</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2987">
+                  <did>
+                     <unittitle encodinganalog="245$a">Transportation, non-German, 1927-1928, clippings</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2991">
+                  <did>
+                     <container type="box">92</container>
+                     <unittitle encodinganalog="245$a">General periodicals</unittitle>
+                  </did>
+               </c03>
+               <c03 level="file" id="mferd437e2997">
+                  <did>
+                     <unittitle encodinganalog="245$a">Ulderup's (very confidential) lecture about air travel, 1929</unittitle>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e3001">
+            <did>
+               <container type="box">93-96</container>
+               <unittitle encodinganalog="245$a">Miscellaneous</unittitle>
+            </did>
+         </c01>
+         <c01 level="file" id="mferd437e3007">
+            <did>
+               <container type="box">97</container>
+               <unittitle encodinganalog="245$a">Hildebrandt's index to collection</unittitle>
+            </did>
+            <c02 level="file" id="mferd437e3013">
+               <did>
+                  <unittitle encodinganalog="245$a">A-M</unittitle>
+               </did>
+            </c02>
+            <c02 level="file" id="mferd437e3017">
+               <did>
+                  <container type="box">98</container>
+                  <unittitle encodinganalog="245$a">N-Z and supplementary file</unittitle>
+               </did>
+            </c02>
+         </c01>
+         <c01 level="file" id="mferd437e3023">
+            <did>
+               <container type="box">OV 99</container>
+               <unittitle encodinganalog="245$a">Oversize certificates and diplomas</unittitle>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
+</ead>

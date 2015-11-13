@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd"
+    xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+    <control>
+        <recordId>struct-1060</recordId>
+        <maintenanceStatus>revised</maintenanceStatus>
+        <maintenanceAgency>
+            <agencyName>HAL</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <language languageCode="fre">français</language>
+            <script scriptCode="Latn">latin</script>
+        </languageDeclaration>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2014-10-24">2014-10-24</eventDateTime>
+                <agentType>human</agentType>
+                <agent></agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://aurehal.archives-ouvertes.fr/">
+                <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <!-- Où mettre l'URL du site internet d'une instition? -->
+        <identity>
+            <entityType>corporateBody</entityType>
+            <nameEntryParallel>
+                <nameEntry>
+                    <part>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré</part>
+                </nameEntry>
+                <nameEntry>
+                    <part>LHSP</part>
+                </nameEntry>
+            </nameEntryParallel>
+        </identity>
+        <description>           
+            <place>
+                <address>
+                    <addressLine>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</addressLine>
+                </address>
+            </place>
+        </description>
+    </cpfDescription>
+</eac-cpf>
