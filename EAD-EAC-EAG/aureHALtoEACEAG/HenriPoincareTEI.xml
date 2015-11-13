@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<str>
+<org type="laboratory" xml:id="struct-1060" status="VALID">
+    <orgName>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré</orgName>
+    <orgName type="acronym">LHSP</orgName>
+    <!-- Faire apparaître le sigle UMR 7117 (Unité mixte de recherche) -->
+    <desc>
+        <address>
+            <addrLine>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</addrLine>
+            <country key="FR">
+            </country>
+        </address>
+        <ref type="url">http://poincare.univ-lorraine.fr/fr</ref>
+    </desc>
+    <listRelation>
+        <relation name="UMR7117" active="#struct-441569" type="direct"></relation>
+        <relation active="#struct-300292" type="direct"></relation>
+        <relation active="#struct-413289" type="direct"></relation>
+    </listRelation>
+</org>
+<org type="institution" xml:id="struct-441569" status="VALID">
+    <orgName>CNRS</orgName>
+    <desc>
+        <address>
+            <country key="FR"></country>
+        </address>
+    </desc>
+</org>
+<org type="institution" xml:id="struct-300292" status="OLD">
+    <orgName>Université Nancy 2</orgName>
+    <date type="end">2011-12-31</date>
+    <desc>
+        <address>
+            <country key="FR"></country>
+        </address>
+    </desc>
+</org>
+<org type="institution" xml:id="struct-413289" status="VALID">
+    <idno type="IdRef">157040569</idno><idno type="Identifiant Université de Lorraine">[UL]100--</idno>
+    <orgName>Université de Lorraine</orgName>
+    <orgName type="acronym">UL</orgName>
+    <date type="start">2012-01-01</date>
+    <desc>
+        <address>
+            <addrLine>34 cours Léopold - CS 25233 - 54052 Nancy cedex</addrLine>
+            <country key="FR"></country>
+        </address>
+        <ref type="url">http://www.univ-lorraine.fr/</ref>
+    </desc>
+</org>
+</str>

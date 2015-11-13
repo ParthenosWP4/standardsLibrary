@@ -1,0 +1,12 @@
+﻿-- Contexte archivistique encodé : collectivités, personnes et familles (EAC-CPF). Dictionnaire des balises
+traduit de l'anglais par le groupe AFNOR CG/46/CN357/GE4. Version provisoire, mai 2012
+Annexe : notices d'autorité exemples --
+
+Les sept notices d'autorité encodées en XML/EAC-CPF fournies dans la présente annexe sont de simples exemples complétant ceux, partiels, fournis au fil du dictionnaire des balises. Ils montrent, sans prétendre à l'exhaustivité, diverses manières d'utiliser le standard, notamment en ce qui concerne les relations des entités décrites avec des ressources documentaires, avec d'autres entités ou avec des fonctions.
+
+Ces exemples sont placés sous licence libre, selon les termes de la licence Creative Commons « Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.0 France (CC BY-NC-SA 2.0) » (voir <http://creativecommons.org/licenses/by-nc-sa/2.0/fr/>).
+
+Pour les utiliser, il suffit, une fois le dossier dézippé, de les ouvrir à l'aide d'un éditeur de documents XML connaissant XML W3C schema. Ils sont fournis avec le schéma EAC-CPF (fichier cpf.xsd) et les deux schémas que ce schéma principal importe (fichiers xlink.xsd et xml.xsd). Pour que votre éditeur XML puisse valider ces notices, il faut que les fichiers exemples et les schémas soient placés dans le même dossier. 
+
+Pour toute question sur ces exemples, veuillez contacter le groupe AFNOR CG/46/CN357/GE4.
+
