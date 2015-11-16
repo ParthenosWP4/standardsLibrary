@@ -5,7 +5,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink"
     >
     <control>
-        <recordId>struct-1060</recordId>
+        <recordId xml:id="struct-1060">struct-1060</recordId>
         <maintenanceStatus>revised</maintenanceStatus>
         <maintenanceAgency>
             <agencyName>HAL</agencyName>
@@ -25,6 +25,13 @@
         <sources>
             <source xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://aurehal.archives-ouvertes.fr/">
                 <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
+            </source>
+            <source>
+                <objectXMLWrap>
+                    <tei>
+                        <ref type="url">http://poincare.univ-lorraine.fr/fr</ref>
+                    </tei>
+                </objectXMLWrap>
             </source>
         </sources>
     </control>
@@ -48,5 +55,32 @@
                 </address>
             </place>
         </description>
+        <relations>
+            <cpfRelation cpfRelationType="hierarchical-parent" xml:id="struct-441569" xlink:href="https://aurehal.archives-ouvertes.fr/structure/read/id/441569">
+                <relationEntry>CNRS</relationEntry>
+                <relationEntry>UMR7117</relationEntry>
+                <placeEntry countryCode="FR"></placeEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="hierarchical-parent" xml:id="struct-300292" xlink:href="https://aurehal.archives-ouvertes.fr/structure/read/id/300292">
+                <relationEntry>Université Nancy 2</relationEntry>
+                <dateRange>
+                    <toDate standardDate="2011-12-31">2011-12-31</toDate>
+                </dateRange>
+                <placeEntry countryCode="FR"></placeEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="hierarchical-parent" xml:id="struct-413289" xlink:href="https://aurehal.archives-ouvertes.fr/structure/read/id/413289">
+                <relationEntry>Université de Lorraine</relationEntry>
+                <relationEntry>UL</relationEntry>
+                <objectXMLWrap >
+                    <tei>
+                        <ref type="url">http://www.univ-lorraine.fr/</ref>
+                    </tei>
+                </objectXMLWrap>
+                <dateRange>
+                    <fromDate standardDate="2012-01-01">2012-01-01</fromDate>
+                </dateRange>
+                <placeEntry countryCode="FR">34 cours Léopold - CS 25233 - 54052 Nancy cedex</placeEntry>
+            </cpfRelation>
+        </relations>
     </cpfDescription>
 </eac-cpf>

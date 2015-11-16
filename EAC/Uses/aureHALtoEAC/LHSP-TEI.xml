@@ -3,7 +3,6 @@
 <org type="laboratory" xml:id="struct-1060" status="VALID">
     <orgName>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré</orgName>
     <orgName type="acronym">LHSP</orgName>
-    <!-- Faire apparaître le sigle UMR 7117 (Unité mixte de recherche) -->
     <desc>
         <address>
             <addrLine>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</addrLine>
