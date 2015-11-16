@@ -27,6 +27,7 @@
                 <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
             </source>
             <source>
+                <!-- je n'ai pas trouvé d'autre moyen de faire apparaître les URL des sites internet des entités -->
                 <objectXMLWrap>
                     <tei>
                         <ref type="url">http://poincare.univ-lorraine.fr/fr</ref>
@@ -36,7 +37,6 @@
         </sources>
     </control>
     <cpfDescription>
-        <!-- Où mettre l'URL du site internet d'une instition? -->
         <identity>
             <entityType>corporateBody</entityType>
             <nameEntryParallel>
@@ -44,7 +44,7 @@
                     <part>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré</part>
                 </nameEntry>
                 <nameEntry>
-                    <part>LHSP</part>
+                    <part>AHP</part>
                 </nameEntry>
             </nameEntryParallel>
         </identity>
