@@ -27,7 +27,7 @@
                 <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
             </source>
             <source>
-                <!-- je n'ai pas trouvé d'autre moyen de faire apparaître les URL des sites internet des entités -->
+                <!-- CR : je n'ai pas trouvé d'autre moyen de faire apparaître les URL des sites internet des entités -->
                 <objectXMLWrap>
                     <tei>
                         <ref type="url">http://poincare.univ-lorraine.fr/fr</ref>
