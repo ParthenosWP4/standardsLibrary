@@ -5,7 +5,7 @@
     <control>
         <!-- le recordId est requis. Il s'agit du code ISIL/ISO 15511. Il n'est pas mentionné dans la notice aureHAL. 
         J'ai récupéré le numéro RCR sur le sudoc, qui répertorie les centres de ressources, mais il n'y a pas d'URI associé, donc c'est un peu compliqué de le récupérer.-->
-        <recordId>FR-543952309</recordId>
+        <recordId source="https://aurehal.archives-ouvertes.fr/structure/read/id/1060">FR-struct-1060</recordId>
         <maintenanceAgency>
             <agencyCode>HAL
                 <!-- également requis. Il s'agit d'un identifiant pour le responsable de la création de la notice
@@ -29,7 +29,7 @@
             </languageDeclaration>
         </languageDeclarations>
         <sources>
-            <source href="https://aurehal.archives-ouvertes.fr/">
+            <source href="https://aurehal.archives-ouvertes.fr/structure/read/id/1060">
                 <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
             </source>
             <source>

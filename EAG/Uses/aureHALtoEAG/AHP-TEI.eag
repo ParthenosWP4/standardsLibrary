@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eag:eag xmlns:eag="http://www.archivesportaleurope.net/Portal/profiles/eag_2012/"
+         audience="external">
+   <control>
+      <recordId>FR-struct-1060</recordId>
+      <otherRecordId source="https://aurehal.archives-ouvertes.fr/structure/read/id/1060">struct-1060</otherRecordId>
+      <maintenanceAgency>
+         <agencyCode>HAL</agencyCode>
+         <agencyName>Centre pour la Communcation scientfique directe (CCSD) - Hyper archives en ligne</agencyName>
+      </maintenanceAgency>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <agent/>
+            <agentType>human</agentType>
+            <eventDateTime standardDateTime="2014-10-24">2014-10-24</eventDateTime>
+            <eventType>revised</eventType>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <languageDeclarations>
+         <languageDeclaration>
+            <language languageCode="fre">français</language>
+            <script scriptCode="Latn">latin</script>
+         </languageDeclaration>
+      </languageDeclarations>
+      <sources>
+         <source href="https://aurehal.archives-ouvertes.fr/">
+            <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <archguide>
+      <identity>
+         <autform>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP</autform>
+         <parform>LHSP</parform>
+      </identity>
+      <desc>
+         <repositories>
+            <repository>
+               <location localType="visitors address">
+                  <country>FR</country>
+                  <municipalityPostalcode>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</municipalityPostalcode>
+                  <street>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</street>
+               </location>
+               <timetable>
+                  <opening/>
+               </timetable>
+               <access question="no"/>
+               <accessibility question="no"/>
+               <webpage href="http://poincare.univ-lorraine.fr/fr">http://poincare.univ-lorraine.fr/fr</webpage>
+            </repository>
+         </repositories>
+      </desc>
+   </archguide>
+   <relations>
+      <eagRelation eagRelationType="hierarchical-parent">
+         <relationEntry source="">Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP CNRS Université Nancy 2 Université de Lorraine UL</relationEntry>
+         <relationEntry source="">UMR7117</relationEntry>
+      </eagRelation>
+      <eagRelation eagRelationType="hierarchical-parent">
+         <relationEntry source="">Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP CNRS Université Nancy 2 Université de Lorraine UL</relationEntry>
+         <relationEntry source="">UMR7117</relationEntry>
+      </eagRelation>
+      <eagRelation eagRelationType="hierarchical-parent">
+         <relationEntry source="">Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP CNRS Université Nancy 2 Université de Lorraine UL</relationEntry>
+         <relationEntry source="">UMR7117</relationEntry>
+      </eagRelation>
+   </relations>
+</eag:eag>
