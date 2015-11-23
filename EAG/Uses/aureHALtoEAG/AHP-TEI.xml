@@ -2,7 +2,6 @@
 <?xml-stylesheet type="text/xsl" href="HAL2EAG.xsl"?>
 <str>
 <org type="laboratory" xml:id="struct-1060" status="VALID">
-    <!-- élément idno/@IdRef rajouté par Charles, présent dans beaucoup de notices -->
     <idno type="IdRef">035115734</idno>
     <orgName>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré</orgName>
     <orgName type="acronym">LHSP</orgName>

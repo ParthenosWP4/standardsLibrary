@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:eag="http://www.archivesportaleurope.net/Portal/profiles/eag_2012/">
-
+    
     <xsl:output method="xml" indent="yes"/>
- 
     <xsl:template match="/">
         <eag:eag audience="external">           
             <!-- LR
@@ -49,8 +48,6 @@
                         <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
                     </source>
                 </sources>
-                
-                
             </control>
             <archguide>
                 <identity>
@@ -88,7 +85,7 @@
     
     <xsl:template match="relation">
         <eagRelation eagRelationType="hierarchical-parent">
-            <relationEntry source="">
+            <relationEntry source="{/str/org/listRelation/relation/@active}">
                 <xsl:value-of select="/str/org/orgName"/>
             </relationEntry>
             <relationEntry source="">
