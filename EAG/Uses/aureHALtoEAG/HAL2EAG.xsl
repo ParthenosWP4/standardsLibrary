@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:eag="http://www.archivesportaleurope.net/Portal/profiles/eag_2012/">
+<<<<<<< HEAD
     <xsl:output method="xml" indent="yes"/>
  
     <xsl:template match="/">
@@ -9,7 +10,6 @@
         J’aimerais:
         - utiliser de façon conservatrice l’URL AureHal (https://aurehal.archives-ouvertes.fr/structure/read/id/1060 ?)
         - m’assurer quand dans AureHal on sache indiquer d’autres identifiants quand ils sont disponibles.
-        
         - avoir un vrai export TEI d’AureHAL
         Concrètement, ça veut dire avoir un document TEI pour une transaction comme dans HAL
         (dans l’élément <body> et un <listOrg> avec l’ensemble des <org> nécessaires).
@@ -27,7 +27,6 @@
                <!-- Pour la maintenance, en attente des contacts avec HAL -->
                 <maintenanceAgency>
                     <agencyCode>HAL</agencyCode>
-                    <agencyName>Centre pour la Communcation scientfique directe (CCSD) - Hyper archives en ligne</agencyName>
                 </maintenanceAgency>
                 <maintenanceStatus>revised</maintenanceStatus>
                 <maintenanceHistory>
@@ -38,21 +37,29 @@
                         <eventType>revised</eventType>
                     </maintenanceEvent>
                 </maintenanceHistory>
+<<<<<<< HEAD
                 
                 
                 <languageDeclarations>
                     <!-- La langue n'est pas déclarée dans la source. Je laisse comme ça -->
+=======
+                <languageDeclarations>
+>>>>>>> master
                     <languageDeclaration>
                         <language languageCode="fre">français</language>
                         <script scriptCode="Latn">latin</script>
                     </languageDeclaration>
                 </languageDeclarations>
+<<<<<<< HEAD
                 
                 <!-- Idem -->
+=======
+>>>>>>> master
                 <sources>
                     <source href="https://aurehal.archives-ouvertes.fr/">
                         <sourceEntry>Accès unifié aux référentiels HAL</sourceEntry>
                     </source>
+<<<<<<< HEAD
                 </sources>
                 
                 
@@ -60,6 +67,19 @@
             <archguide>
                 <identity>
                     <xsl:apply-templates select="idno"/>
+=======
+                    <source>
+                        <objectXMLWrap>
+                            <tei>
+                                <ref type="url">http://poincare.univ-lorraine.fr/fr</ref>
+                            </tei>
+                        </objectXMLWrap>
+                    </source>
+                </sources>
+            </control>
+            <archguide>
+                <identity>
+>>>>>>> master
                     <autform>
                         <xsl:value-of select="/str/org[1]/orgName"/>
                     </autform>
@@ -70,11 +90,27 @@
                 <desc>
                     <repositories>
                         <repository>
+<<<<<<< HEAD
                            <xsl:apply-templates select="/str/org[1]/desc"/>
+=======
+                            <geogarea>Europe</geogarea>
+                            <location localType="visitors address">
+                                <country>France</country>
+                                <municipalityPostalcode>F-54001 NANCY Cedex</municipalityPostalcode>
+                                <street>91, avenue de la Libération BP 454.</street>
+                            </location>
+                            <timetable>
+                                <opening/>
+                            </timetable>
+                            <!-- Il n'y a pas l'information dans la notice aureHAL, donc j'ai donné par dégaut à l'attribut question (qui est requis) la valeur yes -->
+                            <access question="yes"/>
+                            <accessibility question="yes"/>
+>>>>>>> master
                         </repository>
                     </repositories>
                 </desc>
             </archguide>
+<<<<<<< HEAD
             
             <relations>
                 <xsl:apply-templates select="/str/org/listRelation/relation"/>
@@ -121,3 +157,45 @@
         <webpage href="{/str/org[1]/desc/ref[@type = 'url']}"><xsl:value-of select="/str/org[1]/desc/ref[@type = 'url']"/></webpage>
     </xsl:template>
 </xsl:stylesheet>
+=======
+            <relations>
+                <!-- L'attribut href est problématique ici, puisqu'il est censé décrire l'URI du lieu de ressource, et non pas sa description dans aureHAL -->
+                <eagRelation eagRelationType="hierarchical-parent">
+                    <relationEntry source="https://aurehal.archives-ouvertes.fr/structure/read/id/441569">CNRS</relationEntry>
+                    <relationEntry>UMR7117</relationEntry>
+                    <!--
+                Je n'ai pas trouvé comment intégrer l'adresse des relations. Il y a assez peu d'options.
+                
+                <placeEntry countryCode="FR"></placeEntry>-->
+                </eagRelation>
+                <eagRelation eagRelationType="hierarchical-parent">
+                    <relationEntry source="https://aurehal.archives-ouvertes.fr/structure/read/id/300292">Université Nancy 2</relationEntry>
+                    <dateRange>
+                        <fromDate/>
+                        <toDate standardDate="2011-12-31">2011-12-31</toDate>
+                    </dateRange>
+                    <!--<placeEntry countryCode="FR"></placeEntry>-->
+                </eagRelation>
+                <eagRelation eagRelationType="hierarchical-parent">
+                    <relationEntry source="https://aurehal.archives-ouvertes.fr/structure/read/id/413289">Université de Lorraine</relationEntry>
+                    <relationEntry>UL</relationEntry>
+                    <!--
+                même commentaire que pour les adresses.
+                <objectXMLWrap >
+                <tei>
+                    <ref type="url">http://www.univ-lorraine.fr/</ref>
+                </tei>
+            </objectXMLWrap>
+             -->
+                    <dateRange>
+                        <fromDate standardDate="2012-01-01">2012-01-01</fromDate>
+                        <toDate/>
+                    </dateRange>
+                    <!-- <placeEntry countryCode="FR">34 cours Léopold - CS 25233 - 54052 Nancy cedex</placeEntry>
+                -->
+                </eagRelation>
+            </relations>
+        </eag:eag>
+    </xsl:template>
+</xsl:stylesheet>
+>>>>>>> master
