@@ -6,6 +6,7 @@
       <otherRecordId source="https://aurehal.archives-ouvertes.fr/structure/read/id/1060">struct-1060</otherRecordId>
       <maintenanceAgency>
          <agencyCode>HAL</agencyCode>
+         <agencyName>CCSD</agencyName>
       </maintenanceAgency>
       <maintenanceStatus>revised</maintenanceStatus>
       <maintenanceHistory>
@@ -30,12 +31,14 @@
    </control>
    <archguide>
       <identity>
+         <repositorid countrycode="FR" repositorycode="FR-035115734"/>
          <autform>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP</autform>
          <parform>LHSP</parform>
       </identity>
       <desc>
          <repositories>
             <repository>
+               <geogarea/>
                <location localType="visitors address">
                   <country>FR</country>
                   <municipalityPostalcode>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</municipalityPostalcode>
@@ -53,16 +56,45 @@
    </archguide>
    <relations>
       <eagRelation eagRelationType="hierarchical-parent">
-         <relationEntry source="#struct-441569 #struct-300292 #struct-413289">Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP CNRS Université Nancy 2 Université de Lorraine UL</relationEntry>
-         <relationEntry source="">UMR7117</relationEntry>
+         <relationEntry source="">CNRS</relationEntry>
+         <descriptiveNote>
+            <p/>
+            <p/>
+         </descriptiveNote>
+         <repositoryEntry>UMR7117</repositoryEntry>
+         <dateRange>
+            <fromDate/>
+            <toDate/>
+         </dateRange>
       </eagRelation>
       <eagRelation eagRelationType="hierarchical-parent">
-         <relationEntry source="#struct-441569 #struct-300292 #struct-413289">Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP CNRS Université Nancy 2 Université de Lorraine UL</relationEntry>
-         <relationEntry source="">UMR7117</relationEntry>
+         <relationEntry source="">Université Nancy 2</relationEntry>
+    
+         <descriptiveNote>
+            <p/>
+            <p/>
+         </descriptiveNote>
+         <repositoryEntry/>
+         <dateRange>
+            <fromDate/>
+            <toDate>2011-12-31</toDate>
+         </dateRange>
       </eagRelation>
       <eagRelation eagRelationType="hierarchical-parent">
-         <relationEntry source="#struct-441569 #struct-300292 #struct-413289">Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré LHSP CNRS Université Nancy 2 Université de Lorraine UL</relationEntry>
-         <relationEntry source="">UMR7117</relationEntry>
+         <relationEntry source="IdRef">157040569</relationEntry>
+         <relationEntry source="Identifiant Université de Lorraine">[UL]100--</relationEntry>
+         <relationEntry source="">Université de Lorraine</relationEntry>
+         <relationEntry source="acronym">UL</relationEntry>
+    
+         <descriptiveNote>
+            <p>34 cours Léopold - CS 25233 54052 Nancy cedex</p>
+            <p>http://www.univ-lorraine.fr/</p>
+         </descriptiveNote>
+         <repositoryEntry/>
+         <dateRange>
+            <fromDate>2012-01-01</fromDate>
+            <toDate/>
+         </dateRange>
       </eagRelation>
    </relations>
 </eag:eag>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Pas besoin de le reprendre -->
+            <title>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré. AureHAL TEI export</title>
+         </titleStmt>
+         <publicationStmt>
+            <!-- devient 
+               
+               <maintenanceAgency>
+                  <agencyName></agencyName>
+               </maintenanceAgency> -->
+            <publisher>CCSD</publisher>
+            <date when="2015-11-17T13:08:04.794Z">2015-11-17T13:08:04.794Z</date>
+         </publicationStmt>
+         <sourceDesc>
+            <!-- Pas sûr de moi -->
+            <p>https://aurehal.archives-ouvertes.fr/structure/read/id/1060</p>
+         </sourceDesc>
+      </fileDesc>
+     <!-- revisionDesc devient maintenanceHistory -->
+     <revisionDesc>
+        <listChange>
+           <change type="cancelled|deleted|deletedMerged|deletedReplaced|deletedSplit|derived|new|revised">
+              <date>Date de la modification</date>
+              <name role="human|machine">Nom de l'agent qui a modifidé la notice</name>
+              <p>created|revised|deleted|cancelled|derived|updated|published</p>
+           </change>
+           <change>
+              <date></date>
+              <name></name>
+              <p>created|revised|deleted|cancelled|derived|updated|published</p>
+           </change>
+        </listChange>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <listOrg>
+            <!-- @status pas autorisé dans org.
+                  Possible d'utiliser @role?-->
+            <org type="laboratory" xml:id="struct-1060" status="VALID" >
+               <idno type="IdRef">035115734</idno>
+               <orgName>Laboratoire d'Histoire des Sciences et de Philosophie - Archives Henri Poincaré</orgName>
+               <orgName type="acronym">LHSP</orgName>
+               <desc>
+                  <address>
+                     <addrLine>91, avenue de la Libération BP 454. F-54001 NANCY Cedex</addrLine>
+                     <country key="FR"></country>
+                  </address>
+                  <ref type="url">http://poincare.univ-lorraine.fr/fr</ref>
+               </desc>               
+            </org>
+            <!-- @status pas autorisé -->
+            <org type="institution" xml:id="struct-441569" status="VALID">
+               <orgName>CNRS</orgName>
+               <desc>
+                  <address>
+                  <!-- Il faut indiquer le continent, je ne sais pas trop comment.
+                 On peut faire une requête sur geonames pour récupérer ça -->                     
+                     <country key="FR"></country>
+                  </address>
+               </desc>
+            </org>
+            <!-- @status pas autorisé -->
+            <org type="institution" xml:id="struct-300292" status="OLD">
+               <orgName>Université Nancy 2</orgName>
+               <desc>
+                  <date type="end">2011-12-31</date>
+                  <address>
+                     <country key="FR"></country>
+                  </address>
+               </desc>
+            </org>
+            <!-- @status pas autorisé -->
+            <org type="institution" xml:id="struct-413289" status="VALID">
+               <idno type="IdRef">157040569</idno>
+               <idno type="Identifiant Université de Lorraine">[UL]100--</idno>
+               <orgName>Université de Lorraine</orgName>
+               <orgName type="acronym">UL</orgName>
+               <desc>
+                  <!-- <date> doit être dans <desc> -->
+                  <date type="start">2012-01-01</date>
+                  <address>
+                     <addrLine>34 cours Léopold - CS 25233</addrLine>
+                     <addrLine>54052 Nancy cedex</addrLine>
+                     <country key="FR"></country>
+                  </address>
+                  <ref type="url">http://www.univ-lorraine.fr/</ref>
+               </desc>
+            </org>
+            <listRelation>
+               <!-- @key n'est pas obligé, mais facilite le lien-->
+               <relation key="struct-44159" name="UMR7117" active="#struct-441569" type="direct"></relation>
+               <relation key="struct-300292" active="#struct-300292" type="direct"></relation>
+               <relation key="struct-413289" active="#struct-413289" type="direct"></relation>
+            </listRelation>
+         </listOrg>
+      </body>
+  </text>
+</TEI>

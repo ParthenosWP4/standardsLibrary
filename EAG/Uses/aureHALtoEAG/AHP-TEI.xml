@@ -37,13 +37,15 @@
     </desc>
 </org>
 <org type="institution" xml:id="struct-413289" status="VALID">
-    <idno type="IdRef">157040569</idno><idno type="Identifiant Université de Lorraine">[UL]100--</idno>
+    <idno type="IdRef">157040569</idno>
+    <idno type="Identifiant Université de Lorraine">[UL]100--</idno>
     <orgName>Université de Lorraine</orgName>
     <orgName type="acronym">UL</orgName>
     <date type="start">2012-01-01</date>
     <desc>
         <address>
-            <addrLine>34 cours Léopold - CS 25233 - 54052 Nancy cedex</addrLine>
+            <addrLine>34 cours Léopold - CS 25233</addrLine>
+            <addrLine>54052 Nancy cedex</addrLine>
             <country key="FR"></country>
         </address>
         <ref type="url">http://www.univ-lorraine.fr/</ref>
