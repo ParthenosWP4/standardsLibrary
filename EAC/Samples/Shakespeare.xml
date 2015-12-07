@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../EACSpec.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns="toto" type="persname">
+    <eacheader status="draft" langencoding="iso639-2b" scriptencoding="iso15924"
+        dateencoding="iso8601" countryencoding="iso3166-1" ownerencoding="iso15511">
+        <eacid syskey="Example01" system="VaU" countrycode="US" ownercode="VaU"
+            >US::VaU::Example01</eacid>
+        <mainhist>
+            <mainevent maintype="create">
+                <name>Daniel Pitti</name>
+                <maindate calendar="gregorian" normal="20010509">May 9, 2001</maindate>
+                <maindesc>Record created using LCNAF record found on the Internet. Incomplete source
+                    data available.</maindesc>
+            </mainevent>
+        </mainhist>
+        <languagedecl>
+            <language languagecode="eng" scriptcode="latn">English in Latin Script.</language>
+        </languagedecl>
+        <ruledecl>
+            <rule id="aacr2">Anglo-American Cataloging Rules, Second Edition.</rule>
+        </ruledecl>
+        <sourcedecl>
+            <source id="lcnaf" syskey="Notsure">
+                <title linktype="simple">Library of Congress Name Authority File, record id: </title>
+                <sourceinfo>One of these for each 670</sourceinfo>
+            </source>
+        </sourcedecl>
+    </eacheader>
+    <condesc>
+        <identity>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sek`spiri, </part>
+                <part type="forename">Uiliam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Saixper, </part>
+                <part type="forname">Gouilliam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shakspere, </part>
+                <part type="forname">William</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shikisbir, </part>
+                <part type="forname">Wilyam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Szekspir, </part>
+                <part type="forname">Wiliam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sekspyras</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shekspir, </part>
+                <part type="forname">Vil'iam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sekspir, </part>
+                <part type="forname">Viljem</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Tsikinya-chaka</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sha-shih-pi-ya</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shashibiya</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shekspir, </part>
+                <part type="forname">Vilyam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shakspir, </part>
+                <part type="forname">Vilyam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Syeiksup`io</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shekspir, </part>
+                <part type="forname">V. </part>
+                <nameadd type="expansion">(Vil'iam)</nameadd>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Szekspir, </part>
+                <part type="forname">William</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shakespeare, </part>
+                <part type="forname">Guglielmo</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shake-speare, </part>
+                <part type="forname">William</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sha-o</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sekspir</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shekspir, </part>
+                <part type="forname">Uiliam</part>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Shekspir, </part>
+                <part type="forname">U. </part>
+                <nameadd type="expansion">(Uiliam)</nameadd>
+            </pershead>
+            <pershead rule="aacr2" scriptcode="latn">
+                <part type="surname">Sekspir, </part>
+                <part type="forname">Vilijam</part>
+            </pershead>
+            <pershead rule="aacr2" authorized="VaU" languagecode="eng" scriptcode="latn">
+                <part type="surname"> Shakespeare, </part>
+                <part type="forename">William</part>
+            </pershead>
+            <nameadds>
+                <existdate scope="begin-end" form="closedspan" era="ce" calendar="gregorian"
+                    normal="1564/1616">1564-1616</existdate>
+            </nameadds>
+            <sourceref sourceref="lcnaf"/>
+        </identity>
+    </condesc>
+</eac-cpf>

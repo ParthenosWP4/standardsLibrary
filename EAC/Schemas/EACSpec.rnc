@@ -1,0 +1,176 @@
+default namespace = "toto"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2013-07-28T15:38:04Z. 
+# Edition: 2.5.0. Last updated on
+#	26th July 2013.
+# Edition Location: http://www.tei-c.org/Vault/P5/2.5.0/
+#
+
+# CC-BY
+
+sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+att.EACGlobal.attributes =
+  att.EACGlobal.attribute.id,
+  att.EACGlobal.attribute.altrender,
+  att.EACGlobal.attribute.audience
+att.EACGlobal.attribute.id =
+  
+  ## Left span boundary
+  attribute id { xsd:ID }?
+att.EACGlobal.attribute.altrender =
+  
+  ##
+  attribute altrender { text }?
+att.EACGlobal.attribute.audience =
+  
+  ##
+  attribute audience { text }?
+att.typed.attributes = att.typed.attribute.type
+att.typed.attribute.type =
+  
+  ## characterizes the element in some sense, using any convenient classification scheme or typology.
+  attribute type { text }?
+att.coded.attribute.countrycode =
+  
+  ## A unique code for the country in which the materials being described are held.
+  attribute countrycode { xsd:token }?
+att.normalized.attributes = att.normalized.attribute.normal
+att.normalized.attribute.normal =
+  
+  ## A consistent form, usually from a controlled vocabulary list to facilitate retrieval
+  attribute normal { text }?
+att.access.attributes =
+  att.access.attribute.source,
+  att.access.attribute.rules,
+  att.access.attribute.authfilenumber,
+  att.access.attribute.normal
+att.access.attribute.source =
+  
+  ##
+  attribute source { xsd:NMTOKEN }?
+att.access.attribute.rules =
+  
+  ##
+  attribute rules { xsd:NMTOKEN }?
+att.access.attribute.authfilenumber =
+  
+  ##
+  attribute authfilenumber { text }?
+att.access.attribute.normal =
+  
+  ## A consistent form, usually from a controlled vocabulary list to facilitate retrieval
+  attribute normal { text }?
+att.roled.attributes = att.roled.attribute.role
+att.roled.attribute.role =
+  
+  ## A contextual role or relationship for the person, family, corporate body, or geographic location. In linking elements such as ptr, information that explains to application software the part that a remote resource plays in a link.
+  attribute role { text }?
+model.data = model.access | date
+model.data_alternation = model.access_alternation | date
+model.data_sequence = model.access_sequence, date
+model.data_sequenceOptional = model.access_sequenceOptional?, date?
+model.data_sequenceOptionalRepeatable =
+  model.access_sequenceOptionalRepeatable*, date*
+model.data_sequenceRepeatable = model.access_sequenceRepeatable+, date+
+model.inter = model.inter.noquote
+model.inter.noquote = chronList | \list
+model.inter.noquote_alternation = chronList | \list
+model.inter.noquote_sequence = chronList, \list
+model.inter.noquote_sequenceOptional = chronList?, \list?
+model.inter.noquote_sequenceOptionalRepeatable = chronList*, \list*
+model.inter.noquote_sequenceRepeatable = chronList+, \list+
+model.blocks = model.inter | p
+model.phrase.bare = notAllowed
+model.access = cpfRelation | function | occupation
+model.access_alternation = cpfRelation | function | occupation
+model.access_sequence = cpfRelation, function, occupation
+model.access_sequenceOptional = cpfRelation?, function?, occupation?
+model.access_sequenceOptionalRepeatable =
+  cpfRelation*, function*, occupation*
+model.access_sequenceRepeatable = cpfRelation+, function+, occupation+
+model.para.content = model.inter | model.phrase.plus
+model.phrase.plus = model.data
+addressLine =
+  
+  ##  (Address Line) One line of a postal or other address
+  element addressLine { text, att.EACGlobal.attributes, empty }
+biogHist =
+  
+  ##  (Biography or History) A concise essay or chronology that places the archival materials in context by providing information about their creator(s). Includes significant information about the life of an individual or family, or the administrative history of a corporate body. The bioghist may contain just text in a series of Paragraphs p, and/or a Chronology List chronlist that matches dates and date ranges with associated events. Additional bioghist elements may be nested inside one another when a complex body of materials, such as a collection of family papers, is being described, and separately headed sections are desired. The bioghist element may also be nested to designate a portion of the essay or chronology that might be extracted as a MARC 545 subfield.
+  element biogHist { (model.blocks)+, att.EACGlobal.attributes, empty }
+chronList =
+  
+  ##  (Chronology List) A formatting element that designates information about the sequence in which significant past events, associated with the described materials, occurred. The chronlist also provides a structured display to list these dates and events. Each chronlist contains Chronology Items chronitems that pair a date or date range with a brief description of an associated event or events eventgrp.
+  element chronList { text, att.EACGlobal.attributes, empty }
+cpfRelation =
+  
+  ##  (Corporate Body, Person, or Family Relation) corporate body, person, or family related to the described entity
+  element cpfRelation {
+    (text | model.phrase.bare)*,
+    att.EACGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+date =
+  
+  ##  (Date) A generic element that contains a month, day, or year in any format. Use date to identify any dates that merit encoding, except for the creation and other relevant dates of the described materials, which are instead tagged with the unitdate element. Examples of dates that might merit encoding are a person's birth date, the date the materials were acquired, or the date of an event in a chronology. These dates may be entered in the form of text or numbers, and may consist of a single date or range of dates.
+  element date {
+    (text | model.phrase.bare)*,
+    att.EACGlobal.attributes,
+    att.typed.attributes,
+    att.normalized.attributes,
+    empty
+  }
+eac-cpf =
+  
+  ##  (Encoded Archival Context - Corporate Bodies, Persons, and
+  ##                             Families) contains contains the entire EAC-CPF description of the person, corporate body, or family.
+  element eac-cpf { text, att.EACGlobal.attributes, empty }
+function =
+  
+  ##  (Function) Terms for the spheres of activities and processes that generated the described materials. Such terms often provide useful access points to the materials, especially for corporate, government, or institutional records. Examples include: collecting taxes and entertaining.
+  element function {
+    text, att.EACGlobal.attributes, att.access.attributes, empty
+  }
+item =
+  
+  ##  (Item) A formatting element used in one of three contexts: as an entry in a simple, random, or ordered list; as part of a defitem inside a definition list; or as an entry within the change element. In the first instance, the item can be a number, word, or phrase. In a definition list, which is usually displayed as two columns, a defitem pairs a label with a corresponding item containing text that defines, describes, or explains the terms or other text tagged as the label. In the eadheader revisiondesc change element, the item designates information about a revision to the finding aid and is often paired with a date.
+  element item {
+    (text | model.para.content)*, att.EACGlobal.attributes, empty
+  }
+language =
+  
+  ##  (Language) A subelement of langusage within the profiledesc portion of the eadheader that specifies the language or communication system in which the finding aid is written. For bilingual or multilingual finding aids, either identify each language in a separate language element, or mention only the predominant language. The LANGCODE attribute can be used to provide the three-letter ISO 639-2b code for the language.
+  element language {
+    (text | model.phrase.bare)*,
+    att.EACGlobal.attributes,
+    
+    ## The three-lettter code for the language in which an abstract is written, for the language of the finding aid and the language of the materials.
+    attribute langcode { text }?,
+    
+    ## The four-letter code for the writing script used with a given language. 
+    attribute scriptcode { text }?,
+    empty
+  }
+\list =
+  
+  ##  (List) A formatting element that contains a series of words or numerals (called items) separated from one another and arranged in a linear, often vertical sequence.
+  element list { (item+ | listhead?), att.EACGlobal.attributes, empty }
+listhead =
+  
+  ##  (List Heading) A formatting element that groups headings for columns in a definition, marked, or ordered list, Chronology List chronlist, or index. The headings are called head01 and head02.
+  element listhead { text, att.EACGlobal.attributes, empty }
+occupation =
+  
+  ##  (Occupation) A term identifying a type of work, profession, trade, business, or avocation significantly reflected in the materials being described.
+  element occupation {
+    text, att.EACGlobal.attributes, att.access.attributes, empty
+  }
+p =
+  
+  ##  (Paragraph) One or more sentences that form a logical prose passage. A paragraph may be a subdivision of a larger composition, or it may exist alone. It is usually typographically distinct: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word is often indented, enlarged, or both. The p element is an important textual feature, which may be used inside of more than thirty other elements. The content model of a p provides access to thirty-three other elements, including reference and linking elements, formatting elements, controlled access elements, and some of the Descriptive Identification did subelements.
+  element p { text, att.EACGlobal.attributes, empty }
+start = eac-cpf
