@@ -1,0 +1,747 @@
+default namespace = "toto"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2015-12-08T20:24:46Z. .
+# TEI Edition: Version 2.9.1. Last updated on
+#	15th October 2015, revision 46ac023
+# TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
+#
+
+# CC-BY
+
+sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+abbreviation =
+  
+  ## (Abbreviation) abbreviation or code for identifying a thesauri, controlled vocabularies, or other standard used in formulating and compiling the EAC-CPF description
+  element abbreviation { text, att.EACGlobal.attributes, empty }
+abstract =
+  
+  ## (Abstract) brief summary of the information contained within the biogHist as a whole
+  element abstract { (text | span)*, att.EACGlobal.attributes, empty }
+address =
+  
+  ## (Address) A postal or other address.
+  element address { addressLine+, att.EACGlobal.attributes, empty }
+addressLine =
+  
+  ## (Address Line) One line of a postal or other address
+  element addressLine { text, att.EACGlobal.attributes, empty }
+agencyCode =
+  
+  ## (Agency Code) The code that represents the institution or service responsible for the creation, maintenance and/or dissemination of the EAC-CPF instance
+  element agencyCode { text, att.EACGlobal.attributes, empty }
+agencyName =
+  
+  ## (Agency Name ) The name of the institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance
+  element agencyName { text, att.EACGlobal.attributes, empty }
+agent =
+  
+  ## (Agent) The agent (human or machine) responsible for an event in the maintenance of the EAC instance.
+  element agent { text, att.EACGlobal.attributes, empty }
+agentType =
+  
+  ## (Agent Type) type of agent responsible for a maintenance event of the EAC-CPF instance
+  element agentType {
+    list { "human", "machine" },
+    att.EACGlobal.attributes,
+    empty
+  }
+alternativeForm =
+  
+  ## (Alternative Form) Qualifies the name contained in nameEntry or set of names contained in nameEntryParallel as alternative or variant forms
+  element alternativeForm { text, att.EACGlobal.attributes, empty }
+alternativeSet =
+  
+  ## (Alternative Set) container element for two or more authority records derived from two or more authority systems, expressed within a single EAC-CPF instance
+  element alternativeSet {
+    setComponent+, att.EACGlobal.attributes, empty
+  }
+authorizedForm =
+  
+  ## (Authorized Form) Qualifies the name contained in nameEntry or the set of names contained in nameEntryParallel as authorized access points.
+  element authorizedForm {
+    setComponent+, att.EACGlobal.attributes, empty
+  }
+biogHist =
+  
+  ## (Biographical or Historical Note ) A concise essay and/or chronology that provides biographical or historical information about the EAC-CPF entity.
+  element biogHist {
+    abstract?,
+    (chronList | \list | p | outline | citation)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+chronItem =
+  
+  ## (Chronological Item) A container element that keeps a date or a date range paired with an associated event and an optional place within a Chronology List chronList.
+  element chronItem {
+    (date, dateRange)+,
+    placeEntry?,
+    event,
+    att.EACGlobal.attributes,
+    empty
+  }
+chronList =
+  
+  ## (Chronology List) A structured chronological list of events, dates, and (optionally) places that may be used within the biogHist element.
+  element chronList { chronItem+, att.EACGlobal.attributes, empty }
+citation =
+  
+  ## (Citation) A linking element that cites an external resource.
+  element citation {
+    (text | span)*,
+    att.EACGlobal.attributes,
+    att.xlink.attributes,
+    empty
+  }
+componentEntry =
+  
+  ## (Component Entry) A caption that can be used to provide identification and access to a linked resource.
+  element componentEntry { text }
+control =
+  
+  ## (Control) The element of the instance that contains control information about its identity, creation, maintenance, status, and the rules and authorities used in the composition of the description.
+  element control {
+    recordId,
+    maintenanceStatus,
+    maintenanceAgency,
+    maintenanceHistory,
+    (publicationStatus, languageDeclaration, sources)?,
+    (otherRecordId,
+     conventionDeclaration,
+     localTypeDeclaration,
+     localControl)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+conventionDeclaration =
+  
+  ## (Convention Declaration) A declaration of the rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAC-CPF instance. 
+  element conventionDeclaration {
+    (citation+ | (abbreviation, descriptiveNote)*),
+    att.EACGlobal.attributes,
+    empty
+  }
+cpfDescription =
+  
+  ## (Corporate Body, Person, or Family Relation) corporate body, person, or family related to the described entity
+  element cpfDescription {
+    (identity+ | (description, relations, alternativeSet)*),
+    att.EACGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+cpfRelation =
+  
+  ## (Corporate Body, Person, or Family Relation) corporate body, person, or family related to the described entity
+  element cpfRelation {
+    (text | model.phrase.bare)*,
+    att.EACGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+date =
+  
+  ## (Date) A generic element that contains a month, day, or year in any format. Use date to identify any dates that merit encoding, except for the creation and other relevant dates of the described materials, which are instead tagged with the unitdate element. Examples of dates that might merit encoding are a person's birth date, the date the materials were acquired, or the date of an event in a chronology. These dates may be entered in the form of text or numbers, and may consist of a single date or range of dates.
+  element date {
+    (text | model.phrase.bare)*,
+    att.EACGlobal.attributes,
+    att.typed.attributes,
+    att.normalized.attributes,
+    empty
+  }
+dateRange =
+  
+  ## (Date range) The date range of an event in the history of, or a relationship with, the person, family, or corporate body being described in the EAC-CPF instance. It contains fromDate and toDate child elements.
+  element dateRange {
+    (fromDate, toDate)?, att.EACGlobal.attributes, empty
+  }
+dateSet =
+  
+  ## (Date Set) A grouping element that facilitates complex date expressions by being able to combine single dates and date ranges, multiple single dates, or multiple date ranges. 
+  element dateSet {
+    (date, dateRange)+, att.EACGlobal.attributes, empty
+  }
+description =
+  
+  ## (Description) The elements that constitute together permit descriptive information to be encoded in either structured or unstructured fashions, or in a combined approach. description accommodates the encoding of all the data elements that comprise the Description Area of ISAAR (CPF) including historical, biographical, and genealogical information; legal status and mandates; functions, occupations, and activities, and the dates and places that further constrain those elements.
+  element description {
+    existDates?,
+    (places
+     | place
+     | localDescription
+     | localDescriptions
+     | legalStatus
+     | legalStatuses
+     | function
+     | functions
+     | languageUsed
+     | languagesUsed
+     | occupation
+     | occupations
+     | mandate
+     | mandates
+     | structureOrGenealogy
+     | generalContext)*,
+    biogHist*,
+    att.EACGlobal.attributes,
+    empty
+  }
+descriptiveNote =
+  
+  ## (Descriptive Note) A generic element that provides additional information and specifications, in textual form, concerning the descriptive element in which it is contained. 
+  element descriptiveNote { p+, att.EACGlobal.attributes, empty }
+eac-cpf =
+  
+  ## (Encoded Archival Context - Corporate Bodies, Persons, and
+  ##                             Families) contains contains the entire EAC-CPF description of the person, corporate body, or family.
+  element eac-cpf {
+    (control, (cpfDescription | multipleIdentities)),
+    att.EACGlobal.attributes,
+    empty
+  }
+entityId =
+  
+  ## (Entity Identifier) formal identifier used to designate the entity being described.
+  element entityId {
+    text, att.EACGlobal.attributes, att.coded.attributes, empty
+  }
+entityType =
+  
+  ## (Entity Type) The type of CPF entity being described. Values available are: person, corporateBody, or family.
+  element entityType {
+    ("person" | "corporateBody" | "family"),
+    att.EACGlobal.attributes,
+    empty
+  }
+event =
+  
+  ## (Event) That part of a Chronology List Item chronitem which describes or names something that happened. The event is paired with a date (a single date or date range) and can be grouped with other events in eventgrp, if multiple events need to be associated with the same date.
+  element event { text, att.EACGlobal.attributes, empty }
+eventDateTime =
+  
+  ## (Maintenance Event Date and Time) The date and time of a maintenance event for the EAC-CPF instance.
+  element eventDateTime { text, att.EACGlobal.attributes, empty }
+eventDescription =
+  
+  ## (Maintenance Event Description) The description of a maintenance event in the life of the EAC-CPF instance.
+  element eventDescription { text, att.EACGlobal.attributes, empty }
+eventType =
+  
+  ## (Maintenance Event Type) The type of maintenance event for the EAC-CPF instance.
+  element eventType {
+    ("cancelled"
+     | "created"
+     | "deleted"
+     | "derived"
+     | "revised"
+     | "updated"),
+    att.EACGlobal.attributes,
+    empty
+  }
+existDates =
+  
+  ## (Dates of Existence) The dates of existence of the entity being described, such as dates of establishment and dissolution for corporate bodies and dates of birth and death or floruit for persons. 
+  element existDates {
+    (date | dateRange | dateSet),
+    descriptiveNote?,
+    att.EACGlobal.attributes,
+    empty
+  }
+fromDate =
+  
+  ## (From Date) The beginning date in a date range.
+  element fromDate { text, att.EACGlobal.attributes, empty }
+function =
+  
+  ## (Function) Terms for the spheres of activities and processes that generated the described materials. Such terms often provide useful access points to the materials, especially for corporate, government, or institutional records. Examples include: collecting taxes and entertaining.
+  element function {
+    text, att.EACGlobal.attributes, att.access.attributes, empty
+  }
+functionRelation =
+  
+  ## (Function Relation) An element designed to encode a relationship between a function and the CPF entity described in the EAC-CPF instance.
+  element functionRelation {
+    relationEntry*,
+    (objectXMLWrap | objectBinWrap)?,
+    (date | dateRange | dateSet)?,
+    placeEntry?,
+    descriptiveNote?,
+    att.EACGlobal.attributes,
+    empty
+  }
+functions =
+  
+  ## (Functions) A grouping element used to bundle together individual function elements.
+  element functions {
+    function+,
+    descriptiveNote?,
+    (p, \list, citation, outline)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+generalContext =
+  
+  ## (General Context) An element that encodes information about the general social and cultural context of the CPF entity being described. 
+  element generalContext {
+    (p, \list, citation, outline)*, att.EACGlobal.attributes, empty
+  }
+identity =
+  
+  ## (Identity) A wrapper element for the name or names related to the identity being described within the cpfDescription element in the EAC-CPF instance. In case of multiple identities, a separate identity element is contained in each of the cpfDescription elements of instance.
+  element identity {
+    entityType,
+    entityId*,
+    descriptiveNote?,
+    (nameEntry, nameEntryParallel)+,
+    att.EACGlobal.attributes,
+    empty
+  }
+item =
+  
+  ## (Item) A formatting element that encodes the individual entries in a list.
+  element item { (text | span)*, att.EACGlobal.attributes, empty }
+language =
+  
+  ## (Language) The specification of a particular language used in the EAC-CPF instance or in the creative work of the CPF entity being described. 
+  element language {
+    text,
+    att.EACGlobal.attributes,
+    
+    ## The three-lettter code for the language in which an abstract is written, for the language of the finding aid and the language of the materials.
+    attribute langcode { text }?,
+    empty
+  }
+languageDeclaration =
+  
+  ## (Language Declaration) The declaration of the predominant language and script used in the EAC-CPF instance. 
+  element languageDeclaration {
+    language, script, descriptiveNote?, att.EACGlobal.attributes, empty
+  }
+languagesUsed =
+  
+  ## (Languages used) A grouping element used to bundle together individual languageUsed elements.
+  element languagesUsed {
+    languageUsed+, descriptiveNote?, att.EACGlobal.attributes, empty
+  }
+languageUsed =
+  
+  ## (Language used) The language and script used by the CPF entity being described.
+  element languageUsed {
+    language, script, descriptiveNote?, att.EACGlobal.attributes, empty
+  }
+legalStatus =
+  
+  ## (Legal Status) An element used to encode information about the legal status of a corporate body.
+  element legalStatus {
+    (term, citation, descriptiveNote)?,
+    placeEntry*,
+    (date | dateRange | dateSet)?,
+    att.EACGlobal.attributes,
+    empty
+  }
+legalStatuses =
+  
+  ## (Legal Statues) A grouping element used to bundle together individual legalStatus elements.
+  element legalStatuses {
+    legalStatus+,
+    descriptiveNote?,
+    (p, \list, citation, outline)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+level =
+  
+  ## (Level) A required element within outline that delineates the outline format.
+  element level { item, level*, att.EACGlobal.attributes, empty }
+\list =
+  
+  ## (List) A wrapper element to encode a simple list consisting of one or more item elements.
+  element list { item+, att.EACGlobal.attributes, empty }
+localControl =
+  
+  ## (Local Control) Any additional control entry necessary to accommodate local practice.
+  element localControl {
+    (term, (date | dateRange))?,
+    att.EACGlobal.attributes,
+    empty
+  }
+localDescription =
+  
+  ## (Local Description) Used to extend the descriptive categories to others available in a local system. Its meaning will depend on the context in which it occurs.
+  element localDescription {
+    (term, citation, descriptiveNote, (date | dateRange | dateSet))?,
+    placeEntry*,
+    att.EACGlobal.attributes,
+    empty
+  }
+localDescriptions =
+  
+  ## (Local Descriptions) A grouping element used to bundle together individual localDescription elements.
+  element localDescriptions {
+    localDescription+,
+    descriptiveNote?,
+    (p, \list, citation, outline)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+localTypeDeclaration =
+  
+  ## (Local Type Declaration) localTypeDeclaration is used to declare any local conventions used in localType in the EAC-CPF instance.
+  element localTypeDeclaration {
+    citation,
+    (abbreviation, descriptiveNote)?,
+    att.EACGlobal.attributes,
+    empty
+  }
+maintenanceAgency =
+  
+  ## (Maintenance Agency) The institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance.
+  element maintenanceAgency {
+    agencyName,
+    (agencyCode, descriptiveNote)?,
+    otherAgencyCode*,
+    att.EACGlobal.attributes,
+    empty
+  }
+maintenanceEvent =
+  
+  ## (Maintenance Event) A maintenance event in the life of the EAC-CPF instance.
+  element maintenanceEvent {
+    eventType,
+    eventDateTime,
+    agentType,
+    agent,
+    eventDescription?,
+    att.EACGlobal.attributes,
+    empty
+  }
+maintenanceHistory =
+  
+  ## (Maintenance History) The history of the creation and maintenance of the EAC-CPF instance.
+  element maintenanceHistory {
+    maintenanceEvent+, att.EACGlobal.attributes, empty
+  }
+maintenanceStatus =
+  
+  ## (Maintenance Status) The current drafting status of the EAC-CPF instance.
+  element maintenanceStatus {
+    ("revised"
+     | "deleted"
+     | "new"
+     | "deletedSplit"
+     | "deletedReplaced"
+     | "cancelled"
+     | "derived"),
+    att.EACGlobal.attributes,
+    empty
+  }
+mandate =
+  
+  ## (Mandate) The source of authority or mandate for the corporate body in terms of its powers, functions, responsibilities or sphere of activities, such as a law, directive, or charter.
+  element mandate {
+    (term, citation, descriptiveNote, (date | dateRange | dateSet))?,
+    placeEntry*,
+    att.EACGlobal.attributes,
+    empty
+  }
+mandates =
+  
+  ## (Mandates) A grouping element used to bundle together individual mandate elements.
+  element mandates {
+    mandate+,
+    descriptiveNote?,
+    (p, \list, citation, outline)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+multipleIdentities =
+  
+  ## (Multiple Identities) A wrapper element used to group together more than one cpfDescription within a single EAC-CPF instance.
+  element multipleIdentities {
+    cpfDescription, cpfDescription+, att.EACGlobal.attributes, empty
+  }
+nameEntry =
+  
+  ## (Name Entry) An element containing a name entry for a corporate body, person, or family. nameEntry is made up of one or more part elements so that the CPF entity can be identified with certainty and distinguished from others bearing the same or similar names.
+  element nameEntry {
+    part+,
+    (useDates, preferredForm)?,
+    (authorizedForm | alternativeForm),
+    att.EACGlobal.attributes,
+    empty
+  }
+nameEntryParallel =
+  
+  ## (Name Entry Parallel) A wrapper element for two or more nameEntry elements that represent parallel forms of the name.
+  element nameEntryParallel {
+    nameEntry,
+    nameEntry+,
+    useDates*,
+    (authorizedForm),
+    att.EACGlobal.attributes,
+    empty
+  }
+objectBinWrap =
+  
+  ## (Object Bin Wrap) This element provides a place for a base64-encoded binary representation of a resource.
+  element objectBinWrap {
+    xsd:base64Binary, att.EACGlobal.attributes, empty
+  }
+objectXMLWrap =
+  
+  ## (Object XML Wrap) A place for incorporating XML elements from any XML namespace.
+  element objectXMLWrap { text, att.EACGlobal.attributes, empty }
+occupation =
+  
+  ## (Occupation) An element that provides information about the occupation of the CPF entity being described.
+  element occupation {
+    (term, citation, descriptiveNote, (date | dateRange | dateSet))?,
+    placeEntry*,
+    att.EACGlobal.attributes,
+    empty
+  }
+occupations =
+  
+  ## (Occupations) A grouping element used to bundle together individual occupation elements.
+  element occupations {
+    occupation+,
+    descriptiveNote?,
+    (p, \list, citation, outline)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+otherAgencyCode =
+  
+  ## (Other Agency Code) Alternate code representing the institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance.
+  element otherAgencyCode { text, att.EACGlobal.attributes, empty }
+otherRecordId =
+  
+  ## (Other Record Id) Alternative record identifiers that may be associated with the EAC-CPF instance.
+  element otherRecordId { text, att.EACGlobal.attributes, empty }
+outline =
+  
+  ## (Outline) An element used within other elements of description to encode information in an outline format.
+  element outline { level+, att.EACGlobal.attributes, empty }
+p =
+  
+  ## (Paragraph) A generic element used within other elements of description that marks one or more sentences that form a logical prose passage.
+  element p { (text, span)*, att.EACGlobal.attributes, empty }
+part =
+  
+  ## (Part) part is used to distinguish components of the name of the CPF entity’s name within nameEntry.
+  element part { text, att.EACGlobal.attributes, empty }
+place =
+  
+  ## (Place) An element that provides information about a place or jurisdiction where the CPF entity was based, lived, or with which it had some other significant connection.
+  element place {
+    placeEntry*,
+    (placeRole,
+     address,
+     citation,
+     descriptiveNote,
+     (date | dateRange | dateSet))?,
+    att.EACGlobal.attributes,
+    empty
+  }
+placeEntry =
+  
+  ## (Place Entry) An element used to encode information about the place or jurisdiction where the CPF entity described in the EAC-CPF instance was based, lived, or with which it had some other significant connection.
+  element placeEntry { text, att.EACGlobal.attributes, empty }
+placeRole =
+  
+  ## (Place Role) An element to identify the contextual role a place or jurisdiction encoded in place elements has in relation to the CPF entity.
+  element placeRole { text, att.EACGlobal.attributes, empty }
+places =
+  
+  ## (Places) A grouping element used to bundle together individual place elements.
+  element places {
+    place+,
+    descriptiveNote?,
+    (p, \list, citation, outline)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+preferredForm =
+  
+  ## (Preferred Form of Name) An element used to indicate which of the parallel names recorded within nameEntryParallel, is the preferred one for display purposes in a given context.
+  element preferredForm { xsd:NMTOKEN, att.EACGlobal.attributes, empty }
+publicationStatus =
+  
+  ## (Publication Status) The current publication status of the EAC-CPF instance.
+  element publicationStatus {
+    ("inProcess" | "approved"), att.EACGlobal.attributes, empty
+  }
+recordId =
+  
+  ## (Record Identifier) The unique identifier for a particular instance.
+  element recordId { xsd:NMTOKEN, att.EACGlobal.attributes, empty }
+relationEntry =
+  
+  ## (Relation Entry) A descriptive element for relations that identifies the relationship in a textual form.
+  element relationEntry { text, att.EACGlobal.attributes, empty }
+relations =
+  
+  ## (Relations) A wrapper element for grouping one or more specific relations, each of them expressed by cpfRelation, resourceRelation, or functionRelation.
+  element relations {
+    (cpfRelation, resourceRelation, functionRelation)*,
+    att.EACGlobal.attributes,
+    empty
+  }
+resourceRelation =
+  
+  ## (Resource Relation) An element for encoding a relation between a resource and the CPF entity.
+  element resourceRelation {
+    relationEntry*,
+    (objectXMLWrap | objectBinWrap)*,
+    (date | dateRange | dateSet)?,
+    (placeEntry, descriptiveNote)?,
+    att.EACGlobal.attributes,
+    empty
+  }
+script =
+  
+  ## (Script) The specification of a particular script used in the EAC-CPF instance or in the creative work of the CPF entity being described. 
+  element script { text, att.EACGlobal.attributes, empty }
+setComponent =
+  
+  ## (Set Component) A wrapper element within alternativeSet that contains the EAC-CPF encoding for one entire authority record, thereby permitting the bundling of authority records from multiple authority systems within a single cpfDescription.
+  element setComponent {
+    componentEntry*,
+    (descriptiveNote, (objectBinWrap | objectXMLWrap))?,
+    att.EACGlobal.attributes,
+    empty
+  }
+source =
+  
+  ## (Source) A source used for the establishement of the description of the CPF entity in the EAC-CPF instance.
+  element source {
+    (sourceEntry, descriptiveNote, (objectBinWrap | objectXMLWrap))?,
+    att.EACGlobal.attributes,
+    empty
+  }
+sourceEntry =
+  
+  ## (Source Entry) A textual identification, such as a title, for a particular source of evidence used to establish the description of the CPF entity in the EAC-CPF instance. 
+  element sourceEntry { text, att.EACGlobal.attributes, empty }
+sources =
+  
+  ## (Sources) A source used for the establishement of the description of the CPF entity in the EAC-CPF instance.
+  element sources { source+, att.EACGlobal.attributes, empty }
+span =
+  
+  ## (Span) Specifies the beginning and the end of a span of text.
+  element span { text, att.EACGlobal.attributes, empty }
+structureOrGenealogy =
+  
+  ## (Structure or Genealogy) A description of the internal administrative structure(s) of a corporate body or the genealogy of a family. 
+  element structureOrGenealogy {
+    (p, \list, citation, outline)*, att.EACGlobal.attributes, empty
+  }
+term =
+  
+  ## (Term) A generic element used to encode a descriptive term in accordance with local descriptive rules. 
+  element term { text, att.EACGlobal.attributes, empty }
+toDate =
+  
+  ## (From Date) The ending date in a date range.
+  element toDate { text, att.EACGlobal.attributes, empty }
+useDates =
+  
+  ## (Dates of Use) The dates when the name or names were used for or by the CPF entity being described.
+  element useDates {
+    (date | dateRange | dateSet), att.EACGlobal.attributes, empty
+  }
+att.EACGlobal.attributes =
+  att.EACGlobal.attribute.id,
+  att.EACGlobal.attribute.altrender,
+  att.EACGlobal.attribute.audience
+att.EACGlobal.attribute.id =
+  
+  ## Left span boundary
+  attribute id { xsd:ID }?
+att.EACGlobal.attribute.altrender =
+  
+  ##
+  attribute altrender { text }?
+att.EACGlobal.attribute.audience =
+  
+  ##
+  attribute audience { text }?
+att.typed.attributes = att.typed.attribute.type
+att.typed.attribute.type =
+  
+  ## characterizes the element in some sense, using any convenient classification scheme or typology.
+  attribute type { text }?
+att.coded.attributes = att.coded.attribute.countrycode
+att.coded.attribute.countrycode =
+  
+  ## A unique code for the country in which the materials being described are held.
+  attribute countrycode { xsd:token }?
+att.normalized.attributes = att.normalized.attribute.normal
+att.normalized.attribute.normal =
+  
+  ## A consistent form, usually from a controlled vocabulary list to facilitate retrieval
+  attribute normal { text }?
+att.access.attributes =
+  att.access.attribute.source,
+  att.access.attribute.rules,
+  att.access.attribute.authfilenumber,
+  att.access.attribute.normal
+att.access.attribute.source =
+  
+  ##
+  attribute source { xsd:NMTOKEN }?
+att.access.attribute.rules =
+  
+  ##
+  attribute rules { xsd:NMTOKEN }?
+att.access.attribute.authfilenumber =
+  
+  ##
+  attribute authfilenumber { text }?
+att.access.attribute.normal =
+  
+  ## A consistent form, usually from a controlled vocabulary list to facilitate retrieval
+  attribute normal { text }?
+att.roled.attributes = att.roled.attribute.role
+att.roled.attribute.role =
+  
+  ## A contextual role or relationship for the person, family, corporate body, or geographic location. In linking elements such as ptr, information that explains to application software the part that a remote resource plays in a link.
+  attribute role { text }?
+att.xlink.attributes =
+  att.xlink.attribute.label,
+  att.xlink.attribute.href,
+  att.xlink.attribute.type,
+  att.xlink.attribute.title,
+  att.xlink.attribute.from,
+  att.xlink.attribute.to
+att.xlink.attribute.label =
+  
+  ## Labels the resource of locater element.
+  attribute xlink:label { text }?
+att.xlink.attribute.href =
+  
+  ## Supplies the data to find a remote resource.
+  attribute xlink:href { text }?
+att.xlink.attribute.type =
+  
+  ## Indicates the XLink element type.
+  attribute xlink:type { text }?
+att.xlink.attribute.title =
+  
+  ## Allows a human-readable description.
+  attribute xlink:title { text }?
+att.xlink.attribute.from =
+  
+  ## Identifies the origin resource of an arc.
+  attribute xlink:from { text }?
+att.xlink.attribute.to =
+  
+  ## Identifies the destination resource of an arc.
+  attribute xlink:to { text }?
+model.phrase.bare = notAllowed
+start = eac-cpf

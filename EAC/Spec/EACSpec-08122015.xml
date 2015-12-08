@@ -525,25 +525,7 @@
                         </remarks>
                     </elementSpec>
 
-                    <elementSpec ident="setComponent">
-                        <gloss/>
-                        <desc/>
-                        <classes>
-                            <memberOf key=""/>
-                        </classes>
-                        <content>
-                            <rng:text/>
-                        </content>
-                        <exemplum>
-                            <teix:egXML> </teix:egXML>
-                        </exemplum>
-                        <remarks>
-                            <p/>
-                        </remarks>
-                    </elementSpec>
-
-
-
+                    
                     <elementSpec ident="authorizedForm" module="EAC">
                         <!-- OK -->
                         <gloss>Authorized Form</gloss>
@@ -3791,7 +3773,8 @@ ID	#IMPLIED, ID</attList> -\->
                             <memberOf key="att.EACGlobal"/>
                         </classes>
                         <content>
-                            <rng:value type="NMTOKEN"/>
+                            <rng:text/>
+                            <!--<rng:value type="NMTOKEN"/>-->
                         </content>
                         <exemplum>
                             <teix:egXML>
