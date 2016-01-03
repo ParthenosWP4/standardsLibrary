@@ -17,3 +17,5 @@ Every member can create and modify directories and documents.
 For those who are not familiar with GitHub, you can learn more reading https://guides.github.com/ and https://help.github.com/.
 
 Fin du readme (test GitHub)
+
+Coucou!
