@@ -1,0 +1,367 @@
+<!ENTITY % attrs "
+	lang (en|ru) #IMPLIED
+	class CDATA #IMPLIED
+	style CDATA #IMPLIED
+	version CDATA #IMPLIED
+	id CDATA #IMPLIED
+ ">
+
+<!ENTITY % inline "
+	b |
+	i |
+	SenseNumber |
+	sup |
+	sub |
+	u
+">
+
+<!ELEMENT Note (#PCDATA|%inline;)*>
+<!ELEMENT sub (#PCDATA|%inline;)*>
+<!ELEMENT sup (#PCDATA|%inline;)*>
+<!ELEMENT u (#PCDATA|%inline;)*>
+
+
+
+<!ELEMENT b (#PCDATA|%inline;)*>
+
+<!ELEMENT i (#PCDATA|%inline;)*>
+<!ATTLIST i
+	%attrs;
+>
+
+<!-- ============ Entry ========= -->
+<!ELEMENT Dictionary (Entry)+>
+<!ATTLIST Dictionary
+	version CDATA #IMPLIED
+	%attrs;
+>
+
+<!ELEMENT Entry (DictionaryEntry, SubEntry*)>
+<!ATTLIST Entry
+	hw CDATA #IMPLIED
+	pos CDATA #IMPLIED
+	identifier CDATA #REQUIRED
+	%attrs;
+>
+
+<!ELEMENT DictionaryEntry (
+	(HeadwordBlock,
+	SenseGrp*,
+	(SeeAlso|See)?)|
+	(HeadwordBlock,XRef?)
+)>
+<!ATTLIST DictionaryEntry
+	identifier CDATA #IMPLIED
+	%attrs;
+>
+
+
+<!-- ============ SubEntry ========= -->
+<!ELEMENT SubEntry (
+	SubHeadwordBlock,
+	SenseGrp*,
+	(SeeAlso|See)?,
+    XRef?
+  )>
+<!ELEMENT SubHeadwordBlock (
+	SubHeadwordCtn+,	
+	PartOfSpeech*,
+	(SeeAlso|See)?,
+	VariantFormBlock?
+)>
+<!-- ========= SubHeadword ========== -->
+<!ELEMENT SubHeadwordCtn (
+	SubHeadword,
+	AlternativeScripting*,
+	SubjectField?,
+	Register?
+)>
+
+<!ATTLIST SubHeadwordCtn
+	%attrs;
+>
+<!ELEMENT SubHeadword (#PCDATA|%inline;)*>
+
+
+<!-- ========= Headword ========== -->
+<!ELEMENT HeadwordBlock (
+	HeadwordCtn+,	
+	PartOfSpeech*,
+	(SeeAlso|See)?,
+	VariantFormBlock?
+)>
+
+<!ELEMENT HeadwordCtn (
+	Headword,
+	AlternativeScripting*,
+	SubjectField?,
+	Register?)>
+	
+<!ELEMENT AlternativeScripting (#PCDATA|%inline;)*>
+<!ATTLIST AlternativeScripting
+modifier (also|usually|frequently|traditionally|dated|literally) #IMPLIED
+freeType CDATA #IMPLIED
+%attrs;
+>
+
+<!ATTLIST HeadwordCtn
+	%attrs;
+>
+<!ELEMENT Headword (#PCDATA|%inline;)*>
+
+<!-- ============ VariantForm ================ -->
+<!ELEMENT VariantFormBlock (VariantFormCtn+)>
+
+<!ELEMENT VariantFormCtn (
+VariantForm,
+AlternativeTranslit*
+)>
+<!ATTLIST VariantFormCtn
+	%attrs;
+>
+<!ELEMENT VariantForm (#PCDATA|%inline;)*>
+
+<!ELEMENT AlternativeTranslit (#PCDATA|%inline;)*>
+
+<!-- ============ SenseGrp ================ -->
+<!ELEMENT SenseGrp (
+	SenseNumber?,	
+	SubjectField*,
+	Register*,
+	DefinitionCtn?,
+	(GeographicalUsage|UsageNote)*,
+	CitationCtn?,
+	SeeAlso?) 
+>
+<!ATTLIST SenseGrp 
+   identifier CDATA #IMPLIED
+   version CDATA #IMPLIED
+   >
+   
+<!ELEMENT SenseNumber EMPTY>
+<!ATTLIST SenseNumber
+	value (1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|notPredefined) #REQUIRED
+	freeValue CDATA #IMPLIED
+>
+   
+<!--  =============Definition  ========== -->
+
+<!ELEMENT Definition (#PCDATA|%inline;)*>
+<!ATTLIST Definition
+	identifier CDATA #IMPLIED
+	%attrs;
+>
+<!ELEMENT DefinitionCtn (
+	Definition,
+	AlternativeScripting?,
+	GraphicIllustration?,
+	Note*
+)>
+<!ATTLIST DefinitionCtn
+	%attrs;
+>
+
+<!ELEMENT GraphicIllustration (#PCDATA|%inline;)*>
+
+
+<!--  ============= Citation  ========== -->
+<!ELEMENT CitationCtn (
+	Citation+,
+	AlternativeScripting*, 
+	CitationSourceCtn*
+)>
+<!ATTLIST CitationCtn
+ID CDATA #IMPLIED
+	%attrs;
+>
+<!ELEMENT Citation (#PCDATA|%inline;)*>
+
+<!ELEMENT CitationSourceCtn (
+	CitationSource+,
+	CitationAuthor+
+)>
+<!ELEMENT CitationSource (#PCDATA|%inline;)*>
+
+<!ELEMENT CitationAuthor (#PCDATA|%inline;)*>
+
+<!-- ============ Usage ========== -->
+<!ELEMENT GeographicalUsage EMPTY>
+<!ATTLIST GeographicalUsage
+	modifier (also|especially|not|only|usually) #IMPLIED
+	value (notPredefined|US|Brit|Canada|Austr) #REQUIRED
+	freeValue CDATA #IMPLIED
+>
+
+<!ELEMENT UsageNote EMPTY>
+<!ATTLIST UsageNote
+	modifier (also|especially|not|only|usually) #IMPLIED
+	value (notPredefined|US|Brit|Russ) #REQUIRED
+	freeValue CDATA #IMPLIED
+>
+
+
+<!-- ========== References ========== -->
+<!ELEMENT SeeAlso (#PCDATA|%inline;)*>
+<!ATTLIST SeeAlso
+	Ptr IDREF #IMPLIED
+	%attrs;
+>
+
+<!ELEMENT See (#PCDATA|%inline;)*>
+<!ATTLIST See
+	Ptr IDREF #IMPLIED
+	%attrs;
+>
+<!ELEMENT XRef (#PCDATA|%inline;)*>
+<!ATTLIST XRef
+	Ptr IDREF #IMPLIED
+	%attrs;
+>
+
+	
+	
+<!-- ========== PartOfSpeech ========== -->	
+<!ELEMENT PartOfSpeech EMPTY>
+<!ATTLIST PartOfSpeech
+	value (notPredefined|
+		abbreviation|
+		adjective|
+		adverb|
+		conjunction|
+		initials|
+		interjection|
+		noun|
+		number|
+		numeral|
+		participle|
+		particle|
+		phrase|
+		preposition|
+		prefix|
+		pronoun|
+		suffix|
+		verb|
+		letter) #REQUIRED
+	freeValue CDATA #IMPLIED
+>
+
+<!-- ========== SubjectField ========== -->
+
+<!ELEMENT SubjectField EMPTY>
+<!ATTLIST SubjectField
+	modifier (also|usually|especially) #IMPLIED
+	value (
+notPredefined|
+administration|
+aeronautics|
+agriculture|
+anatomy|
+anthropology|
+archeology|
+architecture|
+art|
+astrology|
+astronomy|
+automobiles|
+aviation|
+biology|
+botanics|
+chemistry|
+cinema|
+clothing|
+commerce|
+computers|
+construction|
+culinary|
+dress|
+ecology|
+economics|
+education|
+electricity|
+electronics|
+environment|
+finance|
+games|
+geography|
+geology|
+geometry|
+grammar|
+history|
+internet|
+journalism|
+law|
+linguistics|
+literature|
+mathematics|
+mechanics|
+medicine|
+meteorology|
+military|
+music|
+mythology|
+nautical|
+pharmacology|
+philosophy|
+photography|
+physics|
+physiology|
+politics|
+psychology|
+radio|
+rail|
+religion|
+school|
+sociology|
+sport|
+technical|
+technology|
+telecommunication|
+telephone|
+television|
+theatre|
+theology|
+transportation|
+university|
+zoology|
+geographical|
+historical|
+religious|
+musical|
+folklore|
+arts|
+science|
+name|
+place-name|
+etnonym|
+tradition|
+transport|
+Soviet-ideology|
+ethnonym) #REQUIRED
+	freeValue CDATA #IMPLIED
+	%attrs;
+>
+
+<!-- ========== Register ========== -->	
+<!ELEMENT Register EMPTY>
+<!ATTLIST Register
+	value (
+	notPredefined|
+	colloquial|pejorative|
+	euphemistic|
+	familiar|formal|
+	impolite|informal|
+	literary|obsolete|
+	offensive|official|
+	old-fashioned|
+	spoken|technical|
+	vulgar|slang|
+	archaic|disputed|
+	metaphorical-use) #REQUIRED
+	freeValue CDATA #IMPLIED
+	modifier CDATA #IMPLIED
+>
+
+
+
+
+

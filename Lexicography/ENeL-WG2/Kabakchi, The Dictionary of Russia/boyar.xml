@@ -1,0 +1,118 @@
+<!DOCTYPE Entry SYSTEM "rd2.dtd">
+<Entry identifier="EN00000270">
+    <DictionaryEntry identifier="DE00000269">
+      <HeadwordBlock>
+        <HeadwordCtn>
+          <Headword>boyar</Headword>
+
+          <SubjectField value="historical" />
+        </HeadwordCtn>
+
+        <PartOfSpeech value="noun" />
+
+        <VariantFormBlock>
+          <VariantFormCtn>
+            <VariantForm>боярин</VariantForm>
+
+            <AlternativeTranslit><i>boyarin</i></AlternativeTranslit>
+          </VariantFormCtn>
+        </VariantFormBlock>
+      </HeadwordBlock>
+
+      <SenseGrp>
+        <DefinitionCtn>
+          <Definition>a member of medieval Russia's aristocracy, before Peter
+          the Great.</Definition>
+        </DefinitionCtn>
+
+        <CitationCtn>
+          <Citation>Boris [Sheremetev] was the last of old <i>boyars</i>, the
+          leading noblemen of Muscovy whose wealth and power derived from the
+          favour of the Tsar (they had all but disappeared by the end of
+          Peter's reign as newly titled nobles superseded them</Citation>
+
+          <CitationSourceCtn>
+            <CitationSource>(Figes, 2002, p.15)</CitationSource>
+
+            <CitationAuthor></CitationAuthor>
+          </CitationSourceCtn>
+        </CitationCtn>
+      </SenseGrp>
+    </DictionaryEntry>
+
+    <SubEntry>
+      <SubHeadwordBlock>
+        <SubHeadwordCtn>
+          <SubHeadword>Boyar Duma</SubHeadword>
+
+          <SubjectField value="historical" />
+        </SubHeadwordCtn>
+
+        <PartOfSpeech value="phrase" />
+
+        <VariantFormBlock>
+          <VariantFormCtn>
+            <VariantForm>Боярская дума</VariantForm>
+
+            <AlternativeTranslit><i>Boyarskaya Duma</i></AlternativeTranslit>
+          </VariantFormCtn>
+        </VariantFormBlock>
+      </SubHeadwordBlock>
+
+      <SenseGrp>
+        <DefinitionCtn>
+          <Definition>a consultative body in Kievan Rus’ and medieval
+          Russia.</Definition>
+        </DefinitionCtn>
+
+        <CitationCtn>
+          <Citation>The boyars formed a boyar council, or <i>duma</i>, which
+          advised the prince in important matters of state</Citation>
+
+          <CitationSourceCtn>
+            <CitationSource>(<i>Encycl.Brit.</i>, 2005)</CitationSource>
+
+            <CitationAuthor></CitationAuthor>
+          </CitationSourceCtn>
+        </CitationCtn>
+      </SenseGrp>
+    </SubEntry>
+
+    <SubEntry>
+      <SubHeadwordBlock>
+        <SubHeadwordCtn>
+          <SubHeadword><i>boyarynya</i></SubHeadword>
+
+          <SubjectField value="historical" />
+        </SubHeadwordCtn>
+
+        <PartOfSpeech value="noun" />
+
+        <VariantFormBlock>
+          <VariantFormCtn>
+            <VariantForm>боярыня</VariantForm>
+          </VariantFormCtn>
+        </VariantFormBlock>
+      </SubHeadwordBlock>
+
+      <SenseGrp>
+        <DefinitionCtn>
+          <Definition>boyar's wife.</Definition>
+        </DefinitionCtn>
+
+        <CitationCtn>
+          <Citation>[The Tsar’s bride] was then turned over to the sisters and
+          close female relatives of the tsar and to the noble ladies, the
+          boyarinas</Citation>
+
+          <CitationSourceCtn>
+            <CitationSource>(Massie, 1980, p.50)</CitationSource>
+
+            <CitationAuthor></CitationAuthor>
+          </CitationSourceCtn>
+        </CitationCtn>
+      </SenseGrp>
+
+      <SeeAlso>Boyarynya Morozova</SeeAlso>
+    </SubEntry>
+  </Entry>
