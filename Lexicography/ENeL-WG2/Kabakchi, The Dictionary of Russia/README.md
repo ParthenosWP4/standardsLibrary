@@ -5,6 +5,6 @@
 
 **Contributor:** Kseniya Egorova, K Dictionaries, Tel Aviv. 
 
-**Format**: [XML](boyar.xml), own [DTD](rd2.dtd). 
+**Formats**: [image](boyar.jpg), [XML](boyar.xml), custom-made [DTD](rd2.dtd). 
 
 For more information about this dictionary and the digitization process, see [link to article on blog]
