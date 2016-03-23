@@ -11,4 +11,4 @@
 
 **Contributor:** Kseniya Egorova, K Dictionaries, Tel Aviv. 
 
-For more information about this dictionary and the digitization process, see [link to article on blog]
+For more information about this dictionary and the digitization process, see the post [A New Life for an Old Dictionary: Notes on Digitizing the Dictionary of Russia](https://digilex.hypotheses.org/179) on the DigiLex blog. 
