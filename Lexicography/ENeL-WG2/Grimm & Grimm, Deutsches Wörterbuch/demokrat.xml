@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Auszeichnungstest für DWB 2</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>DWB 2</edition>
+         </editionStmt>
+         <extent/>
+         <publicationStmt>
+            <p>Demoeintrag für Retrodigitalisierung DWB 2: Demokrat</p>
+            <p>Dr. Thomas Burch, Dr. Vera Hildenbrandt, Matthias Schneider,</p> <p>Kompetenzzentrum für elektronische Erschließungs- und Publikationsverfahren</p> <p>in den Geisteswissenschaften, Universität Trier, Mai 2015</p>
+         </publicationStmt>
+         <!--            <seriesStmt></seriesStmt>-->
+         <notesStmt>
+            <note/>
+         </notesStmt>
+         <sourceDesc>
+            <p>siehe DWB 2</p>
+         </sourceDesc>
+      </fileDesc>
+      <!--        <revisionDesc></revisionDesc>-->
+   </teiHeader>
+   <text>
+      <body>
+         <div1 type="section" n="1">
+            <head>D</head>
+            <cb n="627"/>
+            <!-- Autor: H. Rahnenführer -->
+            <entry type="main" sortKey="DEMOKRAT" xml:id="DWB2_D_966_0000.001">
+               <form type="lemma"><hi rend="bold">DEMOKRAT</hi></form>
+               <gramGrp>
+                  <gen><hi rend="italic"><choice>
+                     <expan>Maskulinum</expan>
+                     <abbr>m.</abbr>
+                  </choice></hi></gen>
+               </gramGrp>
+               <etym><hi rend="italic">lehnwort aus <lang xml:lang="fr"><choice>
+                  <expan>französisch</expan>
+                  <abbr>frz.</abbr>
+               </choice></lang></hi>
+                  <mentioned>démocrate</mentioned>
+                  <hi rend="italic"><choice>
+                     <expan>Maskulinum</expan>
+                     <abbr>m.</abbr>
+                  </choice>
+                     <choice>
+                        <expan>schwacher</expan>
+                        <abbr>schw.</abbr>
+                     </choice> deklination.</hi></etym>
+               <sense level="1" n="1"><num><hi rend="bold">1</hi></num>
+                  <hi rend="italic">anhänger der demokratie:</hi>
+                  <cit>
+                     <bibl><date when="1760"><hi rend="sans-serif">1760</hi></date></bibl> <quote>(o freyheit! freyheit!)</quote>
+                     <note><hi rend="italic"><choice>
+                        <expan>Variante</expan>
+                        <abbr>var.</abbr>
+                     </choice>:</hi></note>
+                     <quote>nicht der demokrat allein/ (weiß,)</quote>
+                     <note><hi rend="italic"><choice>
+                        <expan>Variante</expan>
+                        <abbr>var.</abbr>
+                     </choice>:</hi></note>
+                     <quote>wer (du bist)</quote>
+                     <bibl><author><hi rend="small-caps">Klopstock</hi></author> <hi rend="italic">oden 1,148 M./P.</hi></bibl>
+                  </cit> <cit>
+                     <bibl><date when="1871"><hi rend="sans-serif">1871</hi></date></bibl> <quote>solch einen gotteslästerer und demokraten würde ich keine stunde
+                        länger im hause dulden</quote>
+                     <bibl><author><hi rend="small-caps">H. Hartmann</hi></author>
+                        <hi rend="italic">bilder 247.</hi></bibl>
+                  </cit>
+                  <cit>
+                     <bibl><date when="1966"><hi rend="sans-serif">1966</hi></date></bibl> <quote>Heinrich Mann, der ein überzeugter demokrat war</quote> <bibl><hi rend="italic">zeit 18,21.</hi></bibl>
+                  </cit></sense>
+               <sense level="1" n="2"><hi rend="bold">2</hi>
+                  <hi rend="italic">mitglied einer partei, deren</hi>
+                  <hi rend="italic">bezeichnung das attribut</hi> &#x2018;<hi rend="italic">
+                     demokratisch</hi>&#x2019; <hi rend="italic">enthält:</hi>
+                  <cit>
+                     <bibl><date when="1803"><hi rend="sans-serif">1803</hi></date></bibl> <quote>die republikaner und demokraten sind alle bösewichter</quote> <bibl><author><hi rend="small-caps">Seume</hi></author>
+                        <hi rend="italic">spaziergang 386.</hi></bibl>
+                  </cit>
+                  4
+                  <cit>
+                     <bibl><date when="1967"><hi rend="sans-serif">1967</hi></date></bibl> <quote>der christliche demokrat Giummara wurde .. zum vorsitzenden der
+                        neuen regierung der autonomen region Sizilien gewählt</quote>
+                     <bibl><hi rend="italic">presse</hi>
+                        <hi rend="italic">5802,2.</hi></bibl>
+                  </cit></sense>
+               <sense level="1" n="compound">
+                  <form type="compound"><hi rend="bold">DEMOKRATEN-.</hi>
+                     <hi rend="italic"><choice>
+                        <expan>Zusammensetzung</expan>
+                        <abbr>zuss.</abbr>
+                     </choice> mit</hi>
+                     <ref target="id_xxx">demokrat 1</ref>: <choice>
+                        <expan>Demokratenbart</expan>
+                        <abbr><hi rend="bold">-bart</hi></abbr>
+                     </choice>
+                     <gramGrp><gen><choice>
+                        <expan>Maskulinum</expan>
+                        <abbr>m.</abbr>
+                     </choice></gen></gramGrp></form>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1848">&#x2329;1848&#x232A;</date>
+                        <author><hi rend="small-caps">Vilmar</hi></author>
+                        5
+                        <hi rend="italic">culturgesch.</hi> (<date when="1858"><hi
+                           rend="italic">1858</hi></date>)<hi rend="italic">
+                              2,31.</hi></bibl>
+                  </cit>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1926">1926</date>
+                        <author><hi rend="small-caps">Ostwald</hi></author>
+                        <hi rend="italic">lebenslinien 1,97.</hi></bibl>
+                  </cit>
+                  <form type="compound"><choice>
+                     <expan>Demokratenblatt</expan>
+                     <abbr><hi rend="bold">-blatt</hi></abbr>
+                  </choice>
+                     <gramGrp><gen><choice>
+                        <expan>Neutrum</expan>
+                        <abbr>n.</abbr>
+                     </choice></gen></gramGrp></form>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1859">&#x2329;1859&#x232A;</date>
+                        <author><hi rend="small-caps">Vilmar</hi></author>
+                        <hi rend="italic">kirche u. welt</hi> (<date when="1872"><hi
+                           rend="italic">1872</hi></date>)<hi rend="italic">
+                              1,52.</hi></bibl>
+                  </cit>
+                  6
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1959">1959</date>
+                        <author><hi rend="small-caps">Eggebrecht</hi></author>
+                        <hi rend="italic">volk</hi>
+                        <hi rend="italic">260.</hi></bibl>
+                  </cit>
+                  <form type="compound"><choice>
+                     <expan>Demokratenfresser</expan>
+                     <abbr><hi rend="bold">-fresser</hi></abbr>
+                  </choice>
+                     <gramGrp><gen><choice>
+                        <expan>Maskulinum</expan>
+                        <abbr>m.</abbr>
+                     </choice></gen></gramGrp></form>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1849">1849</date>
+                        <author><hi rend="small-caps">Jahn</hi></author>
+                        <hi rend="italic">br. 555 M.</hi></bibl>
+                  </cit>
+                  <form type="compound"><choice>
+                     <expan>Demokratenhaß</expan>
+                     <abbr><hi rend="bold">-haß</hi></abbr>
+                  </choice>
+                     <gramGrp><gen><choice>
+                        <expan>Maskulinum</expan>
+                        <abbr>m.</abbr>
+                     </choice></gen></gramGrp></form>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1858">1858</date>
+                        <author><hi rend="small-caps">B. Weber</hi></author>
+                        <hi rend="italic">cartons 499.</hi></bibl>
+                  </cit>
+                  <form type="compound"><choice>
+                     <expan>Demokratenkongreß</expan>
+                     <abbr><hi rend="bold">-kongreß</hi></abbr>
+                  </choice>
+                     <gramGrp><gen><choice>
+                        <expan>Maskulinum</expan>
+                        <abbr>m.</abbr>
+                     </choice></gen></gramGrp></form>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1848">1848</date>
+                        <hi rend="italic">in:</hi>
+                        <author><hi rend="small-caps">Hess</hi></author>
+                        <hi rend="italic">brw. 187 S.</hi></bibl>
+                  </cit>
+                  <form type="compound"><choice>
+                     <expan>Demokratenspürerei</expan>
+                     <abbr><hi rend="bold">-spürerei</hi></abbr>
+                  </choice>
+                     <gramGrp><gen><choice>
+                        <expan>Femininum</expan>
+                        <abbr>f.</abbr>
+                     </choice></gen></gramGrp></form>
+                  <cit>
+                     <quote/>
+                     <bibl><date when="1797">&#x2329;1797&#x232A;</date>
+                        <author><hi rend="small-caps">Knebel</hi></author>
+                        <hi rend="italic">nachla 3,26 V./M.</hi></bibl>
+                  </cit>
+               </sense>
+            </entry>
+         </div1>
+      </body>
+   </text> 
+</TEI>
