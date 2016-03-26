@@ -11,4 +11,4 @@
 
 **Contributor:** [Tobias Roth] (https://www.idiotikon.ch/redaktion/mitarbeitende/roth)
 
-For more information about this dictionary and the digitization process, see [link to article on blog]
+For more information about this dictionary and the digitization process, see [Digitising 150 Years of the Swiss German Dictionary](https://digilex.hypotheses.org/188)
