@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="dimitrakos.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <author>Δ. Δημητράκου</author>
+			<title>Μέγα Λεξικόν όλης της Ελληνικής Γλώσσης</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Εκδόσεις Δομή Α.Ε.</p>
+         </publicationStmt>
+         <notesStmt>
+			<p>Βραβείο Ακαδημίας</p>
+		 </notesStmt>
+		 <seriesStmt>
+			<idno type="volume">Τόμος Α΄</idno>
+		 </seriesStmt>
+		 <sourceDesc>
+            <p>PDF versions</p>
+			<p>Annotated by Athanasios N. Karasimos</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry type="main" identifier="GR00000001">
+            <form type="lemma">
+				<orth>
+					<hi rend="bold">αισιοδοξία</hi>
+				</orth>
+				<!-- <pron>esiodho'ksia</pron> -->
+				<gramGrp>
+                  <gen>
+                     <pos>ουσιαστικό</pos>
+					 <expan>θηλυκό</expan>
+                     <abbr>(η)</abbr>
+                  </gen>
+               </gramGrp>
+				<usg type="lang">
+					<expan>νεώτερη</expan>
+					<abbr>νεώτ.</abbr>
+				</usg>
+			</form>
+            <sense n="1">
+				<def>το δοξάζειν αίσια, η προσδοκία εις ευτυχή των πραγμάτων έκβασις·</def>
+			</sense>
+            <sense n="2">
+				<num>2.</num>
+				<usg type="dom">
+					<expan>φιλοσοφία</expan>
+					<abbr>φιλοσ.</abbr>
+				</usg>
+				<def>η θεωρία, καθ’ ην ο κόσμος είναι άριστος ή είναι ο άριστος των δυνατών κόσμων και το αγαθόν πρυτανεύει εν αυτώ</def>
+				<usg type="syn">
+				<lang xml:lang="la"/>[optimismus]
+				</usg>
+			</sense>
+		</entry>
+      </body>
+   </text>
+</TEI>

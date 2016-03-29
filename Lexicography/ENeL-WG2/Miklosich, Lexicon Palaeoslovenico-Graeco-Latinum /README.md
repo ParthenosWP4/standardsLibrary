@@ -11,4 +11,4 @@
 
 **Contributor:** Martina Kramarić, Institute for Croatian Language. 
 
-For more information about this dictionary and the digitization process, see the post [link to follow]() on the DigiLex blog. 
+For more information about this dictionary and the digitization process, see the post [to be published] on the DigiLex blog. 
