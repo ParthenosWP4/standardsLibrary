@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_gtb.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Historical dictionaries online</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>INL</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>refer to external description at http://gtb.inl.nl </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+
+            <entry xml:id="ID16832" type="_">
+
+                <form type="lemma" n="I"><orth>GHEMAC</orth>
+                </form>
+                <form type="mdl">gemak</form>
+                <dictScrap>
+                    <xr type="MNW"><ref>gemac</ref></xr>
+                    <gramGrp><pos>znw.</pos><gen>o.</gen></gramGrp>
+                    <usg type="totfreq">48</usg>
+                    <usg type="lexfreq">1</usg><usg type="legfreq">1</usg><usg type="litfreq"
+                        >46</usg>
+                    <usg type="oldest_attestation"
+                                ><placeName><settlement>Gent</settlement><region>Oost-Vlaanderen</region><region
+                                type="gtb">Vlaanderen</region></placeName><date notBefore="1236"
+                            notAfter="1236"/></usg>
+                    <form type="spelling_variation"><orth type="please_do_something">gemac <hi
+                                rend="font-style:italic; color: black">(9x)</hi>, gemak- <hi
+                                rend="font-style:italic; color: black">(20x)</hi>, ghemac <hi
+                                rend="font-style:italic; color: black">(6x)</hi>, ghemak- <hi
+                                rend="font-style:italic; color: black">(8x)</hi>, ymak- <hi
+                                rend="font-style:italic; color: black">(1x); viermaal ook
+                                aaneengeschreven met de prepositie</hi> te<hi
+                                rend="font-style:italic; color: black">:</hi> tegemake
+                        </orth></form>
+                    <etym type="morphological_analysis"><hi rend="font-style:italic; color: black"
+                            >Van de stam van het ww.</hi><mentioned> maken </mentioned><hi
+                            rend="font-style:italic; color: black">'vormen, voegen' met het
+                            prefix</hi><mentioned> ghe-. </mentioned></etym>
+                    <form type="inflected" n="1"><iType>ns</iType><orth>-mac </orth></form>
+                    <form type="inflected" n="2"><iType>gs</iType><orth>-makes </orth></form>
+                    <form type="inflected" n="3"><iType>ds</iType><orth>-mac, -make </orth></form>
+                    <form type="inflected" n="4"><iType>as</iType><orth>-mac </orth></form>
+                </dictScrap>
+
+
+
+                <sense xml:id="A16832">
+                    <def>rust; gemak; lust; behoefte; nut</def></sense>
+                <!-- skipped romein -->
+
+                <sense n="1" xml:id="C16832.I.1">
+                    <def>(Innerlijke) rust, vrede, toestand van welbevinden. </def>
+                    <cit>
+                        <q>soe <hi rend="font-style:italic; color: black">(t.w. de kauw)</hi> den
+                                urecke<expan>n</expan> ma<expan>n</expan> bescrijft die swart es
+                                va<expan>n</expan> wlen sonde<expan>n</expan> en<expan>de</expan>
+                            sine rikeit tallen stonde<expan>n</expan> so decket dat hi uerliest
+                            der+mede sijn ghemac <hi rend="font-style:italic; color: black">(Zij is
+                                de weergave van een vrek, die zwart is van gemene zonden en die zijn
+                                rijkdommen steeds zo moet wegstoppen, dat hij daardoor zijn
+                                innerlijke rust verliest.)</hi></q>
+                        <bibl><idno n="3000"/><title>Nat.Bl.D</title><biblScope unit="pages"><span
+                                    from="194" to="194"/></biblScope><biblScope unit="lines"><span
+                                    from="2" to="6"
+                                    /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                    type="gtb">Vlaanderen</region></placeName><date notBefore="1287"
+                                notAfter="1287"/>
+                        </bibl>
+                    </cit><cit>
+                        <q>Wat holpe dan dat ic te milen Om dat gemac uan mire silen Gelaten hadde.
+                                en<expan>de</expan> elre uonde Dat selue. dis ic nit ne conde
+                            Gedragen sonder schade groet</q>
+                        <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                    from="12" to="12"/></biblScope><biblScope unit="lines"><span
+                                    from="20" to="24"
+                                    /></biblScope><placeName><region>Brabant-West</region><region
+                                    type="gtb">Brabant</region></placeName><date notBefore="1265"
+                                notAfter="1270"/>
+                        </bibl>
+                    </cit>
+                    <sense n="1" xml:id="D16832.I.1.1">
+                        <usg type="label">Mystiek</usg>
+                        <usg type="colloc">der sielen ghemac </usg>
+                        <def>Weelde van de geest. </def>
+                        <cit>
+                            <q>Soe ne rochte niet wat hare gebrac Dor ghode enter zielen ghemac
+                                Jnden cloester dar zoe in was Gharne soe van ghode dar las</q>
+                            <bibl><idno n="2120"/><title>En.Cod.</title><biblScope unit="pages"
+                                        ><span from="431" to="432"/></biblScope><biblScope
+                                    unit="lines"><span from="42" to="2"
+                                        /></biblScope><placeName><region>Oost-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1290" notAfter="1290"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="2" xml:id="D16832.I.1.2">
+                        <usg type="colloc">met ghemake </usg>
+                        <def>In alle rust, rustig. </def>
+                        <cit>
+                            <q>Want menech poget dikke sere Ter minnen wert met hastechheiden Die
+                                met gemake moet ontbeiden Eer hi uolbrenget sinen ganc</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="157" to="157"/></biblScope><biblScope unit="lines"
+                                        ><span from="9" to="12"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>(...) Daer+omme salic v onttrekken En<expan>de</expan> ondergaen die
+                                walsche sprake So seldi leuen met gemake Voert+ane+meer in vwen
+                                tide</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="15" to="15"/></biblScope><biblScope unit="lines"><span
+                                        from="7" to="10"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>G<hi rend="font-family:INL VMNW WNT">&#x1A1C;</hi>dertirenheit d<hi
+                                    rend="font-family:INL VMNW WNT">&#x1A1C;</hi>t den k<hi
+                                    rend="font-family:INL VMNW WNT">&#x1A1C;</hi>ninc mit gemake
+                                leuen. Jnde d<hi rend="font-family:INL VMNW WNT">&#x1A1C;</hi>t. dat
+                                hi wandelen mag ouer+al.</q>
+                            <bibl><idno n="6300"/><title>Moraalb.</title><biblScope unit="pages"
+                                        ><span from="391" to="391"/></biblScope><biblScope
+                                    unit="lines"><span from="11" to="12"
+                                        /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                    notBefore="1270" notAfter="1290"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>En<expan>de</expan> eer dat wart gesproken was So voer+enwech alse
+                                een gedwas Die euele geest die felle drake Doe bleef lutgart al met
+                                gemake Daer liggende op die selue stede</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="127" to="127"/></biblScope><biblScope unit="lines"
+                                        ><span from="17" to="21"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="6" xml:id="D16832.I.1.6">
+                        <usg type="colloc">sijn ghemac houden </usg>
+                        <def>Zich rustig houden, zich aan innerlijke rust overgeven, gerust zijn.
+                                    <note><hi rend="font-style:italic; color: black">Het lijkt niet
+                                    uitgesloten dat</hi> ghemac <hi
+                                    rend="font-style:italic; color: black">hier een bnw. is en</hi>
+                                u <hi rend="font-style:italic; color: black">een wdk.vnw.: hou je
+                                    rustig. In dat geval zou de uitdrukking</hi> hem ghemac houden
+                                    <hi rend="font-style:italic; color: black">luiden en dient deze
+                                    onder</hi> ghemac (II) <hi
+                                    rend="font-style:italic; color: black">vermeld te
+                                worden.</hi></note>
+                        </def>
+                        <cit>
+                            <q>Lutgart die maget weder sprac Nv suigt en<expan>de</expan> houdet v
+                                gemac</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="298" to="298"/></biblScope><biblScope unit="lines"
+                                        ><span from="1" to="2"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Lutgart die maget weder sprac Nv gaet ende houdet v gemac</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="155" to="155"/></biblScope><biblScope unit="lines"
+                                        ><span from="30" to="31"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>toet+dat een stimme quam oppe<expan>n</expan>baer. op enen dach die
+                                toet haer sprac sijt seker en<expan>de</expan> houd v ghemac want
+                                gode v leuen wel behaght</q>
+                            <bibl><idno n="6000"/><title>Lutg.A</title><biblScope unit="pages"><span
+                                        from="37" to="37"/></biblScope><biblScope unit="lines"><span
+                                        from="33" to="36"
+                                        /></biblScope><placeName><region>Brabant-Oost</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1276" notAfter="1300"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="5" xml:id="D16832.I.1.5">
+                        <usg type="colloc">te ghemake sijn/wesen </usg>
+                        <def>Tevreden, content zijn (met); het ermee eens zijn, er vrede mee kunnen
+                            hebben. </def>
+                        <cit>
+                            <q>Dese eere en<expan>de</expan> dit ghemac. Dedi hem om+dat hi brac.
+                                Nabugodonosor sijn belof.</q>
+                            <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"><span
+                                        from="397" to="397"/></biblScope><biblScope unit="lines"
+                                        ><span from="33" to="35"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1285" notAfter="1285"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>en<expan>de</expan> alsi sach dat hi was gram so sprac si toet heme,
+                                als es dat sake dat gijs nyen sijt nv wel te gemake
+                                    en<expan>de</expan> gijt nv noede geeft goet man en sal v na
+                                nyet rouwen nochtan</q>
+                            <bibl><idno n="6100"/><title>Kerst.</title><biblScope unit="pages"><span
+                                        from="124" to="124"/></biblScope><biblScope unit="lines"
+                                        ><span from="20" to="24"
+                                        /></biblScope><placeName><region>Brabant-Oost</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1276" notAfter="1300"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>ic mach wel wesen vro want et es heden comen also dat
+                                    xp<expan>isto</expan>c es blide en<expan>de</expan> wel te
+                                gemake</q>
+                            <bibl><idno n="6100"/><title>Kerst.</title><biblScope unit="pages"><span
+                                        from="131" to="131"/></biblScope><biblScope unit="lines"
+                                        ><span from="14" to="16"
+                                        /></biblScope><placeName><region>Brabant-Oost</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1276" notAfter="1300"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Jnde dar+<hi rend="font-family:INL VMNW WNT">&#x1A1D;</hi>mbe segt
+                                    d<hi rend="font-family:INL VMNW WNT">&#x1A16;</hi> wise man. dat
+                                    ma<expan>n</expan> n<hi rend="font-family:INL VMNW WNT"
+                                    >&#x1A16;</hi>t s<hi rend="font-family:INL VMNW WNT"
+                                    >&#x1A16;</hi>ker w<hi rend="font-family:INL VMNW WNT"
+                                    >&#x1A16;</hi>ten en mag. wan+er ens minschen. herte wel
+                                tegemake is of t<hi rend="font-family:INL VMNW WNT"
+                                >&#x1A1C;</hi>ngemake bi sine<expan>n</expan> ansigte.</q>
+                            <bibl><idno n="6200"/><title>Moraalb.</title><biblScope unit="pages"
+                                        ><span from="369" to="369"/></biblScope><biblScope
+                                    unit="lines"><span from="27" to="29"
+                                        /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                    notBefore="1270" notAfter="1290"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>(...) en<expan>de</expan> wa<expan>n</expan>t si nye<expan>n</expan>
+                                conste walsche sprake soen scheen sijs nyet wel tegemake</q>
+                            <bibl><idno n="6000"/><title>Lutg.A</title><biblScope unit="pages"><span
+                                        from="27" to="27"/></biblScope><biblScope unit="lines"><span
+                                        from="29" to="30"
+                                        /></biblScope><placeName><region>Brabant-Oost</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1276" notAfter="1300"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Man mag nit sikers w<hi rend="font-family:INL VMNW WNT"
+                                >&#x1A16;</hi>ten. wan+er ens minschen herte wel tegemake is.</q>
+                            <bibl><idno n="6300"/><title>Moraalb.</title><biblScope unit="pages"
+                                        ><span from="383" to="383"/></biblScope><biblScope
+                                    unit="lines"><span from="37" to="37"
+                                        /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                    notBefore="1270" notAfter="1290"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="1.1" xml:id="C16832.I.1.1">
+                        <def>Fysieke rust. </def>
+                        <sense n="3" xml:id="D16832.I.1.1.3">
+                            <usg type="colloc">met ghemake </usg>
+                            <def>Op z'n gemak, op zijn dooie akkertje. </def>
+                            <cit>
+                                <q>hier v<expan>er</expan>cocht me<expan>n</expan> ginghebare Ginder
+                                    canele ende zedeware hier peper en<expan>de</expan> ginder
+                                    greine dus reet met min her wal<expan>eweine</expan>. Gene
+                                        R<expan>idder</expan>. met ghemake bescouwen mengherande
+                                    sake</q>
+                                <bibl><idno n="2130"/><title>Perch.</title><biblScope unit="pages"
+                                            ><span from="508" to="509"/></biblScope><biblScope
+                                        unit="lines"><span from="41" to="4"
+                                            /></biblScope><placeName><region>Holland-Oost</region><region
+                                            type="gtb">Holland</region></placeName><date
+                                        notBefore="1276" notAfter="1300"/>
+                                </bibl>
+                            </cit><cit>
+                                <q>(...) Geboet die .c<expan>oninc</expan>. openbare Dat deir neiman
+                                    s[o] cone enware Dat hi een wordeke<expan>n</expan> iet sprake
+                                    Bet dat .R<expan>einart</expan>. met gemake Hadde vol+seget
+                                    sinen willee</q>
+                                <bibl><idno n="2100"/><title>Rein.G</title><biblScope unit="pages"
+                                            ><span from="381" to="381"/></biblScope><biblScope
+                                        unit="lines"><span from="27" to="31"
+                                            /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                        notBefore="1260" notAfter="1280"/>
+                                </bibl>
+                            </cit>
+                        </sense>
+                        <sense n="1" xml:id="D16832.I.1.1.1">
+                            <usg type="colloc">sines ghemakes pleghen </usg>
+                            <def>Rust nemen, slapen. </def>
+                            <cit>
+                                <q>Nv reste wi en lettelkijn Onss seluen. want wi moede sijn
+                                        En<expan>de</expan> onss gemakes plegen gaen</q>
+                                <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"
+                                            ><span from="355" to="355"/></biblScope><biblScope
+                                        unit="lines"><span from="30" to="32"
+                                            /></biblScope><placeName><region>Brabant-West</region><region
+                                            type="gtb">Brabant</region></placeName><date
+                                        notBefore="1265" notAfter="1270"/>
+                                </bibl>
+                            </cit><cit>
+                                <q>Op enen nacht so was gelegen Ende hars gemakes soude plegen Die
+                                    selue nonne.</q>
+                                <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"
+                                            ><span from="229" to="229"/></biblScope><biblScope
+                                        unit="lines"><span from="20" to="22"
+                                            /></biblScope><placeName><region>Brabant-West</region><region
+                                            type="gtb">Brabant</region></placeName><date
+                                        notBefore="1265" notAfter="1270"/>
+                                </bibl>
+                            </cit>
+                        </sense>
+                        <sense n="2" xml:id="D16832.I.1.1.2">
+                            <usg type="colloc">te ghemake doen </usg>
+                            <def>De nodige rust gunnen; op krachten laten komen. </def>
+                            <cit>
+                                <q>Want dit was cont worde<expan>n</expan> hem. Dat die stede was
+                                    wijt en<expan>de</expan> grod. En<expan>de</expan> vast van
+                                        mure<expan>n</expan> sond<expan>er</expan> ghenod. Ende dat
+                                    te coste en<expan>de</expan> te pinen. Hem moeste
+                                        werde<expan>n</expan> en<expan>de</expan> den
+                                        sine<expan>n</expan>. Eer hise wonne ofte brake. Dies dedi
+                                    sijn volc te ghemake. En<expan>de</expan> aisiredse
+                                    der+ieghen.</q>
+                                <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"
+                                            ><span from="711" to="711"/></biblScope><biblScope
+                                        unit="lines"><span from="20" to="27"
+                                            /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                            type="gtb">Vlaanderen</region></placeName><date
+                                        notBefore="1285" notAfter="1285"/>
+                                </bibl>
+                            </cit>
+                        </sense>
+                    </sense>
+                </sense>
+
+                <sense n="2" xml:id="C16832.I.2">
+                    <def>Fysiek gemak, comfort; lichamelijk welzijn. </def>
+                    <cit>
+                        <q>commodum : gemac / commoditas : gemac / commode : gemacleke</q>
+                        <bibl><idno n="7000"/><title>Bern.</title><biblScope unit="pages"><span
+                                    from="161" to="161"/></biblScope><biblScope unit="lines"><span
+                                    from="5" to="7"
+                                /></biblScope><placeName><region>Limburg</region></placeName><date
+                                notBefore="1240" notAfter="1240"/>
+                        </bibl>
+                    </cit><cit>
+                        <q>[w]ant sien sochte en+geen gemac [a]lsi haer gebedeken sprac....</q>
+                        <bibl><idno n="6100"/><title>Kerst.</title><biblScope unit="pages"><span
+                                    from="117" to="117"/></biblScope><biblScope unit="lines"><span
+                                    from="17" to="18"
+                                    /></biblScope><placeName><region>Brabant-Oost</region><region
+                                    type="gtb">Brabant</region></placeName><date notBefore="1276"
+                                notAfter="1300"/>
+                        </bibl>
+                    </cit><cit>
+                        <q>so mogen si <hi rend="font-style:italic; color: black">(t.w. zusters die
+                                de klederen van de melaatsen wassen)</hi> crud nutten dor den stanc.
+                            ende ombe hare gemac mogen si ophor <hi
+                                rend="font-style:italic; color: black">(apart)</hi> eten.</q>
+                        <bibl><idno n="0003"/><title>Corp.I</title><biblScope unit="pages"><span
+                                    from="25" to="25"/></biblScope><biblScope unit="lines"><span
+                                    from="24" to="25"
+                                    /></biblScope><placeName><settlement>Gent</settlement><region>Oost-Vlaanderen</region><region
+                                    type="gtb">Vlaanderen</region></placeName><date notBefore="1236"
+                                notAfter="1236"/>
+                        </bibl>
+                    </cit>
+                    <sense n="2" xml:id="D16832.I.2.2">
+                        <usg type="colloc">enen ere ende ghemac doen </usg>
+                        <def>Iem. met de nodige egards goed verzorgen. </def>
+                        <cit>
+                            <q>dies nachts hi tene<expan>n</expan> clostar lach daer hem niet en
+                                ghebrac En<expan>de</expan> me<expan>n</expan> he<expan>m</expan>
+                                ere dede en<expan>de</expan> gemac</q>
+                            <bibl><idno n="2130"/><title>Perch.</title><biblScope unit="pages"><span
+                                        from="504" to="504"/></biblScope><biblScope unit="lines"
+                                        ><span from="22" to="24"
+                                        /></biblScope><placeName><region>Holland-Oost</region><region
+                                        type="gtb">Holland</region></placeName><date
+                                    notBefore="1276" notAfter="1300"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Dese eere en<expan>de</expan> dit ghemac. Dedi hem om+dat hi brac.
+                                Nabugodonosor sijn belof.</q>
+                            <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"><span
+                                        from="397" to="397"/></biblScope><biblScope unit="lines"
+                                        ><span from="33" to="35"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1285" notAfter="1285"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="5" xml:id="D16832.I.2.5">
+                        <usg type="colloc">met ghemake </usg>
+                        <def>Gemakkelijk, zonder problemen, zonder moeite. </def>
+                        <cit>
+                            <q>So+dat titus ghind<expan>er</expan> q<expan>ua</expan>m. Die sere
+                                gram was van d<expan>er</expan> scade<expan>n</expan>. Die hem
+                                te+voren die port<expan>er</expan>s daden. Die met .cc. ridders die
+                                stede. Sochte en<expan>de</expan> met voetghanghers mede. So+dat si
+                                met ghemake i<expan>n</expan>+quam<expan>en</expan>.</q>
+                            <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"><span
+                                        from="709" to="709"/></biblScope><biblScope unit="lines"
+                                        ><span from="23" to="28"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1285" notAfter="1285"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>m<expan>ar</expan> met bendicheit niet clene
+                                belesem<expan>en</expan>t so <expan>ende</expan> begaet dat sijn
+                                venijn niet ne scaed en<expan>de</expan> ment mach
+                                    vanghe<expan>n</expan> met ymake</q>
+                            <bibl><idno n="3000"/><title>Nat.Bl.D</title><biblScope unit="pages"
+                                        ><span from="273" to="273"/></biblScope><biblScope
+                                    unit="lines"><span from="5" to="8"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1287" notAfter="1287"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Dus worstelden si twee wel so lange wile dat me<expan>n</expan> ene
+                                fransoise mile m<expan>et</expan> gemake soude gaen</q>
+                            <bibl><idno n="2170"/><title>Wiss.</title><biblScope unit="pages"><span
+                                        from="542" to="542"/></biblScope><biblScope unit="lines"
+                                        ><span from="13" to="16"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1291" notAfter="1300"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Cestius hilt tland wel in vreden. Na hem warter ghesent een
+                                    and<expan>er</expan>. Een hiet tiberius
+                                alexand<expan>er</expan>. Die tland berechte met ghemake.</q>
+                            <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"><span
+                                        from="647" to="647"/></biblScope><biblScope unit="lines"
+                                        ><span from="7" to="10"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1285" notAfter="1285"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Dat hi behouden soude bliuen Op+dat hi liete in hem becliuen Die
+                                godes gracie die die maget Lutgart hem weder heft beijaget Want so
+                                gehandelt es die sake Van hare. welt hi met gemake Voert+ane in
+                                sinen tide leuen</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="219" to="219"/></biblScope><biblScope unit="lines"
+                                        ><span from="7" to="13"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>te wintre alse comet de sake dat die miere<expan>n</expan> met
+                                ghemake wane<expan>n</expan> leue<expan>n</expan> va<expan>n</expan>
+                                hare som<expan>er</expan>+pine compt hi en<expan>de</expan> roeuet
+                                de wore<expan>m</expan>kine</q>
+                            <bibl><idno n="3000"/><title>Nat.Bl.D</title><biblScope unit="pages"
+                                        ><span from="306" to="306"/></biblScope><biblScope
+                                    unit="lines"><span from="18" to="21"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1287" notAfter="1287"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="6" xml:id="D16832.I.2.6">
+                        <usg type="colloc">met ghemake leven </usg>
+                        <def>Een gemakkelijk leventje hebben. </def>
+                        <cit>
+                            <q>Mar beter es dat ic des suige Dan ic te na din heren sprake Die
+                                willen leuen met gemake</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="56" to="56"/></biblScope><biblScope unit="lines"><span
+                                        from="29" to="31"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>hi comt m<expan>et</expan> sine<expan>n</expan> here<expan>n</expan>
+                                jc willene gerne eeren en<expan>de</expan> wille genoech geuen wille
+                                hi m<expan>et</expan> gemake leuen</q>
+                            <bibl><idno n="2170"/><title>Wiss.</title><biblScope unit="pages"><span
+                                        from="537" to="537"/></biblScope><biblScope unit="lines"
+                                        ><span from="20" to="23"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1291" notAfter="1300"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="7" xml:id="D16832.I.2.7">
+                        <usg type="colloc">te ghemake licghen </usg>
+                        <def>Er gemakkelijk bijliggen, lui onderuitgezakt zitten. </def>
+                        <cit>
+                            <q>Eenwerf was oec die selue graue te loen jn sinen paleis, dat aue nu
+                                es gebroken, daer hi inne lach te somertide in midden den dach op
+                                enen culc te sinen ghemake daer hi doen hadde alrehand sprake met
+                                heren</q>
+                            <bibl><idno n="6100"/><title>Kerst.</title><biblScope unit="pages"><span
+                                        from="139" to="139"/></biblScope><biblScope unit="lines"
+                                        ><span from="25" to="31"
+                                        /></biblScope><placeName><region>Brabant-Oost</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1276" notAfter="1300"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="8" xml:id="D16832.I.2.8">
+                        <usg type="colloc">te ghemake sijn/wesen </usg>
+                        <def>Op zijn gemak zijn, zich prettig voelen, aangenaam verpozen. </def>
+                        <cit>
+                            <q>Nu hefstu uele goeds meer dan du mochts verteren in vele ijaren; nu
+                                restt di ende ett ende drinc ende wes te ghemake.</q>
+                            <bibl><idno n="8000"/><title>Diat.</title><biblScope unit="pages"><span
+                                        from="144" to="144"/></biblScope><biblScope unit="lines"
+                                        ><span from="37" to="38"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1291" notAfter="1300"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="9" xml:id="D16832.I.2.9">
+                        <usg type="colloc">enen te ghemake sijn </usg>
+                        <def>Niet opspelen, niet tegenwerken, niet dwars zitten. </def>
+                        <cit>
+                            <q>Js dat din ligame inde din houet. inde dine l<hi
+                                    rend="font-family:INL VMNW WNT">&#x1A16;</hi>de tegemake sin.
+                                    War+<hi rend="font-family:INL VMNW WNT">&#x1A1D;</hi>mbe soits
+                                du m<hi rend="font-family:INL VMNW WNT">&#x1A14;</hi>r heben.</q>
+                            <bibl><idno n="6200"/><title>Moraalb.</title><biblScope unit="pages"
+                                        ><span from="374" to="374"/></biblScope><biblScope
+                                    unit="lines"><span from="41" to="42"
+                                        /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                    notBefore="1270" notAfter="1290"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                </sense>
+
+                <sense n="3" xml:id="C16832.I.3">
+                    <def>Lust. </def>
+                    <cit>
+                        <q>Dat vir <hi rend="font-style:italic; color: black">(vuur)</hi> van d<hi
+                                rend="font-family:INL VMNW WNT">&#x1A1C;</hi>lre minnen. k<hi
+                                rend="font-family:INL VMNW WNT">&#x1A1C;</hi>mpt ter herten. bi den
+                            gemake van den vlesche.</q>
+                        <bibl><idno n="6200"/><title>Moraalb.</title><biblScope unit="pages"><span
+                                    from="371" to="371"/></biblScope><biblScope unit="lines"><span
+                                    from="16" to="17"
+                                    /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                notBefore="1270" notAfter="1290"/>
+                        </bibl>
+                    </cit><cit>
+                        <q>Dulle minne is en vir d<hi rend="font-family:INL VMNW WNT">&#x1A16;</hi>
+                                v<hi rend="font-family:INL VMNW WNT">&#x1A1C;</hi>t int herte. inde
+                            is ge<hi rend="font-family:INL VMNW WNT">&#x1A1F;</hi>nnen bi gen<hi
+                                rend="font-family:INL VMNW WNT">&#x1A1C;</hi>gte van vlesghe. Jnde
+                            bi gemak te hebene. Jnde is harde <hi rend="font-family:INL VMNW WNT"
+                                >&#x1A1F;</hi>nderlik.</q>
+                        <bibl><idno n="6200"/><title>Moraalb.</title><biblScope unit="pages"><span
+                                    from="371" to="371"/></biblScope><biblScope unit="lines"><span
+                                    from="13" to="15"
+                                    /></biblScope><placeName><region>Nederrijn</region></placeName><date
+                                notBefore="1270" notAfter="1290"/>
+                        </bibl>
+                    </cit>
+                </sense>
+
+                <sense n="4" xml:id="C16832.I.4">
+                    <def>Behoefte, levensonderhoud; ook: terbeschikkingstelling van het nodige. </def>
+                    <cit>
+                        <q>enen crop heuet hi <hi rend="font-style:italic; color: black">(t.w. de
+                                onocrotallus)</hi> alse .i. sac dar+mede doet hi sijn ghemac <hi
+                                rend="font-style:italic; color: black">(var.</hi> an sinen hals dats
+                            sijn ghemac<hi rend="font-style:italic; color: black">, red.)</hi> want
+                            dar+in gadert hi te sire noot van vissce<expan>n</expan>
+                                sine<expan>n</expan> crop so groot</q>
+                        <bibl><idno n="3000"/><title>Nat.Bl.D</title><biblScope unit="pages"><span
+                                    from="197" to="197"/></biblScope><biblScope unit="lines"><span
+                                    from="1" to="4"
+                                    /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                    type="gtb">Vlaanderen</region></placeName><date notBefore="1287"
+                                notAfter="1287"/>
+                        </bibl>
+                    </cit>
+                    <sense n="2" xml:id="D16832.I.4.2">
+                        <usg type="colloc">ghemac hebben </usg>
+                        <def>Behoefte hebben aan. </def>
+                        <cit>
+                            <q>(...) Waerde+rueben <hi rend="font-style:italic; color: black"
+                                    >(l.</hi> Waerderueben <hi
+                                    rend="font-style:italic; color: black">'welvoorziene kleed-
+                                    en/of voorraadkamers')</hi> cameren mede. Bede saken van
+                                    grot<expan>er</expan> dierhede. Turre canteele
+                                    en<expan>de</expan> baelgeen. Die niet lichte mochten faelgeen.
+                                    So+datt<expan>er</expan>+an gheen dinc ghebrac. Dar coninc
+                                mochte ebbe<expan>n</expan> ghemac.</q>
+                            <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"><span
+                                        from="743" to="743"/></biblScope><biblScope unit="lines"
+                                        ><span from="11" to="16"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1285" notAfter="1285"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                    <sense n="10" xml:id="D16832.I.4.10">
+                        <usg type="colloc">te ghemake hebben </usg>
+                        <def>Ter beschikking hebben. </def>
+                        <cit>
+                            <q>(...) en si dat sake. Dat ghi oec tuwen ghemake. Wapine ebt dar ghine
+                                mede. Moghet v<expan>er</expan>driuen</q>
+                            <bibl><idno n="4000"/><title>Rijmb.</title><biblScope unit="pages"><span
+                                        from="761" to="761"/></biblScope><biblScope unit="lines"
+                                        ><span from="9" to="12"
+                                        /></biblScope><placeName><region>West-Vlaanderen</region><region
+                                        type="gtb">Vlaanderen</region></placeName><date
+                                    notBefore="1285" notAfter="1285"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                </sense>
+
+                <sense n="5" xml:id="C16832.I.5">
+                    <def>Nut, voordeel; ook: voordeeltje, extraatje. </def>
+                    <cit>
+                        <q>commodum : gemac</q>
+                        <bibl><idno n="7000"/><title>Bern.</title><biblScope unit="pages"><span
+                                    from="161" to="161"/></biblScope><biblScope unit="lines"><span
+                                    from="5" to="5"
+                                /></biblScope><placeName><region>Limburg</region></placeName><date
+                                notBefore="1240" notAfter="1240"/>
+                        </bibl>
+                    </cit><cit>
+                        <q>Daer+na wel lange. alse int conuent Pitance quam ochte een prosent Dis
+                            alle die ijonfrowen it Tebat gecregen och genit Och dis gemakes it
+                            gewonnen Gemeenlic alle dandre nonnen; (...)</q>
+                        <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                    from="21" to="21"/></biblScope><biblScope unit="lines"><span
+                                    from="33" to="38"
+                                    /></biblScope><placeName><region>Brabant-West</region><region
+                                    type="gtb">Brabant</region></placeName><date notBefore="1265"
+                                notAfter="1270"/>
+                        </bibl>
+                    </cit>
+                    <sense n="1" xml:id="D16832.I.5.1">
+                        <usg type="colloc">dore ghemac </usg>
+                        <def>Uit winstbejag, door op voordeel uit te zijn. </def>
+                        <cit>
+                            <q>Si uastede al die dage lanc Getrowelic al sonder wanc So+dat si noit
+                                dach en brac Noch dor gewin noch dor gemac</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="20" to="20"/></biblScope><biblScope unit="lines"><span
+                                        from="24" to="27"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit><cit>
+                            <q>Mar neenic nit want ine conde Al pijndecs mi verbergen nit Noch dor
+                                gemac noch dor verdrit Noch dor gewin noch dor mesquame</q>
+                            <bibl><idno n="5000"/><title>Lutg.K</title><biblScope unit="pages"><span
+                                        from="478" to="478"/></biblScope><biblScope unit="lines"
+                                        ><span from="24" to="27"
+                                        /></biblScope><placeName><region>Brabant-West</region><region
+                                        type="gtb">Brabant</region></placeName><date
+                                    notBefore="1265" notAfter="1270"/>
+                            </bibl>
+                        </cit>
+                    </sense>
+                </sense>
+            </entry>
+        </body>
+    </text>
+</TEI>

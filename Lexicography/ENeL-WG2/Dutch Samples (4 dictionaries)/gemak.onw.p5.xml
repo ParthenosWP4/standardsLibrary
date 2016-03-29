@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_gtb.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Historical dictionaries online</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>INL</publisher>
+			</publicationStmt>
+			<sourceDesc>
+				<p>refer to external description at http://gtb.inl.nl </p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+
+			<entry xml:id="ID2363">
+				<form type="lemma"><orth>gimak</orth></form>
+				<form type="mdl">gemak</form>
+				<dictScrap><gramGrp><pos>znw.</pos>  <gen>o.</gen></gramGrp><usg type="appfreq"
+						>3</usg><usg type="topfreq">0</usg><usg type="absfreq">0</usg><usg
+						type="totfreq">3</usg><usg type="oldest_attestation"><date notBefore="1151"
+							notAfter="1200"/></usg><etym type="etymological_analysis"> De betekenis
+						was oorspronkelijk 'wat passend, aangenaam is'. Daaruit ontstond 'plaats
+						waar het aangenaam is'. <mentioned xml:lang="Oudhoogduits"><mentioned>
+								gimah</mentioned></mentioned>
+						<mentioned xml:lang="Middelhoogduits"><mentioned>
+							gemach</mentioned></mentioned>
+						<mentioned xml:lang="Nieuwhoogduits"><mentioned>
+							Gemach</mentioned></mentioned>
+					</etym><etym type="morphological_analysis"> afleiding, <w type="afleiding"><m
+								type="basiswoord__adjectief_">mak <note type="gloss">comfortabel,
+									aangenaam</note></m><m type="prefix">gi <note type="gloss">vormt
+									collectieven</note></m></w>
+					</etym><xr type="Afleidingen"><ref target="ID877">ungimak</ref></xr><form
+						type="spelling_variation" n="1"><note type="spelling_variation">Alleen in
+							verschoven vorm overgeleverd.</note></form><form type="inflected" n="1"
+							><iType> nominatief singularis </iType><orth>gemach</orth><usg
+							type="freq">1</usg>   </form><form type="inflected" n="2"><iType>
+							genitief singularis </iType><orth>gemaches</orth><usg type="freq"
+							>1</usg>   <orth>gemac[hes]</orth><usg type="freq">1</usg>  
+						</form><etym type="later_development">
+						<xr type="VMNW"><ref target="ID16832">ghemac (I)<hi
+									rend="font-style: italic; color: black">
+							(znw.o.)</hi></ref></xr>
+						<xr type="MNW"><ref target="11782">gemac (II)<hi
+									rend="font-style: italic; color: black">
+							(znw.o.)</hi></ref></xr>
+						<xr type="WNT"><ref target="M018881">gemak<hi
+									rend="font-style: italic; color: black">
+							(znw.o.)</hi></ref></xr>
+					</etym></dictScrap>
+				<sense xml:id="ID2363.sense.1" n="1" type="arabic"><def xml:lang="nl">Welstand,
+						weelde.</def><cit>
+						<q>The grozes <hi rend="font-weight:bold">gemaches</hi> nîet neplegen.
+							almugen iz sumeliche wole hauen.<app>
+								<rdg>hs. B: Thie hie grozes gemac[hes] nieht neplagen, al mohten iz
+									sumelich wol haben</rdg>
+							</app></q>
+						<note type="translation" xml:lang="nl">Die hier niet in grote weelde
+							leefden, al konden sommigen het zeker bezitten.</note>
+						<bibl><idno n="OnwBr0040"/><title>Mfr.Reimb. A, r.
+									541</title><placeName><settlement> Werden,
+									Essen?</settlement><region type="gtb">Noord-Oost
+									Nederland</region></placeName><date notBefore="1151"
+								notAfter="1200"/></bibl>
+					</cit></sense>
+				<sense xml:id="ID2363.sense.3" n="2" type="arabic"><def xml:lang="nl">Kamer, ruimte,
+						zaal.</def><cit>
+						<q>Thar unas <hi rend="font-style: italic; color: black">(sic, l.</hi>
+								uuas<hi rend="font-style: italic; color: black">)</hi> ouch ane
+							groze <hi rend="font-weight:bold">gemach,</hi> sie habet inuuether half
+							druge thac Vnde uuas also gethihte, thaz thar nechein wazzer in chomen
+							nemahte.</q>
+						<note type="translation" xml:lang="nl">Daarin (t.w. in de ark van Noach) was
+							ook een grote zaal; zij heeft aan beide zijden een waterdichte
+							dakbedekking die zo dicht was dat daar geen water in kon komen.</note>
+						<bibl><idno n="OnwBr0040"/><title>Mfr.Reimb. B, r.
+									032</title><placeName><settlement> Werden,
+									Essen?</settlement><region type="gtb">Noord-Oost
+									Nederland</region></placeName><date notBefore="1151"
+								notAfter="1200"/></bibl>
+					</cit></sense>
+			</entry>
+		</body>
+	</text>
+</TEI>

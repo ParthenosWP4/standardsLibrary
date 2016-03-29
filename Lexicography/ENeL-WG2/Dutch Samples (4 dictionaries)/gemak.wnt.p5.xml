@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_gtb.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Historical dictionaries online</title>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>INL</publisher>
+   </publicationStmt>
+   <sourceDesc>
+    <p>refer to external description at http://gtb.inl.nl </p>
+   </sourceDesc>
+  </fileDesc>
+ </teiHeader>
+ <text>
+  <body>
+
+   <entry xml:id="M018881">
+    <form type="lemma"><orth>GEMAK</orth></form>
+    <form type="mdl">gemak</form>
+    <dictScrap>
+     <gramGrp><pos>znw.</pos>(<gen>o.</gen>)</gramGrp> znw. onz.; mv. <hi rend="font-style:italic"
+      >gemakken</hi>, verkl. <hi rend="font-style:italic">gemakje</hi> (alleen in de concrete bet.,
+     II). <lang value="Oudhoogduits">Ohd.</lang>
+     <hi rend="font-style:italic">gimah</hi> (<hi rend="text-transformation:smallcaps">GRAFF</hi> 2,
+     635); <lang value="Middelhoogduits">mhd.</lang>
+     <hi rend="font-style:italic">gemach</hi> (<hi rend="text-transformation:smallcaps">LEXER</hi>
+     1, 832); <lang value="Nieuwhoogduits">nhd.</lang>
+     <hi rend="font-style:italic">gemach</hi> (<hi rend="font-style:italic">D. Wtb.</hi> 4, ¹<hi
+      rend="vertical-align:superscript">b</hi>, 3129); <lang value="Middelnederduits">mndd.</lang>
+     <hi rend="font-style:italic">gemack</hi> (<hi rend="text-transformation:smallcaps"
+      >SCHILLER-LÜBBEN</hi> 2, 50); <lang value="Middelnederlands">mnl.</lang>
+     <hi rend="font-style:italic">gemac</hi> (verb. <hi rend="font-style:italic">gemake</hi>).
+     Hetzelfde woord als het verouderde <lang value="Middelnederlands">mnl.</lang> bnw. <hi
+      rend="font-style:italic">gemac</hi> (<hi rend="font-style:italic">Serv.</hi> 2, 992, enz., zie
+     bij <hi rend="text-transformation:smallcaps">VERDAM</hi> in v.), <lang value="Oudhoogduits"
+      >ohd.</lang>
+     <hi rend="font-style:italic">gimah</hi>, <lang value="Middelhoogduits">mhd.</lang>
+     <hi rend="font-style:italic">gemach</hi>, <lang value="Nieuwhoogduits">nhd.</lang>
+     <hi rend="font-style:italic">gemach</hi>, <lang value="Middelnederduits">mndd.</lang>
+     <hi rend="font-style:italic">gemack</hi>, <lang value="Angelsaksisch">ags.</lang>
+     <hi rend="font-style:italic">gemäc</hi> (<hi rend="text-transformation:smallcaps">GREIN</hi>,
+      <hi rend="font-style:italic">Gloss.</hi> 1, 426), dat in verschillende wijzigingen de
+     beteekenis vertoont van <hi rend="font-style:italic">passende</hi> (<hi
+      rend="font-style:italic">bij</hi>), <hi rend="font-style:italic">geschikt</hi> (<hi
+      rend="font-style:italic">voor</hi>), <hi rend="font-style:italic">aangenaam</hi>, <hi
+      rend="font-style:italic">zacht</hi>: eene afleiding van den stam <hi rend="font-style:italic"
+      >mak</hi>, verbinden, samenvoegen, waartoe ook het bnw. <hi rend="font-style:italic">mak</hi>
+     (gevoeglijk, handelbaar), het znw. <hi rend="font-style:italic">makker</hi> (verbondene) en het
+     ww. <hi rend="font-style:italic">maken</hi> (samenvoegen, tot een geheel verbinden) behooren.
+      <hi rend="font-style:italic">Gemak</hi> staat dus in beteekenis gelijk met <hi
+      rend="font-style:italic">gevoeg</hi>, <hi rend="font-style:italic">gevoech</hi>, dat in 't
+      <lang value="Middelnederlands">Mnl.</lang> het gewone woord was, vooral in de concrete
+     opvatting. Uit het denkbeeld van <hi rend="font-style:italic">voegen</hi>, <hi
+      rend="font-style:italic">passen</hi>, <hi rend="font-style:italic">te pas komen</hi>, <hi
+      rend="font-style:italic">geriefelijk zijn</hi>, laten zich de verschillende beteekenissen,
+     waarin <hi rend="font-style:italic">gemak</hi> voorkomt, geregeld verklaren. </dictScrap>
+
+    <sense xml:id="M018881.bet.1" n="I" type="roman"><def> Abstract, zonder mv. en verkl.</def>
+     <sense xml:id="M018881.bet.2" n="1" type="arabic"><def> Eigenlijk. De toestand van dengene, die
+       ondervindt wat hem geriefelijk en aangenaam is; de behaaglijke rust en kalmte, die men geniet
+       wanneer men vrij is van alle moeite en inspanning. </def><cit>
+       <q n="16768">Als ik te huis ben, heb ik gaarne mijn <oVar>gemak,</oVar></q>
+       <bibl><author>FOKKE</author>, <title>Verz. W.</title> 12, 89 [1802]<date notBefore="1802"
+         notAfter="1802"/>.<idno n="B0002215"/></bibl>
+      </cit>
+      <cit>
+       <q n="16769"> Nu zult ge mij wel het pleizier doen van bij mij in de bank te gaan zitten: dan
+        hebt ge meer <oVar>gemak,</oVar></q>
+       <bibl>9, 87.<idno n="B0002215"/></bibl>
+      </cit>
+      <cit>
+       <q n="16770">(Hij had) zich … neêrgebogen in zijnen armstoel, en liet het hoofd op ééne zijde
+        vallen, eene houding, die hem <oVar>gemak</oVar> scheen te geven,</q>
+       <bibl><author>BOSB.-TOUSS.</author> 2, 186 <title>b</title> [1841]<date notBefore="1841"
+         notAfter="1841"/>.<idno n="B0001030"/></bibl>
+      </cit>
+      <cit>
+       <q> Ik volgde Crito naar zijn studeervertrek. Het is niet noodig u dit te beschrijven. …
+        Gemak, gezelligheid, kalmte en eene niet onbevallige wanorde zijn de hoofdtrekken,</q>
+       <bibl><author>BEETS</author>, <title>Versch.</title> 3, 9. </bibl>
+      </cit>
+      <cit>
+       <q n="16771"><l>Wat het geldt waerdigh is, weet ghy niet schier?</l>
+        <l>Dat men daerom ruylen sou wijn, broodt en bier,</l>
+        <l>En voort wat de menschelijcke natuere swack</l>
+        <l>Hier en boven behoeft, tot haer <oVar>gemack.</oVar></l>
+       </q>
+       <bibl><author>VISSCHER</author>, <title>Sinnep.</title> 55 <title>a</title> [c. 1600]<date
+         notBefore="1600" notAfter="1600" type="circa"/>.<idno n="B0006498 B0006499"/></bibl>
+      </cit>
+      <cit>
+       <q n="16772"><l>Wy wenschen te gelijck zijn Majesteit <oVar>gemack</oVar></l>
+        <l>En rust, zoo veel hem Godt van boven heeft beschoren.</l>
+       </q>
+       <bibl><author>VONDEL</author> 5, 728 [1648]<date notBefore="1648" notAfter="1648"/>.</bibl>
+      </cit>
+      <cit>
+       <q n="16773"><l>Al 't velt zweegh stil, en mede</l>
+        <l>'t Gevogelte en het vee [dots]</l>
+        <l>Lagh zorgeloos en stil, en sliep op zijne steden,</l>
+        <l>Vergeetende in 't <oVar>gemack</oVar> zijn zorgh en zwaerigheden.</l>
+       </q>
+       <bibl>8, 380.</bibl>
+      </cit>
+      <cit>
+       <q><l>De Os van dienstbaarheid ontslaagen,</l>
+        <l>Gaat weiden in het grazig veld,</l>
+        <l>Heeft zyn gemak en goede dagen,</l>
+        <l>Word weelig, vet, en welgesteld.</l>
+       </q>
+       <bibl><author>LUYKEN</author>, <title>Besch. d. Wer.</title> 239.</bibl>
+      </cit>
+      <sense xml:id="M018881.bet.3" n="—" type="dash"><def> Spreekw. <cit type="colloc">
+         <usg type="colloc">Die wil hebben gemak, Die blijve onder zijn dak</usg>
+        </cit> (<hi rend="text-transformation:smallcaps">HARREB.</hi> 1, 227 [1858]). — <cit
+         type="colloc">
+         <usg type="colloc">Die zijn gemak moede is, neme een wijf</usg>
+        </cit>, het huwelijk is vol moeite en last (<hi rend="font-style:italic">Ald.</hi>).</def>
+      </sense>
+      <sense xml:id="M018881.bet.4" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Op zijn gemak gesteld zijn</usg>
+        </cit>, veel houden van rust en kalmte, alle moeite en inspanning schuwen. </def><cit>
+        <q n="16774">Zij was opgeruimd van aard, te gelijk rusteloos en op haar <oVar>gemak</oVar>
+         gesteld, <hi rend="font-style:italic">enz.</hi>,</q>
+        <bibl>
+         <author>V. LENNEP</author>, <title>K. Zev.</title> 1, 283 [1865]<date notBefore="1865"
+          notAfter="1865"/>.<idno n="B0003752"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.5" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Zijn gemak zoeken</usg>
+        </cit> (voorheen ook enkel <cit type="colloc">
+         <usg type="colloc">gemak zoeken</usg>
+        </cit>), rust en kalmte zoeken, moeite en inspanning vermijden. </def><cit>
+        <q n="16775">Zelfs kan men hem niet kwalyk nemen dat hy <oVar>gemak</oVar> zoekt, in plaats
+         van moeite,</q>
+        <bibl><author>V. EFFEN</author>, <title>Spect.</title> 1, 149 [1731]<date notBefore="1731"
+          notAfter="1731"/>.<idno n="B0002035"/></bibl>
+       </cit>
+       <cit>
+        <q> Zulk een volk … besteedde het overige van den tyd natuurlyk met aan hunne lichaamen rust
+         te geeven, hun gemak te zoeken, <hi rend="font-style:italic">enz.</hi>,</q>
+        <bibl><author>BERKHEY</author>, <title>N.H.</title> 3, 483 [1773]<date notBefore="1773"
+          notAfter="1773"/>. </bibl>
+       </cit>
+       <cit>
+        <q n="16776"><l>Ick doe mijn selven goet, ick soeck <oVar>ghemack</oVar> en rust.</l>
+        </q>
+        <bibl><author>COSTER</author>, <title>Rycke-man</title> 23 [ed. 1621]<date notBefore="1621"
+          notAfter="1621" type="ed"/>.<idno n="B0001663"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.6" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Zijn gemak houden</usg>
+        </cit> (voorheen ook enkel <cit type="colloc">
+         <usg type="colloc">gemak houden</usg>
+        </cit>), rust houden, zich geene moeite geven. </def><cit>
+        <q>Gisteren heb ik mij misschien wat te veel vermoeid; maar ik zal van daag regt mijn gemak
+         houden,</q>
+        <bibl><author>LOOSJES</author>, <title>Bronkh.</title> 6, 54 [1807]<date notBefore="1807"
+          notAfter="1807"/>. </bibl>
+       </cit>
+       <cit>
+        <q n="16777"><l>Soo hy dan komt ontrent het ys, …</l>
+         <l>Soo hout ons Reyntje sijn <oVar>gemack,</oVar> …</l>
+         <l>Om niet te vallen in de plas.</l>
+        </q>
+        <bibl><author>CATS</author> 1, 122 <title>a</title> [1627]<date notBefore="1627"
+          notAfter="1627"/>.<idno n="B0001431"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.7" n="—" type="dash"><def> Inzonderheid in de gebiedende wijs: <cit
+         type="colloc">
+         <usg type="colloc">houd(t) uw gemak</usg>
+        </cit> (voorheen <cit type="colloc">
+         <usg type="colloc">houd(t) gemak</usg>
+        </cit>), in tweeledige opvatting:</def>
+      </sense>
+      <sense xml:id="M018881.bet.8" n="1°" type="primosecundo"><def> Bewaar uwe kalmte, houd u
+        bedaard, wees niet te driftig. </def><cit>
+        <q n="16778">Nu houdt <oVar>gemack,</oVar> weest vrolijck, en verdraeght u onderling,</q>
+        <bibl><author>VONDEL</author> 5, 342 [1646]<date notBefore="1646" notAfter="1646"/>. <idno
+          n="B0006585 B0006586"/></bibl>
+       </cit>
+       <cit>
+        <q n="16779"><l>Thersites, hou <oVar>gemack,</oVar> en spreeck op uwe beurt.</l>
+        </q>
+        <bibl><author>VONDEL</author> 2, 469 [1625]<date notBefore="1625" notAfter="1625"/>.<idno
+          n="B0006585 B0006586"/></bibl>
+       </cit>
+       <cit>
+        <q n="16780"><l><hi rend="font-style:italic">D.</hi> t' Sa mannen, vaert vry voort, en
+          steeckt het klooster aen …</l>
+         <l><hi rend="font-style:italic">W.</hi> Och Maerschalck, hou <oVar>gemack,</oVar> en wil u
+          doch erbarmen.</l>
+        </q>
+        <bibl>3, 370.<idno n="B0006585 B0006586"/></bibl>
+       </cit>
+       <cit>
+        <q><l>'k Bid, hou uw gemak, Mercutio!</l>
+         <l>Gij praat slechts beuzeltaal.</l>
+        </q>
+        <bibl><author>V. LENNEP</author>, <title>Poët.</title> 11, 133 [1852]<date notBefore="1852"
+          notAfter="1852"/>.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.9" n="2°" type="primosecundo"><def> In 't bijzonder, gezegd tot
+        iemand die zit. Blijf zitten, geef u geene moeite om op te staan, t.w. als beleefdheidsterm. </def><cit>
+        <q n="16781">Houd uw <oVar>gemak,</oVar> ik zal er wel uit komen (<hi
+          rend="font-style:italic">uit de huisdeur</hi>).</q>
+        <bibl><idno/><title>poëem WNT</title><date notBefore="1886" notAfter="1886"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.10" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Doe(t) gemak</usg>
+        </cit>, houd u bedaard, blijf kalm. Thans verouderd. </def><cit>
+        <q n="16782"><l>Nu, besje, doet <oVar>ghemack:</oVar> wat schemp ghy op sijn leden?</l>
+         <l>Hy is my schoon ghenoech.</l>
+        </q>
+        <bibl><author>STARTER</author> in <author>BREDERO</author>, <title>Angen.</title> 49 [c.
+          1620]<date notBefore="1620" notAfter="1620" type="circa"/>.<idno n="B0001130"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.11" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Zijn gemak nemen</usg>
+        </cit>, in eene gemakkelijke houding gaan zitten. </def><cit>
+        <q n="16783"><l>Dan bergt hij zijn spullen en neemt zijn <oVar>gemak</oVar></l>
+         <l>Al op zijn ellebogen.</l>
+        </q>
+        <bibl><author>DE GÉNESTET</author> 2, 145 [c. 1857]<date notBefore="1857" notAfter="1857"
+          type="circa"/>.<idno n="B0002351"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.12" n="—" type="dash"><def> Inzonderheid in de gebiedende wijs:
+         <cit type="colloc">
+         <usg type="colloc">neem uw gemak</usg>
+        </cit>, als beleefde uitnoodiging om plaats te nemen. </def><cit>
+        <q>Ga zitten; neem uw gemak,</q>
+        <bibl><author>CONSC.</author> 1, 354 <title>b</title> [ed. 1867]<date notBefore="1867"
+          notAfter="1867" type="ed"/>. </bibl>
+       </cit>
+       <cit>
+        <q n="16784"><l>Mijn Heer! neem uw <oVar>gemak,</oVar></l>
+         <l>Voeg u in dezen stoel.</l>
+        </q>
+        <bibl><author>BARTELINK</author>, <title>B. Kermis</title> 24 [1774]<date notBefore="1774"
+          notAfter="1774"/>.<idno n="B0000440"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.13" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Op zijn gemak zijn</usg>
+        </cit>, kalm, bedaard, niet vreesachtig zijn; evenzoo <cit type="colloc">
+         <usg type="colloc">zich op zijn gemak bevinden, zich op zijn gemak gevoelen, op zijn gemak
+          raken</usg>
+        </cit> en derg., waarin <hi rend="font-style:italic">gemak</hi> afwezigheid van vrees,
+        gemoedsrust te kennen geeft. Vooral ook met de ontkenning: <cit type="colloc">
+         <usg type="colloc">niet op zijn gemak zijn</usg>
+        </cit> enz., onrustig, vreesachtig, gejaagd zijn. </def><cit>
+        <q n="16785">Met engelen of heiligen ware ik misschien minder op mijn
+         <oVar>gemak,</oVar></q>
+        <bibl><author>V. LENNEP</author>, <title>Rom.</title> 5, 76 [1836]<date notBefore="1836"
+          notAfter="1836"/>.<idno n="B0003749"/></bibl>
+       </cit>
+       <cit>
+        <q n="16786"> De Komeet had juist gedurende de voorlezing der notulen … den tijd gehad om
+         wat op zijn <oVar>gemak</oVar> te raken,</q>
+        <bibl><author>V. LENNEP</author>, <title>K. Zev.</title> 1, 40 [1865]<date notBefore="1865"
+          notAfter="1865"/>.<idno n="B0003752"/></bibl>
+       </cit>
+       <cit>
+        <q n="16787"> Elk haastte zich aan 't bevel te voldoen, ook Bleek, al zag hij er niet
+         bijzonder op zijn <oVar>gemak</oVar> uit,</q>
+        <bibl>1, 46.<idno n="B0003752"/></bibl>
+       </cit>
+       <cit>
+        <q n="16788">Nicolette, die te onschuldig en te weinig ergdenkend was, om zich tegenover een
+         huisgenoot niet op haar <oVar>gemak</oVar> te gevoelen,</q>
+        <bibl>3, 117.<idno n="B0003752"/></bibl>
+       </cit>
+       <cit>
+        <q n="16789">Een slechte conscientie is een kwade zaak, en daarmeê kan men nooit recht op
+         zijn <oVar>gemak</oVar> zijn,</q>
+        <bibl>4, 136.<idno n="B0003752"/></bibl>
+       </cit>
+       <cit>
+        <q n="16790">De … dienaren …, die zich niet op hun <oVar>gemak</oVar> bevonden,</q>
+        <bibl><author>BOSB.-TOUSS.</author> 2, 31 <title>a</title> [1842]<date notBefore="1842"
+          notAfter="1842"/>. <idno n="B0001030"/></bibl>
+       </cit>
+       <cit>
+        <q n="16791"><l>Als de een of andre heer</l>
+         <l>Met nichtje joolde of fluistrend sprak,</l>
+         <l>Neef scheen dan nooit op zijn <oVar>gemak.</oVar></l>
+        </q>
+        <bibl><author>V. ZEGGELEN</author> 5, 159 [1850]<date notBefore="1850" notAfter="1850"
+          />.<idno n="B0007083"/></bibl>
+       </cit>
+       <cit>
+        <q><l>Onze Vriend, niet gansch op zijn gemak,</l>
+         <l>Toog weer naar 't raam en stond, de handen in den zak,</l>
+         <l>En zweeg en zuchtte en blies.</l>
+        </q>
+        <bibl><author>DE GÉNESTET</author> 2, 160 [1859]<date notBefore="1859" notAfter="1859"
+         />.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.14" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Iemand op zijn gemak brengen, — stellen, — zetten</usg>
+        </cit>, iemand, die gejaagd of onrustig is, kalmte inboezemen door vriendelijke bejegening. </def><cit>
+        <q n="16792">Nicolette, door den vroolijken toon van Bettemie weder geheel op haar
+          <oVar>gemak</oVar> gesteld,</q>
+        <bibl><author>V. LENNEP</author>, <title>K. Zev.</title> 1, 316 [1865]<date notBefore="1865"
+          notAfter="1865"/>.<idno n="B0003752"/></bibl>
+       </cit>
+       <cit>
+        <q n="16793"> Ik zal u iets zeggen, dat u op uw <oVar>gemak</oVar> zal stellen,</q>
+        <bibl><author>CONSC.</author> 1, 67 <title>b</title> [ed. 1867]<date notBefore="1867"
+          notAfter="1867" type="ed"/>.<idno n="B0001559"/></bibl>
+       </cit>
+       <cit>
+        <q n="16794"> Zulke trekken vermaakten de Bourgondiërs onuitsprekelijk; maar ze zetten de
+         Duitschers niet zeer op hun <oVar>gemak,</oVar></q>
+        <bibl><author>BOSB.-TOUSS.</author> 2, 50 <title>b</title> [1842]<date notBefore="1842"
+          notAfter="1842"/>.<idno n="B0001030"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.15" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Op zijn gemak</usg>
+        </cit>, als bijwoordelijke bepaling.</def>
+      </sense>
+      <sense xml:id="M018881.bet.16" n="1°" type="primosecundo"><def> In een rustigen en kalmen
+        toestand, zonder gekweld te worden door iets onaangenaams, zonder inspanning. </def><cit>
+        <q n="16795">Vee en vogel … lagen zorgeloos en stil, by nacht op hun <oVar>gemack</oVar> en
+         sliepen,</q>
+        <bibl><author>VONDEL</author> 5, 219 [1646]<date notBefore="1646" notAfter="1646"/>.<idno
+          n="B0006585 B0006586"/></bibl>
+       </cit>
+       <cit>
+        <q n="16796"> Daar is altijd meer plaats te krijgen, en men kan er op zijn
+          <oVar>gemak</oVar> zitten,</q>
+        <bibl><author>FOKKE</author>, <title>Verz. W.</title> 9, 76 [1808]<date notBefore="1808"
+          notAfter="1808"/>.<idno n="B0002215"/></bibl>
+       </cit>
+       <cit>
+        <q n="16797"> Bij een vrolijk knappend vuurtje gezeten, en op zijn <oVar>gemak</oVar> zijne
+         pijp rokende,</q>
+        <bibl><author>KIST</author>, <title>Eikenh.</title> 4, 389 [1811]<date notBefore="1811"
+          notAfter="1811"/>. <idno n="B0003534"/></bibl>
+       </cit>
+       <cit>
+        <q n="16798"><l>Gingt gy u niet gestaeg vertreden aen der heyden,</l>
+         <l>En saegt op uw <oVar>gemack</oVar> de jonge schapen weyden?</l>
+        </q>
+        <bibl><author>CATS</author> 2, 18 <title>b</title> [1635]<date notBefore="1635"
+          notAfter="1635"/>.<idno n="B0001431"/></bibl>
+       </cit>
+       <cit>
+        <q n="16799"><l>Verloste Herkules de luiden</l>
+         <l>En landen oit op zijn <oVar>gemack?</oVar></l>
+         <l>Of bezighde hy leeuwenhuiden,</l>
+         <l>En knodts, en boogh, <hi rend="font-style:italic">enz.</hi>?</l>
+        </q>
+        <bibl><author>VONDEL</author> 9, 676 [1663]<date notBefore="1663" notAfter="1663"/>.<idno
+          n="B0006585 B0006586"/></bibl>
+       </cit>
+       <cit>
+        <q n="16800"><l>De huisman rust op zijn <oVar>gemak</oVar></l>
+         <l>In schaduw van den olmentak.</l>
+        </q>
+        <bibl><author>V. LENNEP</author>, <title>Poët.</title> 13, 14 [1853]<date notBefore="1853"
+          notAfter="1853"/>.<idno n="B0003748"/></bibl>
+       </cit>
+       <cit>
+        <q><l>Vogels zitten dikwijls op hun uiterste gemak</l>
+         <l>Met hun eene been op een hoogen, dunnen tak.</l>
+        </q>
+        <bibl><title>Schoolm.</title> 124 [voor 1858]<date notAfter="1858" type="voor"/>.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.17" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Op zijn gemak (kunnen) leven</usg>
+        </cit>, zonder al te inspannenden arbeid, zonder kwellende zorgen om rond te komen, maar met
+        de noodige ruimte van geldmiddelen. </def><cit>
+        <q n="16801">Hij is wel niet rijk, maar hij kan op zijn <oVar>gemak</oVar> leven. </q>
+        <bibl><idno/><title>poëem WNT</title><date notBefore="1886" notAfter="1886"/></bibl>
+       </cit>
+       <cit>
+        <q n="16802">— Een ton of wat …, die wij niet zouden behoeven om op ons <oVar>gemak</oVar>
+         te leven,</q>
+        <bibl><author>V. LENNEP</author>, <title>K. Zev.</title> 2, 250 [1865]<date notBefore="1865"
+          notAfter="1865"/>.<idno n="B0003752"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.18" n="—" type="dash"><def> Spreekw. <cit type="colloc">
+         <usg type="colloc">Op zijn gemak wordt men liefst rijk</usg>
+        </cit>, men wil liefst rijk worden zonder inspanning (<hi
+         rend="text-transformation:smallcaps">HARREB.</hi> 1, 228 [1858]).</def>
+      </sense>
+      <sense xml:id="M018881.sense.62" n="—" type="dash"><def>
+        <hi rend="font-weight:bold">Aanm.</hi> Bij <hi rend="text-transformation:smallcaps">V.
+         LENNEP</hi>, <hi rend="font-style:italic">Rom.</hi> 21, 6 [1849], leest men: ”Een dier
+        ruime ledikanten …, met lakens, waaronder zes personen <cit type="colloc">
+         <usg type="colloc">op hun gemak</usg>
+        </cit> konden geborgen worden.” De schrijver bedoelde <hi rend="font-style:italic">zonder
+         moeite.</hi> Daarvoor echter zegt men <cit type="colloc">
+         <usg type="colloc">met gemak</usg>
+        </cit>: zie straks bij I, 2). De personen konden er <cit type="colloc">
+         <usg type="colloc">op hun gemak</usg>
+        </cit> liggen, maar <cit type="colloc">
+         <usg type="colloc">met gemak</usg>
+        </cit> geborgen worden.</def></sense>
+      <sense xml:id="M018881.bet.19" n="2°" type="primosecundo"><def> Zonder inspanning, zonder zich
+        te overhaasten, bedaard, langzaam. In de gemeenzame spreektaal ook <cit type="colloc">
+         <usg type="colloc">op zijn doode (uitspr. dooie) gemak</usg>
+        </cit>. Verg. <xr type="article_id_internal"><ref target="M013988">DOOD</ref></xr>, bnw.
+        Voorheen ook zonder het bezitt. vnw.: <cit type="colloc">
+         <usg type="colloc">op gemak</usg>
+        </cit>. </def><cit>
+        <q n="16803">Ick sal my op mijn <oVar>gemack</oVar> als leytsman voegen na den gangh van het
+         werck (Vulg. <hi rend="font-style:italic">paulatim</hi>),</q>
+        <bibl><title>Statenb.</title>, <title>Gen.</title> 33, 14 [ed. 1688]<date notBefore="1688"
+          notAfter="1688" type="ed"/>.<idno n="B0005874"/></bibl>
+       </cit>
+       <cit>
+        <q n="16804"> De zinkroers … meest al 's avondts te voren op <oVar>gemak</oVar> ende
+         zinnelijk gelaaden …, klonken dapper deur,</q>
+        <bibl><author>HOOFT</author>, <title>Henr. de Gr.</title> 70 [1626]<date notBefore="1626"
+          notAfter="1626"/>.<idno n="B0003071"/></bibl>
+       </cit>
+       <cit>
+        <q n="16805"> De enkele malen, dat gij … te huis zijt …, hebt gij nog naauwelijks tijd, om
+         op uw <oVar>gemak</oVar> een kopje thee te drinken,</q>
+        <bibl><author>LOOSJES</author>, <title>Bronkh.</title> 1, 191 [1806]<date notBefore="1806"
+          notAfter="1806"/>.<idno n="B0003875"/></bibl>
+       </cit>
+       <cit>
+        <q n="16806"> Wij namen, gelijk ook de overblijfsels mijner zwakheid … vorderden, het togtje
+         zeer op ons <oVar>gemak</oVar> op,</q>
+        <bibl>6, 269.<idno n="B0003875"/></bibl>
+       </cit>
+       <cit>
+        <q n="16807">Gij kunt begrijpen, dat het slechts eene ruwe schets is, dat ik het op mijn
+          <oVar>gemak</oVar> zal uitwerken,</q>
+        <bibl><author>KIST</author>, <title>Eikenh.</title> 1, 379 [1809]<date notBefore="1809"
+          notAfter="1809"/>.<idno n="B0003534"/></bibl>
+       </cit>
+       <cit>
+        <q n="16808"> Nadat hij op zijn <oVar>gemak</oVar> zal gegeten hebben,</q>
+        <bibl><author>V.D. PALM</author>, <title>Sal.</title> 1, 268 [1808]<date notBefore="1808"
+          notAfter="1808"/>.<idno n="B0004730"/></bibl>
+       </cit>
+       <cit>
+        <q n="16809"> Hij kleedt zich langzaam en op zijn <oVar>gemak,</oVar></q>
+        <bibl>6, 430.<idno n="B0004730"/></bibl>
+       </cit>
+       <cit>
+        <q>Wij bliezen op ons doode gemak onze rookwolken uit,</q>
+        <bibl><author>KELLER</author>, <title>Zuiden</title>, 1, 203. </bibl>
+       </cit>
+       <cit>
+        <q n="16810"><l>Maer t' wijl op haer <oVar>gemack</oVar> de jonge lieden mallen,</l>
+         <l>Soo is 'er uyt de lucht een dichte snee gevallen.</l>
+        </q>
+        <bibl><author>CATS</author> 2, 120 <title>b</title> [1635]<date notBefore="1635"
+          notAfter="1635"/>.<idno n="B0001431"/></bibl>
+       </cit>
+       <cit>
+        <q><l>Al loopt gij vlug en schijnbaar vaster,</l>
+         <l>Ik kom er óók op mijn gemak.</l>
+        </q>
+        <bibl><author>V. ZEGGELEN</author> 7, 88 [1844]<date notBefore="1844" notAfter="1844"
+         />.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.20" n="—" type="dash"><def> Spreekw. <cit type="colloc">
+         <usg type="colloc">Op zijn gemak komt men ook ver</usg>
+        </cit>, bedaard overleg doet het werk beter vorderen dan te groote haast (<hi
+         rend="text-transformation:smallcaps">HARREB.</hi> 1, 228 [1858], en <hi
+         rend="text-transformation:smallcaps">HARREB.</hi> 3, 193 [1870]).</def>
+      </sense>
+      <sense xml:id="M018881.bet.21" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Met gemak</usg>
+        </cit>, als adverbiale bepaling.</def>
+      </sense>
+      <sense xml:id="M018881.bet.22" n="1°" type="primosecundo"><def> Zonder ongerief, zonder
+        onaangename wederwaardigheden. Thans verouderd.</def>
+      </sense>
+      <sense xml:id="M018881.sense.77" type="UNK"><def> </def><cit>
+        <q n="16811"><l>Wy konnen met <oVar>gemack</oVar> en sonder twisten leven …,</l>
+         <l>Indien het echte volck naer reden hooren wil.</l>
+        </q>
+        <bibl><author>CATS</author> 1, 321 <title>b</title> [1625]<date notBefore="1625"
+          notAfter="1625"/>.<idno n="B0001431"/></bibl>
+       </cit>
+       <cit>
+        <q><l>Wenst dat hy met gemack, en sonder tegenspoet,</l>
+         <l>Haest koomen daer hy gaet, haest weder keeren moet.</l>
+        </q>
+        <bibl>1, 356 <title>a.</title></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.23" n="—" type="dash"><def> Met eene kleine uitbreiding van
+        beteekenis ook in den zin van <hi rend="font-style:italic">goedschiks</hi>, d. i. <hi
+         rend="font-style:italic">zonder tegenstribbelen</hi>, <hi rend="font-style:italic">zonder
+         zich boos te maken</hi>, <hi rend="font-style:italic">kalm</hi>; vooral in de vereenigde
+        uitdrukking <cit type="colloc">
+         <usg type="colloc">met gemak of ongemak</usg>
+        </cit>, goedschiks of kwaadschiks. </def><cit>
+        <q>Zy zouden van daar niet, voor dat Rebours en zyn volk, 't waar met gemak oft ongemak, de
+         stadt ontleedight hadden,</q>
+        <bibl><author>HOOFT</author>, <title>N.H.</title> 845 [1642]<date notBefore="1642"
+          notAfter="1642"/>. </bibl>
+       </cit>
+       <cit>
+        <q n="16812"><l>U past het hem, die niet wil luisteren, te dwingen. …</l>
+         <l>Ja sleip hem, wil hy u niet volgen met <oVar>gemack.</oVar></l>
+        </q>
+        <bibl><author>VONDEL</author> 7, 83 [1657]<date notBefore="1657" notAfter="1657"/>.<idno
+          n="B0006585 B0006586"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.24" n="2°" type="primosecundo"><def> Rustig, bedaard, zonder
+        overhaasting. Thans mede verouderd. </def><cit>
+        <q n="16813">Dat wij maar te Sèvres zouden logeren, omdat wij dan eerst met
+          <oVar>gemak</oVar> de fraaije Porselein-fabrijk zouden kunnen zien,</q>
+        <bibl><author>LOOSJES</author>, <title>Bronkh.</title> 5, 71 [1807]<date notBefore="1807"
+          notAfter="1807"/>. <idno n="B0003875"/></bibl>
+       </cit>
+       <cit>
+        <q n="16814"><l>Hy slaet dan met <oVar>gemack</oVar> sijn mantel om de leden,</l>
+         <l>En gaet (gelijk het scheen) een weynig hem vertreden.</l>
+        </q>
+        <bibl><author>CATS</author> 2, 261 <title>b</title> [1635]<date notBefore="1635"
+          notAfter="1635"/>.<idno n="B0001431"/></bibl>
+       </cit>
+       <cit>
+        <q n="16815"><l>'t Is beter met <oVar>gemack</oVar> hier nader op te letten,</l>
+         <l>Als door een korsel hooft sijn eere los te setten.</l>
+        </q>
+        <bibl>2, 263 <title>a.</title><idno n="B0001431"/></bibl>
+       </cit>
+       <cit>
+        <q><l>Toen stak hy straks het fluitjen in zijn zak,</l>
+         <l>En ging na huis ten velde in met gemak.</l>
+        </q>
+        <bibl><author>LUYKEN</author>, <title>D. Lier</title>, 40.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.25" n="3°" type="primosecundo"><def> Gewestelijk ook in den zin van
+         <hi rend="font-style:italic">langzamerhand</hi>, <hi rend="font-style:italic">allengs.</hi>
+        Zoo zegt men b.v. te Nijkerk: <cit type="colloc">
+         <usg type="colloc">de man wordt met gemak oud</usg>
+        </cit>, wordt gaandeweg oud.</def>
+      </sense>
+      <sense xml:id="M018881.bet.26" n="4°" type="primosecundo"><def> Zonder moeite, gemakkelijk.
+        Zie straks, bij I, 2, <hi rend="font-style:italic">a</hi>).</def>
+      </sense>
+     </sense>
+     <sense xml:id="M018881.bet.27" n="2" type="arabic"><def> Het vermogen om iets zonder inspanning
+       en moeite te verrichten, van zaken zoowel als van personen gezegd: eene beteekenis, die zich
+       vanzelf uit de boven behandelde ontwikkelde, eerst in de uitdrukking <cit type="colloc">
+        <usg type="colloc">met gemak</usg>
+       </cit>, vervolgens ook in het gebruik van <hi rend="font-style:italic">gemak</hi> op zich
+       zelf.</def>
+      <sense xml:id="M018881.bet.28" n="a" type="letter_italic"><def> In de uitdrukking <cit
+         type="colloc">
+         <usg type="colloc">met gemak</usg>
+        </cit>, zonder inspanning, zonder moeite, gemakkelijk. De thans gewone opvatting, die
+        eigenlijk eene latere wijziging is van de beide thans verouderde beteekenissen, zoo straks
+        onder 1) vermeld: eene wijziging, waartoe de invloed van het afgeleide <hi
+         rend="font-style:italic">gemakkelijk</hi>, als tegenstelling van <hi
+         rend="font-style:italic">moeilijk</hi>, vanzelf aanleiding gaf. </def><cit>
+        <q n="16816">Ik kan dat met <oVar>gemak</oVar> doen. Hij kan met <oVar>gemak</oVar> vijftig
+         pond oplichten. Van die broodjes eet hij er met <oVar>gemak</oVar> vier of vijf op. </q>
+        <bibl><idno/><title>poëem WNT</title><date notBefore="1886" notAfter="1886"/></bibl>
+       </cit>
+       <cit>
+        <q n="16817">— Visschersschuiten, uit hoofde van haar vorm geschikt om zich met spoed en
+          <oVar>gemak</oVar> naar elke zijde te wenden,</q>
+        <bibl><author>V. LENNEP</author>, <title>Rom.</title> 12, 3 [1838]<date notBefore="1838"
+          notAfter="1838"/>.<idno n="B0003749"/></bibl>
+       </cit>
+       <cit>
+        <q n="16818"> Deze … hield nu den zwakken vinder met even veel <oVar>gemak</oVar> onder zich
+         als de gier een tengere duif,</q>
+        <bibl>12, 58.<idno n="B0003749"/></bibl>
+       </cit>
+       <cit>
+        <q n="16819">Zij meende te bemerken, dat het (<hi rend="font-style:italic">het
+          vleeschnat</hi>) hem goed deed en het allengskens met meer <oVar>gemak</oVar> door zijne
+         keel zakte,</q>
+        <bibl><author>CONSC.</author> 1, 229 <title>a</title> [ed. 1867]<date notBefore="1867"
+          notAfter="1867" type="ed"/>.<idno n="B0001559"/></bibl>
+       </cit>
+       <cit>
+        <q> De arbeid scheen met meer gemak voort te gaan,</q>
+        <bibl>3, 15 <title>a</title>. </bibl>
+       </cit>
+       <cit>
+        <q n="16820"><l>Geloof mij, jong'ling, volg mijn' raad,</l>
+         <l>En kies het vak der rechten:</l>
+         <l>Vooreerst, gij leert dat gansche vak</l>
+         <l>In drie saizoenen met <oVar>gemak.</oVar></l>
+        </q>
+        <bibl><author>V. LENNEP</author>, <title>Poët.</title> 5, 18 [1826]<date notBefore="1826"
+          notAfter="1826"/>.<idno n="B0003748"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.29" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Met het grootste gemak</usg>
+        </cit>, zonder de minste moeite. </def><cit>
+        <q n="16821">Cats … rijmt met het grootste <oVar>gemak;</oVar> maar aarzelt ook nooit zijne
+         toevlucht te nemen tot … stopwoorden,</q>
+        <bibl><author>JONCKBLOET</author>, <title>Gesch. d. N. Lett.</title> 4, 45.<idno
+          n="B0003326"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.30" n="b" type="letter_italic"><def>
+        <hi rend="font-style:italic">Gemak</hi>, in toepassing op handelingen en verrichtingen,
+        eigenlijk van personen, maar bij uitbreiding ook van zaken gezegd. De gemakkelijke wijze
+        waarop men iets doet; de handigheid en geschiktheid, waarmede iemand datgene verricht, wat
+        hem blijkbaar geene inspanning en moeite kost. <hi rend="font-style:italic">Gemak</hi> in
+        dezen zin is van betrekkelijk jongere dagteekening en aan de uitdrukking <cit type="colloc">
+         <usg type="colloc">met gemak</usg>
+        </cit> ontleend. Uit het zeggen b.v. <cit type="colloc">
+         <usg type="colloc">hij werkt met gemak</usg>
+        </cit> vloeide vanzelf de uitdrukking voort: <hi rend="font-style:italic">het gemak</hi>,
+         <hi rend="font-style:italic">waarmede hij werkt</hi>, en zoo trad <hi
+         rend="font-style:italic">gemak</hi> allengs kortheidshalve in de plaats van het slepende
+         <hi rend="font-style:italic">gemakkelijkheid</hi> (zie ald.), zooals men vroeger placht te
+        zeggen. </def><cit>
+        <q n="16822">Ik bewonder het <oVar>gemak,</oVar> waarmede hij de ingewikkeldste vraagstukken
+         behandelt. </q>
+        <bibl><idno/><title>poëem WNT</title><date notBefore="1886" notAfter="1886"/></bibl>
+       </cit>
+       <cit>
+        <q n="16823">— Dit … geldt voor alle schoone kunsten: waar geen <oVar>gemak</oVar> in de
+         uitvoering is, daar is geene bevalligheid, geene schoonheid,</q>
+        <bibl><author>HALBERTSMA</author>, <title>O. IJ. Alm.</title> 1842, bl. 189.<idno
+          n="B0002669"/></bibl>
+       </cit>
+      </sense>
+     </sense>
+    </sense>
+
+    <sense xml:id="M018881.bet.31" n="II" type="roman"><def> Concreet, met mv. en verkl.</def>
+     <sense xml:id="M018881.bet.32" n="1" type="arabic"><def> In 't algemeen. Iets dat geriefelijk
+       is, dat iemand goed te pas komt, dat hem van dienst kan zijn om inspanning en moeite uit te
+       winnen; zoowel van voorwerpen als van omstandigheden gezegd. </def><cit>
+       <q n="16824">De Centurio had alzoo het <oVar>gemak,</oVar> hen, die hij hooren wilde, door
+        den openen gang voorbij zich heen te laten trekken, zonder dat zij elkander ontmoetten of
+        verdrongen,</q>
+       <bibl><author>V. LENNEP</author>, <title>Rom.</title> 9, 242 [1838]<date notBefore="1838"
+         notAfter="1838"/>. <idno n="B0003749"/></bibl>
+      </cit>
+      <cit>
+       <q n="16825"><l>Wy sien de molens staen, die van den wint gedreven,</l>
+        <l>Een sonderling <oVar>gemack</oVar> aen alle menschen geven.</l>
+       </q>
+       <bibl><author>CATS</author> 2, 415 <title>a</title> [1655]<date notBefore="1655"
+         notAfter="1655"/>.<idno n="B0001431"/></bibl>
+      </cit>
+      <cit>
+       <q><l>Dan is 't ghemack een Onderdaen te zyn.</l>
+       </q>
+       <bibl><author>COSTER</author>, <title>Iphig.</title> 18 [ed. 1617]<date notBefore="1617"
+         notAfter="1617" type="ed"/>.</bibl>
+      </cit>
+      <sense xml:id="M018881.bet.33" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Een groot gemak</usg>
+        </cit>, een zeer geriefelijk iets. </def><cit>
+        <q>Salonwagens zijn op reis een groot gemak. </q>
+        <bibl/>
+       </cit>
+       <cit>
+        <q n="16826"><l>Geen lucifer, dat groot <oVar>gemak,</oVar></l>
+         <l>Geen lucifer bestond er.</l>
+        </q>
+        <bibl><author>BEETS</author>, <title>Madel.</title> 124.<idno n="B0007245"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.34" n="—" type="dash"><def> Inzonderheid in 't mv. <hi
+         rend="font-style:italic">gemakken</hi>, geriefelijkheden. </def><cit>
+        <q n="16827">Een huis met vele <oVar>gemakken.</oVar>
+        </q>
+        <bibl><idno/><title>poëem WNT</title><date notBefore="1886" notAfter="1886"/></bibl>
+       </cit>
+       <cit>
+        <q n="16828">— Het zijkamertjen is zo groot als een Utrechtsche roef, vol
+          <oVar>gemakken,</oVar></q>
+        <bibl><author>WOLFF</author> en <author>DEKEN</author>, <title>Wildsch.</title> 4, 188
+          [1793]<date notBefore="1793" notAfter="1793"/>.<idno n="B0000536"/></bibl>
+       </cit>
+       <cit>
+        <q n="16829"> Die … talrijke klasse van menschen, die … aan de <oVar>gemakken</oVar> en
+         genietingen des levens geen, of een zeer gering aandeel hebben,</q>
+        <bibl><author>V.D. PALM</author>, <title>Sal.</title> 3, 303 [1809]<date notBefore="1809"
+          notAfter="1809"/>.<idno n="B0004730"/></bibl>
+       </cit>
+       <cit>
+        <q n="16830"> Wat werden er al <oVar>gemakken,</oVar> genoegens en voordeelen ontdekt van de
+         vroeger onbekende plaats!</q>
+        <bibl><author>V. KOETSVELD</author>, <title>Mastl.</title> 14.<idno n="B0003641"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.35" n="—" type="dash"><def> Voorheen ook in verbinding met <hi
+         rend="font-style:italic">gerak</hi> (zie ald.), dat ongeveer hetzelfde beteekende, in de
+        zegsw. <cit type="colloc">
+         <usg type="colloc">zijn gemak en gerak</usg>
+        </cit>, alles wat men noodig heeft, alle geriefelijkheden. </def><cit>
+        <q n="16831">Diese in verscheiden huysen deeden vast setten en wel bewaaren, maar andersins
+         haar <oVar>gemak</oVar> en gerak ten vollen lieten hebben,</q>
+        <bibl><author>V. HEEMSKERK</author>, <title>Arc.</title> 239.<idno n="B0002834"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.36" n="—" type="dash"><def>
+        <cit type="colloc">
+         <usg type="colloc">Iemand gemak doen</usg>
+        </cit>, hem geriefelijkheid bezorgen. Thans verouderd. </def><cit>
+        <q n="16832"><l>Te minsten hadt ghy my gebruyckt tot ander saken,</l>
+         <l>Om u <oVar>gemack</oVar> te doen, en om u bed te maken.</l>
+        </q>
+        <bibl><author>D. HEINSIUS</author>, <title>Bacchus</title>, 13.<idno n="B0002867"/></bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.37" n="—" type="dash"><def> Spreekw. <cit type="colloc">
+         <usg type="colloc">Het geld is een groot gemak in eene huishouding</usg>
+        </cit>, is onontbeerlijk (<hi rend="text-transformation:smallcaps">HARREB.</hi> 1, 228
+        [1858]). — <cit type="colloc">
+         <usg type="colloc">Een klein pak Geeft groot gemak</usg>
+        </cit>, men moet niet te veel op zich nemen (<hi rend="font-style:italic">Ald.</hi>). —
+         '<cit type="colloc">
+         <usg type="colloc">t Pak naar 't paard, en 't paard naar 't pak, Geeft voorwaar een groot
+          gemak</usg>
+        </cit>, men moet niet meer op zich nemen dan men kan dragen (<hi rend="font-style:italic"
+         >Ald.</hi>). — <cit type="colloc">
+         <usg type="colloc">Vrijen onder één dak, Is een groot gemak</usg>
+        </cit>, verloofden zijn liefst bij elkander (<hi rend="font-style:italic">Ald.</hi>).</def>
+      </sense>
+     </sense>
+     <sense xml:id="M018881.bet.38" n="2" type="arabic"><def> In 't bijzonder. Eene plaats, waar men
+       rustig zich kan afzonderen, t.w. eene kamer, een vertrek: de eenige beteekenis, die hd. <hi
+        rend="font-style:italic">gemach</hi> thans nog heeft overgehouden.</def>
+      <sense xml:id="M018881.bet.39" n="a" type="letter_italic"><def> In 't algemeen. Thans
+        verouderd en alleen nog gebezigd in gewestelijke spraak, t.w. in Gelderland (<hi
+         rend="font-style:italic">Taalk. Mag.</hi> 2, 408). </def><cit>
+        <q n="16833">Terwyl de soldaaten naa den Kornel loopen, snapt (ze) t' eener achterdeur uit,
+         naa haaren Vaader, in 't naaste <oVar>gemak,</oVar></q>
+        <bibl><author>HOOFT</author>, <title>N.H.</title> 609 [1642]<date notBefore="1642"
+          notAfter="1642"/>.<idno n="B0003072"/></bibl>
+       </cit>
+       <cit>
+        <q n="16834"> In 't leyden zyner Doorluchtigheit naa 't <oVar>gemak,</oVar> zeyde zy
+         meerwerfs: <hi rend="font-style:italic">enz.</hi>,</q>
+        <bibl> 814.<idno n="B0003072"/></bibl>
+       </cit>
+       <cit>
+        <q n="16835">Men wende voor, het was laet ende de Coninghinne vertoghen in 't
+          <oVar>gemack,</oVar></q>
+        <bibl><author>HUYGENS</author> bij <author>HOOFT</author>, <title>Br.</title> 3, 196
+          [1636]<date notBefore="1636" notAfter="1636"/>. <idno n="B0003064 B0003067"/></bibl>
+       </cit>
+       <cit>
+        <q n="16836"><l>Sint ghij u daer in vesten (<hi rend="font-style:italic">in mijn
+          hart</hi>)</l>
+         <l>Als in een waert <oVar>gemack,</oVar>
+          <hi rend="font-style:italic">enz.</hi></l>
+        </q>
+        <bibl><author>HOOFT</author>, <title>Ged.</title> 1, 78 [1608]<date notBefore="1608"
+          notAfter="1608"/>.<idno n="B0003068"/></bibl>
+       </cit>
+       <cit>
+        <q><l>Ick sliep tot thienen toe, dan quam de Maagt getreden,</l>
+         <l>En ging gestolens wijs met ruchteloose schreden,</l>
+         <l>En quam tot in 't gemack, tot aan mijn ledikant.</l>
+        </q>
+        <bibl><author>POIRTERS</author>, <title>Mask.</title> 297 [ed. 1688]<date notBefore="1688"
+          notAfter="1688" type="ed"/>.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="M018881.bet.40" n="b" type="letter_italic"><def> In 't bijzonder, met verkl.
+         <hi rend="font-style:italic">gemakje.</hi> Bestekamer, sekreet. Verg. fr. <hi
+         rend="font-style:italic">commodité</hi>, <hi rend="font-style:italic">lieu d' aisance.</hi>
+        Dikwijls vergezeld van het bnw. <hi rend="font-style:italic">heimelijk</hi> of <hi
+         rend="font-style:italic">geheim.</hi>
+       </def><cit>
+        <q n="16837">Daer toe brakense het huys Baals af, ende maeckten dat tot heymelicke
+          <oVar>gemacken,</oVar> tot op desen dagh (Vulg. <hi rend="font-style:italic"
+         >latrinas</hi>),</q>
+        <bibl><title>Statenb.</title>, 2 <title>Kon.</title> 10, 27 [ed. 1688]<date notBefore="1688"
+          notAfter="1688" type="ed"/>.<idno n="B0005874"/></bibl>
+       </cit>
+       <cit>
+        <q n="16838"> Onsen Koning heeft de beeltenis des Konings van Castilien in sijn kamer van
+          <oVar>gemak</oVar> (of, gelijk wy seggen, in zijn secreet) opgehangen,</q>
+        <bibl><author>DE BRUNE</author>, <title>Wetst.</title> 1, 7 [1644]<date notBefore="1644"
+          notAfter="1644"/>.<idno n="B0001277"/></bibl>
+       </cit>
+       <cit>
+        <q n="16839"> Ik heb eens op een heimelijk <oVar>gemakjen</oVar> geweest, daar stond de
+         heele historie op van Joseph en zijn broeders,</q>
+        <bibl><author>WOLFF</author> en <author>DEKEN</author>, <title>Wildsch.</title> 3, 267
+          [1793]<date notBefore="1793" notAfter="1793"/>.<idno n="B0000536"/></bibl>
+       </cit>
+       <cit>
+        <q> Veeltyds … staat het gemak aan den mestput geplaatst,</q>
+        <bibl><author>DE PERPONCHER</author>, <title>Z. Graanb.</title> 37. </bibl>
+       </cit>
+       <cit>
+        <q n="16840"><l>Wie ruymen ons <oVar>gemack,</oVar> wie vegen onse schoen?</l>
+        </q>
+        <bibl><author>CATS</author> 3, 13 <title>a</title> [1660]<date notBefore="1660"
+          notAfter="1660"/>.<idno n="B0001431"/></bibl>
+       </cit>
+       <cit>
+        <q n="16841"><l>Waer voor dient eigentlick een heimelick <oVar>gemack?</oVar></l>
+         <l>Voor heim'lick ongemack.</l>
+        </q>
+        <bibl><author>HUYGENS</author> 2, 51 [1656]<date notBefore="1656" notAfter="1656"/>.</bibl>
+       </cit>
+      </sense>
+     </sense>
+    </sense>
+    <re type="related_entry_section"><re type="related_entry_paragraph"><hi rend="font-weight:bold"
+       >Afl.</hi>
+      <re xml:id="M018881.re.1"><form type="lemma"><orth>Gemakkelijk</orth></form><form
+        value="gemakkelijk " type="mdl"/>
+       <sense type="dummy"><def/></sense></re></re>
+     <re type="related_entry_paragraph"><re xml:id="M018881.re.2"><form type="lemma"
+         ><orth>gemakshalve</orth></form><form value="gemakshalve " type="mdl"/>
+       <sense type="dummy"><def/></sense></re></re>
+     <re type="related_entry_paragraph"><re xml:id="M018881.re.3"><form type="lemma"
+         ><orth>ongemak</orth></form><form value="ongemak " type="mdl"/>
+       <sense type="dummy"><def/></sense></re> (zie die woorden).</re>
+     <re type="related_entry_paragraph"><hi rend="font-weight:bold">Samenst.</hi> In de bet. I). <re
+       xml:id="M018881.re.4"><form type="lemma"><orth>Gemakzucht</orth></form><form
+        value="gemakzucht " type="mdl"/>
+       <sense type="dummy"><def/></sense></re> (zie ald.).</re>
+     <re type="related_entry_paragraph">— In de bet. II, 2, <hi rend="font-style:italic">a</hi>).
+       <re xml:id="M018881.re.5"><form type="lemma"><orth>Slaapgemak</orth></form><form
+        value="slaapgemak " type="mdl"/>
+       <sense type="dummy"><def/></sense></re>, slaapvertrek, niet meer in gebruik (”En sluit in 't
+      voorvertrek van Bella's <hi rend="font-style:italic">slaapgemak</hi> Zich daadlijk af”, <hi
+       rend="text-transformation:smallcaps">STARING</hi> 2, 96 [1832]).</re>
+     <re type="related_entry_paragraph">— In de bet. II, 2, <hi rend="font-style:italic">b</hi>).
+       <re xml:id="M018881.re.6"><form type="lemma"><orth>Gemakhuisje</orth></form><form
+        value="gemakhuisje " type="mdl"/>
+       <sense type="dummy"><def/></sense></re>, op 't platteland</re>
+     <re type="related_entry_paragraph"><re xml:id="M018881.re.7"><form type="lemma"
+         ><orth>gemakkoffertje</orth></form><form value="gemakkoffertje " type="mdl"/>
+       <sense type="dummy"><def/></sense></re>, stilletje.</re>
+    </re>
+   </entry>
+
+  </body>
+ </text>
+</TEI>

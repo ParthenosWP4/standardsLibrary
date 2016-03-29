@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_gtb.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Historical dictionaries online</title>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>INL</publisher>
+   </publicationStmt>
+   <sourceDesc>
+    <p>refer to external description at http://gtb.inl.nl </p>
+   </sourceDesc>
+  </fileDesc>
+ </teiHeader>
+ <text>
+  <body>
+
+   <entry xml:id="X11782">
+
+    <form n="II" type="lemma"><orth>GEMAC</orth></form>
+    <form type="mdl">gemak</form>
+    <form type="lemmavariant"><orth>gemacke</orth></form>
+    <dictScrap>
+     <gramGrp><pos>znw</pos>(<subc>o</subc>.) </gramGrp> (<form type="lemmavariant">gemacke</form>,
+       <bibl><idno n="s0531_sub000"/><title><hi rend="font-style:italic">Grimb.</hi></title>
+      <hi rend="font-face:serif">I</hi>, 5188</bibl>), znw. o. <lang value="Oudhoogduits"
+      >Ohd.</lang>
+     <hi rend="font-style:italic">gimah</hi>; <lang value="Middelhoogduits">mhd.</lang>
+     <hi rend="font-style:italic">gemach</hi>; <lang value="Middelnederduits">mnd.</lang>
+     <hi rend="font-style:italic">gemack</hi>, <hi rend="font-style:italic">gemake</hi> en <hi
+      rend="font-style:italic">mack</hi>; onr. en <lang value="Oudzweeds">ozw.</lang>
+     <hi rend="font-style:italic">mak</hi>; zw. <lang value="Noors">noorw.</lang>
+     <hi rend="font-style:italic">mak</hi>; de. <hi rend="font-style:italic">mag</hi>. Zie Grimm,
+      <hi rend="font-style:italic">Wtb</hi>. 4<hi rend="vertical-align:superscript">1</hi>, 3123,
+      <hi rend="font-style:italic">b</hi>). Het <lang value="Engels">eng.</lang>
+     <hi rend="font-style:italic">match</hi> beantwoordt aan <lang value="Angelsaksisch">ags.</lang>
+     <hi rend="font-style:italic">gemäcca</hi>, <hi rend="font-style:italic">gemaco</hi>; <lang
+      value="Oudhoogduits">ohd.</lang>
+     <hi rend="font-style:italic">gimacho</hi>; <lang value="Nederlands">ndl.</lang>
+     <hi rend="font-style:italic">makker</hi>. Het is een synon. van mnl. <hi
+      rend="letter-spacing:2pt">genoot</hi> en <hi rend="letter-spacing:2pt">gade</hi>. Vgl. <lang
+      value="Angelsaksisch">ags.</lang>
+     <hi rend="font-style:italic">gemäcca</hi> in de bet. <hi rend="font-style:italic"
+      >echtgenoot</hi> en <hi rend="font-style:italic">makker</hi>, <hi rend="font-style:italic"
+      >kameraad</hi>; <lang value="Engels">eng.</lang>
+     <hi rend="font-style:italic">matchless</hi>, d. i. <hi rend="font-style:italic">weergaloos</hi>
+     of <hi rend="font-style:italic">gadeloos</hi>; mnl. <hi rend="letter-spacing:2pt">sonder
+      genoot</hi>; <lang value="Middelhoogduits">mhd.</lang>
+     <hi rend="font-style:italic">wunders gemach</hi>, wat op een wonder gelijkt (Lexer 1, 832); en
+     vooral Grimm, <hi rend="font-style:italic">Wtb</hi>. 4<hi rend="vertical-align:superscript"
+      >1</hi>, 3122, <hi rend="font-style:italic">b</hi>), en <bibl><idno n="s1280"/><title><hi
+        rend="font-style:italic">Tijdschr.</hi></title> 6, 47 vlgg.</bibl></dictScrap>
+
+    <sense xml:id="X11782.sense.1" n="1" type="arabic"><def> Subjectief. <hi
+       rend="font-style:italic">De toestand</hi>, <hi rend="font-style:italic">waarin men zich
+       aangenaam gestemd voelt</hi>, <hi rend="font-style:italic">aangename stemming</hi>; <hi
+       rend="font-style:italic">een gevoel van welbehagen</hi>, <hi rend="font-style:italic">van
+       innerlijke rust en vrede</hi>; vandaar zoowel <hi rend="font-style:italic">rust en
+      vrede</hi>, als <hi rend="font-style:italic">genoegen</hi>. Vgl. hd. <hi
+       rend="font-style:italic">bequemlichkeit</hi>. Vooral na een toestand van inspanning of
+      ontbering, een strijd, eene reis enz. “<hi rend="font-style:italic">ruhe nach
+      anstrengung</hi>”, gelijk Hoffmann op <bibl><idno n="s0433"/><title><hi
+         rend="font-style:italic">Flor.</hi></title></bibl> zeer juist zegt. </def>
+     <cit>
+      <q>(Si) onthaelden Waleweyne .., die <oVar>ghemaecs</oVar> wel hadde te doene, </q>
+      <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+         rend="font-style:italic">Wal.</hi></title> 825, <placeName><region key="VLA"
+         >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Ic ghelove (<hi rend="font-style:italic">t</hi>. love) bet vruechde ende
+        <oVar>ghemack</oVar>, dan toirn, leyd ende nijds ghewrack, </q>
+      <bibl><idno n="s0913"/><title><hi rend="font-style:italic">MLoep</hi></title> (<hi
+        rend="font-style:italic">var.</hi>) <hi rend="font-face:serif">IV</hi>, 2207.</bibl>
+     </cit>
+     <cit>
+      <q>Nochtan mach eene cleene sake den buke genoegen tsinen <oVar>gemake</oVar>, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub001"/><title><hi
+         rend="font-style:italic">Sp.</hi></title>
+       <hi rend="font-face:serif">I</hi><hi rend="vertical-align:superscript">8</hi>, 68, 36,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+        notAfter="1325"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Hi was zwaer van live ende oec van daghen mede ende socht <oVar>ghemac</oVar> ende vrede, </q>
+      <bibl><idno n="s0913_sub000"/><title><hi rend="font-style:italic">MLoep</hi></title>
+       <hi rend="font-face:serif">II</hi>, 880, <placeName><region key="HOL"
+        >Holland</region></placeName>, <date notBefore="1470" notAfter="1490"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Hare man en moghen gheen gepiin, maer <oVar>ghemac</oVar> moet hare wesen, </q>
+      <bibl><idno n="s0845"/><title><hi rend="font-style:italic">Limb.</hi></title>
+       <hi rend="font-face:serif">VIII</hi>, 846, <placeName><region key="BRA"
+         >Brabant</region>/<region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1340"
+        notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q><oVar>Ghemac</oVar> heeft die cornuut, </q>
+      <bibl type="iref"><idno n="s0845"/>852, <placeName><region key="BRA">Brabant</region>/<region
+         key="VLA">Vlaanderen</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Tot dat ene leyde tonghe brack hoir liefte, blijschap ende <oVar>ghemac</oVar>, </q>
+      <bibl type="iref"><idno n="s0845"/>445, <placeName><region key="BRA">Brabant</region>/<region
+         key="VLA">Vlaanderen</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Om <oVar>ghemac</oVar> ende vrede te houden binnen der stat, </q>
+      <bibl><idno n="s1144_sub011"/><title><hi rend="font-style:italic">R. v. Utr.</hi></title>
+       <hi rend="font-style:italic">Inl</hi>. 69.</bibl>
+     </cit>
+     <cit>
+      <q>Al hadde Brune lettel <oVar>ghemaex</oVar> (<hi rend="font-style:italic">al gevoelde hij
+        zich zeer ongelukkig</hi>, met de gewone mnl. litotes; vgl. ook de beide volgende plaatsen),
+       hi ontsach meer ongheval, </q>
+      <bibl><idno n="s1071"/><title><hi rend="font-style:italic">Rein.</hi>
+        <hi rend="font-face:serif">I</hi></title>, 736, <placeName><region key="VLA"
+         >Vlaanderen</region></placeName>, <date notBefore="1401" notAfter="1410"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Die luchter hant verloos hi saen … Negusar hadde luttel <oVar>ghemaex</oVar>, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s0016_sub000"/><title><hi
+         rend="font-style:italic">Alex.</hi></title>
+       <hi rend="font-face:serif">III</hi>, 201, <placeName><region key="VLA"
+        >Vlaanderen</region></placeName>, <date notBefore="1390" notAfter="1410"/>;</bibl>
+     </cit>
+     <note>zoo ook <bibl type="iref"><idno n="s0016"/>186.</bibl></note>
+     <cit>
+      <q>In desen vulen stinckenden zac (<hi rend="font-style:italic">het lichaam</hi>), daer hi
+        (<hi rend="font-style:italic">Christus</hi>) noit en hadde <oVar>ghemac</oVar> ende daer hi
+       sterf die bitter doot, </q>
+      <bibl><author>Jan van Boendale, </author><idno n="s0859_sub000"/><title><hi
+         rend="font-style:italic">Lsp.</hi></title>
+       <hi rend="font-face:serif">I</hi>, 37, 53, <placeName><region key="BRA"
+        >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Doe de arme jongelinc daer so wart <oVar>gemaex</oVar> geware, cam hi vele te houder dare
+        (<hi rend="font-style:italic">toen hij zag</hi>, <hi rend="font-style:italic">dat hij in het
+        huis van Marcus rust en</hi> “<hi rend="font-style:italic">comfort</hi>” <hi
+        rend="font-style:italic">zou kunnen krijgen</hi>), </q>
+      <bibl><author>Maerlant, Jacob van, </author><idno n="s0458"/><title><hi
+         rend="font-style:italic">Franc.</hi></title> 9780, <placeName><region key="VLA"
+         >Vlaanderen</region></placeName>, <date notBefore="1320" notAfter="1340"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Tere hermitagen, daer si luttel gewaecs (<hi rend="font-style:italic">l</hi>.
+        <oVar>gemaecs</oVar>) hadden, bedi daer was luttel tetene binnen, </q>
+      <bibl><author>Lodewijk van Velthem, </author><idno n="s0799"/><title><hi
+         rend="font-style:italic">Lanc.</hi></title>
+       <hi rend="font-face:serif">II</hi>, 9951, <placeName><region key="VLA"
+        >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Hoemen om haer <oVar>gemac</oVar> pogede ende om hen te dienne .. van .. ate, van ..
+       dranke, </q>
+      <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 3674,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+        notAfter="1400"/>.</bibl>
+     </cit>
+     <cit>
+      <q>So ginc si menechwerf .. opte tuunstaken al rechte staen .., want sien sochte engeen
+        <oVar>gemac</oVar>, als si haer gebedeken sprac, </q>
+      <bibl><idno n="s0214"/><title><hi rend="font-style:italic">Christ.</hi></title> 534,
+         <placeName><region key="BRN">Bovenregionaal</region>/<region key="LIM"
+        >Limburg</region></placeName>, <date notBefore="1359" notAfter="1386"/>.</bibl>
+     </cit>
+     <sense xml:id="X11782.sense.2" n="—" type="dash"><def> Deze bet. gaat aan de eene zijde (<hi
+        rend="font-style:italic">a</hi>) over in die van <hi rend="font-style:italic">aardsch
+        geluk</hi>, <hi rend="font-style:italic">wereldsch genoegen</hi>, <hi
+        rend="font-style:italic">vleeschelijk genot</hi>, aan den anderen kant (<hi
+        rend="font-style:italic">b</hi>) in die van <hi rend="font-style:italic">hemelsche
+        gelukzaligheid</hi>. </def></sense>
+     <sense xml:id="X11782.sense.3" n="a" type="letter_italic"><def> Achter dier tijt was alle
+       crancheit ende gemack der naturen orlof gegeven, <bibl><idno n="s0780"/><title><hi
+          rend="font-style:italic">Kl. v. Diepenv.</hi></title>
+        <hi rend="font-face:serif">II</hi>, 7.</bibl></def>
+      <cit>
+       <q> Die listicheit, dat <oVar>gemack</oVar> (<hi rend="font-style:italic">genotzucht</hi>)
+        ende eigensuekelicheit onser synlicker natueren, </q>
+       <bibl><idno n="s0680"/><title><hi rend="font-style:italic">Hs. Serm. G.</hi></title> 256<hi
+         rend="font-style:italic">a.</hi>, <placeName><region key="NON">Noord-Oost
+          Nederland</region></placeName>, <date notBefore="1540" notAfter="1560"/></bibl>
+      </cit>
+      <cit>
+       <q> Vanden wine hebbic <oVar>gemac</oVar>, dat mi aen die vrouwen gebrac (<hi
+         rend="font-style:italic">dat ik van de vrouwen niet smaakte</hi>), </q>
+       <bibl><idno n="s0056_sub095"/><title><hi rend="font-style:italic">Belg. Mus.</hi></title> 5,
+        78, 79, <placeName><region key="HOL">Holland</region>/<region key="VLA"
+          >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+         notBefore="1399" notAfter="1410"/>.</bibl>
+      </cit>
+      <cit>
+       <q> Hoe nauwe dat soe hare sake sette buten allen <oVar>gemake</oVar>, dat ware te seggene te
+        lanc, </q>
+       <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub011"/><title><hi
+          rend="font-style:italic">Sp.</hi></title>
+        <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">6</hi>, 38, 39,
+          <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+         notAfter="1325"/>.</bibl>
+      </cit>
+      <cit>
+       <q> Tfolc mint favele ende <oVar>gemac</oVar> ende om gelt eist datmen waect, </q>
+       <bibl><author>Maerlant, Jacob van, </author><idno n="s0458"/><title><hi
+          rend="font-style:italic">Franc.</hi></title> 50, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1320" notAfter="1340"/>.</bibl>
+      </cit>
+      <cit>
+       <q> Hem (<hi rend="font-style:italic">God</hi>) te dienen sonder oflaten ende sonder
+        ombughinghe totten tijtliken <oVar>ghemake</oVar>, </q>
+       <bibl><author>Bartolomeus Engelsman, </author><idno n="s0045"/><title><hi
+          rend="font-style:italic">Barth.</hi></title> 24<hi rend="font-style:italic">b.</hi>,
+          <placeName><region key="HOL">Holland</region></placeName>, <date notBefore="1485"
+         notAfter="1485"/></bibl>
+      </cit>
+      <cit>
+       <q> Si soeken haers lives <oVar>gemac</oVar> ende penninghe in haren sac, </q>
+       <bibl><idno n="s0607_sub017"/><title><hi rend="font-style:italic">Hor. Belg.</hi></title> 12,
+        27, <placeName><region key="HOL">Holland</region>/<region key="VLA"
+          >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+         notBefore="1410" notAfter="1430"/>.</bibl>
+      </cit>
+      <cit>
+       <q> Weelde ende <oVar>ghemac</oVar>, .. daer uut spruten alle blamen, </q>
+       <bibl><author>Jan van Boendale, </author><idno n="s0859_sub000"/><title><hi
+          rend="font-style:italic">Lsp.</hi></title>
+        <hi rend="font-face:serif">III</hi>, 26, 186, <placeName><region key="BRA"
+         >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+      </cit>
+      <sense xml:id="X11782.sense.4" type="UNK"><def><cit type="colloc">
+         <usg type="colloc">Geestelijc gemac</usg>
+        </cit>, <hi rend="font-style:italic">weelde van den geest</hi>, <hi rend="font-style:italic"
+         >zinnelijke neigingen van den geest</hi>, een mystieke term.</def>
+       <cit>
+        <q>Dat wij ons selven te seer soeken ende meynen in gheestelic <oVar>ghemac</oVar>, dat is
+         dat wy ons te seer neyghen ende te langhe bliven mit ghenuechten ende mit rusten op die
+         gaven Gods, .. ende willen Gode tot onsen wille hebben, </q>
+        <bibl><author>Hendrik Mande, </author><idno n="s0140_sub009"/><title>Brugm.</title> 1, 283,
+           <placeName><region key="HOL">Holland</region></placeName>, <date notBefore="1390"
+          notAfter="1410"/>.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="X11782.sense.5" type="UNK"><def>Van een dier.</def>
+       <cit>
+        <q>Hi (<hi rend="font-style:italic">de ezel</hi>) en can hem voeghen in gheen
+          <oVar>ghemac</oVar> (<hi rend="font-style:italic">hij kan niet tegen zijn geluk</hi>, <hi
+          rend="font-style:italic">wordt onbeschoft</hi>), al deed men hem ooc doocht ende eer, </q>
+        <bibl><idno n="s1072"/><title><hi rend="font-style:italic">Rein.</hi>
+          <hi rend="font-face:serif">II</hi></title>, 5746, <placeName><region key="HOL"
+           >Holland</region>/<region key="VLA">Vlaanderen</region></placeName>, <date
+          notBefore="1451" notAfter="1500"/>.</bibl>
+       </cit>
+      </sense>
+     </sense>
+     <sense xml:id="X11782.sense.6" n="b" type="letter_italic"><def> Wie sij Goids rike souden
+       moghen erwerven ende haer ziele gheërven in dat ewighe ghemack, <bibl><idno n="s1174"
+          /><title><hi rend="font-style:italic">Serv.</hi></title>
+        <hi rend="font-face:serif">I</hi>, 3106.</bibl></def>
+      <cit>
+       <q> Dat lange <oVar>gemac</oVar>, </q>
+       <bibl><idno n="s0390_sub033"/><title><hi rend="font-style:italic">D. War.</hi></title> 4, 50,
+        163, <placeName><region key="HOL">Holland</region>/<region key="VLA"
+          >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+         notBefore="1301" notAfter="1350"/>.</bibl>
+      </cit>
+      <sense xml:id="X11782.sense.7" type="UNK"><def><cit type="colloc">
+         <usg type="colloc">Sijns gemaecs (gemaex, gemacs) plegen (plien)</usg>
+        </cit>, <hi rend="font-style:italic">zich op zijn gemak zetten</hi>, <hi
+         rend="font-style:italic">zich van het noodige voorzien</hi>, <hi rend="font-style:italic"
+         >maken dat men het ergens goed heeft</hi>, <hi rend="font-style:italic">dat het ons aan
+         niets ontbreekt</hi>. Vgl. bij 2), waar <hi rend="letter-spacing:2pt">gemac</hi> door het
+        duitsche woord <hi rend="font-style:italic">pflege</hi> zeer goed wordt weergegeven.</def>
+       <cit>
+        <q>Siet dat gi uwes <oVar>gemaecs</oVar> pliet (<hi rend="font-style:italic">zorgt voor u
+          zelven</hi>), </q>
+        <bibl><author>Lodewijk van Velthem, </author><idno n="s0799"/><title><hi
+           rend="font-style:italic">Lanc.</hi></title>
+         <hi rend="font-face:serif">II</hi>, 45224, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>In wil u vermoyen niet, maer siet dat gi uwes <oVar>gemaecs</oVar> pliet, </q>
+        <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 2677,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+          notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Haers selfs <oVar>gemaex</oVar> si doe plagen, want si waren verpiint binnen negen dagen, </q>
+        <bibl><author>Diederic van Assenede, </author><idno n="s0433_sub000"/><title><hi
+           rend="font-style:italic">Flor.</hi></title> 1850, <placeName><region key="HOL"
+           >Holland</region>/<region key="VLA">Vlaanderen</region>/<region key="BRA"
+           >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+       </cit>
+       <cit>
+        <q>(Die) om ander saken en dincken dan om eten ende drincken ende om haers
+          <oVar>gemacs</oVar> te pliene, </q>
+        <bibl><idno n="s0531_sub000"/><title><hi rend="font-style:italic">Grimb.</hi></title>
+         <hi rend="font-face:serif">II</hi>, 315, <date notBefore="1805" notAfter="1815"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Elc wilde sijn <oVar>gemacke</oVar> plegen; daer ginc te bedde menich degen, </q>
+        <bibl type="iref"><idno n="s0531"/><hi rend="font-face:serif">I</hi>, 5188</bibl>
+       </cit>
+       <note>(<hi rend="font-style:italic">var</hi>. si ghinghen te bedde … ende daden haer ghemacks
+        pleghen).</note></sense>
+      <sense xml:id="X11782.sense.8" n="—" type="dash"><def> Ook in bepaalde
+       uitdrukkingen.</def></sense>
+      <sense xml:id="X11782.sense.9" n="α" type="greek_with_brack"><def>
+        <cit type="colloc">
+         <usg type="colloc">Met gemake, met gemac</usg>
+        </cit>, <hi rend="font-style:italic">met genoegen</hi>, <hi rend="font-style:italic">met
+         rust</hi>, <hi rend="font-style:italic">met vrede</hi>, <hi rend="font-style:italic">in
+         eene aangename stemming</hi>, <hi rend="font-style:italic">met een gelukkig
+        gevoel</hi>.</def>
+       <cit>
+        <q>Sijns selfs lude ende gheburen warens hem mede …, ende omme aldusghedane zake levede hi
+         altoos mit <oVar>ghemake</oVar>, </q>
+        <bibl><author>Melis Stoke, </author><idno n="s1246"/><title>Stoke</title>
+         <hi rend="font-face:serif">III</hi>, 593.</bibl>
+       </cit>
+       <cit>
+        <q>Behoet di wel van dezer zake, so suldi zeilen met <oVar>ghemake</oVar>, </q>
+        <bibl><author>Jan Praet, </author><idno n="s1032"/><title>Praet</title> 1601,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1440"
+          notAfter="1460"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Het doet goet met <oVar>ghemake</oVar> (<hi rend="font-style:italic">in vrede</hi>, <hi
+          rend="font-style:italic">in rust</hi>) leven, </q>
+        <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+           rend="font-style:italic">Wal.</hi></title> 3817, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Ic mochte hebben gheweset vri ende ghelevet met <oVar>ghemake</oVar> buten alle sondelike
+         sake, </q>
+        <bibl><idno n="s1270_sub000"/><title><hi rend="font-style:italic">Theoph.</hi></title> 740,
+           <placeName><region key="HOL">Holland</region>/<region key="VLA"
+           >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+          notBefore="1399" notAfter="1410"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Omme te sine met <oVar>ghemake</oVar> jeghen idelheit ende sonder sonde, </q>
+        <bibl type="iref"><idno n="s1270_sub000"/>28, <placeName><region key="HOL"
+           >Holland</region>/<region key="VLA">Vlaanderen</region>/<region key="BRA"
+           >Brabant</region></placeName>, <date notBefore="1399" notAfter="1410"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Dat icse sloech, dede mi den noet: gherne leefdic met <oVar>ghemake</oVar> (<hi
+          rend="font-style:italic">zonder overlast te ondervinden</hi>), </q>
+        <bibl><idno n="s1171"/><title><hi rend="font-style:italic">Segh.</hi></title> 1080.</bibl>
+       </cit>
+       <cit>
+        <q>In late niemen met <oVar>ghemake</oVar> (<hi rend="font-style:italic">met rust</hi>) den
+         riken no den armen, </q>
+        <bibl><idno n="s0405_sub002"/><title><hi rend="font-style:italic">Eleg.</hi></title> 572,
+           <placeName><region key="HOL">Holland</region></placeName>, <date notBefore="1485"
+          notAfter="1490"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Nochtan ne wilde min no mee Pharao laten .. met <oVar>ghemake</oVar> die van Israël, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1109_sub000"/><title><hi
+           rend="font-style:italic">Rijmb.</hi></title> 4000, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1321" notAfter="1321"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Eist dat onse viande tiden uten lande, ende si riden sempelike haerre straten, so suldise
+         met <oVar>ghemake</oVar> laten, </q>
+        <bibl><author>Melis Stoke, </author><idno n="s1246"/><title>Stoke</title>
+         <hi rend="font-face:serif">VII</hi>, 375.</bibl>
+       </cit>
+       <cit>
+        <q>Tyberius Alexander, die tlant berechte met <oVar>ghemake</oVar>, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1109_sub000"/><title><hi
+           rend="font-style:italic">Rijmb.</hi></title> 27244, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1321" notAfter="1321"/></bibl>
+       </cit>
+       <note>(<hi rend="font-style:italic">zoodat het in rust was</hi>).</note>
+       <cit>
+        <q>Dien nacht waren si met gemaken (<hi rend="font-style:italic">l</hi>.
+         <oVar>gemake</oVar>, <hi rend="font-style:italic">rustig</hi>?) tes clusenaren, </q>
+        <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 4150,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+          notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Wil hine mi geven met <oVar>gemake</oVar> (<hi rend="font-style:italic">zoo dat hij toch
+          goed gestemd is</hi>, <hi rend="font-style:italic">met</hi> (<hi rend="font-style:italic"
+          >goed</hi>) <hi rend="font-style:italic">genoegen</hi>, <hi rend="font-style:italic"
+          >goedschiks</hi>, <hi rend="font-style:italic">terwijl hij in zijn schik is</hi>; vgl.
+         beneden <hi rend="letter-spacing:2pt">te gemake</hi>), </q>
+        <bibl><idno n="s1102"/><title><hi rend="font-style:italic">Renout</hi></title> 1017,
+           <placeName><region key="HOL">Holland</region>/<region key="VLA"
+           >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+          notBefore="1340" notAfter="1360"/>.</bibl>
+       </cit>
+      </sense>
+      <sense xml:id="X11782.sense.10" n="β" type="greek_with_brack"><def>
+        <cit type="colloc">
+         <usg type="colloc">Te gemake (te gemacke)</usg>
+        </cit>, <hi rend="font-style:italic">tevreden</hi>, <hi rend="font-style:italic"
+         >opgeruimd</hi>, <hi rend="font-style:italic">in zijn schik</hi>, <hi
+         rend="font-style:italic">in eene aangename stemming</hi>, <hi rend="font-style:italic">zich
+         op zijn gemak voelende</hi>. Ook met eene bep. met <hi rend="letter-spacing:2pt">om</hi>,
+        of in den 2den nv. of met <hi rend="letter-spacing:2pt">van</hi>. </def>
+       <cit>
+        <q>Om dese sake was hi blide ende wel te <oVar>gemake</oVar>, </q>
+        <bibl><author>Lodewyk van Velthem, </author><idno n="s1328"/><title>Velth.</title>
+         <hi rend="font-face:serif">III</hi>, 50, 23, <placeName><region key="BRA"
+          >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Ferguut was utermaten blide, .. hine was noit te <oVar>gemake</oVar> bat, </q>
+        <bibl><idno n="s0430"/><title><hi rend="font-style:italic">Ferg.</hi></title> 1113,
+           <placeName><region key="HOL">Holland</region>/<region key="VLA"
+           >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+          notBefore="1340" notAfter="1350"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Nu was Herodes Agrippa wel te <oVar>ghemake</oVar>, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub001"/><title><hi
+           rend="font-style:italic">Sp.</hi></title>
+         <hi rend="font-face:serif">I</hi><hi rend="vertical-align:superscript">7</hi>, 97, 55,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+          notAfter="1325"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Buten slougen si haer ghetelt ende vonden sukers vele ant velt, des si wel waren te
+          <oVar>ghemake</oVar>, </q>
+        <bibl type="iref"><idno n="s1191"/><hi rend="font-face:serif">IV</hi><hi
+          rend="vertical-align:superscript">3</hi>, 19, 59.</bibl>
+       </cit>
+       <cit>
+        <q>Si sliepen lettel daer, si spraken van mengerhande sake; si waren dien nacht te
+          <oVar>gemake</oVar>, </q>
+        <bibl><author>Lodewijk van Velthem, </author><idno n="s0799"/><title><hi
+           rend="font-style:italic">Lanc.</hi></title>
+         <hi rend="font-face:serif">II</hi>, 20691, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Ic bem wel te <oVar>ghemake</oVar>, </q>
+        <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+           rend="font-style:italic">Wal.</hi></title> 2637, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Want si nyen conste Walsche sprake, so en scheen sijs nyet wel te <oVar>ghemake</oVar>
+          (<hi rend="font-style:italic">er niet mede tevreden</hi>, <hi rend="font-style:italic">in
+          haar schik te zijn</hi>) ende voer int Walsche lant wonen node, </q>
+        <bibl><author>Broeder Geraert, </author><idno n="s0862"/><title><hi rend="font-style:italic"
+           >Lutg.</hi></title>
+         <hi rend="font-face:serif">I</hi>, 851, <placeName><region key="BRA"
+           >Brabant</region>/<region key="LIM">Limburg</region></placeName>, <date notBefore="1391"
+          notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Gi sult comen met mi hier binnen met minen oem ende minen broder, .. wi selen wesen wel
+         te <oVar>gemake</oVar>, </q>
+        <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 3646,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+          notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Ic sal u leiden … daer gi sult sijn nu te <oVar>gemake</oVar> ende sachte slapen toten
+         dage, </q>
+        <bibl type="iref"><idno n="s0921"/>1881, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Des nachts was hi wel te <oVar>gemake</oVar>, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1284"/><title><hi
+           rend="font-style:italic">Torec</hi></title> 2641; ook 572, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Sidi upghestaen, here, ende hoe sidi te <oVar>ghemake</oVar> (<hi
+          rend="font-style:italic">hoe voelt gij u</hi>, <hi rend="font-style:italic">hoe is het met
+          u</hi>?), </q>
+        <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+           rend="font-style:italic">Wal.</hi></title> 1000, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Hoe steet met u, hoe sidi te <oVar>ghemake</oVar>? </q>
+        <bibl><idno n="s0850"/><title><hi rend="font-style:italic">Lipp.</hi></title> 65,
+           <placeName><region key="HOL">Holland</region>/<region key="VLA"
+           >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+          notBefore="1400" notAfter="1420"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Nu restt di ende ett ende drinc ende wes te <oVar>ghemake</oVar>, </q>
+        <bibl><idno n="s0864"/><title><hi rend="font-style:italic">L. v. J.</hi></title>
+         <hi rend="font-style:italic">c.</hi> 144, <placeName><region key="BRA"
+           >Brabant</region>/<region key="LIM">Limburg</region></placeName>, <date notBefore="1301"
+          notAfter="1310"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Dattie dwerch groet lach op sconincs dochter scoet ende sliep met sinen
+          <oVar>gemake</oVar>, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1284"/><title><hi
+           rend="font-style:italic">Torec</hi></title> 1690, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Dat Christus es blide ende wel te <oVar>gemake</oVar>, </q>
+        <bibl><idno n="s0214"/><title><hi rend="font-style:italic">Christ.</hi></title> 1079,
+           <placeName><region key="BRN">Bovenregionaal</region>/<region key="LIM"
+          >Limburg</region></placeName>, <date notBefore="1359" notAfter="1386"/>;</bibl>
+       </cit>
+       <note>vgl. <bibl><idno n="s0859_sub000"/><title><hi rend="font-style:italic"
+          >Lsp.</hi></title>
+         <hi rend="font-face:serif">III</hi>, 23, 13.</bibl></note>
+       <cit>
+        <q>Al es dat sake, dat ghijs nien sijt nu wel te <oVar>gemake</oVar> (<hi
+          rend="font-style:italic">er mede in uw schik</hi>, <hi rend="font-style:italic">ingenomen
+          zijt</hi>), .. en sal u na niet rouwen, </q>
+        <bibl type="iref"><idno n="s0214"/>813, <placeName><region key="BRN"
+           >Bovenregionaal</region>/<region key="LIM">Limburg</region></placeName>, <date
+          notBefore="1359" notAfter="1386"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Deer Walewein hi es wel te <oVar>ghemake</oVar> (<hi rend="font-style:italic">is volmaakt
+          wel</hi>, <hi rend="font-style:italic">volkomen in orde</hi>), ende hi hevet dat scaec
+         ghevaen, </q>
+        <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+           rend="font-style:italic">Wal.</hi></title> 1722, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Ferguut was wel te <oVar>gemake</oVar>, heme en lette geene sake, </q>
+        <bibl><idno n="s0430"/><title><hi rend="font-style:italic">Ferg.</hi></title> 781,
+           <placeName><region key="HOL">Holland</region>/<region key="VLA"
+           >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+          notBefore="1340" notAfter="1350"/>.</bibl>
+       </cit>
+       <cit>
+        <q>(Hi) vant die kindere in haer bet, spelende ende te <oVar>ghemake</oVar> bet dan hise
+         noint te voren sach, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub013"/><title><hi
+           rend="font-style:italic">Sp.</hi></title>
+         <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">8</hi>, 80, 77,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+          notAfter="1325"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Anders en daedsi lettel iet dan eten, drinken, sijn te <oVar>ghemake</oVar>, </q>
+        <bibl type="iref"><idno n="s1191"/><hi rend="font-face:serif">III</hi><hi
+          rend="vertical-align:superscript">8</hi>, 37, 6.</bibl>
+       </cit>
+       <cit>
+        <q>Alle saken, daer men mede te <oVar>gemake</oVar> mocht sijn (<hi rend="font-style:italic"
+          >hetz. als</hi> hem te gemake doen; <hi rend="font-style:italic">zie beneden</hi>) in dat
+          (<hi rend="font-style:italic">nl</hi>. eiland), </q>
+        <bibl><idno n="s1257_sub001"/><title><hi rend="font-style:italic">Taalk. Mag.</hi></title>
+         4, 25.</bibl>
+       </cit>
+       <cit>
+        <q>Die waert seide: het es al use dat hier es in desen huse: si waren te
+          <oVar>ghemake</oVar> ter cure, </q>
+        <bibl><idno n="s0237_sub000"/><title><hi rend="font-style:italic">Esop.</hi></title>
+         <hi rend="font-face:serif">XII</hi>, 9, <placeName><region key="HOL"
+          >Holland</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+       </cit>
+       <cit>
+        <q>— Gi selt wesen wel te <oVar>gemake</oVar> van wel menegerhande saken, </q>
+        <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 839,
+           <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+          notAfter="1400"/></bibl>
+       </cit>
+       <note>(<hi rend="font-style:italic">gij zult reden van tevredenheid hebben ten opzichte
+         van</hi>, <hi rend="font-style:italic">het zal u niet ontbreken aan allerlei dingen</hi>,
+         <hi rend="font-style:italic">men zal u goed voorzien van</hi>
+        <cit type="colloc">
+         <usg type="colloc">(te gemake doen</usg>
+        </cit>, waarvan <cit type="colloc">
+         <usg type="colloc">te gemake sijn</usg>
+        </cit> hier als het passief kan beschouwd worden)).</note>
+       <sense xml:id="X11782.sense.11" n="—" type="dash"><def> Voor <hi rend="letter-spacing:2pt">te
+          gemake</hi>, <bibl><idno n="s0845"/><title><hi rend="font-style:italic">Limb.</hi></title>
+          <hi rend="font-face:serif">II</hi>, 1893,</bibl> leze men <hi rend="letter-spacing:2pt"
+          >tongemake</hi>; <hi rend="font-style:italic">var</hi>. B: <hi rend="font-style:italic"
+          >worens sy is me zu ungemake</hi>.</def></sense>
+       <sense xml:id="X11782.sense.12" type="UNK"><def>Ook in de min of meer verzwakte opvatting van
+          <hi rend="font-style:italic">tevreden zijn met</hi>, <hi rend="font-style:italic">genoegen
+          nemen met iets</hi>, <hi rend="font-style:italic">iets voor lief nemen</hi>.</def>
+        <cit>
+         <q>Sijt te <oVar>ghemake</oVar>, ic bids u sere, met al sulken als hier es, </q>
+         <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+            rend="font-style:italic">Wal.</hi></title> 1044, <placeName><region key="VLA"
+            >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+        </cit>
+        <note>Zoo ook <bibl><idno n="s0862"/><title><hi rend="font-style:italic">Lutg.</hi></title>
+          <hi rend="font-face:serif">I</hi>, 852.</bibl></note></sense>
+       <sense xml:id="X11782.sense.13" n="—" type="dash"><def> — <cit type="colloc">
+          <usg type="colloc">Enen te gemake doen</usg>
+         </cit>, <hi rend="font-style:italic">iemand brengen in eene aangename stemming</hi>, door
+         hem te geven wat hij noodig heeft, <hi rend="font-style:italic">iemand op zijn gemak
+          zetten</hi>, <hi rend="font-style:italic">van het noodige voorzien</hi>, <hi
+          rend="font-style:italic">hem alles geven</hi>, <hi rend="font-style:italic">wat voor zijne
+          rust</hi>, <hi rend="font-style:italic">zijn gemak</hi>, <hi rend="font-style:italic"
+          >genoegen</hi>, <hi rend="font-style:italic">voor eene behaaglijke stemming noodig
+         is</hi>. Hetz. als het bastw. <hi rend="letter-spacing:2pt">aisieren</hi> en <xr type="rf"
+           ><ref target="09616">festeren</ref> (z. ald.).</xr>
+        </def></sense>
+       <sense xml:id="X11782.sense.14" type="UNK"><def>Ook met eene bep. met <hi
+          rend="letter-spacing:2pt">met</hi> of <hi rend="letter-spacing:2pt">van</hi>.</def>
+        <cit>
+         <q>Men dede daer Torec wel te <oVar>gemake</oVar>, </q>
+         <bibl><author>Jacob van Maerlant, </author><idno n="s1284"/><title><hi
+            rend="font-style:italic">Torec</hi></title> 365; 2710, <placeName><region key="VLA"
+            >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Des avons lach hi metten vogaet in ene loedse, … daer hine wel dede te
+           <oVar>gemake</oVar>, </q>
+         <bibl type="iref"><author>Jacob van Maerlant, </author><idno n="s1284"/>1386,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+           notAfter="1400"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Daernae .. was Torec uten kerker gedaen, ende men dedene te <oVar>gemake</oVar>, dat hem
+          gebrac van alre sake (<hi rend="font-style:italic">d. i</hi>. van alre sake dat hem
+          gebrac), </q>
+         <bibl type="iref"><author>Jacob van Maerlant, </author><idno n="s1284"/>2939,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+           notAfter="1400"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Men dede Torec te <oVar>gemake</oVar> daer van etene, van drinkene, </q>
+         <bibl type="iref"><author>Jacob van Maerlant, </author><idno n="s1284"/>3049,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+           notAfter="1400"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Ic sal u te <oVar>gemake</oVar> doen ende geven u tam ende venisoen; mine herberge is
+          altoes gereit elken riddere, </q>
+         <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 1667,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+           notAfter="1400"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Dies dede hi sijn volc te <oVar>ghemake</oVar> ende aysieredse, </q>
+         <bibl><author>Jacob van Maerlant, </author><idno n="s1109_sub000"/><title><hi
+            rend="font-style:italic">Rijmb.</hi></title> 29974, <placeName><region key="VLA"
+            >Vlaanderen</region></placeName>, <date notBefore="1321" notAfter="1321"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Inne beghere el ghene sake dan ghi den ridder dor uwe doghet te <oVar>ghemake</oVar>
+          doet, </q>
+         <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 2638,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+           notAfter="1400"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Nu staet op ende gaet met mi, ic sal di wel te <oVar>ghemake</oVar> doen, </q>
+         <bibl><idno n="s0519"/><title><hi rend="font-style:italic">Glor.</hi></title> 282,
+            <placeName><region key="HOL">Holland</region>/<region key="VLA"
+            >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+           notBefore="1400" notAfter="1420"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Hi salne wel te <oVar>gemake</oVar> doen, gheven hem vissche ende venisoen, </q>
+         <bibl><idno n="s0430"/><title><hi rend="font-style:italic">Ferg.</hi></title> 2178,
+            <placeName><region key="HOL">Holland</region>/<region key="VLA"
+            >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+           notBefore="1340" notAfter="1350"/>.</bibl>
+        </cit>
+        <cit>
+         <q>De waert .. dede de Heren wel te <oVar>gemake</oVar>, </q>
+         <bibl><idno n="s0580"/><title><hi rend="font-style:italic">Heemsk.</hi></title> 107.</bibl>
+        </cit>
+       </sense>
+       <sense xml:id="X11782.sense.15" type="UNK"><def>Ook van een paard.</def>
+        <cit>
+         <q>Sijn ors was te <oVar>gemake</oVar> gedaen (<hi rend="font-style:italic">van het noodige
+           voorzien</hi>), </q>
+         <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 1702,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+           notAfter="1400"/>.</bibl>
+        </cit>
+       </sense>
+       <sense xml:id="X11782.sense.16" type="UNK"><def>Somtijds kan <cit type="colloc">
+          <usg type="colloc">te gemake sijn</usg>
+         </cit> op dezelfde wijze vertaald worden als <cit type="colloc">
+          <usg type="colloc">hem te gemake doen</usg>
+         </cit>, of, als een ander het ondw. is, als het pass. <cit type="colloc">
+          <usg type="colloc">te gemake gedaen worden</usg>
+         </cit> (zie boven), b. v. <bibl><idno n="s1377"/><title><hi rend="font-style:italic"
+            >Wal.</hi></title> 7959</bibl>: “Lettel achte hi dat hi so wale met siere dochter … es
+         te ghemake met soeten spele.” — Ook wederk. <cit type="colloc">
+          <usg type="colloc">Hem te gemake doen</usg>
+         </cit>, <hi rend="font-style:italic">zich te goed</hi> (eig. <hi rend="font-style:italic"
+          >te goede</hi>; vlg. de mnl. uitdr. met goede, die hetz. bet. als <hi
+          rend="letter-spacing:2pt">met gemake</hi>) <hi rend="font-style:italic">doen</hi>, <hi
+          rend="font-style:italic">zich van het noodige voorzien</hi>, <hi rend="font-style:italic"
+          >zich op zijn gemak zetten</hi>; hetz. als mnl. <hi rend="letter-spacing:2pt">hem taise
+          maken</hi>. Zie <xr type="multiple_target"><ref target="01076 01077"
+         >aise</ref></xr>.</def>
+        <cit>
+         <q>Den Hertoch dede hem te <oVar>gemacke</oVar>, </q>
+         <bibl><author>Johannes vander Beke, Joannes de Beka, </author><idno n="s0889_sub009"
+           /><title>Matth. <hi rend="font-style:italic">Anal.</hi></title> 3, 396,
+            <placeName><region key="HOL">Holland</region></placeName>, <date notBefore="1501"
+           notAfter="1600"/>.</bibl>
+        </cit>
+        <cit>
+         <q>In overate, in overdranke, daer soe (<hi rend="font-style:italic">Gulzigheid</hi>) haer
+          doet te <oVar>ghemake</oVar> mede (<hi rend="font-style:italic">haar hart aan
+          ophaalt</hi>), </q>
+         <bibl><author>Jan Praet, </author><idno n="s1032"/><title>Praet</title> 1888,
+            <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1440"
+           notAfter="1460"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Hier af en wiste niet .. die hertoge .. die hem dede wel te <oVar>gemake</oVar>, </q>
+         <bibl><author>Lodewyk van Velthem, </author><idno n="s1328"/><title>Velth.</title>
+          <hi rend="font-face:serif">II</hi>, 7, 17, <placeName><region key="BRA"
+           >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Gaet ende doet u te <oVar>gemake</oVar>, </q>
+         <bibl><idno n="s0430"/><title><hi rend="font-style:italic">Ferg.</hi></title> 2935,
+            <placeName><region key="HOL">Holland</region>/<region key="VLA"
+            >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+           notBefore="1340" notAfter="1350"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Elc (keerde) te syner herbergen waert, daer si hem deden te <oVar>gemake</oVar> wel van
+          menigerhande sake, </q>
+         <bibl><idno n="s0531_sub000"/><title><hi rend="font-style:italic">Grimb.</hi></title>
+          <hi rend="font-face:serif">I</hi>, 3890, <date notBefore="1805" notAfter="1815"/>.</bibl>
+        </cit>
+        <cit>
+         <q>(Si) ginghen hem te <oVar>ghemake</oVar> doen van menigherhande sake ende van ate ende
+          van drancke, </q>
+         <bibl type="iref"><idno n="s0531"/>5128.</bibl>
+        </cit>
+        <cit>
+         <q>(Als) die lieden .. hen gaen doen te <oVar>gemake</oVar> met haren vruchten … die si
+          tsamen hebben gewonnen, </q>
+         <bibl type="iref"><idno n="s0531"/><hi rend="font-face:serif">II</hi>, 1735.</bibl>
+        </cit>
+        <cit>
+         <q>(Doe) reet .. die keyser te Hafflighem toe, daer hi hem dede te <oVar>gemake</oVar>, </q>
+         <bibl type="iref"><idno n="s0531"/><hi rend="font-face:serif">I</hi>, 987.</bibl>
+        </cit>
+        <cit>
+         <q>Hi bat hem .. dat si <hi rend="font-style:italic">hem</hi> alle wel te
+           <oVar>ghemake</oVar> daden ende troostese seere ter Gods ghenaden, </q>
+         <bibl><idno n="s0019"/><title><hi rend="font-style:italic">Amand</hi></title>
+          <hi rend="font-face:serif">II</hi>, 1136, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1430" notAfter="1450"/>.</bibl>
+        </cit>
+       </sense>
+       <sense xml:id="X11782.sense.17" type="UNK"><def><cit type="colloc">
+          <usg type="colloc">Hem te gemake stellen</usg>
+         </cit>, <hi rend="font-style:italic">zich tevreden stellen</hi>.</def>
+        <cit>
+         <q>Al es huer verlangen noch so groten gequel van den water, sij steelt huer te
+           <oVar>gemake</oVar> (<hi rend="font-style:italic">var</hi>. te vrede), </q>
+         <bibl><idno n="s1027"/><title><hi rend="font-style:italic">Playerw.</hi></title> 62,
+            <placeName><region key="BRA">Brabant</region></placeName>, <date notBefore="1501"
+           notAfter="1550"/>.</bibl>
+        </cit>
+       </sense>
+      </sense>
+      <sense xml:id="X11782.sense.18" n="γ" type="greek_with_brack"><def>
+        <cit type="colloc">
+         <usg type="colloc">In sijn gemac</usg>
+        </cit>, <hi rend="font-style:italic">in een toestand van rust en vrede</hi>, <hi
+         rend="font-style:italic">rustig</hi>. Vgl. onze uitdr. <hi rend="font-style:italic">op zijn
+         gemak</hi>. </def>
+       <cit>
+        <q>Daerom toogh hi uut Brabant binnen den Grave .., ende bleef daer in sijn
+          <oVar>gemac</oVar>, </q>
+        <bibl><idno n="s0117_sub074"/><title><hi rend="font-style:italic">Brab. Y.</hi></title>
+         <hi rend="font-face:serif">VI</hi>, 7873, <placeName><region key="HOL"
+           >Holland</region>/<region key="VLA">Vlaanderen</region>/<region key="BRA"
+           >Brabant</region></placeName>, <date notBefore="1432" notAfter="1432"/>.</bibl>
+       </cit>
+       <cit>
+        <q>Soe blivet thuus in hoer <oVar>ghemac</oVar>, </q>
+        <bibl><idno n="s1071"/><title><hi rend="font-style:italic">Rein.</hi>
+          <hi rend="font-face:serif">I</hi></title>, 2849, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1401" notAfter="1410"/>.</bibl>
+       </cit>
+       <cit>
+        <q>(Hi) hout hem binnen vesten in sijn ruste, in sijn <oVar>ghemac</oVar>, </q>
+        <bibl><author>Jan van Boendale, </author><idno n="s0859_sub000"/><title><hi
+           rend="font-style:italic">Lsp.</hi></title>
+         <hi rend="font-face:serif">III</hi>, 26, 144, <placeName><region key="BRA"
+          >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+       </cit>
+       <sense xml:id="X11782.sense.19" type="UNK"><def>Vgl. nog de volgende plaatsen:</def>
+        <cit>
+         <q>In sinen paleis .., daer hi inne lach te somertide … op enen culc te sinen
+           <oVar>ghemake</oVar>, </q>
+         <bibl><idno n="s0214"/><title><hi rend="font-style:italic">Christ.</hi></title> 1402,
+            <placeName><region key="BRN">Bovenregionaal</region>/<region key="LIM"
+           >Limburg</region></placeName>, <date notBefore="1359" notAfter="1386"/>.</bibl>
+        </cit>
+        <cit>
+         <q>Dat hi commen wilde binder stede ende houden wilde daer sijn <oVar>ghemac</oVar> (<hi
+           rend="font-style:italic">zich op zijn gemak zetten</hi>, <hi rend="font-style:italic"
+           >zijne rust nemen</hi>), </q>
+         <bibl><idno n="s0019"/><title><hi rend="font-style:italic">Amand</hi></title>
+          <hi rend="font-face:serif">II</hi>, 3330, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1430" notAfter="1450"/></bibl>
+        </cit>
+        <note>(vgl. onze uitdr. <hi rend="font-style:italic">zijn gemak houden</hi>; die in bet.
+         eenigszins van deze verschilt, = fr. <hi rend="font-style:italic">se tenir coi</hi>, en zie
+         bij 4<hi rend="font-style:italic">b</hi>).</note></sense>
+      </sense></sense></sense>
+
+
+
+
+
+
+    <sense xml:id="X11782.sense.20" n="2" type="arabic"><def>
+      <hi rend="font-style:italic">Voordeel</hi>, welke bet. het woord ook heeft in het mhd. </def>
+     <cit>
+      <q>Doe wort sijn verlies <oVar>gemack</oVar> ende dat geleden quaet een wedermaking der
+       doochden, </q>
+      <bibl><idno n="s0622"/><title><hi rend="font-style:italic">Hs. Cyrill.</hi></title> 54<hi
+        rend="font-style:italic">v.</hi>, <placeName><region key="HOL">Holland</region></placeName>,
+        <date notBefore="1465" notAfter="1485"/></bibl>
+     </cit>
+     <cit>
+      <q>Dese steen der rijcdom en is niet in dinen hoofde … tot <oVar>gemack</oVar>, mer tot een
+       tormente, </q>
+      <bibl type="iref"><idno n="s0622"/>55<hi rend="font-style:italic">v.</hi>, <placeName><region
+         key="HOL">Holland</region></placeName>, <date notBefore="1465" notAfter="1485"/></bibl>
+     </cit>
+     <sense xml:id="X11782.sense.21" type="UNK"><def>Ook in de uitdr. <cit type="colloc">
+        <usg type="colloc">sijn gemac doen met iet</usg>
+       </cit>, <hi rend="font-style:italic">ergens zijn voordeel mede doen</hi>; <hi
+        rend="font-style:italic">iets in zijn eigen belang</hi>, <hi rend="font-style:italic">tot
+        zijn eigen nut aanwenden</hi>.</def>
+      <cit>
+       <q>Een man .., dien die duvel gheriet das, dat hi drie bisante ontstac, mede te doene sijn
+         <oVar>ghemac</oVar>, als oft ware sijn eigijn goet, </q>
+       <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub013"/><title><hi
+          rend="font-style:italic">Sp.</hi></title>
+        <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">7</hi>, 50, 61,
+          <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+         notAfter="1325"/>.</bibl>
+      </cit>
+     </sense>
+     <sense xml:id="X11782.sense.22" type="UNK"><def>Hiertoe behoort ook de bet. <hi
+        rend="font-style:italic">het juiste of geschikte oogenblik</hi>, <hi
+        rend="font-style:italic">kans op voordeel</hi>.</def>
+      <cit>
+       <q>Dat si there souden sceeden omme bet haer <oVar>ghemac</oVar> ghereeden (eig. <hi
+         rend="font-style:italic">om te beter hun voordeel voor te bereiden</hi>, <hi
+         rend="font-style:italic">mogelijk te maken</hi>, d. i. <hi rend="font-style:italic">kans op
+         voordeel te hebben</hi>), </q>
+       <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub014"/><title><hi
+          rend="font-style:italic">Sp.</hi></title>
+        <hi rend="font-face:serif">IV</hi><hi rend="vertical-align:superscript">3</hi>, 10, 13,
+          <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+         notAfter="1325"/></bibl>
+      </cit>
+      <note>(<bibl><idno n="s0117_sub000"/><title><hi rend="font-style:italic">Brab. Y.</hi></title>
+        <hi rend="font-face:serif">III</hi>, 928</bibl>: haer ghemac te reden).</note>
+      <cit>
+       <q>Miin her Heinriic, die siin <oVar>ghemac</oVar> bat versach daer hi soude liden,
+        bevinckene om beide sine ziden ende leidene op siin ors vor hem, d. i. <hi
+         rend="font-style:italic">H</hi>., <hi rend="font-style:italic">die zijn voordeel beter in
+         het oog had</hi> (<hi rend="font-style:italic">dan de ander</hi>), <hi
+         rend="font-style:italic">die beter dan de ander partij wist te trekken van een gunstig
+         oogenblik</hi>, </q>
+       <bibl><idno n="s0845"/><title><hi rend="font-style:italic">Limb.</hi></title>
+        <hi rend="font-face:serif">II</hi>, 1136, <placeName><region key="BRA"
+          >Brabant</region>/<region key="VLA">Vlaanderen</region></placeName>, <date
+         notBefore="1340" notAfter="1360"/>.</bibl>
+      </cit>
+      <note>Dit laatste begrip “het gunstige oogenblik” wordt in 't mnl. ook uitgedrukt door <hi
+        rend="letter-spacing:2pt">gerac</hi>, een synon. van <hi rend="letter-spacing:2pt"
+        >gemac</hi>; z. ald.</note></sense>
+    </sense>
+
+
+    <sense xml:id="X11782.sense.23" n="3" type="arabic"><def> Objectief. <hi
+       rend="font-style:italic">De rust en de vrede</hi>, <hi rend="font-style:italic">dien men een
+       ander bezorgt</hi>, <hi rend="font-style:italic">verzorging</hi>, <hi
+       rend="font-style:italic">verpleging</hi>. Vooral in de uitdr. <cit type="colloc">
+       <usg type="colloc">enen gemac doen.</usg>
+      </cit>
+      <hi rend="font-style:italic">iemand van het noodige voorzien</hi>, <hi
+       rend="font-style:italic">hem op zijn gemak zetten</hi> (hetzelfde als <cit type="colloc">
+       <usg type="colloc">enen te gemake doen</usg>
+      </cit> (zie bij 1), doch in die uitdr. is <hi rend="letter-spacing:2pt">gemac</hi>
+      subjectief); ook <hi rend="font-style:italic">iem. genoegen doen</hi>, <hi
+       rend="font-style:italic">hem vreugde bereiden</hi>. Hetz. als <hi rend="letter-spacing:2pt"
+       >enen aisieren</hi> of <xr type="rf"><ref target="09616">festeren</ref> (z. ald.).</xr> Ook
+       <cit type="colloc">
+       <usg type="colloc">hem selven gemac doen</usg>
+      </cit>, hetzelfde als <cit type="colloc">
+       <usg type="colloc">hem te gemake doen</usg>
+      </cit> en <hi rend="letter-spacing:2pt">hem aisieren</hi>. </def>
+     <cit>
+      <q>Ic hebbe herberge goede, daer ic u wane herbergen tuwen gemoede ende al uwen gesellen doen
+        <oVar>gemac</oVar>, </q>
+      <bibl><author>Diederic van Assenede, </author><idno n="s0433_sub000"/><title><hi
+         rend="font-style:italic">Flor.</hi></title> 1988, <placeName><region key="HOL"
+         >Holland</region>/<region key="VLA">Vlaanderen</region>/<region key="BRA"
+        >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Hi dede hem doen groot <oVar>ghemac</oVar> (<hi rend="font-style:italic">liet hem goed
+        oppassen</hi>) ende gansen sine wonden, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s0016_sub000"/><title><hi
+         rend="font-style:italic">Alex.</hi></title>
+       <hi rend="font-face:serif">IX</hi>, 770, <placeName><region key="VLA"
+        >Vlaanderen</region></placeName>, <date notBefore="1390" notAfter="1410"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Ganc ende doe <oVar>gemac</oVar> den grave, </q>
+      <bibl><author>Lodewyk van Velthem, </author><idno n="s1328"/><title>Velth.</title>
+       <hi rend="font-face:serif">III</hi>, 45, 65, <placeName><region key="BRA"
+        >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Dat hi hem sine spise ontrac, omme den aermen te doene <oVar>gemac</oVar>, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub013"/><title><hi
+         rend="font-style:italic">Sp.</hi></title>
+       <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">8</hi>, 21, 53,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+        notAfter="1325"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Festeert en verblijt u met Iewijn en doet hem <oVar>gemac</oVar>, </q>
+      <bibl><idno n="s0580"/><title><hi rend="font-style:italic">Heemsk.</hi></title> 136.</bibl>
+     </cit>
+     <cit>
+      <q>Hem (<hi rend="font-style:italic">sibi</hi>) te doene daer binnen <oVar>gemac</oVar>, </q>
+      <bibl><author>Lodewyk van Velthem, </author><idno n="s1328"/><title>Velth.</title>
+       <hi rend="font-face:serif">V</hi>, 12, 45, <placeName><region key="BRA"
+        >Brabant</region></placeName>, <date notBefore="1340" notAfter="1360"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Ter herberghen, daer hem niet en ghebrac, ende daden hem selven groot <oVar>gemac</oVar>, </q>
+      <bibl><idno n="s1009_sub000"/><title><hi rend="font-style:italic">Parth.</hi></title> 4717,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1376"
+        notAfter="1400"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Ic hebbe mijn goede wijf verloren, die mi dede groet <oVar>ghemac</oVar> buten huse ende
+       onder dac, </q>
+      <bibl><idno n="s1000_sub006"/><title><hi rend="font-style:italic">OVl. Ged.</hi></title> 1,
+       81, 632, <placeName><region key="HOL">Holland</region>/<region key="VLA"
+         >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date notBefore="1399"
+        notAfter="1410"/>.</bibl>
+     </cit>
+     <sense xml:id="X11782.sense.24" type="UNK"><def>Ook van een paard.</def>
+      <cit>
+       <q>Daer dedi hem <oVar norm="dat, ART &amp; gemak">tghemac</oVar> al, dat men mochte doen
+        enen paerde, </q>
+       <bibl><author>Penninc / Pieter Vostaert, </author><idno n="s1377"/><title><hi
+          rend="font-style:italic">Wal.</hi></title> 846, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1350" notAfter="1350"/>.</bibl>
+      </cit>
+     </sense>
+    </sense>
+
+    <sense xml:id="X11782.sense.25" n="4" type="arabic"><def> De bet. <hi rend="font-style:italic"
+       >rust en vrede</hi> ontwikkelt zich tot die van </def>
+     <sense xml:id="X11782.sense.26" n="a" type="letter_italic"><def> Subjectief. <hi
+        rend="font-style:italic">Kalmte</hi>, <hi rend="font-style:italic">bedaardheid</hi>. Vooral
+       in de uitdr. <cit type="colloc">
+        <usg type="colloc">met gemake</usg>
+       </cit>, hetzelfde als mnl. <hi rend="letter-spacing:2pt">met</hi> of <hi
+        rend="letter-spacing:2pt">bi staden</hi> en het bijw. <xr type="rf"><ref target="11788"
+         >gemackelike</ref> (z. ald.).</xr>
+       <hi rend="font-style:italic">Kalm</hi>, <hi rend="font-style:italic">bedaard</hi>; ook <hi
+        rend="font-style:italic">langzaam</hi>. </def>
+      <cit>
+       <q>Artur hevet wel gehort met <oVar>gemake</oVar> al haer wort ende hiet die heren beiden <hi
+         rend="letter-spacing:2pt">met staden</hi>, </q>
+       <bibl><author>Lodewijk van Velthem, </author><idno n="s0799"/><title><hi
+          rend="font-style:italic">Lanc.</hi></title>
+        <hi rend="font-face:serif">IV</hi>, 9757, <placeName><region key="VLA"
+         >Vlaanderen</region></placeName>, <date notBefore="1301" notAfter="1400"/></bibl>
+      </cit>
+      <note>(<bibl><idno n="s1191_sub011"/><title><hi rend="font-style:italic">Sp.</hi></title>
+        <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">5</hi>, 50,
+        87</bibl>).</note>
+      <cit>
+       <q>Al met <oVar>gemake</oVar> op hare hoede seghen (<hi rend="font-style:italic">l</hi>.
+        steghen) si neder in een dal, </q>
+       <bibl><idno n="s1009_sub008"/><title><hi rend="font-style:italic">Parth.</hi></title> 6473,
+          <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1320"
+         notAfter="1325"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Hi was ghevoert al met <oVar>ghemake</oVar> (<hi rend="font-style:italic">met
+         voorzichtigheid</hi>, <hi rend="font-style:italic">zachtjes</hi>), .. bi Bloys, .. ende als
+        hi up tlant was ghegaen, wart hi in wake, </q>
+       <bibl type="iref"><idno n="s1009_sub005"/>1326, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1376" notAfter="1400"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Doe ginc hi neder met <oVar>gemake</oVar>, </q>
+       <bibl><idno n="s0164"/><title><hi rend="font-style:italic">Cass.</hi></title> 408,
+          <placeName><region key="BRA">Brabant</region></placeName>.</bibl>
+      </cit>
+      <cit>
+       <q>Nu gaet vore met <oVar>ghemake</oVar> (<hi rend="font-style:italic">ga maar langzaam
+         vooruit</hi>); ic sal Cuwaerde sulke sake ontdecken, die noch es verholen, </q>
+       <bibl><idno n="s1071"/><title><hi rend="font-style:italic">Rein.</hi>
+         <hi rend="font-face:serif">I</hi></title>, 3297, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1401" notAfter="1410"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Dat hi een wordekijn iet sprake tottien dat Reinaert met <oVar>ghemake</oVar> (<hi
+         rend="font-style:italic">op zijn gemak</hi>, <hi rend="font-style:italic">bedaard</hi>)
+        hadde volseit al sinen wille, </q>
+       <bibl type="iref"><idno n="s1071"/>2219, <placeName><region key="VLA"
+         >Vlaanderen</region></placeName>, <date notBefore="1401" notAfter="1410"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Van verren dat hi comen sach enen somere met <oVar>gemake</oVar>, </q>
+       <bibl><idno n="s0430"/><title><hi rend="font-style:italic">Ferg.</hi></title> 322,
+          <placeName><region key="HOL">Holland</region>/<region key="VLA"
+          >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+         notBefore="1340" notAfter="1350"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Dus ontbeidt hi (<hi rend="font-style:italic">God</hi>) met <oVar>ghemake</oVar>, of die
+        ghene die heeft mesdaen van den sonden woude avestaen, </q>
+       <bibl><idno n="s1270_sub000"/><title><hi rend="font-style:italic">Theoph.</hi></title> 692,
+          <placeName><region key="HOL">Holland</region>/<region key="VLA"
+          >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+         notBefore="1399" notAfter="1410"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Trecken wy voort met <oVar>ghemake</oVar> ten vianden wert sonder vaer, </q>
+       <bibl><idno n="s0531_sub000"/><title><hi rend="font-style:italic">Grimb.</hi></title>
+        <hi rend="font-face:serif">II</hi>, 1637, <date notBefore="1805" notAfter="1815"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Dat si keerden na heur gevoech met <oVar>gemac</oVar> ende met minnen weder tot Grimbergen
+        binnen, </q>
+       <bibl type="iref"><idno n="s0531"/><hi rend="font-face:serif">I</hi>, 5113.</bibl>
+      </cit>
+      <cit>
+       <q>Ay ghi vrouwen, slaet met <oVar>ghemake</oVar> (<hi rend="font-style:italic">wat
+         zachtjes</hi>), </q>
+       <bibl><idno n="s0590"/><title><hi rend="font-style:italic">Hexe</hi></title> 111,
+          <placeName><region key="HOL">Holland</region>/<region key="VLA"
+          >Vlaanderen</region>/<region key="BRA">Brabant</region></placeName>, <date
+         notBefore="1400" notAfter="1420"/>.</bibl>
+      </cit>
+      <cit>
+       <q>So ghinc hi sitten met <oVar>ghemake</oVar> (<hi rend="font-style:italic">op zijn
+         gemak</hi>) met sinen wive, </q>
+       <bibl><idno n="s1071"/><title><hi rend="font-style:italic">Rein.</hi>
+         <hi rend="font-face:serif">I</hi></title>, 2128, <placeName><region key="VLA"
+          >Vlaanderen</region></placeName>, <date notBefore="1401" notAfter="1410"/>.</bibl>
+      </cit>
+      <sense xml:id="X11782.sense.27" n="—" type="dash"><def> In dezelfde bet. schijnt <cit
+         type="colloc">
+         <usg type="colloc">van gemake</usg>
+        </cit> te moeten worden opgevat, </def><cit>
+        <bibl><idno n="s0384"/><title><hi rend="font-style:italic">Drie Dag. H.</hi></title> 61,
+           <placeName><region key="BRA">Brabant</region></placeName>, <date notBefore="1400"
+          notAfter="1420"/></bibl>
+        <q>: “Ghi claegt al van <oVar>gemake</oVar>,”</q>
+       </cit>
+       <note>d. i. <hi rend="font-style:italic">gij hebt zacht klagen</hi>; <hi
+         rend="font-style:italic">gij moogt wel wat zachtjes klagen</hi>, <hi
+         rend="font-style:italic">gij moogt u wel stil houden</hi>. Doch het rijm is daer onzuiver
+        (: gelaten).</note></sense>
+      <sense xml:id="X11782.sense.28" type="UNK"><def>Ook <hi rend="font-style:italic">in
+         stilte</hi>.</def>
+       <cit>
+        <q>So dat si met <oVar>ghemake</oVar> in (<hi rend="font-style:italic">in de stad</hi>)
+         quamen, </q>
+        <bibl><author>Jacob van Maerlant, </author><idno n="s1109_sub000"/><title><hi
+           rend="font-style:italic">Rijmb.</hi></title> 29893, <placeName><region key="VLA"
+           >Vlaanderen</region></placeName>, <date notBefore="1321" notAfter="1321"/></bibl>
+       </cit>
+       <note>(lat. <hi rend="font-style:italic">quiete</hi>).</note></sense>
+     </sense>
+     <sense xml:id="X11782.sense.29" n="b" type="letter_italic"><def> Objectief. <hi
+        rend="font-style:italic">Rust</hi>, <hi rend="font-style:italic">het niet doen van
+        vijandelijke of de eene of andere zaak verstorende handelingen</hi>. </def>
+      <cit>
+       <q>Nu swijcht ende hout met <oVar>ghemaken</oVar> (<hi rend="font-style:italic">weest
+         rustig</hi>, <hi rend="font-style:italic">houdt uw gemak</hi>), men sal hier spelen slechts
+        ter stont, </q>
+       <bibl><idno n="s0384"/><title><hi rend="font-style:italic">Drie Dag. H.</hi></title> 10,
+          <placeName><region key="BRA">Brabant</region></placeName>, <date notBefore="1400"
+         notAfter="1420"/>.</bibl>
+      </cit>
+      <cit>
+       <q>Doen Jan hertoge waert, hilden si hen met <oVar>ghemake</oVar>, </q>
+       <bibl><author>Jan van Heelu, </author><idno n="s0579_sub000"/><title>Heelu</title> 624,
+          <placeName><region key="BRA">Brabant</region></placeName>, <date notBefore="1430"
+         notAfter="1450"/>.</bibl>
+      </cit>
+     </sense></sense>
+
+
+
+    <sense xml:id="X11782.sense.30" n="5" type="arabic"><def> De bet. 2) wordt objectief die van <hi
+       rend="font-style:italic">nut</hi>, <hi rend="font-style:italic">voordeel</hi>, <hi
+       rend="font-style:italic">dat men iemand doet</hi>. Ook concreet <hi rend="font-style:italic"
+       >voordeel</hi>, in welken zin het een mv. toelaat. Ook in de uitdr. <hi
+       rend="letter-spacing:2pt">met gemaken</hi> (zie boven bij 4) kan <hi
+       rend="letter-spacing:2pt">gemaken</hi> een mv. zijn, doch daar staat het in bet. met het
+      enkelvoud gelijk; vgl. het mv. van <hi rend="letter-spacing:2pt">genade</hi>, <hi
+       rend="letter-spacing:2pt">ere</hi>, <hi rend="letter-spacing:2pt">scout</hi>, e. a. Synon.
+      van mnl. <hi rend="letter-spacing:2pt">nutscap</hi> en <hi rend="letter-spacing:2pt"
+       >oorbaer</hi>. </def>
+     <cit>
+      <q>Omme <oVar norm="dat, ART &amp; gemak">tghemac</oVar> ende omme die ghemene <hi
+        rend="letter-spacing:2pt">nutscap</hi> beede onser ende der ghemene coopmanne ende der andre
+       ooc die vremde sijn, </q>
+      <bibl><idno n="s1409_sub019"/><title><hi rend="font-style:italic">ZVl. Bijdr.</hi></title> 5,
+       54, <date notBefore="1351" notAfter="1400"/>.</bibl>
+     </cit>
+     <cit>
+      <q>So is zy (<hi rend="font-style:italic">de koninklijke genade</hi>) doch mit enigerhande
+       sunderlingen vordele der gonsten werdelic ghevuecht tot den orboeren ende
+        <oVar>ghemaken</oVar> der gheenre die enz., </q>
+      <bibl><idno n="s0117_sub081"/><title><hi rend="font-style:italic">Brab. Y.</hi></title> dl. 2,
+       bl. 470, <placeName><region key="BRA">Brabant</region>/<region key="HOL"
+         >Holland</region>/<region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1369"
+        notAfter="1375"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Hi nam ghiften ende <oVar>ghemac</oVar> van sulken dient (<hi rend="font-style:italic"
+        >l</hi>. diet) qualike wan, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub013"/><title><hi
+         rend="font-style:italic">Sp.</hi></title>
+       <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">8</hi>, 27, 44,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+        notAfter="1325"/>.</bibl>
+     </cit>
+     <cit>
+      <q>So suldi .. gheven hem vrilic sinen sack: soe deedi u selven groot <oVar>ghemac</oVar>, </q>
+      <bibl><idno n="s0913_sub000"/><title><hi rend="font-style:italic">MLoep</hi></title>
+       <hi rend="font-face:serif">I</hi>, 1012, <placeName><region key="HOL"
+        >Holland</region></placeName>, <date notBefore="1470" notAfter="1490"/>.</bibl>
+     </cit>
+     <cit>
+      <q>(Hi) verloes .. sijn zwert, maar hem quam een aex, die hem dede vele <oVar>gemaex</oVar>, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s1191_sub011"/><title><hi
+         rend="font-style:italic">Sp.</hi></title>
+       <hi rend="font-face:serif">III</hi><hi rend="vertical-align:superscript">1</hi>, 11, 20,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+        notAfter="1325"/>.</bibl>
+     </cit>
+    </sense>
+
+    <sense xml:id="X11782.sense.31" n="6" type="arabic"><def>
+      <hi rend="font-style:italic">Behoefte</hi>, <hi rend="font-style:italic">nood</hi>, <hi
+       rend="font-style:italic">nooddruft</hi>; ook concreet <hi rend="font-style:italic">het
+       noodige</hi>, <hi rend="font-style:italic">levensbehoefte</hi>, <hi rend="font-style:italic"
+       >levensonderhoud</hi>; synon. van mnl. <hi rend="letter-spacing:2pt">behoef</hi>. Ook in eene
+      andere opvatting raken deze beteekenissen elkander, nl. in die van <hi
+       rend="font-style:italic">natuurlijke behoefte</hi>. <bibl><idno n="s1346"
+        /><title>Kil.</title></bibl>
+      <hi rend="letter-spacing:2pt">ghemack</hi>, j. <hi rend="letter-spacing:2pt">ghevoegh</hi>,
+      excrementum alvi. Vgl. de hd. uitdr. <hi rend="font-style:italic">sein gemach tun</hi>, en
+      vooral Grimm, <hi rend="font-style:italic">Wtb</hi>. 4<hi rend="vertical-align:superscript"
+       >1</hi>, 3138, γ). </def>
+     <cit>
+      <q>Nu heb ic van als dat ons ghebrac doen meten en weghen na mijn <oVar>ghemac</oVar>, </q>
+      <bibl><idno n="s0882"/><title><hi rend="font-style:italic">Mar. v. N.</hi></title> 3, 45,
+         <placeName><region key="HOL">Holland</region></placeName>, <date notBefore="1854"
+        notAfter="1854"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Dat ghi tuwen <oVar>ghemake</oVar> (<hi rend="font-style:italic">hetz. als</hi> tuwen
+       behoef) wapene hebt, daer ghine mede moegt verdriven, </q>
+      <bibl><author>Jacob van Maerlant, </author><idno n="s1109_sub000"/><title><hi
+         rend="font-style:italic">Rijmb.</hi></title> 32088, <placeName><region key="VLA"
+         >Vlaanderen</region></placeName>, <date notBefore="1321" notAfter="1321"/>.</bibl>
+     </cit>
+     <cit>
+      <q>Hine vant niweren daer hi mochte herbergen, daer hem selven dochte dat hire gecrigen mochte
+        <oVar>gemac</oVar>, </q>
+      <bibl><idno n="s0921"/><title><hi rend="font-style:italic">Mor.</hi></title> 2375,
+         <placeName><region key="VLA">Vlaanderen</region></placeName>, <date notBefore="1301"
+        notAfter="1400"/></bibl>
+     </cit>
+     <note>(hier kan ook de bet. 1) gelden, doch zij loopt met de hier behandelde ineen).</note>
+    </sense>
+    <sense type="remark">
+     <sense xml:id="X11782.sense.32" type="aanmerking"><def><label>Aanm.</label></def>
+     </sense>
+     <sense xml:id="X11782.sense.33" type="aanmerking"><def>Een ander woord dan dit, is <hi
+        rend="letter-spacing:2pt">gemac</hi> in de spreekw. “Hac comt immer in sijn ghemac”,
+         <bibl><idno n="s0607_sub012"/><title><hi rend="font-style:italic">Hor. Belg.</hi></title>
+        9, 24, 380</bibl> (lat. semper adest similis simili licet undique vilis). Het zal hier wel
+       de bet. <hi rend="font-style:italic">gelijke</hi> hebben en dus synon. zijn van het
+       stamverwante <hi rend="font-style:italic">makker</hi>. Vgl. bij het bnw. <hi
+        rend="text-transformation:smallcaps">gemac</hi>, en <bibl><idno n="s1256"/><title><hi
+          rend="font-style:italic">Taalk. Bijdr.</hi></title> 1, 233.</bibl></def>
+     </sense>
+    </sense>
+
+   </entry>
+
+  </body>
+ </text>
+</TEI>
