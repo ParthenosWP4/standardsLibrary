@@ -7,7 +7,7 @@
 
 **Metalanguage**: German
 
-**Formats**: [TEI](demokrat.xml) 
+**Formats**: Images: [demokrat.tif](demokrat.tif), [demokrat-whole-page.tif](demokrat-whole-page.tif); TEI: [demokrat.xml](demokrat.xml)
 
 **Contributor:** Vera Hildenbrandt, Trier Center for Digital Humanities. 
 

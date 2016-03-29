@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><hi rend="bold">Збирка речи из Призрена</hi></title>
+                <author><hi rend="bold">Димитрије Чемерикић</hi></author>
+            </titleStmt>
+            <publicationStmt>
+                <p><hi rend="italic">Рукопис у поседу Српске академије наука и уметности</hi></p>
+            </publicationStmt>
+            <sourceDesc>
+                <p><hi rend="italic">Збирка речи сакупљена у првој половини 20. века</hi></p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Project material used for COST Summer School, Lisbon 2015</p>
+            </projectDesc>
+        </encodingDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic xml:id="Čemerikić"
+            url="http://politikin-zabavnik.rs/pz/sites/default/files/3227/44.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <entry>
+                <figure>
+                    <graphic url="grč.jpg"/>
+                </figure>
+                <form type="lemma"><orth><hi rend="bold">гр̏ч</hi></orth><pc>,</pc></form>
+                <form type="ending"><orth>-а</orth><pc>,</pc></form>
+                <form type="inflected"><lbl>мн.</lbl><orth>гр̏чеви</orth></form>
+                <gramGrp><gen>м.</gen></gramGrp>
+
+                <sense><def>нагло и боловима праћено окупљање појединих мишића код чељадета, настало
+                        без његове воље:</def>
+                    <cit type="example">
+                        <quote>У̏фати га гр̏ч у ногу, те за ма̏ло да се уда̑ви.</quote>
+                    </cit>
+                    <cit type="example">
+                        <quote>Кьт по̏чнеф да га ви̏јеф грче̏ви, дь не може да у̏зне.</quote>
+                    </cit>
+                    <cit type="example">
+                        <quote>Гр̏ч ли ти у руке те се̏диш тако бадија̑ва? (тј. беспослен).</quote>
+                    </cit>
+                </sense>
+                <dictScrap>
+                    <!--My goal for the session in Barcelona is to find out what would be the best
+                    way of encoding cross-references to other dictionaries, including indications
+                    that certain dictionaries do not have a given word. Should these be xr/refs 
+                    or forms/orths? or re: related entries? -->
+                    У В. <hi rend="italic">гр̏ч, гр̀ча</hi>, м. (мн.). – У РЈА 1. <hi
+                        rend="italic">гр̏ч, гр̀ча</hi>, м. – У Ел. нема.
+                   <!-- To make clearer what is going on above:
+                    In V. гр̏ч, гр̀ча, m. (pl. гр̀чеви). In RJA 1. гр̏ч, гр̀ча, m. – In El. not present. 
+                    V, RJA and El. are abbreviations for other dictionaries. 
+                    "1" in "RJA 1. гр̏ч" means that this is the first homograph in that dictionary
+                   -->
+                </dictScrap>
+                <lb/>
+                <cit type="comment">
+                    <quote>Занимљиво је да код Арбанаса ова реч гласи <hi rend="italic">gëre,
+                        i</hi>, м., <hi rend="italic">ger,</hi> i м., <hi rend="italic">grç, i</hi>,
+                        м. (<bibl>Л. Лукај: <hi rend="italic">Речник</hi>, I, 240, 244 и 259</bibl>)
+                        и <hi rend="italic">ngerę</hi> м. (<hi rend="italic">Српскохрватско-албански
+                            речник</hi>, 52 код <hi rend="bold">грч</hi>). </quote>
+
+                </cit>
+            </entry>
+            <entry>
+                <figure>
+                    <graphic url="krilo1.jpg"/>
+                </figure>
+                <figure>
+                    <graphic url="krilo2.jpg"/>
+                </figure>
+                <form type="lemma"><orth><hi rend="bold">кри̏ло</hi></orth><pc>,</pc></form>
+                <form type="ending"><orth>а</orth></form>
+                <gramGrp><gen>n.</gen></gramGrp>
+                <sense n="1">
+                    <def>кри̑ло</def>
+                    <cit type="example">
+                        <quote>Исе̏чи тој кри̏ло да напра̏имо перку за со̏фру.</quote>
+                    </cit>
+                </sense>
+                <sense n="2"><usg>fig.</usg>
+                    <def>брат (браћа) је (су) сестри (сестрама) крило (крила):</def>
+                    <cit type="example">
+                        <quote>Ти̏ здраво Ма̑ро, изгубисте матер, нека ти су живе браћа, твоје
+                            крила.</quote>
+                    </cit>
+                    <cit type="comment">
+                        <quote>Због овога ваљда млађе Српкиње у Призрену (девојке и млађе жене) које
+                            имају брата одн. браће ни за живу главу неће окусити крило од живине да
+                            не би искобиле своју браћу, своја крила.</quote>
+                    </cit>
+                </sense>
+
+            </entry>
+        </body>
+    </text>
+</TEI>
