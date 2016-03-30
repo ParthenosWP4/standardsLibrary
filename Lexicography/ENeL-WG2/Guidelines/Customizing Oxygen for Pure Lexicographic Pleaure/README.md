@@ -32,10 +32,10 @@ It goes beyond the scope of this guideline to describe all of oXygen's functiona
 Shortcuts are very important because XML is, as you know, quite verbose. The more detailed your encoding is, the more typing you need to do. 
 
 1. **`⌘-E / ctrl-E` surrounds the selected text with tags**   
-This is probably the single most useful and most frequently used shortcut that you will end up using *all the time.* Because the text remains selected even after the first set of tags have been insterted, the most efficient way of wrapping text with multiple, nested tags is to start from the outer element.
-<img src="img/gramGrp.png" width="400"></img>
-<img src="img/pos.png" width="400"></img>
-<img src="img/gramGrp+pos.png" width="400"></img>
+This is probably the single most useful and most frequently used shortcut that you will end up using *all the time.* Because the text remains selected even after the first set of tags have been insterted, the most efficient way of wrapping text with multiple, nested tags is to start from the outer element.  
+<img src="img/gramGrp.png" width="400"></img>  
+<img src="img/pos.png" width="400"></img>  
+<img src="img/gramGrp+pos.png" width="400"></img>  
 
 2. **Refactoring shortcuts**  
 TODO
