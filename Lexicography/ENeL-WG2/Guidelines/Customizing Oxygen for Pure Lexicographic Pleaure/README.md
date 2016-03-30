@@ -64,10 +64,47 @@ TODO: Explain the difference between Global Options and Project Options.
 
 Code templates are code fragments that can be inserted quickly at the current editing position. 
 
-Oxygen set of built-in code templates. To get a complete list of available code templates, press `Ctrl-⇧-␣` (control-shift-space) in Text mode. 
+Oxygen comes with a set of built-in code templates for CSS, LESS, Schematron, XQuery, XSD and XSL. You can view them and edit them in the Preferences  > Templates > Code Templates.
 
-TODO the rest
+<img src="img/defaultcodetemplates.png"></img>
 
+To get a complete list of available code templates while working in the Text Mode in oXygen, press **`Ctrl-␣`** (control-space). You will only be shown the templates that make sense in the given context. So, to see built-in XSL templates, you have to be editing a XSL file.
+
+Out of the box, you won't find any code templates for XML, but we'll create some. 
+
+### Create Your Own Code Template
+
+At the beginning of these Guidelines, we learned how to use the oXygen shortcut to wrap some text in TEI elements **`<gramGrp>`** and **`<pos>`**. This is not unusual. In your dictionaries, you will often have groups of nested elements that repeat. For instance:  
+
+- **`<gramGrp><pos></pos></gramGrp>`**  
+- **`<form type="lemma"><orth></orth></form>`**    
+- **`<cit type="translation"><quote></quote></cit>`**  
+
+You could use the `⌘-E / ctrl-E` shortcut, but that wouldn't be very practical, especially since you would also need to enter attributes such as `@type` or `@xml:lang` etc. 
+
+Let's say we want to create a code template which will wrap the selected text with `<gramGrp><pos></pos></gramGrp>`** and place the cursor after `<gramGrp>` when done.
+
+To do that we need to:
+
+1. Click on `New` in the Code Templates Editor.
+2. Enter the abbreviate name for our code template 
+3. Enter the descriptionwhich explain what the code template does
+4. Associate the code template with an edtior - for TEI always choose XML
+5. Write the XML code we want to have in the template in the Content field, then place the cursor between <pos></pos> where we want the selected text to appear
+6. Click on the little green arrwo next to the Content field to select an editor variable; choose the "Current Selected Text"
+7. Then repeat the last two steps to indicate where you want the caret to appear after your code has been inserted: in this particular case, place the caret after </gramGrp> in the Content field and then select the `Cursor position after insert` from the list of editor variables.
+8. Finally click `OK` to save your code template
+
+<img src="img/grgr.png"></img>
+
+Now you are ready to use your code template. Go to your dictionary TEI file and:
+
+1. select the string in your dictionary entry which you want to mark up as a part of speech tag
+2. invoke the code templates with `Ctrl-␣` (control-space)
+3. scroll to the grGr code template (it will be the only one if this is the first time you are doing this) and click on it 
+<img src="img/grgrselect.png" width="530"></img>
+4. be amazed
+<img src="img/grgrresult.png" width="530"></img>
 
 ### <a name="advancedcodetemplates"></a> Advanced Code Templates
 
