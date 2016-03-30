@@ -16,14 +16,14 @@
 
 ## <a name="whatis"></a>oXygen XML Editor</a>
 
-[oXygen XML](https://www.oxygenxml.com) is a versitile, commercial XML editor, which is quite popular with practitioners in the field of Digital Humanities. 
+[oXygen XML](https://www.oxygenxml.com) is a versatile, commercial XML editor, which is quite popular with practitioners in the field of Digital Humanities. 
 
 It offers:
 
-- Multiple modes for editing XML documents: Text, Grid and (CSS-styled) Author *so that you can view your content differently and adapt the display of your dictionaries to your current editing needs.* [TODO SEE CSS VIEWS!!!!!!!]()- Document and code templates: *so that you can easily create new files, reuse predefined "skeletons" for your content, reduce the number of characters you need to type and, sometimes, even surround plain text wiht complex, nested, XML elements* - Transformations to HTML and PDF *so that you can preview what your dictionary might look like online or in print*;- Ability to add/extend customise frameworks. This, for instance, made it possible for us to create a plug-in called [TEI Completer add link]() which lets you *populate your TEI attributes with values stored and maintained in remote databases or provided by APIs*- Support for all schema languages: such as RelaxNG, Schematron, XML Schema, DTDs, NVDL, NRL *so that you can validate your XML documents against various schemas*- Content completion based on TEI RelaxNG schemas, *which helps you type faster and choose the fitting TEI element in a given context*
-- Tool tip documentatioon based on TEIRelaxNG schemas, *so that you can check what the TEI Guidelines say about a given element wihtout leaving the document you are editing*- XQuery directly against XML files and local/remote XML databases like eXist, *so that you can search your dictionaries and explore their contents while you are working on them*- WebDAV and FTP support for access to files on remote servers/CMS- Built-in subversion client for collaborative version control and visual change management - Included graphical XMLDiff to analyze differences between documents, etc.
+- Multiple modes for editing XML documents: Text, Grid and (CSS-styled) Author *so that you can view your content differently and adapt the display of your dictionaries to your current editing needs.* [TODO SEE CSS VIEWS!!!!!!!]()- Document and code templates: *so that you can easily create new files, reuse predefined "skeletons" for your content, reduce the number of characters you need to type and, sometimes, even surround plain text with complex, nested, XML elements* - Transformations to HTML and PDF *so that you can preview what your dictionary might look like online or in print*;- Ability to add/extend customize frameworks. This, for instance, made it possible for us to create a plug-in called [TEI Completer add link]() which lets you *populate your TEI attributes with values stored and maintained in remote databases or provided by APIs*- Support for all schema languages: such as RelaxNG, Schematron, XML Schema, DTDs, NVDL, NRL *so that you can validate your XML documents against various schemas*- Content completion based on TEI RelaxNG schemas, *which helps you type faster and choose the fitting TEI element in a given context*
+- Tool tip documentation based on TEIRelaxNG schemas, *so that you can check what the TEI Guidelines say about a given element without leaving the document you are editing*- XQuery directly against XML files and local/remote XML databases like eXist, *so that you can search your dictionaries and explore their contents while you are working on them*- WebDAV and FTP support for access to files on remote servers/CMS- Built-in subversion client for collaborative version control and visual change management - Included graphical XMLDiff to analyze differences between documents, etc.
 
-It goes beyond the scope of this guideline to describe all of oXygen's functionalities. In the rest of this document, we will focus mostly on time-saving tips and hints for working with lexical data, although many of these thips will apply to other uses of oXygen. 
+It goes beyond the scope of this guideline to describe all of oXygen's functionalities. In the rest of this document, we will focus mostly on time-saving tips and hints for working with lexical data, although many of these tips will apply to other uses of oXygen. 
 
 ## Shortcuts
 
@@ -32,7 +32,7 @@ It goes beyond the scope of this guideline to describe all of oXygen's functiona
 Shortcuts are very important because XML is, as you know, quite verbose. The more detailed your encoding is, the more typing you need to do. 
 
 1. **`⌘-E / ctrl-E` surrounds the selected text with tags**   
-This is probably the single most useful and most frequently used shortcut that you will end up using *all the time.* Because the text remains selected even after the first set of tags have been insterted, the most efficient way of wrapping text with multiple, nested tags is to start from the outer element.  
+This is probably the single most useful and most frequently used shortcut that you will end up using *all the time.* Because the text remains selected even after the first set of tags have been inserted, the most efficient way of wrapping text with multiple, nested tags is to start from the outer element.  
 <img src="img/gramGrp.png" width="400"></img>  
 <img src="img/pos.png" width="400"></img>  
 <img src="img/gramGrp+pos.png" width="400"></img>  
@@ -49,7 +49,7 @@ Open the preferences, then follow the procedure as shown on the image below:
     1. start typing "shortcuts"   
     2. start typing the name of the command whose shortcut you want to change   
     3. double-klick the command to get to the shortcut editing window  
-    4. press the desired shortcut keys to replace the current shotcut  
+    4. press the desired shortcut keys to replace the current shortcut  
     5. click on OK  
     6. click on OK  
 
@@ -72,7 +72,7 @@ To get a complete list of available code templates while working in the Text Mod
 
 Out of the box, you won't find any code templates for XML, but we'll create some. 
 
-### Create Your Own Code Template
+### Write Your Own Code Template for Nested Elements
 
 At the beginning of these Guidelines, we learned how to use the oXygen shortcut to wrap some text in TEI elements **`<gramGrp>`** and **`<pos>`**. This is not unusual. In your dictionaries, you will often have groups of nested elements that repeat. For instance:  
 
@@ -88,10 +88,10 @@ To do that we need to:
 
 1. Click on `New` in the Code Templates Editor.
 2. Enter the abbreviate name for our code template 
-3. Enter the descriptionwhich explain what the code template does
-4. Associate the code template with an edtior - for TEI always choose XML
+3. Enter the description which explains what the code template does
+4. Associate the code template with an editor - for TEI always choose XML
 5. Write the XML code we want to have in the template in the Content field, then place the cursor between <pos></pos> where we want the selected text to appear
-6. Click on the little green arrwo next to the Content field to select an editor variable; choose the "Current Selected Text"
+6. Click on the little green arrow next to the Content field to select an editor variable; choose the "Current Selected Text"
 7. Then repeat the last two steps to indicate where you want the caret to appear after your code has been inserted: in this particular case, place the caret after </gramGrp> in the Content field and then select the `Cursor position after insert` from the list of editor variables.
 8. Finally click `OK` to save your code template
 
@@ -105,6 +105,54 @@ Now you are ready to use your code template. Go to your dictionary TEI file and:
 4. be amazed  
 <img src="img/grgrselect.png" width="530"></img>  
 <img src="img/grgrresult.png" width="530"></img>
+
+#### Code Template for Nested Elements with a Twist
+
+Sometimes, when encoding dictionaries, we have a need for a type of code that repeats, but that may differ in each instance by the value of an attribute. 
+
+For instance, let's say you are using `<etym></etym>` to mark up etymologies, and within etymologies you are using <mentioned> to mark up the etymon, with the appropriate language code. 
+
+You could either create different code templates for each language - and you will probably want to do that for the most common ones. If the largest number of etymons in your dictionary is from Latin, it would make sense to create a code template that looks like this:
+
+<img src="img/latin.png" width="530"></img>
+
+But your dictionary may contain many different etymologies from many different languages, and it is probably not realistic to create individual code templates for each and every one of them. 
+
+In those cases, you want to write a code template that will ask you interactively to add the value of the language attribute. 
+
+To do that we will need to:
+
+1. place the cursor between the quotation marks in `xml:lang=""`
+2. click on the editorial variables icon and select the `Ask` editorial variable 
+
+<img src="img/ask0.png"></img>
+
+The result will look like this:
+
+<img src="img/ask1.png"></img>
+
+We're almost there. To make this template code even more useful, do the following:
+
+1. Replace `'Message'` with the message that you want the user to see. For instance `'Which language is this word from?'`
+2. `input_type` you can leave as is
+3. replace 'default_value' with the language code for that you want to appear automatically, for instance `'la' `for Latin. 
+
+The content field should loook likе this:
+
+    <mentioned xml:lang="${ask('Which langauge is this  word from?', input_type, 'la')}">${selection}</mentioned>${caret} 
+
+To apply this code template in your TEI encoded dictionary:
+
+1. select the etymon
+2. invoke the code templates with `Ctrl-␣` (control-space)
+3. select and click on the `mentioned` template
+4. change the default "la" value with the appropriate language code 
+5. click ok
+6. be amazed
+
+For the visually minded:
+
+<img src="img/interactive1.png"></img><img src="img/interactive2.png"></img><img src="img/interactive3.png"></img><img src="img/interactive4.png"></img>
 
 ### <a name="advancedcodetemplates"></a> Advanced Code Templates
 
