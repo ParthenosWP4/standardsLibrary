@@ -45,18 +45,35 @@ TODO
 
 If the oXygen shortcuts are not to your liking or difficult to remember, you can change them yourself.
 
-TODO
+Open the preferences, then follow the procedure as shown on the image below:  
+    1. start typing "shortcuts"   
+    2. start typing the name of the command whose shortcut you want to change   
+    3. double-klick the command to get to the shortcut editing window  
+    4. press the desired shortcut keys to replace the current shotcut  
+    5. click on OK  
+    6. click on OK  
 
-<img src="img/preferences.shortcutkeys.png"></img>
+<img src="img/shortcuts.png"></img>
+
+TODO: Explain the difference between Global Options and Project Options. 
+ 
 
 ## Code Templates 
 
 ### <a name="basiccodetemplates"></a> Basic Code Templates 
-TODO 
+
+Code templates are code fragments that can be inserted quickly at the current editing position. 
+
+Oxygen set of built-in code templates. To get a complete list of available code templates, press `Ctrl-⇧-␣` (control-shift-space) in Text mode. 
+
+TODO the rest
+
 
 ### <a name="advancedcodetemplates"></a> Advanced Code Templates
 
-TODO Describe how to write and deploy advance code templates with XPath expressions that can be evaluated on selected text. 
+TODO Describe how to write and deploy advanced code templates with XPath expressions that can be evaluated on selected text. 
+
+take screenshot from Vuk -- separating two different language translations by comma; or more complex homograph stuff with numbers 
 
 ## <a name="stylingdictionaries"></a>Styling Dictionaries in Author View</a>
 
