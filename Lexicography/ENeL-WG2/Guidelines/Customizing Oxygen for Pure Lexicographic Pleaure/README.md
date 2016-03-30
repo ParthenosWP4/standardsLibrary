@@ -101,10 +101,8 @@ Now you are ready to use your code template. Go to your dictionary TEI file and:
 
 1. select the string in your dictionary entry which you want to mark up as a part of speech tag
 2. invoke the code templates with `Ctrl-␣` (control-space)
-3. scroll to the grGr code template (it will be the only one if this is the first time you are doing this) and click on it 
-<img src="img/grgrselect.png" width="530"></img>
-4. be amazed
-<img src="img/grgrresult.png" width="530"></img>
+3. scroll to the grGr code template (it will be the only one if this is the first time you are doing this) and click on it <img src="img/grgrselect.png" width="530"></img>
+4. be amazed <img src="img/grgrresult.png" width="530"></img>
 
 ### <a name="advancedcodetemplates"></a> Advanced Code Templates
 
