@@ -14,7 +14,7 @@
 [Advanced Code Templates](#advancedcodetemplates)  
 [Styling Dictionaries in Author View](#stylingdictionaries) 
 
-## <a name="whatis"></a>oXygen XML Ediotr</a>
+## <a name="whatis"></a>oXygen XML Editor</a>
 
 [oXygen XML](https://www.oxygenxml.com) is a versitile, commercial XML editor, which is quite popular with practitioners in the field of Digital Humanities. 
 
