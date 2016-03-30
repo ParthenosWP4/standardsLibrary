@@ -156,9 +156,37 @@ For the visually minded:
 
 ### <a name="advancedcodetemplates"></a> Advanced Code Templates
 
-TODO Describe how to write and deploy advanced code templates with XPath expressions that can be evaluated on selected text. 
+The true power of code templates comes from the ability to evaluate XPath expressions on your selected text.
 
-take screenshot from Vuk -- separating two different language translations by comma; or more complex homograph stuff with numbers 
+Let's imagine you are working on a Serbian-German-Latin dictionary that has been transcribed in plain text. Very often, the translations are simple and consist of a German string followed by a comma followed by a Latin string. 
+
+For instance:
+
+`реч, f. das Wort, verbum.`
+
+Of course, you could try to convert this type of regularity with regular expressions as well, but we're learning here about code templates, so relax.
+
+You've created code templates for `<form><orth></orth></form>` and for the `<gramGrp>` and your code currently looks like this:
+
+    <entry>
+    <form><orth>реч</orth></form>
+    <gramGrp><pos>f.</pos></gramGrp> das Wort, verbum. </entry>
+
+Wouldn't it be nice if you could separate the German translation from the Latin translation in one go and wrap everything in `<cit>`?
+
+We can, using an oXygen editor variable `${xpath_eval()}` and a handy xPath function such as `substring-after()` and `substring-before()`. When you select your strings, you want everything before the comma to be marked up as a German translation, and everything after the comma and a space as a Latin translation. 
+
+    <cit type="translation">
+        <quote xml:lang="de">${xpath_eval(substring-before('${selection}',','))}</quote>
+    </cit> 
+    <cit type="translation">
+        <quote xml:lang="la">${xpath_eval(substring-after('${selection}',', '))}</quote>
+    </cit>
+
+If you were ever looking for a proof why it's worth learning xPath for anything other than to explore your XML-encoded dictionaries, here it is:
+
+<img src="img/xpath1.png"></img><img src="img/xpath2.png"></img><img src="img/xpath3.png"></img>
+
 
 ## <a name="stylingdictionaries"></a>Styling Dictionaries in Author View</a>
 
