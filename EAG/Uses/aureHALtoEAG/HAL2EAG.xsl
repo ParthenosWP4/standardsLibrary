@@ -153,7 +153,9 @@
             <toDate><xsl:value-of select="date[@type='end']"/></toDate>
         </dateRange>
     </xsl:template>
+    
     <xsl:template match="date" mode="SecondaryOrg"/>
+    
     <xsl:template match="orgName" mode="SecondaryOrg">
         <xsl:variable name="type"><xsl:value-of select="@type"/></xsl:variable>
         <relationEntry source="{$type}"><xsl:apply-templates/></relationEntry>
