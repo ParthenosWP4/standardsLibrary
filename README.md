@@ -1,17 +1,18 @@
-# standardsLibrary README
+## Library of Standard-based tools for Humanities
 
 This GitHub environment is part of the standards ecosystem framework of Parthenos WP4.
 It is built to provide information about standards and, more important, to give researchers models and tools they can use, transform, …
 For instance, this repository must be considered as a standards toolkit and its instruction manuals.
 
-For each format directory (at least those expressed in XML), the structure is the same (alphabetical order) : 
-Samples -> Examples of use from other projects
-Schemas -> XML, RNG schemas, ...
-Spec -> guidelines, tag libraries, ...
-Uses -> kind of "use cases", scenarios that can be downloaded and reuse.
+This repository is structured in categories, by disciplines, but also to answer the potential needs that researchers can have during the sequence of a research project, whatever it is.
 
-[NB : for the moment, we're in a test phase for this architecture, and the only 'use' (EAG/Uses/aureHAL2EAG) is still a work in progress, an unusable draft.]
+The existing categories are:
+
+####[Lexicography](https://github.com/ParthenosWP4/standardsLibrary/tree/master/Lexicography)
+####[Archival Description](https://github.com/ParthenosWP4/standardsLibrary/tree/master/archivalDescription)
+#### [Bibliography](https://github.com/ParthenosWP4/standardsLibrary/tree/master/bibliography)
+#### [Digital Edition](https://github.com/ParthenosWP4/standardsLibrary/tree/master/digitalEdition)
 
 Every member can create and modify directories and documents.
 
-For those who are not familiar with GitHub, you can learn more reading https://guides.github.com/ and https://help.github.com/.
+Learn more about Github reading the [guide](https://guides.github.com/) and the [help pages](https://help.github.com/).
