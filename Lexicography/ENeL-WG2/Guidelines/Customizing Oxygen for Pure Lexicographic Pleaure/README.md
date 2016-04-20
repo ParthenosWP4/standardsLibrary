@@ -4,7 +4,7 @@
 
 **Contributor**: Toma Tasovac, Belgrade Center for Digital Humanities. 
 
-**Version:** 0.1 (2016-03-29) 
+**Version:** 0.2 (2016-04-20) 
 
 ## Table of Contents
 [oXygen XML Editor](#whatis)  
@@ -55,8 +55,19 @@ Open the preferences, then follow the procedure as shown on the image below:
 
 <img src="img/shortcuts.png"></img>
 
-TODO: Explain the difference between Global Options and Project Options. 
- 
+### Global options vs. Project options?
+
+When you make oXygen customizations or transformation and validation scenarios, you can store them globally or bind them to a specific project by choosing the "Project Options" setting in the preferences pages.
+
+<img src="img/globalvsproject.png"></img>
+
+It is important to understand the difference between the two.
+
+*Global options* are stored on your computer and are not accessible to other users (unless you export them into an XML options file, which can then be imported on a different computer). That means that you can use your global customizations in any project which you have on your computer.  
+
+*Project options*, on the other hand,  are stored in the currently open .xpr project and available only in the context of the given project. The advantage of project options is that they make it easier for members of the same team to share their customizations: if your project file is saved on a version control system (such as SVN, CVS, or Source Safe) or in a shared folder, then every member of your team will have the same option configuration that you stored in the project file.
+
+**TODO**: in a Starting with Oxygen tutorial, we have to make sure that we describe the creation of projects. Check with Roman. 
 
 ## Code Templates 
 
@@ -76,9 +87,17 @@ Out of the box, you won't find any code templates for XML, but we'll create some
 
 At the beginning of these Guidelines, we learned how to use the oXygen shortcut to wrap some text in TEI elements **`<gramGrp>`** and **`<pos>`**. This is not unusual. In your dictionaries, you will often have groups of nested elements that repeat. For instance:  
 
-- **`<gramGrp><pos></pos></gramGrp>`**  
-- **`<form type="lemma"><orth></orth></form>`**    
-- **`<cit type="translation"><quote></quote></cit>`**  
+```xml
+<gramGrp><pos>m</pos></gramGrp>
+```
+or
+```xml  
+<form type="lemma"><orth>Lexicographer</orth></form>
+```
+or
+```xml
+<cit type="translation"><quote>лексикограф</quote></cit>
+```  
 
 You could use the `⌘-E / ctrl-E` shortcut, but that wouldn't be very practical, especially since you would also need to enter attributes such as `@type` or `@xml:lang` etc. 
 
@@ -106,7 +125,7 @@ Now you are ready to use your code template. Go to your dictionary TEI file and:
 <img src="img/grgrselect.png" width="530"></img>  
 <img src="img/grgrresult.png" width="530"></img>
 
-#### Code Template for Nested Elements with a Twist
+#### Code Template for Nested Elements with Interactive Parameters
 
 Sometimes, when encoding dictionaries, we have a need for a type of code that repeats, but that may differ in each instance by the value of an attribute. 
 
@@ -139,7 +158,9 @@ We're almost there. To make this template code even more useful, do the followin
 
 The content field should loook likе this:
 
-    <mentioned xml:lang="${ask('Which langauge is this  word from?', input_type, 'la')}">${selection}</mentioned>${caret} 
+```xml
+<mentioned xml:lang="${ask('Which langauge is this  word from?', input_type, 'la')}">${selection}</mentioned>${caret}
+```
 
 To apply this code template in your TEI encoded dictionary:
 
@@ -168,26 +189,50 @@ Of course, you could try to convert this type of regularity with regular express
 
 You've created code templates for `<form><orth></orth></form>` and for the `<gramGrp>` and your code currently looks like this:
 
+```xml
     <entry>
     <form><orth>реч</orth></form>
     <gramGrp><pos>f.</pos></gramGrp> das Wort, verbum. </entry>
+```
 
 Wouldn't it be nice if you could separate the German translation from the Latin translation in one go and wrap everything in `<cit>`?
 
 We can, using an oXygen editor variable `${xpath_eval()}` and a handy xPath function such as `substring-after()` and `substring-before()`. When you select your strings, you want everything before the comma to be marked up as a German translation, and everything after the comma and a space as a Latin translation. 
 
+```xml
     <cit type="translation">
         <quote xml:lang="de">${xpath_eval(substring-before('${selection}',','))}</quote>
     </cit> 
     <cit type="translation">
         <quote xml:lang="la">${xpath_eval(substring-after('${selection}',', '))}</quote>
     </cit>
+```
 
 If you were ever looking for a proof why it's worth learning xPath for anything other than to explore your XML-encoded dictionaries, here it is:
 
 <img src="img/xpath1.png"></img><img src="img/xpath2.png"></img><img src="img/xpath3.png"></img>
 
 
-## <a name="stylingdictionaries"></a>Styling Dictionaries in Author View</a>
+## <a name="stylingdictionaries"></a>Styling Dictionaries in Author Mode</a>
 
 
+The encoding of dictionaries using TEI XML is also possible in a WYSIWYG-style editor in which the XML markup is not visible.
+
+This type of tagless editor is available in Oxygen XML Editor as the Author mode. To enter this mode, click the Author button at the bottom of the editing area.
+
+TODO screenshot 
+
+The Author mode renders the content of the XML document visually, based on a CSS stylesheet associated with the document. Many of the actions and features available in Text mode are also available in Author mode.
+
+TODO the rest (also with English examples, cf. Johnson's entry on Lexicographer). 
+
+### Text Mode
+
+<img src="img/css/xmlrs.png"></img>
+
+###Author Mode
+<img src="img/css/cssrs.png"></img>
+
+### Writing simple CSS stylesheets for your dictionary data 
+
+TODO
