@@ -716,6 +716,114 @@ TO	#IMPLIED, NMTOKEN -->
                             <!-- before presenting more detailed descriptions in <bioghist>, <scopecontent>, and <dsc>, 
                                 in order to provide first a basic description of the archival materials. -->
                         </content>
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">archdesc MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>    
+                        <constraintSpec ident="archdescLevelValues" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test=".[@level = 'fonds' | @level = 'recordGrp' | @level = 'collection' | @level='otherlevel']"
+                                    > The value of the archdesc level attribute SHOULD be 'fonds',
+                                    'recordGrp', 'collection' ot 'otherlevel'.</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="orignationDesirable" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:did/ead:origination and normalize-space(ead:did/ead:origination)"
+                                    >archdesc COULD have a non-empty origination</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="archdescProcessinfoDesirable" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="normalize-space(ead:processinfo/ead:p)">archdesc-processinfo
+                                    SHOULD not be empty</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="archdescProcessinfoDateDesirable" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="normalize-space(ead:processinfo/ead:p/ead:date)"
+                                    >archdesc-processinfo SHOULD have a non empty date</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="langmaterialPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:did/ead:langmaterial">archdesc COULD have a
+                                    langmaterial</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="custodhistPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:custodhist">archdesc COULD have a custodhist</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="otherfindaidPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:otherfindaid">archdesc COULD have an otherfindaid</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="originalslocPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:originalsloc">archdesc COULD have an originalsloc</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="altformavailPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:altformavail">archdesc COULD have an altformavail</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="altformavailPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:altformavail">archdesc COULD have an altformavail</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="bibliographyPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:bibliography">archdesc COULD have a bibliography</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="oddPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:odd">archdesc COULD have an odd</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="notePossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:note">archdesc COULD have a note</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="scopecontentPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:scopecontent">archdesc COULD have a scopecontent</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="controlaccessPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:controlaccess">archdesc COULD have a
+                                    controlaccess</assert>
+                            </constraint>
+                        </constraintSpec>
+                        
+                        <!--Only archdesc[@level='fonds'], see EADSpec.xml, line-->
+                        <!-- END of EHRI constraints -->
                         <attList>
                             <attDef ident="level" usage="req">
                                 <desc>identifies the character of the whole unit</desc>
@@ -1541,6 +1649,16 @@ ID	#IMPLIED, ID
 LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN</attList> -->
+                        
+                        <!--EHRI constraints-->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">c01 MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="combined" xmlns="urn:isbn:1-931666-22-9">
@@ -1640,6 +1758,16 @@ ID	#IMPLIED, ID
 LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">c02 MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1683,6 +1811,16 @@ ID	#IMPLIED, ID
 LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">c03 MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1726,6 +1864,16 @@ ID	#IMPLIED, ID
 LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN</attList> -->
+                       
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">c04 MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1769,6 +1917,16 @@ ID	#IMPLIED, ID
 LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN</attList> -->
+                      
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">c05 MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1812,6 +1970,15 @@ ID	#IMPLIED, ID
 LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@level">c06 MUST have a level-attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -2391,6 +2558,32 @@ TYPE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="controlaccessSubjectPossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:subject">controlaccess COULD have a subject</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="controlaccessPlacePossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:place">controlaccess COULD have a place</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="controlaccessPersnamePossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:persname">controlaccess COULD have a persname</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="controlaccessorgnamePossible" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                                    test="ead:orgname">controlaccess COULD have a orgname</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="collection" xmlns="urn:isbn:1-931666-22-9">
@@ -3185,6 +3378,41 @@ NORMAL	#IMPLIED, CDATA
                                 </rng:oneOrMore>
                             </rng:group>
                         </content>
+                        <!-- EHRI constraints
+                        TODO 
+    <assert test="">When multiple unittitles are given, they SHOULD have different labels, according to 17.3</assert>-->
+                        <constraintSpec ident="unitidRequired" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="ead:unitid">a did MUST have a unitid, according 17.3 and
+                                    WP19</assert>
+                            </constraint>
+                        </constraintSpec>
+                        
+                        <constraintSpec ident="unittitleRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="ead:unittitle">a did MUST have a unittitle, according
+                                    17.3</assert>
+                            </constraint>
+                        </constraintSpec>
+                        
+                        <constraintSpec ident="unittitleNotEmpty" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="count(ead:unittitle[text()]) > 0">a did MUST have at least one
+                                    non-empty unittitle</assert>
+                            </constraint>
+                        </constraintSpec>
+                        
+                        <constraintSpec ident="nonemptyPhysdescDesirable" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULDWP17"
+                                    test="normalize-space(ead:physdesc/ead:extent)">a did SHOULD have a
+                                    non-empty physdesc-extent, according to 17.3</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc type="inventory" level="subgrp"
@@ -3454,6 +3682,23 @@ ID	#IMPLIED, ID
 OTHERTYPE	#IMPLIED, NMTOKEN
 TPATTERN	#IMPLIED, NMTOKEN
 TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="dscType" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
+                                    test="@type">dsc MUST have a type attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="dscothertype" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
+                                    test="not(@type ='othertype') or (@othertype and not(@othertype=''))"
+                                    >dsc MUST have a type attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="combined" xmlns="urn:isbn:1-931666-22-9">
@@ -3718,6 +3963,31 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                                 </rng:optional>
                             </rng:group>
                         </content>
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="eadns" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="ead"
+                                    uri="urn:isbn:1-931666-22-9"/>
+                            </constraint>
+                        </constraintSpec>
+                        
+                        <constraintSpec ident="profiledescRequired" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="ead:profiledesc">eadheader must contain a profiledesc
+                                    element</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="creationDateNotempty" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                                    test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)"
+                                    >eadheader COULD have a non-empty creation-date</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHEI constraints -->
+                        
                         <attList>
                             <attDef ident="findaidstatus">
                                 <desc>The extent to which the encoded finding aid is a finished
@@ -3776,6 +4046,23 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                         <content>
                             <rng:text/>
                         </content>
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="mustContainText" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="normalize-space(.)">eadid must contain text</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="creationDesirable" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="@mainagencycode">eadid SHOULD contain a mainagencycode
+                                    attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <attList>
                             <attDef ident="mainagencycode">
                                 <desc>A code compliant with ISO/DIS 15511 Information and
@@ -5535,6 +5822,23 @@ LABEL	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="langcodeRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="@langcode">language MUST have a langcode attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="scriptcodeRequired" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="@scriptcode">language SHOULD have a langcode
+                                    attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <attList>
                             <attDef ident="langcode">
                                 <desc>The three-lettter code for the language in which an
@@ -7127,6 +7431,24 @@ ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ENCODINGANALOG	#IMPLIED, CDATA
 ID	#IMPLIED, ID</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="langusageRequired" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="ead:langusage/ead:language">eadheader MUST contain a
+                                    langusage/language element</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="creationDesirable" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="ead:creation">eadheader should contain a creation
+                                    element</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <exemplum>
                             <teix:egXML>
                                 <eadheader audience="internal" langencoding="iso639-2b"
@@ -7322,6 +7644,16 @@ ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ENCODINGANALOG	#IMPLIED, CDATA
 ID	#IMPLIED, ID</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="notempty" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="ead:publisher">eadheader SHOULD specify a publisher</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -7834,6 +8166,17 @@ ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ENCODINGANALOG	#IMPLIED, CDATA
 ID	#IMPLIED, ID</attList> -->
+                        
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="dateNotEmpty" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="normalize-space(ead:change/ead:date)">a revisiondesc SHOULD
+                                    have a not empty date</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!--END of EHRI constraints-->
+                        
                         <exemplum>
                             <teix:egXML>
                                 <eadheader audience="internal" langencoding="iso639-2b"
@@ -8956,6 +9299,38 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                       
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="labelDesirable" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD-WP17"
+                                    test="normalize-space(@label) or normalize-space(@encodinganalog)"
+                                    >unitdates COULD have a label, describing the type of date,
+                                    according 17.3</assert>
+                                <!-- Not really sure. The original constraint is :
+                            <sch:assert role="COULD"
+                test="not(ead:unitdate) or (ead:unitdate/@label and not(ead:unitdate/@label = '')) or (ead:unitdate/@encodinganalog and not(ead:unitdate/@encodinganalog = ''))"
+                >unitdates COULD have a label, describing the type of date, according
+                17.3</sch:assert>
+                            -->
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="normalDesirableOrNotEmpty" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD-WP17"
+                                    test="text() or normalize-space(@normal)">unitdate should be not
+                                    empty or have a non-empty @normal attribute</assert>
+                            </constraint>
+                        </constraintSpec>                        
+                        <constraintSpec ident="normalNotEmtpy" scheme="isoschematron" type="EHRI">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP19"
+                                    test="normalize-space(@normal)">unitdate should have a non-empty
+                                    @normal attribute</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
+                        
                         <attList>
                             <attDef ident="datechar">
                                 <desc>Term characterizing the nature of dates, such as dates of
@@ -9061,6 +9436,22 @@ TYPE	#IMPLIED, bulk, inclusive -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <!-- EHRI constraints -->
+                        <constraintSpec ident="notEmpty" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17"
+                                    test="not(ead:unitid='')">a unitid SHOULD not be empty</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="uniqueId" scheme="isoschematron" type="EHRI" mode="add">
+                            <constraint>
+                                <!-- All the <unitid> have @label="ehri_main_identifer" ? -->
+                                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19"
+                                    test="count(//ead:unitid[@label = 'ehri_main_identifier']) = count(distinct-values(//ead:unitid[@label = 'ehri_main_identifier']))"
+                                    >unitid's MUST be unique within one eadfile, according 17.3</assert>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END of EHRI constraints -->
                         <attList>
                             <attDef ident="repositorycode">
                                 <desc>A unique code indicating the repository responsible for
@@ -9475,7 +9866,54 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <rng:text/>
                                 </datatype>
 
-                            
+                                <!-- EHRI constraint for @level attribute -->
+                                <constraintSpec ident="otherlevel" scheme="isoschematron" type="EHRI">
+                                    <constraint>
+                                        <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                                            role="MUST-EAD"
+                                            test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))"
+                                        />
+                                    </constraint>
+                                </constraintSpec>
+                                <constraintSpec ident="levelFonds" scheme="isoschematron" type="EHRI">
+                                    <constraint>
+                                        <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                                            role="SHOULD-WP19"
+                                            test="not(@level = 'fonds') or name(.) = 'archdesc'"
+                                            >ONLY the archdesc can be fonds level</assert>
+                                    </constraint>
+                                </constraintSpec>
+                                <constraintSpec ident="recordgrplevel" scheme="isoschematron" type="EHRI">
+                                    <constraint>
+                                        <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                                            role="SHOULD-WP19"
+                                            test="not(@level = 'recordgrp')
+                                            or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])"
+                                            >recordgrp SHOULD be a child of another
+                                            recordgrp</assert>
+                                    </constraint>
+                                </constraintSpec>
+                                <constraintSpec ident="subgrpLevel" scheme="isoschematron" type="EHRI">
+                                    <constraint>
+                                        <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                                            role="SHOULD-WP19"
+                                            test="not(@level = 'subgrp')
+                                            or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])"
+                                            >subgrp SHOULD be a child of another
+                                            subgrp or a recordgrp</assert>
+                                    </constraint>
+                                </constraintSpec>
+                                <constraintSpec ident="subseriesLevel" scheme="isoschematron" type="EHRI">
+                                    <constraint>
+                                        <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                                            role="SHOULD-WP19"
+                                            test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']"
+                                            >subseries SHOULD be a child of another
+                                            subseries or a series</assert>
+                                    </constraint>
+                                </constraintSpec>
+                                <!-- END of EHRI constraints -->
+                                
                                 <remarks>
                                     <p> This attribute is available in <gi>archdesc</gi>>, where the
                                         highest level of material represented in the finding aid
