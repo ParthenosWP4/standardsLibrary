@@ -727,7 +727,7 @@ TO	#IMPLIED, NMTOKEN -->
                         <constraintSpec ident="archdescLevelValues" scheme="isoschematron" type="EHRI">
                             <constraint>
                                 <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
-                                    test=".[@level = 'fonds' | @level = 'recordGrp' | @level = 'collection' | @level='otherlevel']"
+                                    test="@level = 'fonds' or @level = 'recordGrp' or @level = 'collection' or @level='otherlevel'"
                                     > The value of the archdesc level attribute SHOULD be 'fonds',
                                     'recordGrp', 'collection' ot 'otherlevel'.</assert>
                             </constraint>
