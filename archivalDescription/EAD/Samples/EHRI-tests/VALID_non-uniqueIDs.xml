@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9">
+    <eadheader>
+        <eadid>1</eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper/>
+            </titlestmt>
+        </filedesc>
+        <profiledesc>
+            <langusage>
+                <language langcode="eng" scriptcode="Latn">English</language>
+            </langusage>
+        </profiledesc>
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unitid label="ehri_id">1</unitid>
+            <unittitle>text</unittitle>
+        </did>
+        <dsc>
+            <c01 level="collection">
+                <did>
+                    <unitid label="ehri_id">1</unitid>
+                    <unittitle>text</unittitle>
+                </did>
+            </c01>
+        </dsc>
+    </archdesc>
+</ead>
+
+

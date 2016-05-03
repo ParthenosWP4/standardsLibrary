@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="EAD-schema-EHRI.rnc" type="application/relax-ng-compact-syntax"?>
+<ead xmlns="urn:isbn:1-931666-22-9">
+    <eadheader>
+        <eadid/>
+
+
+        <filedesc>
+            <titlestmt>
+                <titleproper/>
+            </titlestmt>
+
+        </filedesc>
+
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unitid></unitid>
+
+        </did>  
+
+    </archdesc>
+</ead>
+

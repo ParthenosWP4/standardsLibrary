@@ -1,0 +1,2439 @@
+default namespace = "urn:isbn:1-931666-22-9"
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace iso = "http://www.iso.org/ns/1.0"
+namespace olac = "http://www.language-archives.org/OLAC/1.0/"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+namespace tei = "http://www.tei-c.org/ns/1.0"
+namespace teix = "http://www.tei-c.org/ns/Examples"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2016-05-02T16:18:43Z. .
+# TEI Edition: Version 3.0.0. Last updated on
+#	29th March 2016, revision 89ba24e
+# TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
+#
+
+# CC-BY
+
+sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+abbr =
+  
+  ## (Abbreviation) A generic element for a shortened form of a word, including an acronym.
+  element abbr {
+    text,
+    att.EADGlobal.attributes,
+    
+    ## The expan attribute can be used to supply the full form of an abbreviated word for indexing or searching purposes.
+    attribute expan { text }?,
+    empty
+  }
+abstract =
+  
+  ## (Abstract) A very brief summary of the materials being described, used primarily to encode bits of biographical or historical information about the creator and abridged statements about the scope, content, arrangement, or other descriptive details about the archival unit or one of its components.
+  element abstract {
+    (text | model.phrase.basic)*,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    empty
+  }
+accessrestrict =
+  
+  ## (Conditions Governing Access) Information about conditions that affect the availability of the materials being described. May indicate the need for an appointment or the nature of restrictions imposed by the donor, legal statute, repository, or other agency. May also indicate the lack of restrictions.
+  element accessrestrict {
+    head?,
+    (model.blocks | legalstatus | accessrestrict)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+accruals =
+  
+  ## (Accruals) Information about anticipated additions to the materials being described. Can indicate quantity and frequency. Can also be used to indicate that no additions are expected.
+  element accruals {
+    head?, (model.blocks | accruals)+, att.EADGlobal.attributes, empty
+  }
+acqinfo =
+  
+  ## (Acquisition Information) The immediate source of the materials being described and the circumstances under which they were received. Includes donations, transfers, purchases, and deposits.
+  element acqinfo {
+    head?, (model.blocks | acqinfo)+, att.EADGlobal.attributes, empty
+  }
+address =
+  
+  ## (Address) A generic element for information about the place where someone or something is located and may be reached. Examples include a postal address for a repository, or the electronic mail address and phone number of the party granting publication permission.
+  element address { addressline+, att.EADGlobal.attributes, empty }
+addressline =
+  
+  ## (Address Line) A generic element for one line of a postal or other address. May be repeated as many times as necessary to enter all available lines of an address.
+  element addressline {
+    (text | model.phrase.bare)*, att.EADGlobal.attributes, empty
+  }
+altformavail =
+  
+  ## (Alternative Form Available) Information about copies of the materials being described, including the type of alternative form, significant control numbers, location, and source for ordering if applicable. The additional formats are typically microforms, photocopies, or digital reproductions.
+  element altformavail {
+    head?,
+    (model.blocks | altformavail)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+appraisal =
+  
+  ## (Appraisal Information) Information about the process of determining the archival value and thus the disposition of records based upon their current administrative, legal, and fiscal use; their evidential, intrinsic, and informational value; their arrangement and condition; and their relationship to other records.
+  element appraisal {
+    head?, (model.blocks | appraisal)+, att.EADGlobal.attributes, empty
+  }
+arc =
+  
+  ## (Arc) Specifies the rules for traversal among the participating resources in an extended link. Arc uses the attributes to and from to define the traversal between named pairs of resources.
+  element arc { empty }
+archdesc =
+  
+  ## (Archival Description) A wrapper element for the bulk of an EAD document instance, which describes the content, context, and extent of a body of archival materials, including administrative and supplemental information that facilitates use of the materials. Information is organized in unfolding, hierarchical levels that allow for a descriptive overview of the whole to be followed by more detailed views of the parts, designated by the element Description of Subordinate Components dsc . Data elements available at the archdesc level are repeated at the various component levels within dsc, and information is inherited from one hierarchical level to the next.
+  element archdesc {
+    (did, model.desc.full*)
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-levelRequired-constraint-1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "archdesc MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-archdescLevelValues-constraint-2"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test =
+               ".[@level = 'fonds' | @level = 'recordGrp' | @level = 'collection' | @level='otherlevel']"
+             " The value of the archdesc level attribute SHOULD be 'fonds',\x{a}" ~
+             "                                    'recordGrp', 'collection' ot 'otherlevel'."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-orignationDesirable-constraint-3"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test =
+               "ead:did/ead:origination and normalize-space(ead:did/ead:origination)"
+             "archdesc COULD have a non-empty origination"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "EAD-schema-archdesc-archdescProcessinfoDesirable-constraint-4"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "normalize-space(ead:processinfo/ead:p)"
+             "archdesc-processinfo\x{a}" ~
+             "                                    SHOULD not be empty"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "EAD-schema-archdesc-archdescProcessinfoDateDesirable-constraint-5"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "normalize-space(ead:processinfo/ead:p/ead:date)"
+             "archdesc-processinfo SHOULD have a non empty date"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-langmaterialPossible-constraint-6"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:did/ead:langmaterial"
+             "archdesc COULD have a\x{a}" ~
+             "                                    langmaterial"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-custodhistPossible-constraint-7"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:custodhist"
+             "archdesc COULD have a custodhist"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-otherfindaidPossible-constraint-8"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:otherfindaid"
+             "archdesc COULD have an otherfindaid"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-originalslocPossible-constraint-9"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:originalsloc"
+             "archdesc COULD have an originalsloc"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-altformavailPossible-constraint-10"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:altformavail"
+             "archdesc COULD have an altformavail"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-altformavailPossible-constraint-11"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:altformavail"
+             "archdesc COULD have an altformavail"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-bibliographyPossible-constraint-12"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:bibliography"
+             "archdesc COULD have a bibliography"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-oddPossible-constraint-13"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:odd"
+             "archdesc COULD have an odd"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-notePossible-constraint-14"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:note"
+             "archdesc COULD have a note"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-scopecontentPossible-constraint-15"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:scopecontent"
+             "archdesc COULD have a scopecontent"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-archdesc-controlaccessPossible-constraint-16"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:archdesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:controlaccess"
+             "archdesc COULD have a\x{a}" ~
+             "                                    controlaccess"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.relatedencoding.attributes,
+    
+    ## identifies the character of the whole unit
+    attribute level { text },
+    
+    ## can be used to categorize the finding aid as an inventory, register, or other format.
+    attribute type { text }?,
+    empty
+  }
+archref =
+  
+  ## (Archival Reference) A reference element that provides a citation and/or an electronic link to separately described archival materials of special interest. Examples of such materials include a record group and one of its large series (which might have separate EAD-encoded finding aids) and a general reference to a collection with similar content.
+  element archref {
+    (text
+     | model.phrase.basic.norefs
+     | bibref
+     | ref
+     | title
+     | extref
+     | model.did)*,
+    att.EADGlobal.attributes,
+    att.roled.attributes,
+    empty
+  }
+arrangement =
+  
+  ## (Arrangement) Information on how the described materials have been subdivided into smaller units, e.g., record groups into series, identifying the logical or physical groupings within a hierarchical structure. Can also be used to express the filing sequence of the described materials, such as the principle characteristics of the internal structure, or the physical or logical ordering of materials, including alphabetical, chronological, geographical, office of origin, and other schemes. Identifying logical groupings and the arrangement pattern may enhance retrieval by researchers.
+  element arrangement {
+    head?,
+    (model.blocks | arrangement)+,
+    att.EADGlobal.attributes,
+    empty
+  }
+author =
+  
+  ## (Author) Name(s) of institution(s) or individual(s) responsible for compiling the intellectual content of the finding aid. May include a brief statement indicating the nature of the responsibility, for example, archivist, collections processor, or records manager. Because acknowledgment of such individuals or institutions often appears on the title page of a finding aid, the author element is available in both the required titlestmt portion of the eadheader and the optional titlepage element in frontmatter.
+  element author { text, att.EADGlobal.attributes, empty }
+bibliography =
+  
+  ## (Bibliography) Citations to works that are based on, about, or of special value when using the materials being described, or works in which a citation to or brief description of the materials is available. The works could be books, articles, television programs, unpublished reports, web sites, or other forms of information. The bibliography may be a simple list, a list of both Bibliographic References bibref and Archival References archref, or a series of Paragraphs p.
+  element bibliography {
+    (head?, (model.blocks | model.refs | bibliography)+),
+    att.EADGlobal.attributes,
+    empty
+  }
+bibref =
+  
+  ## (Bibliographic Reference) A reference element that provides a citation and/or electronic link for a published work such as a book, article, dissertation, motion picture, or sound recording. The bibref may contain just text or some of the content-specific elements such as title, imprint, or edition, although the latter two elements are unlikely to be used for unpublished works.
+  element bibref {
+    (text
+     | model.phrase.basic.norefs
+     | edition
+     | imprint
+     | name
+     | num
+     | bibseries
+     | ref
+     | title
+     | famname
+     | persname
+     | corpname
+     | extref
+     | archref)*,
+    att.EADGlobal.attributes,
+    att.roled.attributes,
+    empty
+  }
+bibseries =
+  
+  ## (Bibliographic Series) Information about the published series in which a book, encoded finding aid, or other published work has appeared. Refers to monographic series only. Not to be used for archival series.
+  element bibseries {
+    (text | model.phrase.bare | title | num)*,
+    att.EADGlobal.attributes,
+    empty
+  }
+bioghist =
+  
+  ## (Biography or History) A concise essay or chronology that places the archival materials in context by providing information about their creator(s). Includes significant information about the life of an individual or family, or the administrative history of a corporate body. The bioghist may contain just text in a series of Paragraphs p, and/or a Chronology List chronlist that matches dates and date ranges with associated events. Additional bioghist elements may be nested inside one another when a complex body of materials, such as a collection of family papers, is being described, and separately headed sections are desired. The bioghist element may also be nested to designate a portion of the essay or chronology that might be extracted as a MARC 545 subfield.
+  element bioghist {
+    head?,
+    (model.blocks | bioghist | dao | daogrp)+,
+    att.EADGlobal.attributes,
+    empty
+  }
+blockquote =
+  
+  ## (Block Quote) A formatting element that designates an extended quotation. The quotation is set off from the text by spacing or other typographic distinction.
+  element blockquote { text, att.EADGlobal.attributes, empty }
+c =
+  
+  ## (Component (Unnumbered)) A wrapper element that designates a subordinate part of the materials being described. A Component c provides information about the content, context, and extent of a subordinate body of materials. It is always nested within a Description of Subordinate Components dsc and often within another c element. Each c element identifies an intellectually logical section of the described materials. The physical filing separations between components do not always coincide with the intellectual separations. For example, a c that designates dramatic works might end in the same box in which the next c begins with short stories. Also, not every c directly corresponds to a folder or other physical entity. Some c elements simply represent a stage within a hierarchical description.
+  element c {
+    head?,
+    did,
+    model.desc.full*,
+    (thead?, c+)*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c01 =
+  
+  ## (Component (First Level)) A wrapper element that designates the top or first-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c01 {
+    head?,
+    did,
+    model.desc.full*,
+    ((thead?, c02+)*)
+    >> sch:pattern [
+         id = "EAD-schema-c01-levelRequired-constraint-17"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:c01"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "c01 MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c02 =
+  
+  ## (Component (Second Level)) A wrapper element that designates a second-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c02 {
+    head?,
+    did,
+    model.desc.full*,
+    ((thead?, c03+)*)
+    >> sch:pattern [
+         id = "EAD-schema-c02-levelRequired-constraint-18"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:c02"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "c02 MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c03 =
+  
+  ## (Component (Third Level)) A wrapper element that designates a third-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c03 {
+    head?,
+    did,
+    model.desc.full*,
+    ((thead?, c04+)*)
+    >> sch:pattern [
+         id = "EAD-schema-c03-levelRequired-constraint-19"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:c03"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "c03 MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c04 =
+  
+  ## (Component (Fourth Level)) A wrapper element that designates a fourth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c04 {
+    head?,
+    did,
+    model.desc.full*,
+    ((thead?, c05+)*)
+    >> sch:pattern [
+         id = "EAD-schema-c04-levelRequired-constraint-20"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:c04"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "c04 MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c05 =
+  
+  ## (Component (Fifth Level)) A wrapper element that designates a fifth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c05 {
+    head?,
+    did,
+    model.desc.full*,
+    ((thead?, c06+)*)
+    >> sch:pattern [
+         id = "EAD-schema-c05-levelRequired-constraint-21"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:c05"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "c05 MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c06 =
+  
+  ## (Component (Sixth Level)) A wrapper element that designates a sixth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c06 {
+    head?,
+    did,
+    model.desc.full*,
+    ((thead?, c07+)*)
+    >> sch:pattern [
+         id = "EAD-schema-c06-levelRequired-constraint-22"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:c06"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@level"
+             "c06 MUST have a level-attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c07 =
+  
+  ## (Component (Seventh Level)) A wrapper element that designates a seventh-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c07 {
+    head?,
+    did,
+    model.desc.full*,
+    (thead?, c08+)*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c08 =
+  
+  ## (Component (Eighth Level)) A wrapper element that designates a eighth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c08 {
+    head?,
+    did,
+    model.desc.full*,
+    (thead?, c09+)*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c09 =
+  
+  ## (Component (Ninth Level)) A wrapper element that designates a ninth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c09 {
+    head?,
+    did,
+    model.desc.full*,
+    (thead?, c10+)*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c10 =
+  
+  ## (Component (Tenth Level)) A wrapper element that designates a tenth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c10 {
+    head?,
+    did,
+    model.desc.full*,
+    (thead?, c11+)*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c11 =
+  
+  ## (Component (Eleventh Level)) A wrapper element that designates a eleventh-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c11 {
+    head?,
+    did,
+    model.desc.full*,
+    (thead?, c12+)*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+c12 =
+  
+  ## (Component (Twelfth Level)) A wrapper element that designates a twelfth-level subordinate part of the materials being described. Components may be either unnumbered c or numbered c01, c02, etc. The numbered components c01 to c12 assist a finding aid encoder in nesting up to twelve component levels accurately.
+  element c12 {
+    head?,
+    did,
+    model.desc.full*,
+    att.EADGlobal.attributes,
+    att.desc.c.attributes,
+    empty
+  }
+change =
+  
+  ## (Change) An optional subelement in the revisiondesc portion of eadheader used for a brief description of an update made to an EAD document. Additions to a finding aid or significant recoding should be noted, but not correction of a few typographical errors. The change element is modeled on a header element in the Text Encoding Initiative (TEI) DTD. The TEI recommends that revisions be entered and numbered in reverse chronological order, with the most recent change first.
+  element change { date, item+, att.EADGlobal.attributes, empty }
+chronlist =
+  
+  ## (Chronology List) A formatting element that designates information about the sequence in which significant past events, associated with the described materials, occurred. The chronlist also provides a structured display to list these dates and events. Each chronlist contains Chronology Items chronitems that pair a date or date range with a brief description of an associated event or events eventgrp.
+  element chronlist { text, att.EADGlobal.attributes, empty }
+container =
+  
+  ## (Container) A did subelement for information that contributes to locating the described materials by indicating the kinds of devices that hold the materials and identifying any sequential numbers assigned to those devices. The container element is used most frequently at the component level, i.e., once a Description of Subordinate Components dsc has been opened. This storage information can help researchers understand how extensive the material is, especially in the absence of a specific physical extent statement at the component level.
+  element container {
+    text,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    empty
+  }
+controlaccess =
+  
+  ## (Controlled Access Headings) A wrapper element that designates key access points for the described materials and enables authority-controlled searching across finding aids on a computer network. Hundreds of names and subjects can appear in a finding aid. Prominence can be given to the major ones by bundling them together in a single place within the archdesc or within a large Component c and tagging them with controlaccess.
+  element controlaccess {
+    head?,
+    ((model.blocks | model.access.title | controlaccess)+)
+    >> sch:pattern [
+         id =
+           "EAD-schema-controlaccess-controlaccessSubjectPossible-constraint-23"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:controlaccess"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:subject"
+             "controlaccess COULD have a subject"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "EAD-schema-controlaccess-controlaccessPlacePossible-constraint-24"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:controlaccess"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:place"
+             "controlaccess COULD have a place"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "EAD-schema-controlaccess-controlaccessPersnamePossible-constraint-25"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:controlaccess"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:persname"
+             "controlaccess COULD have a persname"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "EAD-schema-controlaccess-controlaccessorgnamePossible-constraint-26"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:controlaccess"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD"
+             test = "ead:orgname"
+             "controlaccess COULD have a orgname"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    empty
+  }
+corpname =
+  
+  ## (Corporate Name) The proper noun name that identifies an organization or group of people that acts as an entity. Examples include names of associations, institutions, business firms, nonprofit enterprises, governments, government agencies, projects, programs, religious bodies, churches, conferences, athletic contests, exhibitions, expeditions, fairs, and ships.
+  element corpname {
+    (text | model.phrase.bare | subarea)*,
+    att.EADGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+creation =
+  
+  ## (Creation) A subelement of the profiledesc portion of eadheader used for information about the encoding of the finding aid, including the person(s) or agency(ies) responsible for the encoding, the date, and the circumstances under which the encoding was done.
+  element creation {
+    (text | model.phrase.basic | date)*, att.EADGlobal.attributes, empty
+  }
+custodhist =
+  
+  ## (Custodial History) Information about the chain of ownership of the materials being described, before they reached the immediate source of acquisition. Both physical possession and intellectual ownership can be described, providing details of changes of ownership and/or custody that may be significant in terms of authority, integrity, and interpretation.
+  element custodhist {
+    head?,
+    (model.blocks | custodhist | acqinfo)+,
+    att.EADGlobal.attributes,
+    empty
+  }
+dao =
+  
+  ## (Digital Archival Object) A linking element that uses the attributes ENTITYREF or HREF to connect the finding aid information to electronic representations of the described materials. The dao and daogrp elements allow the content of an archival collection or record group to be incorporated in the finding aid. These digital representations include graphic images, audio or video clips, images of text pages, and electronic transcriptions of text. The objects can be selected examples, or digital surrogates all the materials in an archival fonds or series.
+  element dao {
+    daodesc?,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    att.roled.attributes,
+    att.xlink.attributes,
+    empty
+  }
+daodesc =
+  
+  ## (Digital Archival Object Description) Information about the contents, usage, or source of a Digital Archival Object dao or Digital Archival Object Group daogrp. When the unittitle or other descriptive information in a Component c is sufficient to identify one or more digital objects, the daodesc caption is not necessary.
+  element daodesc {
+    head?, model.blocks+, att.EADGlobal.attributes, empty
+  }
+daogrp =
+  
+  ## (Digital Archival Object Group) A wrapper element that contains two or more related Digital Archival Object Locations daoloc that should be thought of as a group and may share a single common Digital Archival Object Description daodesc. They may also form an extended link group to enable a set of multidirectional links. The dao, daogrp, and daoloc elements allow the content of the described materials to be incorporated in the finding aid.
+  element daogrp {
+    daodesc?,
+    (daoloc | model.extended.els)+,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    att.roled.attributes,
+    empty
+  }
+daoloc =
+  
+  ## (Digital Archival Object Location) The location of a Digital Archival Object dao that is a resource in an extended link. Within a Digital Archival Object Group daogrp, a daoloc element is used instead of a dao element to indicate that an extended, possibly multidirectional link is being tagged. See also related elements dao, daogrp, and daodesc.
+  element daoloc {
+    daodesc?,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    att.roled.attributes,
+    empty
+  }
+date =
+  
+  ## (Date) A generic element that contains a month, day, or year in any format. Use date to identify any dates that merit encoding, except for the creation and other relevant dates of the described materials, which are instead tagged with the unitdate element. Examples of dates that might merit encoding are a person's birth date, the date the materials were acquired, or the date of an event in a chronology. These dates may be entered in the form of text or numbers, and may consist of a single date or range of dates.
+  element date {
+    (text | model.phrase.bare)*,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.normalized.attributes,
+    att.calendar.attributes,
+    att.era.attributes,
+    empty
+  }
+defitem =
+  
+  ## (Definition List Item) A formatting element in a special type of list that keeps an entry in a list (called a label) paired with its definition, description, or explanation (called an item). The defitem can be thought of as an entry with two cells: label followed by item. Lists with defitems are often displayed in two columns.
+  element defitem { text, att.EADGlobal.attributes, empty }
+descgrp =
+  
+  ## (Description Group) An element that can be used to bring together any group of elements that are children of the Archival Description archdesc element except for the did and dsc elements. Description Group might be used, for example, to cluster elements into groups that correspond to the areas specified by the General International Standard Archival Description (ISAD(G)).
+  element descgrp {
+    head?,
+    (model.blocks | model.desc.base)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+descrules =
+  
+  ## (Descriptive Rules) A subelement of Profile Description profiledesc for the enumeration of the rules, standards, conventions, and protocols used in preparing the description.
+  element descrules {
+    (text | model.phrase.basic)*, att.EADGlobal.attributes, empty
+  }
+did =
+  
+  ## (Descriptive Identification) A required wrapper element that bundles other elements identifying core information about the described materials in either Archival Description archdesc or a Component c. The various did subelements are intended for brief, clearly designated statements of information and, except for note, do not require Paragraphs p to enter text.
+  element did {
+    (head?, model.did+)
+    >> sch:pattern [
+         id = "EAD-schema-did-unitidRequired-constraint-27"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:did"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "ead:unitid"
+             "a did MUST have a unitid, according 17.3 and\x{a}" ~
+             "                                    WP19"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-did-unittitleRequired-constraint-28"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:did"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "ead:unittitle"
+             "a did MUST have a unittitle, according\x{a}" ~
+             "                                    17.3"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-did-unittitleNotEmpty-constraint-29"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:did"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "count(ead:unittitle[text()]) > 0"
+             "a did MUST have at least one\x{a}" ~
+             "                                    non-empty unittitle"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-did-nonemptyPhysdescDesirable-constraint-30"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:did"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULDWP17"
+             test = "normalize-space(ead:physdesc/ead:extent)"
+             "a did SHOULD have a\x{a}" ~
+             "                                    non-empty physdesc-extent, according to 17.3"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    empty
+  }
+dimensions =
+  
+  ## (Dimensions) A subelement of physdesc for information about the size of the materials being described; usually includes numerical data. Measurements may be expressed in any convenient unit. Attributes may be used when the unit of measurement or type of dimension is not clear in the finding aid text. The UNIT attribute specifies the kind of measurement, for example, "inches" or "meters." The TYPE attribute specifies the kind of dimensions being measured, for example, "height" or "circumference." Multiple dimensions, for example, height-by-width, can be tagged in a single dimensions element or in separate dimensions with distinctive attribute values.
+  element dimensions { text, att.EADGlobal.attributes, empty }
+\div =
+  
+  ## (Text Division) A generic element that designates a major section of text within frontmatter. Examples of these text divisions include a title page, preface, acknowledgments, or instructions for using a finding aid. Use the head element to identify the div's purpose.
+  element div { text, att.EADGlobal.attributes, empty }
+dsc =
+  
+  ## (Description of Subordinate Components) A wrapper element that bundles information about the hierarchical groupings of the materials being described. The subordinate components can be presented in several different forms or levels of descriptive detail, which are identified by the element's required TYPE attribute. For example, "analyticover" identifies an overview description of series and subseries, which might be followed by a second dsc with the TYPE attribute set to "in-depth" that provides a more detailed listing of the content of the materials, including information about the container numbers associated with those materials. The TYPE attribute value "combined" is used when the description of a series is followed immediately by a listing of the contents of that series. The TYPE attribute "othertype" is for models that do not follow any of the above-mentioned formats, in which case the OTHERTYPE attribute can then be used to specify a particular presentation model.
+  element dsc {
+    (head?, model.blocks*),
+    ((thead?,
+      ((c, thead?)+ | (c01, thead?)+))
+     | dsc*)
+    >> sch:pattern [
+         id = "EAD-schema-dsc-dscType-constraint-31"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:dsc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-EAD"
+             test = "@type"
+             "dsc MUST have a type attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-dsc-dscothertype-constraint-32"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:dsc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-EAD"
+             test =
+               "not(@type ='othertype') or (@othertype and not(@othertype=''))"
+             "dsc MUST have a type attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+ead =
+  
+  ## (Encoded Archival Description) The outermost wrapper element for an information access tool known generically as a finding aid. A finding aid establishes physical and intellectual control over many types of archival materials and helps researchers understand and access the materials being described. The ead element defines a particular instance of a document encoded with the EAD Document Type Definition.
+  element ead {
+    (eadheader, frontmatter?, archdesc),
+    att.EADGlobal.attributes,
+    att.relatedencoding.attributes,
+    empty
+  }
+eadheader =
+  
+  ## (EAD Header) A wrapper element for bibliographic and descriptive information about the finding aid document rather than the archival materials being described. The eadheader is modeled on the Text Encoding Initiative (TEI) header element to encourage uniformity in the provision of metadata across document types.
+  element eadheader {
+    (eadid, filedesc, profiledesc?, revisiondesc?)
+    >> sch:ns [ prefix = "ead" uri = "urn:isbn:1-931666-22-9" ]
+    >> sch:pattern [
+         id = "EAD-schema-eadheader-profiledescRequired-constraint-33"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:eadheader"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "ead:profiledesc"
+             "eadheader must contain a profiledesc\x{a}" ~
+             "                                    element"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-eadheader-creationDateNotempty-constraint-34"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:eadheader"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test =
+               "ead:creation/ead:date and normalize-space(ead:creation/ead:date)"
+             "eadheader COULD have a non-empty creation-date"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.encodings.attributes,
+    att.relatedencoding.attributes,
+    
+    ## The extent to which the encoded finding aid is a finished document.
+    attribute findaidstatus { text }?,
+    empty
+  }
+eadid =
+  
+  ## (EAD Identifier) A required subelement of eadheader that designates a unique code for a particular EAD finding aid document.
+  element eadid {
+    text
+    >> sch:pattern [
+         id = "EAD-schema-eadid-mustContainText-constraint-35"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:eadid"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "normalize-space(.)"
+             "eadid must contain text"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-eadid-creationDesirable-constraint-36"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:eadid"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "@mainagencycode"
+             "eadid SHOULD contain a mainagencycode\x{a}" ~
+             "                                    attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.coded.attributes,
+    
+    ## A code compliant with ISO/DIS 15511 Information and Documentation International Standard Identifier for Libraries and Related Organizations (ISIL). 
+    attribute mainagencycode { text }?,
+    
+    ## An absolute (http://www.loc.gov/ead/ms99999.xml) or relative (ms99999.xml) Uniform Resource Locator.
+    attribute url { text }?,
+    
+    ## A Uniform Resource Name intended to serve as a persistent, location-independent, resource identifier.
+    attribute urn { text }?,
+    
+    ## A formal public identifier (FPI) that includes the owner name and an object name.
+    attribute publicid { text }?,
+    
+    ## A machine-readable unique identifier.
+    attribute identifier { text }?,
+    empty
+  }
+edition =
+  
+  ## (Edition) A version of the finding aid or other bibliographic entity. When used in the editionstmt subelement of the eadheader or in the titlepage subelement of frontmatter, the edition refers to the version of the finding aid. A new edition of a finding aid represents substantial additions or changes and should supersede previous online versions. When used in a Bibliographic Reference bibref, the edition element specifies the version of a published work.
+  element edition { text, att.EADGlobal.attributes, empty }
+editionstmt =
+  
+  ## (Edition Statement) An optional subelement within the filedesc portion of the eadheader element that groups information about a finding aid edition by providing an edition element as well as a Paragraph p element for narrative statements.
+  element editionstmt { text, att.EADGlobal.attributes, empty }
+emph =
+  
+  ## (Emphasis) A formatting element for marking words or phrases that are stressed or emphasized for linguistic effect. Use the RENDER attribute to specify the kind of emphasis, e.g., bold or italics.
+  element emph {
+    text, att.EADGlobal.attributes, att.rendered.attributes, empty
+  }
+expan =
+  
+  ## (Expansion) A generic element to designate the full form of a word that often appears as an abbreviation or acronym. Use the ABBR attribute to supply the abbreviated form for indexing or searching purposes.
+  element expan { text, att.EADGlobal.attributes, empty }
+extent =
+  
+  ## (Extent) A physdesc subelement for information about the quantity of the materials being described or an expression of the physical space they occupy. Includes such traditional archival measurements as cubic and linear feet and meters; also includes counts of microfilm reels, photographs, or other special formats, the number of logical records in a database, or the volume of a data file in bytes.
+  element extent { text, att.EADGlobal.attributes, empty }
+extptr =
+  
+  ## (Extended Pointer) An empty linking element that uses attributes to connect the EAD document to an external electronic object, which is not part of the materials being described. Examples include graphic representations of a repository's seal or logo, and pointers to an institution's web page.
+  element extptr {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+extptrloc =
+  
+  ## (Extended Pointer Location) The location of an Extended Pointer extptr that is a resource in an extended link.
+  element extptrloc {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+extref =
+  
+  ## (Extended Reference) A linking element that can include text and subelements as part of its reference to an electronic object that is external to the EAD document.
+  element extref {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+extrefloc =
+  
+  ## (Extended Reference Location) The location of an Extended Reference extref that is a resource in an extended link.
+  element extrefloc {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+famname =
+  
+  ## (Family Name) The proper noun designation for a group of persons closely related by blood or persons who form a household. Includes single families and family groups, e.g., Patience Parker Family and Parker Family.
+  element famname {
+    text,
+    att.EADGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+filedesc =
+  
+  ## (File Description) A required subelement of the eadheader that bundles much of the bibliographic information about the finding aid, including its author, title, subtitle, and sponsor (all in the titlestmt), as well as the edition, publisher, publishing series, and related notes (encoded separately).
+  element filedesc {
+    (titlestmt, editionstmt?, publicationstmt?, seriesstmt?, notestmt?),
+    att.EADGlobal.attributes,
+    empty
+  }
+fileplan =
+  
+  ## (File Plan) Information about any classification scheme used for arranging, storing, and retrieving the described materials by the parties originally responsible for creating or compiling them. A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing guidelines of the originating organization. Additional types include a drawing of a room layout or a scientific scheme.
+  element fileplan {
+    head?, (fileplan)+, att.EADGlobal.attributes, empty
+  }
+frontmatter =
+  
+  ## (Front Matter) A wrapper element that bundles prefatory text found before the start of the Archival Description archdesc. It focuses on the creation, publication, or use of the finding aid rather than information about the materials being described. Examples include a title page, preface, dedication, and instructions for using a finding aid. The optional titlepage element within frontmatter can be used to repeat selected information from the eadheader to generate a title page that follows local preferences for sequencing information. The other frontmatter structures, such as a dedication, are encoded as Text Divisions divs, with a head element containing word(s) that identify the nature of the text.
+  element frontmatter {
+    titlepage?, \div*, archdesc, att.EADGlobal.attributes, empty
+  }
+function =
+  
+  ## (Function) Terms for the spheres of activities and processes that generated the described materials. Such terms often provide useful access points to the materials, especially for corporate, government, or institutional records. Examples include: collecting taxes and entertaining.
+  element function {
+    text, att.EADGlobal.attributes, att.access.attributes, empty
+  }
+genreform =
+  
+  ## (Genre/Physical Characteristic) A term that identifies the types of material being described, by naming the style or technique of their intellectual content (genre); order of information or object function (form); and physical characteristics. Examples include: account books, architectural drawings, portraits, short stories, sound recordings, and videotapes.
+  element genreform {
+    text,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.access.attributes,
+    empty
+  }
+geogname =
+  
+  ## (Geographic Name) The proper noun designation for a place, natural feature, or political jurisdiction. Examples include: Appalachian Mountains; Baltimore, Md.; Chinatown, San Francisco; and Kew Gardens, England.
+  element geogname {
+    text,
+    att.EADGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+head =
+  
+  ## (Heading) A generic element that designates the title or caption for a section of text, including a list. When a head is used, it should be the first subelement, followed by one or more other elements.
+  element head { text, att.EADGlobal.attributes, empty }
+imprint =
+  
+  ## (Imprint) Information relating to the publication or distribution of a work cited in a Bibliographic Reference bibref or unittitle. In both elements the place of publication, name of the publisher, and date of publication can be encoded as either plain text or wrapped in the imprint subelements geogname, publisher, and date. It is seldom, if ever, appropriate to use imprint in a citation for an unpublished work cited in a bibref.
+  element imprint { text, att.EADGlobal.attributes, empty }
+index =
+  
+  ## (Index) A list of key terms and reference pointers that have been assembled to enhance access to the materials being described. The index can also serve as a helpful alphabetical overview of subjects, correspondents, photographers, or other entities represented in the collection. This back-of-the volume index may provide hypertext links, or it may note the container numbers useful for locating the position in the finding aid where the indexed material appears.
+  element index {
+    head?,
+    model.blocks*,
+    ((listhead?, indexentry+) | index+),
+    att.EADGlobal.attributes,
+    empty
+  }
+indexentry =
+  
+  ## (ndex Entry) A formatting element that pairs an index term with one or more linking elements. Each indexentry contains an access element, such as namegrp or subject; an optional note that can divide the entry into subcategories, e.g., "during office" and "family life"; followed by optional Pointer ptr, Pointer Group ptrgrp, or Reference ref elements. Plain text cannot be used in an indexentry. If the indexentry subelements are expected to provide access points other than basic keyword retrieval, use controlled vocabulary terms to facilitate access to information within and across finding aid systems, with the SOURCE attribute to indicate which vocabulary provided the term.
+  element indexentry {
+    (namegrp | model.access.title)+,
+    (ptrgrp | ptr | ref)?,
+    indexentry*,
+    att.EADGlobal.attributes,
+    empty
+  }
+item =
+  
+  ## (Item) A formatting element used in one of three contexts: as an entry in a simple, random, or ordered list; as part of a defitem inside a definition list; or as an entry within the change element. In the first instance, the item can be a number, word, or phrase. In a definition list, which is usually displayed as two columns, a defitem pairs a label with a corresponding item containing text that defines, describes, or explains the terms or other text tagged as the label. In the eadheader revisiondesc change element, the item designates information about a revision to the finding aid and is often paired with a date.
+  element item {
+    (text | model.para.content)*, att.EADGlobal.attributes, empty
+  }
+langmaterial =
+  
+  ## (Language of the Material) A prose statement enumerating the language(s) of the archival materials found in the unit being described.
+  element langmaterial {
+    (text | model.phrase.basic | language)*,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    empty
+  }
+language =
+  
+  ## (Language) A subelement of langusage within the profiledesc portion of the eadheader that specifies the language or communication system in which the finding aid is written. For bilingual or multilingual finding aids, either identify each language in a separate language element, or mention only the predominant language. The LANGCODE attribute can be used to provide the three-letter ISO 639-2b code for the language.
+  element language {
+    ((text | model.phrase.bare)*)
+    >> sch:pattern [
+         id = "EAD-schema-language-langcodeRequired-constraint-37"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:language"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "@langcode"
+             "language MUST have a langcode attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-language-scriptcodeRequired-constraint-38"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:language"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "@scriptcode"
+             "language SHOULD have a langcode\x{a}" ~
+             "                                    attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    
+    ## The three-lettter code for the language in which an abstract is written, for the language of the finding aid and the language of the materials.
+    attribute langcode { text }?,
+    
+    ## The four-letter code for the writing script used with a given language. 
+    attribute scriptcode { text }?,
+    empty
+  }
+langusage =
+  
+  ## (Language Usage) An optional subelement within the profiledesc portion of the eadheader that provides a statement about languages, sublanguages, and dialects represented in an encoded finding aid. The language(s) in which the finding aid is written can be further specified using the language subelement within langusage. For bilingual or multilingual finding aids, either identify each language in a separate language element, or mention only the predominant language.
+  element langusage {
+    (text | model.phrase.basic | language)*,
+    att.EADGlobal.attributes,
+    empty
+  }
+lb =
+  
+  ## (Line Break) An empty formatting element that forces text to start on a new line at a point chosen by the author rather than a linewrap algorithm or style sheet. Use only when a line break is needed within an element, for example, within a titlepage. Use a style sheet to specify line breaks between elements.
+  element lb { empty, att.EADGlobal.attributes, empty }
+legalstatus =
+  
+  ## (Legal Status) The statutorily-defined status of the materials being described in the encoded finding aid, as, for example, defined by the Public Records Act of 1958 in the United Kingdom.
+  element legalstatus { text, att.EADGlobal.attributes, empty }
+\list =
+  
+  ## (List) A formatting element that contains a series of words or numerals (called items) separated from one another and arranged in a linear, often vertical sequence.
+  element list {
+    head?,
+    (item+ | (listhead?, defitem+)),
+    att.EADGlobal.attributes,
+    empty
+  }
+listhead =
+  
+  ## (List Heading) A formatting element that groups headings for columns in a definition, marked, or ordered list, Chronology List chronlist, or index. The headings are called head01 and head02.
+  element listhead { text, att.EADGlobal.attributes, empty }
+materialspec =
+  
+  ## (Material Specific Details) Data which are unique to a particular class or form of material and which are not assigned to any other element of description. Examples of material specific details include mathematical data, such as scale for cartographic and architectural records, jurisdictional and denominational data for philatelic records, and physical presentation data for music records.
+  element materialspec {
+    text,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    empty
+  }
+name =
+  
+  ## (Name) The proper noun or noun phrase designation for an entity that is difficult to tag more specifically as a corpname, famname, geogname, persname, or title. The name element may be used in place of the more specific access elements when it is not known what kind of name is being described or when a high degree of precision is unnecessary. For example, the name element might be used in an indexentry when it is not clear if the name "Bachrach" refers to a person or a photographic corporation.
+  element name {
+    text,
+    att.EADGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+namegrp =
+  
+  ## (Name Group) A formatting element used in an indexentry to group access element entries that share the same ref, ptr, or ptrgrp element. A note is available to divide a name or term into subcategories, for example, "during office" and "family life."
+  element namegrp { text, att.EADGlobal.attributes, empty }
+note =
+  
+  ## (Note) A generic element that provides a short statement explaining the text, indicating the basis for an assertion, or citing the source of a quotation or other information. Used both for general comments and as an annotation for the text in a finding aid. Not used when more specific content designation elements are appropriate, e.g., abstract, altformavail, archref, or scopecontent. Do not confuse with Other Descriptive Data odd element, which is used within archdesc and c to designate information that is more than a short comment in a note.>
+  element note {
+    model.blocks+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    empty
+  }
+notestmt =
+  
+  ## (Note Statement) An optional subelement within the filedesc portion of the eadheader that groups note elements, each of which contains a single piece of descriptive information about the finding aid. These notes are similar to the "general notes" in traditional bibliographic descriptions.
+  element notestmt { text, att.EADGlobal.attributes, empty }
+num =
+  
+  ## (Number) A generic element for numeric information in any form. The num element is used only when it is necessary to display a number in a special way, or to identify it with a TYPE attribute. For example, an accession number in the acqinfo element might be designated as . A publication number might be designated as publicationstmt ... numno. 42 ...
+  element num { text, att.EADGlobal.attributes, empty }
+occupation =
+  
+  ## (Occupation) A term identifying a type of work, profession, trade, business, or avocation significantly reflected in the materials being described.
+  element occupation {
+    text, att.EADGlobal.attributes, att.access.attributes, empty
+  }
+odd =
+  
+  ## (Other Descriptive Data) An element for information about the described materials that is not easily incorporated into one of the other named elements within archdesc and c.
+  element odd {
+    head?,
+    (model.blocks | dao | daogrp | odd)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+originalsloc =
+  
+  ## (Location of Originals) Information about the existence, location, availability, and/or the destruction of originals where the unit described consists of copies.
+  element originalsloc {
+    head?,
+    (model.blocks | originalsloc)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    empty
+  }
+origination =
+  
+  ## (Origination) Information about the individual or organization responsible for the creation, accumulation, or assembly of the described materials before their incorporation into an archival repository. The origination element may be used to indicate such agents as correspondents, records creators, collectors, and dealers. Using the LABEL attribute may help identify for a finding aid reader the role of the originator, e.g., "creator," "collector," or "photographer." It is also possible to set the ROLE attribute on the name elements that are available within origination, i.e., corpname, famname, name, and persname.
+  element origination {
+    (text | model.phrase.basic | corpname | famname | name | persname)*,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    empty
+  }
+otherfindaid =
+  
+  ## (Other Finding Aid) Information about additional or alternative guides to the described material, such as card files, dealers' inventories, or lists generated by the creator or compiler of the materials. It is used to indicate the existence of additional finding aids; it is not designed to encode the content of those guides.
+  element otherfindaid {
+    head?,
+    (model.blocks | model.refs | otherfindaid)+,
+    att.EADGlobal.attributes,
+    empty
+  }
+p =
+  
+  ## (Paragraph) One or more sentences that form a logical prose passage. A paragraph may be a subdivision of a larger composition, or it may exist alone. It is usually typographically distinct: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word is often indented, enlarged, or both. The p element is an important textual feature, which may be used inside of more than thirty other elements. The content model of a p provides access to thirty-three other elements, including reference and linking elements, formatting elements, controlled access elements, and some of the Descriptive Identification did subelements.
+  element p {
+    (text | model.para.content)*, att.EADGlobal.attributes, empty
+  }
+persname =
+  
+  ## (Personal Name) The proper noun designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names.
+  element persname {
+    (text | model.phrase.bare)*,
+    att.EADGlobal.attributes,
+    att.access.attributes,
+    att.roled.attributes,
+    empty
+  }
+physdesc =
+  
+  ## (Physical Description) A wrapper element for bundling information about the appearance or construction of the described materials, such as their dimensions, a count of their quantity or statement about the space they occupy, and terms describing their genre, form, or function, as well as any other aspects of their appearance, such as color, substance, style, and technique or method of creation. The information may be presented as plain text, or it may be divided into the dimension, extent, genreform, and physfacet subelements.
+  element physdesc {
+    (text
+     | model.phrase.basic
+     | dimensions
+     | physfacet
+     | extent
+     | date
+     | model.access)*,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    empty
+  }
+physfacet =
+  
+  ## (Physical Facet) A physdesc subelement for information about an aspect of the appearance of the described materials, such as their color, style, marks, substances, materials, or techniques and methods of creation.
+  element physfacet {
+    (text | model.phrase.basic | model.access | date)*,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+physloc =
+  
+  ## (Physical Location) Information identifying the place where the described materials are stored, such as the name or number of the building, room, stack, shelf, or other tangible area.
+  element physloc {
+    (text | model.phrase.basic)*,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    empty
+  }
+phystech =
+  
+  ## (Physical Characteristics and Technical Requirements) A description of important physical conditions or characteristics that affect the storage, preservation, or use of the materials described. This includes details of their physical composition or the need for particular hardware or software to preserve or access the materials.
+  element phystech {
+    head?,
+    (model.blocks | phystech)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+prefercite =
+  
+  ## (Preferred Citation) Information about how users should identify the described materials when referring to them in published credits. Generally the repository or agent responsible for providing intellectual access to the materials will supply users with a recommended wording or prescribed format for structuring references to the described materials in bibliographies, footnotes, screen credits, etc.
+  element prefercite {
+    head?, (model.blocks | prefercite)+, att.EADGlobal.attributes, empty
+  }
+processinfo =
+  
+  ## (Processing Information) Information about accessioning, arranging, describing, preserving, storing, or otherwise preparing the described materials for research use. Specific aspects of each of these activities may be encoded separately within other elements, such as acqinfo, arrangement, physloc, etc.
+  element processinfo {
+    head?,
+    (model.blocks | processinfo)+,
+    att.EADGlobal.attributes,
+    empty
+  }
+profiledesc =
+  
+  ## (Profile Description) An optional subelement of the eadheader that bundles information about the creation of the encoded version of the finding aid, including the name of the agent, place, and date of encoding. The profiledesc element also designates the predominant and minor languages used in the finding aid.
+  element profiledesc {
+    (creation?, langusage?, descrules?)
+    >> sch:pattern [
+         id = "EAD-schema-profiledesc-langusageRequired-constraint-39"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:profiledesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test = "ead:langusage/ead:language"
+             "eadheader MUST contain a\x{a}" ~
+             "                                    langusage/language element"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-profiledesc-creationDesirable-constraint-40"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:profiledesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "ead:creation"
+             "eadheader should contain a creation\x{a}" ~
+             "                                    element"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    empty
+  }
+ptr =
+  
+  ## (Pointer) An empty internal linking element that uses attributes to provide for movement from one place in a finding aid to another place in the same finding aid. Unlike the ref element, the ptr element cannot contain text and subelements to describe the referenced object.
+  element ptr {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+ptrgrp =
+  
+  ## (Pointer Group) A wrapper element for two or more Pointer ptr or Reference ref elements used in an indexentry. Pointers and references are internal links that provide for movement from one place in the finding aid to another place in the same finding aid. When encoding an index in EAD, a name or entry is generally listed only once, followed by a ptrgrp containing the series of pointers and references that link the name or entry to the places in the finding aid where it appears. The ptrgrp prevents the name or entry from having to appear multiple times in the index.
+  element ptrgrp { text, att.EADGlobal.attributes, empty }
+ptrloc =
+  
+  ## (Pointer Location) The location of a pointer ptr that is a resource in an extended link.
+  element ptrloc {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+publicationstmt =
+  
+  ## (Publication Statement) A wrapper element within the filedesc portion of eadheader for information concerning the publication or distribution of the encoded finding aid, including the publisher's name and address, the date of publication, and other relevant details.
+  element publicationstmt {
+    ((publisher | date | address | num | p)+)
+    >> sch:pattern [
+         id = "EAD-schema-publicationstmt-notempty-constraint-41"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:publicationstmt"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "ead:publisher"
+             "eadheader SHOULD specify a publisher"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    empty
+  }
+publisher =
+  
+  ## (Publisher) When used in the publicationstmt portion of eadheader and in the titlepage element in frontmatter, the publisher is the name of the party responsible for issuing or distributing the encoded finding aid. Often this party is the same corporate body identified in the repository element in the finding aid. When used in the imprint section of a Bibliographic Reference bibref, the publisher is the name of the party issuing a monograph or other bibliographic work cited in the finding aid.
+  element publisher {
+    (text | model.phrase.bare)*, att.EADGlobal.attributes, empty
+  }
+ref =
+  
+  ## (Reference) An internal linking element that provides for movement from one place in a finding aid to another place in the same finding aid. Unlike the internal Pointer ptr element, the ref element may contain text and subelements that identify or describe the referenced object. The ref element may be used in a variety of ways in an encoded finding aid. For example, a ref may provide a dynamic link from one Component c to another related Component c in the same way that See and See also references direct readers of paper-based finding aids. Or, a ref might be used to direct the reader from text in a scope and content note to a description of a Component c in a contents list.
+  element ref {
+    (text
+     | model.para.content.norefs
+     | bibref
+     | title
+     | extref
+     | archref)*,
+    att.EADGlobal.attributes,
+    att.roled.attributes,
+    empty
+  }
+refloc =
+  
+  ## (Reference Location) A linking element that provides the location of a reference ref that is a resource in an extended link.
+  element refloc {
+    text, att.EADGlobal.attributes, att.roled.attributes, empty
+  }
+relatedmaterial =
+  
+  ## (Related Material) Information about materials that are not physically or logically included in the material described in the finding aid but that may be of use to a reader because of an association to the described materials. Materials designated by this element are not related to the described material by provenance, accumulation, or use.
+  element relatedmaterial {
+    head?,
+    (model.blocks | model.refs | relatedmaterial)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+repository =
+  
+  ## (Repository) The institution or agency responsible for providing intellectual access to the materials being described. The corpname element may be used within repository to encode the institution's proper name.
+  element repository {
+    (text | model.phrase.basic | address | corpname | name | subarea)*,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    empty
+  }
+resource =
+  
+  ## (Resource) A linking element that specifies the local resource that participates in an extended link.
+  element resource {
+    (text | model.render)*,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    att.roled.attributes,
+    empty
+  }
+revisiondesc =
+  
+  ## (Revision Description) An optional subelement of the eadheader for information about changes or alterations that have been made to the encoded finding aid. The revisions may be recorded as part of a list or as a series of change elements. Like much of the eadheader, the revisiondesc element is modeled on an element found in the Text Encoding Initiative (TEI) DTD. The TEI recommends that revisions be numbered and appear in reverse chronological order, with the most recent change first.
+  element revisiondesc {
+    (\list | change+)
+    >> sch:pattern [
+         id = "EAD-schema-revisiondesc-dateNotEmpty-constraint-42"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:revisiondesc"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "normalize-space(ead:change/ead:date)"
+             "a revisiondesc SHOULD\x{a}" ~
+             "                                    have a not empty date"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    empty
+  }
+scopecontent =
+  
+  ## (Scope and Content) A prose statement summarizing the range and topical coverage of the described materials, often mentioning the form and arrangement of the materials and naming significant organizations, individuals, events, places, and subjects represented. The purpose of the scopecontent element is to assist readers in evaluating the potential relevance of the materials to their research. It may highlight particular strengths of, or gaps in, the described materials and may summarize in narrative form some of the descriptive information entered in other parts of the finding aid.
+  element scopecontent {
+    head?,
+    (model.blocks | arrangement | scopecontent | dao | daogrp)+,
+    att.EADGlobal.attributes,
+    empty
+  }
+separatedmaterial =
+  
+  ## (Separated Material) Information about materials that are associated by provenance to the described materials but that have been physically separated or removed. 
+  element separatedmaterial {
+    head?,
+    (model.blocks | model.refs | separatedmaterial)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+seriesstmt =
+  
+  ## (Series Statement) A wrapper element within the filedesc portion of eadheader that groups information about the published monographic series, if any, to which an encoded finding aid belongs. The seriesstmt may contain just text, laid out in Paragraphs p, or it may include the titleproper and num elements, which allow for more specific tagging of names or numbers associated with the series.
+  element seriesstmt { text, att.EADGlobal.attributes, empty }
+sponsor =
+  
+  ## (Sponsor) Name(s) of institution(s) or individual(s) who endorsed, financed, or arranged the acquisition, appraisal, and processing of the described materials or the preparation and distribution of the finding aid. Because acknowledgment of such contributors often appears on title pages of finding aids, the sponsor element is available in both the optional titlepage element in frontmatter and in the required titlestmt portion of the eadheader. Do not confuse with author, which is used to denote the persons or institutions responsible for the intellectual content of the finding aid, or with repository, which is used to identify the institution or corporate body providing intellectual access to the described materials.
+  element sponsor { text, att.EADGlobal.attributes, empty }
+subarea =
+  
+  ## (Subordinate Area) A name or phrase that indicates a secondary or subsidiary administrative level within a repository or other corporate body; a specialized area of subject or other collecting emphasis within a larger unit; or an ancillary collecting area based on the physical form of the materials.
+  element subarea {
+    (text | model.phrase.bare)*, att.EADGlobal.attributes, empty
+  }
+subject =
+  
+  ## (Subject) A term that identifies a topic associated with or covered by the described materials. Personal, corporate, and geographic names behaving as subjects are tagged as persname, corpname, and geogname, respectively. The ROLE attribute can be set to "subject" when it is necessary to specify the relationship of the name to the materials being described.
+  element subject {
+    (text | model.phrase.bare)*,
+    att.EADGlobal.attributes,
+    att.access.attributes,
+    empty
+  }
+subtitle =
+  
+  ## (Subtitle) A secondary or subsidiary name of an encoded finding aid that is subordinate to the main name encoded in titleproper. The subtitle element is available only within titlepage and titlestmt to capture bibliographic aspects of the finding aid. Subtitles of monographs, serials, paintings, and other such works mentioned in the finding aid are not separately encoded, but they may be listed as part of the title element.
+  element subtitle { text, att.EADGlobal.attributes, empty }
+thead =
+  
+  ## (Table Head) A formatting element that contains the heading information in a table, usually column heads, that appears at the top of the table and may appear again at the top of any physical break in rows in the body. The thead element is used inside an ordinary structural table and to provide column headings for Components c or the Description of Subordinate Components dsc.
+  element thead { text, att.EADGlobal.attributes, empty }
+title =
+  
+  ## (Title) The formal name of a work, such as a monograph, serial, or painting, listed in a finding aid. Subtitles of such works are not separately encoded but may instead be listed as part of the title element.
+  element title {
+    (text | model.phrase.bare | date | num)*,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.access.attributes,
+    att.xlink.attributes,
+    att.roled.attributes,
+    att.rendered.attributes,
+    empty
+  }
+titlepage =
+  
+  ## (Title Page) A wrapper element within frontmatter that groups bibliographic information about an encoded finding aid, including its name, author, and other aspects of its creation and publication. It contains much of the same information found in the filedesc portion of the eadheader, such as the titleproper, subtitle, author, sponsor, publisher, and date of the finding aid. Although it is possible to generate an electronic or printed title page directly from the eadheader, use of the titlepage may be more accommodating of local preferences, including displays of photographic illustrations, institutional logos, or other graphic images.
+  element titlepage { text, att.EADGlobal.attributes, empty }
+titleproper =
+  
+  ## (Title Proper of the Finding Aid) The name of the finding aid or finding aid series.
+  element titleproper {
+    (text | model.phrase.bare | abbr | date | expan | num)*,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.rendered.attributes,
+    empty
+  }
+titlestmt =
+  
+  ## (Title Statement) A required wrapper element within the filedesc portion of eadheader that groups information about the name of an encoded finding aid and those responsible for its intellectual content. Like much of the eadheader, the titlestmt element is modeled on an element found in the Text Encoding Initiative (TEI) DTD, and its subelements must adhere to the following prescribed sequence: a required titleproper, followed by an optional subtitle, optional author, and optional sponsor.
+  element titlestmt {
+    (titleproper+, subtitle?, author?, sponsor?),
+    text,
+    att.EADGlobal.attributes,
+    att.labeled.attributes,
+    empty
+  }
+unitdate =
+  
+  ## (Date of the Unit) The creation year, month, or day of the described materials. The unitdate may be in the form of text or numbers, and may consist of a single date or range of dates. As an important subelement of the Descriptive Identification did, the unitdate is used to tag only the creation and other relevant dates of the materials described in the encoded finding aid. Do not confuse it with the date element, which is used to tag all other dates.
+  element unitdate {
+    ((text | model.phrase.basic)*)
+    >> sch:pattern [
+         id = "EAD-schema-unitdate-labelDesirable-constraint-43"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:unitdate"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD-WP17"
+             test =
+               "normalize-space(@label) or normalize-space(@encodinganalog)"
+             "unitdates COULD have a label, describing the type of date,\x{a}" ~
+             "                                    according 17.3"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "EAD-schema-unitdate-normalDesirableOrNotEmpty-constraint-44"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:unitdate"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "COULD-WP17"
+             test = "text() or normalize-space(@normal)"
+             "unitdate should be not\x{a}" ~
+             "                                    empty or have a non-empty @normal attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-unitdate-normalNotEmtpy-constraint-45"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:unitdate"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP19"
+             test = "normalize-space(@normal)"
+             "unitdate should have a non-empty\x{a}" ~
+             "                                    @normal attribute"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.normalized.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    att.calendar.attributes,
+    att.era.attributes,
+    
+    ## Term characterizing the nature of dates, such as dates of creation, accumulation, or modification.
+    attribute datechar { text }?,
+    empty
+  }
+unitid =
+  
+  ## (ID of the Unit) Any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, or an entry number in a bibliograph y or catalog. An important subelement of the Descriptive Identification did, the unitid is primarily a logical designation, which sometimes secondarily provides location information, as in the case of a classification number. Use other did subelements, such as physloc and container, to designate specifically the physical location of the described materials.
+  element unitid {
+    ((text | model.phrase.basic)*)
+    >> sch:pattern [
+         id = "EAD-schema-unitid-notEmpty-constraint-46"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:unitid"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "SHOULD-WP17"
+             test = "not(ead:unitid='')"
+             "a unitid SHOULD not be empty"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "EAD-schema-unitid-uniqueId-constraint-47"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:unitid"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             role = "MUST-WP19"
+             test =
+               "count(//ead:unitid[@label = 'ehri_main_identifier']) = count(distinct-values(//ead:unitid[@label = 'ehri_main_identifier']))"
+             "unitid's MUST be unique within one eadfile, according 17.3"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    att.coded.attributes,
+    
+    ## A unique code indicating the repository responsible for intellectual control of the materials being described.
+    attribute repositorycode { text }?,
+    
+    ## A machine-readable unique identifier.
+    attribute identifier { text }?,
+    empty
+  }
+unittitle =
+  
+  ## (Title of the Unit) The name, either formal or supplied, of the described materials. May consist of a word, phrase, character, or group of characters. As an important subelement of the Descriptive Identification did, the unittitle encodes the name of the described materials at both the highest unit or archdesc level (e.g., collection, record group, or fonds) and at all the subordinate Component c levels (e.g., subseries, files, items, or other intervening stages within a hierarchical description).
+  element unittitle {
+    (text
+     | model.phrase.basic
+     | model.access
+     | unitdate
+     | num
+     | date
+     | bibseries
+     | edition
+     | imprint)*,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    att.labeled.attributes,
+    empty
+  }
+userestrict =
+  
+  ## (Conditions Governing Use) Information about conditions that affect use of the described materials after access has been granted.
+  element userestrict {
+    head?,
+    (model.blocks | userestrict)+,
+    att.EADGlobal.attributes,
+    att.typed.attributes,
+    empty
+  }
+att.EADGlobal.attributes =
+  att.EADGlobal.attribute.id,
+  att.EADGlobal.attribute.altrender,
+  att.EADGlobal.attribute.audience,
+  att.EADGlobal.attribute.encodinganalog
+att.EADGlobal.attribute.id =
+  
+  ## Left span boundary
+  attribute id { xsd:ID }?
+att.EADGlobal.attribute.altrender =
+  
+  ##
+  attribute altrender { text }?
+att.EADGlobal.attribute.audience =
+  
+  ##
+  attribute audience { text }?
+att.EADGlobal.attribute.encodinganalog =
+  
+  ## A field or element in another descriptive encoding system to which an EAD element or attribute is comparable.
+  attribute encodinganalog { text }?
+att.typed.attributes = att.typed.attribute.type
+att.typed.attribute.type =
+  
+  ## characterizes the element in some sense, using any convenient classification scheme or typology.
+  attribute type { text }?
+att.coded.attributes = att.coded.attribute.countrycode
+att.coded.attribute.countrycode =
+  
+  ## A unique code for the country in which the materials being described are held.
+  attribute countrycode { xsd:token }?
+att.normalized.attributes = att.normalized.attribute.normal
+att.normalized.attribute.normal =
+  
+  ## A consistent form, usually from a controlled vocabulary list to facilitate retrieval
+  attribute normal { text }?
+att.encodings.attributes =
+  att.encodings.attribute.countryencoding,
+  att.encodings.attribute.langencoding,
+  att.encodings.attribute.scriptencoding,
+  att.encodings.attribute.repositoryencoding,
+  att.encodings.attribute.dateencoding
+att.encodings.attribute.countryencoding =
+  
+  ## The authoritative source or rules for values supplied in the countrycode attribute in eadid and unitid.
+  attribute countryencoding { text }?
+att.encodings.attribute.langencoding =
+  
+  ## Language encoding for EAD instances subscribes to ISO 639-2b Codes for the Representation of Names of Languages, so the langencoding attribute value in eadheader should be "iso639-2b." The codes themselves are specified in the LANGCODE attribute in abstract or language, as appropriate.
+  attribute langencoding { text }?
+att.encodings.attribute.scriptencoding =
+  
+  ## The authoritative source or rules for values supplied in the scriptcode attribute in language.
+  attribute scriptencoding { text }?
+att.encodings.attribute.repositoryencoding =
+  
+  ## The authoritative source or rules for values supplied in the mainagencycode attribute in eadid and the repositorycode attribute in unitid.
+  attribute repositoryencoding { text }?
+att.encodings.attribute.dateencoding =
+  
+  ## The authoritative source or rules for values provided in the normal attribute in date and unitdate.
+  attribute dateencoding { text }?
+att.relatedencoding.attributes =
+  att.relatedencoding.attribute.relatedencoding
+att.relatedencoding.attribute.relatedencoding =
+  
+  ## A descriptive encoding system, such as MARC, ISAD(G), or Dublin Core, to which certain EAD elements can be mapped using the encodinganalog attribute.
+  attribute relatedencoding { text }?
+att.desc.c.attributes = att.desc.c.attribute.level
+att.desc.c.attribute.level =
+  
+  ## The hierarchical level of the materials being described by the element.
+  attribute level { text }?
+sch:assert [
+  role = "MUST-EAD"
+  test =
+    "not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))"
+]
+sch:assert [
+  role = "SHOULD-WP19"
+  test = "not(@level = 'fonds') or name(.) = 'archdesc'"
+  "ONLY the archdesc can be fonds level"
+]
+sch:assert [
+  role = "SHOULD-WP19"
+  test =
+    "not(@level = 'recordgrp')                                             or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])"
+  "recordgrp SHOULD be a child of another\x{a}" ~
+  "                                            recordgrp"
+]
+sch:assert [
+  role = "SHOULD-WP19"
+  test =
+    "not(@level = 'subgrp')                                             or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])"
+  "subgrp SHOULD be a child of another\x{a}" ~
+  "                                            subgrp or a recordgrp"
+]
+sch:assert [
+  role = "SHOULD-WP19"
+  test =
+    "not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']"
+  "subseries SHOULD be a child of another\x{a}" ~
+  "                                            subseries or a series"
+]
+att.access.attributes =
+  att.access.attribute.source,
+  att.access.attribute.rules,
+  att.access.attribute.authfilenumber,
+  att.access.attribute.normal
+att.access.attribute.source =
+  
+  ##
+  attribute source { xsd:NMTOKEN }?
+att.access.attribute.rules =
+  
+  ##
+  attribute rules { xsd:NMTOKEN }?
+att.access.attribute.authfilenumber =
+  
+  ##
+  attribute authfilenumber { text }?
+att.access.attribute.normal =
+  
+  ## A consistent form, usually from a controlled vocabulary list to facilitate retrieval
+  attribute normal { text }?
+att.labeled.attributes = att.labeled.attribute.label
+att.labeled.attribute.label =
+  
+  ## A display label for an element can be supplied using this attribute when a meaningful label cannot be derived by the style sheet from the element name or when a heading element head is not available.
+  attribute label { text }?
+att.roled.attributes = att.roled.attribute.role
+att.roled.attribute.role =
+  
+  ## A contextual role or relationship for the person, family, corporate body, or geographic location. In linking elements such as ptr, information that explains to application software the part that a remote resource plays in a link.
+  attribute role { text }?
+att.xlink.attributes =
+  att.xlink.attribute.label,
+  att.xlink.attribute.href,
+  att.xlink.attribute.type,
+  att.xlink.attribute.title,
+  att.xlink.attribute.from,
+  att.xlink.attribute.to,
+  att.xlink.attribute.role
+att.xlink.attribute.label =
+  
+  ## Labels the resource of locater element.
+  attribute xlink:label { text }?
+att.xlink.attribute.href =
+  
+  ## Supplies the data to find a remote resource.
+  attribute xlink:href { text }?
+att.xlink.attribute.type =
+  
+  ## Indicates the XLink element type.
+  attribute xlink:type { text }?
+att.xlink.attribute.title =
+  
+  ## Allows a human-readable description.
+  attribute xlink:title { text }?
+att.xlink.attribute.from =
+  
+  ## Identifies the origin resource of an arc.
+  attribute xlink:from { text }?
+att.xlink.attribute.to =
+  
+  ## Identifies the destination resource of an arc.
+  attribute xlink:to { text }?
+att.xlink.attribute.role =
+  
+  ## Identifies the type of the related resource with an absolute URI.
+  attribute xlink:role { text }?
+att.calendar.attributes = att.calendar.attribute.calendar
+att.calendar.attribute.calendar =
+  
+  ##
+  [ a:defaultValue = "gregorian" ] attribute calendar { text }?
+att.era.attributes = att.era.attribute.era
+att.era.attribute.era =
+  
+  ##
+  attribute era { text }?
+att.rendered.attributes = att.rendered.attribute.render
+att.rendered.attribute.render =
+  
+  ##
+  attribute render { text }?
+model.desc.full = dao | daogrp | dsc | note | model.desc.base
+model.desc.base =
+  accessrestrict
+  | accruals
+  | acqinfo
+  | altformavail
+  | appraisal
+  | arrangement
+  | bibliography
+  | bioghist
+  | controlaccess
+  | custodhist
+  | descgrp
+  | fileplan
+  | index
+  | odd
+  | originalsloc
+  | otherfindaid
+  | phystech
+  | prefercite
+  | processinfo
+  | relatedmaterial
+  | scopecontent
+  | separatedmaterial
+  | userestrict
+model.data =
+  date
+  | num
+  | origination
+  | repository
+  | unitdate
+  | unittitle
+  | model.access
+model.data_alternation =
+  date
+  | num
+  | origination
+  | repository
+  | unitdate
+  | unittitle
+  | model.access_alternation
+model.data_sequence =
+  date,
+  num,
+  origination,
+  repository,
+  unitdate,
+  unittitle,
+  model.access_sequence
+model.data_sequenceOptional =
+  date?,
+  num?,
+  origination?,
+  repository?,
+  unitdate?,
+  unittitle?,
+  model.access_sequenceOptional?
+model.data_sequenceOptionalRepeatable =
+  date*,
+  num*,
+  origination*,
+  repository*,
+  unitdate*,
+  unittitle*,
+  model.access_sequenceOptionalRepeatable*
+model.data_sequenceRepeatable =
+  date+,
+  num+,
+  origination+,
+  repository+,
+  unitdate+,
+  unittitle+,
+  model.access_sequenceRepeatable+
+model.inter = blockquote | model.inter.noquote
+model.inter.noquote = address | chronlist | \list | note
+model.inter.noquote_alternation = address | chronlist | \list | note
+model.inter.noquote_sequence = address, chronlist, \list, note
+model.inter.noquote_sequenceOptional =
+  address?, chronlist?, \list?, note?
+model.inter.noquote_sequenceOptionalRepeatable =
+  address*, chronlist*, \list*, note*
+model.inter.noquote_sequenceRepeatable =
+  address+, chronlist+, \list+, note+
+model.blocks = p | model.inter
+model.phrase.bare = extptr | ptr | model.render
+model.phrase.bare_alternation = extptr | ptr | model.render_alternation
+model.phrase.bare_sequence = extptr, ptr, model.render_sequence
+model.phrase.bare_sequenceOptional =
+  extptr?, ptr?, model.render_sequenceOptional?
+model.phrase.bare_sequenceOptionalRepeatable =
+  extptr*, ptr*, model.render_sequenceOptionalRepeatable*
+model.phrase.bare_sequenceRepeatable =
+  extptr+, ptr+, model.render_sequenceRepeatable+
+model.did =
+  abstract
+  | container
+  | dao
+  | daogrp
+  | langmaterial
+  | materialspec
+  | note
+  | origination
+  | physdesc
+  | physloc
+  | repository
+  | titlestmt
+  | unitdate
+  | unitid
+  | unittitle
+model.phrase.basic = model.phrase.basic.norefs | model.refs
+model.access.title = title | model.access
+model.access =
+  corpname
+  | famname
+  | function
+  | genreform
+  | geogname
+  | name
+  | occupation
+  | persname
+  | subject
+model.access_alternation =
+  corpname
+  | famname
+  | function
+  | genreform
+  | geogname
+  | name
+  | occupation
+  | persname
+  | subject
+model.access_sequence =
+  corpname,
+  famname,
+  function,
+  genreform,
+  geogname,
+  name,
+  occupation,
+  persname,
+  subject
+model.access_sequenceOptional =
+  corpname?,
+  famname?,
+  function?,
+  genreform?,
+  geogname?,
+  name?,
+  occupation?,
+  persname?,
+  subject?
+model.access_sequenceOptionalRepeatable =
+  corpname*,
+  famname*,
+  function*,
+  genreform*,
+  geogname*,
+  name*,
+  occupation*,
+  persname*,
+  subject*
+model.access_sequenceRepeatable =
+  corpname+,
+  famname+,
+  function+,
+  genreform+,
+  geogname+,
+  name+,
+  occupation+,
+  persname+,
+  subject+
+model.para.content = model.inter | model.phrase.plus
+model.phrase.plus = model.data | model.phrase.basic.norefs | model.refs
+model.para.content.norefs =
+  model.data | model.inter | model.phrase.basic.norefs
+model.phrase.basic.norefs = abbr | expan | model.phrase.bare
+model.phrase.basic.norefs_alternation =
+  abbr | expan | model.phrase.bare_alternation
+model.phrase.basic.norefs_sequence =
+  abbr, expan, model.phrase.bare_sequence
+model.phrase.basic.norefs_sequenceOptional =
+  abbr?, expan?, model.phrase.bare_sequenceOptional?
+model.phrase.basic.norefs_sequenceOptionalRepeatable =
+  abbr*, expan*, model.phrase.bare_sequenceOptionalRepeatable*
+model.phrase.basic.norefs_sequenceRepeatable =
+  abbr+, expan+, model.phrase.bare_sequenceRepeatable+
+model.refs = title
+model.refs_alternation = title
+model.refs_sequence = title
+model.refs_sequenceOptional = title?
+model.refs_sequenceOptionalRepeatable = title*
+model.refs_sequenceRepeatable = title+
+model.extended.els =
+  arc | extptrloc | extrefloc | ptrloc | refloc | resource
+model.render = emph | lb
+model.render_alternation = emph | lb
+model.render_sequence = emph, lb
+model.render_sequenceOptional = emph?, lb?
+model.render_sequenceOptionalRepeatable = emph*, lb*
+model.render_sequenceRepeatable = emph+, lb+
+start = ead
