@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="EAD-schema-EHRI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="EAD-schema-EHRI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../Schemas/EAD-schema-EHRI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../Schemas/EAD-schema-EHRI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <ead xmlns="urn:isbn:1-931666-22-9">
     <eadheader>
         <eadid/>
-
-
         <filedesc>
             <titlestmt>
                 <titleproper/>
@@ -16,10 +14,15 @@
     </eadheader>
     <archdesc level="fonds">
         <did>
-            <unitid></unitid>
+            <unitid/>
 
-        </did>  
-
+        </did>
+        <dsc>
+            <c01>
+                <did>
+                    <unitid/>
+                </did>
+            </c01>
+        </dsc>
     </archdesc>
 </ead>
-
