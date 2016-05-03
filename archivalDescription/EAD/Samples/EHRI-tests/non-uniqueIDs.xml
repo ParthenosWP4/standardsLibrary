@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Schemas/EAD-schema-EHRI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../Schemas/EAD-schema-EHRI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <ead xmlns="urn:isbn:1-931666-22-9">
     <eadheader>
         <eadid>1</eadid>
@@ -19,12 +21,13 @@
             <unittitle>text</unittitle>
         </did>
         <dsc>
-            <c01 level="collection">
+            <c01>
                 <did>
                     <unitid>1</unitid>
                     <unittitle>text</unittitle>
                 </did>
             </c01>
+
         </dsc>
     </archdesc>
 </ead>
