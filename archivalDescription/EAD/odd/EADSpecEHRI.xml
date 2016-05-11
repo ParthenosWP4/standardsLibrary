@@ -2341,6 +2341,17 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="item"/>
                             </rng:oneOrMore>
                         </content>
+                        <constraintSpec ident="dateNotEmpty" scheme="isoschematron" type="EHRI"
+                            mode="add">
+                            <constraint>
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
+                                    context="ead:revisiondesc"><assert
+                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                        role="SHOULD-WP17"
+                                        test="normalize-space(ead:date)">a revisiondesc
+                                        SHOULD have a not empty date</assert></rule>
+                            </constraint>
+                        </constraintSpec>
                         <exemplum>
                             <teix:egXML>
                                 <eadheader langencoding="iso639-2b" xmlns="urn:isbn:1-931666-22-9">
@@ -8315,6 +8326,9 @@ ENCODINGANALOG	#IMPLIED, CDATA
 ID	#IMPLIED, ID</attList> -->
 
                         <!-- EHRI constraints -->
+                        <!-- GENERATE an error message from Oxygen:
+                            A sequence of more than one item is not allowed as the first argument of normalize-space() ("2014-04-16T18:53:31.588+02:00", "2014-10-18T21:18:21.082+02:00", ...)
+                            Moving the constraint to the element <change>
                         <constraintSpec ident="dateNotEmpty" scheme="isoschematron" type="EHRI"
                             mode="add">
                             <constraint>
@@ -8325,7 +8339,7 @@ ID	#IMPLIED, ID</attList> -->
                                         test="normalize-space(ead:change/ead:date)">a revisiondesc
                                         SHOULD have a not empty date</assert></rule>
                             </constraint>
-                        </constraintSpec>
+                        </constraintSpec>-->
                         <!--END of EHRI constraints-->
 
                         <exemplum>
