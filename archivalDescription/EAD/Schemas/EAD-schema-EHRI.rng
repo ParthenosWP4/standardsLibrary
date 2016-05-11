@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-05-03T14:36:37Z. .
+Schema generated from ODD source 2016-05-09T13:27:39Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -163,168 +163,167 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
                <ref name="model.desc.full"/>
             </zeroOrMore>
          </group>
+         <ns xmlns="http://purl.oclc.org/dsdl/schematron"
+             prefix="ead"
+             uri="urn:isbn:1-931666-22-9"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-levelRequired-constraint-1">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">archdesc MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="MUST-WP19" test="@level">archdesc MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-archdescLevelValues-constraint-2">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="@level = 'fonds' or @level = 'recordGrp' or @level = 'collection' or @level='otherlevel'"> The value of the archdesc level attribute SHOULD be 'fonds',
-                                    'recordGrp', 'collection' ot 'otherlevel'.</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD"
+                       test="@level = 'fonds' or @level = 'recordGrp' or @level = 'collection' or @level='otherlevel'"> The value of the archdesc level attribute SHOULD be
+                                        'fonds', 'recordGrp', 'collection' ot
+                                    'otherlevel'.</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-orignationDesirable-constraint-3">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD"
                        test="ead:did/ead:origination and normalize-space(ead:did/ead:origination)">archdesc COULD have a non-empty origination</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-archdescProcessinfoDesirable-constraint-4">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="normalize-space(ead:processinfo/ead:p)">archdesc-processinfo
-                                    SHOULD not be empty</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="SHOULD-WP17" test="normalize-space(ead:processinfo/ead:p)">archdesc-processinfo SHOULD not be empty</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-archdescProcessinfoDateDesirable-constraint-5">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="normalize-space(ead:processinfo/ead:p/ead:date)">archdesc-processinfo SHOULD have a non empty date</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="SHOULD-WP17"
+                       test="normalize-space(ead:processinfo/ead:p/ead:date)">archdesc-processinfo SHOULD have a non empty
+                                    date</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-langmaterialPossible-constraint-6">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:did/ead:langmaterial">archdesc COULD have a
-                                    langmaterial</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:did/ead:langmaterial">archdesc COULD have a
+                                        langmaterial</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-custodhistPossible-constraint-7">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:custodhist">archdesc COULD have a custodhist</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:custodhist">archdesc COULD have a
+                                        custodhist</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-otherfindaidPossible-constraint-8">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:otherfindaid">archdesc COULD have an otherfindaid</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:otherfindaid">archdesc COULD have an
+                                        otherfindaid</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-originalslocPossible-constraint-9">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:originalsloc">archdesc COULD have an originalsloc</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:originalsloc">archdesc COULD have an
+                                        originalsloc</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-altformavailPossible-constraint-10">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:altformavail">archdesc COULD have an altformavail</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:altformavail">archdesc COULD have an
+                                        altformavail</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-altformavailPossible-constraint-11">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:altformavail">archdesc COULD have an altformavail</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:altformavail">archdesc COULD have an
+                                        altformavail</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-bibliographyPossible-constraint-12">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:bibliography">archdesc COULD have a bibliography</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:bibliography">archdesc COULD have a
+                                        bibliography</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-oddPossible-constraint-13">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:odd">archdesc COULD have an odd</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:odd">archdesc COULD have an odd</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-notePossible-constraint-14">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:note">archdesc COULD have a note</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:note">archdesc COULD have a note</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-scopecontentPossible-constraint-15">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:scopecontent">archdesc COULD have a scopecontent</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:scopecontent">archdesc COULD have a
+                                        scopecontent</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-archdesc-controlaccessPossible-constraint-16">
-            <rule context="tei:archdesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:controlaccess">archdesc COULD have a
-                                    controlaccess</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:archdesc">
+               <assert role="COULD" test="ead:controlaccess">archdesc COULD have a
+                                        controlaccess</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -514,12 +513,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-c01-levelRequired-constraint-17">
-            <rule context="tei:c01">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">c01 MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:c01">
+               <assert role="MUST-WP19" test="@level">c01 MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -547,12 +546,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-c02-levelRequired-constraint-18">
-            <rule context="tei:c02">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">c02 MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:c02">
+               <assert role="MUST-WP19" test="@level">c02 MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -580,12 +579,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-c03-levelRequired-constraint-19">
-            <rule context="tei:c03">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">c03 MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:c03">
+               <assert role="MUST-WP19" test="@level">c03 MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -613,12 +612,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-c04-levelRequired-constraint-20">
-            <rule context="tei:c04">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">c04 MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:c04">
+               <assert role="MUST-WP19" test="@level">c04 MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -646,12 +645,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-c05-levelRequired-constraint-21">
-            <rule context="tei:c05">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">c05 MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:c05">
+               <assert role="MUST-WP19" test="@level">c05 MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -679,12 +678,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-c06-levelRequired-constraint-22">
-            <rule context="tei:c06">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@level">c06 MUST have a level-attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:c06">
+               <assert role="MUST-WP19" test="@level">c06 MUST have a
+                                        level-attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -866,42 +865,42 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-controlaccess-controlaccessSubjectPossible-constraint-23">
-            <rule context="tei:controlaccess">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:subject">controlaccess COULD have a subject</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:controlaccess">
+               <assert role="COULD" test="ead:subject">controlaccess COULD have a
+                                        subject</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-controlaccess-controlaccessPlacePossible-constraint-24">
-            <rule context="tei:controlaccess">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:place">controlaccess COULD have a place</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:controlaccess">
+               <assert role="COULD" test="ead:place">controlaccess COULD have a
+                                    place</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-controlaccess-controlaccessPersnamePossible-constraint-25">
-            <rule context="tei:controlaccess">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:persname">controlaccess COULD have a persname</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:controlaccess">
+               <assert role="COULD" test="ead:persname">controlaccess COULD have a
+                                        persname</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-controlaccess-controlaccessorgnamePossible-constraint-26">
-            <rule context="tei:controlaccess">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD"
-                       test="ead:orgname">controlaccess COULD have a orgname</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:controlaccess">
+               <assert role="COULD" test="ead:orgname">controlaccess COULD have a
+                                        orgname</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1079,46 +1078,44 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-did-unitidRequired-constraint-27">
-            <rule context="tei:did">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="ead:unitid">a did MUST have a unitid, according 17.3 and
-                                    WP19</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:did">
+               <assert role="MUST-WP19" test="ead:unitid">a did MUST have a unitid,
+                                        according 17.3 and WP19</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-did-unittitleRequired-constraint-28">
-            <rule context="tei:did">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="ead:unittitle">a did MUST have a unittitle, according
-                                    17.3</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:did">
+               <assert role="MUST-WP19" test="ead:unittitle">a did MUST have a
+                                        unittitle, according 17.3</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-did-unittitleNotEmpty-constraint-29">
-            <rule context="tei:did">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="count(ead:unittitle[text()]) &gt; 0">a did MUST have at least one
-                                    non-empty unittitle</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:did">
+               <assert role="MUST-WP19" test="count(ead:unittitle[text()]) &gt; 0">a
+                                        did MUST have at least one non-empty
+                                    unittitle</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-did-nonemptyPhysdescDesirable-constraint-30">
-            <rule context="tei:did">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULDWP17"
-                       test="normalize-space(ead:physdesc/ead:extent)">a did SHOULD have a
-                                    non-empty physdesc-extent, according to 17.3</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:did">
+               <assert role="SHOULDWP17" test="normalize-space(ead:physdesc/ead:extent)">a did SHOULD
+                                        have a non-empty physdesc-extent, according to
+                                    17.3</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1178,21 +1175,21 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-dsc-dscType-constraint-31">
-            <rule context="tei:dsc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-EAD"
-                       test="@type">dsc MUST have a type attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:dsc">
+               <assert role="MUST-EAD" test="@type">dsc MUST have a type
+                                        attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-dsc-dscothertype-constraint-32">
-            <rule context="tei:dsc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-EAD"
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:dsc">
+               <assert role="MUST-EAD"
                        test="not(@type ='othertype') or (@othertype and not(@othertype=''))">dsc MUST have a type attribute</assert>
             </rule>
          </pattern>
@@ -1229,27 +1226,24 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
                <ref name="revisiondesc"/>
             </optional>
          </group>
-         <ns xmlns="http://purl.oclc.org/dsdl/schematron"
-             prefix="ead"
-             uri="urn:isbn:1-931666-22-9"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-eadheader-profiledescRequired-constraint-33">
-            <rule context="tei:eadheader">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="ead:profiledesc">eadheader must contain a profiledesc
-                                    element</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:eadheader">
+               <assert role="MUST-WP19" test="ead:profiledesc">eadheader must
+                                        contain a profiledesc element</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-eadheader-creationDateNotempty-constraint-34">
-            <rule context="tei:eadheader">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)">eadheader COULD have a non-empty creation-date</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:eadheader">
+               <assert test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)">eadheader COULD have a non-empty
+                                    creation-date</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1270,23 +1264,22 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <text/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-eadid-mustContainText-constraint-35">
-            <rule context="tei:eadid">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="normalize-space(.)">eadid must contain text</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:eadid">
+               <assert role="MUST-WP19" test="normalize-space(.)">eadid must
+                                        contain text</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-eadid-creationDesirable-constraint-36">
-            <rule context="tei:eadid">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="@mainagencycode">eadid SHOULD contain a mainagencycode
-                                    attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:eadid">
+               <assert role="SHOULD-WP17" test="@mainagencycode">eadid SHOULD
+                                        contain a mainagencycode attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1595,23 +1588,22 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-language-langcodeRequired-constraint-37">
-            <rule context="tei:language">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="@langcode">language MUST have a langcode attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:language">
+               <assert role="MUST-WP19" test="@langcode">language MUST have a
+                                        langcode attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-language-scriptcodeRequired-constraint-38">
-            <rule context="tei:language">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="@scriptcode">language SHOULD have a langcode
-                                    attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:language">
+               <assert role="SHOULD-WP17" test="@scriptcode">language SHOULD have a
+                                        langcode attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1970,24 +1962,22 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-profiledesc-langusageRequired-constraint-39">
-            <rule context="tei:profiledesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="ead:langusage/ead:language">eadheader MUST contain a
-                                    langusage/language element</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:profiledesc">
+               <assert role="MUST-WP19" test="ead:langusage/ead:language">eadheader
+                                        MUST contain a langusage/language element</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-profiledesc-creationDesirable-constraint-40">
-            <rule context="tei:profiledesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="ead:creation">eadheader should contain a creation
-                                    element</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:profiledesc">
+               <assert role="SHOULD-WP17" test="ead:creation">eadheader should
+                                        contain a creation element</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2034,12 +2024,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-publicationstmt-notempty-constraint-41">
-            <rule context="tei:publicationstmt">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="ead:publisher">eadheader SHOULD specify a publisher</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:piblicationstmt">
+               <assert role="SHOULD-WP17" test="ead:publisher">eadheader SHOULD
+                                        specify a publisher</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2148,13 +2138,12 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-revisiondesc-dateNotEmpty-constraint-42">
-            <rule context="tei:revisiondesc">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="normalize-space(ead:change/ead:date)">a revisiondesc SHOULD
-                                    have a not empty date</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:revisiondesc">
+               <assert role="SHOULD-WP17" test="normalize-space(ead:change/ead:date)">a revisiondesc
+                                        SHOULD have a not empty date</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2338,35 +2327,33 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-unitdate-labelDesirable-constraint-43">
-            <rule context="tei:unitdate">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD-WP17"
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:unitdate">
+               <assert role="COULD-WP17"
                        test="normalize-space(@label) or normalize-space(@encodinganalog)">unitdates COULD have a label, describing the type of date,
-                                    according 17.3</assert>
+                                        according 17.3</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-unitdate-normalDesirableOrNotEmpty-constraint-44">
-            <rule context="tei:unitdate">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="COULD-WP17"
-                       test="text() or normalize-space(@normal)">unitdate should be not
-                                    empty or have a non-empty @normal attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:unitdate">
+               <assert role="COULD-WP17" test="text() or normalize-space(@normal)">unitdate should be not empty or have a non-empty @normal
+                                        attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-unitdate-normalNotEmtpy-constraint-45">
-            <rule context="tei:unitdate">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP19"
-                       test="normalize-space(@normal)">unitdate should have a non-empty
-                                    @normal attribute</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:unitdate">
+               <assert role="SHOULD-WP19" test="normalize-space(@normal)">unitdate
+                                        should have a non-empty @normal attribute</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2395,22 +2382,23 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-unitid-notEmpty-constraint-46">
-            <rule context="tei:unitid">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="SHOULD-WP17"
-                       test="not(ead:unitid='')">a unitid SHOULD not be empty</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:unitid">
+               <assert role="SHOULD-WP17" test="not(ead:unitid='')">a unitid SHOULD
+                                        not be empty</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EAD-schema-unitid-uniqueId-constraint-47">
-            <rule context="tei:unitid">
-               <assert xmlns:iso="http://www.iso.org/ns/1.0"
-                       xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       role="MUST-WP19"
-                       test="count(//ead:unitid[@label = 'ehri_main_identifier']) = count(distinct-values(//ead:unitid[@label = 'ehri_main_identifier']))">unitid's MUST be unique within one eadfile, according 17.3</assert>
+            <rule xmlns:iso="http://www.iso.org/ns/1.0"
+                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  context="ead:unitid">
+               <assert role="MUST-WP19"
+                       test="count(//ead:unitid[@label = 'ehri_main_identifier']) = count(distinct-values(//ead:unitid[@label = 'ehri_main_identifier']))">unitid's MUST be unique within one eadfile, according
+                                        17.3</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2610,39 +2598,61 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          </attribute>
       </optional>
    </define>
-   <assert xmlns="http://purl.oclc.org/dsdl/schematron"
-           xmlns:iso="http://www.iso.org/ns/1.0"
-           xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           role="MUST-EAD"
-           test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))"/>
-   <assert xmlns="http://purl.oclc.org/dsdl/schematron"
-           xmlns:iso="http://www.iso.org/ns/1.0"
-           xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           role="SHOULD-WP19"
-           test="not(@level = 'fonds') or name(.) = 'archdesc'">ONLY the archdesc can be fonds level</assert>
-   <assert xmlns="http://purl.oclc.org/dsdl/schematron"
-           xmlns:iso="http://www.iso.org/ns/1.0"
-           xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           role="SHOULD-WP19"
-           test="not(@level = 'recordgrp')                                             or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">recordgrp SHOULD be a child of another
-                                            recordgrp</assert>
-   <assert xmlns="http://purl.oclc.org/dsdl/schematron"
-           xmlns:iso="http://www.iso.org/ns/1.0"
-           xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           role="SHOULD-WP19"
-           test="not(@level = 'subgrp')                                             or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">subgrp SHOULD be a child of another
-                                            subgrp or a recordgrp</assert>
-   <assert xmlns="http://purl.oclc.org/dsdl/schematron"
-           xmlns:iso="http://www.iso.org/ns/1.0"
-           xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           role="SHOULD-WP19"
-           test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']">subseries SHOULD be a child of another
-                                            subseries or a series</assert>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="EAD-schema-att.desc.c-level-otherlevel-constraint-48">
+      <rule xmlns:iso="http://www.iso.org/ns/1.0"
+            xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+            xmlns:rng="http://relaxng.org/ns/structure/1.0"
+            context="ead:ead">
+         <assert role="MUST-EAD"
+                 test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))">If the attribute level has the value 'otherlevel',
+                                                an attribute otherlevel MUST be
+                                            added</assert>
+      </rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="EAD-schema-att.desc.c-level-levelFonds-constraint-49">
+      <rule xmlns:iso="http://www.iso.org/ns/1.0"
+            xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+            xmlns:rng="http://relaxng.org/ns/structure/1.0"
+            context="ead:ead">
+         <assert role="SHOULD-WP19" test="not(@level = 'fonds') or name(.) = 'archdesc'">ONLY the archdesc can be fonds
+                                            level</assert>
+      </rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="EAD-schema-att.desc.c-level-recordgrplevel-constraint-50">
+      <rule xmlns:iso="http://www.iso.org/ns/1.0"
+            xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+            xmlns:rng="http://relaxng.org/ns/structure/1.0"
+            context="ead:ead">
+         <assert role="SHOULD-WP19"
+                 test="not(@level = 'recordgrp')                                             or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">recordgrp SHOULD be a child of another
+                                                recordgrp</assert>
+      </rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="EAD-schema-att.desc.c-level-subgrpLevel-constraint-51">
+      <rule xmlns:iso="http://www.iso.org/ns/1.0"
+            xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+            xmlns:rng="http://relaxng.org/ns/structure/1.0"
+            context="ead:ead">
+         <assert role="SHOULD-WP19"
+                 test="not(@level = 'subgrp')                                             or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">subgrp SHOULD be a child of another subgrp or a
+                                                recordgrp</assert>
+      </rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="EAD-schema-att.desc.c-level-subseriesLevel-constraint-52">
+      <rule xmlns:iso="http://www.iso.org/ns/1.0"
+            xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
+            xmlns:rng="http://relaxng.org/ns/structure/1.0"
+            context="ead:ead">
+         <assert role="SHOULD-WP19"
+                 test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']">subseries SHOULD be a child of another subseries or
+                                                a series</assert>
+      </rule>
+   </pattern>
    <define name="att.access.attributes">
       <ref name="att.access.attribute.source"/>
       <ref name="att.access.attribute.rules"/>
