@@ -14,7 +14,7 @@
                 <edition>rev4</edition>
             </editionStmt>
             <publicationStmt>
-                <date>2012-09-01</date>
+                <date>2016-06-22</date>
                 <availability>
                     <p>CC-BY</p>
                 </availability>
@@ -5979,7 +5979,7 @@ LABEL	#IMPLIED, CDATA</attList> -->
                                     context="ead:language"><assert
                                         xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="SHOULD-WP17" test="@scriptcode">language SHOULD have a
-                                        langcode attribute</assert></rule>
+                                        scriptcode attribute</assert></rule>
                             </constraint>
                         </constraintSpec>
                         <!-- END of EHRI constraints -->
