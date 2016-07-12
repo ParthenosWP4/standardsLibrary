@@ -764,7 +764,7 @@ TO	#IMPLIED, NMTOKEN -->
                                     context="ead:archdesc">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="SHOULD-WP17"
-                                        test="normalize-space(ead:processinfo/ead:p)"
+                                        test="normalize-space(ead:processinfo)"
                                         >archdesc-processinfo SHOULD not be empty</assert></rule>
                             </constraint>
                         </constraintSpec>
@@ -3525,18 +3525,6 @@ NORMAL	#IMPLIED, CDATA
                             </constraint>
                         </constraintSpec>
 
-                        <constraintSpec ident="nonemptyPhysdescDesirable" scheme="isoschematron"
-                            type="EHRI">
-                            <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:did"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
-                                        role="SHOULDWP17"
-                                        test="normalize-space(ead:physdesc/ead:extent)">a did SHOULD
-                                        have a non-empty physdesc-extent, according to
-                                    17.3</assert></rule>
-                            </constraint>
-                        </constraintSpec>
                         <!-- END of EHRI constraints -->
                         <exemplum>
                             <teix:egXML>
@@ -7191,6 +7179,22 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <!-- EHRI CONSTRAINTS -->
+                        <constraintSpec ident="nonemptyPhysdescDesirable" scheme="isoschematron"
+                            type="EHRI">
+                            <constraint>
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
+                                    context="ead:physdesc"><assert
+                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                        role="SHOULDWP17"
+                                        test="normalize-space(ead:extent)">a did SHOULD
+                                        have a non-empty physdesc-extent, according to
+                                        17.3</assert></rule>
+                            </constraint>
+                        </constraintSpec>
+                        <!-- END EHRI CONSTRAINTS -->
+                        
+                        
                         <!--                        <valList>
                             ALTRENDER	#IMPLIED, CDATA
                             AUDIENCE	#IMPLIED, external, internal
