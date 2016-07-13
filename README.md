@@ -8,9 +8,12 @@ This repository is structured in categories, by disciplines, but also to answer 
 
 The existing categories are:
 
+####[ISO](https://github.com/ParthenosWP4/standardsLibrary/tree/master/ISO)
 ####[Lexicography](https://github.com/ParthenosWP4/standardsLibrary/tree/master/Lexicography)
+####[Transcription of speech](https://github.com/ParthenosWP4/standardsLibrary/tree/master/TranscriptionOfSpeech)
 ####[Archival Description](https://github.com/ParthenosWP4/standardsLibrary/tree/master/archivalDescription)
 #### [Bibliography](https://github.com/ParthenosWP4/standardsLibrary/tree/master/bibliography)
+####[Digital Edition](https://github.com/ParthenosWP4/standardsLibrary/tree/master/digitalEdition)
 #### [Digital Edition](https://github.com/ParthenosWP4/standardsLibrary/tree/master/digitalEdition)
 
 Every member can create and modify directories and documents.
