@@ -831,17 +831,7 @@ TO	#IMPLIED, NMTOKEN -->
                                         altformavail</assert></rule>
                             </constraint>
                         </constraintSpec>
-                        <constraintSpec ident="altformavailPossible" scheme="isoschematron"
-                            type="EHRI">
-                            <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:archdesc"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
-                                        test="ead:altformavail">archdesc COULD have an
-                                        altformavail</assert>
-                                </rule>
-                            </constraint>
-                        </constraintSpec>
+                        
                         <constraintSpec ident="bibliographyPossible" scheme="isoschematron"
                             type="EHRI">
                             <constraint>

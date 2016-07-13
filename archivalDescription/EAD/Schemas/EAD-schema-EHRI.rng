@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-07-12T08:15:33Z. .
+Schema generated from ODD source 2016-07-13T04:56:08Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -269,17 +269,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-archdesc-altformavailPossible-constraint-11">
-            <rule xmlns:iso="http://www.iso.org/ns/1.0"
-                  xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  context="ead:archdesc">
-               <assert role="COULD" test="ead:altformavail">archdesc COULD have an
-                                        altformavail</assert>
-            </rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-archdesc-bibliographyPossible-constraint-12">
+                  id="EAD-schema-archdesc-bibliographyPossible-constraint-11">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -289,7 +279,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-archdesc-oddPossible-constraint-13">
+                  id="EAD-schema-archdesc-oddPossible-constraint-12">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -298,7 +288,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-archdesc-notePossible-constraint-14">
+                  id="EAD-schema-archdesc-notePossible-constraint-13">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -307,7 +297,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-archdesc-scopecontentPossible-constraint-15">
+                  id="EAD-schema-archdesc-scopecontentPossible-constraint-14">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -317,7 +307,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-archdesc-controlaccessPossible-constraint-16">
+                  id="EAD-schema-archdesc-controlaccessPossible-constraint-15">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -512,7 +502,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-c01-levelRequired-constraint-17">
+                  id="EAD-schema-c01-levelRequired-constraint-16">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -545,7 +535,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-c02-levelRequired-constraint-18">
+                  id="EAD-schema-c02-levelRequired-constraint-17">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -578,7 +568,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-c03-levelRequired-constraint-19">
+                  id="EAD-schema-c03-levelRequired-constraint-18">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -611,7 +601,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-c04-levelRequired-constraint-20">
+                  id="EAD-schema-c04-levelRequired-constraint-19">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -644,7 +634,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-c05-levelRequired-constraint-21">
+                  id="EAD-schema-c05-levelRequired-constraint-20">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -677,7 +667,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-c06-levelRequired-constraint-22">
+                  id="EAD-schema-c06-levelRequired-constraint-21">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -829,7 +819,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             <ref name="item"/>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-change-dateNotEmpty-constraint-23">
+                  id="EAD-schema-change-dateNotEmpty-constraint-22">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -874,7 +864,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-controlaccess-controlaccessSubjectPossible-constraint-24">
+                  id="EAD-schema-controlaccess-controlaccessSubjectPossible-constraint-23">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -884,7 +874,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-controlaccess-controlaccessPlacePossible-constraint-25">
+                  id="EAD-schema-controlaccess-controlaccessPlacePossible-constraint-24">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -894,7 +884,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-controlaccess-controlaccessPersnamePossible-constraint-26">
+                  id="EAD-schema-controlaccess-controlaccessPersnamePossible-constraint-25">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -904,7 +894,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-controlaccess-controlaccessorgnamePossible-constraint-27">
+                  id="EAD-schema-controlaccess-controlaccessorgnamePossible-constraint-26">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1087,7 +1077,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </oneOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-did-unitidRequired-constraint-28">
+                  id="EAD-schema-did-unitidRequired-constraint-27">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1097,7 +1087,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-did-unittitleRequired-constraint-29">
+                  id="EAD-schema-did-unittitleRequired-constraint-28">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1107,7 +1097,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-did-unittitleNotEmpty-constraint-30">
+                  id="EAD-schema-did-unittitleNotEmpty-constraint-29">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1173,7 +1163,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </zeroOrMore>
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-dsc-dscType-constraint-31">
+                  id="EAD-schema-dsc-dscType-constraint-30">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1183,7 +1173,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-dsc-dscothertype-constraint-32">
+                  id="EAD-schema-dsc-dscothertype-constraint-31">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1226,7 +1216,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-eadheader-profiledescRequired-constraint-33">
+                  id="EAD-schema-eadheader-profiledescRequired-constraint-32">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1236,7 +1226,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-eadheader-creationDateNotempty-constraint-34">
+                  id="EAD-schema-eadheader-creationDateNotempty-constraint-33">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1262,7 +1252,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(EAD Identifier) A required subelement of eadheader that designates a unique code for a particular EAD finding aid document.</a:documentation>
          <text/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-eadid-mustContainText-constraint-35">
+                  id="EAD-schema-eadid-mustContainText-constraint-34">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1272,7 +1262,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-eadid-creationDesirable-constraint-36">
+                  id="EAD-schema-eadid-creationDesirable-constraint-35">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1586,7 +1576,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-language-langcodeRequired-constraint-37">
+                  id="EAD-schema-language-langcodeRequired-constraint-36">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1596,7 +1586,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-language-scriptcodeRequired-constraint-38">
+                  id="EAD-schema-language-scriptcodeRequired-constraint-37">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1862,7 +1852,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-physdesc-nonemptyPhysdescDesirable-constraint-39">
+                  id="EAD-schema-physdesc-nonemptyPhysdescDesirable-constraint-38">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1971,7 +1961,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-profiledesc-langusageRequired-constraint-40">
+                  id="EAD-schema-profiledesc-langusageRequired-constraint-39">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1981,7 +1971,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-profiledesc-creationDesirable-constraint-41">
+                  id="EAD-schema-profiledesc-creationDesirable-constraint-40">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2033,7 +2023,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-publicationstmt-notempty-constraint-42">
+                  id="EAD-schema-publicationstmt-notempty-constraint-41">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2326,7 +2316,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-unitdate-labelDesirable-constraint-43">
+                  id="EAD-schema-unitdate-labelDesirable-constraint-42">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2337,7 +2327,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-unitdate-normalDesirableOrNotEmpty-constraint-44">
+                  id="EAD-schema-unitdate-normalDesirableOrNotEmpty-constraint-43">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2347,7 +2337,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-unitdate-normalNotEmtpy-constraint-45">
+                  id="EAD-schema-unitdate-normalNotEmtpy-constraint-44">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2381,7 +2371,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-unitid-notEmpty-constraint-46">
+                  id="EAD-schema-unitid-notEmpty-constraint-45">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2391,7 +2381,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EAD-schema-unitid-uniqueId-constraint-47">
+                  id="EAD-schema-unitid-uniqueId-constraint-46">
             <rule xmlns:iso="http://www.iso.org/ns/1.0"
                   xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2599,7 +2589,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EAD-schema-att.desc.c-level-otherlevel-constraint-48">
+            id="EAD-schema-att.desc.c-level-otherlevel-constraint-47">
       <rule xmlns:iso="http://www.iso.org/ns/1.0"
             xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
             xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2611,7 +2601,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EAD-schema-att.desc.c-level-levelFonds-constraint-49">
+            id="EAD-schema-att.desc.c-level-levelFonds-constraint-48">
       <rule xmlns:iso="http://www.iso.org/ns/1.0"
             xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
             xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2621,7 +2611,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EAD-schema-att.desc.c-level-recordgrplevel-constraint-50">
+            id="EAD-schema-att.desc.c-level-recordgrplevel-constraint-49">
       <rule xmlns:iso="http://www.iso.org/ns/1.0"
             xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
             xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2632,7 +2622,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EAD-schema-att.desc.c-level-subgrpLevel-constraint-51">
+            id="EAD-schema-att.desc.c-level-subgrpLevel-constraint-50">
       <rule xmlns:iso="http://www.iso.org/ns/1.0"
             xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
             xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2643,7 +2633,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EAD-schema-att.desc.c-level-subseriesLevel-constraint-52">
+            id="EAD-schema-att.desc.c-level-subseriesLevel-constraint-51">
       <rule xmlns:iso="http://www.iso.org/ns/1.0"
             xmlns:olac="http://www.language-archives.org/OLAC/1.0/"
             xmlns:rng="http://relaxng.org/ns/structure/1.0"
