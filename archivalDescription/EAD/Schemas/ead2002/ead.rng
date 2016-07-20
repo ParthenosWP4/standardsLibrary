@@ -3819,6 +3819,7 @@
 			</element>
 		</choice>
 	</define>
+	
 	<define name="extended">
 		<ref name="extendedLink"/>
 		<zeroOrMore>

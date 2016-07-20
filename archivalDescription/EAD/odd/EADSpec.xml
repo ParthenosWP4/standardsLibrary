@@ -76,7 +76,6 @@
                     <!--<moduleRef key="tei"/>-->
                     <!--<moduleRef key="iso-fs"/>-->
 
-
                     <elementSpec ident="abbr" module="EAD">
                         <gloss>Abbreviation</gloss>
                         <desc>A generic element for a shortened form of a word, including an
@@ -123,7 +122,7 @@
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.typed"/>
-                            <memberOf key="att.languageCode"/>
+                            <memberOf key="att.langcode"/>
                             <memberOf key="att.labeled"/>
                             <memberOf key="model.did"/>
                         </classes>
@@ -635,6 +634,7 @@
                             an extended link. Arc uses the attributes to and from to define the
                             traversal between named pairs of resources.</desc>
                         <classes>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.extended.els"/>
                         </classes>
                         <content>
@@ -705,9 +705,14 @@ TO	#IMPLIED, NMTOKEN -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.relatedencoding"/>
+                            <memberOf key="att.desc.c"/>
+                            <memberOf key="att.typed"/>
                         </classes>
                         <content>
                             <rng:group>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="runner"/>
+                                </rng:zeroOrMore>
                                 <rng:ref name="did"/>
                                 <rng:zeroOrMore>
                                     <rng:ref name="model.desc.full"/>
@@ -717,27 +722,8 @@ TO	#IMPLIED, NMTOKEN -->
                                 in order to provide first a basic description of the archival materials. -->
                         </content>
                         <attList>
-                            <attDef ident="level" usage="req">
-                                <desc>identifies the character of the whole unit</desc>
-                                <valList>
-                                    <valItem ident="class"/>
-                                    <valItem ident="collection"/>
-                                    <valItem ident="file"/>
-                                    <valItem ident="fonds"/>
-                                    <valItem ident="item"/>
-                                    <valItem ident="recordgrp"/>
-                                    <valItem ident="series"/>
-                                    <valItem ident="subfonds"/>
-                                    <valItem ident="subgrp"/>
-                                    <valItem ident="subseries"/>
-                                    <valItem ident="otherlevel"/>
-                                </valList>
-                                <remarks>
-                                    <p>This attribute is comparable to ISAD(G) data element 3.1.4
-                                        and MARC field 351 subfield c.</p>
-                                </remarks>
-                            </attDef>
-                            <attDef ident="type">
+                            <attDef ident="level" mode="change" usage="req"/>
+                            <attDef ident="type" mode="change" usage="opt">
                                 <desc>can be used to categorize the finding aid as an inventory,
                                     register, or other format.</desc>
                             </attDef>
@@ -756,7 +742,7 @@ RELATEDENCODING	#IMPLIED, CDATA
                         </remarks>
                     </elementSpec>
 
-                    <elementSpec ident="archdescgroup" module="EAD">
+                    <elementSpec ident="archdescgrp" module="EAD">
                         <gloss>Archival Description Group</gloss>
                         <desc>A wrapper element used only within <gi>eadgrp</gi> in the EAD Group
                             Document Type Definition. The <gi>archdescgrp</gi> summarizes the
@@ -770,9 +756,22 @@ RELATEDENCODING	#IMPLIED, CDATA
                             such elements as <gi>bioghist</gi>.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.relatedencoding"/>
+                            <memberOf key="att.desc.c"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:group>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="runner"/>
+                                </rng:zeroOrMore>
+                                <rng:ref name="did"/>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="model.desc.full"/>
+                                </rng:zeroOrMore>
+                                <rng:ref name="dscgrp"/>
+                            </rng:group>
+                            <!-- before presenting more detailed descriptions in <bioghist>, <scopecontent>, and <dsc>, 
+                                in order to provide first a basic description of the archival materials. -->
                         </content>
                         <!-- LEVEL	#REQUIRED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
 OTHERLEVEL	#IMPLIED, NMTOKEN
@@ -793,6 +792,8 @@ TYPE	#IMPLIED, NMTOKEN -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
+                            <memberOf key="model.refs"/>
                         </classes>
                         <content>
                             <rng:zeroOrMore>
@@ -1002,7 +1003,12 @@ XPOINTER	#IMPLIED, CDATA</attList>-->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -1125,6 +1131,8 @@ XPOINTER	#IMPLIED, CDATA</attList>-->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
+                            <memberOf key="model.refs"/>
                         </classes>
                         <content>
                             <rng:zeroOrMore>
@@ -1366,7 +1374,12 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <!-- part of att.EADGlobal but no @encodinganalog -->
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="model.inter.noquote"/>
+                                    <rng:ref name="p"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -2126,7 +2139,11 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <!-- member of att.EADGlobal but no @encodinganalog -->
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:ref name="date"/>
+                            <rng:choice>
+                                <rng:ref name="event"/>
+                                <rng:ref name="eventgrp"/>
+                            </rng:choice>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -2170,7 +2187,15 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="model.inter.noquote"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:optional>
+                                <rng:ref name="head"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="listhead"/>
+                            </rng:optional>
+                            <rng:oneOrMore>
+                                <rng:ref name="chronitem"/>
+                            </rng:oneOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -2219,6 +2244,63 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <content>
                             <rng:empty/>
                         </content>
+                        <attList>
+                            <attDef ident="colnum">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="colname">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="colwidth">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="colsep">
+                                <datatype>
+                                    <rng:data type="tei.data.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="O"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rowsep">
+                                <datatype>
+                                    <rng:data type="tei.data.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="O"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="align">
+                                <datatype>
+                                    <rng:data type="tei.data.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="left"/>
+                                    <valItem ident="right"/>
+                                    <valItem ident="center"/>
+                                    <valItem ident="justify"/>
+                                    <valItem ident="char"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="char">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="charoff">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>
 ALIGN	#IMPLIED, left, right, center, justify, char
 CHAR	#IMPLIED, CDATA
@@ -2278,8 +2360,20 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="model.did"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="parent">
+                                <datatype>
+                                    <rng:data type="IDREFS"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ENCODINGANALOG	#IMPLIED, CDATA
@@ -2656,8 +2750,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             surrogates all the materials in an archival fonds or series.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.labeled"/>
-                            <memberOf key="att.roled"/>
                             <memberOf key="att.xlink"/>
                             <memberOf key="model.desc.full"/>
                             <memberOf key="model.did"/>
@@ -2794,8 +2886,7 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             the described materials to be incorporated in the finding aid.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.labeled"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.desc.full"/>
                             <memberOf key="model.did"/>
                         </classes>
@@ -2867,8 +2958,7 @@ TITLE	#IMPLIED, CDATA
                                 <gi>dao</gi>, <gi>daogrp</gi>, and <gi>daodesc</gi>.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.labeled"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                         </classes>
                         <content>
                             <rng:optional>
@@ -2940,6 +3030,7 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.normalized"/>
                             <memberOf key="att.calendar"/>
                             <memberOf key="att.era"/>
+                            <memberOf key="att.certainty"/>
                             <memberOf key="model.data"/>
                         </classes>
                         <content>
@@ -3010,7 +3101,8 @@ NORMAL	#IMPLIED, CDATA
                             <!-- member of att.EADGlobal but no @encodinganalog -->
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:ref name="label"/>
+                            <rng:ref name="item"/>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -3292,10 +3384,23 @@ NORMAL	#IMPLIED, CDATA
                                 <gi>dimensions</gi> with distinctive attribute values.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.labeled"/>
+                            <memberOf key="att.typed"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:text/>
+                                <rng:ref name="model.phrase.basic"/>
+                                <rng:ref name="dimensions"/>
+                            </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="unit">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ENCODINGANALOG	#IMPLIED, CDATA
@@ -3337,8 +3442,17 @@ UNIT	#IMPLIED, CDATA</attList> -->
                             <!-- member of att.EADGlobal but no @encodinganalog -->
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:optional>
+                                <rng:ref name="head"/>
+                            </rng:optional>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.blocks"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="div"/>
+                            </rng:zeroOrMore>
                         </content>
+
                         <exemplum>
                             <teix:egXML>
                                 <frontmatter xmlns="urn:isbn:1-931666-22-9">
@@ -3412,6 +3526,7 @@ UNIT	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.typed"/>
                             <memberOf key="model.desc.full"/>
+                            <memberOf key="att.dsctab.tpattern"/>
                         </classes>
                         <content>
                             <rng:group>
@@ -3447,6 +3562,16 @@ UNIT	#IMPLIED, CDATA</attList> -->
                                 </rng:zeroOrMore>
                             </rng:choice>
                         </content>
+                        <attList>
+                            <attDef ident="type" mode="change">
+                                <valList>
+                                    <valItem ident="analyticover"/>
+                                    <valItem ident="combined"/>
+                                    <valItem ident="in-depth"/>
+                                    <valItem ident="othertype"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ENCODINGANALOG	#IMPLIED, CDATA
@@ -3627,7 +3752,13 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:optional>
+                                <rng:ref name="head"/>
+                            </rng:optional>
+                            <rng:ref name="ead"/>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.blocks"/>
+                            </rng:zeroOrMore>
                         </content>
                         <remarks>
                             <p>See also the <gi>eadgrp</gi> element.</p>
@@ -3864,7 +3995,12 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -3893,7 +4029,12 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="edition"/>
+                                    <rng:ref name="p"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -3950,7 +4091,12 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                             <memberOf key="model.render"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.basic"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -3986,8 +4132,90 @@ ID	#IMPLIED, ID
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:choice>
+                                        <rng:ref name="model.phrase.plus"/>
+                                        <rng:ref name="address"/>
+                                        <rng:ref name="list"/>
+                                        <rng:ref name="note"/>
+                                    </rng:choice>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="align">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="left"/>
+                                    <valItem ident="right"/>
+                                    <valItem ident="center"/>
+                                    <valItem ident="justify"/>
+                                    <valItem ident="char"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="char">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="charoff">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="colname">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="colsep">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="O"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="morerows">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="nameend">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="namest">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="rowsep">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="O"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="valign">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="top"/>
+                                    <valItem ident="middle"/>
+                                    <valItem ident="bottom"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>
 ALIGN	#IMPLIED, left, right, center, justify, char
 ALTRENDER	#IMPLIED, CDATA
@@ -4059,7 +4287,12 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                             <!-- member of att.EADGlobal but no @encodinganalog -->
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.para.content"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -4104,7 +4337,9 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                             <!-- member of att.EADGlobal but no @encodinganalog-->
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:ref name="event"/>
+                            </rng:oneOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -4149,6 +4384,16 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                         <content>
                             <rng:text/>
                         </content>
+                        <attList>
+                            <attDef ident="abbr">
+                                <desc> An abbreviation for a word or phrase that is expressed in an
+                                    expanded form in the text; used for searching and indexing
+                                    purposes. Available only in the <gi>expan</gi> element. </desc>
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ABBR	#IMPLIED, CDATA
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -4177,10 +4422,24 @@ ID	#IMPLIED, ID</attList> -->
                             a database, or the volume of a data file in bytes.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.typed"/>
+                            <memberOf key="att.labeled"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="m.phrase.basic"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="unit">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -4241,11 +4500,11 @@ UNIT	#IMPLIED, CDATA</attList> -->
                             page.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.phrase.bare"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:empty/>
                         </content>
                         <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
 ALTRENDER	#IMPLIED, CDATA
@@ -4300,11 +4559,11 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             in an extended link.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.extended.els"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:empty/>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -4334,10 +4593,20 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             document.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
+                            <memberOf key="model.refs"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="m.para.content.norefs"/>
+                                    <rng:ref name="bibref"/>
+                                    <rng:ref name="title"/>
+                                    <rng:ref name="archref"/>
+                                    <rng:ref name="ref"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
@@ -4388,11 +4657,16 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             resource in an extended link.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.extended.els"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.para.content.norefs"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -4455,7 +4729,12 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -4732,7 +5011,6 @@ ID	#IMPLIED, ID</attList> -->
                             <rng:zeroOrMore>
                                 <rng:ref name="div"/>
                             </rng:zeroOrMore>
-                            <rng:ref name="archdesc"/>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -4784,7 +5062,12 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -4851,7 +5134,12 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -4945,7 +5233,12 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5005,8 +5298,23 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="althead">
+                                <desc>An alternative short form of the heading element <gi>head</gi>
+                                    that might be used, for example, to create a running
+                                    header.</desc>
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTHEAD	#IMPLIED, CDATA
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5051,7 +5359,12 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -5088,7 +5401,12 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5130,7 +5448,15 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                    <rng:ref name="publisher"/>
+                                    <rng:ref name="geogname"/>
+                                    <rng:ref name="date"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5161,7 +5487,6 @@ ID	#IMPLIED, ID</attList> -->
                             position in the finding aid where the indexed material appears.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="model.desc.base"/>
                         </classes>
                         <content>
                             <rng:optional>
@@ -5264,7 +5589,7 @@ ID	#IMPLIED, ID</attList> -->
                     </elementSpec>
 
                     <elementSpec ident="indexentry" module="EAD">
-                        <gloss>ndex Entry</gloss>
+                        <gloss>Index Entry</gloss>
                         <desc>A formatting element that pairs an index term with one or more linking
                             elements. Each <gi>indexentry</gi> contains an access element, such as
                                 <gi>namegrp</gi> or <gi>subject</gi>; an optional <gi>note</gi> that
@@ -5279,13 +5604,44 @@ ID	#IMPLIED, ID</attList> -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                         </classes>
+
+                        <!-- <ref name="a.common"/>
+                        <choice>
+                            <element name="namegrp">
+                                <ref name="a.common"/>
+                                <oneOrMore>
+                                    <choice>
+                                        <ref name="m.access.title"/>
+                                        <ref name="note"/>
+                                    </choice>
+                                </oneOrMore>
+                            </element>
+                            <ref name="m.access.title"/>
+                        </choice>
+                        <optional>
+                            <choice>
+                                <element name="ptrgrp">
+                                    <ref name="a.common"/>
+                                    <oneOrMore>
+                                        <choice>
+                                            <ref name="ptr"/>
+                                            <ref name="ref"/>
+                                        </choice>
+                                    </oneOrMore>
+                                </element>
+                                <ref name="ptr"/>
+                                <ref name="ref"/>
+                            </choice>
+                        </optional>
+                        <zeroOrMore>
+                            <ref name="indexentry"/>
+                        </zeroOrMore>-->
+
                         <content>
-                            <rng:oneOrMore>
-                                <rng:choice>
-                                    <rng:ref name="namegrp"/>
-                                    <rng:ref name="model.access.title"/>
-                                </rng:choice>
-                            </rng:oneOrMore>
+                            <rng:choice>
+                                <rng:ref name="namegrp"/>
+                                <rng:ref name="model.access.title"/>
+                            </rng:choice>
                             <rng:optional>
                                 <rng:choice>
                                     <rng:ref name="ptrgrp"/>
@@ -5408,7 +5764,12 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.plus"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -5526,6 +5887,8 @@ LABEL	#IMPLIED, CDATA</attList> -->
                             ISO 639-2b code for the language.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.langcode"/>
+                            <memberOf key="att.scriptcode"/>
                         </classes>
                         <content>
                             <rng:zeroOrMore>
@@ -5535,32 +5898,6 @@ LABEL	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <attList>
-                            <attDef ident="langcode">
-                                <desc>The three-lettter code for the language in which an
-                                        <gi>abstract</gi> is written, for the <gi>language</gi> of
-                                    the finding aid and the <gi>language</gi> of the
-                                    materials.</desc>
-                                <datatype>
-                                    <rng:text/>
-                                </datatype>
-                                <remarks>
-                                    <p> The codes should be taken from ISO639-2b, as specified in
-                                        the LANGENCODING attribute in <gi>eadheader</gi>.</p>
-                                </remarks>
-                            </attDef>
-                            <attDef ident="scriptcode">
-                                <desc>The four-letter code for the writing script used with a given
-                                    language. </desc>
-                                <datatype>
-                                    <rng:text/>
-                                </datatype>
-                                <remarks>
-                                    <p>The code should be taken from ISO 15924 Code for the
-                                        Representation of Names of Scripts.</p>
-                                </remarks>
-                            </attDef>
-                        </attList>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5687,9 +6024,16 @@ ID	#IMPLIED, ID</attList> -->
                             of 1958 in the United Kingdom.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.typed"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                    <rng:ref name="date"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5722,10 +6066,15 @@ TYPE	#IMPLIED, NMTOKEN</attList> -->
                             out-of-line links.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
+                            <memberOf key="model.refs"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="model.extended.els"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5770,6 +6119,7 @@ TITLE	#IMPLIED, CDATA</attList> -->
                             linear, often vertical sequence.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.typed"/>
                             <memberOf key="model.inter.noquote"/>
                         </classes>
                         <content>
@@ -5790,6 +6140,19 @@ TITLE	#IMPLIED, CDATA</attList> -->
                                 </rng:group>
                             </rng:choice>
                         </content>
+                        <attList>
+                            <attDef ident="type" mode="change">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="simple"/>
+                                    <valItem ident="deflist"/>
+                                    <valItem ident="marked"/>
+                                    <valItem ident="ordered"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 CONTINUATION	#IMPLIED, continues, starts
@@ -5846,7 +6209,12 @@ TYPE	#IMPLIED, simple, deflist, marked, ordered</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:optional>
+                                <rng:ref name="head01"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="head02"/>
+                            </rng:optional>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -5881,7 +6249,14 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="model.did"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.basic"/>
+                                    <rng:ref name="num"/>
+                                    <rng:ref name="materialspec"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -5925,7 +6300,12 @@ LABEL	#IMPLIED, CDATA
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -5985,7 +6365,12 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="model.access.title"/>
+                                    <rng:ref name="note"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -6037,6 +6422,26 @@ ID	#IMPLIED, ID</attList> -->
                                 <rng:ref name="model.blocks"/>
                             </rng:oneOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="show">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="embed"/>
+                                    <valItem ident="new"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="actuate">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="onload"/>
+                                    <valItem ident="onrequest"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -6089,7 +6494,7 @@ SHOW	#IMPLIED, embed, new
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:ref name="note"/>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -6130,10 +6535,16 @@ ID	#IMPLIED, ID</attList> -->
                                 42<tag>/num</tag> ...</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.typed"/>
                             <memberOf key="model.data"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -6180,7 +6591,12 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -6346,7 +6762,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.typed"/>
-                            <memberOf key="att.labeled"/>
                             <memberOf key="model.desc.base"/>
                         </classes>
                         <content>
@@ -6727,6 +7142,7 @@ SOURCE	#IMPLIED, NMTOKEN -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.labeled"/>
+                            <memberOf key="att.access"/>
                             <memberOf key="model.did"/>
                         </classes>
                         <content>
@@ -6742,6 +7158,10 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="authfilenumber" mode="delete"/>
+                            <attDef ident="normal" mode="delete"/>
+                        </attList>
                         <!--                        <valList>
                             ALTRENDER	#IMPLIED, CDATA
                             AUDIENCE	#IMPLIED, external, internal
@@ -6787,7 +7207,9 @@ SOURCE	#IMPLIED, NMTOKEN -->
                             creation.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.labeled"/>
                             <memberOf key="att.typed"/>
+                            <memberOf key="att.access"/>
                         </classes>
                         <content>
                             <rng:zeroOrMore>
@@ -6799,6 +7221,15 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="authfilenumber" mode="delete"/>
+                            <attDef ident="normal" mode="delete"/>
+                            <attDef ident="unit">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!--                        <attList>
                             ALTRENDER	#IMPLIED, CDATA
                             AUDIENCE	#IMPLIED, external, internal
@@ -6852,6 +7283,7 @@ SOURCE	#IMPLIED, NMTOKEN -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.labeled"/>
+                            <memberOf key="att.typed"/>
                             <memberOf key="model.did"/>
                         </classes>
                         <content>
@@ -6862,6 +7294,13 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="parent">
+                                <datatype>
+                                    <rng:data type="IDREFS"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!--                        <valList>
                             ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -7054,6 +7493,7 @@ ID	#IMPLIED, ID</attList> -->
                                 <gi>arrangement</gi>, <gi>physloc</gi>, etc.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="att.typed"/>
                             <memberOf key="model.desc.base"/>
                         </classes>
                         <content>
@@ -7174,11 +7614,11 @@ ID	#IMPLIED, ID</attList> -->
                             object.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.phrase.bare"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:empty/>
                         </content>
                         <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
 ALTRENDER	#IMPLIED, CDATA
@@ -7238,7 +7678,12 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="ptr"/>
+                                    <rng:ref name="ref"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -7272,10 +7717,10 @@ ID	#IMPLIED, ID</attList> -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="model.extended.els"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlonk"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:empty/>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -7419,7 +7864,8 @@ ID	#IMPLIED, ID</attList> -->
                             of a Component <gi>c</gi> in a contents list.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
+                            <memberOf key="model.refs"/>
                         </classes>
                         <content>
                             <rng:zeroOrMore>
@@ -7486,7 +7932,12 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.roled"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.para.content.norefs"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -7750,12 +8201,10 @@ LABEL	#IMPLIED, CDATA</attList> -->
                             in an extended link.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.labeled"/>
-                            <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                             <memberOf key="model.extended.els"/>
                         </classes>
                         <content>
-                            <rng:ref name="resourceLink"/>
                             <rng:zeroOrMore>
                                 <rng:choice>
                                     <rng:text/>
@@ -7863,8 +8312,31 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:ref name="entry"/>
+                            </rng:oneOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="rowsep">
+                                <datatype>
+                                    <rng:data type="teidate.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="0"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="valign">
+                                <datatype>
+                                    <rng:data type="teidate.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="top"/>
+                                    <valItem ident="middle"/>
+                                    <valItem ident="bottom"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ID	#IMPLIED, ID
@@ -7923,8 +8395,27 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                             <memberOf key="att.roled"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attList>
+                                <attDef ident="placement">
+                                    <datatype>
+                                        <rng:data type="teidate.enumerated"/>
+                                    </datatype>
+                                    <valList>
+                                        <valItem ident="header"/>
+                                        <valItem ident="footer"/>
+                                        <valItem ident="watermark"/>
+                                    </valList>
+                                </attDef>
+                            </attList>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ID	#IMPLIED, ID
@@ -7959,7 +8450,9 @@ PLACEMENT	#IMPLIED, footer, header, watermark
                             </rng:optional>
                             <rng:oneOrMore>
                                 <rng:choice>
-                                    <rng:ref name="model.blocks"/>
+                                    <rng:choice>
+                                        <rng:ref name="model.blocks"/>
+                                    </rng:choice>
                                     <rng:ref name="arrangement"/>
                                     <rng:ref name="scopecontent"/>
                                     <rng:ref name="dao"/>
@@ -8140,6 +8633,21 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </remarks>
                     </elementSpec>
 
+
+                    <!--<element name="seriesstmt">
+                        <ref name="a.common"/>
+                        <optional>
+                            <attribute name="encodinganalog"/>
+                        </optional>
+                        <oneOrMore>
+                            <choice>
+                                <ref name="titleproper"/>
+                                <ref name="num"/>
+                                <ref name="p"/>
+                            </choice>
+                        </oneOrMore>
+                    </element>-->
+
                     <elementSpec ident="seriesstmt" module="EAD">
                         <gloss>Series Statement</gloss>
                         <desc>A wrapper element within the <gi>filedesc</gi> portion of
@@ -8153,7 +8661,13 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="titleproper"/>
+                                    <rng:ref name="num"/>
+                                    <rng:ref name="p"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -8200,7 +8714,12 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -8349,45 +8868,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         </remarks>
                     </elementSpec>
 
-                    <elementSpec ident="subtitle" module="EAD">
-                        <gloss>Subtitle</gloss>
-                        <desc>A secondary or subsidiary name of an encoded finding aid that is
-                            subordinate to the main name encoded in <gi>titleproper</gi>. The
-                                <gi>subtitle</gi> element is available only within
-                                <gi>titlepage</gi> and <gi>titlestmt</gi> to capture bibliographic
-                            aspects of the finding aid. Subtitles of monographs, serials, paintings,
-                            and other such works mentioned in the finding aid are not separately
-                            encoded, but they may be listed as part of the <gi>title</gi>
-                            element.</desc>
-                        <classes>
-                            <memberOf key="att.EADGlobal"/>
-                        </classes>
-                        <content>
-                            <rng:text/>
-                        </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
-                        <exemplum>
-                            <teix:egXML>
-                                <filedesc xmlns="urn:isbn:1-931666-22-9">
-                                    <titlestmt>
-                                        <titleproper>Tom Stoppard</titleproper>
-                                        <subtitle>An Inventory of His Papers at the Harry Ransom
-                                            Humanities Research Center</subtitle>
-                                        <author>Finding aid written by Katherine Mosley</author>
-                                    </titlestmt>
-                                    <publicationstmt>
-                                        <publisher>The University of Texas at Austin, Harry Ransom
-                                            Humanities Research Center</publisher>
-                                        <date>2000</date>
-                                    </publicationstmt>
-                                </filedesc>
-                            </teix:egXML>
-                        </exemplum>
-                    </elementSpec>
+
 
                     <elementSpec ident="table" module="EAD">
                         <gloss>Table</gloss>
@@ -8395,10 +8876,58 @@ ID	#IMPLIED, ID</attList> -->
                             display.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="model.inter.noquote"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:optional>
+                                <rng:ref name="head"/>
+                            </rng:optional>
+                            <rng:oneOrMore>
+                                <rng:ref name="tgroup"/>
+                            </rng:oneOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="frame">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="top"/>
+                                    <valItem ident="bottom"/>
+                                    <valItem ident="topbot"/>
+                                    <valItem ident="all"/>
+                                    <valItem ident="sides"/>
+                                    <valItem ident="none"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="colsep">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="0"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rowsep">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="0"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="pgwide">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="0"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 COLSEP	#IMPLIED, NMTOKEN
@@ -8453,8 +8982,22 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:ref name="row"/>
+                            </rng:oneOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="valign">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="top"/>
+                                    <valItem ident="middle"/>
+                                    <valItem ident="bottom"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ID	#IMPLIED, ID
@@ -8505,8 +9048,51 @@ VALIGN	#IMPLIED, top, middle, bottom
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:zeroOrMore>
+                                <rng:ref name="colspec"/>
+                            </rng:zeroOrMore>
+                            <rng:optional>
+                                <rng:ref name="thead"/>
+                            </rng:optional>
+                            <rng:ref name="tbody"/>
                         </content>
+                        <attList>
+                            <attDef ident="cols">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="colsep">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="0"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rowsep">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="1"/>
+                                    <valItem ident="0"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="align">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="left"/>
+                                    <valItem ident="right"/>
+                                    <valItem ident="center"/>
+                                    <valItem ident="justify"/>
+                                    <valItem ident="char"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALIGN	#IMPLIED, left, right, center, justify, char
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -8611,8 +9197,22 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:ref name="row"/>
+                            </rng:oneOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="valign">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="top"/>
+                                    <valItem ident="middle"/>
+                                    <valItem ident="bottom"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -8654,7 +9254,6 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                             <memberOf key="att.typed"/>
                             <memberOf key="att.access"/>
                             <memberOf key="att.xlink"/>
-                            <memberOf key="att.roled"/>
                             <memberOf key="att.rendered"/>
                             <memberOf key="model.refs"/>
                             <memberOf key="model.access.title"/>
@@ -8759,7 +9358,20 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.EADGlobal"/>
                         </classes>
                         <content>
-                            <rng:text/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="m.blocks"/>
+                                    <rng:ref name="author"/>
+                                    <rng:ref name="date"/>
+                                    <rng:ref name="edition"/>
+                                    <rng:ref name="num"/>
+                                    <rng:ref name="publisher"/>
+                                    <rng:ref name="bibseries"/>
+                                    <rng:ref name="sponsor"/>
+                                    <rng:ref name="titleproper"/>
+                                    <rng:ref name="subtitle"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                         </content>
                         <!-- <attList>
 ALTRENDER	#IMPLIED, CDATA
@@ -8883,8 +9495,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <gi>sponsor</gi>.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
-                            <memberOf key="att.labeled"/>
-                            <memberOf key="model.did"/>
                         </classes>
                         <content>
                             <rng:group>
@@ -8945,6 +9555,7 @@ ID	#IMPLIED, ID</attList> -->
                             <memberOf key="att.labeled"/>
                             <memberOf key="att.calendar"/>
                             <memberOf key="att.era"/>
+                            <memberOf key="att.certainty"/>
                             <memberOf key="model.data"/>
                             <memberOf key="model.did"/>
                         </classes>
@@ -8963,6 +9574,15 @@ ID	#IMPLIED, ID</attList> -->
                                 <datatype>
                                     <rng:text/>
                                 </datatype>
+                            </attDef>
+                            <attDef ident="type" mode="change">
+                                <datatype>
+                                    <rng:data type="teidata.enumerated"/>
+                                </datatype>
+                                <valList>
+                                    <valItem ident="bulk"/>
+                                    <valItem ident="inclusive"/>
+                                </valList>
                             </attDef>
                             <!-- 
 ALTRENDER	#IMPLIED, CDATA
@@ -9034,7 +9654,7 @@ TYPE	#IMPLIED, bulk, inclusive -->
                         </remarks>
                     </elementSpec>
 
-                    <elementSpec ident="unitid">
+                    <elementSpec ident="unitid" module="EAD">
                         <gloss>ID of the Unit</gloss>
                         <desc>Any alpha-numeric text string that serves as a unique reference point
                             or control number for the described material, such as a lot number, an
@@ -9066,7 +9686,16 @@ TYPE	#IMPLIED, bulk, inclusive -->
                                 <desc>A unique code indicating the repository responsible for
                                     intellectual control of the materials being described.</desc>
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="token">
+                                        <rng:param name="pattern"
+                                            >((AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|
+                                            CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE
+                                            |DE|GH|GI|GR|GL|GD|GP|GU|GT|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IL|IT|JM|JP|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY
+                                            |LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|MS|MA|MZ|MM|NA|NR|NP|NL|AN|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|
+                                            PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|SH|KN|LC|PM|VC|WS|SM|ST|SA|SN|CS|SC|SL|SG|SK|SI|SB|SO|ZA|GS|ES|LK|SD|SR|SJ|SZ|SE|CH
+                                            |SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)|
+                                            ([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})</rng:param>
+                                    </rng:data>
                                 </datatype>
                                 <remarks>
                                     <p>The code should be taken from ISO/DIS 15511 Information and
@@ -9079,7 +9708,12 @@ TYPE	#IMPLIED, bulk, inclusive -->
                             <attDef ident="identifier">
                                 <desc>A machine-readable unique identifier.</desc>
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:zeroOrMore>
+                                        <rng:choice>
+                                            <rng:text/>
+                                            <rng:ref name="model.phrase.bare"/>
+                                        </rng:choice>
+                                    </rng:zeroOrMore>
                                 </datatype>
                             </attDef>
                             <!-- 
@@ -9279,7 +9913,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                     <!-- Definition of attribute classes for EAD -->
 
                     <!-- Global attributes -->
-                    <classSpec type="atts" ident="att.EADGlobal" module="EAD">
+                    <classSpec ident="att.EADGlobal" type="atts" module="EAD">
                         <desc>provides attributes common to all elements in the EAD encoding
                             scheme.</desc>
                         <attList>
@@ -9295,7 +9929,10 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </datatype>
                             </attDef>
                             <attDef ident="audience" usage="opt">
-                                <valList>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
                                     <valItem ident="internal"/>
                                     <valItem ident="external"/>
                                 </valList>
@@ -9344,6 +9981,42 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
+                    <!-- attribute langcode -->
+                    <classSpec ident="att.langcode" type="atts" module="EAD">
+                        <attList>
+                            <attDef ident="langcode" usage="opt">
+                                <desc>The three-lettter code for the language in which an abstract
+                                    is written <gi>abstract</gi>, for the language of the finding
+                                    aid and the language of the materials <gi>language</gi>.</desc>
+                                <datatype>
+                                    <ref xmlns="http://relaxng.org/ns/structure/1.0"
+                                        name="data.enumerated"/>
+                                </datatype>
+                                <remarks>
+                                    <p>The codes should be taken from ISO639-2b, as specified in the
+                                        LANGENCODING attribute in <gi>eadheader</gi>.</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <!-- attribute scriptcode -->
+                    <classSpec ident="att.scriptcode" type="atts" module="EAD">
+                        <attList>
+                            <attDef ident="scriptcode">
+                                <desc>The four-letter code for the writing script used with a given
+                                    language.</desc>
+                                <datatype>
+                                    <ref xmlns="http://relaxng.org/ns/structure/1.0"
+                                        name="data.enumerated"/>
+                                </datatype>
+                                <remarks>
+                                    <p>The code should be taken from ISO 15924 Code for the
+                                        Representation of Names of Scripts.</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
                     <!-- Attribute for typing elements -->
                     <classSpec ident="att.typed" type="atts" module="EAD">
                         <desc>provides attributes which can be used to classify or subclassify
@@ -9356,7 +10029,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
                                         name="data.enumerated"/>
                                 </datatype>
-                               
+
                             </attDef>
                         </attList>
                     </classSpec>
@@ -9388,7 +10061,11 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>A consistent form, usually from a controlled vocabulary list
                                     to facilitate retrieval</desc>
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="token">
+                                        <rng:param name="pattern"
+                                            >(\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)(/\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)?
+                                        </rng:param>
+                                    </rng:data>
                                 </datatype>
                                 <remarks>
                                     <p>In <gi>date</gi> and <gi>unitdate</gi>, the NORMAL attribute
@@ -9407,9 +10084,10 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>The authoritative source or rules for values supplied in the
                                         <att>countrycode</att> attribute in <gi>eadid</gi> and
                                         <gi>unitid</gi>.</desc>
-                                <valList>
-                                    <valItem ident="iso3166-1"/>
-                                </valList>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                                <defaultVal>iso3166-1</defaultVal>
                             </attDef>
                             <attDef ident="langencoding">
                                 <desc>Language encoding for EAD instances subscribes to ISO 639-2b
@@ -9419,16 +10097,19 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     themselves are specified in the LANGCODE attribute in
                                         <gi>abstract</gi> or <gi>language</gi>, as
                                     appropriate.</desc>
-                                <valList>
-                                    <valItem ident="iso639-2b"/>
-                                </valList>
+
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                                <defaultVal>iso639-2b</defaultVal>
                             </attDef>
                             <attDef ident="scriptencoding">
                                 <desc>The authoritative source or rules for values supplied in the
                                         <att>scriptcode</att> attribute in <gi>language</gi>.</desc>
-                                <valList>
-                                    <valItem ident="iso15924"/>
-                                </valList>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                                <defaultVal>iso15924</defaultVal>
                             </attDef>
                             <attDef ident="repositoryencoding">
                                 <desc>The authoritative source or rules for values supplied in the
@@ -9436,17 +10117,19 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     the <att>repositorycode</att> attribute in
                                     <gi>unitid</gi>.</desc>
                                 <!--  Available only in <eadheader>-->
-                                <valList>
-                                    <valItem ident="iso15511"/>
-                                </valList>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                                <defaultVal>iso15511</defaultVal>
                             </attDef>
                             <attDef ident="dateencoding">
                                 <desc>The authoritative source or rules for values provided in the
                                         <att>normal</att> attribute in <gi>date</gi> and
                                         <gi>unitdate</gi>.</desc>
-                                <valList>
-                                    <valItem ident="iso8601"/>
-                                </valList>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                                <defaultVal>iso8601</defaultVal>
                             </attDef>
                         </attList>
                     </classSpec>
@@ -9472,10 +10155,20 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>The hierarchical level of the materials being described by the
                                     element.</desc>
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
-
-                            
+                                <valList type="closed">
+                                    <valItem ident="class"/>
+                                    <valItem ident="collection"/>
+                                    <valItem ident="fonds"/>
+                                    <valItem ident="item"/>
+                                    <valItem ident="otherlevel"/>
+                                    <valItem ident="recordgrp"/>
+                                    <valItem ident="series"/>
+                                    <valItem ident="subfonds"/>
+                                    <valItem ident="subgrp"/>
+                                    <valItem ident="subseries"/>
+                                </valList>
                                 <remarks>
                                     <p> This attribute is available in <gi>archdesc</gi>>, where the
                                         highest level of material represented in the finding aid
@@ -9486,6 +10179,20 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                         term specified in the OTHERLEVEL attribute. Values are:
                                         collection fonds class recordgrp series subfonds subgrp
                                         subseries file item otherlevel </p>
+                                </remarks>
+                            </attDef>
+                            <attDef ident="otherlevel">
+                                <desc>The hierarchical level of the materials described in
+                                        <gi>archdesc</gi>, <gi>c</gi>, <gi>c01-12</gi>, and
+                                        <gi>archdescgrp</gi> can be specified when the semi-closed
+                                    list in the LEVEL attribute (e.g., collection, fonds, series,
+                                    etc.) does not contain an appropriate term.</desc>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                                <remarks>
+                                    <p>Set LEVEL to "otherlevel" and then supply the preferred term
+                                        in the OTHERLEVEL attribute.</p>
                                 </remarks>
                             </attDef>
                         </attList>
@@ -9549,11 +10256,11 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-
-                    <!-- XLINK attributes -->
                     <classSpec ident="att.xlink" type="atts">
-                        <desc> Provides the definition of all XLink attributes needed for
+                        <desc>Provides the definition of all XLink attributes needed for
                             MLIF.</desc>
+                        <desc>NB : For the moment, all the linking attributes are in the same class
+                            (xlink attributes + XPOINTER + ENTITYREF + PARENT + TARGET)</desc>
                         <attList>
                             <attDef ident="label" ns="http://www.w3.org/1999/xlink">
                                 <desc>Labels the resource of locater element.</desc>
@@ -9631,8 +10338,373 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <text xmlns="http://relaxng.org/ns/structure/1.0"/>
                                 </datatype>
                             </attDef>
+                            <attDef ident="actuate" ns="http://www.w3c.org/1999/xlink">
+                                <desc>A control that defines whether a link occurs automatically or
+                                    must be requested by the user. It is used in conjunction with
+                                    the SHOW attribute to determine link behavior.</desc>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="onLoad"/>
+                                    <valItem ident="onRequest"/>
+                                    <valItem ident="other"/>
+                                    <valItem ident="none"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="show" ns="http://www.w3c.org/1999/xlink">
+                                <desc>A control that defines whether a remote resource that is the
+                                    target of a link appears at the point of the link, replaces the
+                                    existing link, or appears in a new window. It is used in
+                                    conjunction with the ACTUATE attribute to determine link
+                                    behavior.</desc>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="new"/>
+                                    <valItem ident="replace"/>
+                                    <valItem ident="embed"/>
+                                    <valItem ident="other"/>
+                                    <valItem ident="none"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="arcrole" ns="http://www.w3.org/1999/xlink">
+                                <desc>URI preference that identifies a resource that describes some
+                                    property of an arc-type or simple-type linking element.</desc>
+                                <datatype>
+                                    <rng:data type="anyURI"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="xpointer">
+                                <desc>The locator for a remote resource in a simple or locator link.
+                                    The XPOINTER attribute takes the form of a Uniform Resource
+                                    Identifier plus a reference, formulated in XPOINTER syntax, to a
+                                    sub-resource of the remote resource. XPOINTER enables linking to
+                                    specific sections of a document that are relative, i.e., based
+                                    on their position in the document or their content, rather than
+                                    by reference to a specific identifier such as an ID.</desc>
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="entityref">
+                                <desc>The name of a nonparsed entity declared in the declaration
+                                    subset of the document that points to a machine-readable version
+                                    of the cited reference.</desc>
+                                <datatype>
+                                    <rng:data type="ENTITY"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="target">
+                                <desc>A pointer to the ID of another element.</desc>
+                                <datatype>
+                                    <rng:data type="IDREF"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="parent">
+                                <desc>A pointer to another container that holds the container item
+                                    being described in the current element, e.g., points to the
+                                    element that describes the box in which a folder is housed.
+                                    Available in <gi>container</gi> and <gi>physloc</gi></desc>
+                                <datatype>
+                                    <rng:data type="IDREFS"/>
+                                </datatype>
+                            </attDef>
                         </attList>
                     </classSpec>
+
+
+                    <!-- WORK IN PROGRESS // attempt to align xlink attributes to ead.rng (official) -->
+
+                    <!-- ptr classes -->
+                    <classSpec ident="att.internal.ptr" type="atts">
+                        <classes>
+                            <memberOf key="att.simpleLink"/>
+                            <memberOf key="att.xpointer"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="target">
+                                <datatype>
+                                    <rng:data type="IDREF"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.external.ptr" type="atts">
+                        <classes>
+                            <memberOf key="att.simpleLink"/>
+                            <memberOf key="att.xpointer"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="entityref">
+                                <datatype>
+                                    <rng:data type="ENTITY"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.loc.internal.ptr" type="atts">
+                        <classes>
+                            <memberOf key="att.locatorLink"/>
+                            <memberOf key="att.xpointer"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="target">
+                                <datatype>
+                                    <rng:data type="IDREF"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.loc.external.ptr" type="atts">
+                        <classes>
+                            <memberOf key="att.locatorLink"/>
+                            <memberOf key="att.xpointer"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="entityref">
+                                <datatype>
+                                    <rng:data type="ENTITY"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <!-- XLINK attributes and classes -->
+                    <!-- different values of @xlink:type give different choices of xlink attributes  -->
+                    <classSpec ident="att.simpleLink" type="atts">
+                        <classes>
+                            <memberOf key="att.xlink.href"/>
+                            <memberOf key="att.xlink.role"/>
+                            <memberOf key="att.xlink.arcrole"/>
+                            <memberOf key="att.xlink.title"/>
+                            <memberOf key="att.xlink.show"/>
+                            <memberOf key="att.xlink.actuate"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink">
+                                <defaultVal>simple</defaultVal>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.extendedLink" type="atts">
+                        <classes>
+                            <memberOf key="att.xlink.role"/>
+                            <memberOf key="att.xlink.title"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink">
+                                <defaultVal>extended</defaultVal>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.locatorLink" type="atts">
+                        <classes>
+                            <memberOf key="att.xlink.role"/>
+                            <memberOf key="att.xlink.title"/>
+                            <memberOf key="att.xlink.href"/>
+                            <memberOf key="att.xlink.label"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink">
+                                <defaultVal>locator</defaultVal>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.arcLink" type="atts">
+                        <classes>
+                            <memberOf key="att.xlink.arcrole"/>
+                            <memberOf key="att.xlink.show"/>
+                            <memberOf key="att.xlink.title"/>
+                            <memberOf key="att.xlink.actuate"/>
+                            <memberOf key="att.xlink.from"/>
+                            <memberOf key="att.xlink.to"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink">
+                                <defaultVal>arc</defaultVal>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.resourceLink" type="atts">
+                        <classes>
+                            <memberOf key="att.xlink.role"/>
+                            <memberOf key="att.xlink.title"/>
+                            <memberOf key="att.xlink.label"/>
+                        </classes>
+                        <attList>
+                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink">
+                                <defaultVal>resource</defaultVal>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.xlink.actuate" type="atts">
+                        <attList>
+                            <attDef ident="actuate" ns="http://www.w3c.org/1999/xlink">
+                                <desc>A control that defines whether a link occurs automatically or
+                                    must be requested by the user. It is used in conjunction with
+                                    the SHOW attribute to determine link behavior.</desc>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="onLoad"/>
+                                    <valItem ident="onRequest"/>
+                                    <valItem ident="other"/>
+                                    <valItem ident="none"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.show" type="atts">
+                        <attList>
+                            <attDef ident="show" ns="http://www.w3c.org/1999/xlink">
+                                <desc>A control that defines whether a remote resource that is the
+                                    target of a link appears at the point of the link, replaces the
+                                    existing link, or appears in a new window. It is used in
+                                    conjunction with the ACTUATE attribute to determine link
+                                    behavior.</desc>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="new"/>
+                                    <valItem ident="replace"/>
+                                    <valItem ident="embed"/>
+                                    <valItem ident="other"/>
+                                    <valItem ident="none"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.arcrole" type="atts">
+                        <attList>
+                            <attDef ident="arcrole" ns="http://www.w3.org/1999/xlink">
+                                <desc>URI preference that identifies a resource that describes some
+                                    property of an arc-type or simple-type linking element.</desc>
+                                <datatype>
+                                    <rng:data type="anyURI"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.label" type="atts">
+                        <attList>
+                            <attDef ident="label" ns="http://www.w3.org/1999/xlink">
+                                <desc>Labels the resource of locater element.</desc>
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                                <remarks>
+                                    <p>XLink traversal attribute</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.xlink.href" type="atts">
+                        <attList>
+                            <attDef ident="xlink:href" ns="http://www.w3.org/1999/xlink">
+                                <desc>Supplies the data to find a remote resource.</desc>
+                                <datatype>
+                                    <rng:data type="anyURI"/>
+                                </datatype>
+                                <remarks>
+                                    <p>Specifies a document (URI) and an XPointer</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.type" type="atts">
+                        <attList>
+                            <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink">
+                                <desc>Indicates the XLink element type.</desc>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="simple">
+                                        <desc>Creates a simple link.</desc>
+                                    </valItem>
+                                    <valItem ident="extended">
+                                        <desc>Creates an extended link.</desc>
+                                    </valItem>
+                                    <valItem ident="locator">
+                                        <desc>Creates a locater link that points to a
+                                            resource.</desc>
+                                    </valItem>
+                                    <valItem ident="arc">
+                                        <desc>Creates an arc with multiple resources and various
+                                            traversal paths.</desc>
+                                    </valItem>
+                                    <valItem ident="resource">
+                                        <desc>Creates a resource link, which indicates a specific
+                                            resource.</desc>
+                                    </valItem>
+                                    <valItem ident="title">
+                                        <desc>Creates a title link. Such elements are useful for
+                                            internationalization purposes.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.title" type="atts">
+                        <attList>
+                            <attDef ident="xlink:title" ns="http://www.w3.org/1999/xlink">
+                                <desc>Allows a human-readable description.</desc>
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.from" type="atts">
+                        <attList>
+                            <attDef ident="xlink:from" ns="http://www.w3.org/1999/xlink">
+                                <desc>Identifies the origin resource of an arc.</desc>
+                                <datatype>
+                                    <rng:data type="anyURI"/>
+                                </datatype>
+                                <remarks>
+                                    <p>XLink transversal attribute</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.to" type="atts">
+                        <attList>
+                            <attDef ident="xlink:to" ns="http://www.w3.org/1999/xlink">
+                                <desc>Identifies the destination resource of an arc.</desc>
+                                <datatype>
+                                    <rng:data type="anyURI"/>
+                                </datatype>
+                                <remarks>
+                                    <p>XLink traversal attribute</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.xlink.role" type="atts">
+                        <attList>
+                            <attDef ident="xlink:role" ns="http://www.w3.org/1999/xlink">
+                                <desc>Identifies the type of the related resource with an absolute
+                                    URI.</desc>
+                                <datatype>
+                                    <rng:data type="anyURI"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
 
                     <classSpec ident="att.tabdisplay" type="atts">
                         <desc>The following attributes apply to elements that can be used to format
@@ -9641,7 +10713,10 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <attDef ident="align">
                                 <desc>Horizontal position of the text within a column. Available in
                                         <gi>colspec</gi> and <gi>entry</gi>.</desc>
-                                <valList>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
                                     <valItem ident="left">
                                         <desc>flush left</desc>
                                     </valItem>
@@ -9720,7 +10795,10 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <attDef ident="colsep">
                                 <desc>If the columns in the table are to be separated by vertical
                                     rules</desc>
-                                <valList>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="open">
                                     <valItem ident="1">
                                         <desc>display a rule to the right of the column</desc>
                                     </valItem>
@@ -9736,7 +10814,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="calendar">
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <defaultVal>gregorian</defaultVal>
                             </attDef>
@@ -9753,10 +10831,23 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
+                    <classSpec ident="att.certainty" type="atts">
+                        <attList>
+                            <attDef ident="certainty">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
                     <classSpec ident="att.rendered" type="atts">
                         <attList>
                             <attDef ident="render">
-                                <valList>
+                                <datatype>
+                                    <rng:ref name="teidata.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
                                     <valItem ident="altrender"/>
                                     <valItem ident="bold"/>
                                     <valItem ident="bolddoublequote"/>
@@ -9772,6 +10863,16 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <valItem ident="super"/>
                                     <valItem ident="underline"/>
                                 </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.dsctab.tpattern" type="atts">
+                        <attList>
+                            <attDef ident="tpattern">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
                             </attDef>
                         </attList>
                     </classSpec>

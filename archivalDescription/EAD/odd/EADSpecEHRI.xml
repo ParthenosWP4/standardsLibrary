@@ -763,8 +763,7 @@ TO	#IMPLIED, NMTOKEN -->
                                 <rule xmlns="http://purl.oclc.org/dsdl/schematron"
                                     context="ead:archdesc">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
-                                        role="SHOULD-WP17"
-                                        test="normalize-space(ead:processinfo)"
+                                        role="SHOULD-WP17" test="normalize-space(ead:processinfo)"
                                         >archdesc-processinfo SHOULD not be empty</assert></rule>
                             </constraint>
                         </constraintSpec>
@@ -831,7 +830,7 @@ TO	#IMPLIED, NMTOKEN -->
                                         altformavail</assert></rule>
                             </constraint>
                         </constraintSpec>
-                        
+
                         <constraintSpec ident="bibliographyPossible" scheme="isoschematron"
                             type="EHRI">
                             <constraint>
@@ -1710,8 +1709,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <!--EHRI constraints-->
                         <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:c01">
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c01">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="@level">c01 MUST have a
                                         level-attribute</assert></rule>
@@ -1822,9 +1820,8 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:c02"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c02"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="@level">c02 MUST have a
                                         level-attribute</assert></rule>
                             </constraint>
@@ -1878,9 +1875,8 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:c03"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c03"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="@level">c03 MUST have a
                                         level-attribute</assert></rule>
                             </constraint>
@@ -1934,9 +1930,8 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:c04"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c04"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="@level">c04 MUST have a
                                         level-attribute</assert></rule>
                             </constraint>
@@ -1990,9 +1985,8 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:c05"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c05"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="@level">c05 MUST have a
                                         level-attribute</assert></rule>
                             </constraint>
@@ -2046,9 +2040,8 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="levelRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:c06"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c06"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="@level">c06 MUST have a
                                         level-attribute</assert></rule>
                             </constraint>
@@ -2337,9 +2330,8 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rule xmlns="http://purl.oclc.org/dsdl/schematron"
                                     context="ead:revisiondesc"><assert
                                         xmlns="http://purl.oclc.org/dsdl/schematron"
-                                        role="SHOULD-WP17"
-                                        test="normalize-space(ead:date)">a revisiondesc
-                                        SHOULD have a not empty date</assert></rule>
+                                        role="SHOULD-WP17" test="normalize-space(ead:date)">a
+                                        revisiondesc SHOULD have a not empty date</assert></rule>
                             </constraint>
                         </constraintSpec>
                         <exemplum>
@@ -3486,9 +3478,8 @@ NORMAL	#IMPLIED, CDATA
                         <constraintSpec ident="unitidRequired" scheme="isoschematron" type="EHRI"
                             mode="add">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:did"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:did"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="ead:unitid">a did MUST have a unitid,
                                         according 17.3 and WP19</assert></rule>
                             </constraint>
@@ -3496,8 +3487,7 @@ NORMAL	#IMPLIED, CDATA
 
                         <constraintSpec ident="unittitleRequired" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:did">
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:did">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="ead:unittitle">a did MUST have a
                                         unittitle, according 17.3</assert></rule>
@@ -3506,9 +3496,8 @@ NORMAL	#IMPLIED, CDATA
 
                         <constraintSpec ident="unittitleNotEmpty" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:did"><assert
-                                        xmlns="http://purl.oclc.org/dsdl/schematron"
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:did"
+                                        ><assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-WP19" test="count(ead:unittitle[text()]) > 0">a
                                         did MUST have at least one non-empty
                                     unittitle</assert></rule>
@@ -3789,8 +3778,7 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="dscType" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:dsc">
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:dsc">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-EAD" test="@type">dsc MUST have a type
                                         attribute</assert></rule>
@@ -3798,8 +3786,7 @@ TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                         </constraintSpec>
                         <constraintSpec ident="dscothertype" scheme="isoschematron" type="EHRI">
                             <constraint>
-                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                    context="ead:dsc">
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:dsc">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="MUST-EAD"
                                         test="not(@type ='othertype') or (@othertype and not(@othertype=''))"
@@ -7176,15 +7163,14 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 <rule xmlns="http://purl.oclc.org/dsdl/schematron"
                                     context="ead:physdesc"><assert
                                         xmlns="http://purl.oclc.org/dsdl/schematron"
-                                        role="SHOULDWP17"
-                                        test="normalize-space(ead:extent)">a did SHOULD
-                                        have a non-empty physdesc-extent, according to
+                                        role="SHOULDWP17" test="normalize-space(ead:extent)">a did
+                                        SHOULD have a non-empty physdesc-extent, according to
                                         17.3</assert></rule>
                             </constraint>
                         </constraintSpec>
                         <!-- END EHRI CONSTRAINTS -->
-                        
-                        
+
+
                         <!--                        <valList>
                             ALTRENDER	#IMPLIED, CDATA
                             AUDIENCE	#IMPLIED, external, internal
@@ -7793,16 +7779,15 @@ ID	#IMPLIED, ID</attList> -->
                         <!-- EHRI constraints -->
                         <constraintSpec ident="notempty" scheme="isoschematron" type="EHRI"
                             mode="add">
-                                <constraint>
-                                    
-                                    <rule xmlns="http://purl.oclc.org/dsdl/schematron"
-                                        context="ead:piblicationstmt">
+                            <constraint>
+                                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
+                                    context="ead:piblicationstmt">
                                     <assert xmlns="http://purl.oclc.org/dsdl/schematron"
                                         role="SHOULD-WP17" test="ead:publisher">eadheader SHOULD
                                         specify a publisher</assert>
-                                    </rule>
-                                </constraint>
-                            
+                                </rule>
+                            </constraint>
+
                         </constraintSpec>
                         <!-- END of EHRI constraints -->
 

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><!--contentType:EAD.FindingAid.APEnet-->
-<?xml-model href="../../Schemas/EAD-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" audience="external">
   <eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"

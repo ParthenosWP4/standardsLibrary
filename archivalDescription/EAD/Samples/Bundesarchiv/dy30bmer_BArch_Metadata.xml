@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<?xml-model href="../../RelaxNG/EAD-schema.rnc" type="application/relax-ng-compact-syntax"?>
 <ead audience="external" relatedencoding="MidosaXML"
     xmlns="urn:isbn:1-931666-22-9"
     xmlns:xlink="http://www.w3.org/1999/xlink"
