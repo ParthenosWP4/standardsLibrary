@@ -2262,7 +2262,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="tei.data.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -2271,7 +2271,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="tei.data.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -2280,7 +2280,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="tei.data.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="left"/>
@@ -4147,7 +4147,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="left"/>
@@ -4174,7 +4174,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -4198,7 +4198,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -4207,7 +4207,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="top"/>
@@ -6143,7 +6143,7 @@ TITLE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="simple"/>
@@ -6425,7 +6425,7 @@ ID	#IMPLIED, ID</attList> -->
                         <attList>
                             <attDef ident="show">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="embed"/>
@@ -6434,7 +6434,7 @@ ID	#IMPLIED, ID</attList> -->
                             </attDef>
                             <attDef ident="actuate">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="onload"/>
@@ -8319,7 +8319,7 @@ ID	#IMPLIED, ID</attList> -->
                         <attList>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="teidate.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -8328,7 +8328,7 @@ ID	#IMPLIED, ID</attList> -->
                             </attDef>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="teidate.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="top"/>
@@ -8406,7 +8406,7 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                             <attList>
                                 <attDef ident="placement">
                                     <datatype>
-                                        <rng:data type="teidate.enumerated"/>
+                                        <rng:data type="NMTOKEN"/>
                                     </datatype>
                                     <valList>
                                         <valItem ident="header"/>
@@ -8889,7 +8889,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <attList>
                             <attDef ident="frame">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="top"/>
@@ -8902,7 +8902,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -8911,7 +8911,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -8920,7 +8920,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="pgwide">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -8989,7 +8989,7 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <attList>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="top"/>
@@ -9064,7 +9064,7 @@ VALIGN	#IMPLIED, top, middle, bottom
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -9073,7 +9073,7 @@ VALIGN	#IMPLIED, top, middle, bottom
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="1"/>
@@ -9082,7 +9082,7 @@ VALIGN	#IMPLIED, top, middle, bottom
                             </attDef>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="left"/>
@@ -9204,7 +9204,7 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <attList>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="top"/>
@@ -9577,7 +9577,7 @@ ID	#IMPLIED, ID</attList> -->
                             </attDef>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:data type="teidata.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <valList>
                                     <valItem ident="bulk"/>
@@ -9930,7 +9930,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                             <attDef ident="audience" usage="opt">
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="internal"/>
@@ -9990,7 +9990,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     aid and the language of the materials <gi>language</gi>.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                        name="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>The codes should be taken from ISO639-2b, as specified in the
@@ -10007,7 +10007,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     language.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                        name="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>The code should be taken from ISO 15924 Code for the
@@ -10027,7 +10027,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     classification scheme or typology.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                        name="NMTOKEN"/>
                                 </datatype>
 
                             </attDef>
@@ -10155,7 +10155,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>The hierarchical level of the materials being described by the
                                     element.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="class"/>
@@ -10343,7 +10343,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onLoad"/>
@@ -10359,7 +10359,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     conjunction with the ACTUATE attribute to determine link
                                     behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="new"/>
@@ -10546,7 +10546,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onLoad"/>
@@ -10567,7 +10567,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     conjunction with the ACTUATE attribute to determine link
                                     behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="new"/>
@@ -10624,7 +10624,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink">
                                 <desc>Indicates the XLink element type.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="simple">
@@ -10714,7 +10714,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>Horizontal position of the text within a column. Available in
                                         <gi>colspec</gi> and <gi>entry</gi>.</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="left">
@@ -10796,7 +10796,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>If the columns in the table are to be separated by vertical
                                     rules</desc>
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="open">
                                     <valItem ident="1">
@@ -10845,7 +10845,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="render">
                                 <datatype>
-                                    <rng:ref name="teidata.enumerated"/>
+                                    <rng:ref name="NMTOKEN"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="altrender"/>

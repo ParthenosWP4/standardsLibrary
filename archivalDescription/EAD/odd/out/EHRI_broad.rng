@@ -5,11 +5,11 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-07-21T08:16:48Z. .
+Schema generated from ODD source 2016-07-21T09:27:59Z. .
 TEI Edition: rev4
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
---><!--xxx-->
+--><!--CC-BY-->
    <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
            prefix="tei"
            uri="http://www.tei-c.org/ns/1.0"/>
@@ -180,12 +180,40 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    </define>
    <define name="att.desc.c.attributes">
       <ref name="att.desc.c.attribute.level"/>
-      <ref name="att.desc.c.attribute.level"/>
       <ref name="att.desc.c.attribute.otherlevel"/>
    </define>
+   <define name="att.desc.c.attribute.level">
+      <optional>
+         <attribute name="level">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The hierarchical level of the materials being described by the element.</a:documentation>
+            <choice>
+               <value>class</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>collection</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>fonds</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>item</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>otherlevel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>recordgrp</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>series</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>subfonds</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>subgrp</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>subseries</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EHRI_strict-att.desc.c-level-otherlevel-constraint-1">
-      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
+            id="EHRI_broad-att.desc.c-level-otherlevel-constraint-1">
+      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
          <assert role="MUST-EAD"
                  test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))">If the attribute level has the value 'otherlevel',
                         an attribute otherlevel MUST be
@@ -193,31 +221,31 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EHRI_strict-att.desc.c-level-levelFonds-constraint-2">
-      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
+            id="EHRI_broad-att.desc.c-level-levelFonds-constraint-2">
+      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
          <assert role="SHOULD-WP19" test="not(@level = 'fonds') or name(.) = 'archdesc'">ONLY the archdesc can be fonds
                         level</assert>
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EHRI_strict-att.desc.c-level-recordgrplevel-constraint-3">
-      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
+            id="EHRI_broad-att.desc.c-level-recordgrplevel-constraint-3">
+      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
          <assert role="SHOULD-WP19"
                  test="not(@level = 'recordgrp')                         or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">recordgrp SHOULD be a child of another
                         recordgrp</assert>
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EHRI_strict-att.desc.c-level-subgrpLevel-constraint-4">
-      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
+            id="EHRI_broad-att.desc.c-level-subgrpLevel-constraint-4">
+      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
          <assert role="SHOULD-WP19"
                  test="not(@level = 'subgrp')                         or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">subgrp SHOULD be a child of another subgrp or a
                         recordgrp</assert>
       </rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="EHRI_strict-att.desc.c-level-subseriesLevel-constraint-5">
-      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
+            id="EHRI_broad-att.desc.c-level-subseriesLevel-constraint-5">
+      <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
          <assert role="SHOULD-WP19"
                  test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']">subseries SHOULD be a child of another subseries or
                         a series</assert>
@@ -1065,50 +1093,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <ref name="att.relatedencoding.attributes"/>
          <ref name="att.desc.c.attribute.otherlevel"/>
          <attribute name="level">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <text/>
-         </attribute>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-archdesc-level-otherlevel-constraint-6">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
-               <assert role="MUST-EAD"
-                       test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))">If the attribute level has the value 'otherlevel',
-                        an attribute otherlevel MUST be
-                        added</assert>
-            </rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-archdesc-level-levelFonds-constraint-7">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
-               <assert role="SHOULD-WP19" test="not(@level = 'fonds') or name(.) = 'archdesc'">ONLY the archdesc can be fonds
-                        level</assert>
-            </rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-archdesc-level-recordgrplevel-constraint-8">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
-               <assert role="SHOULD-WP19"
-                       test="not(@level = 'recordgrp')                         or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">recordgrp SHOULD be a child of another
-                        recordgrp</assert>
-            </rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-archdesc-level-subgrpLevel-constraint-9">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
-               <assert role="SHOULD-WP19"
-                       test="not(@level = 'subgrp')                         or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">subgrp SHOULD be a child of another subgrp or a
-                        recordgrp</assert>
-            </rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-archdesc-level-subseriesLevel-constraint-10">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:ead">
-               <assert role="SHOULD-WP19"
-                       test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']">subseries SHOULD be a child of another subseries or
-                        a series</assert>
-            </rule>
-         </pattern>
-         <attribute name="level">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The hierarchical level of the materials being described by the element.</a:documentation>
             <choice>
                <value>class</value>
@@ -1133,6 +1117,46 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="EHRI_broad-archdesc-level-otherlevel-constraint-6">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
+               <assert role="MUST-EAD"
+                       test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))">If the attribute level has the value 'otherlevel',
+                        an attribute otherlevel MUST be
+                        added</assert>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="EHRI_broad-archdesc-level-levelFonds-constraint-7">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
+               <assert role="SHOULD-WP19" test="not(@level = 'fonds') or name(.) = 'archdesc'">ONLY the archdesc can be fonds
+                        level</assert>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="EHRI_broad-archdesc-level-recordgrplevel-constraint-8">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
+               <assert role="SHOULD-WP19"
+                       test="not(@level = 'recordgrp')                         or (parent::*[@level = 'recordgrp'] or (name(.) = 'archdesc') or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">recordgrp SHOULD be a child of another
+                        recordgrp</assert>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="EHRI_broad-archdesc-level-subgrpLevel-constraint-9">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
+               <assert role="SHOULD-WP19"
+                       test="not(@level = 'subgrp')                         or ((parent::*[@level = 'recordgrp' or @level = 'subgrp']) or (name(.) = 'c01') and ancestor::*[@level = 'recordgrp'])">subgrp SHOULD be a child of another subgrp or a
+                        recordgrp</assert>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="EHRI_broad-archdesc-level-subseriesLevel-constraint-10">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead">
+               <assert role="SHOULD-WP19"
+                       test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']">subseries SHOULD be a child of another subseries or
+                        a series</assert>
+            </rule>
+         </pattern>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">can be used to categorize the finding aid as an inventory, register, or other format.</a:documentation>
@@ -1320,8 +1344,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-c01-levelRequired-constraint-11">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c01">
+                  id="EHRI_broad-c01-levelRequired-constraint-11">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="c01">
                   <assert role="MUST-WP19" test="@level">c01 MUST have a
                     level-attribute</assert>
             </rule>
@@ -1350,8 +1374,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-c02-levelRequired-constraint-12">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c02">
+                  id="EHRI_broad-c02-levelRequired-constraint-12">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="c02">
                   <assert role="MUST-WP19" test="@level">c02 MUST have a
                     level-attribute</assert>
             </rule>
@@ -1380,8 +1404,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-c03-levelRequired-constraint-13">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c03">
+                  id="EHRI_broad-c03-levelRequired-constraint-13">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="c03">
                   <assert role="MUST-WP19" test="@level">c03 MUST have a
                     level-attribute</assert>
             </rule>
@@ -1410,8 +1434,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-c04-levelRequired-constraint-14">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c04">
+                  id="EHRI_broad-c04-levelRequired-constraint-14">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="c04">
                   <assert role="MUST-WP19" test="@level">c04 MUST have a
                     level-attribute</assert>
             </rule>
@@ -1440,8 +1464,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-c05-levelRequired-constraint-15">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c05">
+                  id="EHRI_broad-c05-levelRequired-constraint-15">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="c05">
                   <assert role="MUST-WP19" test="@level">c05 MUST have a
                     level-attribute</assert>
             </rule>
@@ -1470,8 +1494,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-c06-levelRequired-constraint-16">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c06">
+                  id="EHRI_broad-c06-levelRequired-constraint-16">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="c06">
                   <assert role="MUST-WP19" test="@level">c06 MUST have a
                     level-attribute</assert>
             </rule>
@@ -1619,9 +1643,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             <ref name="item"/>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-change-dateNotEmpty-constraint-17">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:revisiondesc">
-               <assert role="SHOULD-WP17" test="normalize-space(ead:date)">a
+                  id="EHRI_broad-change-dateNotEmpty-constraint-17">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="revisiondesc">
+               <assert role="SHOULD-WP17" test="normalize-space(date)">a
                     revisiondesc SHOULD have a not empty date</assert>
             </rule>
          </pattern>
@@ -1747,30 +1771,30 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-controlaccess-controlaccessSubjectPossible-constraint-18">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:controlaccess">
-               <assert role="COULD" test="ead:subject">controlaccess COULD have a
+                  id="EHRI_broad-controlaccess-controlaccessSubjectPossible-constraint-18">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="controlaccess">
+               <assert role="COULD" test="subject">controlaccess COULD have a
                     subject</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-controlaccess-controlaccessPlacePossible-constraint-19">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:controlaccess">
-               <assert role="COULD" test="ead:place">controlaccess COULD have a
+                  id="EHRI_broad-controlaccess-controlaccessPlacePossible-constraint-19">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="controlaccess">
+               <assert role="COULD" test="place">controlaccess COULD have a
                     place</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-controlaccess-controlaccessPersnamePossible-constraint-20">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:controlaccess">
-                  <assert role="COULD" test="ead:persname">controlaccess COULD have a
+                  id="EHRI_broad-controlaccess-controlaccessPersnamePossible-constraint-20">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="controlaccess">
+                  <assert role="COULD" test="persname">controlaccess COULD have a
                     persname</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-controlaccess-controlaccessorgnamePossible-constraint-21">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:controlaccess">
-                  <assert role="COULD" test="ead:orgname">controlaccess COULD have a
+                  id="EHRI_broad-controlaccess-controlaccessorgnamePossible-constraint-21">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="controlaccess">
+                  <assert role="COULD" test="orgname">controlaccess COULD have a
                     orgname</assert>
             </rule>
          </pattern>
@@ -1939,23 +1963,23 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </oneOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-did-unitidRequired-constraint-22">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:did">
-               <assert role="MUST-WP19" test="ead:unitid">a did MUST have a unitid,
+                  id="EHRI_broad-did-unitidRequired-constraint-22">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="did">
+               <assert role="MUST-WP19" test="unitid">a did MUST have a unitid,
                     according 17.3 and WP19</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-did-unittitleRequired-constraint-23">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:did">
-                  <assert role="MUST-WP19" test="ead:unittitle">a did MUST have a
+                  id="EHRI_broad-did-unittitleRequired-constraint-23">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="did">
+                  <assert role="MUST-WP19" test="unittitle">a did MUST have a
                     unittitle, according 17.3</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-did-unittitleNotEmpty-constraint-24">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:did">
-               <assert role="MUST-WP19" test="count(ead:unittitle[text()]) &gt; 0">a
+                  id="EHRI_broad-did-unittitleNotEmpty-constraint-24">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="did">
+               <assert role="MUST-WP19" test="count(unittitle[text()]) &gt; 0">a
                     did MUST have at least one non-empty
                     unittitle</assert>
             </rule>
@@ -2035,15 +2059,15 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </zeroOrMore>
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-dsc-dscType-constraint-25">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:dsc">
+                  id="EHRI_broad-dsc-dscType-constraint-25">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="dsc">
                   <assert role="MUST-EAD" test="@type">dsc MUST have a type
                     attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-dsc-dscothertype-constraint-26">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:dsc">
+                  id="EHRI_broad-dsc-dscothertype-constraint-26">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="dsc">
                   <assert role="MUST-EAD"
                        test="not(@type ='othertype') or (@othertype and not(@othertype=''))">dsc MUST have a type attribute</assert>
             </rule>
@@ -2086,16 +2110,16 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-eadheader-profiledescRequired-constraint-27">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadheader">
-                  <assert role="MUST-WP19" test="ead:profiledesc">eadheader must
+                  id="EHRI_broad-eadheader-profiledescRequired-constraint-27">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="eadheader">
+                  <assert role="MUST-WP19" test="profiledesc">eadheader must
                     contain a profiledesc element</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-eadheader-creationDateNotempty-constraint-28">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadheader">
-               <assert test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)">eadheader COULD have a non-empty
+                  id="EHRI_broad-eadheader-creationDateNotempty-constraint-28">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="eadheader">
+               <assert test="creation/date and normalize-space(creation/date)">eadheader COULD have a non-empty
                     creation-date</assert>
             </rule>
          </pattern>
@@ -2116,15 +2140,15 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(EAD Identifier) A required subelement of eadheader that designates a unique code for a particular EAD finding aid document.</a:documentation>
          <text/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-eadid-mustContainText-constraint-29">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadid">
+                  id="EHRI_broad-eadid-mustContainText-constraint-29">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="eadid">
                <assert role="MUST-WP19" test="normalize-space(.)">eadid must
                     contain text</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-eadid-creationDesirable-constraint-30">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadid">
+                  id="EHRI_broad-eadid-creationDesirable-constraint-30">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="eadid">
                <assert role="SHOULD-WP17" test="@mainagencycode">eadid SHOULD
                     contain a mainagencycode attribute</assert>
             </rule>
@@ -2647,15 +2671,15 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-language-langcodeRequired-constraint-31">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:language">
+                  id="EHRI_broad-language-langcodeRequired-constraint-31">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="language">
                <assert role="MUST-WP19" test="@langcode">language MUST have a
                     langcode attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-language-scriptcodeRequired-constraint-32">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:language">
+                  id="EHRI_broad-language-scriptcodeRequired-constraint-32">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="language">
                <assert role="SHOULD-WP17" test="@scriptcode">language SHOULD have a
                     scriptcode attribute</assert>
             </rule>
@@ -2969,9 +2993,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-physdesc-nonemptyPhysdescDesirable-constraint-33">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:physdesc">
-               <assert role="SHOULDWP17" test="normalize-space(ead:extent)">a did
+                  id="EHRI_broad-physdesc-nonemptyPhysdescDesirable-constraint-33">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="physdesc">
+               <assert role="SHOULDWP17" test="normalize-space(extent)">a did
                     SHOULD have a non-empty physdesc-extent, according to
                     17.3</assert>
             </rule>
@@ -3091,16 +3115,16 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-profiledesc-langusageRequired-constraint-34">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:profiledesc">
-               <assert role="MUST-WP19" test="ead:langusage/ead:language">eadheader
+                  id="EHRI_broad-profiledesc-langusageRequired-constraint-34">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="profiledesc">
+               <assert role="MUST-WP19" test="langusage/language">eadheader
                     MUST contain a langusage/language element</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-profiledesc-creationDesirable-constraint-35">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:profiledesc">
-               <assert role="SHOULD-WP17" test="ead:creation">eadheader should
+                  id="EHRI_broad-profiledesc-creationDesirable-constraint-35">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="profiledesc">
+               <assert role="SHOULD-WP17" test="creation">eadheader should
                     contain a creation element</assert>
             </rule>
          </pattern>
@@ -3150,10 +3174,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-publicationstmt-notempty-constraint-36">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  context="ead:piblicationstmt">
-                  <assert role="SHOULD-WP17" test="ead:publisher">eadheader SHOULD
+                  id="EHRI_broad-publicationstmt-notempty-constraint-36">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="piblicationstmt">
+                  <assert role="SHOULD-WP17" test="publisher">eadheader SHOULD
                     specify a publisher</assert>
                 </rule>
          </pattern>
@@ -3587,23 +3610,23 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-unitdate-labelDesirable-constraint-37">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitdate">
+                  id="EHRI_broad-unitdate-labelDesirable-constraint-37">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="unitdate">
                <assert role="COULD-WP17"
                        test="normalize-space(@label) or normalize-space(@encodinganalog)">unitdates COULD have a label, describing the type of date,
                     according 17.3</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-unitdate-normalDesirableOrNotEmpty-constraint-38">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitdate">
+                  id="EHRI_broad-unitdate-normalDesirableOrNotEmpty-constraint-38">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="unitdate">
                <assert role="COULD-WP17" test="text() or normalize-space(@normal)">unitdate should be not empty or have a non-empty @normal
                     attribute</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-unitdate-normalNotEmtpy-constraint-39">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitdate">
+                  id="EHRI_broad-unitdate-normalNotEmtpy-constraint-39">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="unitdate">
                <assert role="SHOULD-WP19" test="normalize-space(@normal)">unitdate
                     should have a non-empty @normal attribute</assert>
             </rule>
@@ -3635,17 +3658,17 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-unitid-notEmpty-constraint-40">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitid">
-               <assert role="SHOULD-WP17" test="not(ead:unitid='')">a unitid SHOULD
+                  id="EHRI_broad-unitid-notEmpty-constraint-40">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="unitid">
+               <assert role="SHOULD-WP17" test="not(unitid='')">a unitid SHOULD
                     not be empty</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="EHRI_strict-unitid-uniqueId-constraint-41">
-            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitid">
+                  id="EHRI_broad-unitid-uniqueId-constraint-41">
+            <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="unitid">
                <assert role="MUST-WP19"
-                       test="count(//ead:unitid[@label = 'ehri_main_identifier']) = count(distinct-values(//ead:unitid[@label = 'ehri_main_identifier']))">unitid's MUST be unique within one eadfile, according
+                       test="count(//unitid[@label = 'ehri_main_identifier']) = count(distinct-values(//unitid[@label = 'ehri_main_identifier']))">unitid's MUST be unique within one eadfile, according
                     17.3</assert>
             </rule>
          </pattern>
