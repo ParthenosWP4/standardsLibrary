@@ -2262,27 +2262,27 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
                             </attDef>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="left"/>
                                     <valItem ident="right"/>
                                     <valItem ident="center"/>
@@ -3564,7 +3564,7 @@ UNIT	#IMPLIED, CDATA</attList> -->
                         </content>
                         <attList>
                             <attDef ident="type" mode="change">
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="analyticover"/>
                                     <valItem ident="combined"/>
                                     <valItem ident="in-depth"/>
@@ -4147,9 +4147,9 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="left"/>
                                     <valItem ident="right"/>
                                     <valItem ident="center"/>
@@ -4174,9 +4174,9 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
@@ -4198,18 +4198,18 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
                             </attDef>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="middle"/>
                                     <valItem ident="bottom"/>
@@ -6143,9 +6143,9 @@ TITLE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="simple"/>
                                     <valItem ident="deflist"/>
                                     <valItem ident="marked"/>
@@ -6425,18 +6425,18 @@ ID	#IMPLIED, ID</attList> -->
                         <attList>
                             <attDef ident="show">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="embed"/>
                                     <valItem ident="new"/>
                                 </valList>
                             </attDef>
                             <attDef ident="actuate">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="onload"/>
                                     <valItem ident="onrequest"/>
                                 </valList>
@@ -8319,18 +8319,18 @@ ID	#IMPLIED, ID</attList> -->
                         <attList>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="middle"/>
                                     <valItem ident="bottom"/>
@@ -8406,9 +8406,9 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                             <attList>
                                 <attDef ident="placement">
                                     <datatype>
-                                        <rng:data type="NMTOKEN"/>
+                                        <rng:data type="data.enumerated"/>
                                     </datatype>
-                                    <valList>
+                                    <valList  type="closed">
                                         <valItem ident="header"/>
                                         <valItem ident="footer"/>
                                         <valItem ident="watermark"/>
@@ -8889,9 +8889,9 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <attList>
                             <attDef ident="frame">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="bottom"/>
                                     <valItem ident="topbot"/>
@@ -8902,27 +8902,27 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList  type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="pgwide">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
@@ -8989,9 +8989,9 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <attList>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="middle"/>
                                     <valItem ident="bottom"/>
@@ -9064,27 +9064,27 @@ VALIGN	#IMPLIED, top, middle, bottom
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="left"/>
                                     <valItem ident="right"/>
                                     <valItem ident="center"/>
@@ -9204,9 +9204,9 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <attList>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="middle"/>
                                     <valItem ident="bottom"/>
@@ -9577,9 +9577,9 @@ ID	#IMPLIED, ID</attList> -->
                             </attDef>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:data type="NMTOKEN"/>
+                                    <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="bulk"/>
                                     <valItem ident="inclusive"/>
                                 </valList>
@@ -9930,7 +9930,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                             <attDef ident="audience" usage="opt">
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="internal"/>
@@ -9990,7 +9990,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     aid and the language of the materials <gi>language</gi>.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="NMTOKEN"/>
+                                        name="data.enumerated"/>
                                 </datatype>
                                 <remarks>
                                     <p>The codes should be taken from ISO639-2b, as specified in the
@@ -10007,7 +10007,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     language.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="NMTOKEN"/>
+                                        name="data.enumerated"/>
                                 </datatype>
                                 <remarks>
                                     <p>The code should be taken from ISO 15924 Code for the
@@ -10027,7 +10027,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     classification scheme or typology.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="NMTOKEN"/>
+                                        name="data.enumerated"/>
                                 </datatype>
 
                             </attDef>
@@ -10155,7 +10155,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>The hierarchical level of the materials being described by the
                                     element.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="class"/>
@@ -10282,7 +10282,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                             <attDef ident="type" ns="http://www.w3.org/1999/xlink">
                                 <desc>Indicates the XLink element type.</desc>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="simple">
                                         <desc>Creates a simple link.</desc>
                                     </valItem>
@@ -10343,7 +10343,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onLoad"/>
@@ -10359,7 +10359,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     conjunction with the ACTUATE attribute to determine link
                                     behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="new"/>
@@ -10546,7 +10546,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onLoad"/>
@@ -10567,7 +10567,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     conjunction with the ACTUATE attribute to determine link
                                     behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="new"/>
@@ -10624,7 +10624,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink">
                                 <desc>Indicates the XLink element type.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="simple">
@@ -10714,7 +10714,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>Horizontal position of the text within a column. Available in
                                         <gi>colspec</gi> and <gi>entry</gi>.</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="left">
@@ -10796,9 +10796,9 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>If the columns in the table are to be separated by vertical
                                     rules</desc>
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
-                                <valList type="open">
+                                <valList type="closed">
                                     <valItem ident="1">
                                         <desc>display a rule to the right of the column</desc>
                                     </valItem>
@@ -10845,7 +10845,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="render">
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="altrender"/>
