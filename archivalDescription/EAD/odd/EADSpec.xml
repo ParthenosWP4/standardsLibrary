@@ -6143,7 +6143,7 @@ TITLE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList  type="closed">
                                     <valItem ident="simple"/>
@@ -9577,7 +9577,7 @@ ID	#IMPLIED, ID</attList> -->
                             </attDef>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="bulk"/>
