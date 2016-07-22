@@ -10232,7 +10232,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.labeled" type="atts">
+                    <classSpec ident="att.labeled" type="atts" module="EAD">
                         <attList>
                             <attDef ident="label">
                                 <desc>A display label for an element can be supplied using this
@@ -10243,7 +10243,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.roled" type="atts">
+                    <classSpec ident="att.roled" type="atts" module="EAD">
                         <attList>
                             <attDef ident="role">
                                 <desc>A contextual role or relationship for the person, family,
@@ -10257,7 +10257,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink" type="atts">
+                    <classSpec ident="att.xlink" type="atts" module="EAD">
                         <desc>Provides the definition of all XLink attributes needed for
                             MLIF.</desc>
                         <desc>NB : For the moment, all the linking attributes are in the same class
@@ -10419,7 +10419,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                     <!-- WORK IN PROGRESS // attempt to align xlink attributes to ead.rng (official) -->
 
                     <!-- ptr classes -->
-                    <classSpec ident="att.internal.ptr" type="atts">
+                    <classSpec ident="att.internal.ptr" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.simpleLink"/>
                             <memberOf key="att.xpointer"/>
@@ -10432,7 +10432,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.external.ptr" type="atts">
+                    <classSpec ident="att.external.ptr" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.simpleLink"/>
                             <memberOf key="att.xpointer"/>
@@ -10445,7 +10445,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.loc.internal.ptr" type="atts">
+                    <classSpec ident="att.loc.internal.ptr" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.locatorLink"/>
                             <memberOf key="att.xpointer"/>
@@ -10458,7 +10458,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.loc.external.ptr" type="atts">
+                    <classSpec ident="att.loc.external.ptr" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.locatorLink"/>
                             <memberOf key="att.xpointer"/>
@@ -10474,7 +10474,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
 
                     <!-- XLINK attributes and classes -->
                     <!-- different values of @xlink:type give different choices of xlink attributes  -->
-                    <classSpec ident="att.simpleLink" type="atts">
+                    <classSpec ident="att.simpleLink" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.xlink.href"/>
                             <memberOf key="att.xlink.role"/>
@@ -10484,12 +10484,12 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.xlink.actuate"/>
                         </classes>
                         <attList>
-                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink">
+                            <attDef ident="type" ns="http://www.w3c.org/1999/xlink" module="EAD">
                                 <defaultVal>simple</defaultVal>
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.extendedLink" type="atts">
+                    <classSpec ident="att.extendedLink" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.xlink.role"/>
                             <memberOf key="att.xlink.title"/>
@@ -10500,7 +10500,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.locatorLink" type="atts">
+                    <classSpec ident="att.locatorLink" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.xlink.role"/>
                             <memberOf key="att.xlink.title"/>
@@ -10513,7 +10513,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.arcLink" type="atts">
+                    <classSpec ident="att.arcLink" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.xlink.arcrole"/>
                             <memberOf key="att.xlink.show"/>
@@ -10528,7 +10528,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.resourceLink" type="atts">
+                    <classSpec ident="att.resourceLink" type="atts" module="EAD">
                         <classes>
                             <memberOf key="att.xlink.role"/>
                             <memberOf key="att.xlink.title"/>
@@ -10540,7 +10540,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.xlink.actuate" type="atts">
+                    <classSpec ident="att.xlink.actuate" type="atts" module="EAD">
                         <attList>
                             <attDef ident="actuate" ns="http://www.w3c.org/1999/xlink">
                                 <desc>A control that defines whether a link occurs automatically or
@@ -10559,7 +10559,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.show" type="atts">
+                    <classSpec ident="att.xlink.show" type="atts" module="EAD">
                         <attList>
                             <attDef ident="show" ns="http://www.w3c.org/1999/xlink">
                                 <desc>A control that defines whether a remote resource that is the
@@ -10581,7 +10581,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.arcrole" type="atts">
+                    <classSpec ident="att.xlink.arcrole" type="atts" module="EAD">
                         <attList>
                             <attDef ident="arcrole" ns="http://www.w3.org/1999/xlink">
                                 <desc>URI preference that identifies a resource that describes some
@@ -10593,7 +10593,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.label" type="atts">
+                    <classSpec ident="att.xlink.label" type="atts" module="EAD">
                         <attList>
                             <attDef ident="label" ns="http://www.w3.org/1999/xlink">
                                 <desc>Labels the resource of locater element.</desc>
@@ -10606,7 +10606,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-                    <classSpec ident="att.xlink.href" type="atts">
+                    <classSpec ident="att.xlink.href" type="atts" module="EAD">
                         <attList>
                             <attDef ident="xlink:href" ns="http://www.w3.org/1999/xlink">
                                 <desc>Supplies the data to find a remote resource.</desc>
@@ -10620,7 +10620,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.type" type="atts">
+                    <classSpec ident="att.xlink.type" type="atts" module="EAD">
                         <attList>
                             <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink">
                                 <desc>Indicates the XLink element type.</desc>
@@ -10655,7 +10655,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.title" type="atts">
+                    <classSpec ident="att.xlink.title" type="atts" module="EAD">
                         <attList>
                             <attDef ident="xlink:title" ns="http://www.w3.org/1999/xlink">
                                 <desc>Allows a human-readable description.</desc>
@@ -10666,7 +10666,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.from" type="atts">
+                    <classSpec ident="att.xlink.from" type="atts" module="EAD">
                         <attList>
                             <attDef ident="xlink:from" ns="http://www.w3.org/1999/xlink">
                                 <desc>Identifies the origin resource of an arc.</desc>
@@ -10680,7 +10680,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.to" type="atts">
+                    <classSpec ident="att.xlink.to" type="atts" module="EAD">
                         <attList>
                             <attDef ident="xlink:to" ns="http://www.w3.org/1999/xlink">
                                 <desc>Identifies the destination resource of an arc.</desc>
@@ -10694,7 +10694,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.xlink.role" type="atts">
+                    <classSpec ident="att.xlink.role" type="atts" module="EAD">
                         <attList>
                             <attDef ident="xlink:role" ns="http://www.w3.org/1999/xlink">
                                 <desc>Identifies the type of the related resource with an absolute
@@ -10707,7 +10707,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                     </classSpec>
 
 
-                    <classSpec ident="att.tabdisplay" type="atts">
+                    <classSpec ident="att.tabdisplay" type="atts" module="EAD">
                         <desc>The following attributes apply to elements that can be used to format
                             tables and other columnar structures.</desc>
                         <attList>
@@ -10811,7 +10811,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.calendar" type="atts">
+                    <classSpec ident="att.calendar" type="atts" module="EAD">
                         <attList>
                             <attDef ident="calendar">
                                 <datatype>
@@ -10822,7 +10822,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.era" type="atts">
+                    <classSpec ident="att.era" type="atts" module="EAD">
                         <attList>
                             <attDef ident="era">
                                 <datatype>
@@ -10832,7 +10832,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.certainty" type="atts">
+                    <classSpec ident="att.certainty" type="atts" module="EAD">
                         <attList>
                             <attDef ident="certainty">
                                 <datatype>
@@ -10842,7 +10842,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.rendered" type="atts">
+                    <classSpec ident="att.rendered" type="atts" module="EAD">
                         <attList>
                             <attDef ident="render">
                                 <datatype>
@@ -10868,7 +10868,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         </attList>
                     </classSpec>
 
-                    <classSpec ident="att.dsctab.tpattern" type="atts">
+                    <classSpec ident="att.dsctab.tpattern" type="atts" module="EAD">
                         <attList>
                             <attDef ident="tpattern">
                                 <datatype>

@@ -222,13 +222,13 @@
                     17.3 and WP19</assert></rule>
               </constraint>
             </constraintSpec>
-            <constraintSpec ident="unittitleRequired" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="unittitleRequired" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="did">
                   <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19" test="unittitle">a did MUST have a unittitle, according 17.3</assert></rule>
               </constraint>
             </constraintSpec>
-            <constraintSpec ident="unittitleNotEmpty" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="unittitleNotEmpty" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="did"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19" test="count(unittitle[text()]) > 0">a did MUST
                     have at least one non-empty unittitle</assert></rule>
@@ -236,13 +236,13 @@
             </constraintSpec>
           </elementSpec>
           <elementSpec ident="dsc" mode="change">
-            <constraintSpec ident="dscType" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="dscType" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="dsc">
                   <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD" test="@type">dsc MUST have a type attribute</assert></rule>
               </constraint>
             </constraintSpec>
-            <constraintSpec ident="dscothertype" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="dscothertype" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="dsc">
                   <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD" test="not(@type ='othertype') or (@othertype and not(@othertype=''))">dsc MUST have a type
@@ -279,13 +279,13 @@
             </constraintSpec>
           </elementSpec>
           <elementSpec ident="language" mode="change">
-            <constraintSpec ident="langcodeRequired" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="langcodeRequired" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="language"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-WP19" test="@langcode">language MUST have a
                     langcode attribute</assert></rule>
               </constraint>
             </constraintSpec>
-            <constraintSpec ident="scriptcodeRequired" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="scriptcodeRequired" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="language"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP17" test="@scriptcode">language SHOULD have a
                     scriptcode attribute</assert></rule>
@@ -293,7 +293,7 @@
             </constraintSpec>
           </elementSpec>
           <elementSpec ident="physdesc" mode="change">
-            <constraintSpec ident="nonemptyPhysdescDesirable" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="nonemptyPhysdescDesirable" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="physdesc"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULDWP17" test="normalize-space(extent)">a did SHOULD
                     have a non-empty physdesc-extent, according to 17.3</assert></rule>
@@ -324,7 +324,7 @@
             </constraintSpec>
           </elementSpec>
           <elementSpec ident="unitdate" mode="change">
-            <constraintSpec ident="labelDesirable" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="labelDesirable" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="unitdate"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD-WP17"
                     test="normalize-space(@label) or normalize-space(@encodinganalog)">unitdates COULD have a label, describing the type of date, according 17.3</assert></rule>
@@ -336,13 +336,13 @@
                             -->
               </constraint>
             </constraintSpec>
-            <constraintSpec ident="normalDesirableOrNotEmpty" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="normalDesirableOrNotEmpty" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="unitdate"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD-WP17" test="text() or normalize-space(@normal)"
                     >unitdate should be not empty or have a non-empty @normal attribute</assert></rule>
               </constraint>
             </constraintSpec>
-            <constraintSpec ident="normalNotEmtpy" scheme="isoschematron" type="EHRI">
+            <constraintSpec ident="normalNotEmtpy" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="unitdate"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP19" test="normalize-space(@normal)">unitdate
                     should have a non-empty @normal attribute</assert></rule>
@@ -375,20 +375,20 @@
                 <datatype>
                   <rng:ref name="data.enumerated"/>
                 </datatype>
-                <constraintSpec ident="otherlevel" scheme="isoschematron" type="EHRI">
+                <constraintSpec ident="otherlevel" scheme="isoschematron" type="EHRI" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
                         test="not(@level = 'otherlevel') or (@otherlevel and not(@otherlevel = ''))">If the attribute level has the value 'otherlevel', an attribute otherlevel MUST be
                       added</assert></rule>
                   </constraint>
                 </constraintSpec>
-                <constraintSpec ident="levelFonds" scheme="isoschematron" type="EHRI">
+                <constraintSpec ident="levelFonds" scheme="isoschematron" type="EHRI" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP19"
                         test="not(@level = 'fonds') or name(.) = 'archdesc'">ONLY the archdesc can be fonds level</assert></rule>
                   </constraint>
                 </constraintSpec>
-                <constraintSpec ident="recordgrplevel" scheme="isoschematron" type="EHRI">
+                <constraintSpec ident="recordgrplevel" scheme="isoschematron" type="EHRI" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP19"
                         test="not(@level = 'recordgrp')
@@ -396,7 +396,7 @@
                         >recordgrp SHOULD be a child of another recordgrp</assert></rule>
                   </constraint>
                 </constraintSpec>
-                <constraintSpec ident="subgrpLevel" scheme="isoschematron" type="EHRI">
+                <constraintSpec ident="subgrpLevel" scheme="isoschematron" type="EHRI" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP19"
                         test="not(@level = 'subgrp')
@@ -404,7 +404,7 @@
                         >subgrp SHOULD be a child of another subgrp or a recordgrp</assert></rule>
                   </constraint>
                 </constraintSpec>
-                <constraintSpec ident="subseriesLevel" scheme="isoschematron" type="EHRI">
+                <constraintSpec ident="subseriesLevel" scheme="isoschematron" type="EHRI" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead"><assert xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP19"
                         test="not(@level = 'subseries') or parent::*[@level = 'subseries' or @level = 'series']">subseries SHOULD be a child of another subseries or a series</assert></rule>
@@ -421,6 +421,7 @@
                   <valItem ident="subfonds"/>
                   <valItem ident="subgrp"/>
                   <valItem ident="subseries"/>
+                  <valItem ident="file"/>
                 </valList>
                 <remarks>
                   <p> This attribute is available in <gi>archdesc</gi>>, where the highest level of material represented in the finding aid must be declared (e.g., collection, fonds, record group),
