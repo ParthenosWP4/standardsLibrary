@@ -23,14 +23,13 @@
   </teiHeader>
   <text>
     <body>
-
       <div type="foreword">
         <head>Guidelines</head>
         <p>...</p>
       </div>
       <div type="specification">
         <head>Specification</head>
-        <schemaSpec ident="EHRI_broad" start="ead" 
+        <schemaSpec ident="EHRI_broad" start="ead" ns="urn:isbn:1-931666-22-9"
           source="https://raw.githubusercontent.com/ParthenosWP4/standardsLibrary/master/archivalDescription/EAD/odd/EADSpec.xml"
           >
           <moduleRef key="EAD"/>
