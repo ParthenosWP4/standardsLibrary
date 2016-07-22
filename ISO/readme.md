@@ -10,10 +10,8 @@ Gathering Regular expression for checking data regarding some basic ISO standard
 ###ISO 8601 (Date Time)
 
 ##YYYY-MM-DD
+###Javascript
 `^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$`
 
 ##YYYY-MM-DDThh:mm:ssTZD
 `^(19|20)[0-9][0-9]-(0[0-9]|1[0-2])-(0[1-9]|([12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$`
-
-###Links
-test you regex : [Regex 101](https://regex101.com/)
