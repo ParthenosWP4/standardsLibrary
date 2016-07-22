@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-07-21T12:07:59Z. .
+Schema generated from ODD source 2016-07-22T08:16:07Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -2832,9 +2832,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       <optional>
          <attribute name="normal">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A consistent form, usually from a controlled vocabulary list to facilitate retrieval</a:documentation>
-            <data type="token">
-               <param name="pattern">(\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)(/\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)? </param>
-            </data>
+            <data type="token"/>
          </attribute>
       </optional>
    </define>
@@ -3208,8 +3206,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
    <define name="att.rendered.attribute.render">
       <optional>
          <attribute name="render">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] altrender; 2] bold; 3] bolddoublequote; 4] boldsinglequote; 5] boldsmcaps; 6] boldunderline; 7] doublequote; 8] italic; 9] nonproport; 10] singlequote; 11] smcaps; 12] sub; 13] super; 14] underline</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
                <value>altrender</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3239,7 +3236,6 @@ Suggested values include: 1] altrender; 2] bold; 3] bolddoublequote; 4] boldsing
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>underline</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <data type="Name"/>
             </choice>
          </attribute>
       </optional>
