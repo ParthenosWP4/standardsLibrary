@@ -10168,6 +10168,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <valItem ident="subfonds"/>
                                     <valItem ident="subgrp"/>
                                     <valItem ident="subseries"/>
+                                    <valItem ident="file"/>
                                 </valList>
                                 <remarks>
                                     <p> This attribute is available in <gi>archdesc</gi>>, where the
@@ -10249,9 +10250,9 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     corporate body, or geographic location. In linking elements such
                                     as <gi>ptr</gi>, information that explains to application
                                     software the part that a remote resource plays in a link.</desc>
-                                <datatype>
+                                <!--<datatype>
                                     <rng:text/>
-                                </datatype>
+                                </datatype>-->
                             </attDef>
                         </attList>
                     </classSpec>
