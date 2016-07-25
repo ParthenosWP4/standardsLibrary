@@ -9989,8 +9989,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     is written <gi>abstract</gi>, for the language of the finding
                                     aid and the language of the materials <gi>language</gi>.</desc>
                                 <datatype>
-                                    <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                    <rng:text/>
                                 </datatype>
                                 <remarks>
                                     <p>The codes should be taken from ISO639-2b, as specified in the
@@ -10006,8 +10005,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>The four-letter code for the writing script used with a given
                                     language.</desc>
                                 <datatype>
-                                    <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                    <rng:text/>
                                 </datatype>
                                 <remarks>
                                     <p>The code should be taken from ISO 15924 Code for the

@@ -29,7 +29,7 @@
             <creation><date encodinganalog="creationDate"/>
             </creation>
             <langusage>
-                <language encodinganalog="languageUsed" langcode="fre" scriptcode=""/>
+                <language encodinganalog="languageUsed" langcode="fre" scriptcode="latn"/>
                 <!-- @langcode -> languageCode -->
             </langusage>
             <descrules encodinganalog="rulesAndConventions">fdsfdsf</descrules>
@@ -44,6 +44,7 @@
     <archdesc level="">
         <!-- archdesc/@level ->levelOfDescription -->
         <did>
+            <abstract langcode="ddd">qdqsdqsdsqdsqdsq</abstract>
             <unitid/>
             <unittitle encodinganalog="name"/>
             <unitdate encodinganalog="unitDates"/>
@@ -54,7 +55,7 @@
                 <physfacet encodinganalog="extentAndMedium"/>
             </physdesc>
             <langmaterial encodinganalog="languageOfMaterial">
-                <language langcode="" encodinganalog="languageOfMaterial"/>
+                <language langcode="ddd" encodinganalog="languageOfMaterial"/>
                 <!-- @langcode -> languageOfMaterial -->
             </langmaterial>
             <note>
@@ -92,7 +93,7 @@
             <p encodinganalog="systemOfArrangement"></p>
         </arrangement>
         <altformavail>
-            <p encodinganalog="locationOfCopies"/>
+            <p encodinganalog="locationOfCopies">sfsdfdsf</p>
         </altformavail>
         <originalsloc>
             <p encodinganalog="locationOfOriginals"/>
@@ -126,7 +127,7 @@
                         <physfacet encodinganalog="extentAndMedium"/>
                     </physdesc>
                     <langmaterial encodinganalog="languageOfMaterial">
-                        <language langcode="" encodinganalog="languageOfMaterial"/>
+                        <language langcode="" scriptcode="dddd" encodinganalog="languageOfMaterial"/>
                         <!-- @langcode -> languageOfMaterial -->
                     </langmaterial>
                     <note>
@@ -185,7 +186,7 @@
                                     <physfacet encodinganalog="extentAndMedium"/>
                                 </physdesc>
                                 <langmaterial encodinganalog="languageOfMaterial">
-                                    <language langcode="" encodinganalog="languageOfMaterial"/>
+                                    <language langcode="" scriptcode="" encodinganalog="languageOfMaterial"/>
                                     <!-- @langcode -> languageOfMaterial -->
                                 </langmaterial>
                                 <note>

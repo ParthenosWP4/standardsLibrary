@@ -18,15 +18,22 @@
                 test="ead:scopecontent or ead:dsc/ead:c01/descendant-or-self::ead:scopecontent">a
                 scopecontent element should be present at least in archdesc if not in the c
                 elements</sch:assert>
-            <sch:assert test="not(ead:acqinfo | ead:custodhist)">acqinfo and custodhit will be merged, according EHRI guidelines for description v1.0 (DL17.3)</sch:assert>
+            <sch:assert test="not(ead:acqinfo | ead:custodhist)">acqinfo and custodhist will be merged, according EHRI guidelines for description v1.0 (DL17.3)</sch:assert>
         </sch:rule>
-        <sch:rule context="ead:profiledesc">
-            <sch:assert test="not(normalize-space(ead:descrules))">descrules has a default value
+        <sch:rule context="ead:descrules">
+            <sch:assert test="not(normalize-space(.))">descrules has a default value
                 added automatically by EHRI.</sch:assert>
         </sch:rule>
         <sch:rule context="ead:unitdate">
             <!--<sch:assert role="WP11" test="matches(@normal, '^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</sch:assert>-->
             <sch:assert role="WP11" test="matches(@normal, '^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}))-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</sch:assert>
+        </sch:rule>
+        <sch:rule context="ead:language | ead:abstract">
+            <!--<sch:assert role="WP11" test="matches(@normal, '^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</sch:assert>-->
+            <sch:assert role="WP11" test="matches(@langcode, '^([a-zA-Z]{3})$')">ISO639</sch:assert>
+        </sch:rule>
+        <sch:rule context="ead:altformavail/ead:p">
+            <sch:assert role="WP11" test="not(normalize-space(.))">link to repository authority list or need for extra information</sch:assert>
         </sch:rule>
     </sch:pattern>
 </sch:schema>
