@@ -4,7 +4,7 @@
 
 **Contributor**: Toma Tasovac, Belgrade Center for Digital Humanities. 
 
-**Version:** 0.2 (2016-04-20) 
+**Version:** 0.3 (2016-07-25) 
 
 ## Table of Contents
 [oXygen XML Editor](#whatis)  
@@ -213,26 +213,145 @@ If you were ever looking for a proof why it's worth learning xPath for anything 
 <img src="img/xpath1.png"></img><img src="img/xpath2.png"></img><img src="img/xpath3.png"></img>
 
 
-## <a name="stylingdictionaries"></a>Styling Dictionaries in Author Mode</a>
+## <a name="stylingdictionaries"></a>Styling Dictionaries, or Beauty is in the Eye of the Lexicographer</a>
 
 
 The encoding of dictionaries using TEI XML is also possible in a WYSIWYG-style editor in which the XML markup is not visible.
 
-This type of tagless editor is available in Oxygen XML Editor as the Author mode. To enter this mode, click the Author button at the bottom of the editing area.
+This type of tagless editor is available in oXygen's Author Mode.  The default Text Mode and the Author Mode offer two different ways of viewing and interacting with the underlying XML dataset. In Text Mode we work with XML directly; in the Author Mode interact with a styled, visually enhanced version of the XML data. 
 
-TODO screenshot 
-
-The Author mode renders the content of the XML document visually, based on a CSS stylesheet associated with the document. Many of the actions and features available in Text mode are also available in Author mode.
-
-TODO the rest (also with English examples, cf. Johnson's entry on Lexicographer). 
 
 ### Text Mode
 
 <img src="img/css/xmlrs.png"></img>
 
+In Text Mode all we get is XML. We see every tag, every attribute, every bit of text. oXygen automatically colors the tags and attributes differently from text in order to make the whole document more readable, but there is not much more that can be done here in terms of styling different parts of the dictioanry entry.
+
+The above example may look unusual because in it TEI tags have been localized in Serbian. The topic of localizing tags will be addressed in a separate turorial. TODO: Tags localization. 
+
+The same dictionary entry, when viewed in Author Mode together with a corresponding **CSS stylesheet**, can look quite differently.
+
+
 ###Author Mode
+
 <img src="img/css/cssrs.png"></img>
 
-### Writing simple CSS stylesheets for your dictionary data 
+You will notice straight away that there are no tags and no attributes, even though you could see them in the original XML sample. You will also notice that different parts of the dictionary are displayed in different colors. In the rest of this tutorial, we'll learn how to design a stylesheet to prettify our TEI-encoded dictionaries. 
 
-TODO
+The Author mode renders the content of the XML document visually, based on a **CSS stylesheet** associated with the document. Many of the actions and features available in Text mode are also available in Author mode. 
+ 
+**Cascading Style Sheets** (CSS) are sets of instructions describing the presentation of a document written in a markup language. Along with HTML and JavaScript, CSS is one of the basic technologies used for creating visually engaging interfaces for online delivery. 
+
+This tutorial will not turn you into a CSS guru, but it will show you a concrete example of how to style dictionary data, which you can then use and adapt in your own dictionary projects. 
+ 
+ 
+But first things first. Open the tagged entry Lexicographer from Johnson's dictionary (TODO links to sample). To enter Author Mode, click the Author button at the bottom of the editing area.
+
+<img src="img/author-button.png"/>
+
+A default oXygen installation comes with a set of stylesheets for TEI documents, but these are not specifically targetted toward styiling dictionaries. Therefore, the author mode may not seem all that impressive at first. 
+
+Take a look at the default rendering of Johnon's dictionary entry "Lexicographer".
+
+<img src="img/author-tags-with-attributes.png"/>
+
+This is not terribly useful — or pretty to look at. But we will fix it soon and show how useful it is to style your own TEI content for editing, proofreading etc.
+
+Before we do that, let's just take a quick look at the default options that oXygen gives us in terms of rendering tags and attributes in the Author Mode. These are controlled by the dropodown menu, located in the lower row of icons on the default menu bar:
+
+<img src="img/author-tags-dropdown.png" width="400px"/>
+
+As you can see, you can choose whether you want to display full tags, with or without attributes, only block or inline tags, partial or no tags at all. 
+
+The terms block elements and inline elements come from HTML, not XML. **Block elements** refer to those elements which start on a new line and take up the full width available to the container which holds them.  Typical block elements in HTML are `<div>`, `<p>`, `<form>` and `<h1>, <h2>, <h3>` etc. On the other hand, **inline elements** are those that do not start on a new line and only take up as much width as their content needs, for instance: `<span>`, `<a>`, `<img>` etc.  The distinction between block and online elements doesn't make much sense in the context of TEI-encoded dictionary data *before* we create a CSS style for it, but we will be coming back to this point again. 
+
+Try out different options, now and after we've designed our first dicitonary stylesheet and make sure you understand the differences between them. 
+
+### Associating a CSS stylesheet a TEI Document
+
+To associate a stylesheet with an open TEI document, click on the "Associate XSLT/CSS Stylesheet..." icon which looks like green pin:
+
+<img src="img/associate-css-schema.png" width="400px"/>
+
+You will be presented with a new pop-up window, in which you should click on the folder icon and select the file johnson.css which is in the same folder as the JOHNSON SAMPLE. After you've selected the css file, click ok.
+
+<img src="img/select-css-file.png" width="400px"/>
+
+Associating an CSS stylesheet will add an processing instruction at the beginning of your XML file that looks like this: 
+
+`<?xml-stylesheet type="text/css" href="johnson.css"?>`
+
+If you switch to Text Mode, you can check it yourself.
+
+So what does the styled version of Johnson's entry look like?
+
+<img src="img/johnson-tagged.png"/>
+
+If the view you see on your computescreen differs from this one, make sure you play with the different rendering options we discussed in the previous section.
+
+
+
+### Examining the sample CSS stylesheet
+
+Now, oppen the CSS stylesheet in oXygen and examine its contents. 
+
+A style sheet consists of a list of *rules*. Each rule or rule-set consists of one or more *selectors*, and a *declaration block*.
+
+**Selectors** are used to declare which part of the markup a style applies to by matching tags and attributes in the markup itself.
+
+A **declaration block** consists of a list of declarations in curly braces. Each declaration itself consists of a **property**, a **colon**, and a **value**. If there are multiple declarations in a block, a semi-colon must be inserted to separate each declaration.
+
+So, in the case of the following rule:
+
+```css
+teiHeader {
+	display: none;
+}
+```
+
+for the selector `teiHeader`, we are assigning the value `none` to the CSS property `display`. In other words, we are telling oXygen, *not* to display our teiHeader when we are in Author Mode. 
+
+**Try it yourself**: in your CSS styleshet, change the value of the `display` property from `none` to `block`, save the CSS file, then look at the effect this will have on the way your dictionary file is displayed in Author Mode. **Note**: if your XML file was already open in Author Mode, you may need to switch to Text Mode once and back to Author Mode for the changes to become visible. 
+
+In the case of: 
+
+```css
+form[type="lemma"] {
+	font-weight: bold;
+}
+```
+our selector is element `<form>` but only of the type `lemma`. That means that our styling rule -- using bold -- will apply only to `<form type="lemma"/>` and not, for instance, to `<form type="ending"/>` or `<form type="inflected"/>`. 
+
+**Try it yourself**: switch to Text Mode, change the value of the type attribute in <lemma> or delete the attribute altogether, then switch back to Author Mode to see the effect this has. 
+
+When we construct a CSS rule that looks like this:
+
+```css
+gramGrp > pos {
+	color: #ff2600;
+}
+```   
+we're styling a `<pos>` element but only if is the child of the `<gramGrp>` element. 
+
+**Try it yourself**: switch to Text Mode, delete the `gramGrp` element and leave the `pos` only, then switch back to Author Mode and you will see that <pos> is no longer styled. 
+
+
+Finally, in the following rulesets:
+
+```css
+entry etym:before {
+	content: " [";
+}
+
+entry etym:after {
+	content: "] ";
+}
+```
+
+we are telling oXygen to style `etym` elements which are descendants (not necessarily children) of the `entry` element in such a way that we end a space and an open square bracket *before* each such `etym` element; and a square bracket and a space *after* each scuh `etym` element. **Try it yourself**: change the square brackets to round parenthesis in the stylesheet.
+
+TODO: short wrapup on the most important CSS properties as well as values (color, keywords vs. hexadecimal values). 
+
+### Exercise
+
+Take one of your dictioanries and design a CSS stylesheet, using the Johnson as a starting point. 

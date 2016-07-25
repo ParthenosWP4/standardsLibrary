@@ -6,32 +6,33 @@ teiHeader {
 	display: none;
 }
 
-form {
-	margin-bottom: 1em;
+entryFree, entry {
+    display:block;
+    margin-bottom: 1em;
 }
 
 form[type="lemma"] {
 	font-weight: bold;
 }
 
-gramGrp pos {
+gramGrp > pos {
 	color: #ff2600;
 }
 
-sense def {
+sense > def {
 	color: #ff9200;
 }
 
-cit bibl{
+cit > bibl{
 	color: #9437ff;
 }
 
-sense cit quote, значење пример цитат {
+sense > cit > quote {
 	color: #935100;
 }
 
 
-entry etym {
+entry > etym {
 	color: #00f900;
 }
 
@@ -40,17 +41,16 @@ entry etym:before {
 }
 
 entry etym:after {
-	content: " ] ";
+	content: "] ";
 }
 
-etym lang {
+etym > lang {
 	color: #009192;
 }
 
-etym mentioned {
+etym > mentioned {
 	background-color: #008e00;
 	color: #feffff;
 	font-style: italic;
-
 }
 
