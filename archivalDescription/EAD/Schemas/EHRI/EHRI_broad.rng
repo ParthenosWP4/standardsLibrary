@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-07-25T09:33:00Z. .
+Schema generated from ODD source 2016-07-25T10:29:56Z. .
 TEI Edition: rev4
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -1876,8 +1876,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-c06-noc07c12-constraint-33">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c06">
-                  <report role="SHOULD-WP11" test="ead:c07">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report role="SHOULD-WP11" test="ead:c07"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1906,8 +1905,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-c07-noc07c12-constraint-34">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c07">
-                  <report role="SHOULD-WP11" test="ead:c08">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report role="SHOULD-WP11" test="ead:c08"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1936,8 +1934,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-c08-noc07c12-constraint-35">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c08">
-                  <report role="SHOULD-WP11" test="ead:c09">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report role="SHOULD-WP11" test="ead:c09"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1966,8 +1963,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-c09-noc07c12-constraint-36">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c09">
-                  <report role="SHOULD-WP11" test="ead:c10">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report role="SHOULD-WP11" test="ead:c10"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -1996,8 +1992,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-c10-noc07c12-constraint-37">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c10">
-                  <report role="SHOULD-WP11" test="ead:c11">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report role="SHOULD-WP11" test="ead:c11"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2026,8 +2021,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-c11-noc07c12-constraint-38">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:c11">
-                  <report role="SHOULD-WP11" test="ead:c12">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report role="SHOULD-WP11" test="ead:c12"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -2552,8 +2546,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-eadheader-parallelTitleEnglish-constraint-49">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadheader">
-                  <assert test="ead:profiledesc/ead:langusage/@langcode = 'eng'">If the language of
-                    the description is not English, a parallel form of the title in English should be
+                  <assert test="ead:profiledesc/ead:langusage/@langcode = 'eng'">If the language of the
+                    description is not English, a parallel form of the title in English should be
                     added.</assert>
                 </rule>
          </pattern>
@@ -4238,7 +4232,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
                   id="EHRI_broad-unitdate-normalRegex-constraint-65">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitdate">
                <assert role="WP11"
-                       test="matches(@normal, '^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</assert>
+                       test="matches(@normal, '^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}))-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">@normal attribute must respect ISO8601 pattern = YYYY-MM-DD</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>

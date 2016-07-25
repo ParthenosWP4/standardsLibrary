@@ -118,7 +118,7 @@
                 <did>
                     <unitid/>
                     <unittitle encodinganalog="name"/>
-                    <unitdate encodinganalog="unitDates" normal="2000-12-09"/>
+                    <unitdate encodinganalog="unitDates" normal="880-12-09"/>
                     <abstract encodinganalog="abstract"/>
                     <physdesc encodinganalog="extentAndMedium">
                         <genreform encodinganalog="extentAndMedium"/>

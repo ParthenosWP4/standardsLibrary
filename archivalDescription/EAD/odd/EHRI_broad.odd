@@ -222,8 +222,8 @@
             <constraintSpec ident="noc07c12" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c06">
-                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11" test="ead:c07">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11"
+                    test="ead:c07"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
               </constraint>
             </constraintSpec>
@@ -232,8 +232,8 @@
             <constraintSpec ident="noc07c12" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c07">
-                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11" test="ead:c08">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11"
+                    test="ead:c08"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
               </constraint>
             </constraintSpec>
@@ -242,8 +242,8 @@
             <constraintSpec ident="noc07c12" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c08">
-                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11" test="ead:c09">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11"
+                    test="ead:c09"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
               </constraint>
             </constraintSpec>
@@ -252,8 +252,8 @@
             <constraintSpec ident="noc07c12" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c09">
-                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11" test="ead:c10">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11"
+                    test="ead:c10"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
               </constraint>
             </constraintSpec>
@@ -262,8 +262,8 @@
             <constraintSpec ident="noc07c12" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c10">
-                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11" test="ead:c11">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11"
+                    test="ead:c11"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
               </constraint>
             </constraintSpec>
@@ -272,8 +272,8 @@
             <constraintSpec ident="noc07c12" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:c11">
-                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11" test="ead:c12">
-                    c subelements SHOULD be between c01 and c06 </report>
+                  <report xmlns="http://purl.oclc.org/dsdl/schematron" role="SHOULD-WP11"
+                    test="ead:c12"> c subelements SHOULD be between c01 and c06 </report>
                 </rule>
               </constraint>
             </constraintSpec>
@@ -364,8 +364,9 @@
               mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:eadheader">
-                  <assert xmlns="http://purl.oclc.org/dsdl/schematron" test="ead:profiledesc/ead:langusage/@langcode = 'eng'">If the language of
-                    the description is not English, a parallel form of the title in English should be
+                  <assert xmlns="http://purl.oclc.org/dsdl/schematron"
+                    test="ead:profiledesc/ead:langusage/@langcode = 'eng'">If the language of the
+                    description is not English, a parallel form of the title in English should be
                     added.</assert>
                 </rule>
               </constraint>
@@ -514,10 +515,11 @@
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:unitdate"><assert
                     xmlns="http://purl.oclc.org/dsdl/schematron" role="WP11"
-                    test="matches(@normal, '^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</assert></rule>
+                    test="matches(@normal, '^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}))-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')"
+                    >@normal attribute must respect ISO8601 pattern = YYYY-MM-DD</assert></rule>
               </constraint>
             </constraintSpec>
-            
+
           </elementSpec>
           <elementSpec ident="unitid" mode="change">
             <constraintSpec ident="notEmpty" scheme="isoschematron" type="EHRI" mode="add">
@@ -607,18 +609,18 @@
                 <remarks>
                   <p> This attribute is available in <gi>archdesc</gi>>, where the highest level of
                     material represented in the finding aid must be declared (e.g., collection,
-                    fonds, record group), and in c and c01-12 (e.g., subgroup, series,
-                    file). If none of the values in the semi-closed list are appropriate, the value
+                    fonds, record group), and in c and c01-12 (e.g., subgroup, series, file). If
+                    none of the values in the semi-closed list are appropriate, the value
                     "otherlevel" may be chosen and the term specified in the OTHERLEVEL attribute.
                     Values are: collection fonds class recordgrp series subfonds subgrp subseries
                     file item otherlevel </p>
                 </remarks>
               </attDef>
               <attDef ident="otherlevel">
-                <desc>The hierarchical level of the materials described in <gi>archdesc</gi>,
-                    c, <gi>c01-12</gi>, and <gi>archdescgrp</gi> can be specified when the
-                  semi-closed list in the LEVEL attribute (e.g., collection, fonds, series, etc.)
-                  does not contain an appropriate term.</desc>
+                <desc>The hierarchical level of the materials described in <gi>archdesc</gi>, c,
+                    <gi>c01-12</gi>, and <gi>archdescgrp</gi> can be specified when the semi-closed
+                  list in the LEVEL attribute (e.g., collection, fonds, series, etc.) does not
+                  contain an appropriate term.</desc>
                 <datatype>
                   <rng:data type="NMTOKEN"/>
                 </datatype>

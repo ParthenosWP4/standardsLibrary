@@ -25,7 +25,8 @@
                 added automatically by EHRI.</sch:assert>
         </sch:rule>
         <sch:rule context="ead:unitdate">
-            <sch:assert role="WP11" test="matches(@normal, '^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</sch:assert>
+            <!--<sch:assert role="WP11" test="matches(@normal, '^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</sch:assert>-->
+            <sch:assert role="WP11" test="matches(@normal, '^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}))-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">ISO8601</sch:assert>
         </sch:rule>
     </sch:pattern>
 </sch:schema>
