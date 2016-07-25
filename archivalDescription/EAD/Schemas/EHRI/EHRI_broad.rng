@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-07-25T15:39:16Z. .
+Schema generated from ODD source 2016-07-25T16:21:21Z. .
 TEI Edition: rev4
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -58,7 +58,14 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    </define>
    <define name="att.langcode.attributes">
       <ref name="att.langcode.attribute.langcode"/>
-      <ref name="att.langcode.attribute.langcode"/>
+   </define>
+   <define name="att.langcode.attribute.langcode">
+      <optional>
+         <attribute name="langcode">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The three-lettter code for the language in which an abstract is written abstract, for the language of the finding aid and the language of the materials language.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="EHRI_broad-att.langcode-langcode-regexLangcode-constraint-1">
@@ -69,7 +76,14 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    </pattern>
    <define name="att.scriptcode.attributes">
       <ref name="att.scriptcode.attribute.scriptcode"/>
-      <ref name="att.scriptcode.attribute.scriptcode"/>
+   </define>
+   <define name="att.scriptcode.attribute.scriptcode">
+      <optional>
+         <attribute name="scriptcode">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The four-letter code for the writing script used with a given language.</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="EHRI_broad-att.scriptcode-scriptcode-regexScriptcode-constraint-2">

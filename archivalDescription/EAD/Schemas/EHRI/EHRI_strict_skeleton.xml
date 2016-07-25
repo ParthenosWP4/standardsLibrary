@@ -26,7 +26,8 @@
             </publicationstmt>
         </filedesc>
         <profiledesc encodinganalog="maintenanceEvent">
-            <creation><date encodinganalog="creationDate"/>
+            <creation>
+                <date encodinganalog="creationDate"/>
             </creation>
             <langusage>
                 <language encodinganalog="languageUsed" langcode="fre" scriptcode="latn"/>

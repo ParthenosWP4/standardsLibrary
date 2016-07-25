@@ -668,9 +668,15 @@
             </attList>
           </classSpec>
           <!-- attribute langcode -->
-          <classSpec ident="att.langcode" type="atts" module="EAD" mode="change">
+          <classSpec ident="att.langcode" type="atts" module="EAD" mode="replace">
             <attList>
               <attDef ident="langcode" usage="opt">
+                <desc>The three-lettter code for the language in which an abstract
+                  is written <gi>abstract</gi>, for the language of the finding
+                  aid and the language of the materials <gi>language</gi>.</desc>
+                <datatype>
+                  <rng:text/>
+                </datatype>
                 <constraintSpec ident="regexLangcode" scheme="isoschematron" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -680,13 +686,22 @@
                         from ISO639-2b, as specified in the LANGENCODING attribute in eadheader</assert></rule>
                   </constraint>
                 </constraintSpec>
+                <remarks>
+                  <p>The codes should be taken from ISO639-2b, as specified in the
+                    LANGENCODING attribute in <gi>eadheader</gi>.</p>
+                </remarks>
               </attDef>
             </attList>
           </classSpec>
           <!-- attribute scriptcode -->
-          <classSpec ident="att.scriptcode" type="atts" module="EAD" mode="change">
+          <classSpec ident="att.scriptcode" type="atts" module="EAD" mode="replace">
             <attList>
               <attDef ident="scriptcode">
+                  <desc>The four-letter code for the writing script used with a given
+                    language.</desc>
+                  <datatype>
+                    <rng:text/>
+                  </datatype>
                 <constraintSpec ident="regexScriptcode" scheme="isoschematron" mode="add">
                   <constraint>
                     <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:language"
@@ -695,6 +710,10 @@
                         ISO 15924 Code for the Representation of Names of Scripts.</assert></rule>
                   </constraint>
                 </constraintSpec>
+                <remarks>
+                  <p>The code should be taken from ISO 15924 Code for the
+                    Representation of Names of Scripts.</p>
+                </remarks>
               </attDef>
             </attList>
           </classSpec>
