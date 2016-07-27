@@ -2273,7 +2273,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
@@ -2282,7 +2282,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="left"/>
                                     <valItem ident="right"/>
                                     <valItem ident="center"/>
@@ -4176,7 +4176,7 @@ ID	#IMPLIED, ID
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
@@ -4200,7 +4200,7 @@ ID	#IMPLIED, ID
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="O"/>
                                 </valList>
@@ -4209,7 +4209,7 @@ ID	#IMPLIED, ID
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="middle"/>
                                     <valItem ident="bottom"/>
@@ -6145,7 +6145,7 @@ TITLE	#IMPLIED, CDATA</attList> -->
                                 <datatype>
                                     <rng:ref name="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="simple"/>
                                     <valItem ident="deflist"/>
                                     <valItem ident="marked"/>
@@ -6427,7 +6427,7 @@ ID	#IMPLIED, ID</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="embed"/>
                                     <valItem ident="new"/>
                                 </valList>
@@ -6436,7 +6436,7 @@ ID	#IMPLIED, ID</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="onload"/>
                                     <valItem ident="onrequest"/>
                                 </valList>
@@ -8321,7 +8321,7 @@ ID	#IMPLIED, ID</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
@@ -8330,7 +8330,7 @@ ID	#IMPLIED, ID</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="middle"/>
                                     <valItem ident="bottom"/>
@@ -8408,7 +8408,7 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                                     <datatype>
                                         <rng:data type="data.enumerated"/>
                                     </datatype>
-                                    <valList  type="closed">
+                                    <valList type="closed">
                                         <valItem ident="header"/>
                                         <valItem ident="footer"/>
                                         <valItem ident="watermark"/>
@@ -8868,7 +8868,57 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         </remarks>
                     </elementSpec>
 
-
+                    <elementSpec ident="subtitle" module="EAD">
+                        <gloss>Subitle</gloss>
+                        <desc>A secondary or subsidiary name of an encoded finding aid that is
+                            subordinate to the main name encoded in <gi>titleproper</gi>. The
+                                <gi>subtitle</gi> element is available only within
+                                <gi>titlepage</gi> and <gi>titlestmt</gi> to capture bibliographic
+                            aspects of the finding aid. Subtitles of monographs, serials, paintings,
+                            and other such works mentioned in the finding aid are not separately
+                            encoded, but they may be listed as part of the <gi>title</gi>
+                            element.</desc>
+                        <classes>
+                            <memberOf key="att.EADGlobal"/>
+                            <memberOf key="model.refs"/>
+                            <memberOf key="model.access.title"/>
+                        </classes>
+                        <content>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.bare"/>
+                                    <rng:ref name="abbr"/>
+                                    <rng:ref name="date"/>
+                                    <rng:ref name="expan"/>
+                                    <rng:ref name="num"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
+                        </content>
+                        <!-- <attList>
+ALTRENDER 	#IMPLIED, CDATA
+AUDIENCE 	#IMPLIED, external, internal
+ENCODINGANALOG 	#IMPLIED, CDATA
+ID 	#IMPLIED, ID</attList> -->
+                        <exemplum>
+                            <teix:egXML>
+                                <filedesc xmlns="urn:isbn:1-931666-22-9">
+                                    <titlestmt>
+                                        <titleproper>Tom Stoppard</titleproper> 
+                                        <subtitle>An Inventory of His Papers at the Harry Ransom Humanities Research Center</subtitle>
+                                        <author>Finding aid written by Katherine Mosley</author>
+                                    </titlestmt>
+                                    <publicationstmt>
+                                        <publisher>The University of Texas at Austin, Harry Ransom Humanities Research Center</publisher>
+                                        <date>2000</date>
+                                    </publicationstmt>
+                                </filedesc>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
 
                     <elementSpec ident="table" module="EAD">
                         <gloss>Table</gloss>
@@ -8891,7 +8941,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="top"/>
                                     <valItem ident="bottom"/>
                                     <valItem ident="topbot"/>
@@ -8904,7 +8954,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
@@ -8913,7 +8963,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList  type="closed">
+                                <valList type="closed">
                                     <valItem ident="1"/>
                                     <valItem ident="0"/>
                                 </valList>
@@ -10060,7 +10110,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     to facilitate retrieval</desc>
                                 <datatype>
                                     <rng:data type="token">
-                                       <!-- <rng:param name="pattern"
+                                        <!-- <rng:param name="pattern"
                                             >(\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)(\/\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)?
                                         </rng:param>-->
                                     </rng:data>
