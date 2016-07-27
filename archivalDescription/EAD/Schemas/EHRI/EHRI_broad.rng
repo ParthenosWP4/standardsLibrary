@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-07-25T16:21:21Z. .
+Schema generated from ODD source 2016-07-27T14:02:23Z. .
 TEI Edition: rev4
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -880,6 +880,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    <define name="model.access.title">
       <choice>
          <ref name="model.access"/>
+         <ref name="subtitle"/>
          <ref name="title"/>
       </choice>
    </define>
@@ -1086,6 +1087,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <ref name="extref"/>
          <ref name="linkgrp"/>
          <ref name="ref"/>
+         <ref name="subtitle"/>
          <ref name="title"/>
       </choice>
    </define>
@@ -1096,6 +1098,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <ref name="extref"/>
          <ref name="linkgrp"/>
          <ref name="ref"/>
+         <ref name="subtitle"/>
          <ref name="title"/>
       </choice>
    </define>
@@ -1105,6 +1108,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
       <ref name="extref"/>
       <ref name="linkgrp"/>
       <ref name="ref"/>
+      <ref name="subtitle"/>
       <ref name="title"/>
    </define>
    <define name="model.refs_sequenceOptional">
@@ -1122,6 +1126,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
       </optional>
       <optional>
          <ref name="ref"/>
+      </optional>
+      <optional>
+         <ref name="subtitle"/>
       </optional>
       <optional>
          <ref name="title"/>
@@ -1144,6 +1151,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <ref name="ref"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="subtitle"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="title"/>
       </zeroOrMore>
    </define>
@@ -1162,6 +1172,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
       </oneOrMore>
       <oneOrMore>
          <ref name="ref"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="subtitle"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="title"/>
@@ -3995,6 +4008,23 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <empty/>
       </element>
    </define>
+   <define name="subtitle">
+      <element name="subtitle">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Subitle) A secondary or subsidiary name of an encoded finding aid that is subordinate to the main name encoded in titleproper. The subtitle element is available only within titlepage and titlestmt to capture bibliographic aspects of the finding aid. Subtitles of monographs, serials, paintings, and other such works mentioned in the finding aid are not separately encoded, but they may be listed as part of the title element.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.phrase.bare"/>
+               <ref name="abbr"/>
+               <ref name="date"/>
+               <ref name="expan"/>
+               <ref name="num"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.EADGlobal.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="table">
       <element name="table">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Table) A wrapper element for formatting information in a row and column display.</a:documentation>
@@ -4197,6 +4227,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
                <ref name="bibseries"/>
                <ref name="sponsor"/>
                <ref name="titleproper"/>
+               <ref name="subtitle"/>
             </choice>
          </oneOrMore>
          <ref name="att.EADGlobal.attributes"/>
@@ -4229,6 +4260,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             <oneOrMore>
                <ref name="titleproper"/>
             </oneOrMore>
+            <optional>
+               <ref name="subtitle"/>
+            </optional>
             <optional>
                <ref name="author"/>
             </optional>
