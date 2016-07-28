@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="urn:isbn:1-931666-22-9"><!--
-Schema generated from ODD source 2016-07-27T14:02:23Z. .
+Schema generated from ODD source 2016-07-28T09:20:55Z. .
 TEI Edition: rev4
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -71,7 +71,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
             id="EHRI_broad-att.langcode-langcode-regexLangcode-constraint-1">
       <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:language">
          <assert role="WP11" test="matches(@scriptcode, '^([a-zA-Z]{3})$')">The codes should be taken
-                        from ISO639-2b, as specified in the LANGENCODING attribute in eadheader</assert>
+                        from ISO639-2b, as specified in the LANGENCODING attribute in
+                        eadheader</assert>
       </rule>
    </pattern>
    <define name="att.scriptcode.attributes">
@@ -1414,8 +1415,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
                   id="EHRI_broad-archdesc-orignationDesirable-constraint-11">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:archdesc">
                <assert role="SHOULD"
-                       test="ead:did/ead:origination and normalize-space(ead:did/ead:origination)">archdesc SHOULD have
-                    a non-empty origination</assert>
+                       test="ead:did/ead:origination and normalize-space(ead:did/ead:origination)">archdesc SHOULD have a non-empty origination</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -1429,14 +1429,15 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
                   id="EHRI_broad-archdesc-archdescProcessinfoDateDesirable-constraint-13">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:archdesc">
                <assert role="SHOULD-WP17"
-                       test="normalize-space(ead:processinfo/ead:p/ead:date)">archdesc-processinfo SHOULD have a
-                    non empty date</assert>
+                       test="normalize-space(ead:processinfo/ead:p/ead:date)">archdesc-processinfo
+                    SHOULD have a non empty date</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-archdesc-langmaterialPossible-constraint-14">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:archdesc">
-               <assert role="COULD" test="ead:did/ead:langmaterial">archdesc COULD have a langmaterial</assert>
+               <assert role="COULD" test="ead:did/ead:langmaterial">archdesc COULD have a
+                  langmaterial</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -1472,15 +1473,13 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-archdesc-oddPossible-constraint-20">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:archdesc">
-               <assert role="COULD" test="ead:odd">archdesc
-                    COULD have an odd</assert>
+               <assert role="COULD" test="ead:odd">archdesc COULD have an odd</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-archdesc-notePossible-constraint-21">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:archdesc">
-               <assert role="COULD" test="ead:note">archdesc
-                    COULD have a note</assert>
+               <assert role="COULD" test="ead:note">archdesc COULD have a note</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -2443,8 +2442,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-did-unitidRequired-constraint-48">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:did">
-               <assert role="MUST-WP19" test="ead:unitid">a
-                    did MUST have a unitid, according 17.3 and WP19</assert>
+               <assert role="MUST-WP19" test="ead:unitid">a did MUST have a unitid, according 17.3 and WP19</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -2598,22 +2596,22 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-eadheader-profiledescRequired-constraint-54">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadheader">
-                  <assert role="MUST-WP19" test="ead:profiledesc">eadheader must contain a profiledesc element</assert>
+                  <assert role="MUST-WP19" test="ead:profiledesc">eadheader must contain a profiledesc
+                  element</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-eadheader-langcodeNotEng-constraint-55">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadheader">
                   <assert test="ead:profiledesc/ead:langusage/ead:language/@langcode = 'eng'"
-                       role="SHOULD-WP11">If the language of the description is not English, a parallel form of the title
-                    in English should be added.</assert>
+                       role="SHOULD-WP11">If the language of the description is not English, a parallel
+                    form of the title in English should be added.</assert>
                 </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-eadheader-creationDateNotempty-constraint-56">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:eadheader">
-               <assert test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)">eadheader COULD have a
-                    non-empty creation-date</assert>
+               <assert test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)">eadheader COULD have a non-empty creation-date</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -3550,8 +3548,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-physdesc-nonemptyPhysdescDesirable-constraint-63">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:physdesc">
-               <assert role="SHOULDWP17" test="normalize-space(ead:extent)">a did SHOULD have a non-empty physdesc-extent,
-                    according to 17.3</assert>
+               <assert role="SHOULDWP17" test="normalize-space(ead:extent)">a did SHOULD have a non-empty
+                    physdesc-extent, according to 17.3</assert>
             </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
@@ -4309,9 +4307,24 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="EHRI_broad-unitdate-normalRegex-constraint-71">
             <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="ead:unitdate">
-               <assert role="WP11"
-                       test="matches(@normal, '^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}))-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')">@normal attribute must respect ISO8601 pattern = YYYY-MM-DD</assert>
-            </rule>
+                
+                <assert role="MUST-EAD"
+                       test="matches(@normal, '^(\d{4}-?\d{2}-?\d{2}/?){1,2}$')">date format MUST be
+                  valid</assert>
+                
+                <let name="start-date" value="replace(@normal, '/.*', '')"/>
+                <let name="start-date" value="replace($start-date, '-', '')"/>
+                <let name="start-date"
+                    value="string-join((substring($start-date, 1, 4), substring($start-date, 5, 2), substring($start-date, 7, 2)), '-')"/>
+                <assert role="MUST-EAD" test="$start-date castable as xs:date">start date MUST exist</assert>
+                
+                <let name="end-date" value="replace(@normal, '.*/', '')"/>
+                <let name="end-date" value="replace($end-date, '-', '')"/>
+                <let name="end-date"
+                    value="string-join((substring($end-date, 1, 4), substring($end-date, 5, 2), substring($end-date, 7, 2)), '-')"/>
+                <assert role="MUST-EAD" test="$end-date castable as xs:date">end date MUST
+                  exist</assert>
+                </rule>
          </pattern>
          <ref name="att.EADGlobal.attributes"/>
          <ref name="att.normalized.attributes"/>

@@ -293,8 +293,7 @@ element arc { <a class="link_ref" href="#TEI.att.xlink" title="att.xlink">att.xl
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
 &lt;s:assert role="SHOULD"
- test="ead:did/ead:origination and normalize-space(ead:did/ead:origination)"&gt;archdesc SHOULD have
- a non-empty origination&lt;/s:assert&gt;
+ test="ead:did/ead:origination and normalize-space(ead:did/ead:origination)"&gt;archdesc SHOULD have a non-empty origination&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
 &lt;s:assert role="SHOULD-WP17"
@@ -303,12 +302,13 @@ element arc { <a class="link_ref" href="#TEI.att.xlink" title="att.xlink">att.xl
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
 &lt;s:assert role="SHOULD-WP17"
- test="normalize-space(ead:processinfo/ead:p/ead:date)"&gt;archdesc-processinfo SHOULD have a
- non empty date&lt;/s:assert&gt;
+ test="normalize-space(ead:processinfo/ead:p/ead:date)"&gt;archdesc-processinfo
+ SHOULD have a non empty date&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
 &lt;s:assert role="COULD"
- test="ead:did/ead:langmaterial"&gt;archdesc COULD have a langmaterial&lt;/s:assert&gt;
+ test="ead:did/ead:langmaterial"&gt;archdesc COULD have a
+ langmaterial&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
 &lt;s:assert role="COULD" test="ead:custodhist"&gt;archdesc COULD have a custodhist&lt;/s:assert&gt;
@@ -330,12 +330,10 @@ element arc { <a class="link_ref" href="#TEI.att.xlink" title="att.xlink">att.xl
  test="ead:bibliography"&gt;archdesc COULD have a bibliography&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
-&lt;s:assert role="COULD" test="ead:odd"&gt;archdesc
- COULD have an odd&lt;/s:assert&gt;
+&lt;s:assert role="COULD" test="ead:odd"&gt;archdesc COULD have an odd&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
-&lt;s:assert role="COULD" test="ead:note"&gt;archdesc
- COULD have a note&lt;/s:assert&gt;
+&lt;s:assert role="COULD" test="ead:note"&gt;archdesc COULD have a note&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:archdesc"&gt;
 &lt;s:assert role="COULD"
@@ -1597,8 +1595,7 @@ element descrules { <a class="link_ref" href="#TEI.att.EADGlobal" title="att.EAD
  <span class="element">&lt;/c01&gt;</span>
 <span class="element">&lt;/dsc&gt;</span></div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:did"&gt;
-&lt;s:assert role="MUST-WP19" test="ead:unitid"&gt;a
- did MUST have a unitid, according 17.3 and WP19&lt;/s:assert&gt;
+&lt;s:assert role="MUST-WP19" test="ead:unitid"&gt;a did MUST have a unitid, according 17.3 and WP19&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:did"&gt;
 &lt;s:assert role="MUST-WP19"
@@ -1889,16 +1886,16 @@ element ead
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:eadheader"&gt;
 &lt;s:assert role="MUST-WP19"
- test="ead:profiledesc"&gt;eadheader must contain a profiledesc element&lt;/s:assert&gt;
+ test="ead:profiledesc"&gt;eadheader must contain a profiledesc
+ element&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:eadheader"&gt;
 &lt;s:assert test="ead:profiledesc/ead:langusage/ead:language/@langcode = 'eng'"
- role="SHOULD-WP11"&gt;If the language of the description is not English, a parallel form of the title
- in English should be added.&lt;/s:assert&gt;
+ role="SHOULD-WP11"&gt;If the language of the description is not English, a parallel
+ form of the title in English should be added.&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:eadheader"&gt;
-&lt;s:assert test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)"&gt;eadheader COULD have a
- non-empty creation-date&lt;/s:assert&gt;
+&lt;s:assert test="ead:creation/ead:date and normalize-space(ead:creation/ead:date)"&gt;eadheader COULD have a non-empty creation-date&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Content model</span></td><td class="wovenodd-col2"><pre class="pre_eg cdata">
 &lt;content autoPrefix="true"/&gt;
     </pre></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schema Declaration</span></td><td class="wovenodd-col2"><pre class="pre_eg">
@@ -3194,8 +3191,8 @@ element persname
 <span class="element">&lt;/c&gt;</span></div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:physdesc"&gt;
 &lt;s:assert role="SHOULDWP17"
- test="normalize-space(ead:extent)"&gt;a did SHOULD have a non-empty physdesc-extent,
- according to 17.3&lt;/s:assert&gt;
+ test="normalize-space(ead:extent)"&gt;a did SHOULD have a non-empty
+ physdesc-extent, according to 17.3&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Content model</span></td><td class="wovenodd-col2"><pre class="pre_eg cdata">
 &lt;content autoPrefix="true"/&gt;
     </pre></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schema Declaration</span></td><td class="wovenodd-col2"><pre class="pre_eg">
@@ -4242,8 +4239,28 @@ element titlestmt
  attribute&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:unitdate"&gt;
-&lt;s:assert role="WP11"
- test="matches(@normal, '^(([0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}))-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$')"&gt;@normal attribute must respect ISO8601 pattern = YYYY-MM-DD&lt;/s:assert&gt;
+&lt;s:assert role="MUST-EAD"
+ test="matches(@normal, '^(\d{4}-?\d{2}-?\d{2}/?){1,2}$')"&gt;date format MUST be
+ valid&lt;/s:assert&gt;
+&lt;s:let name="start-date"
+ value="replace(@normal, '/.*', '')"/&gt;
+&lt;s:let name="start-date"
+ value="replace($start-date, '-', '')"/&gt;
+&lt;s:let name="start-date"
+ value="string-join((substring($start-date, 1, 4), substring($start-date, 
+ 5, 2), substring($start-date, 7, 2)), '-')"/&gt;
+&lt;s:assert role="MUST-EAD"
+ test="$start-date castable as xs:date"&gt;start date MUST exist&lt;/s:assert&gt;
+&lt;s:let name="end-date"
+ value="replace(@normal, '.*/', '')"/&gt;
+&lt;s:let name="end-date"
+ value="replace($end-date, '-', '')"/&gt;
+&lt;s:let name="end-date"
+ value="string-join((substring($end-date, 1, 4), substring($end-date, 5, 2), 
+ substring($end-date, 7, 2)), '-')"/&gt;
+&lt;s:assert role="MUST-EAD"
+ test="$end-date castable as xs:date"&gt;end date MUST
+ exist&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Content model</span></td><td class="wovenodd-col2"><pre class="pre_eg cdata">
 &lt;content autoPrefix="true"/&gt;
     </pre></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schema Declaration</span></td><td class="wovenodd-col2"><pre class="pre_eg">
@@ -4407,7 +4424,8 @@ element userestrict
 &lt;s:rule context="ead:language"&gt;
 &lt;s:assert role="WP11"
  test="matches(@scriptcode, '^([a-zA-Z]{3})$')"&gt;The codes should be taken
- from ISO639-2b, as specified in the LANGENCODING attribute in eadheader&lt;/s:assert&gt;
+ from ISO639-2b, as specified in the LANGENCODING attribute in
+ eadheader&lt;/s:assert&gt;
 &lt;/s:rule&gt;</div></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Note</span></td><td class="wovenodd-col2">The codes should be taken from ISO639-2b, as specified in the LANGENCODING attribute in <a class="link_ref" href="#TEI.eadheader" title="&lt;eadheader&gt;">&lt;eadheader&gt;</a>.</td></tr></table></div></td></tr></table></div></td></tr></table></div></div><div class="refdoc" id="TEI.att.normalized"><h4><span class="headingNumber">2.3.12. </span><span class="head">att.normalized</span></h4><div class="table"><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">att.normalized</span> <span>Definition of the <span class="att">normal</span> attribute</span></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Module</span></td><td class="wovenodd-col2">EAD</td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Members</span></td><td class="wovenodd-col2"><span class="showmembers1"><a class="link_odd_elementSpec" href="#TEI.date" title="&lt;date&gt;">date</a> <a class="link_odd_elementSpec" href="#TEI.unitdate" title="&lt;unitdate&gt;">unitdate</a></span></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Attributes</span></td><td class="wovenodd-col2"><div class="table"><table class="attList"><tr><td class="odd_label">normal</td><td class="odd_value"><span>A consistent form, usually from a controlled vocabulary list to facilitate retrieval</span><div class="table"><table class="attDef"><tr><td class="odd_label"><span lang="en" class="label">Status</span></td><td class="odd_value"><span lang="en">Optional</span></td></tr><tr><td class="odd_label"><span lang="en" class="label">Datatype</span></td><td class="odd_value"></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Note</span></td><td class="wovenodd-col2">In <a class="link_ref" href="#TEI.date" title="&lt;date&gt;">&lt;date&gt;</a> and <a class="link_ref" href="#TEI.unitdate" title="&lt;unitdate&gt;">&lt;unitdate&gt;</a>, the NORMAL attribute follows ISO 8601 Representation of Dates and Times, as specified in the DATEENCODING attribute in <a class="link_ref" href="#TEI.eadheader" title="&lt;eadheader&gt;">&lt;eadheader&gt;</a>.</td></tr></table></div></td></tr></table></div></td></tr></table></div></div><div class="refdoc" id="TEI.att.relatedencoding"><h4><span class="headingNumber">2.3.13. </span><span class="head">att.relatedencoding</span></h4><div class="table"><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">att.relatedencoding</span> </td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Module</span></td><td class="wovenodd-col2">EAD</td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Members</span></td><td class="wovenodd-col2"><span class="showmembers1"><a class="link_odd_elementSpec" href="#TEI.archdesc" title="&lt;archdesc&gt;">archdesc</a> <a class="link_odd_elementSpec" href="#TEI.archdescgrp" title="&lt;archdescgrp&gt;">archdescgrp</a> <a class="link_odd_elementSpec" href="#TEI.ead" title="&lt;ead&gt;">ead</a> <a class="link_odd_elementSpec" href="#TEI.eadheader" title="&lt;eadheader&gt;">eadheader</a></span></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Attributes</span></td><td class="wovenodd-col2"><div class="table"><table class="attList"><tr><td class="odd_label">relatedencoding</td><td class="odd_value"><span>A descriptive encoding system, such as MARC, ISAD(G), or Dublin Core, to which certain EAD elements can be mapped using the <span class="gi">&lt;encodinganalog&gt;</span> attribute.</span><div class="table"><table class="attDef"><tr><td class="odd_label"><span lang="en" class="label">Status</span></td><td class="odd_value"><span lang="en">Optional</span></td></tr><tr><td class="odd_label"><span lang="en" class="label">Datatype</span></td><td class="odd_value"></td></tr></table></div></td></tr></table></div></td></tr></table></div></div><div class="refdoc" id="TEI.att.rendered"><h4><span class="headingNumber">2.3.14. </span><span class="head">att.rendered</span></h4><div class="table"><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">att.rendered</span> </td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Module</span></td><td class="wovenodd-col2">EAD</td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Members</span></td><td class="wovenodd-col2"><span class="showmembers1"><a class="link_odd_elementSpec" href="#TEI.emph" title="&lt;emph&gt;">emph</a> <a class="link_odd_elementSpec" href="#TEI.title" title="&lt;title&gt;">title</a> <a class="link_odd_elementSpec" href="#TEI.titleproper" title="&lt;titleproper&gt;">titleproper</a></span></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Attributes</span></td><td class="wovenodd-col2"><div class="table"><table class="attList"><tr><td class="odd_label">render</td><td class="odd_value"><div class="table"><table class="attDef"><tr><td class="odd_label"><span lang="en" class="label">Status</span></td><td class="odd_value"><span lang="en">Optional</span></td></tr><tr><td class="odd_label"><span lang="en" class="label">Datatype</span></td><td class="odd_value"></td></tr><tr><td class="odd_label"><span lang="en" class="label">Legal values are:</span></td><td class="odd_value"><dl class="valList"><dt><span class="odd_label">altrender</span></dt><dd></dd><dt><span class="odd_label">bold</span></dt><dd></dd><dt><span class="odd_label">bolddoublequote</span></dt><dd></dd><dt><span class="odd_label">boldsinglequote</span></dt><dd></dd><dt><span class="odd_label">boldsmcaps</span></dt><dd></dd><dt><span class="odd_label">boldunderline</span></dt><dd></dd><dt><span class="odd_label">doublequote</span></dt><dd></dd><dt><span class="odd_label">italic</span></dt><dd></dd><dt><span class="odd_label">nonproport</span></dt><dd></dd><dt><span class="odd_label">singlequote</span></dt><dd></dd><dt><span class="odd_label">smcaps</span></dt><dd></dd><dt><span class="odd_label">sub</span></dt><dd></dd><dt><span class="odd_label">super</span></dt><dd></dd><dt><span class="odd_label">underline</span></dt><dd></dd></dl></td></tr></table></div></td></tr></table></div></td></tr></table></div></div><div class="refdoc" id="TEI.att.roled"><h4><span class="headingNumber">2.3.15. </span><span class="head">att.roled</span></h4><div class="table"><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">att.roled</span> </td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Module</span></td><td class="wovenodd-col2">EAD</td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Members</span></td><td class="wovenodd-col2"><span class="showmembers1"><a class="link_odd_elementSpec" href="#TEI.archref" title="&lt;archref&gt;">archref</a> <a class="link_odd_elementSpec" href="#TEI.bibref" title="&lt;bibref&gt;">bibref</a> <a class="link_odd_elementSpec" href="#TEI.corpname" title="&lt;corpname&gt;">corpname</a> <a class="link_odd_elementSpec" href="#TEI.famname" title="&lt;famname&gt;">famname</a> <a class="link_odd_elementSpec" href="#TEI.geogname" title="&lt;geogname&gt;">geogname</a> <a class="link_odd_elementSpec" href="#TEI.name" title="&lt;name&gt;">name</a> <a class="link_odd_elementSpec" href="#TEI.persname" title="&lt;persname&gt;">persname</a> <a class="link_odd_elementSpec" href="#TEI.refloc" title="&lt;refloc&gt;">refloc</a> <a class="link_odd_elementSpec" href="#TEI.runner" title="&lt;runner&gt;">runner</a></span></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Attributes</span></td><td class="wovenodd-col2"><div class="table"><table class="attList"><tr><td class="odd_label">role</td><td class="odd_value"><span>A contextual role or relationship for the person, family, corporate body, or geographic location. In linking elements such as <a class="link_ref" href="#TEI.ptr" title="&lt;ptr&gt;">&lt;ptr/&gt;</a>, information that explains to application software the part that a remote resource plays in a link.</span><div class="table"><table class="attDef"><tr><td class="odd_label"><span lang="en" class="label">Status</span></td><td class="odd_value"><span lang="en">Optional</span></td></tr></table></div></td></tr></table></div></td></tr></table></div></div><div class="refdoc" id="TEI.att.scriptcode"><h4><span class="headingNumber">2.3.16. </span><span class="head">att.scriptcode</span></h4><div class="table"><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">att.scriptcode</span> </td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Module</span></td><td class="wovenodd-col2">EAD</td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Members</span></td><td class="wovenodd-col2"><span class="showmembers1"><a class="link_odd_elementSpec" href="#TEI.language" title="&lt;language&gt;">language</a></span></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Attributes</span></td><td class="wovenodd-col2"><div class="table"><table class="attList"><tr><td class="odd_label">scriptcode</td><td class="odd_value"><span>The four-letter code for the writing script used with a given language.</span><div class="table"><table class="attDef"><tr><td class="odd_label"><span lang="en" class="label">Status</span></td><td class="odd_value"><span lang="en">Optional</span></td></tr><tr><td class="odd_label"><span lang="en" class="label">Datatype</span></td><td class="odd_value"></td></tr><tr><td class="wovenodd-col1"><span lang="en" class="label">Schematron</span></td><td class="wovenodd-col2"><div class="pre">
 &lt;s:rule context="ead:language"&gt;
 &lt;s:assert role="WP11"
@@ -4418,6 +4436,6 @@ element userestrict
 	  Generated from index.xml using XSLT stylesheets version 7.41.0
 
 	       based on http://www.tei-c.org/Stylesheets/
-	       on 2016-07-27T14:02:33Z.
+	       on 2016-07-28T09:21:02Z.
 	       SAXON PE 9.6.0.7.
 		 --></address></div></body></html>
