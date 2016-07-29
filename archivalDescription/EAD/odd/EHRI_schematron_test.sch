@@ -35,5 +35,8 @@
         <sch:rule context="ead:altformavail/ead:p">
             <sch:assert role="WP11" test="not(normalize-space(.))">link to repository authority list or need for extra information</sch:assert>
         </sch:rule>
+        <sch:rule context="ead:controlaccess/ead:corpname | ead:controlaccess/ead:famname | ead:controlaccess/ead:persname | ead:controlaccess/ead:subject">
+            <sch:assert test="if (@authfilenumber) then (@source) else ()">WTF</sch:assert>
+        </sch:rule>
     </sch:pattern>
 </sch:schema>

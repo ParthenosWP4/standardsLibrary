@@ -114,6 +114,12 @@
         <bibliography>
             <p encodinganalog="sources"></p>
         </bibliography>
+        <controlaccess >
+            <corpname source="dfdfd"/>
+            <famname></famname>
+            <persname></persname>
+            <subject></subject>
+        </controlaccess>
         <dsc>
             <c01 level="">
                 <!-- @level ->levelOfDescription -->

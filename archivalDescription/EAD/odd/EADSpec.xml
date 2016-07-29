@@ -112,7 +112,7 @@
                         </remarks>
                     </elementSpec>
 
-                    <elementSpec ident="abstract" module="EAD">
+                    <elementSpec ident="abstract" module="EAD" prefix="EAD">
                         <gloss>Abstract</gloss>
                         <desc>A very brief summary of the materials being described, used primarily
                             to encode bits of biographical or historical information about the

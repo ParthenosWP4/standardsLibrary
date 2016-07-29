@@ -317,6 +317,16 @@
                     test="ead:orgname">controlaccess COULD have a orgname</assert></rule>
               </constraint>
             </constraintSpec>
+            <constraintSpec ident="authfilenumberSourceReq" scheme="isoschematron" type="EHRI">
+              <constraint>
+                <rule xmlns="http://purl.oclc.org/dsdl/schematron"
+                  context="ead:controlaccess/ead:corpname | ead:controlaccess/ead:famname | ead:controlaccess/ead:persname | ead:controlaccess/ead:subject">
+                  <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="COULD"
+                    test="if (@authfilenumber) then (@source) else ()">If the access points have an
+                    attribute AUTHFILENUMBER, an attribute SOURCE should be present</assert>
+                </rule>
+              </constraint>
+            </constraintSpec>
           </elementSpec>
           <elementSpec ident="did" mode="change">
             <constraintSpec ident="unitidRequired" scheme="isoschematron" type="EHRI" mode="add">
@@ -515,28 +525,28 @@
             <constraintSpec ident="normalRegex" scheme="isoschematron" type="EHRI" mode="add">
               <constraint>
                 <rule xmlns="http://purl.oclc.org/dsdl/schematron" context="ead:unitdate">
-                <!-- check date format -->
-                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
-                  test="matches(@normal, '^(\d{4}-?\d{2}-?\d{2}/?){1,2}$')">date format MUST be
-                  valid</assert>
-                <!-- check existence of start date -->
-                <let xmlns="http://purl.oclc.org/dsdl/schematron" name="start-date"
-                  value="replace(@normal, '/.*', '')"/>
-                <let xmlns="http://purl.oclc.org/dsdl/schematron" name="start-date"
-                  value="replace($start-date, '-', '')"/>
-                <let xmlns="http://purl.oclc.org/dsdl/schematron" name="start-date"
-                  value="string-join((substring($start-date, 1, 4), substring($start-date, 5, 2), substring($start-date, 7, 2)), '-')"/>
-                <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
-                  test="$start-date castable as xs:date">start date MUST exist</assert>
-                <!-- check existence of end date -->
-                <let xmlns="http://purl.oclc.org/dsdl/schematron" name="end-date"
-                  value="replace(@normal, '.*/', '')"/>
-                <let xmlns="http://purl.oclc.org/dsdl/schematron" name="end-date"
-                  value="replace($end-date, '-', '')"/>
-                <let xmlns="http://purl.oclc.org/dsdl/schematron" name="end-date"
-                  value="string-join((substring($end-date, 1, 4), substring($end-date, 5, 2), substring($end-date, 7, 2)), '-')"/>
-                <assert role="MUST-EAD" test="$end-date castable as xs:date">end date MUST
-                  exist</assert>
+                  <!-- check date format -->
+                  <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
+                    test="matches(@normal, '^(\d{4}-?\d{2}-?\d{2}/?){1,2}$')">date format MUST be
+                    valid</assert>
+                  <!-- check existence of start date -->
+                  <let xmlns="http://purl.oclc.org/dsdl/schematron" name="start-date"
+                    value="replace(@normal, '/.*', '')"/>
+                  <let xmlns="http://purl.oclc.org/dsdl/schematron" name="start-date"
+                    value="replace($start-date, '-', '')"/>
+                  <let xmlns="http://purl.oclc.org/dsdl/schematron" name="start-date"
+                    value="string-join((substring($start-date, 1, 4), substring($start-date, 5, 2), substring($start-date, 7, 2)), '-')"/>
+                  <assert xmlns="http://purl.oclc.org/dsdl/schematron" role="MUST-EAD"
+                    test="$start-date castable as xs:date">start date MUST exist</assert>
+                  <!-- check existence of end date -->
+                  <let xmlns="http://purl.oclc.org/dsdl/schematron" name="end-date"
+                    value="replace(@normal, '.*/', '')"/>
+                  <let xmlns="http://purl.oclc.org/dsdl/schematron" name="end-date"
+                    value="replace($end-date, '-', '')"/>
+                  <let xmlns="http://purl.oclc.org/dsdl/schematron" name="end-date"
+                    value="string-join((substring($end-date, 1, 4), substring($end-date, 5, 2), substring($end-date, 7, 2)), '-')"/>
+                  <assert role="MUST-EAD" test="$end-date castable as xs:date">end date MUST
+                    exist</assert>
                 </rule>
                 <!-- 
                  My old rule
