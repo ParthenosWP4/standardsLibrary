@@ -1,0 +1,6 @@
+[submodule "prosopography/prosopography_LJP"]
+	path = prosopography/prosopography_LJP
+	url = https://github.com/sgraziella/prosopography_LJP.git
+[submodule "prosopography/ExportEacCpf"]
+	path = prosopography/ExportEacCpf
+	url = https://github.com/sgraziella/ExportEacCpf.git
