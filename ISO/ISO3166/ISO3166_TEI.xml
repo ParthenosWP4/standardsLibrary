@@ -1,0 +1,4287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Reference table for country codes (ISO 3166 a2 and a3)</title>
+            <respStmt>
+               <resp>Editor</resp>
+               <name>Charles Riondet</name>
+            </respStmt>
+            <funder>Parthenos</funder>
+            <ref type="url">http://parthenos-project.eu</ref>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>
+               <name>Dariah</name>
+               <ref type="url">http://dariah.eu</ref>
+            </distributor>
+            <distributor>
+               <name>Parthenos</name>
+               <ref type="url">http://parthenos-project.eu</ref>
+            </distributor>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/"
+                        notBefore="2013-01-01">
+                  <p>The Creative Commons Attribution 4.0 International (CC BY 4.0)
+                                    Licence applies to this document.</p>
+                  <p>The material contained in this document must be quoted as
+                                    follows: <q>Reference table for country codes (ISO 3166 a2 and a3)</q>.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>...</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>Language subtags</head>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AFG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">AFGHANISTAN</string>
+                     <string xml:lang="en">AFGHANISTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Afghanistan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ZA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ZAF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">AFRIQUE DU SUD</string>
+                     <string xml:lang="en">SOUTH AFRICA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">South Africa</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AX"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ALA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÅLAND, ÎLES</string>
+                     <string xml:lang="en">ÅLAND ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Åland Islands</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ALB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ALBANIE</string>
+                     <string xml:lang="en">ALBANIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Albania</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="DZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="DZA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ALGÉRIE</string>
+                     <string xml:lang="en">ALGERIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Algeria</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="DE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="DEU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ALLEMAGNE</string>
+                     <string xml:lang="en">GERMANY</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">Germany</string>
+                     <string xml:lang="de">Deutschland</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AND"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ANDORRE</string>
+                     <string xml:lang="en">ANDORRA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Andorra</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AGO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ANGOLA</string>
+                     <string xml:lang="en">ANGOLA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Angola</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AIA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ANGUILLA</string>
+                     <string xml:lang="en">ANGUILLA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Anguilla</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AQ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ATA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ANTARCTIQUE</string>
+                     <string xml:lang="en">ANTARCTICA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Antartica</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ATG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ANTIGUA-ET-BARBUDA</string>
+                     <string xml:lang="en">ANTIGUA AND BARBUDA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Antigua and Barbuda</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ANT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ANTILLES NÉERLANDAISES</string>
+                     <string xml:lang="en">NETHERLANDS ANTILLES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Netherlands Antilles</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SAU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ARABIE SAOUDITE</string>
+                     <string xml:lang="en">SAUDI ARABIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Saudi Arabia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ARG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ARGENTINE</string>
+                     <string xml:lang="en">ARGENTINA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Argentina</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ARM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ARMÉNIE</string>
+                     <string xml:lang="en">ARMENIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Armenia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ABW"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ARUBA</string>
+                     <string xml:lang="en">ARUBA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Aruba</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AUS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">AUSTRALIE</string>
+                     <string xml:lang="en">AUSTRALIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Australia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AUT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">AUTRICHE</string>
+                     <string xml:lang="en">AUSTRIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Austria</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="AZE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">AZERBAÏDJAN</string>
+                     <string xml:lang="en">AZERBAIJAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Azerbaijan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BHS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BAHAMAS</string>
+                     <string xml:lang="en">BAHAMAS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Bahamas</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BHR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BAHREÏN</string>
+                     <string xml:lang="en">BAHRAIN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Bahrain</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BGD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BANGLADESH</string>
+                     <string xml:lang="en">BANGLADESH</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BB"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BRB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BARBADE</string>
+                     <string xml:lang="en">BARBADOS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BLR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BÉLARUS</string>
+                     <string xml:lang="en">BELARUS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Belarus</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BEL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BELGIQUE</string>
+                     <string xml:lang="en">BELGIUM</string>
+                     <string xml:lang="en">Belgium</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BLZ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BELIZE</string>
+                     <string xml:lang="en">BELIZE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Belize</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BJ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BEN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BÉNIN</string>
+                     <string xml:lang="en">BENIN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Benin</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BMU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BERMUDES</string>
+                     <string xml:lang="en">BERMUDA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BTN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BHOUTAN</string>
+                     <string xml:lang="en">BHUTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BOL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BOLIVIE</string>
+                     <string xml:lang="en">BOLIVIA, PLURINATIONAL STATE OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BIH"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BOSNIE-HERZÉGOVINE</string>
+                     <string xml:lang="en">BOSNIA AND HERZEGOVINA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BWA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BOTSWANA</string>
+                     <string xml:lang="en">BOTSWANA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BV"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BVT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BOUVET, ÎLE</string>
+                     <string xml:lang="en">BOUVET ISLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BRA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BRÉSIL</string>
+                     <string xml:lang="en">BRAZIL</string>
+                     <string xml:lang="en">Brazil</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BRN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BRUNÉI DARUSSALAM</string>
+                     <string xml:lang="en">BRUNEI DARUSSALAM</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BGR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BULGARIE</string>
+                     <string xml:lang="en">BULGARIA</string>
+                     <string xml:lang="en">Bulgaria</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BFA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BURKINA FASO</string>
+                     <string xml:lang="en">BURKINA FASO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BDI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">BURUNDI</string>
+                     <string xml:lang="en">BURUNDI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CYM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CAÏMANS, ÎLES</string>
+                     <string xml:lang="en">CAYMAN ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KHM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CAMBODGE</string>
+                     <string xml:lang="en">CAMBODIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CMR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CAMEROUN</string>
+                     <string xml:lang="en">CAMEROON</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CAN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CANADA</string>
+                     <string xml:lang="en">CANADA</string>
+                     <string xml:lang="en">Canada</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CV"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CPV"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CAP-VERT</string>
+                     <string xml:lang="en">CAPE VERDE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CAF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CENTRAFRICAINE, RÉPUBLIQUE</string>
+                     <string xml:lang="en">CENTRAL AFRICAN REPUBLIC</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CHL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CHILI</string>
+                     <string xml:lang="en">CHILE</string>
+                     <string xml:lang="en">Chile</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CHN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CHINE</string>
+                     <string xml:lang="en">CHINA</string>
+                     <string xml:lang="en">China</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">People’s Republic of China</string>
+                     <string xml:lang="en">People’s Republic China</string>
+                     <string xml:lang="en">P.R. China</string>
+                     <string xml:lang="en">Republic of China</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CX"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CXR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CHRISTMAS, ÎLE</string>
+                     <string xml:lang="en">CHRISTMAS ISLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CYP"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CHYPRE</string>
+                     <string xml:lang="en">CYPRUS</string>
+                     <string xml:lang="en">Cyprus</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CCK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">COCOS (KEELING), ÎLES</string>
+                     <string xml:lang="en">COCOS (KEELING) ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="COL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">COLOMBIE</string>
+                     <string xml:lang="en">COLOMBIA</string>
+                     <string xml:lang="en">Colombia</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="COM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">COMORES</string>
+                     <string xml:lang="en">COMOROS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="COG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CONGO</string>
+                     <string xml:lang="en">CONGO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="COD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CONGO, LA RÉPUBLIQUE DÉMOCRATIQUE DU</string>
+                     <string xml:lang="en">CONGO, THE DEMOCRATIC REPUBLIC OF THE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="COK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">COOK, ÎLES</string>
+                     <string xml:lang="en">COOK ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KOR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CORÉE, RÉPUBLIQUE DE</string>
+                     <string xml:lang="en">KOREA, REPUBLIC OF</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">Korea</string>
+                     <string xml:lang="en">South Korea</string>
+                     <string xml:lang="en">Republic of Korea</string>
+                     <string xml:lang="en">Korea, Republic of</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KP"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PRK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CORÉE, RÉPUBLIQUE POPULAIRE DÉMOCRATIQUE
+                            DE</string>
+                     <string xml:lang="en">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC
+                            OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CRI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">COSTA RICA</string>
+                     <string xml:lang="en">COSTA RICA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Costa Rica</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CIV"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CÔTE D'IVOIRE</string>
+                     <string xml:lang="en">CÔTE D'IVOIRE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">CÔTE D'IVOIRE</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="HR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="HRV"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CROATIE</string>
+                     <string xml:lang="en">CROATIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Croatia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CUB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">CUBA</string>
+                     <string xml:lang="en">CUBA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Cuba</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="DK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="DNK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">DANEMARK</string>
+                     <string xml:lang="en">DENMARK</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Denmark</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="DJ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="DJI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">DJIBOUTI</string>
+                     <string xml:lang="en">DJIBOUTI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="DO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="DOM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">DOMINICAINE, RÉPUBLIQUE</string>
+                     <string xml:lang="en">DOMINICAN REPUBLIC</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="DM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="DMA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">DOMINIQUE</string>
+                     <string xml:lang="en">DOMINICA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="EG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="EGY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÉGYPTE</string>
+                     <string xml:lang="en">EGYPT</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Egypt</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SV"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SLV"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">EL SALVADOR</string>
+                     <string xml:lang="en">EL SALVADOR</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ARE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÉMIRATS ARABES UNIS</string>
+                     <string xml:lang="en">UNITED ARAB EMIRATES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">UAE</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="EC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ECU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÉQUATEUR</string>
+                     <string xml:lang="en">ECUADOR</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ER"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ERI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÉRYTHRÉE</string>
+                     <string xml:lang="en">ERITREA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ES"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ESP"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ESPAGNE</string>
+                     <string xml:lang="en">SPAIN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Spain</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="EE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="EST"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ESTONIE</string>
+                     <string xml:lang="en">ESTONIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Estonia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="US"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="USA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÉTATS-UNIS</string>
+                     <string xml:lang="en">UNITED STATES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">United States</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ET"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ETH"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÉTHIOPIE</string>
+                     <string xml:lang="en">ETHIOPIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Ethiopia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="FK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="FLK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">FALKLAND, ÎLES (MALVINAS)</string>
+                     <string xml:lang="en">FALKLAND ISLANDS (MALVINAS)</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="FO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="FRO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">FÉROÉ, ÎLES</string>
+                     <string xml:lang="en">FAROE ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="FJ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="FJI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">FIDJI</string>
+                     <string xml:lang="en">FIJI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="FI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="FIN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">FINLANDE</string>
+                     <string xml:lang="en">FINLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Finland</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="FR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="FRA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">FRANCE</string>
+                     <string xml:lang="en">FRANCE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">France</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GAB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GABON</string>
+                     <string xml:lang="en">GABON</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Gabon</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GMB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GAMBIE</string>
+                     <string xml:lang="en">GAMBIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GEO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GÉORGIE</string>
+                     <string xml:lang="en">GEORGIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Georgia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SGS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GÉORGIE DU SUD ET LES ÎLES SANDWICH DU
+                            SUD</string>
+                     <string xml:lang="en">SOUTH GEORGIA AND THE SOUTH SANDWICH
+                            ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GHA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GHANA</string>
+                     <string xml:lang="en">GHANA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GIB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GIBRALTAR</string>
+                     <string xml:lang="en">GIBRALTAR</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GRC"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GRÈCE</string>
+                     <string xml:lang="en">GREECE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Greece</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GRD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GRENADE</string>
+                     <string xml:lang="en">GRENADA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GRL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GROENLAND</string>
+                     <string xml:lang="en">GREENLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GP"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GLP"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUADELOUPE</string>
+                     <string xml:lang="en">GUADELOUPE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GUM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUAM</string>
+                     <string xml:lang="en">GUAM</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GTM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUATEMALA</string>
+                     <string xml:lang="en">GUATEMALA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Guatemala</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GGY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUERNESEY</string>
+                     <string xml:lang="en">GUERNSEY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GIN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUINÉE</string>
+                     <string xml:lang="en">GUINEA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GNB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUINÉE-BISSAU</string>
+                     <string xml:lang="en">GUINEA-BISSAU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GQ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GNQ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUINÉE ÉQUATORIALE</string>
+                     <string xml:lang="en">EQUATORIAL GUINEA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GUY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUYANA</string>
+                     <string xml:lang="en">GUYANA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GUF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">GUYANE FRANÇAISE</string>
+                     <string xml:lang="en">FRENCH GUIANA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="HT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="HTI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">HAÏTI</string>
+                     <string xml:lang="en">HAITI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="HM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="HMD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">HEARD, ÎLE ET MCDONALD, ÎLES</string>
+                     <string xml:lang="en">HEARD ISLAND AND MCDONALD ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="HN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="HND"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">HONDURAS</string>
+                     <string xml:lang="en">HONDURAS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Honduras</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="HK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="HKG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">HONG-KONG</string>
+                     <string xml:lang="en">HONG KONG</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Hong Kong</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="HU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="HUN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">HONGRIE</string>
+                     <string xml:lang="en">HUNGARY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Hungary</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IMN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÎLE DE MAN</string>
+                     <string xml:lang="en">ISLE OF MAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="UM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="UMI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÎLES MINEURES ÉLOIGNÉES DES
+                            ÉTATS-UNIS</string>
+                     <string xml:lang="en">UNITED STATES MINOR OUTLYING ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VGB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÎLES VIERGES BRITANNIQUES</string>
+                     <string xml:lang="en">VIRGIN ISLANDS, BRITISH</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VIR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ÎLES VIERGES DES ÉTATS-UNIS</string>
+                     <string xml:lang="en">VIRGIN ISLANDS, U.S.</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IND"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">INDE</string>
+                     <string xml:lang="en">INDIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">India</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ID"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IDN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">INDONÉSIE</string>
+                     <string xml:lang="en">INDONESIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Indonesia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IRN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">IRAN, RÉPUBLIQUE ISLAMIQUE D'</string>
+                     <string xml:lang="en">IRAN, ISLAMIC REPUBLIC OF</string>
+                     <string xml:lang="en">IRAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Iran</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IQ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IRQ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">IRAQ</string>
+                     <string xml:lang="en">IRAQ</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Iraq</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IRL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">IRLANDE</string>
+                     <string xml:lang="en">IRELAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Ireland</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ISL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ISLANDE</string>
+                     <string xml:lang="en">ICELAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Iceland</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ISR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ISRAËL</string>
+                     <string xml:lang="en">ISRAEL</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Israel</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ITA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ITALIE</string>
+                     <string xml:lang="en">ITALY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Italy</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="JM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="JAM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">JAMAÏQUE</string>
+                     <string xml:lang="en">JAMAICA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="JP"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="JPN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">JAPON</string>
+                     <string xml:lang="en">JAPAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Japan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="JE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="JEY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">JERSEY</string>
+                     <string xml:lang="en">JERSEY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="JO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="JOR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">JORDANIE</string>
+                     <string xml:lang="en">JORDAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Jordan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KAZ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">KAZAKHSTAN</string>
+                     <string xml:lang="en">KAZAKHSTAN</string>
+                     <string xml:lang="en">Kazakstan</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KEN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">KENYA</string>
+                     <string xml:lang="en">KENYA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Kenya</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KGZ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">KIRGHIZISTAN</string>
+                     <string xml:lang="en">KYRGYZSTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KIR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">KIRIBATI</string>
+                     <string xml:lang="en">KIRIBATI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KWT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">KOWEÏT</string>
+                     <string xml:lang="en">KUWAIT</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Kuwait</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LAO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LAO, RÉPUBLIQUE DÉMOCRATIQUE
+                            POPULAIRE</string>
+                     <string xml:lang="en">LAO PEOPLE'S DEMOCRATIC REPUBLIC</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LSO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LESOTHO</string>
+                     <string xml:lang="en">LESOTHO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LV"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LVA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LETTONIE</string>
+                     <string xml:lang="en">LATVIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LB"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LBN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LIBAN</string>
+                     <string xml:lang="en">LEBANON</string>
+                     <string xml:lang="en">Lebanon</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LBR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LIBÉRIA</string>
+                     <string xml:lang="en">LIBERIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LBY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LIBYENNE, JAMAHIRIYA ARABE</string>
+                     <string xml:lang="en">LIBYAN ARAB JAMAHIRIYA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LIE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LIECHTENSTEIN</string>
+                     <string xml:lang="en">LIECHTENSTEIN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LTU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LITUANIE</string>
+                     <string xml:lang="en">LITHUANIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Lithuania</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LUX"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">LUXEMBOURG</string>
+                     <string xml:lang="en">LUXEMBOURG</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Luxemburg</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MAC"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MACAO</string>
+                     <string xml:lang="en">MACAO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MKD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MACÉDOINE, L'EX-RÉPUBLIQUE YOUGOSLAVE
+                            DE</string>
+                     <string xml:lang="en">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC
+                            OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MDG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MADAGASCAR</string>
+                     <string xml:lang="en">MADAGASCAR</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Madagascar</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MYS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MALAISIE</string>
+                     <string xml:lang="en">MALAYSIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Malaysia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MWI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MALAWI</string>
+                     <string xml:lang="en">MALAWI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Malawi</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MV"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MDV"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MALDIVES</string>
+                     <string xml:lang="en">MALDIVES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Maldives</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ML"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MLI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MALI</string>
+                     <string xml:lang="en">MALI</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Mali</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MLT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MALTE</string>
+                     <string xml:lang="en">MALTA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Malta</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MP"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MNP"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MARIANNES DU NORD, ÎLES</string>
+                     <string xml:lang="en">NORTHERN MARIANA ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MAR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MAROC</string>
+                     <string xml:lang="en">MOROCCO</string>
+                     <string xml:lang="en">Morocco</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MHL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MARSHALL, ÎLES</string>
+                     <string xml:lang="en">MARSHALL ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MQ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MTQ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MARTINIQUE</string>
+                     <string xml:lang="en">MARTINIQUE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MUS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MAURICE</string>
+                     <string xml:lang="en">MAURITIUS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MRT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MAURITANIE</string>
+                     <string xml:lang="en">MAURITANIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="YT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MYT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MAYOTTE</string>
+                     <string xml:lang="en">MAYOTTE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MX"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MEX"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MEXIQUE</string>
+                     <string xml:lang="en">MEXICO</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">Mexico</string>
+                     <string xml:lang="es">México</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="FM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="FSM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MICRONÉSIE, ÉTATS FÉDÉRÉS DE</string>
+                     <string xml:lang="en">MICRONESIA, FEDERATED STATES OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MDA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MOLDOVA, RÉPUBLIQUE DE</string>
+                     <string xml:lang="en">MOLDOVA, REPUBLIC OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MCO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MONACO</string>
+                     <string xml:lang="en">MONACO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MNG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MONGOLIE</string>
+                     <string xml:lang="en">MONGOLIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ME"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MNE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MONTÉNÉGRO</string>
+                     <string xml:lang="en">MONTENEGRO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MSR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MONTSERRAT</string>
+                     <string xml:lang="en">MONTSERRAT</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MOZ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MOZAMBIQUE</string>
+                     <string xml:lang="en">MOZAMBIQUE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MMR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">MYANMAR</string>
+                     <string xml:lang="en">MYANMAR</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NAM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NAMIBIE</string>
+                     <string xml:lang="en">NAMIBIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NRU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NAURU</string>
+                     <string xml:lang="en">NAURU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NP"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NPL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NÉPAL</string>
+                     <string xml:lang="en">NEPAL</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NIC"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NICARAGUA</string>
+                     <string xml:lang="en">NICARAGUA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Nicaragua</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NER"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NIGER</string>
+                     <string xml:lang="en">NIGER</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NGA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NIGÉRIA</string>
+                     <string xml:lang="en">NIGERIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NIU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NIUE</string>
+                     <string xml:lang="en">NIUE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NFK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NORFOLK, ÎLE</string>
+                     <string xml:lang="en">NORFOLK ISLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NOR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NORVÈGE</string>
+                     <string xml:lang="en">NORWAY</string>
+                     <string xml:lang="en">Norway</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NCL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NOUVELLE-CALÉDONIE</string>
+                     <string xml:lang="en">NEW CALEDONIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NZL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">NOUVELLE-ZÉLANDE</string>
+                     <string xml:lang="en">NEW ZEALAND</string>
+                     <string xml:lang="en">New Zealand</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="IO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="IOT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">OCÉAN INDIEN, TERRITOIRE BRITANNIQUE DE
+                            L'</string>
+                     <string xml:lang="en">BRITISH INDIAN OCEAN TERRITORY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="OM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="OMN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">OMAN</string>
+                     <string xml:lang="en">OMAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="UG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="UGA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">OUGANDA</string>
+                     <string xml:lang="en">UGANDA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="UZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="UZB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">OUZBÉKISTAN</string>
+                     <string xml:lang="en">UZBEKISTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Uzbekistan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PAK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PAKISTAN</string>
+                     <string xml:lang="en">PAKISTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Pakistan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PLW"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PALAOS</string>
+                     <string xml:lang="en">PALAU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PSE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PALESTINIEN OCCUPÉ, TERRITOIRE</string>
+                     <string xml:lang="en">PALESTINIAN TERRITORY, OCCUPIED</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">PALESTINE</string>
+                     <string xml:lang="en">Palestine</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PAN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PANAMA</string>
+                     <string xml:lang="en">PANAMA</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="fr">Panama</string>
+                     <string xml:lang="en">Panama</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PNG"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PAPOUASIE-NOUVELLE-GUINÉE</string>
+                     <string xml:lang="en">PAPUA NEW GUINEA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PRY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PARAGUAY</string>
+                     <string xml:lang="en">PARAGUAY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Paraguay</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="NL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="NLD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PAYS-BAS</string>
+                     <string xml:lang="en">NETHERLANDS</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">Netherlands</string>
+                     <string xml:lang="en">The Netherlands</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PER"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PÉROU</string>
+                     <string xml:lang="en">PERU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Peru</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PHL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PHILIPPINES</string>
+                     <string xml:lang="en">PHILIPPINES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Philippines</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PCN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PITCAIRN</string>
+                     <string xml:lang="en">PITCAIRN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="POL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">POLOGNE</string>
+                     <string xml:lang="en">POLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Poland</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PYF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">POLYNÉSIE FRANÇAISE</string>
+                     <string xml:lang="en">FRENCH POLYNESIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">French Polynesia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PRI"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PORTO RICO</string>
+                     <string xml:lang="en">PUERTO RICO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Puerto Rico</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="PRT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">PORTUGAL</string>
+                     <string xml:lang="en">PORTUGAL</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Portugal</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="QA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="QAT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">QATAR</string>
+                     <string xml:lang="en">QATAR</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Qatar</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="RE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="REU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">RÉUNION</string>
+                     <string xml:lang="en">RÉUNION</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="RO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ROU"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ROUMANIE</string>
+                     <string xml:lang="en">ROMANIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Romania</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="GB"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="GBR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ROYAUME-UNI</string>
+                     <string xml:lang="en">UNITED KINGDOM</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">United Kingdom</string>
+                     <string xml:lang="en">Northern Ireland, UK</string>
+                     <string xml:lang="en">Scotland, UK</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="RU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="RUS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">RUSSIE, FÉDÉRATION DE</string>
+                     <string xml:lang="en">RUSSIAN FEDERATION</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="en">Russian Federation</string>
+                     <string xml:lang="en">Russia</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="RW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="RWA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">RWANDA</string>
+                     <string xml:lang="en">RWANDA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="EH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ESH"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAHARA OCCIDENTAL</string>
+                     <string xml:lang="en">WESTERN SAHARA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="BL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="BLM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-BARTHÉLEMY</string>
+                     <string xml:lang="en">SAINT BARTHÉLEMY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SHN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINTE-HÉLÈNE</string>
+                     <string xml:lang="en">SAINT HELENA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LCA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINTE-LUCIE</string>
+                     <string xml:lang="en">SAINT LUCIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="KN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="KNA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-KITTS-ET-NEVIS</string>
+                     <string xml:lang="en">SAINT KITTS AND NEVIS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SMR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-MARIN</string>
+                     <string xml:lang="en">SAN MARINO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="MF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="MAF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-MARTIN</string>
+                     <string xml:lang="en">SAINT MARTIN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="PM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SPM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-PIERRE-ET-MIQUELON</string>
+                     <string xml:lang="en">SAINT PIERRE AND MIQUELON</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VAT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-SIÈGE (ÉTAT DE LA CITÉ DU
+                            VATICAN)</string>
+                     <string xml:lang="en">HOLY SEE (VATICAN CITY STATE)</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VCT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAINT-VINCENT-ET-LES GRENADINES</string>
+                     <string xml:lang="en">SAINT VINCENT AND THE GRENADINES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SB"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SLB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SALOMON, ÎLES</string>
+                     <string xml:lang="en">SOLOMON ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="WS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="WSM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAMOA</string>
+                     <string xml:lang="en">SAMOA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="AS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ASM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAMOA AMÉRICAINES</string>
+                     <string xml:lang="en">AMERICAN SAMOA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ST"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="STP"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SAO TOMÉ-ET-PRINCIPE</string>
+                     <string xml:lang="en">SAO TOME AND PRINCIPE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SEN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SÉNÉGAL</string>
+                     <string xml:lang="en">SENEGAL</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Senegal</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="RS"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SRB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SERBIE</string>
+                     <string xml:lang="en">SERBIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Serbia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SYC"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SEYCHELLES</string>
+                     <string xml:lang="en">SEYCHELLES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SLE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SIERRA LEONE</string>
+                     <string xml:lang="en">SIERRA LEONE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SGP"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SINGAPOUR</string>
+                     <string xml:lang="en">SINGAPORE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Singapore</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SVK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SLOVAQUIE</string>
+                     <string xml:lang="en">SLOVAKIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Slovakia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SI"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SVN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SLOVÉNIE</string>
+                     <string xml:lang="en">SLOVENIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Slovenia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SOM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SOMALIE</string>
+                     <string xml:lang="en">SOMALIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SDN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SOUDAN</string>
+                     <string xml:lang="en">SUDAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="LK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="LKA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SRI LANKA</string>
+                     <string xml:lang="en">SRI LANKA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Sri Lanka</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SWE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SUÈDE</string>
+                     <string xml:lang="en">SWEDEN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Sweden</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CHE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SUISSE</string>
+                     <string xml:lang="en">SWITZERLAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Switzerland</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SUR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SURINAME</string>
+                     <string xml:lang="en">SURINAME</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SJ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SJM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SVALBARD ET ÎLE JAN MAYEN</string>
+                     <string xml:lang="en">SVALBARD AND JAN MAYEN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SWZ"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SWAZILAND</string>
+                     <string xml:lang="en">SWAZILAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="SY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="SYR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">SYRIENNE, RÉPUBLIQUE ARABE</string>
+                     <string xml:lang="en">SYRIAN ARAB REPUBLIC</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TJ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TJK"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TADJIKISTAN</string>
+                     <string xml:lang="en">TAJIKISTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TWN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TAÏWAN, PROVINCE DE CHINE</string>
+                     <string xml:lang="en">TAIWAN, PROVINCE OF CHINA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Taiwan</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TZA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TANZANIE, RÉPUBLIQUE-UNIE DE</string>
+                     <string xml:lang="en">TANZANIA, UNITED REPUBLIC OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Tanzania</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TD"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TCD"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TCHAD</string>
+                     <string xml:lang="en">CHAD</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="CZ"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="CZE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TCHÈQUE, RÉPUBLIQUE</string>
+                     <string xml:lang="en">CZECH REPUBLIC</string>
+                     <string xml:lang="en">Czech Republic</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ATF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TERRES AUSTRALES FRANÇAISES</string>
+                     <string xml:lang="en">FRENCH SOUTHERN TERRITORIES</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TH"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="THA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">THAÏLANDE</string>
+                     <string xml:lang="en">THAILAND</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Thailand</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TL"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TLS"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TIMOR-LESTE</string>
+                     <string xml:lang="en">TIMOR-LESTE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TG"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TGO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TOGO</string>
+                     <string xml:lang="en">TOGO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Togo</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TK"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TKL"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TOKELAU</string>
+                     <string xml:lang="en">TOKELAU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TO"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TON"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TONGA</string>
+                     <string xml:lang="en">TONGA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TT"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TTO"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TRINITÉ-ET-TOBAGO</string>
+                     <string xml:lang="en">TRINIDAD AND TOBAGO</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TUN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TUNISIE</string>
+                     <string xml:lang="en">TUNISIA</string>
+                  </vColl>
+               </f>
+               <f name="namAlt">
+                  <vColl>
+                     <string xml:lang="fr">Tunisie</string>
+                     <string xml:lang="en">Tunisia</string>
+                  </vColl>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TKM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TURKMÉNISTAN</string>
+                     <string xml:lang="en">TURKMENISTAN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TC"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TCA"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TURKS ET CAÏQUES, ÎLES</string>
+                     <string xml:lang="en">TURKS AND CAICOS ISLANDS</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TR"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TUR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TURQUIE</string>
+                     <string xml:lang="en">TURKEY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Turkey</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="TV"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="TUV"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">TUVALU</string>
+                     <string xml:lang="en">TUVALU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="UA"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="UKR"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">UKRAINE</string>
+                     <string xml:lang="en">UKRAINE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Ukraine</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="UY"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="URY"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">URUGUAY</string>
+                     <string xml:lang="en">URUGUAY</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Uruguay</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VU"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VUT"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">VANUATU</string>
+                     <string xml:lang="en">VANUATU</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang=""/>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VEN"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">VENEZUELA</string>
+                     <string xml:lang="en">VENEZUELA, BOLIVARIAN REPUBLIC OF</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Venezuela</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="VN"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="VNM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">VIET NAM</string>
+                     <string xml:lang="en">VIET NAM</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Viet Nam</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="WF"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="WLF"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">WALLIS ET FUTUNA</string>
+                     <string xml:lang="en">WALLIS AND FUTUNA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Wallis and Futuna</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="YE"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="YEM"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">YÉMEN</string>
+                     <string xml:lang="en">YEMEN</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Yemen</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ZM"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ZMB"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ZAMBIE</string>
+                     <string xml:lang="en">ZAMBIA</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Zambia</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="a2code">
+                  <symbol value="ZW"/>
+               </f>
+               <f name="a3code">
+                  <symbol value="ZWE"/>
+               </f>
+               <f name="name">
+                  <vColl>
+                     <string xml:lang="fr">ZIMBABWE</string>
+                     <string xml:lang="en">ZIMBABWE</string>
+                  </vColl>
+               </f>
+               <f name="nameAlt">
+                  <string xml:lang="">Zimbabwe</string>
+               </f>
+            </fs>
+         </div>
+      </body>
+   </text>
+</TEI>

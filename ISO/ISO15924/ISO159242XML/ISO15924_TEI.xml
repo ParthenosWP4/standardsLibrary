@@ -1,0 +1,3546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ISO 15924 - Codes for the representation of names of scripts</title>
+            <respStmt>
+               <resp>Editor</resp>
+               <name>Laurent Romary</name>
+               <name>Charles Riondet</name>
+            </respStmt>
+            <funder>Parthenos</funder>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>
+               <name>Dariah</name>
+               <ref type="url">http://dariah.eu</ref>
+            </distributor>
+            <distributor>
+               <name>Parthenos</name>
+               <ref type="url">http://parthenos-project.eu</ref>
+            </distributor>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/"
+                        notBefore="2013-01-01">
+                  <p>The Creative Commons Attribution 4.0 International (CC BY 4.0) Licence
+                           applies to this document.</p>
+                  <p>The material contained in this document must be quoted as follows:
+                           <q>ISO 15924 - Codes for the representation of names of scripts</q>.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>ISO 15924 - Codes for the representation of names of scripts</title>
+               <publisher>The Unicode Consortium</publisher>
+               <date>2016-09-14+02:00</date>
+               <ref type="url">http://www.unicode.org/iso15924/codelists.html</ref>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>Language subtags</head>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Adlm"/>
+               </f>
+               <f name="number">
+                  <numeric value="166"/>
+               </f>
+               <f name="englishName">
+                  <string>Adlam</string>
+               </f>
+               <f name="frenchName">
+                  <string>adlam</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Afak"/>
+               </f>
+               <f name="number">
+                  <numeric value="439"/>
+               </f>
+               <f name="englishName">
+                  <string>Afaka</string>
+               </f>
+               <f name="frenchName">
+                  <string>afaka</string>
+               </f>
+               <f name="date">
+                  <string>2010-12-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Aghb"/>
+               </f>
+               <f name="number">
+                  <numeric value="239"/>
+               </f>
+               <f name="englishName">
+                  <string>Caucasian Albanian</string>
+               </f>
+               <f name="frenchName">
+                  <string>aghbanien</string>
+               </f>
+               <f name="PVA">
+                  <string>Caucasian_Albanian</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Ahom"/>
+               </f>
+               <f name="number">
+                  <numeric value="338"/>
+               </f>
+               <f name="englishName">
+                  <string>Ahom, Tai Ahom</string>
+               </f>
+               <f name="frenchName">
+                  <string>âhom</string>
+               </f>
+               <f name="PVA">
+                  <string>Ahom</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Arab"/>
+               </f>
+               <f name="number">
+                  <numeric value="160"/>
+               </f>
+               <f name="englishName">
+                  <string>Arabic</string>
+               </f>
+               <f name="frenchName">
+                  <string>arabe</string>
+               </f>
+               <f name="PVA">
+                  <string>Arabic</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Aran"/>
+               </f>
+               <f name="number">
+                  <numeric value="161"/>
+               </f>
+               <f name="englishName">
+                  <string>Arabic (Nastaliq variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>arabe (variante nastalique)</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Armi"/>
+               </f>
+               <f name="number">
+                  <numeric value="124"/>
+               </f>
+               <f name="englishName">
+                  <string>Imperial Aramaic</string>
+               </f>
+               <f name="frenchName">
+                  <string>araméen impérial</string>
+               </f>
+               <f name="PVA">
+                  <string>Imperial_Aramaic</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Armn"/>
+               </f>
+               <f name="number">
+                  <numeric value="230"/>
+               </f>
+               <f name="englishName">
+                  <string>Armenian</string>
+               </f>
+               <f name="frenchName">
+                  <string>arménien</string>
+               </f>
+               <f name="PVA">
+                  <string>Armenian</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Avst"/>
+               </f>
+               <f name="number">
+                  <numeric value="134"/>
+               </f>
+               <f name="englishName">
+                  <string>Avestan</string>
+               </f>
+               <f name="frenchName">
+                  <string>avestique</string>
+               </f>
+               <f name="PVA">
+                  <string>Avestan</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Bali"/>
+               </f>
+               <f name="number">
+                  <numeric value="360"/>
+               </f>
+               <f name="englishName">
+                  <string>Balinese</string>
+               </f>
+               <f name="frenchName">
+                  <string>balinais</string>
+               </f>
+               <f name="PVA">
+                  <string>Balinese</string>
+               </f>
+               <f name="date">
+                  <string>2006-10-10</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Bamu"/>
+               </f>
+               <f name="number">
+                  <numeric value="435"/>
+               </f>
+               <f name="englishName">
+                  <string>Bamum</string>
+               </f>
+               <f name="frenchName">
+                  <string>bamoum</string>
+               </f>
+               <f name="PVA">
+                  <string>Bamum</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Bass"/>
+               </f>
+               <f name="number">
+                  <numeric value="259"/>
+               </f>
+               <f name="englishName">
+                  <string>Bassa Vah</string>
+               </f>
+               <f name="frenchName">
+                  <string>bassa</string>
+               </f>
+               <f name="PVA">
+                  <string>Bassa_Vah</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Batk"/>
+               </f>
+               <f name="number">
+                  <numeric value="365"/>
+               </f>
+               <f name="englishName">
+                  <string>Batak</string>
+               </f>
+               <f name="frenchName">
+                  <string>batik</string>
+               </f>
+               <f name="PVA">
+                  <string>Batak</string>
+               </f>
+               <f name="date">
+                  <string>2010-07-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Beng"/>
+               </f>
+               <f name="number">
+                  <numeric value="325"/>
+               </f>
+               <f name="englishName">
+                  <string>Bengali</string>
+               </f>
+               <f name="frenchName">
+                  <string>bengalî</string>
+               </f>
+               <f name="PVA">
+                  <string>Bengali</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Bhks"/>
+               </f>
+               <f name="number">
+                  <numeric value="334"/>
+               </f>
+               <f name="englishName">
+                  <string>Bhaiksuki</string>
+               </f>
+               <f name="frenchName">
+                  <string>bhaïksukî</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Blis"/>
+               </f>
+               <f name="number">
+                  <numeric value="550"/>
+               </f>
+               <f name="englishName">
+                  <string>Blissymbols</string>
+               </f>
+               <f name="frenchName">
+                  <string>symboles Bliss</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Bopo"/>
+               </f>
+               <f name="number">
+                  <numeric value="285"/>
+               </f>
+               <f name="englishName">
+                  <string>Bopomofo</string>
+               </f>
+               <f name="frenchName">
+                  <string>bopomofo</string>
+               </f>
+               <f name="PVA">
+                  <string>Bopomofo</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Brah"/>
+               </f>
+               <f name="number">
+                  <numeric value="300"/>
+               </f>
+               <f name="englishName">
+                  <string>Brahmi</string>
+               </f>
+               <f name="frenchName">
+                  <string>brahma</string>
+               </f>
+               <f name="PVA">
+                  <string>Brahmi</string>
+               </f>
+               <f name="date">
+                  <string>2010-07-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Brai"/>
+               </f>
+               <f name="number">
+                  <numeric value="570"/>
+               </f>
+               <f name="englishName">
+                  <string>Braille</string>
+               </f>
+               <f name="frenchName">
+                  <string>braille</string>
+               </f>
+               <f name="PVA">
+                  <string>Braille</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Bugi"/>
+               </f>
+               <f name="number">
+                  <numeric value="367"/>
+               </f>
+               <f name="englishName">
+                  <string>Buginese</string>
+               </f>
+               <f name="frenchName">
+                  <string>bouguis</string>
+               </f>
+               <f name="PVA">
+                  <string>Buginese</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Buhd"/>
+               </f>
+               <f name="number">
+                  <numeric value="372"/>
+               </f>
+               <f name="englishName">
+                  <string>Buhid</string>
+               </f>
+               <f name="frenchName">
+                  <string>bouhide</string>
+               </f>
+               <f name="PVA">
+                  <string>Buhid</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cakm"/>
+               </f>
+               <f name="number">
+                  <numeric value="349"/>
+               </f>
+               <f name="englishName">
+                  <string>Chakma</string>
+               </f>
+               <f name="frenchName">
+                  <string>chakma</string>
+               </f>
+               <f name="PVA">
+                  <string>Chakma</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cans"/>
+               </f>
+               <f name="number">
+                  <numeric value="440"/>
+               </f>
+               <f name="englishName">
+                  <string>Unified Canadian Aboriginal Syllabics</string>
+               </f>
+               <f name="frenchName">
+                  <string>syllabaire autochtone canadien unifié</string>
+               </f>
+               <f name="PVA">
+                  <string>Canadian_Aboriginal</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cari"/>
+               </f>
+               <f name="number">
+                  <numeric value="201"/>
+               </f>
+               <f name="englishName">
+                  <string>Carian</string>
+               </f>
+               <f name="frenchName">
+                  <string>carien</string>
+               </f>
+               <f name="PVA">
+                  <string>Carian</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cham"/>
+               </f>
+               <f name="number">
+                  <numeric value="358"/>
+               </f>
+               <f name="englishName">
+                  <string>Cham</string>
+               </f>
+               <f name="frenchName">
+                  <string>cham (čam, tcham)</string>
+               </f>
+               <f name="PVA">
+                  <string>Cham</string>
+               </f>
+               <f name="date">
+                  <string>2009-11-11</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cher"/>
+               </f>
+               <f name="number">
+                  <numeric value="445"/>
+               </f>
+               <f name="englishName">
+                  <string>Cherokee</string>
+               </f>
+               <f name="frenchName">
+                  <string>tchérokî</string>
+               </f>
+               <f name="PVA">
+                  <string>Cherokee</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cirt"/>
+               </f>
+               <f name="number">
+                  <numeric value="291"/>
+               </f>
+               <f name="englishName">
+                  <string>Cirth</string>
+               </f>
+               <f name="frenchName">
+                  <string>cirth</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Copt"/>
+               </f>
+               <f name="number">
+                  <numeric value="204"/>
+               </f>
+               <f name="englishName">
+                  <string>Coptic</string>
+               </f>
+               <f name="frenchName">
+                  <string>copte</string>
+               </f>
+               <f name="PVA">
+                  <string>Coptic</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cprt"/>
+               </f>
+               <f name="number">
+                  <numeric value="403"/>
+               </f>
+               <f name="englishName">
+                  <string>Cypriot</string>
+               </f>
+               <f name="frenchName">
+                  <string>syllabaire chypriote</string>
+               </f>
+               <f name="PVA">
+                  <string>Cypriot</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cyrl"/>
+               </f>
+               <f name="number">
+                  <numeric value="220"/>
+               </f>
+               <f name="englishName">
+                  <string>Cyrillic</string>
+               </f>
+               <f name="frenchName">
+                  <string>cyrillique</string>
+               </f>
+               <f name="PVA">
+                  <string>Cyrillic</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Cyrs"/>
+               </f>
+               <f name="number">
+                  <numeric value="221"/>
+               </f>
+               <f name="englishName">
+                  <string>Cyrillic (Old Church Slavonic variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>cyrillique (variante slavonne)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Deva"/>
+               </f>
+               <f name="number">
+                  <numeric value="315"/>
+               </f>
+               <f name="englishName">
+                  <string>Devanagari (Nagari)</string>
+               </f>
+               <f name="frenchName">
+                  <string>dévanâgarî</string>
+               </f>
+               <f name="PVA">
+                  <string>Devanagari</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Dsrt"/>
+               </f>
+               <f name="number">
+                  <numeric value="250"/>
+               </f>
+               <f name="englishName">
+                  <string>Deseret (Mormon)</string>
+               </f>
+               <f name="frenchName">
+                  <string>déseret (mormon)</string>
+               </f>
+               <f name="PVA">
+                  <string>Deseret</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Dupl"/>
+               </f>
+               <f name="number">
+                  <numeric value="755"/>
+               </f>
+               <f name="englishName">
+                  <string>Duployan shorthand, Duployan stenography</string>
+               </f>
+               <f name="frenchName">
+                  <string>sténographie Duployé</string>
+               </f>
+               <f name="PVA">
+                  <string>Duployan</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Egyd"/>
+               </f>
+               <f name="number">
+                  <numeric value="070"/>
+               </f>
+               <f name="englishName">
+                  <string>Egyptian demotic</string>
+               </f>
+               <f name="frenchName">
+                  <string>démotique égyptien</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Egyh"/>
+               </f>
+               <f name="number">
+                  <numeric value="060"/>
+               </f>
+               <f name="englishName">
+                  <string>Egyptian hieratic</string>
+               </f>
+               <f name="frenchName">
+                  <string>hiératique égyptien</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Egyp"/>
+               </f>
+               <f name="number">
+                  <numeric value="050"/>
+               </f>
+               <f name="englishName">
+                  <string>Egyptian hieroglyphs</string>
+               </f>
+               <f name="frenchName">
+                  <string>hiéroglyphes égyptiens</string>
+               </f>
+               <f name="PVA">
+                  <string>Egyptian_Hieroglyphs</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Elba"/>
+               </f>
+               <f name="number">
+                  <numeric value="226"/>
+               </f>
+               <f name="englishName">
+                  <string>Elbasan</string>
+               </f>
+               <f name="frenchName">
+                  <string>elbasan</string>
+               </f>
+               <f name="PVA">
+                  <string>Elbasan</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Ethi"/>
+               </f>
+               <f name="number">
+                  <numeric value="430"/>
+               </f>
+               <f name="englishName">
+                  <string>Ethiopic (Geʻez)</string>
+               </f>
+               <f name="frenchName">
+                  <string>éthiopien (geʻez, guèze)</string>
+               </f>
+               <f name="PVA">
+                  <string>Ethiopic</string>
+               </f>
+               <f name="date">
+                  <string>2004-10-25</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Geok"/>
+               </f>
+               <f name="number">
+                  <numeric value="241"/>
+               </f>
+               <f name="englishName">
+                  <string>Khutsuri (Asomtavruli and Nuskhuri)</string>
+               </f>
+               <f name="frenchName">
+                  <string>khoutsouri (assomtavrouli et nouskhouri)</string>
+               </f>
+               <f name="PVA">
+                  <string>Georgian</string>
+               </f>
+               <f name="date">
+                  <string>2012-10-16</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Geor"/>
+               </f>
+               <f name="number">
+                  <numeric value="240"/>
+               </f>
+               <f name="englishName">
+                  <string>Georgian (Mkhedruli)</string>
+               </f>
+               <f name="frenchName">
+                  <string>géorgien (mkhédrouli)</string>
+               </f>
+               <f name="PVA">
+                  <string>Georgian</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Glag"/>
+               </f>
+               <f name="number">
+                  <numeric value="225"/>
+               </f>
+               <f name="englishName">
+                  <string>Glagolitic</string>
+               </f>
+               <f name="frenchName">
+                  <string>glagolitique</string>
+               </f>
+               <f name="PVA">
+                  <string>Glagolitic</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Goth"/>
+               </f>
+               <f name="number">
+                  <numeric value="206"/>
+               </f>
+               <f name="englishName">
+                  <string>Gothic</string>
+               </f>
+               <f name="frenchName">
+                  <string>gotique</string>
+               </f>
+               <f name="PVA">
+                  <string>Gothic</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Gran"/>
+               </f>
+               <f name="number">
+                  <numeric value="343"/>
+               </f>
+               <f name="englishName">
+                  <string>Grantha</string>
+               </f>
+               <f name="frenchName">
+                  <string>grantha</string>
+               </f>
+               <f name="PVA">
+                  <string>Grantha</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Grek"/>
+               </f>
+               <f name="number">
+                  <numeric value="200"/>
+               </f>
+               <f name="englishName">
+                  <string>Greek</string>
+               </f>
+               <f name="frenchName">
+                  <string>grec</string>
+               </f>
+               <f name="PVA">
+                  <string>Greek</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Gujr"/>
+               </f>
+               <f name="number">
+                  <numeric value="320"/>
+               </f>
+               <f name="englishName">
+                  <string>Gujarati</string>
+               </f>
+               <f name="frenchName">
+                  <string>goudjarâtî (gujrâtî)</string>
+               </f>
+               <f name="PVA">
+                  <string>Gujarati</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Guru"/>
+               </f>
+               <f name="number">
+                  <numeric value="310"/>
+               </f>
+               <f name="englishName">
+                  <string>Gurmukhi</string>
+               </f>
+               <f name="frenchName">
+                  <string>gourmoukhî</string>
+               </f>
+               <f name="PVA">
+                  <string>Gurmukhi</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hanb"/>
+               </f>
+               <f name="number">
+                  <numeric value="503"/>
+               </f>
+               <f name="englishName">
+                  <string>Han with Bopomofo (alias for Han + Bopomofo)</string>
+               </f>
+               <f name="frenchName">
+                  <string>han avec bopomofo (alias pour han + bopomofo)</string>
+               </f>
+               <f name="date">
+                  <string>2016-01-19</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hang"/>
+               </f>
+               <f name="number">
+                  <numeric value="286"/>
+               </f>
+               <f name="englishName">
+                  <string>Hangul (Hangŭl, Hangeul)</string>
+               </f>
+               <f name="frenchName">
+                  <string>hangûl (hangŭl, hangeul)</string>
+               </f>
+               <f name="PVA">
+                  <string>Hangul</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hani"/>
+               </f>
+               <f name="number">
+                  <numeric value="500"/>
+               </f>
+               <f name="englishName">
+                  <string>Han (Hanzi, Kanji, Hanja)</string>
+               </f>
+               <f name="frenchName">
+                  <string>idéogrammes han (sinogrammes)</string>
+               </f>
+               <f name="PVA">
+                  <string>Han</string>
+               </f>
+               <f name="date">
+                  <string>2009-02-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hano"/>
+               </f>
+               <f name="number">
+                  <numeric value="371"/>
+               </f>
+               <f name="englishName">
+                  <string>Hanunoo (Hanunóo)</string>
+               </f>
+               <f name="frenchName">
+                  <string>hanounóo</string>
+               </f>
+               <f name="PVA">
+                  <string>Hanunoo</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hans"/>
+               </f>
+               <f name="number">
+                  <numeric value="501"/>
+               </f>
+               <f name="englishName">
+                  <string>Han (Simplified variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>idéogrammes han (variante simplifiée)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hant"/>
+               </f>
+               <f name="number">
+                  <numeric value="502"/>
+               </f>
+               <f name="englishName">
+                  <string>Han (Traditional variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>idéogrammes han (variante traditionnelle)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hatr"/>
+               </f>
+               <f name="number">
+                  <numeric value="127"/>
+               </f>
+               <f name="englishName">
+                  <string>Hatran</string>
+               </f>
+               <f name="frenchName">
+                  <string>hatrénien</string>
+               </f>
+               <f name="PVA">
+                  <string>Hatran</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hebr"/>
+               </f>
+               <f name="number">
+                  <numeric value="125"/>
+               </f>
+               <f name="englishName">
+                  <string>Hebrew</string>
+               </f>
+               <f name="frenchName">
+                  <string>hébreu</string>
+               </f>
+               <f name="PVA">
+                  <string>Hebrew</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hira"/>
+               </f>
+               <f name="number">
+                  <numeric value="410"/>
+               </f>
+               <f name="englishName">
+                  <string>Hiragana</string>
+               </f>
+               <f name="frenchName">
+                  <string>hiragana</string>
+               </f>
+               <f name="PVA">
+                  <string>Hiragana</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hluw"/>
+               </f>
+               <f name="number">
+                  <numeric value="080"/>
+               </f>
+               <f name="englishName">
+                  <string>Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)</string>
+               </f>
+               <f name="frenchName">
+                  <string>hiéroglyphes anatoliens (hiéroglyphes louvites, hiéroglyphes hittites)</string>
+               </f>
+               <f name="PVA">
+                  <string>Anatolian_Hieroglyphs</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hmng"/>
+               </f>
+               <f name="number">
+                  <numeric value="450"/>
+               </f>
+               <f name="englishName">
+                  <string>Pahawh Hmong</string>
+               </f>
+               <f name="frenchName">
+                  <string>pahawh hmong</string>
+               </f>
+               <f name="PVA">
+                  <string>Pahawh_Hmong</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hrkt"/>
+               </f>
+               <f name="number">
+                  <numeric value="412"/>
+               </f>
+               <f name="englishName">
+                  <string>Japanese syllabaries (alias for Hiragana + Katakana)</string>
+               </f>
+               <f name="frenchName">
+                  <string>syllabaires japonais (alias pour hiragana + katakana)</string>
+               </f>
+               <f name="PVA">
+                  <string>Katakana_Or_Hiragana</string>
+               </f>
+               <f name="date">
+                  <string>2011-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Hung"/>
+               </f>
+               <f name="number">
+                  <numeric value="176"/>
+               </f>
+               <f name="englishName">
+                  <string>Old Hungarian (Hungarian Runic)</string>
+               </f>
+               <f name="frenchName">
+                  <string>runes hongroises (ancien hongrois)</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_Hungarian</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Inds"/>
+               </f>
+               <f name="number">
+                  <numeric value="610"/>
+               </f>
+               <f name="englishName">
+                  <string>Indus (Harappan)</string>
+               </f>
+               <f name="frenchName">
+                  <string>indus</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Ital"/>
+               </f>
+               <f name="number">
+                  <numeric value="210"/>
+               </f>
+               <f name="englishName">
+                  <string>Old Italic (Etruscan, Oscan, etc.)</string>
+               </f>
+               <f name="frenchName">
+                  <string>ancien italique (étrusque, osque, etc.)</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_Italic</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Jamo"/>
+               </f>
+               <f name="number">
+                  <numeric value="284"/>
+               </f>
+               <f name="englishName">
+                  <string>Jamo (alias for Jamo subset of Hangul)</string>
+               </f>
+               <f name="frenchName">
+                  <string>jamo (alias pour le sous-ensemble jamo du hangûl)</string>
+               </f>
+               <f name="date">
+                  <string>2016-01-19</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Java"/>
+               </f>
+               <f name="number">
+                  <numeric value="361"/>
+               </f>
+               <f name="englishName">
+                  <string>Javanese</string>
+               </f>
+               <f name="frenchName">
+                  <string>javanais</string>
+               </f>
+               <f name="PVA">
+                  <string>Javanese</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Jpan"/>
+               </f>
+               <f name="number">
+                  <numeric value="413"/>
+               </f>
+               <f name="englishName">
+                  <string>Japanese (alias for Han + Hiragana + Katakana)</string>
+               </f>
+               <f name="frenchName">
+                  <string>japonais (alias pour han + hiragana + katakana)</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Jurc"/>
+               </f>
+               <f name="number">
+                  <numeric value="510"/>
+               </f>
+               <f name="englishName">
+                  <string>Jurchen</string>
+               </f>
+               <f name="frenchName">
+                  <string>jurchen</string>
+               </f>
+               <f name="date">
+                  <string>2010-12-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kali"/>
+               </f>
+               <f name="number">
+                  <numeric value="357"/>
+               </f>
+               <f name="englishName">
+                  <string>Kayah Li</string>
+               </f>
+               <f name="frenchName">
+                  <string>kayah li</string>
+               </f>
+               <f name="PVA">
+                  <string>Kayah_Li</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kana"/>
+               </f>
+               <f name="number">
+                  <numeric value="411"/>
+               </f>
+               <f name="englishName">
+                  <string>Katakana</string>
+               </f>
+               <f name="frenchName">
+                  <string>katakana</string>
+               </f>
+               <f name="PVA">
+                  <string>Katakana</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Khar"/>
+               </f>
+               <f name="number">
+                  <numeric value="305"/>
+               </f>
+               <f name="englishName">
+                  <string>Kharoshthi</string>
+               </f>
+               <f name="frenchName">
+                  <string>kharochthî</string>
+               </f>
+               <f name="PVA">
+                  <string>Kharoshthi</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Khmr"/>
+               </f>
+               <f name="number">
+                  <numeric value="355"/>
+               </f>
+               <f name="englishName">
+                  <string>Khmer</string>
+               </f>
+               <f name="frenchName">
+                  <string>khmer</string>
+               </f>
+               <f name="PVA">
+                  <string>Khmer</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Khoj"/>
+               </f>
+               <f name="number">
+                  <numeric value="322"/>
+               </f>
+               <f name="englishName">
+                  <string>Khojki</string>
+               </f>
+               <f name="frenchName">
+                  <string>khojkî</string>
+               </f>
+               <f name="PVA">
+                  <string>Khojki</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kitl"/>
+               </f>
+               <f name="number">
+                  <numeric value="505"/>
+               </f>
+               <f name="englishName">
+                  <string>Khitan large script</string>
+               </f>
+               <f name="frenchName">
+                  <string>grande écriture khitan</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kits"/>
+               </f>
+               <f name="number">
+                  <numeric value="288"/>
+               </f>
+               <f name="englishName">
+                  <string>Khitan small script</string>
+               </f>
+               <f name="frenchName">
+                  <string>petite écriture khitan</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Knda"/>
+               </f>
+               <f name="number">
+                  <numeric value="345"/>
+               </f>
+               <f name="englishName">
+                  <string>Kannada</string>
+               </f>
+               <f name="frenchName">
+                  <string>kannara (canara)</string>
+               </f>
+               <f name="PVA">
+                  <string>Kannada</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kore"/>
+               </f>
+               <f name="number">
+                  <numeric value="287"/>
+               </f>
+               <f name="englishName">
+                  <string>Korean (alias for Hangul + Han)</string>
+               </f>
+               <f name="frenchName">
+                  <string>coréen (alias pour hangûl + han)</string>
+               </f>
+               <f name="date">
+                  <string>2007-06-13</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kpel"/>
+               </f>
+               <f name="number">
+                  <numeric value="436"/>
+               </f>
+               <f name="englishName">
+                  <string>Kpelle</string>
+               </f>
+               <f name="frenchName">
+                  <string>kpèllé</string>
+               </f>
+               <f name="date">
+                  <string>2010-03-26</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Kthi"/>
+               </f>
+               <f name="number">
+                  <numeric value="317"/>
+               </f>
+               <f name="englishName">
+                  <string>Kaithi</string>
+               </f>
+               <f name="frenchName">
+                  <string>kaithî</string>
+               </f>
+               <f name="PVA">
+                  <string>Kaithi</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Lana"/>
+               </f>
+               <f name="number">
+                  <numeric value="351"/>
+               </f>
+               <f name="englishName">
+                  <string>Tai Tham (Lanna)</string>
+               </f>
+               <f name="frenchName">
+                  <string>taï tham (lanna)</string>
+               </f>
+               <f name="PVA">
+                  <string>Tai_Tham</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Laoo"/>
+               </f>
+               <f name="number">
+                  <numeric value="356"/>
+               </f>
+               <f name="englishName">
+                  <string>Lao</string>
+               </f>
+               <f name="frenchName">
+                  <string>laotien</string>
+               </f>
+               <f name="PVA">
+                  <string>Lao</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Latf"/>
+               </f>
+               <f name="number">
+                  <numeric value="217"/>
+               </f>
+               <f name="englishName">
+                  <string>Latin (Fraktur variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>latin (variante brisée)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Latg"/>
+               </f>
+               <f name="number">
+                  <numeric value="216"/>
+               </f>
+               <f name="englishName">
+                  <string>Latin (Gaelic variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>latin (variante gaélique)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Latn"/>
+               </f>
+               <f name="number">
+                  <numeric value="215"/>
+               </f>
+               <f name="englishName">
+                  <string>Latin</string>
+               </f>
+               <f name="frenchName">
+                  <string>latin</string>
+               </f>
+               <f name="PVA">
+                  <string>Latin</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Leke"/>
+               </f>
+               <f name="number">
+                  <numeric value="364"/>
+               </f>
+               <f name="englishName">
+                  <string>Leke</string>
+               </f>
+               <f name="frenchName">
+                  <string>léké</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Lepc"/>
+               </f>
+               <f name="number">
+                  <numeric value="335"/>
+               </f>
+               <f name="englishName">
+                  <string>Lepcha (Róng)</string>
+               </f>
+               <f name="frenchName">
+                  <string>lepcha (róng)</string>
+               </f>
+               <f name="PVA">
+                  <string>Lepcha</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Limb"/>
+               </f>
+               <f name="number">
+                  <numeric value="336"/>
+               </f>
+               <f name="englishName">
+                  <string>Limbu</string>
+               </f>
+               <f name="frenchName">
+                  <string>limbou</string>
+               </f>
+               <f name="PVA">
+                  <string>Limbu</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Lina"/>
+               </f>
+               <f name="number">
+                  <numeric value="400"/>
+               </f>
+               <f name="englishName">
+                  <string>Linear A</string>
+               </f>
+               <f name="frenchName">
+                  <string>linéaire A</string>
+               </f>
+               <f name="PVA">
+                  <string>Linear_A</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Linb"/>
+               </f>
+               <f name="number">
+                  <numeric value="401"/>
+               </f>
+               <f name="englishName">
+                  <string>Linear B</string>
+               </f>
+               <f name="frenchName">
+                  <string>linéaire B</string>
+               </f>
+               <f name="PVA">
+                  <string>Linear_B</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Lisu"/>
+               </f>
+               <f name="number">
+                  <numeric value="399"/>
+               </f>
+               <f name="englishName">
+                  <string>Lisu (Fraser)</string>
+               </f>
+               <f name="frenchName">
+                  <string>lisu (Fraser)</string>
+               </f>
+               <f name="PVA">
+                  <string>Lisu</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Loma"/>
+               </f>
+               <f name="number">
+                  <numeric value="437"/>
+               </f>
+               <f name="englishName">
+                  <string>Loma</string>
+               </f>
+               <f name="frenchName">
+                  <string>loma</string>
+               </f>
+               <f name="date">
+                  <string>2010-03-26</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Lyci"/>
+               </f>
+               <f name="number">
+                  <numeric value="202"/>
+               </f>
+               <f name="englishName">
+                  <string>Lycian</string>
+               </f>
+               <f name="frenchName">
+                  <string>lycien</string>
+               </f>
+               <f name="PVA">
+                  <string>Lycian</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Lydi"/>
+               </f>
+               <f name="number">
+                  <numeric value="116"/>
+               </f>
+               <f name="englishName">
+                  <string>Lydian</string>
+               </f>
+               <f name="frenchName">
+                  <string>lydien</string>
+               </f>
+               <f name="PVA">
+                  <string>Lydian</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mahj"/>
+               </f>
+               <f name="number">
+                  <numeric value="314"/>
+               </f>
+               <f name="englishName">
+                  <string>Mahajani</string>
+               </f>
+               <f name="frenchName">
+                  <string>mahâjanî</string>
+               </f>
+               <f name="PVA">
+                  <string>Mahajani</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mand"/>
+               </f>
+               <f name="number">
+                  <numeric value="140"/>
+               </f>
+               <f name="englishName">
+                  <string>Mandaic, Mandaean</string>
+               </f>
+               <f name="frenchName">
+                  <string>mandéen</string>
+               </f>
+               <f name="PVA">
+                  <string>Mandaic</string>
+               </f>
+               <f name="date">
+                  <string>2010-07-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mani"/>
+               </f>
+               <f name="number">
+                  <numeric value="139"/>
+               </f>
+               <f name="englishName">
+                  <string>Manichaean</string>
+               </f>
+               <f name="frenchName">
+                  <string>manichéen</string>
+               </f>
+               <f name="PVA">
+                  <string>Manichaean</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Marc"/>
+               </f>
+               <f name="number">
+                  <numeric value="332"/>
+               </f>
+               <f name="englishName">
+                  <string>Marchen</string>
+               </f>
+               <f name="frenchName">
+                  <string>marchen</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Maya"/>
+               </f>
+               <f name="number">
+                  <numeric value="090"/>
+               </f>
+               <f name="englishName">
+                  <string>Mayan hieroglyphs</string>
+               </f>
+               <f name="frenchName">
+                  <string>hiéroglyphes mayas</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mend"/>
+               </f>
+               <f name="number">
+                  <numeric value="438"/>
+               </f>
+               <f name="englishName">
+                  <string>Mende Kikakui</string>
+               </f>
+               <f name="frenchName">
+                  <string>mendé kikakui</string>
+               </f>
+               <f name="PVA">
+                  <string>Mende_Kikakui</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Merc"/>
+               </f>
+               <f name="number">
+                  <numeric value="101"/>
+               </f>
+               <f name="englishName">
+                  <string>Meroitic Cursive</string>
+               </f>
+               <f name="frenchName">
+                  <string>cursif méroïtique</string>
+               </f>
+               <f name="PVA">
+                  <string>Meroitic_Cursive</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mero"/>
+               </f>
+               <f name="number">
+                  <numeric value="100"/>
+               </f>
+               <f name="englishName">
+                  <string>Meroitic Hieroglyphs</string>
+               </f>
+               <f name="frenchName">
+                  <string>hiéroglyphes méroïtiques</string>
+               </f>
+               <f name="PVA">
+                  <string>Meroitic_Hieroglyphs</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mlym"/>
+               </f>
+               <f name="number">
+                  <numeric value="347"/>
+               </f>
+               <f name="englishName">
+                  <string>Malayalam</string>
+               </f>
+               <f name="frenchName">
+                  <string>malayâlam</string>
+               </f>
+               <f name="PVA">
+                  <string>Malayalam</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Modi"/>
+               </f>
+               <f name="number">
+                  <numeric value="324"/>
+               </f>
+               <f name="englishName">
+                  <string>Modi, Moḍī</string>
+               </f>
+               <f name="frenchName">
+                  <string>modî</string>
+               </f>
+               <f name="PVA">
+                  <string>Modi</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mong"/>
+               </f>
+               <f name="number">
+                  <numeric value="145"/>
+               </f>
+               <f name="englishName">
+                  <string>Mongolian</string>
+               </f>
+               <f name="frenchName">
+                  <string>mongol</string>
+               </f>
+               <f name="PVA">
+                  <string>Mongolian</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Moon"/>
+               </f>
+               <f name="number">
+                  <numeric value="218"/>
+               </f>
+               <f name="englishName">
+                  <string>Moon (Moon code, Moon script, Moon type)</string>
+               </f>
+               <f name="frenchName">
+                  <string>écriture Moon</string>
+               </f>
+               <f name="date">
+                  <string>2006-12-11</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mroo"/>
+               </f>
+               <f name="number">
+                  <numeric value="199"/>
+               </f>
+               <f name="englishName">
+                  <string>Mro, Mru</string>
+               </f>
+               <f name="frenchName">
+                  <string>mro</string>
+               </f>
+               <f name="PVA">
+                  <string>Mro</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mtei"/>
+               </f>
+               <f name="number">
+                  <numeric value="337"/>
+               </f>
+               <f name="englishName">
+                  <string>Meitei Mayek (Meithei, Meetei)</string>
+               </f>
+               <f name="frenchName">
+                  <string>meitei mayek</string>
+               </f>
+               <f name="PVA">
+                  <string>Meetei_Mayek</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mult"/>
+               </f>
+               <f name="number">
+                  <numeric value="323"/>
+               </f>
+               <f name="englishName">
+                  <string>Multani</string>
+               </f>
+               <f name="frenchName">
+                  <string>multanî</string>
+               </f>
+               <f name="PVA">
+                  <string>Multani</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Mymr"/>
+               </f>
+               <f name="number">
+                  <numeric value="350"/>
+               </f>
+               <f name="englishName">
+                  <string>Myanmar (Burmese)</string>
+               </f>
+               <f name="frenchName">
+                  <string>birman</string>
+               </f>
+               <f name="PVA">
+                  <string>Myanmar</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Narb"/>
+               </f>
+               <f name="number">
+                  <numeric value="106"/>
+               </f>
+               <f name="englishName">
+                  <string>Old North Arabian (Ancient North Arabian)</string>
+               </f>
+               <f name="frenchName">
+                  <string>nord-arabique</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_North_Arabian</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Nbat"/>
+               </f>
+               <f name="number">
+                  <numeric value="159"/>
+               </f>
+               <f name="englishName">
+                  <string>Nabataean</string>
+               </f>
+               <f name="frenchName">
+                  <string>nabatéen</string>
+               </f>
+               <f name="PVA">
+                  <string>Nabataean</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Newa"/>
+               </f>
+               <f name="number">
+                  <numeric value="333"/>
+               </f>
+               <f name="englishName">
+                  <string>Newa, Newar, Newari, Nepāla lipi</string>
+               </f>
+               <f name="frenchName">
+                  <string>néwa, néwar, néwari, nepāla lipi</string>
+               </f>
+               <f name="date">
+                  <string>2015-12-16</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Nkgb"/>
+               </f>
+               <f name="number">
+                  <numeric value="420"/>
+               </f>
+               <f name="englishName">
+                  <string>Nakhi Geba ('Na-'Khi ²Ggŏ-¹baw, Naxi Geba)</string>
+               </f>
+               <f name="frenchName">
+                  <string>nakhi géba</string>
+               </f>
+               <f name="date">
+                  <string>2009-02-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Nkoo"/>
+               </f>
+               <f name="number">
+                  <numeric value="165"/>
+               </f>
+               <f name="englishName">
+                  <string>N’Ko</string>
+               </f>
+               <f name="frenchName">
+                  <string>n’ko</string>
+               </f>
+               <f name="PVA">
+                  <string>Nko</string>
+               </f>
+               <f name="date">
+                  <string>2006-10-10</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Nshu"/>
+               </f>
+               <f name="number">
+                  <numeric value="499"/>
+               </f>
+               <f name="englishName">
+                  <string>Nüshu</string>
+               </f>
+               <f name="frenchName">
+                  <string>nüshu</string>
+               </f>
+               <f name="date">
+                  <string>2010-12-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Ogam"/>
+               </f>
+               <f name="number">
+                  <numeric value="212"/>
+               </f>
+               <f name="englishName">
+                  <string>Ogham</string>
+               </f>
+               <f name="frenchName">
+                  <string>ogam</string>
+               </f>
+               <f name="PVA">
+                  <string>Ogham</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Olck"/>
+               </f>
+               <f name="number">
+                  <numeric value="261"/>
+               </f>
+               <f name="englishName">
+                  <string>Ol Chiki (Ol Cemet’, Ol, Santali)</string>
+               </f>
+               <f name="frenchName">
+                  <string>ol tchiki</string>
+               </f>
+               <f name="PVA">
+                  <string>Ol_Chiki</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Orkh"/>
+               </f>
+               <f name="number">
+                  <numeric value="175"/>
+               </f>
+               <f name="englishName">
+                  <string>Old Turkic, Orkhon Runic</string>
+               </f>
+               <f name="frenchName">
+                  <string>orkhon</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_Turkic</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Orya"/>
+               </f>
+               <f name="number">
+                  <numeric value="327"/>
+               </f>
+               <f name="englishName">
+                  <string>Oriya</string>
+               </f>
+               <f name="frenchName">
+                  <string>oriyâ</string>
+               </f>
+               <f name="PVA">
+                  <string>Oriya</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Osge"/>
+               </f>
+               <f name="number">
+                  <numeric value="219"/>
+               </f>
+               <f name="englishName">
+                  <string>Osage</string>
+               </f>
+               <f name="frenchName">
+                  <string>osage</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Osma"/>
+               </f>
+               <f name="number">
+                  <numeric value="260"/>
+               </f>
+               <f name="englishName">
+                  <string>Osmanya</string>
+               </f>
+               <f name="frenchName">
+                  <string>osmanais</string>
+               </f>
+               <f name="PVA">
+                  <string>Osmanya</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Palm"/>
+               </f>
+               <f name="number">
+                  <numeric value="126"/>
+               </f>
+               <f name="englishName">
+                  <string>Palmyrene</string>
+               </f>
+               <f name="frenchName">
+                  <string>palmyrénien</string>
+               </f>
+               <f name="PVA">
+                  <string>Palmyrene</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Pauc"/>
+               </f>
+               <f name="number">
+                  <numeric value="263"/>
+               </f>
+               <f name="englishName">
+                  <string>Pau Cin Hau</string>
+               </f>
+               <f name="frenchName">
+                  <string>paou chin haou</string>
+               </f>
+               <f name="PVA">
+                  <string>Pau_Cin_Hau</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Perm"/>
+               </f>
+               <f name="number">
+                  <numeric value="227"/>
+               </f>
+               <f name="englishName">
+                  <string>Old Permic</string>
+               </f>
+               <f name="frenchName">
+                  <string>ancien permien</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_Permic</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Phag"/>
+               </f>
+               <f name="number">
+                  <numeric value="331"/>
+               </f>
+               <f name="englishName">
+                  <string>Phags-pa</string>
+               </f>
+               <f name="frenchName">
+                  <string>’phags pa</string>
+               </f>
+               <f name="PVA">
+                  <string>Phags_Pa</string>
+               </f>
+               <f name="date">
+                  <string>2006-10-10</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Phli"/>
+               </f>
+               <f name="number">
+                  <numeric value="131"/>
+               </f>
+               <f name="englishName">
+                  <string>Inscriptional Pahlavi</string>
+               </f>
+               <f name="frenchName">
+                  <string>pehlevi des inscriptions</string>
+               </f>
+               <f name="PVA">
+                  <string>Inscriptional_Pahlavi</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Phlp"/>
+               </f>
+               <f name="number">
+                  <numeric value="132"/>
+               </f>
+               <f name="englishName">
+                  <string>Psalter Pahlavi</string>
+               </f>
+               <f name="frenchName">
+                  <string>pehlevi des psautiers</string>
+               </f>
+               <f name="PVA">
+                  <string>Psalter_Pahlavi</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Phlv"/>
+               </f>
+               <f name="number">
+                  <numeric value="133"/>
+               </f>
+               <f name="englishName">
+                  <string>Book Pahlavi</string>
+               </f>
+               <f name="frenchName">
+                  <string>pehlevi des livres</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Phnx"/>
+               </f>
+               <f name="number">
+                  <numeric value="115"/>
+               </f>
+               <f name="englishName">
+                  <string>Phoenician</string>
+               </f>
+               <f name="frenchName">
+                  <string>phénicien</string>
+               </f>
+               <f name="PVA">
+                  <string>Phoenician</string>
+               </f>
+               <f name="date">
+                  <string>2006-10-10</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Plrd"/>
+               </f>
+               <f name="number">
+                  <numeric value="282"/>
+               </f>
+               <f name="englishName">
+                  <string>Miao (Pollard)</string>
+               </f>
+               <f name="frenchName">
+                  <string>miao (Pollard)</string>
+               </f>
+               <f name="PVA">
+                  <string>Miao</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Piqd"/>
+               </f>
+               <f name="number">
+                  <numeric value="293"/>
+               </f>
+               <f name="englishName">
+                  <string>Klingon (KLI pIqaD)</string>
+               </f>
+               <f name="frenchName">
+                  <string>klingon (pIqaD du KLI)</string>
+               </f>
+               <f name="date">
+                  <string>2015-12-16</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Prti"/>
+               </f>
+               <f name="number">
+                  <numeric value="130"/>
+               </f>
+               <f name="englishName">
+                  <string>Inscriptional Parthian</string>
+               </f>
+               <f name="frenchName">
+                  <string>parthe des inscriptions</string>
+               </f>
+               <f name="PVA">
+                  <string>Inscriptional_Parthian</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Qaaa"/>
+               </f>
+               <f name="number">
+                  <numeric value="900"/>
+               </f>
+               <f name="englishName">
+                  <string>Reserved for private use (start)</string>
+               </f>
+               <f name="frenchName">
+                  <string>réservé à l’usage privé (début)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Qabx"/>
+               </f>
+               <f name="number">
+                  <numeric value="949"/>
+               </f>
+               <f name="englishName">
+                  <string>Reserved for private use (end)</string>
+               </f>
+               <f name="frenchName">
+                  <string>réservé à l’usage privé (fin)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Rjng"/>
+               </f>
+               <f name="number">
+                  <numeric value="363"/>
+               </f>
+               <f name="englishName">
+                  <string>Rejang (Redjang, Kaganga)</string>
+               </f>
+               <f name="frenchName">
+                  <string>redjang (kaganga)</string>
+               </f>
+               <f name="PVA">
+                  <string>Rejang</string>
+               </f>
+               <f name="date">
+                  <string>2009-02-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Roro"/>
+               </f>
+               <f name="number">
+                  <numeric value="620"/>
+               </f>
+               <f name="englishName">
+                  <string>Rongorongo</string>
+               </f>
+               <f name="frenchName">
+                  <string>rongorongo</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Runr"/>
+               </f>
+               <f name="number">
+                  <numeric value="211"/>
+               </f>
+               <f name="englishName">
+                  <string>Runic</string>
+               </f>
+               <f name="frenchName">
+                  <string>runique</string>
+               </f>
+               <f name="PVA">
+                  <string>Runic</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Samr"/>
+               </f>
+               <f name="number">
+                  <numeric value="123"/>
+               </f>
+               <f name="englishName">
+                  <string>Samaritan</string>
+               </f>
+               <f name="frenchName">
+                  <string>samaritain</string>
+               </f>
+               <f name="PVA">
+                  <string>Samaritan</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sara"/>
+               </f>
+               <f name="number">
+                  <numeric value="292"/>
+               </f>
+               <f name="englishName">
+                  <string>Sarati</string>
+               </f>
+               <f name="frenchName">
+                  <string>sarati</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sarb"/>
+               </f>
+               <f name="number">
+                  <numeric value="105"/>
+               </f>
+               <f name="englishName">
+                  <string>Old South Arabian</string>
+               </f>
+               <f name="frenchName">
+                  <string>sud-arabique, himyarite</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_South_Arabian</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Saur"/>
+               </f>
+               <f name="number">
+                  <numeric value="344"/>
+               </f>
+               <f name="englishName">
+                  <string>Saurashtra</string>
+               </f>
+               <f name="frenchName">
+                  <string>saurachtra</string>
+               </f>
+               <f name="PVA">
+                  <string>Saurashtra</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sgnw"/>
+               </f>
+               <f name="number">
+                  <numeric value="095"/>
+               </f>
+               <f name="englishName">
+                  <string>SignWriting</string>
+               </f>
+               <f name="frenchName">
+                  <string>SignÉcriture, SignWriting</string>
+               </f>
+               <f name="PVA">
+                  <string>SignWriting</string>
+               </f>
+               <f name="date">
+                  <string>2015-07-07</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Shaw"/>
+               </f>
+               <f name="number">
+                  <numeric value="281"/>
+               </f>
+               <f name="englishName">
+                  <string>Shavian (Shaw)</string>
+               </f>
+               <f name="frenchName">
+                  <string>shavien (Shaw)</string>
+               </f>
+               <f name="PVA">
+                  <string>Shavian</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Shrd"/>
+               </f>
+               <f name="number">
+                  <numeric value="319"/>
+               </f>
+               <f name="englishName">
+                  <string>Sharada, Śāradā</string>
+               </f>
+               <f name="frenchName">
+                  <string>charada, shard</string>
+               </f>
+               <f name="PVA">
+                  <string>Sharada</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sidd"/>
+               </f>
+               <f name="number">
+                  <numeric value="302"/>
+               </f>
+               <f name="englishName">
+                  <string>Siddham, Siddhaṃ, Siddhamātṛkā</string>
+               </f>
+               <f name="frenchName">
+                  <string>siddham</string>
+               </f>
+               <f name="PVA">
+                  <string>Siddham</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sind"/>
+               </f>
+               <f name="number">
+                  <numeric value="318"/>
+               </f>
+               <f name="englishName">
+                  <string>Khudawadi, Sindhi</string>
+               </f>
+               <f name="frenchName">
+                  <string>khoudawadî, sindhî</string>
+               </f>
+               <f name="PVA">
+                  <string>Khudawadi</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sinh"/>
+               </f>
+               <f name="number">
+                  <numeric value="348"/>
+               </f>
+               <f name="englishName">
+                  <string>Sinhala</string>
+               </f>
+               <f name="frenchName">
+                  <string>singhalais</string>
+               </f>
+               <f name="PVA">
+                  <string>Sinhala</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sora"/>
+               </f>
+               <f name="number">
+                  <numeric value="398"/>
+               </f>
+               <f name="englishName">
+                  <string>Sora Sompeng</string>
+               </f>
+               <f name="frenchName">
+                  <string>sora sompeng</string>
+               </f>
+               <f name="PVA">
+                  <string>Sora_Sompeng</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sund"/>
+               </f>
+               <f name="number">
+                  <numeric value="362"/>
+               </f>
+               <f name="englishName">
+                  <string>Sundanese</string>
+               </f>
+               <f name="frenchName">
+                  <string>sundanais</string>
+               </f>
+               <f name="PVA">
+                  <string>Sundanese</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Sylo"/>
+               </f>
+               <f name="number">
+                  <numeric value="316"/>
+               </f>
+               <f name="englishName">
+                  <string>Syloti Nagri</string>
+               </f>
+               <f name="frenchName">
+                  <string>sylotî nâgrî</string>
+               </f>
+               <f name="PVA">
+                  <string>Syloti_Nagri</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Syrc"/>
+               </f>
+               <f name="number">
+                  <numeric value="135"/>
+               </f>
+               <f name="englishName">
+                  <string>Syriac</string>
+               </f>
+               <f name="frenchName">
+                  <string>syriaque</string>
+               </f>
+               <f name="PVA">
+                  <string>Syriac</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Syre"/>
+               </f>
+               <f name="number">
+                  <numeric value="138"/>
+               </f>
+               <f name="englishName">
+                  <string>Syriac (Estrangelo variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>syriaque (variante estranghélo)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Syrj"/>
+               </f>
+               <f name="number">
+                  <numeric value="137"/>
+               </f>
+               <f name="englishName">
+                  <string>Syriac (Western variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>syriaque (variante occidentale)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Syrn"/>
+               </f>
+               <f name="number">
+                  <numeric value="136"/>
+               </f>
+               <f name="englishName">
+                  <string>Syriac (Eastern variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>syriaque (variante orientale)</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tagb"/>
+               </f>
+               <f name="number">
+                  <numeric value="373"/>
+               </f>
+               <f name="englishName">
+                  <string>Tagbanwa</string>
+               </f>
+               <f name="frenchName">
+                  <string>tagbanoua</string>
+               </f>
+               <f name="PVA">
+                  <string>Tagbanwa</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Takr"/>
+               </f>
+               <f name="number">
+                  <numeric value="321"/>
+               </f>
+               <f name="englishName">
+                  <string>Takri, Ṭākrī, Ṭāṅkrī</string>
+               </f>
+               <f name="frenchName">
+                  <string>tâkrî</string>
+               </f>
+               <f name="PVA">
+                  <string>Takri</string>
+               </f>
+               <f name="date">
+                  <string>2012-02-06</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tale"/>
+               </f>
+               <f name="number">
+                  <numeric value="353"/>
+               </f>
+               <f name="englishName">
+                  <string>Tai Le</string>
+               </f>
+               <f name="frenchName">
+                  <string>taï-le</string>
+               </f>
+               <f name="PVA">
+                  <string>Tai_Le</string>
+               </f>
+               <f name="date">
+                  <string>2004-10-25</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Talu"/>
+               </f>
+               <f name="number">
+                  <numeric value="354"/>
+               </f>
+               <f name="englishName">
+                  <string>New Tai Lue</string>
+               </f>
+               <f name="frenchName">
+                  <string>nouveau taï-lue</string>
+               </f>
+               <f name="PVA">
+                  <string>New_Tai_Lue</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Taml"/>
+               </f>
+               <f name="number">
+                  <numeric value="346"/>
+               </f>
+               <f name="englishName">
+                  <string>Tamil</string>
+               </f>
+               <f name="frenchName">
+                  <string>tamoul</string>
+               </f>
+               <f name="PVA">
+                  <string>Tamil</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tang"/>
+               </f>
+               <f name="number">
+                  <numeric value="520"/>
+               </f>
+               <f name="englishName">
+                  <string>Tangut</string>
+               </f>
+               <f name="frenchName">
+                  <string>tangoute</string>
+               </f>
+               <f name="date">
+                  <string>2010-12-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tavt"/>
+               </f>
+               <f name="number">
+                  <numeric value="359"/>
+               </f>
+               <f name="englishName">
+                  <string>Tai Viet</string>
+               </f>
+               <f name="frenchName">
+                  <string>taï viêt</string>
+               </f>
+               <f name="PVA">
+                  <string>Tai_Viet</string>
+               </f>
+               <f name="date">
+                  <string>2009-06-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Telu"/>
+               </f>
+               <f name="number">
+                  <numeric value="340"/>
+               </f>
+               <f name="englishName">
+                  <string>Telugu</string>
+               </f>
+               <f name="frenchName">
+                  <string>télougou</string>
+               </f>
+               <f name="PVA">
+                  <string>Telugu</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Teng"/>
+               </f>
+               <f name="number">
+                  <numeric value="290"/>
+               </f>
+               <f name="englishName">
+                  <string>Tengwar</string>
+               </f>
+               <f name="frenchName">
+                  <string>tengwar</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tfng"/>
+               </f>
+               <f name="number">
+                  <numeric value="120"/>
+               </f>
+               <f name="englishName">
+                  <string>Tifinagh (Berber)</string>
+               </f>
+               <f name="frenchName">
+                  <string>tifinagh (berbère)</string>
+               </f>
+               <f name="PVA">
+                  <string>Tifinagh</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tglg"/>
+               </f>
+               <f name="number">
+                  <numeric value="370"/>
+               </f>
+               <f name="englishName">
+                  <string>Tagalog (Baybayin, Alibata)</string>
+               </f>
+               <f name="frenchName">
+                  <string>tagal (baybayin, alibata)</string>
+               </f>
+               <f name="PVA">
+                  <string>Tagalog</string>
+               </f>
+               <f name="date">
+                  <string>2009-02-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Thaa"/>
+               </f>
+               <f name="number">
+                  <numeric value="170"/>
+               </f>
+               <f name="englishName">
+                  <string>Thaana</string>
+               </f>
+               <f name="frenchName">
+                  <string>thâna</string>
+               </f>
+               <f name="PVA">
+                  <string>Thaana</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Thai"/>
+               </f>
+               <f name="number">
+                  <numeric value="352"/>
+               </f>
+               <f name="englishName">
+                  <string>Thai</string>
+               </f>
+               <f name="frenchName">
+                  <string>thaï</string>
+               </f>
+               <f name="PVA">
+                  <string>Thai</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tibt"/>
+               </f>
+               <f name="number">
+                  <numeric value="330"/>
+               </f>
+               <f name="englishName">
+                  <string>Tibetan</string>
+               </f>
+               <f name="frenchName">
+                  <string>tibétain</string>
+               </f>
+               <f name="PVA">
+                  <string>Tibetan</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Tirh"/>
+               </f>
+               <f name="number">
+                  <numeric value="326"/>
+               </f>
+               <f name="englishName">
+                  <string>Tirhuta</string>
+               </f>
+               <f name="frenchName">
+                  <string>tirhouta</string>
+               </f>
+               <f name="PVA">
+                  <string>Tirhuta</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Ugar"/>
+               </f>
+               <f name="number">
+                  <numeric value="040"/>
+               </f>
+               <f name="englishName">
+                  <string>Ugaritic</string>
+               </f>
+               <f name="frenchName">
+                  <string>ougaritique</string>
+               </f>
+               <f name="PVA">
+                  <string>Ugaritic</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Vaii"/>
+               </f>
+               <f name="number">
+                  <numeric value="470"/>
+               </f>
+               <f name="englishName">
+                  <string>Vai</string>
+               </f>
+               <f name="frenchName">
+                  <string>vaï</string>
+               </f>
+               <f name="PVA">
+                  <string>Vai</string>
+               </f>
+               <f name="date">
+                  <string>2007-07-02</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Visp"/>
+               </f>
+               <f name="number">
+                  <numeric value="280"/>
+               </f>
+               <f name="englishName">
+                  <string>Visible Speech</string>
+               </f>
+               <f name="frenchName">
+                  <string>parole visible</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Wara"/>
+               </f>
+               <f name="number">
+                  <numeric value="262"/>
+               </f>
+               <f name="englishName">
+                  <string>Warang Citi (Varang Kshiti)</string>
+               </f>
+               <f name="frenchName">
+                  <string>warang citi</string>
+               </f>
+               <f name="PVA">
+                  <string>Warang_Citi</string>
+               </f>
+               <f name="date">
+                  <string>2014-11-15</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Wole"/>
+               </f>
+               <f name="number">
+                  <numeric value="480"/>
+               </f>
+               <f name="englishName">
+                  <string>Woleai</string>
+               </f>
+               <f name="frenchName">
+                  <string>woléaï</string>
+               </f>
+               <f name="date">
+                  <string>2010-12-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Xpeo"/>
+               </f>
+               <f name="number">
+                  <numeric value="030"/>
+               </f>
+               <f name="englishName">
+                  <string>Old Persian</string>
+               </f>
+               <f name="frenchName">
+                  <string>cunéiforme persépolitain</string>
+               </f>
+               <f name="PVA">
+                  <string>Old_Persian</string>
+               </f>
+               <f name="date">
+                  <string>2006-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Xsux"/>
+               </f>
+               <f name="number">
+                  <numeric value="020"/>
+               </f>
+               <f name="englishName">
+                  <string>Cuneiform, Sumero-Akkadian</string>
+               </f>
+               <f name="frenchName">
+                  <string>cunéiforme suméro-akkadien</string>
+               </f>
+               <f name="PVA">
+                  <string>Cuneiform</string>
+               </f>
+               <f name="date">
+                  <string>2006-10-10</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Yiii"/>
+               </f>
+               <f name="number">
+                  <numeric value="460"/>
+               </f>
+               <f name="englishName">
+                  <string>Yi</string>
+               </f>
+               <f name="frenchName">
+                  <string>yi</string>
+               </f>
+               <f name="PVA">
+                  <string>Yi</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-01</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zinh"/>
+               </f>
+               <f name="number">
+                  <numeric value="994"/>
+               </f>
+               <f name="englishName">
+                  <string>Code for inherited script</string>
+               </f>
+               <f name="frenchName">
+                  <string>codet pour écriture héritée</string>
+               </f>
+               <f name="PVA">
+                  <string>Inherited</string>
+               </f>
+               <f name="date">
+                  <string>2009-02-23</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zmth"/>
+               </f>
+               <f name="number">
+                  <numeric value="995"/>
+               </f>
+               <f name="englishName">
+                  <string>Mathematical notation</string>
+               </f>
+               <f name="frenchName">
+                  <string>notation mathématique</string>
+               </f>
+               <f name="date">
+                  <string>2007-11-26</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zsye"/>
+               </f>
+               <f name="number">
+                  <numeric value="993"/>
+               </f>
+               <f name="englishName">
+                  <string>Symbols (Emoji variant)</string>
+               </f>
+               <f name="frenchName">
+                  <string>symboles (variante émoji)</string>
+               </f>
+               <f name="date">
+                  <string>2015-12-16</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zsym"/>
+               </f>
+               <f name="number">
+                  <numeric value="996"/>
+               </f>
+               <f name="englishName">
+                  <string>Symbols</string>
+               </f>
+               <f name="frenchName">
+                  <string>symboles</string>
+               </f>
+               <f name="date">
+                  <string>2007-11-26</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zxxx"/>
+               </f>
+               <f name="number">
+                  <numeric value="997"/>
+               </f>
+               <f name="englishName">
+                  <string>Code for unwritten documents</string>
+               </f>
+               <f name="frenchName">
+                  <string>codet pour les documents non écrits</string>
+               </f>
+               <f name="date">
+                  <string>2011-06-21</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zyyy"/>
+               </f>
+               <f name="number">
+                  <numeric value="998"/>
+               </f>
+               <f name="englishName">
+                  <string>Code for undetermined script</string>
+               </f>
+               <f name="frenchName">
+                  <string>codet pour écriture indéterminée</string>
+               </f>
+               <f name="PVA">
+                  <string>Common</string>
+               </f>
+               <f name="date">
+                  <string>2004-05-29</string>
+               </f>
+            </fs>
+            <fs type="subtag">
+               <f name="code">
+                  <symbol value="Zzzz"/>
+               </f>
+               <f name="number">
+                  <numeric value="999"/>
+               </f>
+               <f name="englishName">
+                  <string>Code for uncoded script</string>
+               </f>
+               <f name="frenchName">
+                  <string>codet pour écriture non codée</string>
+               </f>
+               <f name="PVA">
+                  <string>Unknown</string>
+               </f>
+               <f name="date">
+                  <string>2006-10-10</string>
+               </f>
+            </fs>
+         </div>
+      </body>
+   </text>
+</TEI>
