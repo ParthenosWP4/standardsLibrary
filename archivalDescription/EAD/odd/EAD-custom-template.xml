@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../Schemas/tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Customization of EAD for ...</title>
+        <author>...</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>V1</edition>
+      </editionStmt>
+      <publicationStmt>
+        <availability status="free">
+          <licence>CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>authored from scratch</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="foreword">
+        <head>Guidelines</head>
+        <p>...</p>
+      </div>
+      <div type="specification">
+        <head>Specification</head>
+        <!-- You can change the value of schemaSpec/@ident -->
+        <schemaSpec ident="customizationID" start="ead" ns="urn:isbn:1-931666-22-9"
+          source="https://raw.githubusercontent.com/ParthenosWP4/standardsLibrary/master/archivalDescription/EAD/odd/EADSpec.xml">
+          <moduleRef key="EAD"/>
+          <!-- Add your constraints here.
+            Visit http://www.tei-c.org/Guidelines/Customization/odds.xml for learning how does ODD work -->
+
+          <!--EXAMPLE : make the element <processinfo> mandatory in <archdesc>
+         
+         Reminder : the archdesc specification in the EADSpec.xml file (the ODD source) : 
+          
+          <elementSpec ident="archdesc" module="EAD">
+            <gloss>Archival Description</gloss>
+            <desc>A wrapper element for the bulk of an EAD document instance, which describes the
+              content, context, and extent of a body of archival materials, including administrative
+              and supplemental information that facilitates use of the materials. Information is
+              organized in unfolding, hierarchical levels that allow for a descriptive overview of
+              the whole to be followed by more detailed views of the parts, designated by the
+              element Description of Subordinate Components <gi>dsc</gi> . Data elements available
+              at the <gi>archdesc</gi> level are repeated at the various component levels within
+                <gi>dsc</gi>, and information is inherited from one hierarchical level to the
+              next.</desc>
+            <classes>
+              <memberOf key="att.EADGlobal"/>
+              <memberOf key="att.relatedencoding"/>
+              <memberOf key="att.desc.c"/>
+              <memberOf key="att.typed"/>
+            </classes>
+            <content>
+              <rng:group>
+                <rng:zeroOrMore>
+                  <rng:ref name="runner"/>
+                </rng:zeroOrMore>
+                <rng:ref name="did"/>
+                <rng:zeroOrMore>
+                  <rng:ref name="model.desc.full"/>
+                </rng:zeroOrMore>
+              </rng:group>
+            </content>
+            <attList>
+              <attDef ident="level" mode="change" usage="req"/>
+              <attDef ident="type" mode="change" usage="opt">
+                <desc>can be used to categorize the finding aid as an inventory, register, or other
+                  format.</desc>
+              </attDef>
+
+            </attList>
+            <remarks>
+              <p>The Descriptive Identification <gi>did</gi> element is required to appear in
+                  <gi>archdesc</gi> before presenting more detailed descriptions in
+                  <gi>bioghist</gi>, <gi>scopecontent</gi>, and <gi>dsc</gi>, in order to provide
+                first a basic description of the archival materials.</p>
+            </remarks>
+          </elementSpec>
+          -->
+          
+          <elementSpec ident="archdesc" module="EAD" mode="change">
+            <content>
+              <rng:group>
+                <rng:zeroOrMore>
+                  <rng:ref name="runner"/>
+                </rng:zeroOrMore>
+                <rng:ref name="did"/>
+
+                <!--***Custormization***-->
+                <!--This new line below add <processinfo> as a required child of <archdesc>, together with <did>
+                -->
+                <rng:ref name="processinfo"/>
+                <!--***-->
+
+                <rng:zeroOrMore>
+                  <rng:ref name="model.desc.full"/>
+                </rng:zeroOrMore>
+              </rng:group>
+            </content>
+          </elementSpec>
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>
+<!-- source="https://raw.githubusercontent.com/ParthenosWP4/standardsLibrary/master/archivalDescription/EAD/odd/EAD-schema_doc.xml" -->
