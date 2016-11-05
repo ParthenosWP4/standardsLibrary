@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- Schema för beskrivning av SAOB export. -->
+	<!-- Erik Bäckerud, 2014-10-08 -->
+	<!-- 2014-11-18, E.B.: -->
+	<!-- titel valfritt attribut på rotord. -->
+	<!-- Homografsiffra kan nu vara sträng. (tillåter "1-2" osv) -->
+	<!-- -->
+	<!-- targetNamespace="http://www.saob.se/saobexport" xmlns="http://www.saob.se/saobexport"
+		-->
+	
+	<!-- Rotelementet, alla dokument innehåller ett <artikel> element. -->
+	<xs:element name="artikel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta" />
+				<xs:element ref="body" />
+				<xs:element ref="taggar" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="meta">
+		<xs:complexType>
+			<xs:attribute name="band" use="required" type="xs:integer" />
+			<xs:attribute name="fil" use="required" type="xs:string" />
+			<xs:attribute name="hänvisning" use="required" type="xs:boolean" />
+			<xs:attribute name="spalt" use="required" type="SaobSpaltnamnsTyp" />
+			<xs:attribute name="titel" use="required" type="xs:string" />
+			<xs:attribute name="unik" use="required" type="xs:NCName" />
+			<xs:attribute name="version" use="required" type="xs:NMTOKEN" />
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- "body" innehåller en kopia av originaltexten, en följd av STYCKE-element. -->
+	<xs:element name="body">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="STYCKE" type="StyckeTyp" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Här börjar definitionen av STYCKE och dess dotterelement. -->
+	<!-- ************************************************************** -->
+	
+	<xs:complexType name="StyckeTyp">
+		<xs:sequence>
+			<xs:sequence maxOccurs="1" minOccurs="1">
+				<xs:group ref="StyckeGrupp" />
+			</xs:sequence>
+			<xs:sequence maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="b" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="id" type="SaobIdTyp" use="required" />
+						<xs:attribute name="nyrad" type="xs:boolean" default="false" />
+					</xs:complexType>
+				</xs:element>
+				<xs:group ref="StyckeGrupp" maxOccurs="1" minOccurs="1" />
+			</xs:sequence>
+		</xs:sequence>
+		<xs:attribute name="id" type="SaobIdTyp" use="required" />
+		<xs:attributeGroup ref="ArtStart" />
+	</xs:complexType>
+	
+	<xs:simpleType name="SaobIdTyp">
+		<xs:restriction base="xs:NCName">
+			<xs:pattern value="\S+" />
+			<!-- vad är bäst restriktion? -->
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:group name="StyckeGrupp">
+		<xs:choice>
+			<xs:element name="Formstil" type="StilelementTyp" />
+			<xs:element name="Forfattarstil" type="StilelementTyp" />
+			<xs:element name="LitenAntikva" type="StilelementTyp" />
+			<xs:element name="LitenGrekiska" type="StilelementTyp" />
+			<xs:element name="LitenKursiv" type="StilelementTyp" />
+			<xs:element name="LitenRubrik" type="StilelementTyp" />
+			<xs:element name="StorAntikva" type="StilelementTyp" />
+			<xs:element name="StorKursiv" type="StilelementTyp" />
+			<xs:element name="StorGrekiska" type="StilelementTyp" />
+			<xs:element name="StorRubrik" type="StilelementTyp" />
+			<xs:element name="formparentes" type="StilelementTyp" />
+		</xs:choice>
+	</xs:group>
+	
+	<xs:complexType name="StilelementTyp">
+		<xs:simpleContent>
+			<xs:extension base="SvartSträngTyp">
+				<xs:attribute name="rend" type="RendTyp" default="normal" />
+				<xs:attribute name="nyspalt" type="SaobSpaltnamnsTyp" />
+				<xs:attribute name="id" type="SaobIdTyp" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:attributeGroup name="ArtStart">
+		<xs:attribute name="art" type="xs:string" />
+		<xs:attribute name="hänvisning" type="xs:boolean" />
+		<xs:attribute name="startspalt" type="SaobSpaltnamnsTyp" />
+		<!-- svit saknas eller är 0 om detta ej är en svitartikel, annars anger "svit" viken
+			artikel i ordning detta är. -->
+		<xs:attribute name="svit" type="xs:integer" />
+		<xs:attribute name="unik" type="xs:token" />
+	</xs:attributeGroup>
+	
+	<xs:simpleType name="SvartSträngTyp">
+		<xs:restriction base="xs:string">
+		  <!-- <xs:pattern value="\S+" /> -->
+		  <!-- Testar med alternativ definition av svartsträng -->
+		  <!-- E.B. 14-11-28 -->
+		  <xs:pattern value="[^ ]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="RendTyp">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="normal" />
+			<xs:enumeration value="upphöjd" />
+			<xs:enumeration value="nedsänkt" />
+			<xs:enumeration value="spärrad" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="SaobSpaltnamnsTyp">
+		<xs:restriction base="xs:NCName">
+			<xs:pattern value="[A-ZÅÄÖ]\d+" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- Här slutar definitionen av STYCKE och dess dotterelement. -->
+	<!-- ************************************************************** -->
+	
+	<xs:element name="taggar">
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="uppslagsord" />
+					<xs:element ref="formparentes" minOccurs="0" />
+					<xs:element ref="etymologi" minOccurs="0" />
+					<xs:element ref="översikt" minOccurs="0" />
+					<xs:element ref="definition" minOccurs="0" />
+					<!-- Tillåt dess i avvikande ordning? -->
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="förbindelser" />
+						<xs:element ref="sammansättningar" />
+						<xs:element ref="avledningar" />
+					</xs:choice>
+					<xs:element ref="anmärkningar" minOccurs="0" />
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element ref="hänvisning" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- StartSlut innebär att attributet start är obligatoriskt men slut är valfritt.
+		-->
+	<xs:attributeGroup name="StartSlut">
+		<xs:attribute name="start" type="SaobIdTyp" use="required" />
+		<xs:attribute name="slut" type="SaobIdTyp" />
+	</xs:attributeGroup>
+	
+	<xs:simpleType name="ordklassTyp">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="substantiv" />
+			<xs:enumeration value="adjektiv" />
+			<xs:enumeration value="adverb" />
+			<xs:enumeration value="pronomen" />
+			<xs:enumeration value="bestämd artikel" />
+			<xs:enumeration value="obestämd artikel" />
+			<xs:enumeration value="räkneord" />
+			<xs:enumeration value="preposition" />
+			<xs:enumeration value="konjunktion" />
+			<xs:enumeration value="infinitivmärke" />
+			<xs:enumeration value="interjektion" />
+			<xs:enumeration value="verb" />
+			<xs:enumeration value="participiellt adjektiv" />
+			<xs:enumeration value="partikel" />
+			<xs:enumeration value="predikat" />
+			<xs:enumeration value="sammansättningsförled" />
+			<xs:enumeration value="prefix" />
+			<xs:enumeration value="suffix" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="uppslagsord">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="biform" />
+			</xs:sequence>
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attribute name="spalt" use="required" type="SaobSpaltnamnsTyp" />
+			<xs:attribute name="titel" use="required" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="hänvisning">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="biform" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="rotord" />
+			</xs:sequence>
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attribute name="spalt" use="required" type="SaobSpaltnamnsTyp" />
+			<xs:attribute name="titel" use="required" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="biform">
+		<xs:complexType>
+			<xs:attribute name="titel" use="required" type="xs:string" />
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="rotord">
+		<xs:complexType>
+			<xs:attribute name="titel" type="xs:string" />
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="formparentes">
+		<xs:complexType>
+			<xs:attribute name="start" type="SaobIdTyp" use="required" />
+			<xs:attribute name="slut" type="SaobIdTyp" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="etymologi">
+		<xs:complexType>
+			<xs:attribute name="start" type="SaobIdTyp" use="required" />
+			<xs:attribute name="slut" type="SaobIdTyp" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="översikt">
+		<xs:complexType>
+			<xs:attribute name="start" type="SaobIdTyp" use="required" />
+			<xs:attribute name="slut" type="SaobIdTyp" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="definition">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice  minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="moment" />
+					<xs:element ref="momentgrupp" />
+				</xs:choice>
+			</xs:sequence>
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="moment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice  minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="moment" />
+					<xs:element ref="momentgrupp" />
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="beteckning" type="xs:string" />
+			<xs:attribute name="grupp" type="xs:string" />
+			<xs:attribute name="nivå" use="required" type="xs:integer" />
+			<xs:attribute name="start" type="SaobIdTyp" />
+			<xs:attribute name="slut" type="SaobIdTyp" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="momentgrupp">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="moment" />
+			</xs:sequence>
+			<xs:attribute name="beteckning" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="förbindelser">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="förbindelse" />
+			</xs:sequence>
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="förbindelse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="biform" />
+				<xs:element minOccurs="0" ref="definition" />
+				<!-- Särskilda förbindelser har inga sekundära särsk. förb., ssgr., eller avledn.
+					-->
+			</xs:sequence>
+			<xs:attribute name="titel" use="required" />
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="sammansättningar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ramsa" />
+			</xs:sequence>
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="ramsa">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="sammansättning" />
+			</xs:sequence>
+			<xs:attribute name="beteckning" use="required" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="sammansättning">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="biform" />
+				<xs:element ref="definition" minOccurs="0" />
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="sekundära" />
+			</xs:sequence>
+			<xs:attribute name="ramsa" />
+			<xs:attribute name="titel" use="required" type="xs:string" />
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="avledningar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="avledning" />
+			</xs:sequence>
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="avledning">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="biform" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="definition" minOccurs="0" />
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="sekundära" />
+			</xs:sequence>
+			<xs:attribute name="titel" use="required" type="xs:string" />
+			<xs:attribute name="ordklass" type="ordklassTyp" />
+			<xs:attribute name="homografsiffra" type="xs:string" />
+			<xs:attributeGroup ref="StartSlut" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:group name="sekundära">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="förbindelser" />
+				<xs:element ref="avledningar" />
+				<xs:element ref="sammansättningar" />
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<!-- Anmärkningar kan förekomma var som helst i texten -->
+	<!-- men i XML:en är de samlade här.                   -->
+	<xs:element name="anmärkningar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="anmärkning" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="anmärkning">
+		<xs:complexType>
+			<!-- För en anmärkning måste både start och slut anges. -->
+			<xs:attribute name="start" type="SaobIdTyp" use="required" />
+			<xs:attribute name="slut" type="SaobIdTyp" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
