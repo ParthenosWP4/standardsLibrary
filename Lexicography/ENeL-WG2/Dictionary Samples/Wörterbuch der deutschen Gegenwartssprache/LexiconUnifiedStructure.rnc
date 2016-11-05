@@ -1,0 +1,538 @@
+default namespace = 'http://www.tei-c.org/ns/1.0'
+include "LexiconUnifiedConstants.rnc"
+
+start = element text {
+	element body {
+		element head { text } *  , nest +
+	}
+}
+
+########################################
+# nest #################################
+########################################
+
+nest = element div {
+	attribute type { 'block' },
+	(
+		( entry-main , list-deriv * , list-comp2 * )
+		| ( entry-main , list-comp1embedded * )
+		| ( list-comp1 , list-comp2 * ) 
+	)
+}
+
+########################################
+# entry types ##########################
+########################################
+
+generic-entry = (
+	attribute xml:id { xsd:ID }
+	, attribute n { homograph-indices } ?
+	, headword-description
+)
+
+entry-main = element entry {
+	attribute type { 'main' },
+	generic-entry
+	, etymological-description ?
+	, headword-description *
+	, pointer ?
+	, etymological-description ?
+	, usage-description *
+	, pointer *
+	, sense-description ?
+	, etymological-prose ?
+	, note * # nur eWDG
+	, pointer * # nur eWDG
+}
+
+entry-deriv = element entry {
+	attribute type { 'deriv' }
+	, generic-entry
+	, headword-description ? # "Spontaneität/Spontanität"
+	, usage-description *
+	, pointer ?
+	, sense-description ? # "Gejaule", "Gebruelle", "Gebelle"
+}
+
+entry-comp1 = element entry {
+	attribute type { 'comp1' }
+	, generic-entry
+	, headword-description ? # "liebkosen"
+	, pointer ?
+	, etymological-description ?
+	, usage-description *
+	, pointer *
+	, sense-description ?
+}
+
+entry-comp1embedded = element entry {
+	attribute type { 'comp1-embedded' }
+	, generic-entry
+	, etymological-description ?
+	, usage-description *
+	, pointer ?
+	, sense-description
+}
+
+entry-comp2 = element entry {
+	attribute type { 'comp2' }
+	, generic-entry
+	, empty-sense-description ?
+}
+
+
+########################################
+# list types ###########################
+########################################
+
+list-deriv = element div {
+	attribute type { 'deriv' }
+	, pointer ?
+	, entry-deriv +
+	, definition ?
+}
+
+list-comp1 = element div {
+	attribute type { 'comp1' }
+	, headword-description
+	, (
+		pointer *
+		& etymological-description ?
+		& definition ?
+		& note *
+		& usage-description *
+	)
+	, ( entry-comp1 | list-comp1 ) *
+	, pointer ?
+}
+
+list-comp1embedded = element div {
+	attribute type { 'comp1-embedded' }
+	, entry-comp1embedded +
+}
+
+list-comp2 = element div {
+	attribute type { 'comp2' }
+	, pointer *
+	, note ?
+	, ( entry-comp2 | list-comp2 ) +
+	, pointer ?
+}
+
+
+########################################
+# sense description ####################
+########################################
+
+generic-sense-description = (
+	rendering-hints ?
+	, sense-level
+	, sense-ID
+)
+
+sense-description = element sense {
+	generic-sense-description
+	, sense-n ?
+	, (
+		variant-headword-description *
+		& collocation-description *
+		& definition *
+		& note *
+		& usage-description *
+		& pointer *
+	)
+	, (
+		example *
+		& sense-description *
+	)
+}
+
+empty-sense-description = element sense {
+	generic-sense-description
+}
+
+
+########################################
+# etymological description #############
+########################################
+
+etymological-description = element etym {
+	rendering-hints ?
+	& element lang {
+		rendering-hints ?
+		, token
+	} *
+	& element note {
+		rendering-hints ?
+		, note-ID
+		, (
+			'EN'
+			| 'Kurzw.'
+			| 'Kurzw. aus EN'
+			| 'Kunstw.'
+			| 'Herk. unsicher'
+			| 'arcuballista'
+			| 'bîbôz'
+			| 'valise'
+		)
+	} ?
+}
+
+
+
+########################################
+# usage description ####################
+########################################
+
+usage-description = element usg {
+	rendering-hints ?
+	, (
+		( attribute type { 'dom' } , usage-values-dom )
+		| ( attribute type { 'geo' } , usage-values-geo )
+		| ( attribute type { 'note' } , usage-values-note )
+		| ( attribute type { 'plev' } , usage-values-plev )
+		| ( attribute type { 'reg' } , usage-values-reg )
+		| ( attribute type { 'style' } , usage-values-style )
+		| ( attribute type { 'time' } , usage-values-time )
+	)
+}
+
+
+########################################
+# examples #############################
+########################################
+
+
+example = ( example-crafted | example-cited )
+
+example-crafted = element cit {
+	rendering-hints ?
+	, attribute type { 'example' }
+	, example-data
+}
+
+example-cited = element cit {
+	rendering-hints ?
+	, attribute type { 'quotation' }
+	, example-data
+	, core-pointer-bibl
+}
+
+example-data = element quote {
+	rendering-hints ?
+	& text
+	& example-data-addition *
+	& pointer ?
+	& grammatical-atom-case *
+	& usage-description *
+	& pronounciation-description ?
+	& note *
+	& typography-milestone *
+	& typography-emphasis *
+	& typography-textual-quotation *
+}
+
+example-data-addition = element add {
+	rendering-hints ?
+	& attribute type { token 'addendum' | token 'paraphrase' }
+	& text
+	& typography-textual-quotation ?
+	& usage-description *
+	& pointer ?
+	& note *
+}
+
+collocation-description = element colloc {
+	rendering-hints ?
+	, example-data
+}
+
+
+########################################
+# pointers #############################
+########################################
+
+pointer = element xr {
+	rendering-hints ?
+	, note ?
+	, element abbr { rendering-hints ? , token } ?
+	, ( 
+		core-pointer-dict +
+		| core-pointer-other
+		| core-pointer-bibl +
+	)
+}
+
+core-pointer-bibl = element ref {
+	attribute type { token 'bibl' }
+	, attribute cRef { token }
+	, element bibl {
+		element title { rendering-hints ? , token } +
+		& element author { rendering-hints ? , token } ?
+		& element biblScope { rendering-hints ? , token } ?
+		& note ?
+	}
+}
+
+core-pointer-dict = element ref {
+	rendering-hints ?
+	, attribute type { 'dict' | 'dict-embedded' }
+	, attribute cRef { token }
+	, attribute sidx { token } ?
+	, element w {
+		rendering-hints ?
+		, attribute type { 'ref' }
+		, attribute hidx { homograph-indices } ?
+		, token
+	} *
+}
+
+core-pointer-other = element ref {
+	attribute type { 'other' }
+	, element w {
+		rendering-hints ?
+		, attribute type { 'ref' }
+		, token
+	}
+}
+
+
+########################################
+# notes and definitions ################
+########################################
+
+note = element note {
+	rendering-hints ?
+	& note-ID ?
+	& discontinuity-marker ?
+	& element w { rendering-hints ? , attribute type { token } , token } *
+	& typography-textual-quotation ?
+	& core-pointer-dict *
+	& usage-description *
+	& text
+}
+
+definition = element def {
+	rendering-hints ?
+	& note-ID ?
+	& discontinuity-marker ?
+	& typography-textual-quotation *
+	& grammatical-atom-number ?
+	& grammatical-atom-case ?
+	& element w { attribute type { token } , token } *
+	& core-pointer-dict *
+	& text
+}
+
+
+########################################
+# form descriptions ####################
+########################################
+
+headword-description = element form {
+	attribute type { 'headword' }
+	, rendering-hints ?
+	, (
+		(note | usage-description) *
+		, orthography-description
+		, note ?
+	) +
+	, grammatical-description ?
+}
+
+orthography-description = element orth {
+	rendering-hints ?
+	, attribute extent { 'full' | 'prefix' | 'suffix' | 'none' }
+	, attribute expand { token } ?
+	, attribute norm { token } ?
+	, attribute hidx { homograph-indices } ?
+	, token
+}
+
+diminutive-description = element form {
+	rendering-hints ?
+	, attribute type { 'diminutive' }
+	, typography-static-label
+	, (
+		orthography-description +
+		& grammatical-description
+		& usage-description *
+		& note *
+	)
+}
+
+abbreviation-description = element form {
+	rendering-hints ?
+	, attribute type { 'abbreviation' }
+	, typography-static-label
+	, (
+		(orthography-description + | pointer ) # "ehrenhalber"
+		& usage-description ?
+		& grammatical-description
+	)
+}
+
+irregular-orthography-description = element form {
+	rendering-hints ?
+	, attribute type { 'irregular-orthography' }
+	, note
+	, orthography-description
+	, grammatical-description
+}
+
+grammatical-description = element gramGrp {
+	rendering-hints ?
+	, (
+		grammatical-atom-pos
+		& grammatical-atom-number ?
+		& grammatical-atom-genus *
+		& grammatical-atom *
+		& usage-description *
+		& (
+			pronounciation-description
+			| diminutive-description
+			| abbreviation-description
+			| variant-headword-description
+			| irregular-orthography-description 
+		) *
+		& note *
+	) *
+}
+
+pronounciation-description = element form {
+	rendering-hints ?
+	, attribute type { 'pronounciation' }
+	, ( 
+		usage-description *
+		& note *
+		& element pron { rendering-hints ? , token } +
+	)
+}
+
+variant-headword-description = element form {
+	rendering-hints ?
+	, attribute type { 'variant' }
+	, (
+		note ?
+		& usage-description *
+	)
+	, orthography-description
+	, orthography-description ?
+	, (
+		grammatical-description ?
+		| usage-description ?
+		| note ?
+	)
+}
+
+grammatical-atom = element gram {
+	rendering-hints ?
+	, grammatical-atom-values
+}
+
+grammatical-atom-pos = element pos {
+	rendering-hints ?
+	, grammatical-atom-pos-values
+}
+
+grammatical-atom-number = element number {
+	rendering-hints ?
+	, (
+		( attribute value { 'plural' } , 'Pl.' )
+		| ( attribute value { 'singular' } , 'Sg.' )
+	)
+}
+
+grammatical-atom-case = element case {
+	rendering-hints ?
+	, (
+		( attribute value { 'dative' } , 'Dat.' )
+		| ( attribute value { 'accusative' } , 'Akk.' )
+	)
+}
+
+grammatical-atom-genus = element gen {
+	rendering-hints ?
+	, grammatical-atom-genus-values
+}
+
+
+########################################
+# EtymWB specific ######################
+########################################
+
+foreign-word = element mentioned {
+	attribute lang { list { languages-etymwb + } }
+	, attribute expand { token } ?
+	, ( token | person-name )
+}
+
+person-name = element persName {
+	attribute ref { xsd:anyURI } ?
+	, token
+}
+
+etymological-prose = element div {
+	attribute type { 'etym' }
+	& attribute xml:id { xsd:ID }
+	& text
+	& headword-description *
+	& definition *
+	& element lang {
+		rendering-hints ?
+		, token 
+	} *
+	& foreign-word *
+        & element w { attribute type { 'emph' } , token } *
+	& core-pointer-dict *
+	& element bibl {
+		element author { token } ?
+		, element title { token } ?
+		, element biblScope { token } ?
+	} *
+	& element date {
+		text
+		& attribute notBefore { token } ?
+		& attribute notAfter { token } ?
+		& attribute when { token } ?
+		& attribute from { token } ?
+		& attribute to { token } ?
+	} *
+	& person-name *
+	& typography-milestone *
+}
+
+
+########################################
+# typographical artifacts ##############
+########################################
+
+typography-milestone = element milestone {
+	attribute type { 'angle' | 'dash' },
+	attribute unit { 'microstructure' }
+}
+
+typography-textual-quotation = element q {
+	rendering-hints ?
+	& attribute type { 'single96' | 'double96' | 'doubleguill' }
+	& text
+	& example-data-addition ?
+	& typography-emphasis ?
+	& typography-textual-quotation ?
+}
+
+rendering-hints = attribute rend {
+	xsd:token {
+		pattern = '(((font|ldelim|rdelim|term|sep|text|tail):.*)\s?)+'
+	}
+}
+
+typography-emphasis = element w {
+	attribute type { 'emph' | 'prep' | 'form' }
+	, token
+}
+
+typography-static-label = element lbl {
+	rendering-hints ?
+	, label-values
+}

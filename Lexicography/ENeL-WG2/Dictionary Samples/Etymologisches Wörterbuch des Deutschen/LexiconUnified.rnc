@@ -1,0 +1,10 @@
+default namespace = 'http://www.tei-c.org/ns/1.0'
+namespace xsi = 'http://www.w3.org/2001/XMLSchema-instance'
+
+start = TEI
+
+TEI = element TEI {
+	attribute xml:space { 'preserve' } ?
+	, grammar { include "LexiconUnifiedMetadata.rnc" }
+	, grammar { include "LexiconUnifiedStructure.rnc" }
+}
