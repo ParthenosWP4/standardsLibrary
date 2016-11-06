@@ -210,8 +210,15 @@ We can, using an oXygen editor variable `${xpath_eval()}` and a handy xPath func
 
 If you were ever looking for a proof why it's worth learning xPath for anything other than to explore your XML-encoded dictionaries, here it is:
 
-<img src="img/xpath1.png"></img><img src="img/xpath2.png"></img><img src="img/xpath3.png"></img>
-
+--
+<img src="img/xpath1.png"></img>  
+--
+--
+<img src="img/xpath2.png"></img>  
+--
+--
+<img src="img/xpath3.png"></img>
+--
 
 ## <a name="stylingdictionaries"></a>Styling Dictionaries, or Beauty is in the Eye of the Lexicographer</a>
 
