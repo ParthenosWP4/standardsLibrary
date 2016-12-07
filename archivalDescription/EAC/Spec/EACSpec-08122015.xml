@@ -5,12 +5,13 @@
     xmlns:olac="http://www.language-archives.org/OLAC/1.0/" xmlns:iso="http://www.iso.org/ns/1.0"
     xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace"
     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Hello World -->
+
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>EAC Specification in TEI-ODD</title>
-                <author>Charles Riondet and Laurent Romary </author>
+                <author>Laurent Romary </author>
+                <author>Charles Riondet</author>
             </titleStmt>
             <editionStmt>
                 <edition>draft</edition>
@@ -222,7 +223,7 @@
         <back>
             <div type="annex" xml:id="sec_schema">
                 <head>EAC specification</head>
-                <schemaSpec ident="EAC-schema" start="eac-cpf" ns="toto">
+                <schemaSpec ident="EAC-schema" start="eac-cpf" ns="urn:isbn:1-931666-33-4">
                     <!--ns="urn:isbn:1-931666-22-9"-->
 
                     <!--<moduleRef key="tei"/>-->
@@ -260,6 +261,7 @@
                         <gloss>Abstract</gloss>
                         <desc>brief summary of the information contained within the
                                 <gi>biogHist</gi> as a whole</desc>
+                        
                         <classes>
                             <memberOf key="att.EACGlobal"/>
                             <!-- id, lang, localType -->
@@ -503,10 +505,10 @@
                             <memberOf key="model.desc.base"/>-->
                         </classes>
                         <content>
-                            <rng:list>
+                            <rng:choice>
                                 <rng:value>human</rng:value>
                                 <rng:value>machine</rng:value>
-                            </rng:list>
+                            </rng:choice>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -673,7 +675,7 @@
                         </classes>
                         <content>
                             <rng:oneOrMore>
-                                <rng:ref name="setComponent"/>
+                                <rng:text/>
                             </rng:oneOrMore>
                         </content>
                         <exemplum>
@@ -1049,20 +1051,32 @@
                         </classes>
                         <content>
                             <rng:ref name="recordId"/>
-                            <rng:ref name="maintenanceStatus"/>
-                            <rng:ref name="maintenanceAgency"/>
-                            <rng:ref name="maintenanceHistory"/>
-                            <rng:optional>
-                                <rng:ref name="publicationStatus"/>
-                                <rng:ref name="languageDeclaration"/>
-                                <rng:ref name="sources"/>
-                            </rng:optional>
                             <rng:zeroOrMore>
                                 <rng:ref name="otherRecordId"/>
+                            </rng:zeroOrMore>
+                            <rng:ref name="maintenanceStatus"/>
+                            <rng:optional>
+                                <rng:ref name="publicationStatus"/>
+                            </rng:optional>
+                            <rng:ref name="maintenanceAgency"/>
+                            <rng:optional>
+                                <rng:ref name="languageDeclaration"/>
+                            </rng:optional>
+                            <rng:zeroOrMore>
                                 <rng:ref name="conventionDeclaration"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:ref name="localTypeDeclaration"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:ref name="localControl"/>
                             </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="maintenanceHistory"/>
+                            </rng:zeroOrMore>
+                            <rng:optional>
+                                <rng:ref name="sources"/>
+                            </rng:optional>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -1145,15 +1159,13 @@
                             <memberOf key="att.EACGlobal"/>
                         </classes>
                         <content>
-                            <rng:choice>
-                                <rng:oneOrMore>
-                                    <rng:ref name="citation"/>
-                                </rng:oneOrMore>
-                                <rng:zeroOrMore>
-                                    <rng:ref name="abbreviation"/>
-                                    <rng:ref name="descriptiveNote"/>
-                                </rng:zeroOrMore>
-                            </rng:choice>
+                            <rng:optional>
+                                <rng:ref name="abbreviation"/>
+                            </rng:optional>
+                            <rng:ref name="citation"/>
+                            <rng:optional>
+                                <rng:ref name="descriptiveNote"/>
+                            </rng:optional>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -1206,16 +1218,16 @@
                             <memberOf key="model.access"/>
                         </classes>
                         <content>
-                            <rng:choice>
-                                <rng:oneOrMore>
-                                    <rng:ref name="identity"/>
-                                </rng:oneOrMore>
-                                <rng:zeroOrMore>
-                                    <rng:ref name="description"/>
-                                    <rng:ref name="relations"/>
-                                    <rng:ref name="alternativeSet"/>
-                                </rng:zeroOrMore>
-                            </rng:choice>
+                            <rng:ref name="identity"/>
+                            <rng:optional>
+                                <rng:ref name="description"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="relations"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="alternativeSet"/>
+                            </rng:optional>
                         </content>
 
                         <!-- 
@@ -1802,6 +1814,27 @@ ID	#IMPLIED, ID</attList> -\->
                         <content>
                             <rng:text/>
                         </content>
+                        <attList>
+                            <attDef ident="standardDateTime">
+                                <datatype>
+                                    <rng:choice>
+                                        <rng:data type="date">
+                                            <rng:param name="maxInclusive">2099-12-31</rng:param>
+                                        </rng:data>
+                                        <rng:data type="gYear">
+                                            <rng:param name="maxInclusive">2099</rng:param>
+                                        </rng:data>
+                                        <rng:data type="gYearMonth">
+                                            <rng:param name="maxInclusive">2099-12</rng:param>
+                                        </rng:data>
+                                        <rng:data type="dateTime">
+                                            <rng:param name="maxInclusive"
+                                                >2099-12-31T23:59:59</rng:param>
+                                        </rng:data>
+                                    </rng:choice>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <exemplum>
                             <teix:egXML>
                                 <maintenanceEvent xmlns="-">
@@ -2203,17 +2236,19 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                             <memberOf key="att.EACGlobal"/>
                         </classes>
                         <content>
-                            <rng:ref name="entityType"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="entityId"/>
                             </rng:zeroOrMore>
+                            <rng:ref name="entityType"/>
+                            <rng:oneOrMore>
+                                <rng:choice>
+                                    <rng:ref name="nameEntryParallel"/>
+                                    <rng:ref name="nameEntry"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
                             <rng:optional>
                                 <rng:ref name="descriptiveNote"/>
                             </rng:optional>
-                            <rng:oneOrMore>
-                                <rng:ref name="nameEntry"/>
-                                <rng:ref name="nameEntryParallel"/>
-                            </rng:oneOrMore>
                         </content>
                         <exemplum>
                             <teix:egXML>
@@ -2315,13 +2350,15 @@ ID	#IMPLIED, ID</attList> -->
                             <rng:text/>
                         </content>
                         <attList>
-                            <attDef ident="langcode">
+                            <attDef ident="languageCode">
                                 <desc>The three-lettter code for the language in which an
                                         <gi>abstract</gi> is written, for the <gi>language</gi> of
                                     the finding aid and the <gi>language</gi> of the
                                     materials.</desc>
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="string">
+                                        <rng:param name="pattern">[a-z]{3}</rng:param>
+                                    </rng:data>
                                 </datatype>
                                 <remarks>
                                     <p> The codes should be taken from ISO639-2b, as specified in
@@ -4640,6 +4677,15 @@ ID	#IMPLIED, ID</attList> -\->
                         <content>
                             <rng:text/>
                         </content>
+                        <attList>
+                            <attDef ident="scriptCode">
+                                <datatype>
+                                    <rng:data type="string">
+                                        <rng:param name="pattern">[A-Z][a-z]{3}</rng:param>
+                                    </rng:data>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <exemplum>
                             <teix:egXML>
                                 <languageDeclaration xmlns="-">
