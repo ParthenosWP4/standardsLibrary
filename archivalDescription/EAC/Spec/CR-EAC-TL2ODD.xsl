@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xi="http://www.w3.org/2005/Xinclude"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs tei" version="2.0">
+    xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs" version="2.0"
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0">
+    
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+        
 
     <!-- template used as pre process to actually include <xi:include> in the Tag Library -->
-<xsl:template match="*|@*">
-    <xsl:copy>
-        <xsl:apply-templates/>
-    </xsl:copy>
-</xsl:template>
+
     
     <xsl:template match="xi:include">
         <xsl:variable name="uri">
@@ -21,8 +20,8 @@
 
     <!-- transform element div into <elementSpec> -->
 
-    <xsl:template match="div">
-
+    <xsl:template match="div[@type='elementDocumentation']">
+        
         <xsl:message>LALALA</xsl:message>
         <xsl:variable name="ident_element" select="@xml:id"/>
         <elementSpec ident="{$ident_element}" module="EAC">
@@ -30,8 +29,9 @@
             <!-- gloss ok -->
             <!-- desc ok -->
             <!-- remarks ok -->
-
-            <xsl:call-template name="gloss"/>
+            
+            <xsl:apply-templates select="div[@type='fullName']"/>
+           
             <xsl:call-template name="summary"/>
             <xsl:call-template name="description"/>
             
@@ -59,7 +59,7 @@
         </elementSpec>
     </xsl:template>
 
-    <xsl:template match="div[@type = 'fullName']" name="gloss">
+    <xsl:template match="div[@type = 'fullName']">
         <gloss>
             <xsl:value-of select="p"/>
         </gloss>
@@ -75,6 +75,14 @@
         <remarks>
             <xsl:value-of select="p"/>
         </remarks>
+    </xsl:template>
+    
+    <!-- General identical copy template -->
+    
+    <xsl:template match="*|@*">
+        <xsl:copy>
+            <xsl:apply-templates/>
+        </xsl:copy>
     </xsl:template>
 
 </xsl:stylesheet>
