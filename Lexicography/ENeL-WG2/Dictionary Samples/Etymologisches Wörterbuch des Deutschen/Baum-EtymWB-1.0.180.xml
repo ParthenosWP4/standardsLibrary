@@ -1,0 +1,253 @@
+<?xml-model href="LexiconUnified.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>EtymWB-XML</title>
+        <respStmt xml:id="WP">
+          <resp>edited by</resp>
+          <name>Wolfgang Pfeifer</name>
+        </respStmt>
+        <respStmt xml:id="WGN">
+          <resp>digitalized by</resp>
+          <name>Ralf Wolz, Alexander Geyken, Gerald Neumann</name>
+        </respStmt>
+        <respStmt xml:id="GN">
+          <resp>converted and annotated by</resp>
+          <name>Gerald Neumann</name>
+        </respStmt>
+        <respStmt xml:id="RW">
+          <resp>annotated by</resp>
+          <name>Ralf Wolz</name>
+        </respStmt>
+        <respStmt xml:id="CS">
+          <resp>annotated by</resp>
+          <name>Anastasia Chichlova, Katharina Stathi</name>
+        </respStmt>
+        <respStmt xml:id="OT">
+          <resp>annotated by</resp>
+          <name>Oxana Tsunykowa</name>
+        </respStmt>
+        <respStmt xml:id="YW">
+          <resp>annotated by</resp>
+          <name>Yvonne Wirkus</name>
+        </respStmt>
+        <respStmt xml:id="LL">
+          <resp>restructured by</resp>
+          <name>Lothar Lemnitzer</name>
+        </respStmt>
+        <respStmt xml:id="AH">
+          <resp>restructured by</resp>
+          <name>Axel Herold</name>
+        </respStmt>
+        <respStmt xml:id="BBAW">
+          <resp>funded by</resp>
+          <orgName>Berlin-Brandenburgische Akademie der Wissenschaften</orgName>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>XML encoded version</title>
+          <date>2016-10-26</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <publisher>Digitales Wörterbuch der deutschen Sprache</publisher>
+        <pubPlace>Berlin</pubPlace>
+        <date>2016</date>
+        <availability>
+          <p>Copyright 2002–2016</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Wolfgang Pfeifer</author>
+          <title>Etymologisches Wörterbuch des Deutschen</title>
+          <edition>2</edition>
+          <publisher>Akademie Verlag</publisher>
+          <pubPlace>Berlin</pubPlace>
+          <date>1993</date>
+          <note>with additional notes by the author</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term xml:lang="deu">Etymologie</term>
+          <term xml:lang="deu">Wörterbuch</term>
+          <term xml:lang="deu">Deutsch</term>
+          <term xml:lang="eng">etymology</term>
+          <term xml:lang="eng">lexicon</term>
+          <term xml:lang="eng">German language</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="0000-00-00" who="#GN">2006-2009 conversion von ASCII-Text to XML/TEI P4 Markup; Markierung und Korrekturen div. Sprachauszeichnung; Annotation von Sublemmata</change>
+      <change when="2006-00-00" who="#CS">2003-2006: Korrektur der Entitäten der Sprachen Russisch, Griechisch</change>
+      <change when="2007-02-00" who="#OT">11/2006 bis 02/2007: Markierung und Korrektur der Sprachen</change>
+      <change when="2007-09-00" who="#YW">07/2007-09/2007: Korrekturen und Markierung der Sprache</change>
+      <change when="2009-10-00" who="#LL">04/2009-10/2009: Restrukturierung und Korrekturen an der bisherigen Annotation; Anpassung des Artikelformats an das Formatschema des WDG</change>
+      <change when="2009-09-00" who="#AH">Anpassung des Artikelformats an das Formatschema des WDG, Korrektur des TEI-Vokabulars (lang, mentioned), Umwandlung aller hi-Elemente in logisches Markup, Vereinheitlichung der Stichwortannotation</change>
+      <change when="2016-09-08" who="#WP #AH">Überarbeitung: »Baum« (Neufassung)</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="block">
+        <entry type="main" xml:id="E_b_126">
+          <form type="headword">
+            <orth extent="full">Baum</orth>
+            <gramGrp>
+              <pos value="N"></pos>
+              <gen value="masculine">m.</gen>
+            </gramGrp>
+          </form>
+          <div type="etym" xml:id="W_B_126">
+Gewächs aus Stamm und Ästen mit Blättern oder Nadeln,
+<lang>ahd.</lang>
+<mentioned lang="ahd">boum</mentioned>
+(<date>8. Jh.</date>),
+<lang>mhd.</lang>
+<mentioned lang="mhd">boum</mentioned>,
+<lang>asächs.</lang>
+<lang>mnd.</lang>
+<mentioned lang="asaechs mnd">bōm</mentioned>,
+<lang>mnl.</lang>
+<lang>nl.</lang>
+<mentioned lang="mnl nl">boom</mentioned>,
+<lang>afries.</lang>
+<mentioned lang="afries">bām</mentioned>,
+<lang>aengl.</lang>
+<mentioned lang="aengl">bēam</mentioned>
+(<lang>engl.</lang>
+<mentioned lang="engl">beam</mentioned>
+<def>‘Balken, Stange’</def>)
+führen auf
+<lang>westgerm.</lang>
+<mentioned lang="westgerm">*bauma-</mentioned>.
+Daneben stehen
+mit abweichender Bildungsweise
+<lang>got.</lang>
+<mentioned lang="got">bagms</mentioned>
+<def>‘Baum’</def>,
+<lang>aschwed.</lang>
+<mentioned lang="aschwed">bagn</mentioned>
+<def>‘Stock’</def>,
+<lang>anord.</lang>
+<mentioned lang="anord">baðmr</mentioned>
+<def>‘Baum’</def>.
+Es gibt zahlreiche Versuche,
+die unterschiedlichen Formen des <lang>Westgerm.</lang>, <lang>Got.</lang>
+und <lang>Nord.</lang> miteinander zu verbinden,
+eine einheitliche <lang>germ.</lang> Grundform
+konnte jedoch nicht mit Sicherheit erschlossen werden.
+So erwägt
+<bibl>
+  <author>Pokorny</author>
+  <biblScope>1, 149</biblScope>
+</bibl>
+die bereits bei
+<bibl>
+  <author>Feist</author>
+  <biblScope>³73</biblScope>
+</bibl>
+zitierte Herleitung aus
+<lang>ie.</lang>
+<mentioned expand="*bhou̯mo- *bhou̯əmo-" lang="ie">*bhou̯(ə)mo-</mentioned>
+<def>‘Gewächs’</def>
+und Anschluß an die Wurzel
+<lang>ie.</lang>
+<mentioned lang="ie">*bheu-</mentioned>,
+<mentioned lang="ie">*bheu̯ə-</mentioned>
+<def>‘wachsen, gedeihen’</def>
+(s.
+<ref cRef="UNRESOLVED" type="dict"><w type="ref">bauen</w></ref>).
+Anders
+<bibl>
+  <author>Hamp</author>
+  <title>in: Festschr. Fisiak</title>
+  <biblScope>(1986) 1, 345 f.</biblScope>
+</bibl>
+sowie
+<bibl>
+  <author>Kuiper</author>
+  <title>in: Novele</title>
+  <biblScope>25 (1995) 63 ff.</biblScope>
+</bibl>
+Da sich auch <lang>außergerm.</lang>
+keine eindeutigen Verwandten beibringen lassen,
+kann man in den <lang>germ.</lang> Formen
+unterschiedliche Gestaltung eines Substratwortes sehen.
+<milestone type="dash" unit="microstructure"></milestone>
+<form type="headword">
+  <orth extent="full">bäumen</orth>
+  <gramGrp>
+    <pos rend="sep:comma" value="V">Vb.</pos>
+  </gramGrp>
+</form>
+<lang>mhd.</lang>
+<mentioned lang="mhd">boumen</mentioned>
+<def>‘mit Bäumen bepflanzen’</def>,
+(refl.)
+<def>‘sich aufrichten’</def>
+(von Pferden),
+später allgemein
+<def>‘sich auflehnen’</def>,
+in der Jägersprache von auf Bäume kletternden Tieren
+(<date>16. Jh.</date>).
+<date>Heute</date> meist
+<mentioned lang="UNKNOWN">sich aufbäumen</mentioned>
+<def>‘sich aufrichten, auflehnen’</def>
+(<date>15. Jh.</date>).
+<form type="headword">
+  <orth extent="full">Baumwolle</orth>
+  <gramGrp>
+    <pos value="N"></pos>
+    <gen value="feminine">f.</gen>
+  </gramGrp>
+</form>
+Samenhaare des Baumwollstrauchs,
+<lang>ahd.</lang>
+<mentioned lang="ahd">boumwolla</mentioned>
+(Hs. <date>12. Jh.</date>),
+<lang>mhd.</lang>
+<mentioned lang="mhd">boumwolle</mentioned>,
+<lang>mnd.</lang>
+<mentioned lang="mnd">bōmwulle</mentioned>;
+auch
+<ref cRef="UNRESOLVED" type="dict"><w type="ref">Kattun</w></ref>
+(s. d.).
+Greift vermutlich auf die bei
+<persName ref="https://de.wikipedia.org/wiki/Herodot">Herodot</persName>
+belegte Vorstellung zurück,
+nach der die Inder Wolle von Bäumen gewinnen.
+<form type="headword">
+  <orth extent="full">baumwollen</orth>
+  <gramGrp>
+    <pos value="ADJ">Adj.</pos>
+  </gramGrp>
+</form>
+<def>‘aus Baumwolle’</def>,
+<lang>ahd.</lang>
+<mentioned lang="ahd">boumwullīn</mentioned>
+(Hs. <date>12. Jh.</date>),
+<lang>mnd.</lang>
+<mentioned lang="mnd">bōmwullen</mentioned>.
+<form type="headword">
+  <orth extent="full">Schlagbaum</orth>
+  <gramGrp>
+    <pos value="N"></pos>
+    <gen value="masculine">m.</gen>
+  </gramGrp>
+</form>
+<def>‘bewegliche Sperrschranke’</def>
+(<date>Anfang 16. Jh.</date>).
+</div>
+        </entry>
+      </div>
+    </body>
+  </text>
+</TEI>

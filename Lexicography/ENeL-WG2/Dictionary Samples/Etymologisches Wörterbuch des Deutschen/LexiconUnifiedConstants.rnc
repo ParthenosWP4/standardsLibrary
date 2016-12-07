@@ -1,0 +1,1239 @@
+default namespace = 'http://www.tei-c.org/ns/1.0'
+
+########################################
+# attribute constants ##################
+########################################
+
+sense-markers = xsd:token { pattern = '[AB]\.|I{1,3}\.|I?V\.|VI\.|[12]?[0-9]\.|[a-k]\)|[αβγδε]\)' }
+sense-index = attribute sidx { sense-markers }
+sense-n = attribute n { sense-markers }
+sense-level = attribute level { xsd:token { pattern = '0|1|2|3|4|5' } }
+note-ID = attribute xml:id { xsd:ID }
+sense-ID = attribute xml:id { xsd:ID }
+entry-ID = attribute xml:id { xsd:ID }
+discontinuity-marker = attribute type { 'anchor' | 'cont' }
+
+
+########################################
+# value constants ######################
+########################################
+
+homograph-indices = xsd:integer { pattern = '1|2|3|4|666' }
+
+usage-values-style = (
+	'bildl.'
+	| 'sprichw.'
+	| 'übertr.'
+	# nur EtymWB
+	| 'bildlich'
+	| 'übertragen'
+	| 'davon übertragen'
+	| 'in Übertragungen'
+	| 'in übertragenem Sinne'
+	| 'von daher übertragen'
+)
+
+usage-values-time = (
+	'früher'
+	| 'heute'
+	| 'hist.'
+	| 'Modewort'
+	| 'naz.'
+	| 'Neubedeut.'
+	| 'Neupräg.'
+	| 'Neuwort'
+	| 'veralt.'
+	| 'veraltend'
+	# EtymWB
+	| 'dann' | 'danach' | 'später'
+	| 'älter' | 'zuvor' | 'Zuvor' | 'vorher'
+	| 'veraltet'
+	| 'historisch' | 'ehemals' | 'ursprünglich' | 'anfangs' | 'früh' | 'zuerst' | 'zunächst' | 'anfänglich'
+        | 'heute' | 'neuerdings' | 'in neuerer Zeit' | 'jetzt' | 'in jüngster Zeit'
+	| xsd:token {
+		pattern = '(((seit )?[12]\. Hälfte|bis|bis Anfang|bis ins|Anfang|im|seit Anfang|seit Ende|seit dem|seit|Ende|Mitte|nach Mitte|frühes|im frühen) )?(1[4-9]|20)\. Jh\.' }
+	| xsd:token {
+		pattern = 'vom (15)\. Jh\. an' }
+	| xsd:token {
+		pattern= '(bis gegen|um) 1[6789]\d\d' }
+	| xsd:token {
+		pattern = '(20|50|60)er Jahre 20. Jh.' }
+	# Sonderfälle EtymWB
+	| 'Ende 17., häufiger 19. Jh.'
+	| '2. Hälfte 18., vor allem  19. Jh.'
+	| 'seit frühnhd. Zeit'
+	| '17./18. Jh.' | '18./19. Jh.'
+	| 'in älterer Sprache'
+	| 'im Mittelalter'
+	| 'seit Anfang des 20. Jhs.'
+	| 'seit Ende des 15. Jhs.'
+	| 'Anfang des 17. Jhs.'
+	| 'seit der 2. Hälfte des 18. Jhs.'
+)
+
+usage-values-reg = (
+	'abwertend'
+	| 'altertümelnd'
+	| 'derb'
+	| 'dicht.'
+	| 'Fliegerspr.'
+	| 'geh.'
+	| 'gespreizt'
+	| 'Jägerspr.'
+	| 'Kinderspr.'
+	| 'papierdt.'
+	| 'salopp'
+	| 'scherzh.'
+	| 'Schimpfw.'
+	| 'Schülerspr.'
+	| 'Seemannsspr.'
+	| 'Soldatenspr.'
+	| 'spött.'
+	| 'Studentenspr.'
+	| 'übertrieben'
+	| 'umg.'
+	| 'verhüll.'
+	| 'vertraul.'
+	| 'vulg.'
+	# EtymWB
+	| 'abschätzig'
+	| 'alltagssprachlich'
+	| 'dichterisch'
+	| 'geringschätzig'
+	| 'handelssprachlich'
+	| 'historisierend'
+	| 'in der Bergmannssprache'
+	| 'in der Druckersprache'
+	| 'in der Gaunersprache'
+	| 'in der Gerichtssprache'
+	| 'in der Heeressprache'
+	| 'in der Jägersprache'
+	| 'in der Kanzleisprache'
+	| 'in der Kaufmannssprache'
+	| 'in der Kirchensprache'
+	| 'in der Rechtssprache'
+	| 'in der Seemannssprache'
+	| 'in der Sprache des Christentums'
+	| 'in der Studentensprache'
+	| 'in der Theatersprache'
+	| 'in der Turnersprache'
+	| 'in der Umgangssprache'
+	| 'Jägersprache'
+	| 'jägersprachlich'
+	| 'literarisch'
+	| 'rechtssprachlich'
+	| 'scherzhaft'
+	| 'Seemannssprache'
+	| 'spöttisch'
+	| 'tadelnd'
+	| 'umgangssprachlich'
+	| 'verächtlich'
+)
+
+usage-values-plev = (
+	'auch'
+	| 'bereits'
+	| 'bes.'
+	| 'dagegen'
+	| 'häufig'
+	| 'meist'
+	| 'noch'
+	| 'nur'
+	| 'nur noch'
+	| 'nur in der Form'
+	| 'oft'
+	| 'selten'
+	| 'seltener'
+	| 'sonst'
+	| 'ungebräuchl.'
+	| 'üblich'
+	# EtymWB
+	| 'vereinzelt' | 'vereinzelt auch' | 'vereinzelt noch' | 'nur selten noch' | 'weniger gebräuchlich' | 'unüblich' | 'gelegentlich' | 'zuweilen auch'
+	| 'auch' | 'außerdem' | 'sowie' | 'daneben' | 'und' | 'daneben auch' | 'verschiedentlich' | 'aber auch'
+	| 'häufiger' | 'vielfach' | 'oft auch' | 'vielfach auch'
+	| 'vorwiegend' | 'vornehmlich' | 'insbes.' | 'vor allem' | 'vorzugsweise' | 'vorzugsweise jedoch' | 'zumal' | 'bes. aber'
+)
+
+usage-values-note = (
+	'im Funk u. Fernsprechverkehr auch'
+	| 'in betonter Satzstellung'
+	| 'in demonstrativer Verwendung'
+)
+
+usage-values-geo = (
+	'berl.'
+	| 'BRD'
+	| 'DDR'
+	| 'landsch.'
+	| 'im ganzen Sprachgebiet'
+	| 'im übrigen Sprachgebiet'
+	| 'meckl.'
+	| 'mitteldt.'
+	| 'norddt.'
+	| 'nordostdt.'
+	| 'nordwestdt.'
+	| 'nordwestmd.'
+	| 'österr.'
+	| 'ostmitteldt.'
+	| 'schweiz.'
+	| 'süddt.'
+	| 'südwestdt.'
+	| 'westmitteldt.'
+)
+
+usage-values-dom = (
+	'Archäol.'
+	| 'Architekt.'
+	| 'Ästhetik'
+	| 'Astrol.'
+	| 'Astron.'
+	| 'Bäckerei'
+	| 'Ballspiele'
+	| 'Ballsport'
+	| 'Bank'
+	| 'Bauw.'
+	| 'Bergm.'
+	| 'Bergsport'
+	| 'bibl.'
+	| 'bild. Kunst'
+	| 'Billard'
+	| 'Binnenschiff.'
+	| 'Biol.'
+	| 'Börse'
+	| 'Bot.'
+	| 'Böttch.'
+	| 'Boxen'
+	| 'Brauerei'
+	| 'Brettspiele'
+	| 'Buchbind.'
+	| 'Buchw.'
+	| 'buddh.'
+	| 'Büro'
+	| 'Chem.'
+	| 'dial. Mat.'
+	| 'Diplomatie'
+	| 'Domino'
+	| 'Druckerei'
+	| 'Eisenb.'
+	| 'Eishockey'
+	| 'Eiskunstlauf'
+	| 'Eislauf'
+	| 'Elektrotechn.'
+	| 'ev.'
+	| 'fachspr.'
+	| 'Fechten'
+	| 'Fernsehen'
+	| 'Film'
+	| 'Fischerei'
+	| 'Fleischerei'
+	| 'Flugw.'
+	| 'Forstw.'
+	| 'Fotogr.'
+	| 'Funk'
+	| 'Fußball'
+	| 'Gerberei'
+	| 'Gartenbau'
+	| 'Gärtnerei'
+	| 'Gastron.'
+	| 'Geogr.'
+	| 'Geol.'
+	| 'Geophys.'
+	| 'Gießerei'
+	| 'Gramm.'
+	| 'Graphik'
+	| 'Gymnastik'
+	| 'Häkeln'
+	| 'Handarb.'
+	| 'Handball'
+	| 'Handw.'
+	| 'Hauswirtsch.'
+	| 'Hockey'
+	| 'Hotelw.'
+	| 'Hüttenw.'
+	| 'Idealism.'
+	| 'idealist. Philos.'
+	| 'Imkerei'
+	| 'Industr.'
+	| 'islam.'
+	| 'Journ.'
+	| 'jüd.'
+	| 'Jur.'
+	| 'Kartensp.'
+	| 'Kartenspiel'
+	| 'Kaufm.'
+	| 'kath.'
+	| 'Kegeln'
+	| 'Kernphys.'
+	| 'Kinderreim'
+	| 'Kinderspiel'
+	| 'Kino'
+	| 'Kochk.'
+	| 'Kunst'
+	| 'Kunstgesch.'
+	| 'Kürschnerei'
+	| 'Kybern.'
+	| 'Landw.'
+	| 'Laufen'
+	| 'Logik'
+	| 'Marxismus'
+	| 'Math.'
+	| 'Med.'
+	| 'Metallurgie'
+	| 'Meteor.'
+	| 'Mil.'
+	| 'Min.'
+	| 'Motorsport'
+	| 'Mus.'
+	| 'Naturwiss.'
+	| 'Okkultism.'
+	| 'Opt.'
+	| 'Päd.'
+	| 'Parl.'
+	| 'Pharm.'
+	| 'Philat.'
+	| 'Philos.'
+	| 'Phonet.'
+	| 'Phys.'
+	| 'Physiol.'
+	| 'Polit.'
+	| 'Polit. Ök.'
+	| 'Polizei'
+	| 'Post'
+	| 'Psych.'
+	| 'Psychoanalyse'
+	| 'Radsport'
+	| 'Reiten'
+	| 'Rel.'
+	| 'Rennen'
+	| 'Ringen'
+	| 'Rollschuhlauf'
+	| 'Rudern'
+	| 'Rugby'
+	| 'Rundf.'
+	| 'Schach'
+	| 'Schi'
+	| 'Schießen'
+	| 'Schießsp.'
+	| 'Schiffbau'
+	| 'Schneiderei'
+	| 'Schulw.'
+	| 'Schuhmach.'
+	| 'Schwimmen'
+	| 'Seerecht'
+	| 'Segelfliegen'
+	| 'Segeln'
+	| 'Skat'
+	| 'Speerwerfen'
+	| 'Sport'
+	| 'Sprachwiss.'
+	| 'Statistik'
+	| 'Stilistik'
+	| 'Straßenbau'
+	| 'Stricken'
+	| 'Tabakwarenind.'
+	| 'Tanz'
+	| 'Techn.'
+	| 'Tennis'
+	| 'Textil.'
+	| 'Theater'
+	| 'Tiefbau'
+	| 'Tierzucht'
+	| 'Tischlerei'
+	| 'Transportw.'
+	| 'Turnen'
+	| 'Uhrm.'
+	| 'Varieté'
+	| 'Verkehr'
+	| 'Verkehrsw.'
+	| 'Verlagsw.'
+	| 'Verslehre'
+	| 'Völkerk.'
+	| 'Volksk.'
+	| 'Volleyball'
+	| 'Wasserstraßenbau'
+	| 'Wasserwirtsch.'
+	| 'Weberei'
+	| 'Weinbau'
+	| 'Wirtsch.'
+	| 'Wissensch.'
+	| 'Zahnmed.'
+	| 'Zimmerei'
+	| 'Zirkus'
+	| 'Zool.'
+	# EtymWB
+	| 'allgemeinsprachlich'
+	| 'als Fachwort'
+	| 'als Fachwort der Botanik'
+	| 'als medizinischer Ausdruck'
+	| 'als militärischer Terminus'
+	| 'als naturwissenschaftlicher Terminus'
+	| 'als Terminus der Physik'
+	| 'Chemie'
+	| 'ein juristischer Terminus'
+	| 'fachsprachlich'
+	| 'fotografisch'
+	| 'im Bereich der evangelischen Kirche'
+	| 'im Bereich der katholischen Kirche'
+	| 'im Bergbau'
+	| 'im Drama'
+	| 'im Geschäftsverkehr'
+	| 'im medizinischen Bereich'
+	| 'im militärischen Bereich'
+	| 'im Münzwesen'
+	| 'im politischen Bereich'
+	| 'im Sport'
+	| 'im wirtschaftlichen und politischen  Bereich'
+	| 'in der Astronomie'
+	| 'in der Biologie, Anatomie'
+	| 'in der Chemie'
+	| 'in der Chirurgie'
+	| 'in der christlichen Religion'
+	| 'in der Elektrotechnik'
+	| 'in der Fachsprache der Chemie'
+	| 'in der Geographie'
+	| 'in der Geometrie'
+	| 'in der Grammatik'
+	| 'in der Imkerei'
+	| 'in der Landwirtschaft'
+	| 'in der Medizin'
+	| 'in der Musik'
+	| 'in der Optik und Mathematik'
+	| 'in der Philosophie'
+	| 'in der Photographie'
+	| 'in der Physik'
+	| 'in der Sprachwissenschaft'
+	| 'in der Technik'
+	| 'in der Wirtschaft'
+	| 'in der Zahnheilkunde'
+	| 'in der Zoologie'
+	| 'in Pharmazie und Medizin'
+	| 'in terminologischen Verwendungen'
+	| 'in zoolog. Fachsprache'
+	| 'juristisch'
+	| 'landwirtschaftlich'
+	| 'medizinisch'
+	| 'militärisch'
+	| 'militärsprachlich'
+	| 'rechtssprachlich'
+	| 'Sprachwissenschaft'
+	| 'Technik'
+)
+
+grammatical-atom-values = (
+	
+	# verb atoms
+	( attribute type { 'auxiliary' }
+		, ( 'ist' | 'hat' | 'werden' | 'sein' )
+	)
+	| ( attribute type { 'participle' } , token )
+	| ( attribute type { 'past-tense' } , token )
+	| ( attribute type { 'past-participle' } , token )
+	| ( attribute type { 'present-tense' } , token )
+	| ( attribute type { 'present-participle' } , token )
+	| ( attribute type { 'reflexive' } , ( 'sich' ) )
+	
+	# noun atoms
+	| ( attribute type { 'determiner' } ,
+		( 'der' | 'die' | 'das' )
+	)
+	| ( attribute type { 'determiner-none' } ,
+		( 'ohne Art.' )
+	)
+	| ( attribute type { 'determiner-none-preferred' } ,
+		( 'ohne Art. üblich' | 'meist ohne Art.' )
+	)
+	| ( attribute type { 'determiner-any' } ,
+			( 'mit Art.' )
+	)
+	| ( attribute type { 'determiner-definite' } ,
+		( 'nur mit best. Art.' | 'mit best. Art.' | 'nicht mit unbest. Art.' )
+	)
+	| ( attribute type { 'determiner-indefinite' } , ( '' ) )
+	| ( attribute type { 'nominative' } ,
+	(
+		'Haufe'
+				)
+
+		  )
+		| ( attribute type { 'dative' } , ( '' ) )
+		| ( attribute type { 'genitive' } ,
+				(
+				 '-' | '-s' | '-(e)s' | '-es' | '-n' | '-en' | '-ses'
+				 | '-(s)' | '-ns' | '-ens' | '-(e)n' | '-(n)' | '-(es)'
+				 | '-isses'
+				 | 'Cäsa̱ren'
+				 | 'Enfant(s) terrible' | 'Enfant terrible'
+				 | 'Hohenlied(e)s' | 'Hohen Liedes' | 'Hohen Priesters' 
+				 | 'Ukas(s)es'
+				 | xsd:token { pattern = '[A-ZÄÖÜ][a-zäöüß]+' }
+		)
+	)
+	| ( attribute type { 'plural' } ,
+		(
+			'-' | '-e' | '-en' | '-nen' | '-ten' | '-(e)n'
+			| '-e(s)'
+			| '-(s)' | '-s' | '-(n)' | '-n' | '-er' | '-e(r)'
+			| '-se' | '-es' | '-e(n)' | '-ns' | '-sen' | '-(e)s'
+			| '-ien' | '-a' | '-ta' | '-isse' | '-e̱en' | '-i'
+			| '-männer' | '-leute' | '-mannen' | '-hauptleute'
+			| '-=Männer' | '-=Leute'
+			| '-drücke' | '-mäler' | '-male' | '-bogen' | '-brünste'
+			| '-wörter' | '-händel' | '-stätten' | '-bänke'
+			| '-sturze' | '-stürze' | '-bauten' | '-lager'
+			| '-fotte' | '-fötter' | '-künfte' | '-hörner'
+			| '-blocks' | '-blöcke' | '-zinse' | '-gänge'
+			| '-länder' | '-laden' | '-läden' | '-hölzer'
+			| '-lichter' | '-lichte' | '-körner' | '-lande'
+			| '-worte' | '-dorne' | '-bände' | '-baue'
+			| '(Admiräle)' | '(Abdrücke)' | '(Ananasse)'
+			| '(Anwalte)'
+			| '(Buffi)' | 'Börte(r)' | 'Bälge(r)'
+			| 'Crêpes Satin' | 'Crêpes Marocain' | 'Cäsa̱ren'
+			| 'Crêpes Georgette' | 'Crêpes de Chine'
+			| 'Casus obliqui' | 'Corpora delicti'
+			| 'Corpora Delicti'
+			| 'Concerti grossi' | 'Collegia musica'
+			| 'Circuli vitiosi' | 'Chapeaux claques'
+			| 'Chapeaux Claques'
+			| 'Chambres séparées' | 'Carnẹts (de passa̱ges)'
+			| 'Cantus firmi' | 'Camerae obscurae'
+			| 'Derniers cris' | 'Derniers Cris' | 'D-Züge'
+			| 'Enfants terribles' | 'Enfant terrible'
+			| 'Fata Morganen' | 'Faits accompli̱s'
+			| 'Hohen Priester'
+			| 'Intershop-Läden'
+			| '(Konteradmiräle)'
+			| 'Laternae Magicae' | 'Laternae magicae'
+			| 'Maîtres de plaisir' | 'Maîtres de Plaisir'
+			| 'Modi vivendi' | 'Modi Vivendi'
+			| 'Primi inter pares' | 'Primi inter Pares'
+			| "Postillons d'amour" | "Postillons d'Amour"
+			| 'Pasos dobles'
+			| 'Ragouts fins'
+			| 'Sansevier(i)en' | 'Salti mortali'
+			| 'Termini technici'
+			| 'Ukas(s)e'
+			| 'Viole da gamba' | 'Viole da Gamba'
+			| xsd:token { pattern = '[A-ZÄÖÜ]\w+' }
+		)
+	)
+	| ( attribute type { 'plural-only' } ,
+		( 'nur im Pl.' | 'ohne Sg.' | 'Plur.' | '' )
+	)
+	| ( attribute type { 'plural-preferred' } ,
+		(
+			'Sg. ungebräuchl.'
+			| 'meist im Pl.' 
+                        | 'häufig im Pl.'
+                        | 'oft im Pl.'
+			| 'Plur.' # EtymWB
+		)
+	)
+	| ( attribute type { 'singular-only' } ,
+		( 'ohne Pl.' 
+                  | 'nur im Sg.' 
+                  #EtymWB
+                  | 'Sing.'
+                )
+	)
+	| ( attribute type { 'singular-preferred' } ,
+		( 'Pl. ungebräuchl.' | 'Pl. selten' )
+	)
+
+	| ( attribute type { 'diminutive-none' } ,
+		( 
+			'ohne Verkl.' | 'b–d ohne Verkl.' # TODO
+		)
+	)
+
+	# adjective/adverb atoms
+
+	| ( attribute type { 'comparative' } ,
+		(
+			'älter' | 'ärmer' | 'ärger'
+			| 'blasser' | 'blässer' | 'banger' | 'bänger'
+			| 'balder' | 'bälder'
+			| 'dümmer'
+			| 'eher'
+			| 'früher' | 'frommer' | 'frömmer'
+			| 'gröber' | 'besser' | 'größer'
+			| 'glatter' | 'glätter' | 'gewisser'
+			| 'gesunder' | 'gesünder' | 'lieber'
+			| 'höher'
+			| 'jünger'
+			| 'kürzer' | 'kranker' | 'kränker'
+			| 'klüger' | 'kälter'
+			| 'länger'
+			| 'nasser' | 'nässer' | 'näher'
+			| 'öfter'
+			| 'roter' | 'röter'
+			| 'stärker' | 'später' | 'mehr'
+			| 'schwärzer' | 'schwächer'
+			| 'schmaler' | 'schmäler' | 'schärfer'
+			| 'teurer'
+			| 'weniger'
+		)
+	)
+	| ( attribute type { 'superlative' } ,
+		(
+			'am ältesten' | 'am ärmsten' | 'am ärgsten'
+			| 'am blassesten' | 'am blässesten' | 'am bangsten'
+			| 'am bängsten' | 'am baldesten' | 'am bäldesten'
+			| 'am dümmsten'
+			| 'am ehesten'
+			| 'am frühesten' | 'am frommsten' | 'am frömmsten'
+			| 'am gröbsten' | 'am besten' | 'am größten'
+			| 'am glattesten' | 'am glättesten' | 'am gewissesten'
+			| 'am gesundesten' | 'am gesündesten' | 'am liebsten'
+			| 'am höchsten'
+			| 'am jüngsten'
+			| 'am kürzesten' | 'am kranksten' | 'am kränksten'
+			| 'am klügsten' | 'am kältesten'
+			| 'am längsten'
+			| 'am nassesten' | 'am nässesten' | 'am nächsten'
+			| 'am öftesten'
+			| 'am rotesten' | 'am rötesten'
+			| 'am stärksten' | 'am spätesten' | 'am meisten'
+			| 'am schwärzesten' | 'am schwächsten'
+			| 'am schmalsten' | 'am schmälsten' | 'am schärfsten'
+			| 'am teuersten'
+			| 'am wenigsten'
+		)
+	)
+	| ( attribute type { 'attributive-only' } ,
+		( 'nur attr.' )
+	)
+	| ( attribute type { 'adverbial-only' } ,
+		( 'nur adv.' )
+	)
+	| ( attribute type { 'comparative-none' } ,
+		( 'ohne Steigerung' )
+	)
+	| ( attribute type { 'declension-none' } ,
+		( 'indekl.' )
+	)
+)
+
+grammatical-atom-genus-values = (
+	( attribute value { 'masculine' } , ( '' | 'm.' ) )
+	| ( attribute value { 'feminine' } , ( '' | 'f.' ) )
+	| ( attribute value { 'neuter' } , ( '' | 'n.' ) )
+)
+
+grammatical-atom-pos-values = (
+	( attribute value { 'UNKNOWN' }
+		, (
+			''
+			| 'trennbare, stets betonte verbale Vorsilbe'
+			| 'trennbare, meist unbetonte Vorsilbe vor Fremdwörtern'
+			| 'trennbare, stets betonte Vorsilbe'
+			| 'verbale Vorsilbe'
+			| 'verbale Vorsilbe, die entweder trennbar und betont oder untrennbar und unbetont ist'
+			| 'verbale, nicht mehr produktive Vorsilbe, die entweder trennbar und betont oder untrennbar und unbetont ist'
+			| 'untrennbare, nicht mehr produktive verbale Vorsilbe, die teils unbetont, teils betont ist'
+			| 'untrennbare, betonte oder unbetonte nominale Vorsilbe'
+			| 'meist unbetonte Vorsilbe, die vor Fremdwörtern steht'
+			| 'betonte Vorsilbe'
+			| 'stets betonte Vorsilbe'
+			| 'betonte, nominale Vorsilbe'
+			| 'unbetonte Vorsilbe'
+			| 'meist unbetonte Vorsilbe'
+			| 'nominale Vorsilbe'
+			| 'adv. Vorsilbe'
+			| 'Vorsilbe'
+			| 'erstaunter, bewundernder Ausruf'
+			| 'erstaunter Ausruf'
+			| 'Ausruf beim Niesen'
+			| 'Ausruf'
+			| 'Ausruf, mit dem jmd. gefeiert wird'
+			| 'Höflichkeitsformel' # TODO: classify
+			| 'Komp.' # TODO: classify (ADJ?)
+			| 'partikelhaft' # TODO: classify
+			| 'Partikel'
+                        | 'Abkürzung'
+                        | 'Zustimmungspartikel'
+		)
+	)
+	| ( attribute value { 'N' }
+		, (
+			''
+		)
+	)
+	| ( attribute value { 'V' }
+		, (
+			''
+			| 'Vb.'
+			| 'Vb. refl.' # EtymWB
+			| 'Vb. intrans.' # EtymWB
+                        | 'Part. Präs.' # EtymWB
+			| 'Imperativ' # EtymWB
+		)
+	)
+	| ( attribute value { 'ADV' }
+		, (
+			''
+			| 'Adv.'
+			| 'part. Adv.'
+		)
+	)
+	| ( attribute value { 'ADJ' }
+		, (
+			''
+			| 'Adj.'
+			| 'part. Adj.'
+			| 'Adj. mit Gen.'
+			# EtymWB
+			| 'Part.adj.'
+			| 'Pron.adj.'
+			| 'Komp.'
+			| 'Superl.'
+		)
+	)
+	| ( attribute value { 'AFF' } # nur EtymWB
+		, ( '' 
+                   | 'Präfix' 
+                   | 'Suffix' 
+                   | 'Adjektivsuffix' 
+                   | 'Diminutivsuffix' 
+                   | 'Deminutivsuffix' 
+                   | 'Kompositionssuffix'
+          )
+	)
+	| ( attribute value { 'I' } # nur EtymWB
+		, ( ''
+                    | 'Interj.' 
+                    | 'Schallwort'
+                   )
+	)
+	| ( attribute value { 'AP' }
+		, (
+                          ''
+                        | 'Präp.'
+			| 'Präp. mit Gen.'
+			| 'Präp. (mit Gen.)'
+			| 'Präp. mit Gen., auch mit Dat.'
+			| 'Präp. mit Gen., seltener mit Dat.'
+			| 'Präp. mit Dat.'
+			| 'Präp. mit Dat. u. Gen.'
+			| 'Präp. mit Dat. u. Akk.'
+			| 'Präp. mit Dat. und Akk.'
+			| 'Präp. mit Akk.'
+			| 'Präp. mit Akk. u. Gen.'
+			| 'Postp.'
+		)
+	)
+	| ( attribute value { 'P' }
+		, (
+                        ''
+			| 'Pron.'
+			| 'Pron. der 1. Pers. Pl.'
+			| 'Dem.pron.'
+			| 'Indef.pron.'
+			| 'Indef.pron. im Nom.'
+			| 'Interr.pron.'
+			| 'Refl.pron.'
+			| 'Refl.pron. im Dat.'
+			| 'Refl.pron. im Akk.'
+			| 'Refl.pron. der 3. Pers. Sg. u. Pl.'
+			| 'Rel.pron.'
+			| 'Pers.pron.'
+			| 'Pers.pron. im Gen.'
+			| 'Pers.pron. im Dat.'
+			| 'Pers.pron. im Akk.'
+			| 'Pers.pron. im Akk. u. Dat.'
+			| 'Pers.pron. der 2., der angeredeten Person im Singular.'
+			| 'Poss.pron.'
+			| 'reziprokes Pron.'
+			| 'Poss.pron. der 3. Person Sing. m. oder n.'
+                        | 'Poss.pron. der 2. Person Sing.'
+			| 'Pers.pron. f. der 3. Person Sing. und m. f. n. der 3. Person Plur.'
+                        | 'Poss.pron. der 1. Pers. Sing.'
+                        | 'Pers.pron. der 1. Person im Akk. des Singulars'
+                        | 'Pers.pron. der 1. Person im Dat. des Singulars'
+                        | 'Pers.pron. der 1. Person im Dat. und Akk. des Plurals'
+                        | 'Pers.pron. der 1. Pers. Plur.'
+		)
+	)
+	| ( attribute value { 'PAV' }
+		, (
+			'Pronominaladv.'
+		)
+	)
+	| ( attribute value { 'ART' }
+		, (
+			'best. Art.'
+			| 'unbest. Art.'
+		)
+	)
+	| ( attribute value { 'KO' }
+		, (
+                        ''		# eingefuegt wegen EtymWB, LL 090914
+			| 'Konj.'
+		)
+	)
+	| ( attribute value { 'FIG' }
+		, (
+			'Kard.zahl'
+			| 'Ord.zahl'
+			| 'Bruchzahl'
+			| 'Num.' # nur EtymWB
+			| 'Num. Ord.' # nur EtymWB, LL 090914
+			| 'Num.adj.' # nur EtymWB, LL 090914
+		)
+	)
+)
+
+label-values = ( 'Abk.' | 'Verkl.' | 'Pl.'  | 'abgekürzt' | 'umgangssprachlich verkürzt' | 'verkürzend' )
+
+languages-etymwb = (
+	'UNKNOWN'
+	| 'abret'        # obt: Old Breton
+	| 'abulg'        # chu: Old Bulgarian
+	| 'adaen'
+	| 'aegypt'       # egy: Egyptian (Ancient)
+	| 'aengl'        # ang: Old English (ca. 450-1100)
+	| 'aeol'
+	| 'affade'
+	| 'afghan'       # prs: Afghan Persian
+	| 'afries'       # ofs: Old Frisian
+	| 'afrikan'
+	| 'afrikaans'
+	| 'afrk'
+	| 'afrz'         # fro: Old French (842-ca. 1400)
+	| 'agaskogn'
+	| 'agriech'      # grc: Ancient Greek (to 1453)
+	| 'ahd'          # goh: Old High German (ca. 750-1050) [a-s]
+	| 'aimara'
+	| 'aind'
+	| 'air'          # sga: Old Irish (to 900)
+	| 'aisl'         # ?== Old Islandic
+	| 'aital' 
+	| 'akatalan'
+	| 'akkad'        # akk: Akkadian
+	| 'akorn'        # oco: Old Cornish
+	| 'akymr'        # owl: Old Welsh
+	| 'alat'         # ?== Old Latin
+	| 'alban'        # sqi: Albanian
+	| 'alem'         # gsw: Alemannic
+	| 'algonkin'
+	| 'alit' 
+	| 'altalem'
+	| 'altarmen'     # xcl: Classical Armenian
+	| 'altgutn'
+	| 'altiran'      # ?== Old Persian (ca. 600-400 B.C.)
+	| 'altkoeln'     
+	| 'altkur'       # altkurisch
+	| 'altmaerk'
+	| 'altmailaend'
+	| 'altnorm'
+	| 'altobital'
+	| 'altvenezian'
+	| 'amerik' 
+	| 'amerik-engl'
+	| 'amongol'      # cmg: Classical Mongolian
+	| 'amoy'
+	| 'anfrk'
+	| 'angl' 
+	| 'angloind' 
+	| 'anglolat' 
+	| 'anglomlat'
+	| 'anglonorm'    # xno: Anglo-Norman
+	| 'anord'        # non: Old Norse
+	| 'anorw' 
+	| 'aostnfrk' 
+	| 'apers'        # peo: Old Persian (ca. 600-400 B.C.)
+	| 'apikard'
+	| 'apolab'
+	| 'apolab-apomoran'
+	| 'apoln'
+	| 'apomoran'
+	| 'apreuss'
+	| 'aprov'        # pro: Old Provençal (to 1500)
+	| 'arab'         # ara: Arabic
+	| 'arab-tuerk'
+	| 'aram'         # ?arc: Official Aramaic (700-300 BCE)
+	| 'armen'        # hye: Armenian
+	| 'aruak'        # == Taino?
+	| 'aruss'        # orv: Old Russian
+	| 'asaechs'      # osx: Old Saxon
+	| 'aschkenas'
+	| 'aschwed'
+	| 'aserbaidshan'
+	| 'aslaw'        # chu: Old Slavonic
+	| 'aslowen'
+	| 'asorb'
+	| 'aspan'        # osp: Old Spanish
+	| 'assyr'
+	| 'atschech'
+	| 'att'
+	| 'austral'
+	| 'awest'        # ave: Avestan
+	| 'aztek'
+	| 'babyl-assyr'
+	| 'bad'
+	| 'bair'
+	| 'balkangerm'
+	| 'balkanlat'
+	| 'balt'         #
+	| 'balti'
+	| 'bantu'
+	| 'bask'         # eus: Basque
+	| 'beloruss'
+	| 'bengal'
+	| 'berber'
+	| 'berlin'
+	| 'bibl-griech'
+	| 'boehm'        #
+	| 'botan-lat'
+	| 'brabant-ostflaem'
+	| 'brandenb'
+	| 'bret'         # bre: Breton
+	| 'brit-engl' 
+	| 'bulg'         # bul: Bulgarian
+	| 'burgund'
+	| 'byzant'
+	| 'byzant-griech'
+	| 'canarese'
+	| 'chin' 
+	| 'clev'
+	| 'daen'         # dan: Danish
+	| 'dalmat'
+	| 'dor'
+	| 'drawid'
+	| 'dschagata'
+	| 'dt'           # 
+	| 'elsaess' 
+	| 'engadin'
+	| 'engl'         # eng: English
+	| 'eskim'
+	| 'estn'         # est: Estonian
+	| 'finn'         # fin: Finnish
+	| 'flaem'
+	| 'flandr'
+	| 'florentin'
+	| 'fries'
+	| 'frk'          # frk: Frankish
+	| 'fruehgalloroman'
+	| 'fruehmhd'     #
+	| 'fruehnhd'
+	| 'frz'          # fra: French
+	| 'gael'         # gla: Gaelic
+	| 'galiz'
+	| 'gall'
+	| 'gall-lat'
+	| 'gall-spaetlat'
+	| 'galloroman'
+	| 'geg'          # # gegisch
+	| 'gemeingerm'
+	| 'gemeinslaw'
+	| 'germ'
+	| 'got'          # got: Gothic
+	| 'got-griech'
+	| 'goetting'
+	| 'griech'       # ell: Modern Greek (1453-)
+	| 'griech-kirchenlat'
+	| 'griech-lat'
+	| 'griech-spaetlat'
+	| 'groedner'
+	| 'groenlaend'
+	| 'guarani'      # grn: Guarani
+	| 'gujarati'
+	| 'hamit'
+	| 'hans'         # # hansisch
+	| 'hd'
+	| 'hebr'         # hbo: Ancient Hebrew
+	| 'hess'         # 
+	| 'hethit'
+	| 'hindi'        # hin: Hindi
+	| 'hindust'
+	| 'hispanoarab'  # ?xaa: Andalusian Arabic
+	| 'hochchin'
+	| 'holl'
+	| 'holst'
+	| 'hunn'
+	| 'iberoarab'    # ?xaa: Andalusian Arabic
+	| 'ie'
+	| 'illyr'
+	| 'ind'
+	| 'indian'
+	| 'ion'
+	| 'ir'           # gle: Irish
+	| 'isl'          # isl: Icelandic
+	| 'ital'         # ita: Italian
+	| 'italisch'
+	| 'italoalban'
+	| 'jakut'
+	| 'japan'        # jpn: Japanese
+	| 'jidd'         # yid: Yiddish
+	| 'kaerntner'
+	| 'kalabr'
+	| 'kalmyk'
+	| 'karel'
+	| 'karib'
+	| 'kasach'
+	| 'kaschub'
+	| 'katalan'      # cat: Catalan
+	| 'kelt'
+	| 'ketschua'
+	| 'khoi-san'
+	| 'kimbundu'     # kmb: Kimbundu
+	| 'kirchenlat'
+	| 'kolalapp'
+	| 'kongo'
+	| 'kontinentalingwaeon'
+	| 'kontinentalwestgerm'
+	| 'kopt'         # cop: Coptic
+	| 'korn'         # cor: Cornish
+	| 'koybal'
+	| 'krimgot'
+	| 'krimtatar'
+	| 'kroat'        # hrv: Croatian
+	| 'kslaw'        # chu: Church Slavonic
+	| 'kuban-span'
+	| 'kuman'
+	| 'kymr'         # cym: Welsh
+	| 'kypr'
+	| 'langobard'    # lng: Langobardic
+	| 'lat'          # lat: Latin
+	| 'lett'
+	| 'lit'          # lit: Lithuanian
+	| 'lombard'      # ?== lmo: Lombard
+	| 'lothring'
+	| 'lueneb'
+	| 'luxemb'
+	| 'maghrebin-arab'
+	| 'mal'          # msa: Malay (macrolanguage)
+	| 'malajalam'
+	| 'maldiv'       # div: Maldivian
+	| 'maori'
+	| 'marathi'
+	| 'maya'
+	| 'mbulg'
+	| 'md'
+	| 'mecklenb'
+	| 'medizin-lat'
+	| 'medizin-mlat'
+	| 'mengl'        # enm: Middle English (1100-1500)
+	| 'merowing-lat'
+	| 'messap'       # cms: Messapic
+	| 'mexikan-span'
+	| 'mfrk'
+	| 'mfrz'         # frm: Middle French (ca. 1400-1600)
+	| 'mgriech'
+	| 'mhd'          # gmh: Middle High German (ca. 1050-1500)
+	| 'mind'
+	| 'mir'          # mga: Middle Irish (900-1200)
+	| 'mitanni'
+	| 'mitteliran'
+	| 'mittelital'
+	| 'mittelrhein'
+	| 'mkorn'        # cnx: Middle Cornish
+	| 'mkymr'        # wlm: Middle Welsh
+	| 'mlat'
+	| 'mnd'          # gml: Middle Low German
+	| 'mnl'          # dum: Middle Dutch (ca. 1050-1350)
+	| 'mongol'       # mon: Mongolian
+	| 'moselfrk'
+	| 'mpers'
+	| 'mruss'
+	| 'nachgot'
+	| 'nahuatl'
+	| 'nd'           # nds: Low German
+	| 'neapolitan'
+	| 'nfrk'
+	| 'ngriech'      # ell: Modern Greek (1453-)
+	| 'nhd'          # deu: German 
+	| 'nhebr'        # heb: Hebrew
+	| 'nicht-ie'
+	| 'nicht-fries'
+	| 'niederhess'
+	| 'niederrhein'
+	| 'nordhumbr'
+	| 'nl'           # nld: Dutch
+	| 'nlat'
+	| 'nord'         # Nordic
+	| 'nordafrikan'
+	| 'nordafrz'
+	| 'nordbair'
+	| 'nordd'        # ?== nds: Low German?
+	| 'nordgerm'
+	| 'nordfries'    # frr: Northern Frisian
+	| 'nordital'
+	| 'nordmfrz'
+	| 'nordostd'
+	| 'nordpomoran'
+	| 'nordfrz'
+	| 'nordwestd'
+	| 'nordwestgerm'
+	| 'nordwestmd'
+	| 'nordwestnd'
+	| 'norm'
+	| 'norw'         # nor: Norwegian
+	| 'norw-lapp'
+	| 'nsaechs'      # nds: Low Saxon
+	| 'nsorb'        # dsb: Lower Sorbian
+	| 'nub'
+	| 'obd'
+	| 'oberelsaess'
+	| 'obfrk'
+	| 'obhess'
+	| 'obital'
+	| 'obsaechs'
+	| 'obsorb'       # hsb: Upper Sorbian
+	| 'obwald'
+	| 'oest'
+	| 'ostfries'       # frs: Eastern Frisian
+	| 'oirot'
+	| 'ojibwa'
+	| 'omd'
+	| 'oriya'
+	| 'oestl_dt'
+	| 'osk'          # osc: Oscan
+	| 'osk-umbr'
+	| 'osset'        # oss: Ossetian
+	| 'ostafrz'
+	| 'ostbair'
+	| 'ostd'
+	| 'ostflaem'
+	| 'ostfrk'
+	| 'ostfrz'
+	| 'ostgerm'
+	| 'ostie'
+	| 'ostlit'
+	| 'ostmnl'
+	| 'ostnd'
+	| 'ostpreuss'
+	| 'pali'
+	| 'pers'         # fas: Persian
+	| 'pers-arab'
+	| 'pfaelz'
+	| 'phoen'        # phn: Phoenician
+	| 'pikard'       # pcd: Picard
+	| 'polab'
+	| 'polabopomoran'
+	| 'poln'         # pol: Polish
+	| 'polynes'
+	| 'pomoran'
+	| 'port'         # por: Portuguese
+	| 'powhatan'
+	| 'prov'
+	| 'pseudolat'
+	| 'raetoroman'
+	| 'rhein'
+	| 'roman'
+	| 'rotw'
+	| 'rumaen'       # ron: Romanian
+	| 'russ'         # rus: Russian
+	| 'russ-kslaw'
+	| 'sagha'
+	| 'samojed'
+	| 'sard'
+	| 'savoyard'
+	| 'schles'
+	| 'schlesw-holst'
+	| 'schott'
+	| 'schwaeb'
+	| 'schwaeb-alem'
+	| 'schwaeb-bair'
+	| 'schwed'       # swe: Swedish
+	| 'schweiz'      # gsw: Swiss German 
+	| 'schweizerdt'  # == schweiz?
+	| 'semit'
+	| 'senegamb'
+	| 'serb-kslaw'
+	| 'serbokr'      # hbs: Serbo-Croatian
+	| 'serbokr-kslaw'
+	| 'singhal'
+	| 'sizilian'
+	| 'slaw'
+	| 'slowak'       # slk: Slovak
+	| 'slowen'       # slv: Slovenian
+	| 'sojon'
+	| 'sorb'
+	| 'spaetahd'
+	| 'spaetgall'
+	| 'spaetgot'
+	| 'spaetgriech'
+	| 'spaetlat'
+	| 'spaetmhd'
+	| 'spaetmnd'
+	| 'spaetmnl'
+	| 'span'         # spa: Spanish
+	| 'suedchin'
+	| 'suedd'
+	| 'suedfrz'
+	| 'suedhess'
+	| 'suedind'
+	| 'suedital'
+	| 'suedmnl'
+	| 'suednl'
+	| 'suedostd'
+	| 'suedostfrz'
+	| 'suedrheinfrk'
+	| 'suedschwed'
+	| 'suedslaw'
+	| 'suedwestd'
+	| 'suedwestfrz'
+	| 'sumer'        # sux: Sumerian
+	| 'sumer-akkad'
+	| 'swahili'
+	| 'syr'
+	| 'taino'        # == aruak?
+	| 'tamil'        # tam: Tamil
+	| 'tarantschi'
+	| 'tessin'
+	| 'thuer'
+	| 'tibet'
+	| 'tirol'
+	| 'thrak'        # txh: Thracian
+	| 'toch_A'
+	| 'toch_B'
+	| 'tosk'
+	| 'tschech'      # ces: Czech
+	| 'tswana'       # tsn: Tswana
+	| 'tungus'
+	| 'tupi'         # tpw: Tupí
+	| 'tuerk'
+	| 'turk'
+	| 'turkotatar'
+	| 'uigur'
+	| 'ukrain'       # ukr: Ukrainian
+	| 'umbr'         # xum: Umbrian
+	| 'ungar'        # hun: Hungarian
+	| 'urdu'         # urd: Urdu
+	| 'urkelt'
+	| 'urnord'
+	| 'urruss'
+	| 'urslaw'
+	| 'venet'
+	| 'venezian'
+	| 'vlat'
+	| 'vogtlaend'
+	| 'vorie'
+	| 'vorlat'
+	| 'vorkelt'
+	| 'vorslaw'
+	| 'vorroem'
+	| 'vorroman'
+	| 'vulgaerarab'
+	| 'vulgaergriech'
+	| 'waldeck'
+	| 'wallon'       # wln: Walloon
+	| 'walis'
+	| 'westafrikan'
+	| 'westd'
+	| 'westfael'
+	| 'westflaem'
+	| 'westfrz'
+	| 'westfries'    # fry: Western Frisian
+	| 'westgerm'
+	| 'westjidd'
+	| 'westmd'
+	| 'westnd'
+	| 'westobd'
+	| 'westroman'
+	| 'westsaechs'
+	| 'westslaw'
+	| 'zigeuner'
+	| 'zoolog-lat'
+)

@@ -1,0 +1,2395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionary xmlns:kotus="http://www.kotus.fi/" xmlns:xlink="http://www.w3.org/TR/xlink">
+<DictionaryEntry id="SMS_2b020f4f18497647ca599be2fa7ea9e0" style="normaali">
+    <HeadwordCtn>
+        <Headword>hän</Headword>
+        <SearchForm display="no">hän</SearchForm>
+    </HeadwordCtn>
+    <PartOfSpeechCtn>
+        <PartOfSpeech freeValue="pron., part., s."/>
+    </PartOfSpeechCtn>
+    <p style="kappaleenvaihto"/>
+    <VariantBlock>
+        <FreeComment type="heading">Asu:</FreeComment> <VariantCtn>
+            <Variant>hän</Variant> <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">Var</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">Sat</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">Poh</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">HämP-E</GeographicalUsage>, <GeographicalUsage type="used" freeType="alue">HämK</GeographicalUsage> osaksi,
+<GeographicalUsage type="used" freeType="alue">KesP</GeographicalUsage>, <GeographicalUsage type="used" freeType="alue">KesE</GeographicalUsage> osaksi,
+<GeographicalUsage type="used" freeType="alue">KesL</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">Kai</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">Ver</GeographicalUsage>, lisäksi
+yksittäistietoja</FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_832bf94e850ca39287d1f819ba1539ca"/>, <VariantCtn>takavokaalisessa
+ympäristössä<Variant>han</Variant>
+            <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">SatP</GeographicalUsage> eteläosa,
+<GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage> (ei pohjoislaita), <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Punkalaidun</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kihniö</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Forssa</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Tammela</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Loppi</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Padasjoki</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kalajoki</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_4440efbca167c9c33cae34d88455bf92"/>,<VariantCtn>
+            <Variant>hee(n)</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Sauvo</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_9ab0be8aeb6df246f1c8c970e27a06f8"/>,<VariantCtn>
+            <Variant>he(n)</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Nousiainen</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Rymättylä</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Paimio</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Sauvo</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Perniö</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_d437c41beb5680530a6230d780dbe779"/>,<VariantCtn>
+            <Variant>heä(n)</Variant>
+~ <Variant>hiä(n)</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">KarE</GeographicalUsage> luoteis- ja koillisosa, <GeographicalUsage type="used" freeType="alue">KarK-P</GeographicalUsage>, <GeographicalUsage type="used" freeType="alue">SavE</GeographicalUsage> paikoin,
+<GeographicalUsage type="used" freeType="alue">SavP</GeographicalUsage> osaksi, <GeographicalUsage type="used" freeType="alue">Ink</GeographicalUsage> osaksi,
+<GeographicalUsage type="used" freeType="pitäjä">Pertunmaa</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Hartola</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Sysmä</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_480bad1f990e82db6170c2371c0a5143"/>,<VariantCtn>
+            <Variant>hie</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Asikkala</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_5889262fb72786ebafe723e617d62c09"/>,<VariantCtn>
+            <Variant>häi</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Pukkila</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Sakkola</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Impilahti</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_33e7af832c5908fecf2e2ff8f56a2490"/>,<VariantCtn>
+            <Variant>häin</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Jällivaara</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_cdaa9dd98ae909c65e07d84825a2d804"/>,<VariantCtn>
+            <Variant>hää(n)</Variant>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">VarP</GeographicalUsage> paikoin, <GeographicalUsage type="used" freeType="alue">VarE</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">HämE-K</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">Kym</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">KarE</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">SavE</GeographicalUsage>,
+<GeographicalUsage type="used" freeType="alue">SavP</GeographicalUsage> paikoin, <GeographicalUsage type="used" freeType="alue">KesE</GeographicalUsage> osaksi,
+<GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>,
+<GeographicalUsage type="used" freeType="alue">Ink</GeographicalUsage> paikoin, <GeographicalUsage type="used" freeType="pitäjä">Pöytyä</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Loimaa</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Noormarkku</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kalvola</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="pitäjä">Rautu</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Hiitola</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Saari</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Sotkamo</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kuhmo</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kajaani</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_1ddc93e20dad187488919214e80f9e39"/>
+    </VariantBlock>
+    <InflectionBlock>
+        <FreeComment type="heading">Taivutus:</FreeComment> akk.
+<InflectionCtn>
+            <Inflection>hänen</Inflection> <FreeTopic type="levikkitiedot">etenkin länsimurt.</FreeTopic>
+        </InflectionCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_d156856b93f2a46836b6cd469980e83d"/>,<InflectionCtn>
+            <Inflection>hänet</Inflection>
+<FreeTopic type="levikkitiedot">etenkin itämurt.</FreeTopic>
+        </InflectionCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_b853e8ba2ee3c05ac99d8046ba07263f"/>;
+partit.<InflectionCtn>
+            <Inflection>häneä</Inflection>
+<FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Lappajärvi</GeographicalUsage>
+            </FreeTopic>
+        </InflectionCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_9284c8a98ea83cd28bb57a8e60f48163"/>;
+adess.<InflectionCtn>
+            <Inflection>hällä</Inflection> <FreeTopic type="levikkitiedot">tietoja <GeographicalUsage type="used" freeType="alue">VarE</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">Sat</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">KarP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">SavP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">KesP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PohK-P</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">Kai</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>, <GeographicalUsage type="used" freeType="pitäjä">Vähäkyrö</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Ylihärmä</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Säkkijärvi</GeographicalUsage>
+Lappa</FreeTopic>
+        </InflectionCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_c2bd828bc140e15e3df5e8c6aad121b8"/>; iness.<InflectionCtn>
+            <Inflection>hässä</Inflection> <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Mouhijärvi</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Suoniemi</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Tyrvää</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Vesilahti</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kylmäkoski</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Hattula</GeographicalUsage>
+            </FreeTopic>
+        </InflectionCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_7616ee2a67e3146eb0b43fbc64108519"/>; illat.
+<InflectionCtn>
+            <Inflection>häneeseen</Inflection> <FreeTopic type="levikkitiedot">joitakin tietoja <GeographicalUsage type="used" freeType="alue">VarP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PohE-K</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">SatP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage>, lisäksi
+yksittäistietoja.</FreeTopic>
+        </InflectionCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_21e2780bad8ffdff76da31c0fcb8235c"/>
+    </InflectionBlock>
+    <SenseGrp id="SMS_17870c10660e5faefe8ac7865acfa1b8">
+        <Definition>yks. 3. pers:n pron:na
+referaatissa.</Definition>
+        <FreeTopic type="levikkitiedot">yleissuomal.</FreeTopic>
+        <SenseGrp id="SMS_f9d8bd1a496a1c9ea1b02c0147ebce5f">
+            <Definition>suorassa esityksessä t. esityksessä, jossa ei ole muita epäsuoran
+esityksen piirteitä kuin referaattia edeltävä <i>että</i>-sana.
+Rinnastuu levikiltään välittömässä puheessa esiintyvän
+<i>hän</i>-pronominin levikkiin, ks. ryhmä 2.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Mut see mää kiällän koht,
+sanos ämänt, et Almat em mää pääst, koto mä hänen tartte lasten
+kans.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Halikko</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">nim mää sanoin ̮et tuakaa <Gloss style="huutomerkki">[!]</Gloss> Iitmanni ja,
+koska häm minuu on syyttännyk kum minä em mistään tiärä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Ja
+sittem minä sanon<Gloss>isännälle</Gloss> kom minä menin siähen ni, Maija
+tullee ja tappaa minun että se vihastuu kum minä hänestä niir rumia lauluja
+laulan.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kiikoinen</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Se Huhtilam mummu oli sanonu että kum ma sen olsin tiänny
+että hän tohtari on nim minä en olis häntä parantanu.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Längelmäki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">meiä
+Aleksanteri ku käi meil ni, mie sano, nyt mie lähe Anna-Marrii katsomaa et kui
+hää taas minnuu äkähellöö</Citation>, kiukuttelee minulle, on minulle
+vihainen.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Koivisto</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Ja sit<Gloss>sisareni</Gloss> sano: mie
+hänt<Gloss>vanhaa mammaa</Gloss> vaik kuin oisin käskent pois siint
+riest<Gloss>= reestä</Gloss> ńi mie hänt en suanut pois sano ja,
+mium pit tuuvva hänt kylleän ast.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Järvisaari</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Vanamuori kyssyy: kust siul nain ̮on otettu, ja kui
+hänen nimi.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_4089f1b0fe46321f909be6da39963edd">
+            <Definition>epäsuorassa esityksessä t.
+sekaesityksessä.</Definition>
+            <FreeTopic type="levikkitiedot">yleissuomal.</FreeTopic>
+            <SenseGrp id="SMS_eb02de0108ebe9eab587b9fd31d20f4b">
+                <Definition>suoran esityksen 1. persoonan vastineena.</Definition>
+                <ExampleBlock>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Piä̀tilä sanò että
+se hällä kaikkeim paràs piika olì yhreksänkymmentä syltä poltti prännim
+pesä̀sä</Citation> halkoja talvessa.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">s
+̮oli<Gloss>taikoja osaava mies</Gloss> sittes sanonus
+sillej<Gloss>taikuutta epäilevälle miehelle</Gloss> jotta, jotta tulla
+hänen kanh niin kyllä hän tuota, hän näyttää jotta niitä tuloo
+kirkommaavväkiä.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Jalasjärvi</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">se<Gloss>mies</Gloss> kysy vaan että hälle
+elorattaita</Citation> lainata.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Suoniemi</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Kun
+ne<Gloss>vanhempani</Gloss>, ne asu tua Porrasniitusa ensinnä, sittej ja
+siä se<Gloss>isä</Gloss> kehu että kyllä siälä näki, susia. Että kerranki
+hänen tartti mennä ehtoopuhteella nin – – Järvenpäähän kais se
+sano että hänen piti mennäj ja – – oli kuus seittemän sutta stes
+siinä sualla ku hän meni, ja ulvottiin kovasti! Sano että hän pelkäs siittä
+mennäm mutta meni hän vaan! Sano ettei ne mittään hänen<Gloss>=
+hänelle</Gloss> tehnee, ja sten<Gloss>ei</Gloss> nähnym mittään ku hän
+palas.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Karkku</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Pyysin, että vaari myisi pitkän valkoisen partansa minulle
+<Citation style="dialect">mut se sano ei hään ̮annas sitä nyv viälä mut kyl häj jälkeen
+kualemaas ̮antaa sem minulle.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Loppi</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">sano
+Roopem Marja – – hänehkih kotoo<Gloss>= kotonaan</Gloss>
+olleh</Citation> vuohia ja pukkeja.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Iitti</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Vainajan
+ruumis on pestävä huolellisesti, jotta <Citation style="dialect">se ei<Gloss>myöhemmin</Gloss>
+tule koaŕittammoa<Gloss>= valittamaan</Gloss> nii et hänet
+huonost pestii.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Kurkijoki</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Kulkijamummo
+asettui taloon: <Citation style="dialect">ä̀etivàennoo làetteli hyvät ruuvvat
+niin,<Gloss>mummo</Gloss> kehu olloosav vàen jotta hän soattaa ollap
+pitemppäänni.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Nurmes</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Tuokiil
+Laheʔ ʔemäntä sano ettee häh heetä<Gloss>lakanoita</Gloss>
+silitä, häv vuan kaaloo.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Iisalmi</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">ykski
+isäntä kerto ku oli meillä yötä että hänen kävi kamalasti tuolla Vimpeliv
+välillä ku, häl lähti iltahämärällä siskosal luoks kävelemään ni, ku häne
+eellääm meni vaimone henki ja se meni ni että – –
+kaati<Gloss>= esiliina</Gloss> vaa liessus ja sano vielä noi. ja här
+rupes tavottamaan sitä ihmistä sitten ku hän niin, meni ja, ei sitä ihmist
+̮ollum missää vaikka hän kuinka nopeem meni.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Lappajärvi</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Köyhä Matti
+valehteli rikkaalle Matille löytäneensä joesta lehmiä.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Kuusamo</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Vieppä häntäes sanoo se rikas Matti jokee.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Kuusamo</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">se
+komensi kaverim panna sivakat rivhij ja hänev vejättää sinne
+kylhin.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Sodankylä</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Einohan innostu kokonhan että
+kyllä hän</Citation> vie.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Sodankylä</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Se
+oĺ sanonna sitten se skuuvaktaŕ<Gloss>=
+metsänvartija</Gloss> : hän mänöö ja ottaa sen</Citation> jäniksen, jota kukaan
+ei ollut saanut ammutuksi.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Vermlanti</GeographicalUsage>
+                    </ExampleCtn>
+                </ExampleBlock>
+                <ExampleBlock>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Ja sit too Vorssan yhtiö pyysi si, että hän saa tukkiaas
+kuljettaas sit tästä kuv vettä pitkin tuatiin tätä jokkee
+pitki.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Tammela</GeographicalUsage>
+                    </ExampleCtn>
+                </ExampleBlock>
+            </SenseGrp>
+            <SenseGrp id="SMS_52c820820f17efb8e9e3a100b5f4e19e">
+                <Definition>suoran esityksen 2. pers:n vastineena.</Definition>
+                <ExampleBlock>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">see riihe lämmittäjä
+– – jos se satù se<Gloss>haltijan</Gloss> näkèmä ni sè,
+pyys sitä̀ sitt ̮et, hän<Gloss>haltija</Gloss> hoitasis
+tult.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Kustavi</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">ei mä̀ saanu yht vakko perùnamaata vaik mää menì ja
+rukòli ja pyysi, isä̀ntävainalt et hää antas mul ny sen verram
+perùnamaat et mä sais uutta perùna lasten kansa.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Perniö</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">se<Gloss>kauppias</Gloss> kysyi isält sit osaak
+här<Gloss>isä</Gloss> ruattii.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Satua:
+<Citation style="dialect">sittep Pekka käveli kerran kuninkaan kanssa kartanolla ja kysy että onko
+hällä muita lapsia.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Vesilahti</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">herra
+kysy silt pojalt ̮että mikä ammatti hänel piti olla.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Mäntsälä</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Mie
+mänen sanomaa Annil jos hänel olliis aikaa tulla meil kohvil.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Lavansaari</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">minä
+esitin tälle lääkärille että jos niin kö hän tarkastais minua
+vähäse.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Halsua</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">ja mie tahòn sen sitte kamàhriij ja, arvelij<Gloss>=
+kysyin epäröiden</Gloss> jos hällä on rahòja jonku verran mulle
+lainata.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Vittanki</GeographicalUsage>
+                    </ExampleCtn>
+                </ExampleBlock>
+            </SenseGrp>
+            <SenseGrp id="SMS_943f463e55dc97cea9d3e550e1996646">
+                <Definition>suoran esityksen 3. pers:n vastineena.</Definition>
+                <ExampleBlock>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">– – isäntä
+oĺ hoastant jot heil oĺ palvelustyttö ne, se tyttö vaik käi
+mihi koht makkoamoa, ne sillo se<Gloss>piru</Gloss>, alko lyyvä häne
+peäpohjihii.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Hiitola</GeographicalUsage>
+                    </ExampleCtn>
+                </ExampleBlock>
+            </SenseGrp>
+        </SenseGrp>
+        <SenseGrp id="SMS_dc734c037de2cb7efb28f2ecec149b57">
+            <Definition>muissa referaatin lajeissa.</Definition>
+            <SenseGrp id="SMS_3fe79c59138ea4ac15db70f04f88ab13">
+                <Definition>esityksessä, jossa referoitavina ovat ajatukset, mielenliikkeet
+t. tuntemukset.</Definition>
+                <ExampleBlock>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">koir̆ra huusi ja tuli minun tyvöösäin niin kovii se
+luuli että se<Gloss>puusta putoava metso</Gloss>, tulee hänem
+päälläs.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Se<Gloss>mies, jota poliisit olivat viemässä
+putkaan</Gloss> kävi kiin ovem pihtipiäliin niim pirust kun se huamas, mihe
+häj joutuu.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Somero</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Nainen
+<Citation style="dialect">pani sinnes<Gloss>maidon sekaan</Gloss> sualaa aina sitten ennenku
+se myi sem maitolitransan nin se pani sinnes sualaa – – ettei se
+pahentanu hänel lehmäänsät taas sittes se ihminej joka vei hänem
+maitoonsa.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Tyrvää</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Olin
+raskaana ja odotin lasta syntyväksi. Kun tuli tammikuun 23. päivä <Citation style="dialect">sit
+hää<Gloss>lapsi</Gloss> aattelki nyt h ä ä tullooki pois täält jo, ja mie
+ko mäni saunaa kylpemää – – a hää lähtööki tulemaa pois, ja
+tuotii tuppaa tullessaam pojan.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Koivisto</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">kyllä
+se<Gloss>hylje, joka on vaistonnut ampujan lähistöllä</Gloss>
+monastiʔ että lähteekö häv vai eikö häl lähet tuosta tuo jo, ja
+laittelee ittesäs siihen</Citation> avannon reunalle.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Hailuoto</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">No
+se<Gloss>karhu</Gloss> kun näki että hänn ̮ei, hänn ̮ei
+peäsek koeraeʔ eikä miesteʔ eissä mihinkään niin tuota, se
+hyökkäsi sillem minun</Citation> puolelleni.</Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Suomussalmi</GeographicalUsage>
+                    </ExampleCtn>
+                </ExampleBlock>
+            </SenseGrp>
+            <SenseGrp id="SMS_1ce440686ad610e1206ce942d54bdd03">
+                <Definition>esityksessä, jossa puhuja kuvaa toisilta kuulemaansa osoittamatta
+kuitenkaan selvästi tiedon lähdettä. Ei erotu kiistatta välittömästä
+puheesta.</Definition>
+                <ExampleBlock>
+                    <ExampleCtn>
+                        <Example style="normal">Olin
+lähtenyt liian aikaisin kirkosta ja ihmettelin, kun isä ei tullut: <Citation style="dialect">ja mää
+oròta ja oròta ja meinan kummonè hullu se on kun̆n ̮e, pappa
+ollenka siält kot perä̀s tul ja sit hänn ̮olì taas muu hakènuk
+kirkon tykö̀n kovì sìt.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Kuusjoki</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">
+                            <Citation style="dialect">Siä
+Karkuh semmonenkit tapauh ku siä paimeneh oli olluj joku ja meni sinnej
+jättiläistel luolaam pyytään sittej juotavaa. Ja sittet tuotiij juotavaa, mutta
+hän ei juonum mutta sittet tuotiin Karkun omalla kirkonkalakilla juotavaa ja
+sitte häj joi.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Parkano</GeographicalUsage>
+                    </ExampleCtn>
+                    <ExampleCtn>
+                        <Example style="normal">Tuhiskonmäki
+oli pelätty paikka, koska siinä yöllä kummitteli: <Citation style="dialect">sìt siinä oĺ yks
+sellańe poika – – ja se joutu, yö aikana tulemoa sieltä,
+kirkolta poisi, ja heä kuuli nii jotta nyt siel laps itkyö, jotta, heä ni
+̮ot heä pań hevośem puuhu kii heä ajo sieltä tiel laitoa
+ja, hänem pit̆teä ottoa selvä siintä nii jotta, onk siel
+mitä.</Citation>
+                        </Example>
+                        <GeographicalUsage type="used" freeType="pitäjä">Kurkijoki</GeographicalUsage>
+                    </ExampleCtn>
+                </ExampleBlock>
+            </SenseGrp>
+        </SenseGrp>
+    </SenseGrp>
+    <SenseGrp id="SMS_64d944fb587ff0c54f49cdb6958d5886">
+        <Definition>yks. 3. pers:n pron:na välittömässä
+puheessa.</Definition>
+        <FreeTopic type="levikkitiedot">eniten tietoja <GeographicalUsage type="used" freeType="alue">Ink</GeographicalUsage>,
+suhteellisen runsaasti tietoja <GeographicalUsage type="used" freeType="alue">VarP-E</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">SatL</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">KarE-K</GeographicalUsage>, jonkin verran
+tietoja <GeographicalUsage type="used" freeType="alue">VarU-Y</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">SatE-P</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PohK</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>.</FreeTopic>
+        <Note>Muualla
+<i>hän</i> on harvinainen. Sen tilalla t.
+(<i>hän</i>-pronominin esiintymisalueilla) rinnalla käytetään
+pronominia
+<Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_b31496e4875076e642fd7964cd644470" word="se">se</Ptr>. Alueella
+<GeographicalUsage type="used" freeType="alue">VarY</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">Sat</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">HämP </GeographicalUsage>
+<i>hän</i>-sanan käyttö näyttää olevan yleisempää sivulauseissa kuin
+päälauseissa ja <i>kun</i>-lauseissa yleisempää kuin muissa
+sivulauseissa.</Note>
+        <SenseGrp id="SMS_bfbd51a8584032df1c086993dbbca640">
+            <Definition>ihmisiin viittaamassa.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">see sisko kon Ketùs
+̮o ni se täytti talvel, seittämänkym̆ment ja, ja see, se nuaremp
+sisko tual Velkuamaas ni, nì se o sit taas hänèst ni, vanhemp parì, ei ko
+nuaremp parì vuatta mää olèn kaikke vanhemp ̮ollu.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Velkua</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Joku oli
+tuonut härät yöllä salaa Mustanojalta kotiin: <Citation style="dialect">kyl mar
+hää<Gloss>tuoja</Gloss> krintist<Gloss>= portista</Gloss> sit vaa,
+Mustanojal ol simmone iso krintti ni, kyl mar hää siit härkkäjen kans ulos tul,
+mistä hää sit tul?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Halikko</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">onks
+muìta tulìjoita sanò Parra faari ko hän kaìvoom putòs</Citation> sp.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Mitäs siitä
+Kuppari-Jahannasta muuta puhuttiin? <Citation style="dialect">– Noo ei siittä mittään. Hyvä
+kuppari oli ja paljo kävi kuppaamasa ninkauvan ku haj jakso.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kiikka</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Tyrvääm pappilasa se<Gloss>isä</Gloss> oli ja sittev
+viä Rautajoesa ja Sipillä ja – –. Ja siinä pitkin se oli,
+kakskymmentäviis vuatta, ja sitte hän kylläänty siihen ja tuli sittej ja teki
+Männistöön alkuun sen asunnon josa minäkin olin. Se teki sen alkuun sen
+asunnon. Juu. Ei siä ollum mittään sillon. Mutta huanoon paikkaan hän tuli,
+kyllä siä olis parempia paikkoja sillon viälä saanu.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Karkku</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Satua:
+<Citation style="dialect">Oli kerran yks plikka jolla ei ollu miästä, kunnei hästä ollu kukaan
+hualinu.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Tyrvää</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">siälä
+se meiläm miäskin oli, mettäkaarttiissa sen kapinan ajjaan koko kevättalve.
+– – kuv vaanivat tappaakseen sitä mutta, minä ruakin sen tonne,
+erämaahan tonnek korpeej ja siällä hän säily.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Luopioinen</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Kirkoost
+ku tultii ja<Gloss>= myös</Gloss> poikkee ko ol pitkä matka ni, naisile
+tul ja<Gloss>= myös</Gloss> hätä pissalle ja pit seisattaa hevone, hää
+män – – hyppäis tie reunaa ja hajotti haaraa ja an<Gloss>=
+antoi</Gloss> tulla nii jot hosajaa.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Uusikirkko Vpl.</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Naapurin
+rouvalla oli tapana antaa minulle Amerikan paketeista karamelleja: <Citation style="dialect">ni, heä
+ko anto neljä karamellii mie pisti ain taskuhein<Gloss>lapsille
+vietäväksi</Gloss> ni, heä ku huomais sen sit heä kuor ain ja pan miu
+suuhuin ja anto lapsil eriksee.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Rautu</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">joka
+herkii sillel luvulleʔ ʔettä hän ostaa nahkoja ne on nahkan
+kerreejöetä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Siilinjärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">niim
+monta kertaa ku hän<Gloss>tietäjä</Gloss> sano että ottaas
+sitä<Gloss>vettä lähteestä</Gloss> nim minä nii monesti otij ja, ja toin
+sev veen sille.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Lappajärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">ei
+se<Gloss>vähäjärkinen mies</Gloss> ois tottunul lukehe, hän oli
+pöhölö.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Himanka</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">eik kais siinä<Gloss>talossa</Gloss> emäntä leiponum
+millonkaa se oli vaim palakollisev varassa, ku se<Gloss>emäntä</Gloss>
+niin tihijään sai lapsija ni eik kais se joutanu, siihen emäntähommaa, että
+keitti hän kuitenniv va.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Haapavesi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Ja
+minuʔ äeti oli sillon peä<Hyphen>₍</Hyphen>emäntä
+siinä<Gloss>yhteistaloudessa</Gloss> oekeen siinä vellin ja sen keiton
+keittäjänä. Toeset oli ne emännät nin ne oli nin kuʔ apulaessa
+hällä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Suomussalmi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">korkeim pansu<Gloss>= eläke</Gloss> jokà
+hään<Gloss>äitini</Gloss> sai ennen kö hän kuoli se olì
+kahèksankymmentäkaks kruunua.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Jukkasjärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Kun lääkärit
+eivät saaneet parannetuksi tytön silmässä olevaa sairautta, tyttö vietiin Kaisa
+Vilhusen parannettavaksi.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vermlanti</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Van kyllä
+se<Gloss>sairaus</Gloss> katoś sen tytön silmistä. Niin
+unteliän<Gloss>= ihmeellinen</Gloss> hän<Gloss>Kaisa</Gloss>
+oĺ</Citation>.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vermlanti</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_4ee3d40e1fbd0ca6e3f9f451a287ca79">
+            <Definition>eläimiin, esineisiin, asioihin tms. viittaamassa. Joissakin
+esimerkeissä <i>hän</i> saattaa ilmaista myös lievää vähättelyä (vrt.
+ryhmä 3).</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">voi ko muista
+yhδen kerrankin ko, meil ̮ol semmone musta hevòne ja, ol sit
+varsa täälk kotòn hänèl.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Hinnerjoki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Sika pelästyi
+tulipaloa ja karkasi metsään: <Citation style="dialect">Oli kaks päivää piilosa ku h ä n pelläästy
+sitä tulipalloo sika nin kovasti. Minä muistan senkin viälä. Sika saatiin
+sitte, kai hän suviaik ̮oli, että h ä n eli</Citation> jotain
+syömällä.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Karkku</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Kum maa oli oikein kovaa eikä sillä kankella saanu, semmosta
+huonostiv veistettyä seivästä, nim pysyyn nin, se jäi aina huiluuv vaikka hänen
+kanssaam mitä peliä piti.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Kumarraskin nuaremmakses se mul lankakeräni siittä takaas
+laattialta kuhal liarahti sinne.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Akaa</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Jäänmurtajaa
+eivät pidätelleet mitkään esteet, vaan se kulki suoraan paksussakin
+jäässä.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Uusikirkko Vpl.</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Ei se kiertänt yhtää jot mie mää tuolt,
+mie mää täält. Hää män suoraa!</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Uusikirkko Vpl.</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">kissoo
+kiitelläp pit̆tää, hiän sittä
+hyvittä̀yt̆tyy.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kiihtelysvaara</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Olin
+paimenessa enkä huomannut, että yksi kipeäjalkainen lehmä ei tullutkaan muun
+karjan mukana kotiin: <Citation style="dialect">eihäm minä sitä hoksannu että se nyt sinnek ku se
+jäi sitte hän laski maatak ku, jalat tuli kipeäks.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Lappajärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">kyllä
+se holkeri<Gloss>= Jäämeressä elävä piikkihai</Gloss> syöpi, rasuales se
+on oikein ahneh hän.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vesisaari</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">tuohom
+Pasmajärver ranthaan hukkuiki yhtenä vuonna nuori lehmä – – eikä
+ymmärt ̮ollenkhaam mennä varsin sinne hakèmhaa mutta olìsko häntä
+saautettu hengiss ̮ei sitä̀ tiä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vittanki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">pellovaan kas om pitkä juttu. ensin häntä maast
+nyheťťii. sit häntä panťii riihee, sit kaik
+ne<Gloss>siemenet</Gloss>, hakaťťii poikkee, sit häntä
+leviteťťii – – maahe.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Moloskovitsa</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">se<Gloss>röyhtäys</Gloss> kera<Gloss>=
+myös</Gloss> oman ajan tulloo kukali hän on tullaksee.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+    </SenseGrp>
+    <SenseGrp id="SMS_5ccae3de4f0ef6129db2a505be02d5e4">
+        <Definition>lauseissa, jotka ilmaisevat puhujan vähättelevää, yliolkaista,
+yhdentekevää, epäilevää suhtautumista puheena olevaan t. joiden tehtävänä on
+edellä sanotun epämääräistäminen. Tähän yhteyteen kuuluvaa käyttöä myös
+ryhmässä 4.</Definition>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_bfca2b690a2dc637f05bdc696fe7f914"/>
+        <FreeTopic type="levikkitiedot">eniten
+tietoja <GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">KarE</GeographicalUsage>.</FreeTopic>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">sanòttin Gröönluntiks, semmone, kiartokoulunopèttaja et se
+kävei sit, niis talois sit ja misä̀ talois hän sit, pit sitä̀
+koulù.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Eurajoki</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">vanhaan aìkaan kanà saì haùtoos<Gloss>muniaan</Gloss>
+sen aìkaa ko hä haùto.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Em minä
+niin sillet<Gloss>taikinalle</Gloss> tärkiä om mutta joh mä häntä
+maistan.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kihniö</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Ja nokisia mustia<Gloss>olivat seinähirret</Gloss> ku
+sauhut siittä tullu oli kuupan alittej ja, uunista ja mistä hän tuli niettä
+seinäk kiilsi.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Karkku</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Satua:
+<Citation style="dialect">ja kuninkas sano että tulevana tiistaina tullee noita, ja viä hänen
+tyttärensä, eikä ole kettääm pelastajjaa. vaikka kyllä ritari Tölppänä hänel
+lupas pelastaa, mutta ollekko h ä s t ä mittään.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vesilahti</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Osaako pukki
+kiivetä katolle? <Citation style="dialect">– hänestä nin katollet tiä<Gloss>=
+tiedä</Gloss> muta kyllä se korkeellet touvvaa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kylmäkoski</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Ja
+juatiin<Gloss>lääke</Gloss> niin kuumana kun eli ryyppiä
+häntä.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Uskotaan, että jos kirkonnaakkoja tulee pihaan, joku talonväestä
+kuolee.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmijärvi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Jos hän<Gloss>uskomus</Gloss>
+sitte om mitää sitä en tiäräm mut – –.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmijärvi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Sit ko
+se<Gloss>navetta</Gloss> tuĺ lantoa täytee ni ehä ̮ntä
+meinant soahas sielt poiskoa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kirvu</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">ei miull
+̮oov vokkiikaan<Gloss>= rukkiakaan</Gloss> nyt ennee, em mie
+hänel̆lä tiem mittää.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Sääminki</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">minä en
+àenakaa hännee<Gloss>moottoripyörän sivuvaunuun</Gloss> hirvijäs
+istuita.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Juva</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">En vaivaa mieltäni kuolemalla: <Citation style="dialect">em minä ooh hänestä
+kiusasa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Himanka</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">on siellä vähä vikatteer ruopioa, reestannee hänellä vähä
+jyrsie.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vaala</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Vankilan ruoassa ei juuri ole kehumista mutta <Citation style="dialect">eipä häness
+̮oor raskaat työtkää.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Puolanka</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_9cf820613cf0a9869eb5650dcf64b55e">
+        <Definition>muodollisena subjektina t. ilman korrelaattia; täytesanana. Ei
+aina selvästi erotu liitepartikkelista
+<Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_d311ab23d0d72086c72ae2cb04b9c54b" word="-han">-han</Ptr>.</Definition>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">Valaistusvälineet ovat nyt jo
+niin hyviä, että <Citation style="dialect">kyllä hän on ihmej jos tästä viä̀lä toìsellaìseks
+muuttuu.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Kyllä se on kaip paikon satanum mutta kyllä hän on ollut
+täsä paikalla kuivaa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Punkalaidun</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">T o t t
+e h ä n t ä alvariinsas sarakkaan, tuumas ämmä ku han märkiä housujansav
+vaihto</Citation> sp.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Suoniemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Vihille
+tulossa ollut morsian sanoi kirkon ovella, että <Citation style="dialect">em minä tässä herram
+pyhässä kopissa olek käynykkän sittek kur ristillä käytettii, mutta tulim ma
+häntä tol lopin kanssa vihhiille.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Teisko</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Kyllä on
+nyl lysti mennä joulukirkkoon, jolseham pilveev verä,
+kuuvalolla.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Akaa</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">sepä
+häntä nys sinnem menköö!</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Hattula</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">mite heä
+tehnyö sella<sup>i</sup>seks limakaks<Gloss>kaalit</Gloss> ku maijo kans
+keitteä.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Lemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">A mihi hänes mänit, koi uo kottii ei kontuu, muata ei
+mantuu.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Pyhäjärvi Vpl.</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Mikä hittara hiä män tuoho lapsee ku se ei hirvii olla
+yksinää.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kesälahti</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">mitä häntä ol liij̆jasta lihasta kep̆peempihän
+hiän ol liikkuuk.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kiihtelysvaara</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Jos
+se<Gloss>hevonen</Gloss> on täyvelliner ryöstökki ni sille ei mies piisoo
+yhtää oĺ hänessä ohjaksissa</Citation> kuka tahansa.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Konnevesi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Ruvenneeko hänestä yöksi satamaan?</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Ähtäri</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Sanoin
+minihameiselle tytölle: <Citation style="dialect">pijäh häntä nyh housujakaa!</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Himanka</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">No,
+alakaa hänestä jo konkoella<Gloss>= nousta ylös</Gloss>, päevähi on jo
+pian puolessa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Pyhäntä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">eikö
+sitä, sisällek kait tästä, lähetään hänneem porisemmaan</Citation>,
+juttelemaan.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Muhos</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">montako häntä lieh heitä laeskoa sielläe</Citation> palomiestä
+palotornissa.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kajaani</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">olinko<Gloss>= olisinko ollut</Gloss> häntä
+vuosikymmenenkhäv vanha.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rovaniemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">mie hänt
+em pyytänt kalloi.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Ropsu</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_0e09b6da5a371a0b52e065a27c65b9b8">
+        <Definition>vastaamassa teitittelyä t. viittaamassa (kohteliaassa puheessa)
+puheena olevaan etenkin silloin, kun tämä on läsnä ja sekä puhujan että
+puhuteltavan havaintopiirissä.</Definition>
+        <SenseGrp id="SMS_b9fb12f175a50d80718e4228bb4fd3e5">
+            <Definition>vastaamassa teitittelyä (t. sinuttelua).</Definition>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_fdbebfbfd1eb2a3f54f93e8d5f19cfbf"/>
+            <FreeTopic type="levikkitiedot">eniten tietoja
+<GeographicalUsage type="used" freeType="alue">Var</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">Sat</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">Häm</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">KarE-P</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">Sav</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">KesE</GeographicalUsage>.</FreeTopic>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">Haastattelijalle: <Citation style="dialect">kyl mar
+mɛ saa hɛnèl kaffe keìttɛ?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Sauvo</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Haastattelijalle: <Citation style="dialect">tiätääks häm mikä suppukessu
+o?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Tiellä vastaani tullut mies kysyi minulta: <Citation style="dialect">Kenem poikia hän
+on?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Tyrvää</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">missäs hän kortteeraa</Citation>, mikä on majapaikkanne? Vieras
+talon koiralle: <Citation style="dialect">Missääs hän oli, kunn e ha haukkunnu?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Anoppi
+uudelle miniälleen: <Citation style="dialect">Onks heä lypsänt millo lehmiä?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Lemi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Isäntä
+naapurin eukolle: <Citation style="dialect">Joutasikko hiän pariksi päevee meille kasakaksi</Citation>,
+apulaiseksi?</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Nurmes</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Kysyn haastateltavalta, onko kaivossa hyvä vesi. Haastateltava:
+<Citation style="dialect">haluaako hään niinkum màestoo?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Jäppilä</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Haastattelijalle: <Citation style="dialect">onks hääm Pertummaal
+likkoja?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Pertunmaa</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">tuoss ̮oo̰ hänellekkik<Gloss>=
+teillekin</Gloss> kirije.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">Vaimo miehelleen: <Citation style="dialect">Tulleeko hän syömään.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Viiala</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_56d3d036b95674cf209f81fdfff6ce28">
+            <Definition>viittaamassa läsnä olevaan kolmanteen henkilöön.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">Haastateltava läsnä olevaa
+toista haastateltavaa tarkoittaen: <Citation style="dialect">hänn ̮ei tiär
+näist<Gloss>kala-asioista</Gloss> sit taas mut hän jutle sit jäl ko mnää
+lakka.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Eurajoki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Kysyjä puhuteltavan mukana olevaa kolmatta henkilöä tarkoittaen:
+<Citation style="dialect">Kukas hän sit on, em mää tunnekka?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kiikala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Haastattelija kysyy haastateltavana olevalta mieheltä, kuinka
+kauan tämä oli punakaartissa. Haastateltavan vaimo vastaa miehensä puolesta:
+<Citation style="dialect">Ei hän ollu muuk ko kolme kuukaut.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Pori</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Haastateltava
+on huonokuuloinen ja vaimo joutuu toistamaan haastattelijan kysymykset. Vaimo
+miehelleen: <Citation style="dialect">Hän<Gloss>haastattelija</Gloss> sannoo että kerros sitä
+että kuija se Maajärven kuivaus kävi, kuija sen hommasit.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Karkku</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_1e4fffaabcf0ca99d7c5509805bf1f53">
+            <Definition>aviopuolisosta. <RangeOfApplication style="käyttöala">Kiert.</RangeOfApplication>
+            </Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">Emäntä isännästä vieraalle:
+<Citation style="dialect">Ei hän ol koton ny.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ahlainen</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Emäntä
+isännästä naapurille: <Citation style="dialect">Nyt se mei hää taas läks.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Muolaa</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Mies
+vaimostaan: <Citation style="dialect">Mein heä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Hietamäki</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+    </SenseGrp>
+    <SenseGrp id="SMS_7ccad52480597a06f32bd9b3fddd49b5">
+        <Definition>tähdentämässä t. täydentämässä (välittömästi) edellä olevaa
+nominia; täydentymässä jäljessä olevasta nominista.</Definition>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_f5a700e3691552c90fd85a450a20088d"/>
+        <FreeTopic type="levikkitiedot">eniten tietoja
+<GeographicalUsage type="used" freeType="alue">Kar</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">Ink</GeographicalUsage>.</FreeTopic>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">isä̀nt vaina ni h
+ä̀ m menì jò, se ol neljä aikan ko häm meni ja käve ulkon
+̮antamas hevòsil heini.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kustavi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">mistä
+hänkim pittää ilmestyäs sittes se lyly</Citation>, mistä sen lylynkin pitänee
+ilmestyä, syntyä.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Tyrväntö</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Oĺ hää aita siit minkälaine hyväsä, kyl
+se<Gloss>sonni</Gloss> sen sai palaśiks.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Jääski</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Jos joku jätti haravan piikit ylöspäin maahan, voitiin sanoa:
+<Citation style="dialect">kuka hää nyt jätti harava tuoho saaetta uottamaa!</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Viipuri</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Mikä pahkura hää lie tult tuoho suurevarpaa
+pääl.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kivennapa</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">se<Gloss>poika</Gloss> ol kuuluu ollee sellane nii jot
+tuota, se hiä aena alotti vaekka, missä nuoihe nuapurloihen, keske sattu tuola,
+tieläkii vastaa ni se hiä ol aena sanont jot no vot perkele tiijjähä mie
+sen.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Parikkala</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">joko heän talavi lähten̆nöön tulem̆maan kun jo
+on kovetan̆na</Citation>, hieman jäätynyt.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kiihtelysvaara</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Kun veneen
+perä oli riipalla kiinnitetty, ei ollut enää väliä <Citation style="dialect">mellastpa hää
+kokkapuoĺ missä tahhaa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Juva</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">em minä
+häntä päivää muista.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Himanka</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">se mikä
+lieh hän se muuvan työmies.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Sotkamo</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">henkiihän se<Gloss>ahma</Gloss> pölökää
+häänki.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rovaniemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Pyysin sairaalassa ollessani lääkäriä katsomaan lastoitettua
+kättäni, mutta hän sanoi tietävänsä käteni tilan katsomattakin: <Citation style="dialect">minä se
+arveliḭ että no mistä se hän tietää sen, nyt niin
+sanova.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Savukoski</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">se olì ahane hän siihen kärä̀jähomhan, se
+Arà-vaina.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Sodankylä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">hukka hään ei muuta kun lammaskarjassa
+kävi.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kittilä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Onko tuo mato? <Citation style="dialect">– hää˷ se kyll ̮on mato,
+lehtimato.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Raisi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Venäjä on
+pahansuopa naapuri, aina aiheuttamassa pahaa: <Citation style="dialect">kyllä se on rietas
+hän.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Jyykeä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">onko hän ny jänìs ollu niin kranttu siitä haijusta, että
+niit<Gloss>paulan lankoja</Gloss> oliis tarvinu voijela.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Täräntö</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">sit hyö
+ńiin itkiit hää morsia.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Moloskovitsa</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_d78399145b866bba0671ed36ea723d3b">
+        <Definition>interj:n tapaan huudahduksissa, voima- ja
+vahvistussanana.</Definition>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Nii händ</Citation>, todellakin, juuri niin.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rauma</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">jopa
+häntä<Gloss>= kas vain, jopa nyt jotakin</Gloss>, vai Yli-Nurmoos
+asti</Citation> olette käynyt.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">nii
+hänt</Citation>, niinpä niin.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Hausjärvi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">peru
+hänest</Citation>, hittoako siitä!</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kymi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Ikävääst käi, mut hätty hänest</Citation>, viis siitä!</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Uusikirkko Vpl.</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">On nii
+suorii puita, jotta hiä!</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rääkkylä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">se
+oĺ niih helevetih hyvä suksenkeĺ, jotta hiän!</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kiihtelysvaara</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Ihmetellen:
+<Citation style="dialect">Siinähä on semmoesta sinpohjoo<Gloss>kangasta</Gloss> että
+hän!</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kangasniemi</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_ded81ed79a2bb51d21bb113f2aca956f">
+        <Definition>itse, oma tms. Us. gen.muotoisena määrittämässä
+poss.suffiksillista n:a.</Definition>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_9f12257fb6afb11de6497433c93b6564"/>
+        <FreeTopic type="levikkitiedot">tietoja <GeographicalUsage type="used" freeType="alue">Var</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">PohK-P</GeographicalUsage> <GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage>
+<GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage> ja liepeiltä, lisäksi<GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Nurmes</GeographicalUsage>.</FreeTopic>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kuki ihmne o hänen
+kaltases – – kyl meis joka<span style="spirant">ϑ</span>
+                        <span style="spirant">ϑ</span>es meijä
+syyn<Gloss>= vikamme</Gloss> ova.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Hinnerjoki</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Hä̀n kesk h e l l ä s silakoi
+tuama.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Halikko</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Jop istus tuhvas<Gloss>=
+tuhassa</Gloss> ja kraape häntäs<Gloss>= itseään</Gloss>
+kruukumpalasil.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Halikko</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Kartano ja
+kunta pitivät kumpikin tiukasti kiinni omasta kannastaan: <Citation style="dialect">kas kartano piti
+hänel lakis ja kunta piti hänel lakis.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Se menì
+Kurìttulan koùluuj ja tahto Hilmaa hänellens paikkaa
+hommaamaa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Loimaa</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">èij olluv<Gloss>poppaukko</Gloss> vàen, antanna tuota,
+hänellekkääk<Gloss>= itselleen</Gloss> kujjeellat tuota.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmes</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kyllä
+siinä<Gloss>postinkuljetuksessa</Gloss> oli hänev vastuksesa
+siinäki.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Himanka</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">se<Gloss>jänis</Gloss> tuolta tullee häner
+reisultaan.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kuivaniemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Joskus
+lapsella <Citation style="dialect">mennee pois suunalta<Gloss>= liialliseksi,
+mahdottomiin</Gloss> hänel leikkinsäki.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rovaniemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">sukkula
+mennee hänen keinuansa</Citation>, omaa rataansa.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Jyykeä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kyllä he
+poliisi lähti<Gloss>pakoon</Gloss> ettei ku sammales suittusik
+kantapäistä, ja laukko sinne hänen omhaaj joukhoonsa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kolari</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">voi kun<Gloss>Nalle-koira, joka ei tule kutsuttaessa
+luo</Gloss> nyt o hänestänsä</Citation>, olevinaan, ylpeätä.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kun
+̮aikuusten kans kasuaa<Gloss>ainoa lapsi</Gloss> niin on nii
+hänestänsä</Citation>, itsetietoinen, pikkuvanha.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_e55d2745ebca3dd216831481bbb0daf7">
+        <Definition>
+            <HiddenEntryGrp>
+                <Headword freeType="alihakusana">mennä (tms.) häneksi</Headword>
+            </HiddenEntryGrp> = raueta tyhjiin, mennä
+myttyyn.</Definition>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_744a6343cc4f0f63c810f75544aa8afb"/>
+        <FreeTopic type="levikkitiedot">
+            <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage> Torniojokilaakso, <GeographicalUsage type="used" freeType="pitäjä">Juuka</GeographicalUsage>
+<GeographicalUsage type="used" freeType="pitäjä">Siikajoki</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Hailuoto</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Ristijärvi</GeographicalUsage>
+            <GeographicalUsage type="used" freeType="pitäjä">Suomussalmi</GeographicalUsage> <GeographicalUsage type="used" freeType="pitäjä">Kittilä</GeographicalUsage>.</FreeTopic>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kalastus om mennyʔ
+aivah häneksi.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Siikajoki</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">miten
+sev Vä̀enön nàemisen kävi? – meni häneksi.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Hänekshen se meni koko tienteko, ei siitä päästy alakua
+pitemmälle.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kittilä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">tuom<Gloss>heinähangon</Gloss> mie viem pois s
+̮on aivan hänèksi s ̮ol liika mitä̀tön.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kolari</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kun kolom̆meek kuukàotta yht̆teem männöön
+sö̀e sitä<Gloss>kalakeittoa</Gloss> èikä mittääm muuta ollunna
+niin kyllä se jo hänellen tuntu.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Juuka</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_eea2051b83f6c8c9e724a869d64ea6cd">
+        <Definition>s:na.</Definition>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Mäkelän emäntä puhuu hännän kans</Citation>, käyttää
+<Citation style="dialect">hän</Citation>-sanaa sanojen <Citation style="dialect">sinä</Citation> ja <Citation style="dialect">te</Citation>
+asemesta.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Hattula</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+</DictionaryEntry>
+
+<DictionaryEntry id="SMS_eb35375a315b6a9a98b2ae434e2798f1" style="normaali">
+    <HeadwordCtn>
+        <Headword>lasaretti</Headword>
+        <SearchForm display="no">lasaretti</SearchForm>
+    </HeadwordCtn>
+    <PartOfSpeechCtn>
+        <PartOfSpeech freeValue="s."/>
+    </PartOfSpeechCtn>
+    <Definition>sairaala.</Definition>
+    <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_724bd8d8a4d22da779dad31016b5ec7f"/>
+    <p style="kappaleenvaihto"/>
+    <FreeTopic type="levikkitiedot">
+ei tietoja<GeographicalUsage type="used" freeType="alue">Ver</GeographicalUsage>, muualta runsaasti t. melko
+runsaasti.</FreeTopic>
+    <VariantBlock>
+        <FreeComment type="heading">Asu:</FreeComment>
+        <VariantCtn>
+            <Variant>lasaree(t)ti</Variant>
+            <FreeTopic type="levikkitiedot">eniten
+tietoja<GeographicalUsage type="used" freeType="alue">Sat</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">PohE-K</GeographicalUsage>,
+vähemmän<GeographicalUsage type="used" freeType="alue">VarP-U-Y</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">Kar</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">SavP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">Kes</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">PohP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">Kai</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>, lisäksi tietoja liepeiltä</FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_1df2d17987c78643ecc7a9ec6cf9872b"/>,<VariantCtn>
+            <Variant>lasarei(t)ti</Variant>
+            <FreeTopic type="levikkitiedot">eniten
+tietoja<GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage>, joitakin tietoja<GeographicalUsage type="used" freeType="alue">VarP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">HämE-K</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">KesP-E</GeographicalUsage> ja liepeiltä, lisäksi<GeographicalUsage type="used" freeType="pitäjä">Pielisjärvi</GeographicalUsage>
+            </FreeTopic> </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_4fe013d18473912e387e5f7245e1bc8b"/>,<VariantCtn>
+            <Variant>lasaretti</Variant>
+            <FreeTopic type="levikkitiedot">tietoja<GeographicalUsage type="used" freeType="alue">VarP-E-Y</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">HämP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">Kym</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">KarE</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">Ink</GeographicalUsage> ja liepeiltä, lisäksi
+yksittäistietoja</FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_ef7803ca2c362254ee2ee3a1ff3c03b8"/>,<VariantCtn>
+            <Variant>lasarevia</Variant>
+            <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Puolanka</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_e1a7739efe9a3962c9e339924424705c"/>,<VariantCtn>
+            <Variant>lasarietti</Variant>
+            <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">Kym</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">KarK</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">SavE</GeographicalUsage>, joitakin tietoja<GeographicalUsage type="used" freeType="alue">HämK</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">KarE</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">SavP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">KesE</GeographicalUsage>,<GeographicalUsage type="used" freeType="pitäjä">Eno</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="pitäjä">Konnevesi</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_029f3237bc6bea6440fa684845fa8a0b"/>,<VariantCtn>
+            <Variant>latsareetti</Variant>
+            <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_887c3d9127893564877e51f3d5f55111"/>
+    </VariantBlock>
+    <SeeAlsoBlock>
+        <SeeAlso style="Vrt">
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_031274ffb6cbd898686498053fa21ecd" word="hospitaali">hospitaali</Ptr>
+        </SeeAlso>
+    </SeeAlsoBlock>
+    <ExampleBlock>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">karjakko ol valkosis
+vaattes niin ku lasàretim piika.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Sauvo</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">meil̆l ̮on niinko lasàreetisa sänky
+keskel̆lä laattiaa.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Kuivuu
+kokkoo niin ko lasareiti suurus</Citation> sp.</Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Pori</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Em minä
+joukan<Gloss>= ainakaan</Gloss> oo koskanak<Gloss>= koskaan</Gloss>
+keriinny lasareettihim mukuloomahan</Citation>, synnyttämään.</Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Isojoki</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">lapserruakosta linnaaj ja kupasta
+lasareettiin.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Hämeenkyrö</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">Pitkään
+nukkuville:<Citation style="dialect">Noskaas pystöön, ei tää o mikkään lasareeti!</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Kiikoinen</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">Laulua:<Citation style="dialect">kaks om pojaalla komeeta kotoo linna<Gloss>=
+vankila</Gloss> ja lasareitti.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Hattula</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">Yövieras
+kiittelee:<Citation style="dialect">Kyllol lämmin ja hyvä maataksen, ihlan kun olisin ollu
+lasarietis.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Heinola</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Em miä
+viäl tähä ikähäin ol lasariätis yhtä päivää ollu.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Pyhtää</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Se suli
+ja palo, ku lasareetin suurus</Citation> sp.</Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Harlu</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Teällähä moataan ku lasareitissa.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Koskenpää</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Se on
+joutun <Gloss style="huutomerkki">[!]</Gloss> lasareviaan.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Puolanka</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">ennen ei
+ollu muala tohturia ko lasareetisa.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Rovaniemi</GeographicalUsage>
+        </ExampleCtn>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">jäi nii
+kovast läsimää<Gloss>= sairastamaan</Gloss>, vietii
+latsareettii.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+        </ExampleCtn>
+    </ExampleBlock>
+    <ExampleBlock>
+        <ExampleCtn>
+            <Example style="normal">
+                <Citation style="dialect">Ja kuinkaha kauva sen
+Riston pittää maata lasareettija kuh se jalaka katkes menneellä
+viikolla.</Citation>
+            </Example>
+            <GeographicalUsage type="used" freeType="pitäjä">Soini</GeographicalUsage>
+        </ExampleCtn>
+    </ExampleBlock>
+</DictionaryEntry>
+
+<DictionaryEntry id="SMS_898c587edc03b82330c4015220bfe4d1" homographNumber="1" style="normaali">
+    <HeadwordCtn>
+        <Headword>lasi</Headword>
+        <SearchForm display="no">lasi</SearchForm>
+    </HeadwordCtn>
+    <PartOfSpeechCtn>
+        <PartOfSpeech freeValue="s."/>
+    </PartOfSpeechCtn>
+    <p style="kappaleenvaihto"/>
+    <FreeTopic type="levikkitiedot">
+yleissuomal.</FreeTopic>
+    <VariantBlock>
+        <FreeComment type="heading">Asu:</FreeComment>
+        <VariantCtn>
+            <Variant>lasi</Variant>
+            <FreeTopic type="levikkitiedot">yleensä</FreeTopic>
+        </VariantCtn>,<VariantCtn>
+            <Variant>klasi</Variant>
+            <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">Var</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">Sat</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">PohE</GeographicalUsage>,<GeographicalUsage type="used" freeType="alue">Häm</GeographicalUsage>
+osaksi,<GeographicalUsage type="used" freeType="alue">PohK</GeographicalUsage> osaksi,<GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage> osaksi,<GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>, joitakin tietoja<GeographicalUsage type="used" freeType="alue">PohP</GeographicalUsage>,<GeographicalUsage type="used" freeType="pitäjä">Kortesjärvi</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+            </FreeTopic>
+        </VariantCtn>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_64a418867843e9480af9659f1d84c6bc"/>
+    </VariantBlock>
+    <SeeAlsoBlock>
+        <SeeAlso style="Yhd">
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_7d8364b76c128f41c1133f247b25acc2" word="isonnuslasi">isonnuslasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_7eb8532923f4288ed43cf7bd4fbc1358" word="it%C3%A4lasi">itälasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_967c97f54673637cacdc5372a6c9ac7a" word="karsinalasi">karsinalasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_6c32fd1364cda1db669a12443d6e6ad9" word="kilolasit">kilolasit</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_31b2ba2e188a893e8d42640de573bd5e" word="kraarilasi">kraarilasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_c6f1bab5fe7e28ec88d3dce0da219976" word="nen%C3%A4lasit">nenälasit</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_2ee520a0193aaaa1430451b2dd1f12c5" word="ovilasi">ovilasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_bd9614f62422ffd21c1cf4e3c47665a9" word="per%C3%A4lasi">perälasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_1d8f9db39e296aef463f45e42259c863" word="ryyppylasi">ryyppylasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_171fb0f5078f10649ae1782e0a2b7bfb" word="r%C3%A4yst%C3%A4slasi">räystäslasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_ef4ee08070bcf1cc827991d0f983cb6b" word="taskulasi">taskulasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_01c37da3e69f5a8a4f6d91c6fe1a1352" word="tulilasi">tulilasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_27b5fd8d8c502e0f2e7a907625d06186" word="tuntilasi">tuntilasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_538fee66dc8b13bde6be43aa5a7a6765" word="tuplalasi">tuplalasi</Ptr>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_d523ef59de3d36d79ab503d76dcd7370" word="vesilasi">vesilasi</Ptr>
+        </SeeAlso>
+    </SeeAlsoBlock>
+    <SenseGrp id="SMS_befd3f5d150688035235603042486d56">
+        <Definition>kvartsista ym. valmistettu kova (läpinäkyvä) aine; tämäm aineen
+kappale.</Definition>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">Äkäpussista:<Citation style="dialect">Ei kest enemppä, kun klasi taitta</Citation>
+sp.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Velkua</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Panin kellon taskuuni ja<Citation style="dialect">ko mää kattoiv vähä̀m päästä
+ni olì klasì murùsinà.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Lasia oli
+ennen hyvin vähän:<Citation style="dialect">se oli niin ankaraa lasim pualesta.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Orivesi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">klasista saa kanss ̮irki</Citation> palasia, kun sitä
+leikkaa timantilla.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">järvi on
+kul lasi.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Hollola</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">täytyy lasin sauv̆vetuttaa<Gloss>= savustaa,
+noeta</Gloss> kahtapualen siit näkee paremmin</Citation>
+auringonpimennyksen.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kymi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">suurnuppu<sup>i</sup>sija<Gloss>rinta</Gloss>neuloja
+oikei, miss ̮oĺ vaskist ympärykset ja pyörijä laś
+keskel.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Lemi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Ilkivaltaiset pojat särkivät kaikki juomalasit<Citation style="dialect">ja mamma
+lekartsut<Gloss>= lääkkeet</Gloss> viel ottiit ja huimasiit<Gloss>=
+paiskasivat</Gloss> siihe lasiloi pääl.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Uusikirkko Vpl.</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">se<Gloss>ohut syysjää</Gloss> on heti niin ko klasi
+että näkyy läpi nii heleposti.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Himanka</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Silmävammaisesta:<Citation style="dialect">sitte oli otettu silimä poes ja pantu lasi
+sijjaan.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Sotkamo</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">ottoa polkupyörän ja männä sinne, sen jeät́iellen
+<Gloss style="huutomerkki">[!]</Gloss> ja, se oĺ ikääskun, laśia oś kulkenna
+pitkin.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vermlanti</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">siis valkeet helmet päällä niiku glasii.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">Liian kovan myllynkiven jauhatuspintaan tuli<Citation style="dialect">lasi</Citation> kun
+se kului kiiltäväksi.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_5d28b219407b648e4ae3e99e349c1648">
+        <Definition>ikkunan lasiruutu; ikkuna.</Definition>
+        <FreeTopic type="levikkitiedot">yleissuomal.</FreeTopic>
+        <SenseGrp id="SMS_f890e17cfa26157363973b5b8b1b0dc1">
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Tot miäs ruakas väärtt o
+vaikkei hän muut tekis kon ulos klasist vahtaisi</Citation> sp.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Lappi Tl.</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Ikkunaluukkuja käytettiin talvella sen takia<Citation style="dialect">että klasi
+sulana pysyi.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Oli
+siälä päitä klasisa ylimäistä ruutua myären.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kokemäki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Äitee
+aina sanoo ̮tta pitää istua hyvin hiliaa<Gloss>ukkosella</Gloss>
+johonakin nurkah jott ̮ei saa ollak klasillakaa</Citation>, ikkunan
+edessäkään.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Jurva</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Klasin alla</Citation> kasvaa omenapuita.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ilmajoki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Vilijakan pirttirivis oli järven pualella seittemän
+klasia.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ikaalinen</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Isäntä nauro sittek klasissa.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">eikä
+navetassakan ollul lasia nii, pimee se oli, mutta siäl ̮oli sit jokuu,
+semmonen ikkuna<Gloss>= lasiton luukku</Gloss> kans.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Janakkala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Vainajan
+haamu<Citation style="dialect">tuli perin toho ikkunal lasii.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Pukkila</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Rupes
+tukkeuttammaa<Gloss>= tukahduttamaan</Gloss> ku kaik lasit ol
+kii.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Savitaipale</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Kuoleman lähestyessä<Citation style="dialect">tòest pyrkiivät laśsii että suap
+kahtoo</Citation> ulos.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Juva</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Kun ei ollut
+kelloja, niin<Citation style="dialect">vuoltiil lasim pielee merkki àoringosta.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Nilsiä</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Kun
+puute lasista sissään tulloo niin rakkaus ovesta pihalle männöö</Citation>
+sp.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Viitasaari</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Se rupiais olehen ny aika panna toisek
+klasik<Gloss>talveksi</Gloss> ko myöthäns<Gloss>= yhtenään</Gloss>
+rupiaa klasit hikuahan.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ullava</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">otaʔ irti tuo pova<Gloss>= poka</Gloss> niim
+pannaan uusi lasi.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">ja kum
+minä muisteleʔ ʔettä se or Renne-vàen̆noon nikkaròema
+nämähil<Gloss>Lykinnön koulun</Gloss> lasit.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Sotkamo</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Oli
+lasin aukassu vyöllä<Gloss>= yöllä</Gloss>, tuli huonhesen
+sääskiä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kittilä</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">riihi ov vielä tuorek<Gloss>= kostea</Gloss> ku
+klassiiv vettää hikè<Hyphen>₍</Hyphen>ä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kolari</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">lehmän
+sitankaa<Gloss>= lannalla</Gloss> pantii klasi raamii
+kii.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">Jouluksi tehtiin päreistä
+tuvan kattoon pöydän yläpuolelle ikkunan muotoinen koriste:<Citation style="dialect">keskelle
+huànetta tehtiin sittep perrään semmonen tavàton klasì, kuusruutunen
+oìkee.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Neliskulmane silmä<Gloss>verkossa</Gloss> ei ollu
+hyvä, se löi klasin<Gloss>= ohuen vesikalvon</Gloss>
+                        </Citation> verkon
+silmään.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ulvila</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_adf6c4db875f749653829d00d8db8f59">
+            <Definition>
+                <HiddenEntryGrp>
+                    <Headword freeType="alihakusana">lasilla</Headword>
+                </HiddenEntryGrp> = ikkunalla,
+ikkunalaudalla.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Ei mul muut kassoo<Gloss>= kasva</Gloss> ko
+pelekuunii<Gloss>= pelargoneja</Gloss> klasil.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Pori</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Pontikkaa oli
+aina varalta hevosten lääkkeeksi:<Citation style="dialect">kyllä sitä tallil lasilla oli aina
+pullossa.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">joka lasilla pit ollak kaks kynttelijä</Citation>
+jouluaamuna.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Jäppilä</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">semmone tuikku oĺ lasilla</Citation> saunassa.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Joutsa</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">no jo
+sivaltivat lasilta minun kampani.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">mukkie
+hain ja hain ja enkä löytännä niin teällähän se oli lasilla.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ristijärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">panèn
+tuom pännän tuohòn, lasìlta se kuitenki vierii yhtä<Gloss>=
+vaikka</Gloss> mihìnkä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Täräntö</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+    </SenseGrp>
+    <SenseGrp id="SMS_7dc26922431654420383574ad29f459b">
+        <Definition>juomalasi; juomalasillinen.</Definition>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_aec517a988412a2a4ab19fc619837c37"/>
+        <FreeTopic type="levikkitiedot">enemmän tietoja länsimurt.
+kuin itämurt.</FreeTopic>
+        <SeeAlsoBlock>
+            <SeeAlso style="Rinn">
+                <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_215ed4cd335f348a23d9c957517f8519" word="lasikko">lasikko</Ptr>
+                <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_261e216794cfdedf084e880691eabfdc" word="lasikortteli">lasikortteli</Ptr>
+            </SeeAlso>
+        </SeeAlsoBlock>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Klasi täytettin toinen
+toises jälkke niin kauvan ko liänt piisas.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rauma</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">Talvinuotan
+perää tehtäessä juotiin toteja:<Citation style="dialect">pärä̀ntekkiäs sit oikke klasei
+tekìva <Gloss style="huutomerkki">[!]</Gloss>.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rymättylä</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">kaattaan
+toinen klasi</Citation> mehua.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">eì
+klasèja tarvittu<Gloss>pidoissa</Gloss> muukko jos totì<Hyphen>₍</Hyphen>a
+tehtiin ni siinä sittet tarvittii.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vampula</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Rupee
+kirjotus luannaa<Gloss>= luonnistamaan</Gloss> ku neljä, viis lasii
+heittää</Citation> sahtia suuhunsa.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Pomarkku</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Vaik
+klasit teill ̮om pöyräs eikö pläkkikupit enää kelpaa?</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Vähäkyrö</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Kyllä se
+joskus klasin ottaa.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Ikaalinen</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">En
+vastustellut pontikkamaistiaisia:<Citation style="dialect">em miä lasii
+sylkenykkää.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Virolahti</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">samasta
+kupista hörpättiin, èi niitä<Gloss>juotavia</Gloss> laslòehin</Citation>
+pantu.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Joutsa</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">elä kaajan niir riskistis<Gloss>kuumaa vettä
+lasiin</Gloss> säret taas lasin.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">oliskos
+Hannalta saanuk klasiv vettä?</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rovaniemi</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">Käytin ennen puisia viiliastioita<Citation style="dialect">mutta mi
+hä<Hyphen>₍</Hyphen>yin<Gloss>= minun täytyi</Gloss> sitte panna nuihin
+klassin</Citation>, lasikuppeihin.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Raisi</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+    <SenseGrp id="SMS_19050d48df3948c3e5ccf1b2230c39e8">
+        <Definition>muita lasista valmistettuja esineitä.</Definition>
+        <SenseGrp id="SMS_aa98fe341df23c415e6c5e3e9c56e861">
+            <Definition>lasipullo; lasipullollinen.</Definition>
+            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_310548af664d21b656bfce4000a41a0e"/>
+            <FreeTopic type="levikkitiedot">
+                <GeographicalUsage type="used" freeType="alue">PohK-P</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">PerP</GeographicalUsage>
+                <GeographicalUsage type="used" freeType="alue">LänP</GeographicalUsage>, lisäksi
+yksittäistietoja.</FreeTopic>
+            <SeeAlsoBlock>
+                <SeeAlso style="Rinn">
+                    <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_eb8a5555da279788809d8515fbba5455" word="lasikkainen">lasikkainen</Ptr>
+                </SeeAlso>
+            </SeeAlsoBlock>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Saakel kos joik kaik,
+sanos isänt ko tyhjäst klasistas torpril pruntryypy anno.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Pyhämaa</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">siel
+̮ol lasissa suloka<Gloss>= sulka</Gloss>
+                        </Citation> jolla voi
+voidella.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Juva</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Maitoa pantiil lasii</Citation> paimenelle mukaan
+evääksi.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Lappajärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Puolenkannul lasi oli pöyv̆vällä, ku isäntää arkkuul
+laitettiin.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Hailuoto</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">onko
+sulla lasija että tòisir riikapalsamija atteekista?</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Utajärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Toin
+klasin hilloja<Gloss>= suomuuraimia</Gloss> teille.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Ylitornio</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">housuvvyössä s ̮olì tervakulppu<Gloss>= pieni
+puuastia, jossa oli tervavettä sääskivoiteeksi</Gloss>, niinku klasì mutta
+puusta.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kainulasjärvi</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_4c277a245e2c785680749c90769dd31b">
+            <Definition>
+                <GrammaticalNumber freeValue="mon.:" value="plural"/> silmälasit.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">pitääskö pannav vähä
+klasija<Gloss>päähän</Gloss> jotta paremmin eroottaas.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Lasit on
+vanhan silmät.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Lapinjärvi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">lasit
+̮on silmis<Gloss>80-vuotiaalla</Gloss> ja viäl ajaa mettäs</Citation>,
+kulkee metsätöissä.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kymi</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Seu
+sama ku se kepittä kävelee ja lasitta kahtoo sano ranniv Ville ku riijuulla
+kävi.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Pyhäjoki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">minä nään lasetta <Gloss style="huutomerkki">[!]</Gloss> lukijav
+vielä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kiiminki</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">Kun<Gloss>auringon</Gloss> kilo kävi silimiin nin piti
+pannah harmajat lasit.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Sotkamo</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">ne
+koettaa pienie lapsie lasilla katottaa</Citation> jotta karsastus
+häviäisi.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Puolanka</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Kivenhakkaajasta:<Citation style="dialect">hänel oltii
+ain<Gloss>suoja</Gloss>klasit silmiin iessä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Kallivere</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">Näen vielä omin silmin enkä tarvitse silmälaseja:<Citation style="dialect">Kyl mul
+pappavainajan klasi riittävä.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Halikko</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_d07352afa92fc07442fffe4bdb92fdc5">
+            <Definition>lämpö- t. kuumemittarista.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">klasì ol
+taastakkan<Gloss>= tavantakaa</Gloss> kaìnalos, ja vɛlìst se
+pistettin ton persnorònki.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Sauvo</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">ei toi
+klasi näytä</Citation> neljääkään astetta lämmintä.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vihti</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">teällä
+ei ollut teällä kaopunnissa kun kaksikymmentänelj<Gloss>astetta</Gloss>
+näky tuolla meijän lasissa olovan.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Hyrynsalmi</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+        <SenseGrp id="SMS_8ede282332a0c3c85ed818b8c9a716b4">
+            <Definition>muuta.</Definition>
+            <ExampleBlock>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">lasi</Citation>, lasinkappaleesta tehty nahkurin työväline, jolla
+nahka kiillotetaan; <SeeAlso style="Vrt">
+                            <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" xlink:href="SMS_fae909af2d814519506d4a8d2b76b35e" word="lasita:1">lasita<HomographNumber>1</HomographNumber>
+                            </Ptr>
+                        </SeeAlso>.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Nurmo</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">se
+klasi<Gloss>öljylampussa</Gloss> sitä valkeeta sitte piti taikka noin
+entras ettei se järki suureks päässy.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Urjala</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">Solmunväliä
+mitattaessa oli käytössä<Citation style="dialect">kolmenkymmenen sekunnil lasi</Citation>,
+tiimalasi.</Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Virolahti</GeographicalUsage>
+                </ExampleCtn>
+                <ExampleCtn>
+                    <Example style="normal">
+                        <Citation style="dialect">mull ̮oĺ, se laś<Gloss>=
+suurennuslasi</Gloss>, kanssain, jota, minä, aena piän.</Citation>
+                    </Example>
+                    <GeographicalUsage type="used" freeType="pitäjä">Vermlanti</GeographicalUsage>
+                </ExampleCtn>
+            </ExampleBlock>
+        </SenseGrp>
+    </SenseGrp>
+    <SenseGrp id="SMS_b4edd30e09be1ba9f62ff2f9e5862ad7">
+        <Definition>vahtivuoron kulumisesta tietyin (tiimalasin mittaamin) väliajoin
+kertova laivakellon merkkiääni.</Definition>
+        <Ptr xmlns:xlink="http://www.w3.org/TR/xlink" style="kartta" xlink:href="eSMS_e4c6e80495021921208d63515e7f0be9"/>
+        <ExampleBlock>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Ko jokanev vahti ol neli
+tuntii kerrallas nii se ol vahδis kaks klassii, ruarmiäs löi
+klasit.</Citation>
+                </Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Rauma</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example style="normal">
+                    <Citation style="dialect">Lyärän klasej</Citation> vahdinvaihdon merkiksi.</Example>
+                <GeographicalUsage type="used" freeType="pitäjä">Taivassalo</GeographicalUsage>
+            </ExampleCtn>
+            <ExampleCtn>
+                <Example/>
+                <GeographicalUsage type="used" freeType="pitäjä">Raahe</GeographicalUsage>
+            </ExampleCtn>
+        </ExampleBlock>
+    </SenseGrp>
+</DictionaryEntry>
+</Dictionary>

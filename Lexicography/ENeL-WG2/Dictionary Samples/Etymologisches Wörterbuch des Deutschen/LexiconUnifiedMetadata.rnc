@@ -1,0 +1,74 @@
+default namespace = 'http://www.tei-c.org/ns/1.0'
+
+start = element teiHeader {
+	file-description
+	& profile-description
+	& revision-description
+}
+
+file-description = element fileDesc {
+	title-statement
+	& edition-statement
+	& publication-statement
+	& source-description
+}
+
+title-statement = element titleStmt {
+	title
+	, element respStmt {
+		attribute xml:id { text }
+		, element resp { text }
+		, ( element name { text } | element orgName { text } )
+	} +
+}
+
+edition-statement = element editionStmt {
+	element edition { title & date }
+}
+
+publication-statement = element publicationStmt {
+	publisher +
+	& place-of-publication
+	& date
+	& availability
+}
+
+source-description = element sourceDesc {
+	element bibl {
+		( editor + | author + )
+		& title
+		& date
+		& publisher
+		& place-of-publication
+		& edition ?
+		& element note { text } ?
+	}
+}
+
+profile-description = element profileDesc {
+	element textClass {
+		element keywords {
+			element term {
+				attribute xml:lang { 'deu' | 'eng' }
+				, text
+			} +
+		}
+	}
+}
+
+revision-description = element revisionDesc {
+	element change {
+		attribute when { text },
+		attribute who { text },
+		text
+	}+
+}
+
+author = element author { text }
+availability = element availability { element p { text } }
+date = element date { text }
+edition = element edition { text }
+editor = element editor { text }
+place-of-publication = element pubPlace { text }
+publisher = element publisher { text }
+title = element title { text }

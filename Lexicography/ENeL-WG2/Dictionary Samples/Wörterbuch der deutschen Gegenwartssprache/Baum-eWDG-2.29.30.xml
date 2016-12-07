@@ -1,0 +1,862 @@
+<?xml-model href="LexiconUnified.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>eWDG2</title>
+        <respStmt xml:id="BBF">
+          <resp>compiled by</resp>
+          <name>Bartz, Bauer, Fournier</name>
+        </respStmt>
+        <respStmt xml:id="POM">
+          <resp>annotated by</resp>
+          <name>POM</name>
+        </respStmt>
+        <respStmt xml:id="RL">
+          <resp>annotated by</resp>
+          <name>Rainer Ludwig</name>
+        </respStmt>
+        <respStmt xml:id="TS">
+          <resp>restructured by</resp>
+          <name>Thomas Schmitt</name>
+        </respStmt>
+        <respStmt xml:id="AH">
+          <resp>restructured by</resp>
+          <name>Axel Herold</name>
+        </respStmt>
+        <respStmt xml:id="WW">
+          <resp>edited by</resp>
+          <name>Wolfgang Worsch</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>XML encoded version</title>
+          <date>2016-10-27</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Digitales Wörterbuch der deutschen Sprache (DWDS)</publisher>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</publisher>
+        <pubPlace>Berlin</pubPlace>
+        <date>2016</date>
+        <availability>
+          <p>Copyright 2002–2016</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <editor>Ruth Klappenbach, Wolfgang Steinitz</editor>
+          <title>Wörterbuch der deutschen Gegenwartssprache</title>
+          <note>6 Bände/6 volumes</note>
+          <publisher>Akademie Verlag</publisher>
+          <pubPlace>Berlin</pubPlace>
+          <date>1967:1977</date>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term xml:lang="deu">Gegenwartssprache</term>
+          <term xml:lang="deu">Wörterbuch</term>
+          <term xml:lang="deu">Deutsch</term>
+          <term xml:lang="eng">present day language</term>
+          <term xml:lang="eng">lexicon</term>
+          <term xml:lang="eng">German language</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2005-03-29" who="#POM">Annotation aller Belegsaetze und Siglen in folgender Form: [eg][cit][quote]Text des Belegsatzes[/quote][xref from="AAAAAAAA"][bibl][author rend="short"]A.NAME[/author][hi rend="kursiv"]Quelle[/hi]Band, Seite o.ae.[/bibl][/xref][/cit][/eg]. Der Wert des from-Attributs entspricht genau einer ID im Quellenverzeichnis (quellenverzeichnis.xml).</change>
+      <change when="2005-04-11" who="#RL">Annotation aller dazu-Komposita als Entry mit type=zu. Das Stichwort jedes dazu-Kompositums ist der Wert des key-Attributs</change>
+      <change when="2008-03-10" who="#TS">Bis zu diesem Zeitpunkt: Tiefenstrukturierung des eWDG2 entsprechend Euralex-Beitrag, Stand entsprechend eWDG_Handbuch.doc (im DWDS/DTA-Wiki)</change>
+      <change when="2008-03-11" who="#AH">Ab diesem Zeitpunkt: Fortsetzung der Tiefenstrukturierung und Evaluation der Quellen</change>
+      <change when="2008" who="#WW">Entideologisierungsarbeiten</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>B</head>
+      <div type="block">
+        <entry type="main" xml:id="E_b_2667">
+          <form type="headword">
+            <orth expand="Baum" extent="full" rend="sep:comma">Baum</orth>
+            <gramGrp>
+              <pos value="N"></pos>
+              <gram rend="sep:semicolon" type="determiner">der</gram>
+              <gen value="masculine"></gen>
+              <gram rend="sep:comma" type="genitive">-(e)s</gram>
+              <gram type="plural">Bäume</gram>
+              <form rend="ldelim:slash rdelim:slash" type="diminutive">
+                <lbl rend="sep:colon">Verkl.</lbl>
+                <orth extent="full" rend="sep:comma">Bäumchen</orth>
+                <orth extent="full">Bäumlein</orth>
+                <gramGrp>
+                  <pos value="N"></pos>
+                  <gen value="neuter"></gen>
+                </gramGrp>
+              </form>
+            </gramGrp>
+          </form>
+          <sense level="0" xml:id="S_b_1142">
+            <sense level="1" n="1." xml:id="S_b_1143">
+              <def rend="sep:colon" xml:id="N_b_673">größtes und stärkstes Gewächs auf unserer Erde mit einem einzigen Stamm aus Holz, mit Zweigen, die Blätter oder Nadeln tragen, und mit einer Krone</def>
+              <cit rend="sep:semicolon" type="example">
+                <quote>im Herbst fällt das Laub von den Bäumen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>der Herbstwind fegte die bunten Blätter von den Bäumen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>die trockenen Nadeln fallen von selbst von dem Baume ab</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>dieser B. hat schon mehrere Jahre nichts getragen, ist eingegangen, muß umgehauen, geschlagen, niedergelegt werden</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>im Frühling schlagen die Bäume aus, blühen, bekommen neue Blätter, müssen verschnitten, versetzt werden</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>die Bäume breiten ihre Äste aus, wiegen sich im Winde, ächzen im Sturm,
+                  <usg type="reg">geh.</usg>spenden Schatten
+                  <milestone type="angle" unit="microstructure"></milestone>
+                </quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>junge Bäume anpflanzen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>das Bäumchen muß man anbinden</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>den B. abernten, kappen, veredeln</quote>
+              </cit>
+              <sense level="2" rend="term:angle sep:semicolon" xml:id="S_b_1143_10">
+                <usg type="dom">Kinderspiel</usg>
+                <cit type="example">
+                  <quote>Bäumchen wechseln</quote>
+                </cit>
+              </sense>
+              <cit rend="sep:semicolon" type="example">
+                <quote>auf einen B. klettern</quote>
+              </cit>
+              <sense level="2" rend="term:angle" xml:id="S_b_1143_11">
+                <usg rend="ldelim:slash rdelim:slash" type="style">bildl.</usg>
+                <usg type="reg">salopp</usg>
+                <usg type="reg">scherzh.</usg>
+                <cit type="example">
+                  <quote>das ist, um auf die Bäume zu klettern
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">um den Verstand zu verlieren</add>
+                  </quote>
+                </cit>
+              </sense>
+              <cit rend="sep:semicolon" type="example">
+                <quote>die Axt an den B. legen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>eine Leiter an einen B. anlegen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>an einen B. anprallen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>sich unter einen B. setzen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>d. Laub, Blätter, Zweige, Äste, Blüten, Früchte, Wurzeln, Rinde eines Baumes</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>ein junger, alter, knorriger, blühender, entlaubter, kahler, gesunder, kranker, toter, hohler, morscher, verdorrter, abgestorbener, eingegangener, umgestürzter B.</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>unsere heimischen Bäume</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>diese Eiche ist ein tausendjähriger B.</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>ein Wald von herrlichen, breitästigen Bäumen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>unter uralten Bäumen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>Bäume können über hundert Meter hoch werden</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>er ist groß und stark wie ein B., hält sich gerade wie ein B.</quote>
+              </cit>
+              <sense level="2" rend="term:angle" xml:id="S_b_1143_12">
+                <usg type="dom">bibl.</usg>
+                <cit type="example">
+                  <quote>der B. der Erkenntnis
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">der Baum im Paradies, von dem zu essen Adam und Eva verboten war</add>
+                  </quote>
+                </cit>
+              </sense>
+              <sense level="2" xml:id="S_b_1143_13">
+                <usg rend="ldelim:slash rdelim:slash" type="style">bildl.</usg>
+                <cit rend="sep:semicolon" type="quotation">
+                  <quote>Grau, teurer Freund, ist alle Theorie, / Und grün des Lebens goldner Baum</quote>
+                  <ref cRef="GOEJOHPWE" type="bibl">
+                    <bibl>
+                      <author>Goethe</author>
+                      <title>Faust</title>
+                      <biblScope>I 2039</biblScope>
+                    </bibl>
+                  </ref>
+                </cit>
+              </sense>
+              <sense level="2" rend="term:angle" xml:id="S_b_1143_14">
+                <usg rend="ldelim:slash rdelim:slash" type="style">übertr.</usg>
+                <usg type="reg">umg.</usg>
+                <cit type="example">
+                  <quote>Bäume ausreißen (können)
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">sehr kräftig sein, sich sehr stark fühlen</add>
+                  </quote>
+                </cit>
+                <cit type="example">
+                  <quote>er reißt keine Bäume aus
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">ist nicht sehr leistungsfähig</add>
+                  </quote>
+                </cit>
+                <cit type="example">
+                  <quote>er sieht den Wald vor Bäumen nicht
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">übersieht das Wichtigste vor unwichtigen Einzelheiten</add>
+                  </quote>
+                </cit>
+              </sense>
+              <sense level="2" xml:id="S_b_1143_15">
+                <usg rend="ldelim:slash rdelim:slash" type="style">sprichw.</usg>
+                <cit type="example">
+                  <quote>es ist dafür gesorgt, daß die Bäume nicht in den Himmel wachsen
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">allem ist eine natürliche Grenze gesetzt</add>
+                  </quote>
+                </cit>
+                <cit type="example">
+                  <quote>auf einen Hieb fällt kein B.
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">große, schwere Arbeit erfordert Ausdauer</add>
+                  </quote>
+                </cit>
+                <cit type="example">
+                  <quote>alte Bäume soll man nicht verpflanzen
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">alten Menschen soll man keine neue Umgebung zumuten</add>
+                  </quote>
+                </cit>
+              </sense>
+            </sense>
+            <sense level="1" n="2." xml:id="S_b_1144">
+              <usg type="reg">umg.</usg>
+              <def rend="sep:colon" xml:id="N_b_674">Tanne, Fichte, die zum Weihnachtsfest geschmückt wird, Weihnachtsbaum</def>
+              <cit rend="sep:semicolon" type="example">
+                <quote>wir wollen morgen den B. schmücken</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>die Kerzen am B. anstecken</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>sie wollten dieses Jahr keinen großen B., nur ein kleines Bäumchen</quote>
+              </cit>
+              <cit rend="sep:semicolon" type="quotation">
+                <quote>der Baum brennt ab
+                  <add rend="ldelim:paren rdelim:paren" type="paraphrase">die Weihnachtskerzen des Tannenbaumes brennen nieder</add>
+                </quote>
+                <ref cRef="STOTEHSWE" type="bibl">
+                  <bibl>
+                    <author>Storm</author>
+                    <biblScope>1,181</biblScope>
+                    <title></title>
+                  </bibl>
+                </ref>
+              </cit>
+              <cit rend="sep:semicolon" type="example">
+                <quote>die Kinder plünderten den B.</quote>
+              </cit>
+              <sense level="2" xml:id="S_b_1144_10">
+                <usg type="geo">landsch.</usg>
+                <cit type="example">
+                  <quote>den B. abputzen
+                    <add rend="ldelim:paren rdelim:paren" type="paraphrase">den Christbaumschmuck abnehmen</add>
+                  </quote>
+                </cit>
+              </sense>
+            </sense>
+          </sense>
+        </entry>
+        <div type="comp2">
+          <xr>
+            <abbr>zu</abbr>
+            <ref cRef="UNRESOLVED" sidx="1" type="dict"></ref>
+          </xr>
+          <note rend="ldelim:slash rdelim:slash" xml:id="N_b_6366">in Verbindung mit Früchten, Samen, z. B.</note>
+          <entry type="comp2" xml:id="E_b_2668">
+            <form type="headword">
+              <orth expand="Apfelbaum" extent="prefix" rend="sep:comma">Apfel-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2669">
+            <form type="headword">
+              <orth expand="Birnbaum" extent="prefix" rend="sep:comma">Birn-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2670">
+            <form type="headword">
+              <orth expand="Feigenbaum" extent="prefix" rend="sep:comma">Feigen-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2671">
+            <form type="headword">
+              <orth expand="Kaffeebaum" extent="prefix" rend="sep:comma">Kaffee-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2672">
+            <form type="headword">
+              <orth expand="Kakaobaum" extent="prefix" rend="sep:comma">Kakao-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2673">
+            <form type="headword">
+              <orth expand="Kastanienbaum" extent="prefix" rend="sep:comma">Kastanien-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2674">
+            <form type="headword">
+              <orth expand="Kirschbaum" extent="prefix" rend="sep:comma">Kirsch-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2675">
+            <form type="headword">
+              <orth expand="Lorbeerbaum" extent="prefix" rend="sep:comma">Lorbeer-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2676">
+            <form type="headword">
+              <orth expand="Mandelbaum" extent="prefix" rend="sep:comma">Mandel-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2677">
+            <form type="headword">
+              <orth expand="Maulbeerbaum" extent="prefix" rend="sep:comma">Maulbeer-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2678">
+            <form type="headword">
+              <orth expand="Nußbaum" extent="prefix" rend="sep:comma">Nuß-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2679">
+            <form type="headword">
+              <orth expand="Olivenbaum" extent="prefix" rend="sep:comma">Oliven-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2680">
+            <form type="headword">
+              <orth expand="Orangenbaum" extent="prefix" rend="sep:comma">Orangen-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2681">
+            <form type="headword">
+              <orth expand="Pfirsichbaum" extent="prefix" rend="sep:comma">Pfirsich-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2682">
+            <form type="headword">
+              <orth expand="Pflaumenbaum" extent="prefix" rend="sep:comma">Pflaumen-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2683">
+            <form type="headword">
+              <orth expand="Vogelbeerbaum" extent="prefix" rend="sep:comma">Vogelbeer-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2684">
+            <form rend="sep:semicolon" type="headword">
+              <orth expand="Zitronenbaum" extent="full">Zitronenbaum</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+        </div>
+        <div type="comp2">
+          <note rend="ldelim:slash rdelim:slash" xml:id="N_b_6367">in Verbindung mit bestimmten Baumarten, z. B.</note>
+          <entry type="comp2" xml:id="E_b_2685">
+            <form type="headword">
+              <orth expand="Eichenbaum Eichbaum" extent="prefix" rend="sep:comma">Eich(en)-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2686">
+            <form type="headword">
+              <orth expand="Fichtenbaum" extent="prefix" rend="sep:comma">Fichten-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2687">
+            <form type="headword">
+              <orth expand="Lindenbaum" extent="prefix" rend="sep:comma">Linden-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2688">
+            <form type="headword">
+              <orth expand="Magnolienbaum" extent="prefix" rend="sep:comma">Magnolien-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2689">
+            <form type="headword">
+              <orth expand="Palmbaum Palmenbaum" extent="prefix" rend="sep:comma">Palm(en)-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2690">
+            <form type="headword">
+              <orth expand="Pappelbaum" extent="prefix" rend="sep:comma">Pappel-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2691">
+            <form type="headword">
+              <orth expand="Weidenbaum" extent="prefix" rend="sep:comma">Weiden-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2692">
+            <form rend="sep:semicolon" type="headword">
+              <orth expand="Zypressenbaum" extent="full">Zypressenbaum</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+        </div>
+        <div type="comp2">
+          <note rend="ldelim:slash rdelim:slash" xml:id="N_b_6368">in Verbindung mit Ortsbezeichnungen, z. B.</note>
+          <entry type="comp2" xml:id="E_b_2693">
+            <form type="headword">
+              <orth expand="Alleebaum" extent="prefix" rend="sep:comma">Allee-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2694">
+            <form type="headword">
+              <orth expand="Chausseebaum" extent="prefix" rend="sep:comma">Chaussee-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2695">
+            <form type="headword">
+              <orth expand="Parkbaum" extent="prefix" rend="sep:comma">Park-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2696">
+            <form type="headword">
+              <orth expand="Promenadenbaum" extent="prefix" rend="sep:comma">Promenaden-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2697">
+            <form type="headword">
+              <orth expand="Spalierbaum" extent="prefix" rend="sep:comma">Spalier-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2698">
+            <form type="headword">
+              <orth expand="Straßenbaum" extent="prefix" rend="sep:comma">Straßen-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2699">
+            <form rend="sep:semicolon" type="headword">
+              <orth expand="Urwaldbaum Waldbaum" extent="full">(Ur)waldbaum</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+        </div>
+        <div type="comp2">
+          <note rend="ldelim:slash rdelim:slash" xml:id="N_b_6369">ferner in</note>
+          <entry type="comp2" xml:id="E_b_2700">
+            <form type="headword">
+              <orth expand="Balzbaum" extent="prefix" rend="sep:comma">Balz-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2701">
+            <form type="headword">
+              <orth expand="Blütenbaum" extent="prefix" rend="sep:comma">Blüten-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2702">
+            <form type="headword">
+              <orth expand="Buchsbaum" extent="prefix" rend="sep:comma">Buchs-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2703">
+            <form type="headword">
+              <orth expand="Einbaum" extent="prefix" rend="sep:comma">Ein-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2704">
+            <form type="headword">
+              <orth expand="Faulbaum" extent="prefix" rend="sep:comma">Faul-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2705">
+            <form type="headword">
+              <orth expand="Grenzbaum" extent="prefix" rend="sep:comma">Grenz-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2706">
+            <form type="headword">
+              <orth expand="Gummibaum" extent="prefix" rend="sep:comma">Gummi-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2707">
+            <form type="headword">
+              <orth expand="Hebebaum" extent="prefix" rend="sep:comma">Hebe-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2708">
+            <form type="headword">
+              <orth expand="Heubaum" extent="prefix" rend="sep:comma">Heu-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2709">
+            <form type="headword">
+              <orth expand="Ladebaum" extent="prefix" rend="sep:comma">Lade-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2710">
+            <form type="headword">
+              <orth expand="Laubbaum" extent="prefix" rend="sep:comma">Laub-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2711">
+            <form type="headword">
+              <orth expand="Lebensbaum" extent="prefix" rend="sep:comma">Lebens-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2712">
+            <form type="headword">
+              <orth expand="Lieblingsbaum" extent="prefix" rend="sep:comma">Lieblings-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2713">
+            <form type="headword">
+              <orth expand="Maibaum" extent="prefix" rend="sep:comma">Mai-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2714">
+            <form type="headword">
+              <orth expand="Mastbaum" extent="prefix" rend="sep:comma">Mast-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2715">
+            <form type="headword">
+              <orth expand="Nadelbaum" extent="prefix" rend="sep:comma">Nadel-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2716">
+            <form type="headword">
+              <orth expand="Nutzbaum" extent="prefix" rend="sep:comma">Nutz-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2717">
+            <form type="headword">
+              <orth expand="Obstbaum" extent="prefix" rend="sep:comma">Obst-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2718">
+            <form type="headword">
+              <orth expand="Ölbaum" extent="prefix" rend="sep:comma">Öl-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2719">
+            <form type="headword">
+              <orth expand="Purzelbaum" extent="prefix" rend="sep:comma">Purzel-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2720">
+            <form type="headword">
+              <orth expand="Richtbaum" extent="prefix" rend="sep:comma">Richt-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2721">
+            <form type="headword">
+              <orth expand="Riesenbaum" extent="prefix" rend="sep:comma">Riesen-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2722">
+            <form type="headword">
+              <orth expand="Schellenbaum" extent="prefix" rend="sep:comma">Schellen-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2723">
+            <form type="headword">
+              <orth expand="Schlagbaum" extent="prefix" rend="sep:comma">Schlag-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2724">
+            <form type="headword">
+              <orth expand="Schmuckbaum" extent="prefix" rend="sep:comma">Schmuck-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2725">
+            <form type="headword">
+              <orth expand="Schwebebaum" extent="prefix" rend="sep:comma">Schwebe-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2726">
+            <form type="headword">
+              <orth expand="Stammbaum" extent="prefix" rend="sep:comma">Stamm-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2727">
+            <form type="headword">
+              <orth expand="Webebaum" extent="prefix" rend="sep:comma">Webe-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2728">
+            <form type="headword">
+              <orth expand="Zierbaum" extent="prefix" rend="sep:comma">Zier-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2729">
+            <form rend="sep:semicolon" type="headword">
+              <orth expand="Zwergbaum" extent="full">Zwergbaum</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2730">
+            <form type="headword">
+              <orth expand="aufbaumen" extent="full" rend="sep:comma">aufbaumen</orth>
+              <gramGrp>
+                <pos value="UNKNOWN"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2731">
+            <form type="headword">
+              <orth expand="aufbäumen" extent="full">aufbäumen</orth>
+              <gramGrp>
+                <pos value="UNKNOWN"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+        </div>
+        <div type="comp2">
+          <xr>
+            <abbr>zu</abbr>
+            <ref cRef="UNRESOLVED" sidx="2" type="dict"></ref>
+          </xr>
+          <entry type="comp2" xml:id="E_b_2732">
+            <form type="headword">
+              <orth expand="Christbaum" extent="prefix" rend="sep:comma">Christ-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2733">
+            <form type="headword">
+              <orth expand="Lichterbaum" extent="prefix" rend="sep:comma">Lichter-</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+          <entry type="comp2" xml:id="E_b_2734">
+            <form type="headword">
+              <orth expand="Weihnachtsbaum" extent="full">Weihnachtsbaum</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+        </div>
+        <div type="comp2">
+          <xr>
+            <abbr>zu</abbr>
+            <ref cRef="UNRESOLVED" sidx="1 u. 2" type="dict"></ref>
+          </xr>
+          <entry type="comp2" xml:id="E_b_2735">
+            <form type="headword">
+              <orth expand="Tannenbaum" extent="full">Tannenbaum</orth>
+              <gramGrp>
+                <pos value="N"></pos>
+              </gramGrp>
+            </form>
+          </entry>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

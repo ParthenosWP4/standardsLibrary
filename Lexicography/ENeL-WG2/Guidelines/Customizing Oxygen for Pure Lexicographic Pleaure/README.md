@@ -1,10 +1,10 @@
 # Customizing oXygen XML for Pure Lexicographic Pleasure
 
-**Topic**: This guideline is about customizing, shortcutting and improving your workflow using oXygen XML Editor.
+**Topic**: This tutorial is about customizing, shortcutting and improving your workflow using oXygen XML Editor.
 
 **Contributor**: Toma Tasovac, Belgrade Center for Digital Humanities. 
 
-**Version:** 0.3 (2016-07-25) 
+**Version:** 0.4 (2016-11-01) 
 
 ## Table of Contents
 [oXygen XML Editor](#whatis)  
@@ -20,7 +20,7 @@
 
 It offers:
 
-- Multiple modes for editing XML documents: Text, Grid and (CSS-styled) Author *so that you can view your content differently and adapt the display of your dictionaries to your current editing needs.* [TODO SEE CSS VIEWS!!!!!!!]()- Document and code templates: *so that you can easily create new files, reuse predefined "skeletons" for your content, reduce the number of characters you need to type and, sometimes, even surround plain text with complex, nested, XML elements* - Transformations to HTML and PDF *so that you can preview what your dictionary might look like online or in print*;- Ability to add/extend customize frameworks. This, for instance, made it possible for us to create a plug-in called [TEI Completer add link]() which lets you *populate your TEI attributes with values stored and maintained in remote databases or provided by APIs*- Support for all schema languages: such as RelaxNG, Schematron, XML Schema, DTDs, NVDL, NRL *so that you can validate your XML documents against various schemas*- Content completion based on TEI RelaxNG schemas, *which helps you type faster and choose the fitting TEI element in a given context*
+- Multiple modes for editing XML documents: Text, Grid and (CSS-styled) Author *so that you can view your content differently and adapt the display of your dictionaries to your current editing needs.* - Document and code templates: *so that you can easily create new files, reuse predefined "skeletons" for your content, reduce the number of characters you need to type and, sometimes, even surround plain text with complex, nested, XML elements* - Transformations to HTML and PDF *so that you can preview what your dictionary might look like online or in print*;- Ability to add/extend customize frameworks using plug-ins such as [TEI Completer add link](https://github.com/BCDH/TEI-Completer) which lets you *populate your TEI attributes with values stored and maintained in remote databases or provided by APIs*- Support for all schema languages: such as RelaxNG, Schematron, XML Schema, DTDs, NVDL, NRL *so that you can validate your XML documents against various schemas*- Content completion based on TEI RelaxNG schemas, *which helps you type faster and choose the fitting TEI element in a given context*
 - Tool tip documentation based on TEIRelaxNG schemas, *so that you can check what the TEI Guidelines say about a given element without leaving the document you are editing*- XQuery directly against XML files and local/remote XML databases like eXist, *so that you can search your dictionaries and explore their contents while you are working on them*- WebDAV and FTP support for access to files on remote servers/CMS- Built-in subversion client for collaborative version control and visual change management - Included graphical XMLDiff to analyze differences between documents, etc.
 
 It goes beyond the scope of this guideline to describe all of oXygen's functionalities. In the rest of this document, we will focus mostly on time-saving tips and hints for working with lexical data, although many of these tips will apply to other uses of oXygen. 
@@ -210,8 +210,15 @@ We can, using an oXygen editor variable `${xpath_eval()}` and a handy xPath func
 
 If you were ever looking for a proof why it's worth learning xPath for anything other than to explore your XML-encoded dictionaries, here it is:
 
-<img src="img/xpath1.png"></img><img src="img/xpath2.png"></img><img src="img/xpath3.png"></img>
-
+--
+<img src="img/xpath1.png"></img>  
+--
+--
+<img src="img/xpath2.png"></img>  
+--
+--
+<img src="img/xpath3.png"></img>
+--
 
 ## <a name="stylingdictionaries"></a>Styling Dictionaries, or Beauty is in the Eye of the Lexicographer</a>
 
@@ -350,8 +357,29 @@ entry etym:after {
 
 we are telling oXygen to style `etym` elements which are descendants (not necessarily children) of the `entry` element in such a way that we end a space and an open square bracket *before* each such `etym` element; and a square bracket and a space *after* each scuh `etym` element. **Try it yourself**: change the square brackets to round parenthesis in the stylesheet.
 
-TODO: short wrapup on the most important CSS properties as well as values (color, keywords vs. hexadecimal values). 
+### What else can I do with CSS?
+
+It is beyond the scope of the current lesson to teach you everything you ever wanted to know about CSS but were afraid to ask. Luckily, there are numerous rersources online where you could do that, for instance on [Code Academy](https://www.codecademy.com/learn/learn-html-css).
+
+What we can do here is give you some more pointers about how to use basic CSS selectors in order to define which parts of your dictionary you want to style, and show you how to use basic property declarations for colors, backgrounds and fonts.
+
+#### CSS selectors
+
+- select multiple elements: ```cit[type="quote"], cit[type="translation"] {/* property declarations */}``` will select all cits of type quote and all cits of type translation. You may want to style these differently from another type of cit. 
+- select elements that are descendants of another element: ```sense usg {/* property declarations */}``` will select all `usg` elements that are descendants of `sense`
+- select elements that are children (i.e. direct descendants) of an element: ```sense > usg {/* property declarations */}``` will select all `usg` elements but only if they are children of `sense`
+- select elements that are adjecent siblings of another element: ```cit + def {/* property declarations */}``` will select all `def` elements that immediately follow `cit` 
+- select elements that are preceeded by another element: ```gramGrp ~ sense {/* property declarations */}``` will select all `sense` elements that are preceded by `gramGrp`
+
+#### CSS property declarations
+
+- to set a **color**, you can use color names or hex values. What this means is that `color: aqua` is exactly the same as color: `#00FFFF`. For a list of named color values see [Color Names](http://www.w3schools.com/cssref/css_colors.asp) or this [Colors Tutorial](http://www.w3schools.com/colors/default.asp)
+- to set **the color of a background**, use the background property, like this: `background: black;`. If you set dark backgrounds, remember to change the font color so that your text remains visible, for instance: `background: black; color:white;`.
+- to set a **font**, use the font-family property like this:  `font-family: "Times New Roman", Times, serif;`. This will style the selected elements with  Times New Roman, if found on the system where you are running your oXygen installation; or with Times; or, in the absence of both, with a default system serif font. Of course, you could try a more fun font than Times.
+- to set something in **italic**, use: `font-style: italic;`. The opposite of italic is: `font-style: normal;`
+- to set something in **bold**, use `font-weight: bold;`. The opposite of bold is: `font-weight: normal;`
+- to set the size of text, use the font-size property like this: `font-size: 15px;`
 
 ### Exercise
 
-Take one of your dictioanries and design a CSS stylesheet, using the Johnson as a starting point. 
+Take one of your dictionaries and design a CSS stylesheet, using the Johnson as a starting point. Change colors
