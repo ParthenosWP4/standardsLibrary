@@ -1,4 +1,4 @@
-Work based on an initiative by Rafaele Vigilanti for MEI : 
+Work based on an initiative by Raffaele Vigilanti for MEI (https://gist.github.com/raffazizzi/3237989) : 
 
 ```
 I wrote this XSLT 2.0 for migrating the **MEI** schema specification (expressed in RelaxNG) into **TEI ODD**.
