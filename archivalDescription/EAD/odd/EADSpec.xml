@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../Schemas/tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="../../../RNG2ODD/purify.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
     xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:olac="http://www.language-archives.org/OLAC/1.0/" xmlns:iso="http://www.iso.org/ns/1.0"
@@ -9,18 +10,36 @@
             <titleStmt>
                 <title>EAD Specification in TEI-ODD</title>
                 <author>Laurent Romary</author>
+                <author>Charles Riondet</author>
             </titleStmt>
             <editionStmt>
-                <edition>rev4</edition>
+                <edition>rev5</edition>
             </editionStmt>
             <publicationStmt>
-                <date>2012-09-01</date>
+                <date>2017-03-29</date>
                 <availability>
                     <p>CC-BY</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <p>...</p>
+                <p>this specification document is based on the <bibl>
+                        <title>Encoded Archival Description Tag Library</title>
+                        <title type="sub">EAD Technical Document No. 2</title>
+                        <author>Encoded Archival Description Working Group of the Society of
+                            American Archivists</author>
+                        <author>Network Development and MARC Standards Office of the Library of
+                            Congress</author>
+                        <date>2002</date>
+                        <ref target="http://www.loc.gov/ead/tglib/index.html"/>
+                    </bibl> and on <bibl>
+                        <title> EAD 2002 Relax NG Schema </title>
+                        <edition>200804 release</edition>
+                        <date when="2008-04-21"/>
+                        <ref target="http://www.loc.gov/ead/ead.rng"/>
+                        <author>
+                            <name>SAA/EADWG/EAD Schema Working Group</name>
+                        </author>
+                    </bibl></p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -28,10 +47,12 @@
         <front>
             <div type="foreword">
                 <head>Foreword</head>
-                <p>...</p>
+                <p>
+                </p>
             </div>
         </front>
         <body>
+            <!-- Presentation of the method and the purpose of ODD encoding of EAD -->            
             <div>
                 <head>About EAD</head>
                 <p>EAD stands for Encoded Archival Description, and is a non-proprietary de facto
@@ -8904,12 +8925,14 @@ ID 	#IMPLIED, ID</attList> -->
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
                                     <titlestmt>
-                                        <titleproper>Tom Stoppard</titleproper> 
-                                        <subtitle>An Inventory of His Papers at the Harry Ransom Humanities Research Center</subtitle>
+                                        <titleproper>Tom Stoppard</titleproper>
+                                        <subtitle>An Inventory of His Papers at the Harry Ransom
+                                            Humanities Research Center</subtitle>
                                         <author>Finding aid written by Katherine Mosley</author>
                                     </titlestmt>
                                     <publicationstmt>
-                                        <publisher>The University of Texas at Austin, Harry Ransom Humanities Research Center</publisher>
+                                        <publisher>The University of Texas at Austin, Harry Ransom
+                                            Humanities Research Center</publisher>
                                         <date>2000</date>
                                     </publicationstmt>
                                 </filedesc>
