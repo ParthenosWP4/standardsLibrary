@@ -738,6 +738,9 @@ TO	#IMPLIED, NMTOKEN -->
                                 <rng:zeroOrMore>
                                     <rng:ref name="model.desc.full"/>
                                 </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="dsc"/>
+                                </rng:zeroOrMore>
                             </rng:group>
                             <!-- before presenting more detailed descriptions in <bioghist>, <scopecontent>, and <dsc>, 
                                 in order to provide first a basic description of the archival materials. -->
@@ -1474,6 +1477,9 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -1557,6 +1563,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <rng:ref name="did"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="model.desc.full"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
                                 <rng:optional>
@@ -1658,6 +1667,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -1700,6 +1712,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <rng:ref name="did"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="model.desc.full"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
                                 <rng:optional>
@@ -1745,6 +1760,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -1786,6 +1804,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <rng:ref name="did"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="model.desc.full"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
                                 <rng:optional>
@@ -1831,6 +1852,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -1872,6 +1896,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <rng:ref name="did"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="model.desc.full"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
                                 <rng:optional>
@@ -1917,6 +1944,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -1958,6 +1988,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <rng:ref name="did"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="model.desc.full"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
                                 <rng:optional>
@@ -2003,6 +2036,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -2046,6 +2082,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="model.desc.full"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
                                 <rng:optional>
                                     <rng:ref name="thead"/>
                                 </rng:optional>
@@ -2087,6 +2126,9 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                             <rng:ref name="did"/>
                             <rng:zeroOrMore>
                                 <rng:ref name="model.desc.full"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                         </content>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
@@ -3546,7 +3588,8 @@ UNIT	#IMPLIED, CDATA</attList> -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.typed"/>
-                            <memberOf key="model.desc.full"/>
+                            <!-- removed <dsc> from model.desc.full to prevent allowing it in <archdescgrp>
+                                <memberOf key="model.desc.full"/>-->
                             <memberOf key="att.dsctab.tpattern"/>
                         </classes>
                         <content>
@@ -4928,7 +4971,7 @@ ID	#IMPLIED, ID</attList> -->
                             </rng:optional>
                             <rng:oneOrMore>
                                 <rng:choice>
-                                    <rng:ref name="m.blocks"/>
+                                    <rng:ref name="model.blocks"/>
                                     <rng:ref name="fileplan"/>
                                 </rng:choice>
                             </rng:oneOrMore>
@@ -5508,6 +5551,7 @@ ID	#IMPLIED, ID</attList> -->
                             position in the finding aid where the indexed material appears.</desc>
                         <classes>
                             <memberOf key="att.EADGlobal"/>
+                            <memberOf key="model.desc.base"/>
                         </classes>
                         <content>
                             <rng:optional>
