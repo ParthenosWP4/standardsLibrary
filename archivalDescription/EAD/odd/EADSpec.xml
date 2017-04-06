@@ -47,12 +47,11 @@
         <front>
             <div type="foreword">
                 <head>Foreword</head>
-                <p>
-                </p>
+                <p> </p>
             </div>
         </front>
         <body>
-            <!-- Presentation of the method and the purpose of ODD encoding of EAD -->            
+            <!-- Presentation of the method and the purpose of ODD encoding of EAD -->
             <div>
                 <head>About EAD</head>
                 <p>EAD stands for Encoded Archival Description, and is a non-proprietary de facto
@@ -655,6 +654,7 @@
                             an extended link. Arc uses the attributes to and from to define the
                             traversal between named pairs of resources.</desc>
                         <classes>
+                            <memberOf key="att.EADGlobal"/>
                             <memberOf key="att.xlink"/>
                             <memberOf key="model.extended.els"/>
                         </classes>
@@ -735,12 +735,14 @@ TO	#IMPLIED, NMTOKEN -->
                                     <rng:ref name="runner"/>
                                 </rng:zeroOrMore>
                                 <rng:ref name="did"/>
-                                <rng:zeroOrMore>
-                                    <rng:ref name="model.desc.full"/>
-                                </rng:zeroOrMore>
-                                <rng:zeroOrMore>
-                                    <rng:ref name="dsc"/>
-                                </rng:zeroOrMore>
+                                <rng:interleave>
+                                    <rng:zeroOrMore>
+                                        <rng:ref name="model.desc.full"/>
+                                    </rng:zeroOrMore>
+                                    <rng:zeroOrMore>
+                                        <rng:ref name="dsc"/>
+                                    </rng:zeroOrMore>
+                                </rng:interleave>
                             </rng:group>
                             <!-- before presenting more detailed descriptions in <bioghist>, <scopecontent>, and <dsc>, 
                                 in order to provide first a basic description of the archival materials. -->
@@ -2426,7 +2428,7 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                             <rng:zeroOrMore>
                                 <rng:choice>
                                     <rng:text/>
-                                    <rng:ref name="model.phrase.bare"/>
+                                    <rng:ref name="model.phrase.basic"/>
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
@@ -3452,9 +3454,11 @@ NORMAL	#IMPLIED, CDATA
                         </classes>
                         <content>
                             <rng:zeroOrMore>
-                                <rng:text/>
-                                <rng:ref name="model.phrase.basic"/>
-                                <rng:ref name="dimensions"/>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.phrase.basic"/>
+                                    <rng:ref name="dimensions"/>
+                                </rng:choice>
                             </rng:zeroOrMore>
                         </content>
                         <attList>
@@ -4247,17 +4251,17 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="morerows">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="nameend">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="namest">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="rowsep">
@@ -4493,7 +4497,7 @@ ID	#IMPLIED, ID</attList> -->
                             <rng:zeroOrMore>
                                 <rng:choice>
                                     <rng:text/>
-                                    <rng:ref name="m.phrase.basic"/>
+                                    <rng:ref name="model.phrase.basic"/>
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
@@ -4664,7 +4668,7 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <rng:zeroOrMore>
                                 <rng:choice>
                                     <rng:text/>
-                                    <rng:ref name="m.para.content.norefs"/>
+                                    <rng:ref name="model.para.content.norefs"/>
                                     <rng:ref name="bibref"/>
                                     <rng:ref name="title"/>
                                     <rng:ref name="archref"/>
@@ -6216,6 +6220,32 @@ TITLE	#IMPLIED, CDATA</attList> -->
                                     <valItem ident="marked"/>
                                     <valItem ident="ordered"/>
                                 </valList>
+                            </attDef>
+                            <attDef ident="numeration">
+                                <datatype>
+                                    <rng:data type="data.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="arabic"/>
+                                    <valItem ident="upperalpha"/>
+                                    <valItem ident="loweralpha"/>
+                                    <valItem ident="upperroman"/>
+                                    <valItem ident="lowerroman"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="continuation">
+                                <datatype>
+                                    <rng:data type="data.enumerated"/>
+                                </datatype>
+                                <valList type="closed">
+                                    <valItem ident="continues"/>
+                                    <valItem ident="starts"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="mark">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
                             </attDef>
                         </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
@@ -7784,7 +7814,7 @@ ID	#IMPLIED, ID</attList> -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="model.extended.els"/>
-                            <memberOf key="att.xlonk"/>
+                            <memberOf key="att.xlink"/>
                         </classes>
                         <content>
                             <rng:empty/>
@@ -7997,6 +8027,7 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                             <memberOf key="att.EADGlobal"/>
                             <memberOf key="model.extended.els"/>
                             <memberOf key="att.roled"/>
+                            <memberOf key="att.xlink"/>
                         </classes>
                         <content>
                             <rng:zeroOrMore>
@@ -9479,7 +9510,7 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                         <content>
                             <rng:oneOrMore>
                                 <rng:choice>
-                                    <rng:ref name="m.blocks"/>
+                                    <rng:ref name="model.blocks"/>
                                     <rng:ref name="author"/>
                                     <rng:ref name="date"/>
                                     <rng:ref name="edition"/>
@@ -10143,8 +10174,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>characterizes the element in some sense, using any convenient
                                     classification scheme or typology.</desc>
                                 <datatype>
-                                    <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                    <rng:ref name="data.enumerated"/>
                                 </datatype>
 
                             </attDef>
@@ -10179,9 +10209,9 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     to facilitate retrieval</desc>
                                 <datatype>
                                     <rng:data type="token">
-                                        <!-- <rng:param name="pattern"
+                                        <rng:param name="pattern"
                                             >(\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)(\/\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)?
-                                        </rng:param>-->
+                                        </rng:param>
                                     </rng:data>
                                 </datatype>
                                 <remarks>
@@ -10869,7 +10899,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>Character offset, used with horizontal character alignment,
                                     such as decimal alignment.</desc>
                                 <datatype>
-                                    <!-- euh??? -->
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>When the ALIGN attribute value is "char," this is the
@@ -10882,7 +10912,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <attDef ident="colname">
                                 <desc>Name of a column in which an entry appears.</desc>
                                 <datatype>
-                                    <!-- euh??? -->
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>Value is one "word" made up of letters and numbers with no
@@ -10894,7 +10924,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>The number of the column, counting from 1 at the left of the
                                     table.</desc>
                                 <datatype>
-                                    <!-- euh??? -->
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>Value is a number.</p>
@@ -10904,7 +10934,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             <attDef ident="cols">
                                 <desc>The number of columns in a table.</desc>
                                 <datatype>
-                                    <!-- euh??? -->
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>Required in <gi>tgroup</gi>.</p>
@@ -10945,6 +10975,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <datatype>
                                     <rng:ref name="NMTOKEN"/>
                                 </datatype>
+                                <defaultVal>ce</defaultVal>
                             </attDef>
                         </attList>
                     </classSpec>
@@ -10989,7 +11020,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="tpattern">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                         </attList>
