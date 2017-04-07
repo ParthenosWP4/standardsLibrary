@@ -2345,7 +2345,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
-                                    <valItem ident="O"/>
+                                    <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="rowsep">
@@ -2354,7 +2354,7 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
-                                    <valItem ident="O"/>
+                                    <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="align">
@@ -4270,7 +4270,7 @@ ID	#IMPLIED, ID
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
-                                    <valItem ident="O"/>
+                                    <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="morerows">
@@ -4294,7 +4294,7 @@ ID	#IMPLIED, ID
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
-                                    <valItem ident="O"/>
+                                    <valItem ident="0"/>
                                 </valList>
                             </attDef>
                             <attDef ident="valign">
@@ -9919,12 +9919,7 @@ TYPE	#IMPLIED, bulk, inclusive -->
                             <attDef ident="identifier">
                                 <desc>A machine-readable unique identifier.</desc>
                                 <datatype>
-                                    <rng:zeroOrMore>
-                                        <rng:choice>
-                                            <rng:text/>
-                                            <rng:ref name="model.phrase.bare"/>
-                                        </rng:choice>
-                                    </rng:zeroOrMore>
+                                   <rng:text/>
                                 </datatype>
                             </attDef>
                             <!-- 
@@ -10282,6 +10277,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
+
 
                     <!-- attribute for declaring various encodings within an EAD document -->
                     <classSpec ident="att.encodings" type="atts" module="EAD">
