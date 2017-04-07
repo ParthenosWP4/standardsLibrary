@@ -20,6 +20,7 @@
                 <availability>
                     <p>CC-BY</p>
                 </availability>
+                <authority>Parthenos</authority>
             </publicationStmt>
             <sourceDesc>
                 <p>this specification document is based on the <bibl>
@@ -661,6 +662,15 @@
                         <content>
                             <rng:empty/>
                         </content>
+                        <attList>
+                            <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink" mode="change" usage="req"> 
+                                <desc>Indicates the XLink element type.</desc>
+                                <defaultVal>arc</defaultVal>
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="arc"/>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- 
 ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
 ALTRENDER	#IMPLIED, CDATA
@@ -752,6 +762,9 @@ TO	#IMPLIED, NMTOKEN -->
                             <attDef ident="type" mode="change" usage="opt">
                                 <desc>can be used to categorize the finding aid as an inventory,
                                     register, or other format.</desc>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"></rng:data>
+                                </datatype>
                             </attDef>
                             <!-- 
 ENCODINGANALOG	#IMPLIED, CDATA
@@ -2438,6 +2451,11 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                                     <rng:data type="IDREFS"/>
                                 </datatype>
                             </attDef>
+                            <attDef ident="type" mode="change">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
                         </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
@@ -3632,12 +3650,17 @@ UNIT	#IMPLIED, CDATA</attList> -->
                         </content>
                         <attList>
                             <attDef ident="type" mode="change">
-                                <valList type="closed">
+                                <valList type="closed" mode="replace">
                                     <valItem ident="analyticover"/>
                                     <valItem ident="combined"/>
                                     <valItem ident="in-depth"/>
                                     <valItem ident="othertype"/>
                                 </valList>
+                            </attDef>
+                            <attDef ident="othertype">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
                             </attDef>
                         </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
@@ -4227,17 +4250,17 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="char">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="charoff">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="colname">
                                 <datatype>
-                                    <rng:text/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="colsep">
@@ -6104,6 +6127,13 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="type" mode="change">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ALTRENDER	#IMPLIED, CDATA
 AUDIENCE	#IMPLIED, external, internal
 ID	#IMPLIED, ID
@@ -6214,7 +6244,7 @@ TITLE	#IMPLIED, CDATA</attList> -->
                                 <datatype>
                                     <rng:ref name="data.enumerated"/>
                                 </datatype>
-                                <valList type="closed">
+                                <valList type="closed" mode="replace">
                                     <valItem ident="simple"/>
                                     <valItem ident="deflist"/>
                                     <valItem ident="marked"/>
@@ -7976,6 +8006,35 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
+                        <attList>
+                            <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink" mode="change" usage="req">
+                                <desc>Indicates the XLink element type.</desc>
+                                <valList type="closed">
+                                    <valItem ident="simple">
+                                        <desc>Creates a simple link.</desc>
+                                    </valItem>
+                                    <valItem ident="extended">
+                                        <desc>Creates an extended link.</desc>
+                                    </valItem>
+                                    <valItem ident="locator">
+                                        <desc>Creates a locater link that points to a
+                                            resource.</desc>
+                                    </valItem>
+                                    <valItem ident="arc">
+                                        <desc>Creates an arc with multiple resources and various
+                                            traversal paths.</desc>
+                                    </valItem>
+                                    <valItem ident="resource">
+                                        <desc>Creates a resource link, which indicates a specific
+                                            resource.</desc>
+                                    </valItem>
+                                    <valItem ident="title">
+                                        <desc>Creates a title link. Such elements are useful for
+                                            internationalization purposes.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
                         <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
 ALTRENDER	#IMPLIED, CDATA
 ARCROLE	#IMPLIED, CDATA
@@ -9727,9 +9786,9 @@ ID	#IMPLIED, ID</attList> -->
                             </attDef>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
-                                <valList type="closed">
+                                <valList type="closed" mode="replace">
                                     <valItem ident="bulk"/>
                                     <valItem ident="inclusive"/>
                                 </valList>
@@ -10174,9 +10233,8 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>characterizes the element in some sense, using any convenient
                                     classification scheme or typology.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:text/>
                                 </datatype>
-
                             </attDef>
                         </attList>
                     </classSpec>
@@ -10412,16 +10470,16 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <desc>NB : For the moment, all the linking attributes are in the same class
                             (xlink attributes + XPOINTER + ENTITYREF + PARENT + TARGET)</desc>
                         <attList>
-                            <attDef ident="label" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:label" ns="http://www.w3.org/1999/xlink">
                                 <desc>Labels the resource of locater element.</desc>
                                 <datatype>
-                                    <text xmlns="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>XLink traversal attribute</p>
                                 </remarks>
                             </attDef>
-                            <attDef ident="href" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:href" ns="http://www.w3.org/1999/xlink">
                                 <desc>Supplies the data to find a remote resource.</desc>
                                 <datatype>
                                     <text xmlns="http://relaxng.org/ns/structure/1.0"/>
@@ -10430,7 +10488,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <p>Specifies a document (URI) and an XPointer</p>
                                 </remarks>
                             </attDef>
-                            <attDef ident="type" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink">
                                 <desc>Indicates the XLink element type.</desc>
                                 <valList type="closed">
                                     <valItem ident="simple">
@@ -10457,38 +10515,38 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     </valItem>
                                 </valList>
                             </attDef>
-                            <attDef ident="title" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:title" ns="http://www.w3.org/1999/xlink">
                                 <desc>Allows a human-readable description.</desc>
                                 <datatype>
                                     <text xmlns="http://relaxng.org/ns/structure/1.0"/>
                                 </datatype>
                             </attDef>
-                            <attDef ident="from" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:from" ns="http://www.w3.org/1999/xlink">
                                 <desc>Identifies the origin resource of an arc.</desc>
                                 <datatype>
-                                    <text xmlns="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>XLink transversal attribute</p>
                                 </remarks>
                             </attDef>
-                            <attDef ident="to" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:to" ns="http://www.w3.org/1999/xlink">
                                 <desc>Identifies the destination resource of an arc.</desc>
                                 <datatype>
-                                    <text xmlns="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <remarks>
                                     <p>XLink traversal attribute</p>
                                 </remarks>
                             </attDef>
-                            <attDef ident="role" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:role" ns="http://www.w3.org/1999/xlink">
                                 <desc>Identifies the type of the related resource with an absolute
                                     URI.</desc>
                                 <datatype>
                                     <text xmlns="http://relaxng.org/ns/structure/1.0"/>
                                 </datatype>
                             </attDef>
-                            <attDef ident="actuate" ns="http://www.w3c.org/1999/xlink">
+                            <attDef ident="xlink:actuate" ns="http://www.w3c.org/1999/xlink">
                                 <desc>A control that defines whether a link occurs automatically or
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
@@ -10502,7 +10560,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <valItem ident="none"/>
                                 </valList>
                             </attDef>
-                            <attDef ident="show" ns="http://www.w3c.org/1999/xlink">
+                            <attDef ident="xlink:show" ns="http://www.w3c.org/1999/xlink">
                                 <desc>A control that defines whether a remote resource that is the
                                     target of a link appears at the point of the link, replaces the
                                     existing link, or appears in a new window. It is used in
@@ -10519,7 +10577,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     <valItem ident="none"/>
                                 </valList>
                             </attDef>
-                            <attDef ident="arcrole" ns="http://www.w3.org/1999/xlink">
+                            <attDef ident="xlink:arcrole" ns="http://www.w3.org/1999/xlink">
                                 <desc>URI preference that identifies a resource that describes some
                                     property of an arc-type or simple-type linking element.</desc>
                                 <datatype>
@@ -10975,7 +11033,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                         <attList>
                             <attDef ident="era">
                                 <datatype>
-                                    <rng:ref name="NMTOKEN"/>
+                                    <rng:data type="NMTOKEN"/>
                                 </datatype>
                                 <defaultVal>ce</defaultVal>
                             </attDef>
