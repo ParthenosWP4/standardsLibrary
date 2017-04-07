@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:tbx="http://www.tbx.org">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lemery-1721_sample.xml</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>...</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>...</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <!-- Amygdala original -->            
+            <div type="entry" n="Amygdala" xml:id="ery-17211-d1e6607">
+                <head rend="runIn" xml:id="ery-17211-d1e6613">Amygdala.</head>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6616"><hi rend="italic">Amygdala,</hi>      <!-- lemma in de, fr, la -->
+                    frantzösisch <hi rend="gesperrt"><hi rend="italic">Amande</hi></hi>, teutsch, eine <hi
+                        rend="bold">Mandel,</hi> ist die Frucht von einem Baume, der auf lateinisch <hi
+                            rend="italic">Amygdalus,</hi> frantzösisch <hi rend="gesperrt"><hi rend="italic"
+                                >Amandier</hi></hi>, und teutsch, ein <hi rend="bold">Mandelbaum</hi> genennet, <!-- def. almond tree -->
+                    und in den Gärten gehalten wird. Seine Blätter sind lang, schmal und spitzig, und
+                    schmecken bitter und unangenehm. Dem Pfirsichlaube sehen sie dermassen ähnlich, daß man
+                    sie nährlich von demselben unterscheiden soll, wann beyde von den Bäumen abgebrochen, es
+                    sey dann, weil sie zäher sind, und sich mehr beugen lassen. Die Blüte sieht der
+                    Pfirschenblüte ebenfalls gar gleich, doch ist sie viel weisser, und purgiret nicht. Auf     <!-- turns into def. of the fruit -->
+                    dieselbe folget eine harte, holtzigte und lange Frucht, die ist mit einer rauchen,
+                    grünlichten und fleischichten Haut überzogen. Sie beschliesset einen langen platten
+                    Kern, den iederman wohl kennet.</p>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6638">Es giebet zweyerley Arten Mandeln:
+                    süsse und bittere: beyde sind gleich groß. Sie kommen aus der <hi rend="bold"
+                        >Barbarey,</hi> aus <hi rend="bold">Languedoc, Provence</hi> und aus <hi rend="bold"
+                            >Touraine.</hi> Die besten aber und die am meisten geachtet werden, sind die in der
+                    Grafschaft <hi rend="bold">Venaisin,</hi> bey <hi rend="bold">Avignon,</hi> gewachsen.
+                    Sie müssen lang und hoch von Farbe seyn.</p>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6656">Die süsse <hi rend="bold">Mandel</hi>     <!-- def. sweet + bitter almond -->
+                    führet viel Oel, wenig Saltz und Feuchtigkeit.</p>
+                <pb n="51"/>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6663">Die <hi rend="bold">bittere</hi>
+                    führet viel Oel, auch mehr Saltz als die süsse, und wenig Feuchtigkeit: dahero hält sich
+                    auch das bittere Mandelöl viel länger, und wird nicht so balde rantzicht, als wie das       <!-- def's are interacting -->
+                    süsse.</p>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6670">Die süsse Mandel lindert, erweichet,
+                    eröffnet, ist gut für die Brust, und stärcket die verlohrnen Kräfte. Sie wird zur
+                    Mandelmilch und andern Sachen von den Apotheckern gebrauchet.</p>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6673">Die bittere Mandel führet ab und
+                    eröffnet: dem Vorgeben nach, soll sie die Trunckenheit verhüten, wann man sie gleich vor
+                    dem Schmause zu sich nimmt. Sie stillet das Kopfweh, wann sie zerstossen und als ein
+                    Umschlag auf die Stirn geleget wird.</p>
+                <p rendition="#zenoPLm4n0" xml:id="ery-17211-d1e6676"><hi rend="italic">Amygdalæ</hi> sollen    <!-- lemma in gr + etymology -->
+                    <hi rend="italic">παρὰ τὰς ἀμώ χας ἔχειν</hi> benennet worden seyn, das heist, weil
+                    sie eine grüne Schale haben, und unter derselbigen gleichsam zerhackte Kerne zeigen,
+                    auch von einander springen, welches <hi rend="italic">τὰς ἀμύχας</hi> genennet wird.</p>
+            </div>
+            
+            
+            <!-- Amygdala in pseudo-TBX -->
+            
+            <!-- almond -->
+            <termEntry xml:id="c1" xmlns="http://www.tbx.org">
+                <descrip type="sequentiallyRelatedConcept" target="c2"/>
+                <descrip type="subordinateConceptPartitive" target="c3"/>
+                <descrip type="subordinateConceptPartitive" target="c4"/>
+                <descripGrp>
+                    <descrip type="definition">ist die Frucht von einem Baume</descrip>
+                    <descrip type="context">Es giebet zweyerley Arten Mandeln: süsse und bittere: beyde sind gleich groß.
+                        Sie kommen aus der <hi rend="bold">Barbarey,</hi> aus <hi rend="bold">Languedoc, Provence</hi> und
+                        aus <hi rend="bold">Touraine.</hi> Die besten aber und die am meisten geachtet werden, sind die in der
+                        Grafschaft <hi rend="bold">Venaisin,</hi> bey <hi rend="bold">Avignon,</hi> gewachsen.
+                        Sie müssen lang und hoch von Farbe seyn.</descrip>
+                    <descrip type="context"><hi rend="italic">Amygdalæ</hi> sollen    <!-- etymology - also: author's confidence not very high -->
+                        <hi rend="italic">παρὰ τὰς ἀμώ χας ἔχειν</hi> benennet worden seyn, das heist, weil
+                        sie eine grüne Schale haben, und unter derselbigen gleichsam zerhackte Kerne zeigen,
+                        auch von einander springen, welches <hi rend="italic">τὰς ἀμύχας</hi> genennet wird.</descrip>
+                </descripGrp>
+                <langSet xml:lang="la">
+                    <tig>
+                        <term>Amygdala</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="fr">
+                    <tig>
+                        <term>Amande</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="de">
+                    <tig>
+                        <term>Mandel</term>
+                    </tig>
+                </langSet>
+            </termEntry>
+            
+            <!-- almond tree -->
+            <termEntry xml:id="c2" xmlns="http://www.tbx.org">
+                <descrip type="sequentiallyRelatedConcept" target="c1"/>
+                <descrip type="definition">Seine Blätter sind lang, schmal und spitzig, und
+                    schmecken bitter und unangenehm. Dem Pfirsichlaube sehen sie dermassen ähnlich, daß man
+                    sie nährlich von demselben unterscheiden soll, wann beyde von den Bäumen abgebrochen, es
+                    sey dann, weil sie zäher sind, und sich mehr beugen lassen. Die Blüte sieht der
+                    Pfirschenblüte ebenfalls gar gleich, doch ist sie viel weisser, und purgiret nicht. Auf
+                    dieselbe folget eine harte, holtzigte und lange Frucht, die ist mit einer rauchen,
+                    grünlichten und fleischichten Haut überzogen. Sie beschliesset einen langen platten
+                    Kern, den iederman wohl kennet.</descrip>
+                <langSet xml:lang="la">
+                    <tig>
+                        <term>Amygdalus</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="fr">
+                    <tig>
+                        <term>Amandier</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="de">
+                    <tig>
+                        <term>Mandelbaum</term>
+                    </tig>
+                </langSet>
+            </termEntry>
+            
+            <!-- sweet almond -->
+            <termEntry xml:id="c4" xmlns="http://www.tbx.org">
+                <descrip type="superordinateConceptPartitive" target="c1"/>
+                <descripGrp>
+                    <descrip type="context">Die süsse <hi rend="bold">Mandel</hi> führet viel Oel, wenig Saltz und Feuchtigkeit.</descrip>
+                    <descrip type="context">Die süsse Mandel lindert, erweichet,
+                        eröffnet, ist gut für die Brust, und stärcket die verlohrnen Kräfte. Sie wird zur
+                        Mandelmilch und andern Sachen von den Apotheckern gebrauchet.</descrip>
+                </descripGrp>
+                <langSet xml:lang="de">
+                    <tig>
+                        <term>süsse Mandel</term>
+                    </tig>
+                </langSet>
+            </termEntry>
+            
+            <!-- bitter almond -->
+            <termEntry xml:id="c3" xmlns="http://www.tbx.org">
+                <descrip type="superordinateConceptPartitive" target="c1"/>
+                <descripGrp>
+                    <descrip type="context">Die <hi rend="bold">bittere</hi>
+                        führet viel Oel, auch mehr Saltz als die süsse, und wenig Feuchtigkeit: dahero hält sich
+                        auch das bittere Mandelöl viel länger, und wird nicht so balde rantzicht, als wie das
+                        süsse.</descrip>
+                    <descrip type="context">Die bittere Mandel führet ab und
+                        eröffnet: dem Vorgeben nach, soll sie die Trunckenheit verhüten, wann man sie gleich vor
+                        dem Schmause zu sich nimmt. Sie stillet das Kopfweh, wann sie zerstossen und als ein
+                        Umschlag auf die Stirn geleget wird.</descrip>
+                </descripGrp>
+                <langSet xml:lang="de">
+                    <tig>
+                        <term>bittere Mandel</term>
+                    </tig>
+                </langSet>
+            </termEntry>
+            
+        </body>
+    </text>
+</TEI>
