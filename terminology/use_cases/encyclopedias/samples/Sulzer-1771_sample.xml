@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:tbx="http://www.tbx.org">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sulzer-1771_sample.xml</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>...</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>...</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+
+            <div type="entry" n="Allegorie" xml:id="zer-1771-d1e2332">
+                <head rend="runIn" xml:id="zer-1771-d1e2337">Allegorie.</head>
+                <p xml:id="zer-1771-d1e2336">
+                    <hi rend="italic">(Redende und zeichnende Künste)</hi>
+                </p>
+                <p xml:id="zer-1771-d1e2343">Ein natürliches Zeichen, oder ein Bild<ptr
+                        target="zer-1771-d1e3299" n="1" xml:id="zer-1771-d1e2345"/>, in so fern es
+                    an die Stelle der bezeichneten Sache gesetzt wird. So wol in der Rede, als in
+                    den zeichnenden Künsten werden aus mancherley Absichten Gegenstände dargestellt,
+                    durch welche andre Dinge, vermittelst der Aehnlichkeit, die sie mit jenen
+                    Gegenständen haben, können erkennt werden. Das bekannte Sprüchwort: <hi
+                        rend="italic">Der Apfel fällt nicht weit vom Stamm</hi>, stellt uns einen
+                    Gegenstand aus der körperlichen Welt vor, durch welchen wir eine andre Sache
+                    errathen sollen; nämlich, daß Kinder gemeiniglich nach den Aeltern arten. Wenn
+                    das Bild und das Gegenbild zugleich dargestellt werden, so hat man eine <hi
+                        rend="italic">Vergleichung</hi> oder ein <hi rend="italic">Gleichnis</hi>;
+                    wird aber das Gegenbild ganz weggelassen, so hat man die Allegorie.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2357"><pb n="27"/> Diese Verwechslung
+                    des Bildes mit seinem Gegenbild wird auf mancherley Weise veranlasset. Sie
+                    geschieht aus <hi rend="italic">Noth</hi>, wenn es nicht möglich ist, die
+                    bezeichnete Sache selbst darzustellen, wie in dem Falle, da die zeichnenden
+                    Künste allgemeine Begriffe darstellen sollen, die kein Gegenstand des Gesichts
+                    sind: aus <hi rend="italic">Vorsichtigkeit</hi>, wenn man sich nicht getraut,
+                    die Sache selbst vorzulegen, und sie lieber will errathen lassen; wie in dem
+                    Falle, da <hi rend="italic">Horaz</hi> den Römern einen neuen bürgerlichen Krieg
+                    abrathen will, und aus Vorsichtigkeit blos ein Schiff anredet, dem er die Gefahr
+                    zu scheitern vorstellt:<ptr target="zer-1771-d1e3305" n="2"
+                        xml:id="zer-1771-d1e2369"/> aus <hi rend="italic">ästhetischen
+                        Absichten</hi>, der Vorstellung vermittelst des Bildes mehr Klarheit, oder
+                    mehr Nachdruk, oder überhaupt mehr ästhetische Kraft zu geben. Wenn <hi
+                        rend="italic">Haller</hi> sagt:</p>
+                <lb/>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2381">Mach deinen <hi rend="italic"
+                        >Raupenstand</hi> und einen <hi rend="italic">Tropfen Zeit</hi>,</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2391">Den nicht zu deinem Zwek, die
+                    nicht zur Ewigkeit;</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2396">so drükt er durch diese allegorischen Bilder das, was
+                    er von der eigentlichen Bestimmung und Kürze des gegenwärtigen Lebens hat sagen
+                    wollen, sehr viel kürzer, nachdrüklicher und sinnlicher aus, als es ohne
+                    Allegorie hätte geschehen können.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2399">Wir wollen zuerst <hi
+                        rend="italic">die Allegorie in den redenden Künsten</hi> betrachten.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2405">Hier sind dreyerley Dinge zu
+                    untersuchen. Die Beschaffenheit und Würkung der Allegorie überhaupt; ihre
+                    verschiedenen Gattungen, jeder Gattung besondere Beschaffenheit und Anwendung;
+                    endlich die Quellen, woraus sie geschöpft werden.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2408">Ueberhaupt liegt in jeder
+                    Allegorie ein Bild, aus welchem die Sache, die man sagen will, bestimmt und mit
+                    Vortheil kann erkennt werden. Bestimmt und mit Gewißheit; weil sonst die
+                    Allegorie ein Räthsel: mit Vortheil; weil sie sonst unnütz wäre. Daher entstehen
+                    die zwey wesentlichen Eigenschaften der Allegorie: die genaue Aehnlichkeit
+                    zwischen dem Bild und dem Gegenbild; damit dieses durch jenes sich dem Verstande
+                    sogleich darstelle: und die ästhetische Kraft des Bildes, durch deren besondere
+                    Beschaffenheit die Art der Allegorie bestimmt wird. Was hier über die
+                    Aehnlichkeit und die ästhetische Kraft der Allegorie anzumerken wäre, ist bey
+                    der allgemeinen Betrachtung der Bilder<ptr target="zer-1771-d1e3308" n="3"
+                        xml:id="zer-1771-d1e2410"/> angeführt worden, und hier nicht zu wiederholen.
+                    Außer diesen wesentlichen Eigenschaften der allegorischen Bilder muß die
+                    Allegorie noch zwey andre haben: sie muß weder zu weit getrieben, noch einen
+                    Zusatz von dem eigentlichen Ausdruk haben. Beydes giebt ihr etwas Ungereimtes.
+                    Die Alten haben den menschlichen Körper die <hi rend="italic">Kleine Welt</hi>
+                    (Microcosmus) genennt. Die Allegorie ist richtig; wer sie aber so brauchen
+                    wollte, daß er die Aehnlichkeit über die wesentlichen Theile der Vergleichung
+                    ausdehnte; wer dieser kleinen Welt ihre Planeten, Berge und Thäler, Einwohner,
+                    geben wollte, der würde die Allegorie ins Lächerliche ausdehnen. So könnte man
+                    die fürtreffliche Allegorie des <hi rend="italic">Plato</hi>, in welcher die
+                    Leidenschaften mit Pferden, die vor einen Wagen gespannt sind, die Vernunft aber
+                    mit dem Kutscher verglichen werden, durch die weite Ausdehnung gänzlich
+                    verderben; denn weder die Teichsel des Wagens, noch dessen Räder, noch andre in
+                    dem Bild vorkommenden Theile haben ihr Gegenbild in der Seele. Es ist demnach
+                    bey jeder Allegorie wol in Acht zu nehmen, daß diese Nebenfachen, denen im
+                    Gegenbild nichts entspricht, entweder gar nicht genennt, oder doch nicht mit
+                    Nachdruk angezeiget werden.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2420">Ein eben so ungeschikter Fehler
+                    ist es, wenn die Allegorie nur halb ausgeführt wird, und sich mit dem
+                    eigentlichen Ausdruk endiget. <hi rend="italic">Pope</hi> sagt ganz
+                    fürtrefflich: <hi rend="italic">Trinke mit vollen Zügen aus der Pierischen
+                        Quelle, oder lasse sie ungekostet. Hier berauschen sparsame Züge, und nur
+                        ein starkes Trinken macht wieder nüchtern</hi>.<ptr
+                        target="zer-1771-d1e3314" n="4" xml:id="zer-1771-d1e2428"/> Wie lächerlich
+                    wäre es, wenn man diese Allegorie so endigen wollte: <hi rend="italic">Hier
+                        berauschen sparsame Züge, aber ein starkes Trinken volendet die
+                        Gründlichkeit der Erkenntnis</hi>?</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2434">Endlich muß das Bild rein, und
+                    nicht aus mehrern Gegenständen zugleich zusammen gesetzt seyn. Eine Sache könnte
+                    durch mehr als ein Bild dem anschauenden Erkenntnis vollkommen dargestellt
+                    werden; aber die Vermischung zwey solcher Bilder in eins macht verwirrt. Man muß
+                    nicht, wie <hi rend="italic">Quintilian</hi><ptr target="zer-1771-d1e3328" n="5"
+                        xml:id="zer-1771-d1e2438"/> sich ausdrükt, mit Sturm anfangen, und mit
+                    Feuerflammen aufhören. Dieses ist von der Beschaffenheit der Allegorie zu
+                    merken. <pb n="28"/> Die Würkung der Allegorie ist überhaupt eben die, welche
+                    jedes Bild hat; daß sie abgezogene Vorstellungen dem anschauenden Erkenntnis
+                    sinnlich darstellt. Nur hat sie diesen Vortheil in einem höheren Grad, als die
+                    andern Gattungen der Bilder, weil ihr die Kürze, die aus der Weglassung des
+                    Gegenbildes entsteht, eine größere Lebhaftigkeit giebt, und weil aus eben dem
+                    Grunde die ganze Aufmerksamkeit erst blos auf die genaue Vorstellung des Bildes
+                    gerichtet ist, das Gegenbild aber hernach desto genauer und schneller in seiner
+                    vollen Klarheit da steht. Wollte man diese schöne Allegorie</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2445"> –– Mir ward der Becher voll Wermuth</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2448">Kaum am Rande mit Honig
+                    bestrichen, zu trinken gegeben;<ptr target="zer-1771-d1e3332" n="6"
+                        xml:id="zer-1771-d1e2450"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2455">in ein Gleichnis verwandeln, so würde sie viel von
+                    ihrer Lebhaftigkeit verlieren. Sie ist also die kräftigste Art des Bildes. Daher
+                    denn auch die Gleichnisse, die der Allegorie am nächsten kommen, die
+                    lebhaftesten sind.<ptr target="zer-1771-d1e3335" n="7" xml:id="zer-1771-d1e2457"
+                    /></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2459">Von dem Gebrauch der Allegorie
+                    ist überhaupt zu merken, daß man ihn nicht übertreiben müsse. Sie ist, als eine
+                    Würze, sparsam zu brauchen: ihr Ueberfluß würde den Geschmak für das Einfache
+                    ganz benehmen; zu geschweigen, daß die Anhäufung der Bilder den Geist verwirrt,
+                    und, anstatt einer großen Klarheit, zuletzt ein verworrenes Gemenge sinnlicher
+                    Gegenstände zurük läßt. In diesen Fehler ist der sonst so fürtreffliche <hi
+                        rend="italic">Young</hi> in seinen Nachtgedanken nur gar zu ofte
+                    gefallen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2465">Nach diesen allgemeinen
+                    Anmerkungen können wir die besondern Arten der Allegorie betrachten, die aus der
+                    Verschiedenheit des Endzweks oder der Würkung derselben, entstehen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2468">Allem Ansehen nach hat die
+                    Nothwendigkeit den Gebrauch der Allegorie eingeführt. Als die Sprache noch keine
+                    Wörter hatte, allgemeine Begriffe auszudrüken, gab man einem heftigen und
+                    rachgieri-Menschen den Namen eines Hundes, oder eines andern Thieres, an dem man
+                    ähnliche Eigenschaften entdekt hatte. Damals war die Absicht der Allegorie, blos
+                    den Ausdruk der Sache möglich zu machen. Dergleichen Allegorien sind häufig in
+                    der Sprache geblieben, und haben gänzlich die Art der eigentlichen Ausdrüke
+                    angenommen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2471">Der nächste Gebrauch derselben
+                    wird in der Absicht gemacht, daß die ganze Vorstellung der Sache, ohne eine
+                    besondere ästhetische Kraft anzunehmen, eine feinere Wendung bekomme, daß sie
+                    auf eine von der gemeinen Art sich unterscheidende Weise gesagt werde; wodurch
+                    demjenigen, mit dem man redet, gleichsam ein Compliment gemacht wird. Diese
+                    Absicht hat <hi rend="italic">Virgil</hi> in einigen seiner Eklogen gehabt. Der
+                    Dichter hätte seine Dankbarkeit gegen den Augustus, und alles, was er sonst
+                    durch diese Allegorien sagt, eben so nachdrüklich, und noch stärker, gerade zu
+                    sagen können: aber so fein und mit so gutem Witz nicht, als es durch die
+                    Allegorie geschehen ist. Dergleichen Wendung nehmen geistreiche Personen
+                    allemal, wenn sie jemand loben oder tadeln wollen. Gerade zu hat beydes etwas
+                    gar zu gemeines.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2477">Noch wichtiger wird der
+                    Gebrauch der Allegorie, wenn zu der feinen Wendung noch die Absicht hinzu kömmt,
+                    das Gegenbild oder den Sinn der Allegorie so lange zu verbergen, bis das Urtheil
+                    darüber vor dem Einfluß aller Verblendung gesichert ist; welches man auf eine
+                    ähnliche Weise auch durch die äsopische Fabel erhält. Von dieser Art ist die
+                    bekannte Rede, wodurch der Consul, <hi rend="italic">Menenius Agrippa</hi>, das
+                    römische Volk in einem Aufruhr besänftiget hat.<ptr target="zer-1771-d1e3341"
+                        n="8" xml:id="zer-1771-d1e2482"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2485">In diesen beyden Arten kömmt es
+                    nicht auf eine vollkommene, sich auf die Nebenumstände erstrekende Aehnlichkeit
+                    an. Jeden besondern Umstand darinn bedeutend machen wollen, würde die Allegorie
+                    in ein Kinderspiel verwandeln. Es ist zur Absicht hinlänglich, wenn die Sache,
+                    die man sagen will, nach dem Hauptsatz anschauend in dem Bilde liegt.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2488">Man braucht bisweilen die
+                    Allegorie in der Absicht, der Vorstellung, ohne andre Vortheile, blos Klarheit
+                    oder Sinnlichkeit zu geben, damit sie faßlicher und unvergeßlicher bleibe. Was
+                        <hi rend="italic">Haller</hi> sehr kurz auf eine philosophische Art mit
+                    diesen Worten ausdrükt: <hi rend="italic">Mit dem Genuß wächst die Begierd</hi>,
+                    hat <hi rend="italic">Horaz</hi> in diese Allegorie eingekleidet:</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2502">Crescit indulgens sibi dirus hydrops</p>
+                <p xml:id="zer-1771-d1e2505">Nec sitim pellit, nisi causa morbi</p>
+                <p xml:id="zer-1771-d1e2508">Fugerit venis et aquosus albo</p>
+                <p xml:id="zer-1771-d1e2512">Corpore languor.<ptr target="zer-1771-d1e3344" n="9"
+                        xml:id="zer-1771-d1e2514"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2518">Jener Ausdruk ist für den Philosophen, dieser für
+                    jederman. Was jener dem Verstande sagt, mahlt dieser der Einbildungskraft
+                    deutlich ab. Allegorien von dieser Art sind höchst nöthig, so oft als
+                        allgemeine,<pb n="29"/> wichtige Wahrheiten unvergeßlich sollen eingeprägt
+                    werden. Dieses hat die allegorischen Sprüchwörter veranlasset, die alle in diese
+                    Gattung gehören. Hiebey kömmt die Hauptsache auf die Klarheit des Bildes an, und
+                    daß es zu desto gewisserer Fassung der Sache von gemeinen Dingen hergenommen,
+                    und mit einigen sehr kurzen aber meisterhaften Zügen gezeichnet sey, wie in
+                    diesem Beyspiele:</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2525">Saepius ventis agitatur ingens</p>
+                <p xml:id="zer-1771-d1e2528">Pinus, et celsae graviore casu</p>
+                <p xml:id="zer-1771-d1e2532">Decidunt turres; feriuntque summos</p>
+                <p xml:id="zer-1771-d1e2535">Fulmina montes.<ptr target="zer-1771-d1e3347" n="10"
+                        xml:id="zer-1771-d1e2537"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2541">Dergleichen Allegorien dienen aber nur, bekannte
+                    Wahrheiten dem Gedächtnisse einzuprägen. Diese haben das sinnliche Kleid um so
+                    mehr nöthig, da sie als gemeine und ohne die geringste Anstrengung faßliche
+                    Vorstellungen, wie sich <hi rend="italic">Winkelmann</hi> sehr artig ausdrükt,
+                    wie ein Schiff im Wasser, nur augenblikliche Spuhren hinterlassen; da hingegen
+                    das, was uns einige Bestrebung des Geistes gekostet hat, sicherer im
+                    Gedächtnisse bleibet.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2547">Man kann einen noch höhern Zwek
+                    der Allegorie haben, nämlich die Sache stärker und nachdrüklicher zu sagen,
+                    zugleich aber ihr auch ein größeres Licht zu geben. Von dieser Art ist die oben
+                    angeführte Hallerische Allegorie vom <hi rend="italic">Raupenstand</hi>, und
+                    diese von<hi rend="italic"> Young. Meine Freuden, o Philander! sind mit dir
+                        verschwunden; dein letzter Athem löste die Bezauberung auf, und die
+                        entzauberte Erde verlohr alle ihre Herrlichkeit</hi>.<ptr
+                        target="zer-1771-d1e3350" n="11" xml:id="zer-1771-d1e2555"/> Je genauer man
+                    das Bild untersucht, je mehr Leben und Kraft bekommt es, und je mehr Begriffe,
+                    die sich auf das Gegenbild beziehen. Diese Art der Allegorie hat die höchste
+                    Kraft; denn sie verbindet Sinnlichkeit, Nachdruk, Kürze, Reichthum und
+                    Deutlichkeit, und gehört deshalb zu den höchsten poetischen Schönheiten. Sie hat
+                    bisweilen eine bey nahe beweisende Kraft. Denn Wahrheiten, deren man sich nicht
+                    so wol durch einen deutlichen Beweis als durch ein schnelles Ueberschauen vieler
+                    einzelnen Umstände versichern muß, die also keines würklichen Beweises fähig
+                    sind, können durch solche Allegorien die Art des Beweises bekommen, dessen sie
+                    fähig sind. Für diese Gattung der Allegorie ist überhaupt die Anmerkung nicht zu
+                    versäumen, die über die besondere Kraft der entfernten Aehnlichkeiten gemacht
+                    worden ist.<ptr target="zer-1771-d1e3362" n="12" xml:id="zer-1771-d1e2557"/>
+                    Denn schon dieses allein giebt ihr eine große Lebhaftigkeit. Die bereits
+                    angeführte angenehme Allegorie von einem kummervollen Leben erhält blos dadurch
+                    ihre Schönheit, daß das Bild eine sehr entfernte, und dennoch sehr richtige
+                    Aehnlichkeit mit dem Gegenbilde hat.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2560">Etwas weniger wichtig ist die
+                    Allegorie, die hauptsächlich die Kürze des Ausdruks zum Endzwek hat. Von dieser
+                    Art ist folgendes:</p>
+                <lb/>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2566">Contrahes vento nimium
+                    secundo</p>
+                <p xml:id="zer-1771-d1e2569">Turgida vela.<ptr target="zer-1771-d1e3368" n="13"
+                        xml:id="zer-1771-d1e2571"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2575">Auch diese von <hi rend="italic">Bodmer</hi>:</p>
+                <lb/>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2584">– Der Tod war in allen
+                    Gestalten vorhanden,</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2587">Hieng in der Luft, und wühlt'
+                    in der Erd, und stürmte vom Meer her;</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2590">Wo man hin sah, da droht
+                    allgegenwärtig sein Antlitz.<ptr target="zer-1771-d1e3371" n="14"
+                        xml:id="zer-1771-d1e2592"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2596">Endlich giebt es noch eine Gattung Allegorie, die man
+                    die Geheimnisvolle oder Prophetische nennen möchte, weil viele Weißagungen in
+                    selbiger vorgetragen worden. Sie hält das Mittel zwischen der leichtern
+                    Allegorie und dem Räthsel, und dienet, dem Votrag eine Feyerlichkeit zu geben.
+                    Sie läßt uns nur etwas von dem Gegenbild merken, und stellt einen Theil deßelben
+                    in heilige Dunkelheit. Diese Gattung schikt sich demnach in feyerliche und
+                    wichtige Handlungen, an denen höhere Wesen Antheil nehmen. Hauptsächlich kann
+                    sie in dem hohen Trauerspiel sehr gute Würkung thun.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2599">Dieses möchten (außer der
+                    Allegorie, die allgemeine Begriffe in handelnde Personen verwandelt, davon
+                    hernach besonders wird gesprochen werden) die verschiedenen Gattungen der
+                    Allegorie seyn.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2603">Die Quellen, woraus sie
+                    geschöpft wird, sind die Natur, die Sitten und Gebräuche der Völker, die
+                    Wissenschaften und Künste:/das Mittel aber sie aus diesen Quellen zu schöpfen
+                    ist der Wiz. Wie der menschliche Körper ein Bild der Seele ist, so ist überhaupt
+                    die sichtbare Natur ein Bild der Geisterwelt; von allem, was in dieser vorhanden
+                    ist, findet sich in jener etwas <pb n="30"/> ähnliches. Die vollkommenste
+                    Allegorie, die außer der Sinnlichkeit verschiedene ästhetische Kräfte
+                    vereiniget, biethet sich einem scharfsinnigen Beobachter der Natur an, der nicht
+                    blos bey dem äußerlichen stehen bleibt, sondern in das unsichtbare der
+                    Körperwelt eindringen kann. Dieses Studium ist also dem Dichter bestens zu
+                    empfehlen. Die neuern Geschichtschreiber der Natur haben den unermeßlichen
+                    Schauplaz derselben uns in einer Ordnung und Klarheit vor Augen gelegt, die den
+                    Alten unbekannt gewesen. Aber nur philosophische Dichter können auf diesem Feld
+                    erndten, und ihnen wird es nicht schwer in diesem Stük die Alten weit zu
+                    übertreffen. Ein neuerer Fabeldichter<ptr target="zer-1771-d1e3374" n="15"
+                        xml:id="zer-1771-d1e2607"/> ist durch dieses Mittel in einer so sehr
+                    bearbeiteten Gattung noch ein Original worden. Aber unsere Odendichter haben
+                    wahrhaftig diese Quelle noch nicht recht genutzet.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2610">Die Sitten und Gebräuche sind
+                    fürnehmlich die Quelle, woraus die leichtere Gattung der Allegorie, die
+                    hauptsächlich die Kürze und Faßlichkeit zur Absicht hat, kann geschöpft werden.
+                    Von den häuffigen Allegorien des Horaz sind die meisten daher genommen. Die
+                    Gebräuche der noch halb rohen Völker haben insonderheit noch sehr viel
+                    bedeutendes, das gute Allegorien darbiethet. So findet man Z. B. daß die alten
+                    Celten die Gewohnheit gehabt, wenn sie in ein fremdes Land gekommen sind, ihre
+                    Spieße mit der Spize vorwärts zu tragen, wenn sie als Feinde kamen und
+                    umgekehrt, wenn sie nichts feindliches vorhatten. Diese Lage des Spießes biethet
+                    sich von selbst, als eine Allegorie der feindlichen oder friedlichen Gesinnungen
+                    dar. So hat <hi rend="italic">Aeschylus</hi> eine schöne Allegorie von der
+                    Gewohnheit der alten Seefahrer, die Bilder ihrer Schuzgötter auf dem
+                    Hintertheile der Schiffe zu sezzen, hergenommen.<ptr target="zer-1771-d1e3377"
+                        n="16" xml:id="zer-1771-d1e2615"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2617">Die Wissenschaften und
+                    vorzüglich die Künste, die blos mit körperlichen Dingen umgehen, enthalten
+                    endlich einen großen Reichthum von Sachen die zur Allegorie dienlich sind. Sie
+                    sind dazu um soviel geschikter, je bekannter sie sind, und je leichter sie
+                    insgemein können gefaßt werden. Wer die Verrichtungen der Künstler und die Werke
+                    der Kunst in der Absicht in genaue Betrachtung nehmen wollte, das was darinn
+                    bedeutend seyn kann, zu bemerken, der würde Dichtern und Rednern gute Dienste
+                    leisten können. Unter unsern Dichtern sind <hi rend="italic">Hagedorn</hi> und
+                        <hi rend="italic">Bodmer</hi> am meisten beflissen gewesen aus dieser Quelle
+                    zu schöpfen. Anspielungen, Bilder, Gleichnisse und Allegorien von Künsten und
+                    Wissenschaften genommen, finden sich sehr oft bey ihnen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2626">Man ziehe überhaupt aus diesen
+                    Anmerkungen die Lehre, daß das Studium der Naturlehre, der Sitten und
+                    Gewohnheiten vieler Völker, der Wissenschaften und Künste einen sehr
+                    vortheilhaften Einflus nicht nur auf die Erfindung der Materie, sondern auch auf
+                    den glüklichen Ausdruk habe.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2629">Izt müssen wir noch die
+                    allegorischen Personen, die so ofte in den Werken der Dichter vorkommen, als
+                    eine ganz eigene Gattung in Betrachtung ziehen. Sie zeichnet sich dadurch ab,
+                    daß aus Namen, oder aus Begriffen, welche diese Namen bezeichnen, handelnde
+                    Personen gemacht werden. So werden Tugenden und Eigenschaften, Liebe, Haß,
+                    Zwietracht, Weisheit, in Personen verwandelt: dieses geschieht auf mancherley
+                    Weise. Entweder blos mittelbar und im Vorbeygehen, da dem abgezogenen Begrif
+                    durch ein oder ein paar Worte eine Bestimmung gegeben wird, die nur handelnden
+                    Wesen zukommt; wie wenn der Prophet sagt: <hi rend="italic">vor ihm her geht die
+                        Pest</hi>; oder unmittelbar, wenn ein solcher abgezogener Begriff einen
+                    völlig ausgebildeten Körper bekommt, auf den der Dichter unser Aug mit Verweilen
+                    richtet, wie in diesem Beyspiel:</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2638">Te semper anteit saeva necessitas</p>
+                <p xml:id="zer-1771-d1e2641">Clavos trabeales et cuneos manu</p>
+                <p xml:id="zer-1771-d1e2644">Gestans ahena, nec severus</p>
+                <p xml:id="zer-1771-d1e2647">Vncus abest, liquidumque plumbum.<ptr
+                        target="zer-1771-d1e3383" n="17" xml:id="zer-1771-d1e2649"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2653">Endlich werden solchen Bildern aneinanderhängende
+                    Handlungen zugeschrieben, sie werden mit andern handelnden Personen in der
+                    Epopee, bisweilen auch im Drama eingeführt. So haben die <hi rend="italic"
+                        >Eris</hi> oder die Zwietracht, die <hi rend="italic">Fama</hi> oder das
+                    Gerücht, <hi rend="italic">Amor</hi> oder die Liebe und so viel andre
+                    allegorische Wesen bey alten und neuen Dichtern ihren Antheil an den Handlungen
+                    bekommen. Hieher gehören einigermaßen auch die ganz erdichteten Wesen, die
+                    Sylphen, Gnomen, Dryaden, Faunen u. d. gl. Darüber werden die Dichter so
+                    vielfältig getadelt, gerechtfertiget, entschuldiget und gelobet, daß der
+                    Gebrauch dieser Bilder noch unter die zweydeutigen Kunstgriffe der Dichtkunst zu
+                    gehören scheinet. <pb n="31"/> Von dem Gebrauch dieser Bilder in der Mahlerey,
+                    wo sie nothwendig werden, wird im nächsten Artikel gesprochen. Es ist
+                    wahrscheinlich, daß sie anfänglich aus den zeichnenden Künsten in die Dichtkunst
+                    herüber gekommen seyn: vielleicht auch aus den Hieroglyphen. Höchst
+                    wahrscheinlich ist es, daß die meisten Götter der alten heidnischen Welt, so wie
+                    viel ihrer Mythologischen Bilder, ursprünglich solche allegorische Personen
+                    gewesen sind. Beym <hi rend="italic">Homer</hi> finden wir keinen wesentlichen
+                    Unterschied zwischen blos allegorischen Schattenbildern, dergleichen die <hi
+                        rend="italic">Iris</hi>, die <hi rend="italic">Fama</hi>, die <hi
+                        rend="italic">Aurora</hi>, die <hi rend="italic">Stunden</hi>, der <hi
+                        rend="italic">Traum</hi> unstreitig sind, und den Göttern, die eine
+                    zuverläßigere Würklichkeit zu haben scheinen. Es scheinet sogar, daß <hi
+                        rend="italic">Homer</hi> zuweilen den <hi rend="italic">Jupiter</hi> und die
+                        <hi rend="italic">Juno</hi> schlechthin nur als allegorische Personen
+                    ansehe.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2697">Ueber alle diese Wesen merken
+                    wir zuvoderst an, daß sie insofern von der Allegorie verschieden sind, als sie
+                    nicht eine Verwechslung des Bildes und der abgebildeten Sache, sondern die
+                    abgebildete Sache selbst, in einer körperlichen Gestalt sind. Sie sind nicht
+                    Zeichen einer Sache, sondern die Sache selbst. Indessen können sie die Kraft der
+                    Allegorie erhalten, wenn der Körper, in welchen sie eingehüllt werden, die
+                    Beschaffenheit hat, daß das Wesen der abgebildeten Sache mit ästhetischer Kraft
+                    daraus erkennt wird. Das fürtrefflichste Beyspiel dieser Art giebt uns <hi
+                        rend="italic">Miltons</hi> allegorisches Bild von der Sünde. Der Dichter
+                    stellt eine zwar nicht würkliche, aber der Einbildungskraft begreifliche Gestalt
+                    vor, deren Anschauen uns eben den Abscheu, eben den Ekel und solche
+                    Vorstellungen erwekt, welche aus überlegter Betrachtung der Sünde, die durch
+                    diesen erdichteten Gegenstand abgebildet wird, langsamer und bey weitem nicht so
+                    lebhaft, würden erwekt werden. Von dieser Art ist das Bild der Zwietracht, das
+                    Homer so kurz und so meisterhaft gemahlt hat,<ptr target="zer-1771-d1e3387"
+                        n="18" xml:id="zer-1771-d1e2702"/> und ähnliche Erdichtungen, die bey alten
+                    und neuen Dichtern vorkommen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2705">Es giebt aber auch gemeinere
+                    allegorische Bilder, die weniger von dieser allegorischen Kraft haben. <hi
+                        rend="italic">Aurora</hi> mit ihren Rosenfingern, die beym Homer so oft
+                    vorkömmt; die schnellfliegende <hi rend="italic">Iris</hi>, selbst Amor, die
+                    Veneres und Cupidines des <hi rend="italic">Tibulls</hi> thun in der Dichtkunst
+                    weit geringere Dienste, als in den zeichnenden Künsten; sie sind oft nicht viel
+                    mehr als blos ungewöhnlichere und etwas besser klingende Namen, als die
+                    eigentlichen Wörter.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2717">Noch andre solche Wesen haben
+                    eigentlich gar keine bestimmte Gestalt, sondern setzen die Einbildungskraft blos
+                    in den Wahn, daß sie lebende Wesen sind, die einen gewissen nicht genau zu
+                    bestimmenden Charakter haben, oder die nicht einmal bestimmten Begriffen
+                    entsprechen. Von dieser Art sind die zu Personen gemachte Flüsse, Städte,
+                    Länder, die Genii einzelner Menschen und ganzer Nationen, die Nymphen, die
+                    Silphen und dergleichen Hirngespinste.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2720">Alle diese Wesen werden
+                    entweder blos deswegen angeführt, daß sie, so wie die Allegorien, abgezogene
+                    Begriffe sinnlich machen sollen, oder man bedient sich ihrer, um die Handlungen
+                    entweder wunderbarer zu machen, oder blos zu Maschinen, Verwiklungen hervor zu
+                    bringen, oder aufzulösen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2723">Ueber die Zuläßigkeit des
+                    ersten Gebrauchs scheint kein Zweifel mehr übrig zu seyn, nachdem fast alle
+                    alten und neuen Dichter sich derselben bedient haben. In dieser Absicht fallen
+                    dergleichen Bilder in die Classe der eigentlichen Allegorien, die aus keiner der
+                    drey angezeigten Quellen geschöpft, sondern durch die Phantasie des Dichters
+                    hervor gebracht worden. Was also bereits von den Gattungen der Allegorie, von
+                    ihrem Gebrauche und von ihrer Beschaffenheit erinnert worden, kann ohne Mühe auf
+                    sie angewendet werden. Braucht es aber schon große Scharfsinnigkeit, eigentliche
+                    Allegorien von großer Kraft in der Natur oder Kunst aufzusuchen, so erfodern
+                    diese noch außerdem eine lebhafte Dichtungskraft, einen schöpferischen Geist,
+                    durch welchen <hi rend="italic">Milton</hi> die Sünde, und <hi rend="italic"
+                        >Homer</hi> die Zwietracht sichtbar gemacht haben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2732">Die geringeren Bilder, deren
+                    Zeichnung von keiner großen Kraft ist, können, wenn sie nur recht angewendet
+                    werden, die Vorstellungen blos durch das Leben, das sie hineinbringen,
+                    angenehmer und einnehmender machen, wie an seinem Orte angemerkt worden.<ptr
+                        target="zer-1771-d1e3390" n="19" xml:id="zer-1771-d1e2734"/> Auch können sie
+                    überhaupt der Sprache des Dichters einigermaßen den Ton der Begeisterung geben.
+                    Aber nur der feine Geschmak erreicht diese Vortheile. Umsonst führen Dichter von
+                    gemeinem Geschmak Amores und Cupidines auf, sie bleiben dessen ungeachtet
+                    abgeschmakt. <pb n="32"/> Ueber den Gebrauch allegorischer Wesen, als Personen,
+                    die an den Haupthandlungen Theil nehmen, sind die Kunstrichter nicht einig. Er
+                    ist hauptsächlich durch die Neuern aufgekommen. Wenigstens findet man nur selten
+                    Beyspiele davon bey den Alten, und ihr Gebrauch ist gleichsam nur im
+                    Vorbeygehen. Nur <hi rend="italic">Aeschylus</hi> hat die Furien, als
+                    Hauptpersonen im Trauerspiel aufgeführt, und <hi rend="italic">Aristophanes</hi>
+                    den <hi rend="italic">Mars</hi>. Da aber diese Wesen in der Religion des Volks
+                    würkliche Wesen waren, so konnte dieses desto weniger bedenklich seyn. In der
+                    Fabel haben die Alten dergleichen Wesen ohne Bedenken gebraucht, wie wol ein
+                    Alter auch davon als von einer unnatürlichen Sache spricht.<ptr
+                        target="zer-1771-d1e3396" n="20" xml:id="zer-1771-d1e2748"/> Es kann wol
+                    seyn, daß der barbarische Geschmak, der noch vor zwey Jahrhunderten geherrscht
+                    hat, den Gebrauch dieser Wesen eingeführt hat; da in den abgeschmakten
+                    dramatischen Schauspielen selbiger Zeit eine Menge allegorischer Personen
+                    handelnd eingeführt werden. <hi rend="italic">Milton</hi> hat in seinem
+                    verlohrnen Paradies sich derselben als ein schöpferischer Geist bedient. Nach
+                    ihm hat <hi rend="italic">Voltaire</hi> in seiner <hi rend="italic"
+                        >Henriade</hi>, ungeachtet er den englischen Dichter einer zu großen
+                    Kühnheit beschuldiget, einen noch kühnern Gebrauch von der Zwietracht, als einer
+                    allegorischen Person, gemacht.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2761">Zu diesem Gebrauche der
+                    allegorischen Wesen müssen wir auch die Anruffungen an die Musen rechnen, über
+                    deren Zuläßigkeit man uneinig ist.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2764">Diejenigen Kunstrichter, die
+                    den Gebrauch der zu Personen gemachten allegorischen Wesen erlauben, aber gar
+                    sehr einschränken,<ptr target="zer-1771-d1e3399" n="21"
+                        xml:id="zer-1771-d1e2766"/> scheinen für beydes hinlängliche Gründe zu
+                    haben. Es wäre ungereimt, sie gänzlich zu verbieten, da sie schon in der
+                    gemeinen Rede vorkommen. Man sagt überall: <hi rend="italic">der Tod hat ihn
+                        übereilt</hi>, und hundert solche Ausdrüke, die daher entstehen, daß wir
+                    auch den abgezogensten Begriffen immer etwas Sinnliches anhängen. Daher haben
+                    kurze Ausdehnungen solcher Metaphern gar nichts Anstößiges. Aber die Täuschung,
+                    die uns allgemeine Begriffe als körperliche Gegenstände vorstellt, erhält sich
+                    nur in der schnellen Fortrükung der Gedanken; durch allzu langes Verweilen wird
+                    sie aufgehoben: alsdenn finden wir das Ungereimte in der Sache. Daher ist es ein
+                    kluger Rath, daß man sich nicht zu lange bey solchen allegorischen Wesen
+                    verweilen solle.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2772">Solche kurze Handlungen, wie in
+                    folgenden Beyspielen:</p>
+                <lb/>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2777">Als er mit stillem Gemüthe die
+                    große Verheißung durchdenket.</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2780">–– –– –– –– –– –– ––</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2784">Siehe! da lauschte der Tod, im
+                    Hinterhalte verborgen,</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2787">Sah ihn in stiller Betrachtung
+                    die Wege des Höchsten erforschen:</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2790">Einer von seinen sanftesten
+                    Pfeilen, in Balsam getunket,</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2793">Trifft ihn ins Herz.<ptr
+                        target="zer-1771-d1e3402" n="22" xml:id="zer-1771-d1e2795"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2799">Und:</p>
+                <lb/>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2805">Unter dem Winseln der Sünder
+                    vergaß die Flut nicht zu steigen,</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2808">Nicht sie mit ehernen Hörnern
+                    zu fassen und dahin zu reißen,</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2811">Wo der Tod sie mit
+                    unersättlicher Mordlust erwartet.</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2814">Selbigen Tag gelang ihm das
+                    Würgen der Thier und der Menschen;</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2817">Niemals zuvor und niemals
+                    hernach gelang es ihm besser;</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2821">Denn er erwürgt mit jeglichem
+                    Streich Myriaden Geschöpfe.</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e2824">Als er sie alle gewürgt, so
+                    sprach er: wie ist es so wenig.<ptr target="zer-1771-d1e3405" n="23"
+                        xml:id="zer-1771-d1e2826"/></p>
+                <lb/>
+                <p xml:id="zer-1771-d1e2830">Dergleichen kurze Handlungen laßen uns nicht Zeit, aus
+                    der Taüschung, daß bloße Begriffe handelnde Wesen seyn, heraus zu kommen. Was
+                    der Dichter ihnen zuschreibt, kommt mit dem überein, was wir uns von ihnen
+                    einbilden und giebt unserer Einbildung mehr Lebhaftigkeit.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2833">Aber sich lange dabey
+                    verweilen, ihre Handlung entwikeln, und so gar mancherley Nebenumstände
+                    hereinbringen, die das Gefühl von der Unmöglichkeit der Sache erweken, dieses
+                    macht die ganze Sache anstößig. Daher läßt sich begreiffen, wie so viel Personen
+                    von Geschmak es unleidlich finden, daß <hi rend="italic">Voltaire</hi> die
+                    Zweytracht große Reisen thun, und mit der <hi rend="italic">Politik</hi> in
+                    Unterhandlung treten läßt. Durch solche Weitläuftigkeit läßt man dem Leser Zeit
+                    sich zu besinnen und aus der hier so nothwendigen Täuschung zu kommen. Es
+                    begegnet alsdenn jederman, was seichten Köpfen, deren Einbildungskraft ohne
+                    Lebenswärme ist, schon bey ungewöhnlichen Metaphern begegnet, die bey dem
+                    Ausdruk, <hi rend="italic">Der Tod fraß Menschen und Vieh</hi>, fragen, ob er
+                    denn einen Mund und einen Magen habe. Freylich wird dem, der das, was die
+                    Einbildungskraft im ganzen sinnlich faßen soll, nachdenklich zergliedern will,
+                    auch die gemeinste Metapher anstößig. Aber auch der wärmsten Einbildungskraft
+                    geschieht dieses, wenn man ihr die allegorischen Personen zu lange im Gesichte
+                    läßt, und sie, durch das umständliche in der Vorstellung, zwingt nachdenklich zu
+                    werden.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2845">Man sucht die Sache durch die
+                    Nothwendigkeit zu rechtfertigen, die Handlung durch Einmischung <pb n="33"/>
+                    solcher Wesen wunderbar zu machen. Die Alten, sagt man, konnten ihre Gottheiten
+                    dazu brauchen, aber izt wäre es unanständig das höchste Wesen in politische
+                    Händel zu verwikeln; also fiele ohne jene allegorische Wesen das wunderbare, das
+                    der Epopee so wesentlich ist, weg. Allein wenn dieses seine völlige Nichtigkeit
+                    hätte, welches wir doch nicht zugeben können, so würde dadurch eine
+                    schlechterdings anstößige Sache zwar entschuldiger, aber nicht bewiesen, daß sie
+                    schön sey. Das große und wunderbare der Ilias kommt wahrlich nicht blos von der
+                    eingemischten Handlung der Götter her, und in <hi rend="italic">Oßians</hi>
+                    Epopeen sind weder Götter noch allegorische Wesen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2854">Ganz erdichtete Wesen, Sylphen,
+                    Genii und dergleichen werden uneigentlich allegorische Wesen genennt: sie sind
+                    es nur in den zeichnenden Künsten. Die Betrachtungen über ihren Gebrauch finden
+                    sich an einem andern Orte, und werden hier nicht wiederholt.<ptr
+                        target="zer-1771-d1e3409" n="24" xml:id="zer-1771-d1e2856"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2858">Allegorie in zeichnenden
+                    Künsten. Eigentlich können diese Künste nur einzele Dinge, und von Begebenheiten
+                    nur das, was auf einmal, oder in einem untheilbaren Augenblik hervorgebracht
+                    wird, vorstellen. Durch die Allegorie wird darin das unmögliche möglich gemacht.
+                    Allgemeine Begriffe werden durch einzele Gegenstände, und auf einander folgende
+                    Dinge auf einmal, vorgestellt. Die Allegorie in den zeichnenden Künsten ist von
+                    der höchsten Wichtigkeit, weil sie dadurch ihre höchste Kraft erreichen. Zwar
+                    giebt es Liebhaber, die eine starke Abneigung gegen die Allegorie in der
+                    Mahlerey haben; und es ist nicht zu leugnen, daß die meisten allegorischen
+                    Gemälde diese Abneigung zu rechtfertigen scheinen. Entweder sind sie ohne Geist
+                    und Kraft blos von willkührlichen, mehr hieroglyphischen als würklich
+                    allegorischen Bildern, zusammengesezt, oder so unverständlich, daß nur ein
+                    Oedipus ihre Bedeutung errathen kann. Dieses aber beweißt blos, daß schlechte
+                    Allegorien keinen Werth haben. Würden Kenner der Natur und des Alterthums den
+                    Künstlern beystehen, so könnte diese Art leicht zu einer größern Vollkommenheit
+                    gebracht werden. Wir wollen uns deßwegen nicht verdrießen laßen, diese Sache in
+                    die genauste Untersuchung zu nehmen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2861">Hier ist die Allegorie die
+                    Vorstellung des Allgemeinen durch das Einzele oder Besondere. Einen besondern
+                    Fall vorstellen, da ein Mensch gerecht oder wolthätig handelt, dies ist der
+                    gemeine oder natürliche Ausdruk der zeichnenden Künste; aber die Gerechtigkeit
+                    oder die Wolthätigkeit allgemein und durch natürliche Zeichen vorstellen, ist
+                    Allegorie. Sie ist aber nicht blos auf Begriffe eingeschränkt, sondern erstrekt
+                    sich auch auf ganze Vorstellungen, darin verschiedene Begriffe in Eins verbunden
+                    werden; sie kann allgemeine Wahrheiten vorstellen, und wird dadurch zu einer
+                    würklichen Sprache. Sie ist von der Sprache wesentlich durch die Natur der
+                    Zeichen unterschieden, die in der Sprache willkührlich, in der Allegorie
+                    natürlich sind. Daher ist die Sprache nur denen verständlich, die von der
+                    Bedeutung der Wörter unterrichtet sind, die Allegorie muß ohne Unterricht über
+                    die Bedeutung verständlich seyn. Sie ist eine allgemeine Sprache, allen Menschen
+                    von Nachdenken verständlich, wenn sie gleich keinen Unterricht darin gehabt
+                    haben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2864">Man muß sie nicht mit der
+                    Bildersprache verwechseln, die durch willkührliche Zeichen spricht. Dieser
+                    wollen wir den Namen der <hi rend="italic">Hieroglyphen</hi> zueignen. Sie kommt
+                    mit der gemeinen Sprache darin überein, daß sie nur denen verständlich ist,
+                    welchen die Bedeutung ihrer Zeichen erklärt worden ist. Es ist um so viel
+                    nöthiger, diese Begriffe genau zu fassen, da sie oft selbst von Kennern
+                    verwechselt werden. Ein solcher hat, zum Beyspiel, eine Erfindung des <hi
+                        rend="italic">Augustin Carrache</hi>, als eine schöne Allegorie gelobt, die
+                    keine Allegorie, sondern eine Hieroglyphe oder ein so genanntes Rebus, ein
+                    bloßes Wortspiel ist. Das Gemählde stellt den Gott <hi rend="italic">Pan</hi>
+                    vor, den <hi rend="italic">Amor</hi> überwunden hat, und dieses soll den
+                    allgemeinen Satz ausdrüken, die <hi rend="italic">Liebe überwindet
+                        alles</hi>.<ptr target="zer-1771-d1e3415" n="25" xml:id="zer-1771-d1e2882"/>
+                    Die ganze Erfindung gründet sich darauf, daß der Name des Gottes<hi
+                        rend="italic"> Pan</hi> in der griechischen Sprache <hi rend="italic"
+                        >alles</hi> bedeutet. Dergleichen Hieroglyphen schließen wir von der
+                    Allegorie aus.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2891">Doch müssen wir, um dem
+                    Gebrauch und vielleicht auch der Nothwendigkeit etwas nachzugeben, hierüber
+                    nicht allzustrenge seyn. Es ist manches hieroglyphisches Bild so unwiederruflich
+                    in die Allegorie aufgenommen worden, daß es durchgehends für würklich
+                    allegorisch gehalten wird. Eine weibliche Figur mit Spieß und Schild, einem Helm
+                    auf dem Kopfe, auf welchem eine Nachteule sitzt, und <pb n="34"/> mit einem
+                    Brustharnisch, ist kein natürliches Zeichen der Weisheit, und also keine wahre
+                    Allegorie. Indessen ist es unwiederruflich dafür angenommen. Man ist es gewohnt,
+                    vielen blos hieroglyphischen Zeichen der Alten den Rang der wahren allegorischen
+                    Bilder zu lassen, weil wir von Kindheit auf so daran gewohnt werden, daß sie uns
+                    wie natürliche Zeichen vorkommen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2896">Bey dieser Gelegenheit ist hier
+                    auch noch vorläufig zu erinnern, daß in der Absicht, in welcher die redenden und
+                    zeichnenden Künste die Allegorie brauchen, sich ein Unterschied findet, der
+                    diesen etwas mehr Freyheit als jenen erlaubt. Die Rede kann sich überall des
+                    eigentlichen Ausdrukes bedienen, und geht deswegen davon nicht ab, als wenn es
+                    mit merklichem Vortheil geschieht. Es würde ein Fehler seyn, die allegorische
+                    Sprache zu brauchen, wo sie nichts anders ausrichtet, als die gemeine Sprache.
+                    Die zeichnenden Künste haben für allgemeine Begriffe und Sätze keine eigentliche
+                    Sprache. Also ist ihnen erlaubt, wenn es auch ohne Verstärkung des Nachdruks
+                    geschieht, allegorisch zu seyn, und ihre Zeichen blos in die Stelle der gemeinen
+                    Sprache zu setzen. Es ist nicht allemal ein Fehler, wenn ihre Allegorie die
+                    Sachen nicht stärker sagt, als der gemeine Ausdruk der Rede. Wenn z. B. auf
+                    einer alten römischen Schaumünze das Reich unter einer zu Boden gesunkenen
+                    Person vorgestellt wird, die durch den Kaiser Vespasianus wieder aufgerichtet
+                    wird, so sagt diese Allegorie nicht das geringste mehr, auch mit nicht mehr
+                    Kraft, als es der eigentliche Ausdruk der Sprache, <hi rend="italic">er hat das
+                        gefallene Reich wieder her gestellt</hi>, sagen würde. Hier muß dem Zeichner
+                    schon zum Verdienst angerechnet werden, was bey dem Redner noch keiner wäre. Man
+                    muß also in zeichnenden Künsten das schon für Allegorie gelten lassen, was in
+                    den redenden noch gemeiner Ausdruk wäre. Indessen verdienen immer diejenigen
+                    Allegorien unsre vorzügliche Achtung, welche allgemeine Sachen nicht blos
+                    verständlich, sondern auch noch mit Kraft und ästhetischem Vortheile
+                    ausdrüken.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2903">Nun wollen wir die Gattungen
+                    der Allegorie näher betrachten. Nach dem Unterschied ihrer Bedeutung sind sie
+                    von zweyerley Art: entweder stellen sie uns blos einen einzigen unzertrennbaren
+                    Gegenstand vor; ein unsichtbares Wesen, einen Begriff, eine Eigenschaft – oder
+                    sie verbinden deren mehrere, um eine Handlung, eine geschehene Sache, oder eine
+                    aus vielen Begriffen zusammengesetzte Vorstellung auszudrüken. Die erste Art
+                    wollen wir <hi rend="italic">allegorische Bilder</hi>, die andere Art <hi
+                        rend="italic">allegorische Vorstellungen</hi> nennen. Sehen wir auf den
+                    Unterschied in der Materie der Allegorie, so ist sie auch von zwey Arten. Die
+                    eine nimmt ihre Bilder ganz aus der Natur, indem sie z. B. die Arbeitsamkeit
+                    durch eine Biene vorstellt; die andere erdichtet die Bilder ganz oder zum Theil.
+                    Jener sollte man den Namen des <hi rend="italic">Sinnbildes</hi> geben, dieser
+                    aber den Namen der eigentlichen <hi rend="italic">Allegogorie</hi>.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2918">Wir betrachten also zuerst die
+                    allegorischen Bilder, sie seyen Sinnbilder oder eigentliche Allegorien. Die
+                    gemeineste Gattung derselben ist die, die weiter keinen Vortheil hat, als daß
+                    sie die Vorstellung der Sache möglich macht. Sie thun nichts mehr, als ein
+                    lateinisches Wort in der deutschen Sprache, wenn diese keines hat, dieselbe
+                    Sache auszudrüken. So sagt uns das Bild einer Frauensperson, mit einer
+                    geschloßenen Crone auf dem Kopf und in einem mit goldenen Lilien bezeichneten
+                    Mantel, nichts mehr, als das Wort<hi rend="italic"> Frankreich</hi> sagen würde.
+                    Sie sind von zweyerley Art: solche die blos die Namen der Sache bezeichnen, oder
+                    sie schlechtweg nennen, wie z. E. der Frosch und der Eidex in zwey Jonischen
+                    antiken Voluten, welche die Baumeister <hi rend="italic">Batrachus</hi> und <hi
+                        rend="italic">Saurus</hi> bezeichnen sollen;<ptr target="zer-1771-d1e3418"
+                        n="26" xml:id="zer-1771-d1e2929"/> oder sie zeigen die Sache durch eine
+                    ihrer Eigenschaften an, wie die Vorstellung der Stadt Damaskus durch das Bild
+                    einer Frauensperson, die Pflaumen in der Hand hält<ptr target="zer-1771-d1e3421"
+                        n="27" xml:id="zer-1771-d1e2931"/> welche Frucht dieser Stadt vorzüglich
+                    eigen war. Von diesen Arten sind ungemein viel allegorische Bilder; sie sind im
+                    Grunde bloße Hieroglyphen; die aber deshalb, wie kurz vorher ist angemerkt
+                    worden, nicht zu verwerffen sind. Die Noth hat sie eingeführt.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2934">Einen höhern Rang verdienen die
+                    Bilder, die uns nicht blos schlechthin die Namen und das sichtbare der Dinge
+                    anzeigen, sondern zugleich etwas von ihrer Beschaffenheit vorbilden. Sie
+                    gleichen den viel bedeutenden Wörtern, deren Ableitung oder Zusammensezung uns
+                    schon einigermaaßen die Erklärung der Sache giebt, sind natürlich bedeutende
+                    Zeichen. So ist das Sinnbild der Seele oder der Unsterblichkeit, welches die
+                    Alten durch einen Schmetterling ausdrüken. Es zeigt nicht <pb n="35"/> blos die
+                    Unsterblichkeit an, sondern auch, daß die Seele erst denn in ihr rechtes Leben
+                    komme, nachdem sie die Hülle des Körpers abgelegt hat. Das allegorische Bild der
+                    Gerechtigkeit mit verbundenen Augen und der Waage in der Hand drükt nicht blos
+                    das Wort Gerechtigkeit aus, sondern auch die Eigenschaft derselben, daß sie sich
+                    durch kein Ansehen und keinen Schein verblenden lasse, daß sie nicht voreilig
+                    sey, sondern das Recht auf das Genaueste abwäge.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2939">Daß diese Bilder jenen weit
+                    vorzuziehen seyen, darf nicht erinnert werden. Eine wichtigere Bemerkung aber
+                    ist es, daß der Künstler, dem es nicht an Genie fehlt, einem an sich wenig
+                    bedeutenden Bilde durch Anbringung charakteristischer Züge, eine natürliche
+                    Bedeutung geben könne. So hat <hi rend="italic">Poußin</hi> auf eine geistreiche
+                    Art den Nil bezeichnet, indem er ihm den Kopf in Schilf verstekt hat, um
+                    anzuzeigen, daß sein Ursprung noch nicht entdekt worden. Bilder von Sachen die
+                    sinnliche Eigenschaften haben, von Ländern, Städten, Flüssen, können auf diese
+                    Weise durch Zusätze bedeutender gemacht werden. Es geht auch mit solchen an, die
+                    blos abgezogene Begriffe vorstellen. So hat ein griechischer Künstler, Namens
+                        <hi rend="italic">Buphalus</hi>, die Fortuna, oder das Glük auf diese viel
+                    bedeutende Art abgebildet, daß er ihr eine Sonnenuhr oder einen Gnomon auf den
+                    Kopf und ein Horn des Ueberflusses in die Hand gegeben.<ptr
+                        target="zer-1771-d1e3424" n="28" xml:id="zer-1771-d1e2947"/> Unter den
+                    geschnittenen Steinen, die Mariette herausgegeben hat, ist einer mit einem
+                    Bilde, das für eine viel bedeutende Allegorie der Dichtkunst kann gebraucht
+                    werden. Ein Genius sieht auf einen Gryph; die rechte Hand lehnt sich auf eine
+                    Leyer, die auf einem, auf einen Würfel gesetzten, Dreyfuß steht. Der Würfel kann
+                    die Richtigkeit der Gedanken, der Dreyfuß die Begeisterung, die Leyer die
+                    Harmonie bedeuten; die drey wesentlichen Eigenschaften eines Gedichts.<ptr
+                        target="zer-1771-d1e3427" n="29" xml:id="zer-1771-d1e2949"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2951">Diejenigen allegorischen
+                    Bilder, die aus menschlichen Figuren bestehen, können durch Stellung, Charakter
+                    und Handlung die höchste allegorische Vollkommenheit erreichen. Durch dieses
+                    Mittel können die an sich so wenig bedeutenden Allegorien der Städte und Länder,
+                    sobald sie bey besondern Gelegenheiten gebraucht werden, höchst nachdrüklich
+                    seyn, wenn der Künstler den Ausdruk in seiner Gewalt hat, wenn etwas von dem
+                    Geist in ihm wohnt, durch welchen <hi rend="italic">Aristides</hi> geführt, den
+                    Charakter des atheniensischen Volks in einer einzigen Figur ausgedrükt hat. Wie
+                    grosse und mannigfaltige Kraft liegt nicht in dem Bild der Verläumdung, das
+                    Apelles gemahlt hat?<ptr target="zer-1771-d1e3431" n="30"
+                        xml:id="zer-1771-d1e2956"/> Und wie höchst fürchterlich ist nicht das Bild
+                    des Krieges beym <hi rend="italic">Aristophanes</hi>,<ptr
+                        target="zer-1771-d1e3434" n="31" xml:id="zer-1771-d1e2961"/>
+                    <hi rend="italic">da Mars</hi>, ein sonst wenig bedeutendes Bild, in einem
+                    ungeheuren Mörsel Städte und ganze Länder zermalmet?</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2967">Freylich gehört zu dergleichen
+                    Bildern ein Genie das nur Künstlern vom ersten Range zu Theil geworden. Unter
+                    der unzählbaren Menge allegorischer Bilder auf den Münzen der Alten finden sich
+                    nur wenige, unter denen die Winkelmann in seinem Werk von der Allegorie in ein
+                    Verzeichnis gesammelt hat, kein einziges, von grosser ästhetischer Kraft. Das
+                    höchste in dieser Gattung trift man in den Bildern der Gottheiten an, die
+                    einigermaßen unter die allegorischen Bilder können gerechnet werden.<ptr
+                        target="zer-1771-d1e3440" n="32" xml:id="zer-1771-d1e2969"/> Des <hi
+                        rend="italic">Phidias</hi> Jupiter war nichts anders, als ein allegorisches
+                    Bild der Gottheit; und der berühmte Apollo in <hi rend="italic">Belvedere</hi>,
+                    was ist er anders, als eine vollkommene Allegorie der Sonne, deren immerwährende
+                    Jugend, deren reizende Lieblichkeit und niemals ermüdende Würksamkeit, in diesem
+                    wundervollen Bilde dem Auge zu sehen gegeben wird?</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2979">Künstler sollen hieraus lernen,
+                    wie selbst solche Bilder, die an sich von schwacher Bedeutung sind, durch das
+                    wahre Genie zum höchsten Ausdruk können erhoben werden. Sie sollen aber zugleich
+                    erkennen, daß die Bilder diese hohe Kraft nicht durch schwache Zeichen, die man
+                    attributa nennet, erhalten. Sie sollen lernen, daß es nicht genung ist der
+                    Gerechtigkeit die Waage in die Hand zu geben; sondern die<hi rend="italic">
+                        Themis</hi> mit dem ihr eigenen göttlichen Charakter zu bezeichnen, wie
+                    Jupiter und Apollo in jenen erhabenen Bildern, mit dem ihrigen bezeichnet
+                    worden. Nicht der witzige Künstler, der kleine und subtile Aehnlichkeiten
+                    bemerket, sondern der grosse Geist, der jede Eigenschaft des Geistes, jede
+                    Empfindung der Seele sichtbar machen kann, ist in solchen Erfindungen
+                    glüklich.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e2985">Zwar gehört auch das kleinere
+                    der Zeichenkunst, zur glüklichen Allegorie, um auf das wesentliche zu führen,
+                    und die Deutung zu erleichtern. Wir wollen das Bild des Mondes auf der Stirne
+                    der <hi rend="italic">Diana</hi> nicht verwerfen; es leitet uns auf die <pb
+                        n="36"/> Deutung; nur muß der Künstler sich nicht einbilden, damit der
+                    Allegorie Genüge geleistet zu haben, und sich übrigens mit jeder weiblichen
+                    Figur, die dieses Zeichen trägt, begnügen. Diese kleinere, ohne weitere Kraft
+                    redende Zeichen, sind in dem allegorischen Bilde um so viel nöthiger, da die
+                    zeichnenden Künste sonst, bey ihren kräftigsten Bildern, uns oft in Ungewißheit
+                    lassen würden. Würde es einem Künstler auch noch so sehr glüken, in dem Bilde
+                    des Saturnus die Zeit auszudrüken, so wird ihm noch überdem das Stundenglas,
+                    oder ein anderes Zeichen dieser Art, nicht unnütze seyn; weil erst dieses uns
+                    gleichsam den Namen des Bildes angiebt, dessen Eigenschaften hernach aus seinem
+                    Charakter zu erkennen sind. Der Zeichner ist hierin ungemein viel
+                    eingeschränkter, als der Dichter. Dieser bringt seine Allegorie in dem
+                    Zusammenhang an, der leicht auf die Deutung derselben führet: jener muß gar zu
+                    oft sein Bild allein hin setzen, wo außer ihm nichts ist, das seine Deutung
+                    erleichtert. Darum muß er nothwendig auf Nebensachen sehen, die dieses thun. Nur
+                    muß er, wie gesagt, sich damit nicht begnügen, sondern auf das Große im Ausdruk
+                    arbeiten. Wenn das, was man uns von der Geschiklichkeit der alten Mahler und
+                    Bildhauer berichtet, wahr ist; so haben viele derselben den Geist gehabt,
+                    Bilder, wie wir sie hier fodern, würklich zu machen; so muß ihnen in der
+                    Allegorie, dem schweersten Theile der Kunst, nichts unmöglich gewesen seyn.
+                    Konnte <hi rend="italic">Euphranor</hi> den <hi rend="italic">Paris</hi> so
+                    mahlen, daß man in ihm den Schiedsrichter der Schönheit, den Entführer der
+                    Helena, und zugleich den, der den Achilles erlegt hat, erkannte;<ptr
+                        target="zer-1771-d1e3446" n="33" xml:id="zer-1771-d1e2998"/> so müßte
+                    wahrlich dem <hi rend="italic">Euphranor</hi> in der Allegorie nichts zu schweer
+                    gewesen seyn. Wir haben an einem andern Orte<ptr target="zer-1771-d1e3449"
+                        n="34" xml:id="zer-1771-d1e3004"/> unsre Meynung über diese und ähnliche
+                    Nachrichten von der Kunst der Alten gesagt. Aber es ist in Wahrheit dem Genie
+                    mehr möglich, das der Verstand begreift, und deswegen nicht ohne Nutzen, daß
+                    neuere Künstler durch das Beyspiel der alten, wenn es auch übertrieben ist,
+                    gereizt werden. Kunstrichter müssen es machen, wie der Philosoph Diogenes in der
+                    Moral; sie können immer den Ton etwas zu hoch angeben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3007">Es wäre zu wünschen, daß jemand
+                    alle allegorische Bilder der Alten aus allen Schriften und Cabinetten zusammen
+                    suchte, und daraus eine bessere <hi rend="italic">Iconologie</hi> machte, als
+                    die <hi rend="italic">Ripa</hi> gegeben hat. Oft fehlt einem Künstler von Genie
+                    nichts, als daß er wisse, was andern vor ihm schon möglich gewesen. Hätten
+                        doch<hi rend="italic"> Leßing</hi> und <hi rend="italic">Klotz</hi>, die so
+                    manchen Schriftsteller durchsuchen, um einen eben nicht sehr wichtigen Streit
+                    fortzusetzen, ihre Bemühung hierauf gewendet!</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3022">Den nächsten Rang nach den
+                    einzeln allegorischen Bildern nehmen die allegorischen Vorstellungen ein, welche
+                    gewisse Lehren oder allgemeine Sätze ausdrüken. Hier gilt der so gar oft zur
+                    Unzeit angeführte Ausspruch des <hi rend="italic">Horaz</hi>:</p>
+                <lb/>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3030">Segnius irritant animos demissa
+                    per aurem</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3034">Quam quae sunt oculis subiecta
+                    fidelibus ––</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e3039">Wenn übrigens ein allegorisches Gemähld eine Wahrheit
+                    mit nicht mehr Kraft sagt, als es durch den Ausdruk der Rede würde geschehen
+                    seyn, so hat es den Vortheil der Lebhaftigkeit; weil wir hier sehen, was wir
+                    dort blos im Verstande oder in der Einbildungskraft, dem bloßen Schatten der
+                    Sinnen, vor uns haben. Kommt zu diesem Vortheil der allegorischen Vorstellung
+                    noch die innerliche Vollkommenheit derselben, so wird ihre Würkung so stark, daß
+                    sie alle poetische Kraft weit übertrifft; und hierin liegt eben der höchste
+                    Endzwek der Kunst.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3042">Es sey mir vergönnt, hier eine
+                    Anmerkung zu machen, die vermuthlich noch an mehrern Orten dieses Werks
+                    vorkommen, aber nicht zu oft wiederholt werden, kann. Es ist ein großer
+                    Mißbrauch der Kunst, daß noch so sehr durchgehends ein vollkommener Pinsel mehr,
+                    als eine vollkommene Erfindung gelobt wird. Dieses heißt Mittel ohne Endzwek
+                    schätzen. Die meisten Kenner gleichen dem Geizhals, der sich blos im Besitz
+                    eines Mittels, das er niemals zu brauchen gedenket, selig preist. Die glükliche
+                    Erfindung einer wichtigen Allegorie giebt einem Gemählde einen größern Werth,
+                    als es selbst von <hi rend="italic">Titians</hi> Pinsel erlangen würde, wenn
+                    dieser nicht mit höherm Verdienst verbunden ist. Aber die Laufbahn, die nach
+                        diesem<pb n="37"/> Ruhme führet, kann nur von Genien der ersten Größe
+                    glüklich betreten werden. Wenige sind hierin glüklich gewesen, und dieser Theil
+                    der Kunst ist wahrlich die schwache Seite der neuen Zeichner, und noch mehr
+                    Blöße zeigen die Liebhaber hierin. Man fährt noch immer fort, die elenden und
+                    zum Theil kindischen Erfindungen des <hi rend="italic">Otto Venius</hi>, welche
+                    wichtige Lehren des Horaz ausdrüken sollen, zu loben. Merke es, Sammler der
+                    Kupfer. Ich sage nicht, daß Venius ein schlechter Zeichner gewesen, sondern daß
+                    seine Horazischen Sinnbilder elende Erfindungen seyn!</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3053">Man kann die ausgeführteren
+                    allegorischen Vorstellungen in Ansehung des Inhalts in drey Gattungen
+                    eintheilen. In physische, in moralische und in historische. Es ist der Mühe
+                    werth, hierüber etwas umständlich zu seyn. Physische Vorstellungen sind solche,
+                    da ein Gegenstand aus der Natur in einem etwas ausführlichern allegorischen
+                    Gemählde vorgestellt wird. Eine Jahrszeit, die Nacht, oder eine andre Tageszeit;
+                    eines der drey Reiche der natur; die Natur selbst, im Ganzen betrachtet, und
+                    dergleichen. Wir sprechen hier nicht von blos einzeln Bildern solcher
+                    Gegenstände, sondern von ausführlichen Vorstellungen, die im Gemählde das sind,
+                    was <hi rend="italic">Kleists</hi> Frühling oder <hi rend="italic"
+                        >Zachariäs</hi> Tageszeiten in der Dichtkunst. Solche Gemählde stellen
+                    einige der wichtigsten Eigenschaften des Gegenstandes, den sie mahlen, vor.
+                    Hätte <hi rend="italic">Pesne</hi> seinen Vorsatz ausgeführt, ein Dekengemälde,
+                    das er in<hi rend="italic"> Rheinsberg</hi><ptr target="zer-1771-d1e3455" n="35"
+                        xml:id="zer-1771-d1e3066"/> gemahlt hat, und darin der Anbruch des Tages
+                    vorgestellt ist, in Kupfer äzen zu lassen, so würde dasselbe hier als ein
+                    schönes Beyspiel dieser Art können angeführt werden. Dergleichen Vorstellungen
+                    können eben so ausführliche Bilder natürlicher Gegenstände geben, als die sind,
+                    die Dichter uns vormahlen. Sie sind gemahlte Gedichte, deren Inhalt aus der
+                    sichtbaren Natur genommen, aber mit sittlichen und pathetischen Gegenständen
+                    untermenget ist.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3069">Die zweyte Gattung dieser
+                    Vorstellungen kann die moralische genennet werden. Sie stellt allgemeine
+                    Wahrheiten und Beobachtungen aus der sittlichen Welt vor. So ist die
+                    Beobachtung, <hi rend="italic">daß Dichtkunst und Musik große Kraft haben, die
+                        Liebe hervor zu bringen</hi>, auf einem geschnittenen Stein<ptr
+                        target="zer-1771-d1e3459" n="36" xml:id="zer-1771-d1e3074"/> allegorisch
+                    also vorgestellt. Amor bittet den Apollo inständig und etwas ungeduldig, ihm
+                    seine Leyer zu geben. Auf einem andern bekannten Stein reitet Amor auf einem
+                    Tyger oder Löwen, um anzudeuten, daß die Liebe auch die wildesten Gemüther zahm
+                    mache. Diese Allegorie kann mehr oder weniger ausführlich seyn. Das schon
+                    erwähnte Gemählde von der Verläumdung ist ausführlich, und giebt uns durch
+                    mancherley lebhafte Züge die Schändlichkeit dieses Lasters zu fühlen. Solche
+                    Gemählde sind von den Allegorien der Rede nur darin unterschieden, daß sie dem
+                    Auge vorbilden, was die andern der Einbildungskraft durch Wörter vorstellen. Die
+                    Anmerkung, die dem <hi rend="italic">Pythagoras</hi> zugeschrieben wird, daß in
+                    den Staaten, die eine Zeit lang im Wolstande gewesen, zuerst die <hi
+                        rend="italic">Ueppigkeit</hi> sich einschleicht, hierauf der <hi
+                        rend="italic">Ueberdruß</hi>, denn <hi rend="italic">unnatürliche
+                        Ausschweifungen</hi>, auf welche zuletzt der <hi rend="italic"
+                        >Untergang</hi> folget, ist schon ein Gemählde. Der Mahler darf es nur aus
+                    der Einbildungskraft auf die Leinwand bringen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3094">Die dritte Gattung endlich ist
+                    die historische; da Begebenheiten entweder blos angezeiget, oder umständlicher
+                    vorgestellt werden. Im ersten Falle entsteht die gemeine historische Allegorie,
+                    dergleichen man so häufig auf den Münzen der Alten und neuen antrifft; der andre
+                    Fall giebt die höhere historische Allegorie, zu welcher die bekannten Gemählde
+                    des <hi rend="italic">Le Brün</hi>, worauf einige Thaten <hi rend="italic"
+                        >Ludwigs</hi> XIV. vorgestellt sind, gehören. Diese Allegorie scheint das
+                    höchste und schweerste der Kunst zu seyn, das nur Mahler vom ersten Range
+                    erreichen. Schon in redenden Künsten ist dieses das schweerste, daß eine große
+                    Begebenheit oder Handlung, in einem merkwürdigen Gesichtspunkte gefaßt, durch
+                    eine einzige Periode der Rede so ausgedrukt werde, daß wir durch Hülfe eines
+                    Hauptbegriffs das Besondere derselben übersehen können.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3103">Wer darinn glüklich seyn will,
+                    der muß nicht nur, wie der große Redner, ungemein viel zusammen zu fassen,
+                    sondern es noch überdies sichtbar zu machen wissen. Darin liegt der Grund der so
+                    sehr großen Seltenheit fürtrefflicher Allegorien dieser <pb n="38"/> Art, deren
+                    Kunst etwas näher entwikelt zu werden verdienet. Die allegorische Vorstellung
+                    einer Begebenheit hat eigentlich nichts erzählendes; denn sie stellt nicht so
+                    wol die Begebenheit, als eine wichtige viel sagende Anmerkung über dieselbe vor,
+                    dergleichen etwa große Geschichtschreiber machen, da sie eine Begebenheit in
+                    einem besonders merkwürdigen Gesichtspunkt vorstellen, wie es Tacitus oft thut,
+                    als: breves et infaustos populi romani amores.<ptr target="zer-1771-d1e3462"
+                        n="37" xml:id="zer-1771-d1e3107"/> Ihr Endzwek geht nicht auf die
+                    Ueberlieferung der Geschichte, dieses kann auf eine leichtere und bessere Art
+                    geschehen; sondern auf die Darstellung derselben in einem sehr lebhaften
+                    Gesichtspunkte. Dieses Geschäfft ist für den Geschichtschreiber schon sehr
+                    schweer, für den Mahler ist es ein Gipfel der Kunst, den die größten Meister
+                    selten glüklich erreichen. Die Geschichte, welche dabey zum Grunde gelegt wird,
+                    muß sehr bekannt, zugleich aber entweder in ihren Absichten, oder in ihren
+                    Umständen, oder in ihren Folgen, etwas allgemein merkwürdiges haben. Dieses
+                    Allgemeine macht eigentlich das Wesen der Allegorie aus.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3110">In der Gallerie von Düsseldorf
+                    ist ein Gemählde von <hi rend="italic">Raphael</hi>, das einen Jüngling in dikem
+                    Gebüsche an einer Quelle sitzend vorstellt, aus welcher er Wasser geschöpft, das
+                    er in einer Schaale vor sich hält. So weit ist dieses Stük blos historisch, und
+                    mehr kann ein gemeiner Mahler auch mit <hi rend="italic">Titians</hi> Pinsel
+                    nicht ausdrüken. Aber Raphael wußte in dieser einzelnen Figur hohe Gedanken, ein
+                    so erhabenes Nachdenken über eine Schaale voll Wasser auszudrüken, daß man in
+                    dem Jüngling <hi rend="italic">Johannes den Täufer</hi> erkennt, der in der
+                    Wüste seinen göttlichen Beruf überdenkt, und itzt glaubt man, seine erhabene
+                    Gedanken über die Taufe selbst zu empfinden. Dieses gränzet nun schon an die
+                    hohe Allegorie. Wer nur Körper mahlen kann, muß sich daran nicht wagen. Wenn er
+                    auch für jeden einzeln Begriff ein noch so richtiges Bild hätte, so würde der
+                    doch nur eine leserliche Hieroglyphe, aber keine Allegorie darstellen. Diese muß
+                    uns nicht den Buchstaben der Geschichte, sondern ihren Geist geben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3122">Darauf kommt es also zuerst an,
+                    daß der Künstler in dem Körper der Begebenheit, die er allegorisch vorstellen
+                    will, eine Seele entdeke, und denn, daß er das unsichtbare Wesen derselben
+                    sichtbar mache. So müßte uns ein allegorisches Gemählde von Alexanders
+                    Eroberungen des persischen Reichs, nicht Schlachten und Feldzüge, sondern
+                    entweder edle Rachgier, die, von einem übermüthigen Fürsten, an einem freyen
+                    Volke verübte Gewaltthätigkeit, zu rächen; oder ausschweifende Herrschsucht mit
+                    allen ihren übeln Folgen, wenn sie einem schon mächtigen Fürsten von großem
+                    Verstande beywohnet; oder etwas dergleichen vorstellen, das uns gleich in einen
+                    Gesichtspunkt stellt, aus welchem wir die Sache im Ganzen übersehen können. Hat
+                    der Künstler die Seele seiner Geschichte erst entdeket, so wird es ihm nicht
+                    sehr schweer werden, das besondere, wodurch die Begebenheit angezeiget werden
+                    kann, zu erfinden. Personen, Zeiten, Oerter lassen sich endlich ohne Namen und
+                    Schrift noch wol kenntlich machen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3125">Wenn es wahr ist, was uns die
+                    Alten von dem Mahler <hi rend="italic">Aristides</hi> sagen, daß er in einem
+                    einzigen Bilde den aus widersprechenden Zügen zusammen gesetzten Charakter des
+                    atheniensischen Volks richtig ausgedrükt habe; so dürfen wir hoffen, daß uns
+                    einmal die Kunst allegorische Gemählde, wie etwa die folgenden dem Inhalte nach
+                    wären, liefern möchte. Die Verbesserung der Sitten durch die Wiederherstellung
+                    der Wissenschaften; das große Werk der Kirchenverbesserung in seinen wichtigsten
+                    Folgen oder in seinen Ursachen; die Entdekung der neuen Welt durch den Columbus
+                    in einigen der wichtigsten Würkungen derselben. Dergleichen Vorstellungen sind
+                    nicht gemahlte Erzählungen, wie so viel halb allegorische und halb historische
+                    Gemählde, sondern Vorstellungen von der Natur oder von der Würkung gewisser
+                    Handlungen. So viel war hier über die Beschaffenheit der Allegorie, über ihre
+                    Arten und über den Werth derselben zu sagen. Folgende Anmerkungen beziehen sich
+                    auf die Erfindung und auf den Gebrauch derselben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3131">Die Vollkommenheit der
+                    Allegorie hängt größtentheils von der glüklichen Erfindung einzeler
+                    allegorischer Bilder ab. Eine Sammlung der besten schon vorhandenen Bilder mit
+                    genauer Beurtheilung ihres Werths würde den Künstlern diesen so wichtigen Theil
+                    der Kunst sehr erleichtern. <hi rend="italic">Winkelmann</hi> hat einen Anfang
+                    dazu gemacht; aber es fehlt noch immer an der Entwiklung einleuchtender
+                    Grundsätze zu Erfindung der Bilder. Für denjenigen, der auf diesem Pfad
+                    gründlichen Ruhm <pb n="39"/> zu erwerben sucht, möchten folgende Anmerkungen
+                    von einigem Nutzen seyn.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3140">Bloße Hieroglyphen, die aus
+                    Noth gebraucht werden, lassen sich am leichtesten erfinden. Ein Wapenschild,
+                    eine äußerliche in die Augen fallende Sache, ist dazu schon hinlänglich. Doch
+                    sollten bloße Anspielungen auf Namen, wie ein Mann zu Pferde, um den Namen
+                    Philippus anzuzeigen,<ptr target="zer-1771-d1e3465" n="38"
+                        xml:id="zer-1771-d1e3142"/> wenn sie gleich in den Antiken häufig vorkommen,
+                    verbannet werden. Dergleichen Bilder konnten nur zu der Zeit entschuldiget
+                    werden, als man noch nicht schreiben konnte, und sollten auch itzt nicht
+                    gebraucht werden, als da, wo die Schrift oder ein anderes Zeichen
+                    schlechterdings unmöglich ist. Unter die Hieroglyphen, die in der Allegorie gute
+                    Dienste thun, rechnen wir auch solche Zeichen, welche zwar keine natürliche,
+                    aber eine in den Gebräuchen gegründete Bedeutung haben. So sind Zepter und
+                    Kronen, Könige und Regenten zu bezeichnen, Widderköpfe und Opferschaalen in den
+                    dorischen Friesen, wodurch Tempel angedeutet werden, Kriegsarmaturen auf
+                    Zeughäuser u. d. gl. Dergleichen Bilder haben keine Schwürigkeit. Eine gute
+                    Bekanntschaft mit den Gebräuchen der Völker giebt sie von selbst an die
+                    Hand.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3145">Wahre allegorische Bilder,
+                    welche eine Eigenschaft der Sache, die sie vorstellen, ausdrüken, sind schweer
+                    zu erfinden. Dazu gehört, daß man die Begriffe der Sachen, welche vorzustellen
+                    sind, deutlich entwikle, und in ihrer größten Einfalt sehe, besonders das
+                    Eigenthümliche, was die Sache am gewissesten bezeichnet, deutlich fasse. So hat
+                    jede Tugend außer dem, was sie mit den übrigen gemein hat, etwas Eigenthümliches
+                    und Bezeichnendes, entweder in ihrem Ursprung oder in ihrer Würkung; für diese
+                    muß der Künstler ein Zeichen finden. Hiezu dienet, was anderswo<ptr
+                        target="zer-1771-d1e3468" n="39" xml:id="zer-1771-d1e3147"/> von Erfindung
+                    der Bilder überhaupt ist angemerkt worden. Alle dort angeführte Arten der Bilder
+                    haben hier statt.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3150">Einige allegorische Bilder
+                    haben die Natur der Beyspiele, wie <hi rend="italic">Orestes</hi> und <hi
+                        rend="italic">Pylades</hi>, als ein Bild der Freundschaft; andere der
+                    Gleichnisse, wie ein Schiff mit aufgeblasnen Seegeln, als ein Bild des
+                    glüklichen Fortganges; andere der eigentlichen Allegorie, wie ein Sieb, das zum
+                    Wasserschöpfen gebraucht wird, als ein Bild einer eiteln Unternehmung. Die Wahl
+                    dieser Gattungen der allegorischen Bilder wird durch die besondern Umstände,
+                    darinn man sie braucht, bestimmt. So könnte zum Exempel in einem Gemählde, da
+                    zwey Männer sich über einen vor ihnen stehenden Jüngling ernstlich unterreden,
+                    der Inhalt ihrer Unterredung durch die Allegorie des Beyspiels deutlich
+                    ausgedrükt werden. Wenn einer der beyden Männer auf ein in dem Zimmer hangendes
+                    Gemählde deutete, das den Achilles vorstellt, als Ulysses an dem Hofe des
+                    Lykomedes ihn ausforscht. Denn dadurch würde angedeutet, daß die Unterredung den
+                    natürlichen Beruf des Jünglings zu einer gewissen Lebensart zum Inhalt habe.
+                    Hingegen drükt ein einziges allegorisches Bild des Schmetterlings, auf welchen
+                    Sokrates, in ernsten Betrachtungen vertieft, seine Augen heftet, hinlänglich
+                    aus, daß er über die Unsterblichkeit denke.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3159">So muß die Wahl der Bilder
+                    allemal durch den Gebrauch derselben bestimmt werden. Bilder der eigentlichen
+                    Allegorie bekommen ihre Bedeutung fürnehmlich, wenn sie nicht für sich da
+                    stehen, sondern geschikt mit andern Gegenständen verbunden sind. So können
+                    Mohnköpfe verschiedene Bedeutungen haben. In einen Kranz um die Schläfe einer
+                    ruhenden Person gewunden, bedeuten sie den Schlaf. Es wäre aber auch leicht, sie
+                    in anderer Verbindung zum Bilde der Fruchtbarkeit zu machen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3162">Also gehört es zur Erfindung
+                    der Bilder, daß man ihren Gebrauch genau vor Augen habe. Diejenigen scheinen die
+                    besten zu seyn, welche als <hi rend="italic">Attributa</hi> oder Kennzeichen
+                    menschlichen Figuren beygelegt werden; weil sie auf diese Art mit der
+                    Vorstellung einer Handlung können begleitet werden, wodurch ihre Bedeutung viel
+                    größer und auch kräftiger wird. So könnte die Eitelkeit, sich andern zur
+                    Bewundrung darzustellen, durch das Bild eines Pfauen wol ausgedrukt werden; aber
+                    brauchbarer wird die Allegorie, wenn man eine weibliche Figur dazu wählt, an der
+                    man die Pfauenfedern als ein Abzeichen anbringt. Denn dadurch hat man
+                    Gelegenheit, durch den Ausdruk des Charakters, durch Stellung und Handlung die
+                    Allegorie viel bestimmter und nachdrüklicher zu machen, deswegen haben die
+                    griechischen Künstler so viel allegorische Personen erdacht. Ein sehr schönes
+                    Beyspiel ist das oben erwähnte Bild der Nothwendigkeit aus dem Horaz. <pb n="40"
+                    /> Von der glüklichen Erfindung einzeler Bilder hängt auch die Erfindung ganzer
+                    Vorstellungen ab, sie seyn von der physischen, moralischen oder historischen
+                    Gattung. Diese Vorstellungen müssen nothwendig durch handelnde Personen
+                    angedeutet werden; denn eine aus bloßen Zeichen zusammengesetzte Vorstellung,
+                    nach Art der hieroglyphischen Schrift auf ägyptischen Denkmälern, verdient den
+                    Namen eines allegorischen Gemähldes niemals. Es würde vergeblich seyn, besondere
+                    Regeln zu Erfindung solcher Gemählde geben zu wollen. Inzwischen kann es doch
+                    nüzlich seyn, wenn der Künstler die drey Hauptwege zur Erfindung der Allegorie
+                    fleissig überdenkt, und sich übet durch dieselben zu allegorischen Vorstellungen
+                    zu gelangen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3170">Der erste und leichteste ist
+                    der Weg des Beyspiels; da von der Sache, welche man allgemein vorstellen will,
+                    blos besondere Fälle, als Beyspiele vorgebildet werden, welche, entweder durch
+                    den Ort, oder durch gewiße Nebenumstände, leicht eine allgemeine Bedeutung
+                    bekommen können. Ein alter Mahler oder Bildhauer durfte nur in einem Tempel der
+                    Fortuna, den <hi rend="italic">Dionysius in Corinth</hi>, den <hi rend="italic"
+                        >Tyrtäus an der Spitze eines Heeres</hi>, den <hi rend="italic">Marius</hi>,
+                    wie er sich in einem Sumpf verstekt, <hi rend="italic">Belisarius</hi> der um
+                    Almosen bittet, oder andere, eben so treffende, besondere Fälle großer
+                    Glüksveränderungen, vorstellen; so war die Allegorie schon da. Der Ort allein
+                    verwandelte diese besondere Fälle in allgemeine Vorstellungen über die Macht des
+                    Glüks, dem nichts zu hoch ist, um niedergedrükt; nichts zu niedrig, um erhöhet
+                    zu werden. Eine von den erwähnten Vorstellungen, blos in einem Zimmer gemahlt,
+                    macht noch keine Allegorie aus. Doch würde es einem nachdenkenden Künstler nicht
+                    schweer werden, sie zur Allegorie zu machen. Ein Tempel der Fortuna, irgendwo in
+                    dem Gemählde selbst gut angebracht, auch blos allegorische Verzierungen des
+                    Rahmens, der das Gemählde einfaßt, wären dazu hinlänglich.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3186">Der Weg des Gleichnißes, ist
+                    schon schweerer. Der Künstler muß erst ein gutes Gleichnis erfinden, das seinen
+                    Gedanken wol ausdrüket, hernach aber durch eine andre Erfindung die Deutung
+                    desselben anzeigen. Ein Gemählde, auf welchem zu sehen wäre, wie ein Sturmwind
+                    eine gewaltige Eiche niederreißt, hingegen kleinere schlanke Bäume und Sträucher
+                    blos etwas niederbeuget, könnte als eine bloße Landschaft angesehen werden. Es
+                    würde aber zur Allegorie werden, wenn auf demselben Gemählde Personen so
+                    vorgestellt würden, daß man deutlich merkte, sie wenden die Vorstellung als ein
+                    Gleichnis auf die allgemeine Lehre an, daß den Widerwärtigkeiten eine gemäßigte,
+                    nachgebende Gemüthsart, und nicht ein stolzer widersetzlicher Sinn, entgegen zu
+                    setzen sey. Eine mittelmäßige Erfindungskraft kann durch diesen Weg zu schönen
+                    allegorischen Gemählden kommen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3189">Der dritte Weg, durch bloße
+                    Sinnbilder, ist der schweerste, aber auch, wenn er glüklich betreten wird, der
+                    vollkommenste; indem er am weitesten führet. Wer durch diesen Weg die Gewalt und
+                    die mancherley seltsamen Würkungen des Glüks vorstellen wollte; müßte es durch
+                    lauter erdichtete Bilder thun, neben denen nichts wahres oder eigentliches
+                    stühnde, wie in den beyden vorhergehenden Beyspielen. Daher werden dergleichen
+                    Vorstellungen, <hi rend="italic">reine Allegorien</hi> genennt. Das Glük würde
+                    z. E. als eine Göttin auf einem Thron sitzen. Man würde ihr solche <hi
+                        rend="italic">Attributa</hi> geben, wodurch verschiedene Züge ihrer Macht so
+                    wol, als ihres Eigensinnes angedeutet würden. Ein Zauberstab in der Hand, könnte
+                    die schnelle und wunderbare Würkungen ihrer Macht ausdrüken. Ihren Thron könnte
+                    man schwebend, und von den verschiedenen, in allegorischer Gestallt
+                    erscheinenden Winden getragen, vorstellen, um so wol die Schnelligkeit, als die
+                    Unbeständigkeit ihrer Wendungen auszudrüken. In dem Gesicht und in der Stellung
+                    könnte Wankelmuth, Eigensinn, Frechheit und Unbesonnenheit ausgedrükt werden.
+                    Wollte man die Vorstellung ausführlicher machen, so könnte in verschiedenen
+                    Nebenbildern noch viel angezeiget werden. In dem Gefolge der Göttin könnten
+                    Reichthum und Armuth, Hoheit und Sclaverey, und verschiedene Bilder dieser Art
+                    erscheinen. Vor ihr her könnte die Sicherheit ziehen oder etwas ähnliches, um
+                    anzuzeigen, daß das Glük unerwartet kömmt, und verschiedenes von dieser Art.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3198">An dergleichen allegorische
+                    Vorstellungen aber muß sich kein Künstler wagen, als der sich getrauet in das
+                    Heiligthum der Kunst zu dringen, wo <hi rend="italic">Apelles</hi> und <hi
+                        rend="italic">Raphael</hi> zu allen Geheimnißen derselben sind eingeweyhet
+                    worden. Denn hier gilt fürnehmlich, was<hi rend="italic"> Horaz</hi> von den
+                    Dichtern sagt:</p>
+                <lb/>
+                <pb n="41"/>
+                <p xml:id="zer-1771-d1e3213">–– mediocribus esse poetis</p>
+                <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3217">Non homines, non dii, non
+                    conceffere columnae.</p>
+                <lb/>
+                <p xml:id="zer-1771-d1e3222">Eben deßwegen, weil die reine Allegorie, wenn sie gut
+                    ist, das Höchste der Kunst ausmacht, so wird die schlechte Allegorie zum
+                    verächtlichsten derselben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3225">Der Gebrauch der Allegorie ist
+                    vielfältig. Die Baukunst bedient sich ihrer, um ihren Werken Zeichen ihrer
+                    Bestimmung einzuprägen. So wird sie in den Verzierungen des dorischen Frieses
+                    gebraucht, wo die Widderköpfe und Opferschaalen sich zu Tempeln; Schilder und
+                    Waffen, wie an dem Fries des Berlinischen Zeughauses, zu Kriegsgebäuden;
+                    Wapenschilder, Zepter und Cronen, wie an dem Fries des Berlinischen Schloßes, zu
+                    Pallästen der Monarchen, schiken. Durch dergleichen allegorische Verzierungen,
+                    die an verschiedenen Theilen der Gebäude anzubringen sind, können selbige auch
+                    zugleich einen bestimmten Charakter, und, wenn es erlaubt ist sich so
+                    auszudrüken, ihre eigentliche Physionomie bekommen. In dieser Kunst aber kann
+                    die Allegorie nicht nur in Zierrathen, sondern auch in ganzen Werken angebracht
+                    werden. Statuen und Gemälde, in Tempeln, in Gerichtshöfen und andern
+                    öffentlichen Gebäuden, können mit großem Vortheil angebracht werden, um den
+                    Hauptzwek der Künste zu erreichen.<ptr target="zer-1771-d1e3474" n="40"
+                        xml:id="zer-1771-d1e3227"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3229">Die Alten haben die Allegorie
+                    häuffig zur Bezeichnung ihrer Geräthschaften angebracht; Leuchter, Lampen, alle
+                    Arten der Gefäße, Tische, Stühle, wurden vielfältig mit allegorischen Bildern
+                    ausgeziert. Solche Allegorien haben freylich keinen beträchtlichen Nutzen; sie
+                    dienen inzwischen doch dazu, daß sie auch die gemeinesten Sachen interessant
+                    machen; daß die Vorstellungskraft auch bey den gleichgültigsten Beschäfftigungen
+                    etwas gereizt wird; welches doch auch ein Zwek der schönen Künste ist.<ptr
+                        target="zer-1771-d1e3480" n="41" xml:id="zer-1771-d1e3231"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3233">Inzwischen haben die
+                    hieroglyphischen und allegorischen Verzierungen solcher, zum täglichen Gebrauche
+                    dienender, Sachen den wichtigen Nutzen, daß sie dem Mahler sehr oft in seinen
+                    allegorischen Arbeiten große Dienste thun, die Personen und andre allegorische
+                    Gegenstände zu bezeichnen. Ein Schäferstab auf einem Grabmal kann schon
+                    hinlänglich seyn, die Person anzudeuten, die darunter liegt, und bey Vorstellung
+                    einer Handlung kann oft eine solche Kleinigkeit der ganzen Vorstellung eine
+                    Deutlichkeit geben, die sie sonst nicht haben würde.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3237">Am öftersten kömmt die
+                    Allegorie auf Schaumünzen vor; wiewol sie, seitdem die Schrift erfunden worden,
+                    dort am wenigsten nöthig ist. Denn in den meisten Fällen wird die Sache, die man
+                    sagen will, durch wenig der Münze eingeprägte Buchstaben besser gesagt, als
+                    durch Bilder. Wichtiger ist sie, wenn der Künstler so glüklich ist, eine viel
+                    bedeutende Allegorie auf seine Münze zu bringen, die das, was die Schrift blos
+                    anzeiget, auf eine lebhafte und umständliche Weise ausdrükt. Dergleichen
+                    Vorstellungen aber sind selten.<ptr target="zer-1771-d1e3486" n="42"
+                        xml:id="zer-1771-d1e3239"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3241">Eine ähnliche Bewandtniß hat es
+                    mit dem Gebrauch der Allegorie auf Grabmälern, und auf Ehrenmälern. Blos einige
+                    historische Umstände zu bezeichnen, kann die Schrift vortheilhafter, als ein
+                    Bild seyn. Der auf dem Grabstein des Diogenes eingegrabene Name hätte sich eben
+                    so gewiß darauf erhalten, als das Bild eines Hundes, und hätte gewisser die
+                    Person bezeichnet. Nur eine abergläubische Verehrung der Alten kann dergleichen
+                    Allegorien auf Denkmälern schön finden.<ptr target="zer-1771-d1e3492" n="43"
+                        xml:id="zer-1771-d1e3243"/> Soll sie auf solchen Werken einen Werth haben,
+                    so muß sie vielbedeutend seyn, und mehr sagen, als eine Schrift hätte sagen
+                    können, oder es mit grösserer Kraft sagen. Ein sehr schönes Beyspiel eines
+                    Denkmals, das mehr sagt, als eine Schrift würde gesagt haben, ist das, welches
+                    der Bildhauer <hi rend="italic">Nael</hi> in der Kirche zu Hindelbank, einem
+                    Dorfe unweit Bern in der Schweiz, gesetzt hat.<ptr target="zer-1771-d1e3498"
+                        n="44" xml:id="zer-1771-d1e3248"/> Ueberhaupt können diejenigen
+                    Vorstellungen die kräftigste Bedeutung haben, in denen Figuren von menschlicher
+                    Bildung angebracht sind; weil der Ausdruk des Gesichtes allein ofte mehr sagen
+                    kann, als alle Worte.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3251">Dahin gehören also auch die
+                    Statuen der heidnischen Gottheiten, welche, wie schon gesagt, im Grunde nichts
+                    als Allegorien sind, und die entweder in Tempeln, oder an andern öffentlichen
+                    Orten, als symbolische Vorstellungen zu bestimmtem Endzwek aufgestellt
+                        werden.<ptr target="zer-1771-d1e3504" n="45" xml:id="zer-1771-d1e3253"/></p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3255">Endlich macht auch die Mahlerey
+                    für sich selbst einen vielfältigen Gebrauch von der Allegorie, durch ganz
+                    allegorische Gemählde, oder durch Einmischung der Allegorie in historische
+                    Vorstellungen. Die erstern können einen großen Werth bekommen, wenn sie wichtige
+                    Gegenstände des Geistes oder des Herzens, auf eine höchst lebhafte Art dem Auge
+                    darstellen, um den Eindruk derselben desto <pb n="42"/> stärker zu machen.
+                    Gemählde von dieser Art, die von einigem Werth wären, sind zwar, wie schon
+                    angemerkt worden, sehr selten, und dieser höchst wichtige Theil der Kunst ist
+                    noch zu unvollkommen, und erwartet Künstler von besonders glüklichem Genie, um
+                    sich empor zu heben.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3260">Die Einmischung der Allegorie
+                    in historische Gemählde ist von zweyerley Art. Entweder eine bloße symbolische
+                    Bezeichnung der Personen, der Oerter, der Zeiten, oder eine Einführung
+                    allegorischer Personen unter die historischen. Ueber die erstere Gattung ist
+                    bereits kurz hiebevor gesprochen worden. Wir merken hier noch dieses an, daß es
+                    allemal besser ist, den Mangel guter symbolischer Zeichen lieber durch eine wol
+                    angebrachte Schrift, als durch erzwungene Hieroglyphen zu ersetzen. So haben es
+                        <hi rend="italic">Raphael</hi> und<hi rend="italic"> Poußin</hi> gemacht;
+                    jener in einem Gemählde der farnesischen Gallerie, wo man die Hauptperson, und
+                    folglich den Inhalt des Gemähldes hätte verkennen können, wenn nicht der Mahler
+                    durch Anbringung der Schrift: genus unde latinum; deutlich angezeiget hätte, daß
+                    das Gemählde die Venus mit dem Anchises vorstellt. Eben so vortheilhaft hat der
+                    französische Mahler den eigentlichen Geist eines seiner Gemählde durch diese,
+                    auf ein vorgestelltes Grabmal geschriebene Worte: <hi rend="italic">Auch ich war
+                        in Arcadia</hi>, angezeiget.<ptr target="zer-1771-d1e3510" n="46"
+                        xml:id="zer-1771-d1e3271"/> Die andere Gattung wird von einem feinen
+                        Kunstrichter,<ptr target="zer-1771-d1e3513" n="47" xml:id="zer-1771-d1e3273"
+                    /> als etwas widersinnisches und unnatürliches, gänzlich verworfen. Man kann
+                    seine Gründe an dem angeführten Orte nachlesen. Sie sind so stark, daß man ihm
+                    schwerlich den Beyfall versagen kann. Indessen ist dieses, so wie die
+                    Einmischung der Mythologie in die heutigen Oden,<ptr target="zer-1771-d1e3517"
+                        n="48" xml:id="zer-1771-d1e3276"/> eine Sache des Gefühls, die man denen
+                    lassen kann, die sich daran vergnügen.</p>
+                <p rendition="#zenoPLm4n0" xml:id="zer-1771-d1e3279">Doch scheinet dieses auf der
+                    andern Seite eine gegründete Foderung zu seyn, daß allegorische Personen nicht
+                    sollten Antheil an der Handlung nehmen. Es scheinet, daß das, was oben von dem
+                    Gebrauche der allegorischen Wesen in dem Gedichte ist erinnert worden, auch dem
+                    Mahler zur Regel dienen könnte. Wie nun ein Dichter, der einen schlauen
+                    Liebesstreich beschrieben hat, gar wol hinzu setzen könnte, daß<hi rend="italic"
+                        > Venus</hi> und die Liebesgötter sich darüber gefreuet haben; so könnte
+                    auch ein Mahler, wenn er einen solchen Streich historisch und von bekannten
+                    Personen vorgestellt hätte, wie es scheinet, ohne Anstoß den geistreichen
+                    Einfall dabey anbringen, wodurch <hi rend="italic">Alban</hi> seinem Gemälde von
+                    dem Raub der Proserpina ein großes Leben gegeben hat. Man sieht auf diesem
+                    Gemählde den Pluto mit der entführten Proserpina davon eilen. In der Luft sieht
+                    man einige Liebesgötter, die durch Tanzen und allerhand kindischen Muthwillen
+                    eine große Freude zu erkennen geben. Auf der andern Seite sieht man die Venus,
+                    zu welcher Amor voll Freude hinfliegt, um sie glükwünschend zu küssen.<ptr
+                        target="zer-1771-d1e3523" n="49" xml:id="zer-1771-d1e3287"/> Dieses ist
+                    gewiß eine der artigsten Einmischungen allegorischer Personen in ein
+                    historisches Gemählde, welche wol schwerlich von irgend einem Kenner wird
+                    gemißbilliget werden. Sie kann zum Muster dienen, wie eine so schlüpfrige Sache,
+                    mit vollkommenem Beyfalle könne behandelt werden. Hätte <hi rend="italic"
+                        >Rubens</hi> in der Gallerie von Luxenburg die Einmischung der Allegorie mit
+                    so viel Geist behandelt, als Alban gezeiget hat, so würde <hi rend="italic">dü
+                        Bos</hi> vermuthlich weniger Abneigung gegen diese Gattung der Gemählde
+                    geäußert haben.</p>
+                <div type="notes" xml:id="zer-1771-d1e3297">
+                    <note target="zer-1771-d1e2345" n="1" xml:id="zer-1771-d1e3299">S. <ref
+                            type="plink" target="zer-1771-d1e11377"
+                            n="#/Sulzer-1771/A/Bild (Redende Künste)" xml:id="zer-1771-d1e3301"
+                            >⇾</ref> Bild.</note>
+
+                    <note target="zer-1771-d1e2369" n="2" xml:id="zer-1771-d1e3305">Horat. Od. L. I.
+                        od. 14.</note>
+
+                    <note target="zer-1771-d1e2410" n="3" xml:id="zer-1771-d1e3308">S. <ref
+                            type="plink" target="zer-1771-d1e11377"
+                            n="#/Sulzer-1771/A/Bild (Redende Künste)" xml:id="zer-1771-d1e3310"
+                            >⇾</ref> Bild.</note>
+
+                    <note target="zer-1771-d1e2428" n="4" xml:id="zer-1771-d1e3314">
+                        <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3316">Drinck deep or taste
+                            not the pierian spring</p>
+                        <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3319">There fnallow draughts
+                            intoxicates the brain</p>
+                        <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3322">And drincking largely
+                            sober us again.</p>
+                        <p rendition="#zenoPR" xml:id="zer-1771-d1e3325">Essay on Criticism. v.
+                            218.</p>
+                    </note>
+
+                    <note target="zer-1771-d1e2438" n="5" xml:id="zer-1771-d1e3328">Inst. Or. VIII.
+                        6; 50.</note>
+
+                    <note target="zer-1771-d1e2450" n="6" xml:id="zer-1771-d1e3332">Bodmers Jacob im
+                        IV. Gesang.</note>
+
+                    <note target="zer-1771-d1e2457" n="7" xml:id="zer-1771-d1e3335">S. <ref
+                            type="plink" target="zer-1771-d1e30770" n="#/Sulzer-1771/A/Gleichnis"
+                            xml:id="zer-1771-d1e3337">⇾</ref> Gleichnis.</note>
+
+                    <note target="zer-1771-d1e2482" n="8" xml:id="zer-1771-d1e3341">T. Liv. Hist.
+                        II. 32.</note>
+
+                    <note target="zer-1771-d1e2514" n="9" xml:id="zer-1771-d1e3344">Od. L. II.
+                        2.</note>
+
+                    <note target="zer-1771-d1e2537" n="10" xml:id="zer-1771-d1e3347">Od. L. II.
+                        10.</note>
+
+                    <note target="zer-1771-d1e2555" n="11" xml:id="zer-1771-d1e3350">Nachtgedanken
+                        1. Nacht. <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3352">Mine dy'd
+                            with thee Philander! thy last figh</p>
+                        <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3355">Dissolv'd the charm;
+                            the disenchanted Earth</p>
+                        <p rendition="#zenoPLm4n4" xml:id="zer-1771-d1e3358">Lost all her
+                            Lustre.</p></note>
+
+                    <note target="zer-1771-d1e2557" n="12" xml:id="zer-1771-d1e3362">S. <ref
+                            type="plink" target="zer-1771-d1e1066" n="#/Sulzer-1771/A/Aehnlichkeit"
+                            xml:id="zer-1771-d1e3364">⇾</ref> Aehnlichkeit.</note>
+
+                    <note target="zer-1771-d1e2571" n="13" xml:id="zer-1771-d1e3368">Hor. Od. L. II.
+                        10.</note>
+
+                    <note target="zer-1771-d1e2592" n="14" xml:id="zer-1771-d1e3371">Noachide VIII.
+                        Gesang.</note>
+
+                    <note target="zer-1771-d1e2607" n="15" xml:id="zer-1771-d1e3374">Herr Meyer von
+                        Knonan.</note>
+
+                    <note target="zer-1771-d1e2615" n="16" xml:id="zer-1771-d1e3377">S. <ref
+                            type="plink" target="zer-1771-d1e1325" n="#/Sulzer-1771/A/Aeschylus"
+                            xml:id="zer-1771-d1e3379">⇾</ref> Aeschylus.</note>
+
+                    <note target="zer-1771-d1e2649" n="17" xml:id="zer-1771-d1e3383">Hor. Od. L. I.
+                        35.</note>
+
+                    <note target="zer-1771-d1e2702" n="18" xml:id="zer-1771-d1e3387">Il. IV. vs.
+                        410.</note>
+
+                    <note target="zer-1771-d1e2734" n="19" xml:id="zer-1771-d1e3390">S. <ref
+                            type="plink" target="zer-1771-d1e9895" n="#/Sulzer-1771/A/Belebung"
+                            xml:id="zer-1771-d1e3392">⇾</ref> Belebung.</note>
+
+                    <note target="zer-1771-d1e2748" n="20" xml:id="zer-1771-d1e3396">Prisco ilio
+                        dicendi et horrido modo Liv. L. II. c. 32.</note>
+
+                    <note target="zer-1771-d1e2766" n="21" xml:id="zer-1771-d1e3399">S. Breitingers
+                        erit. Dichtkunst 1. Theil 6. Abschn.</note>
+
+                    <note target="zer-1771-d1e2795" n="22" xml:id="zer-1771-d1e3402">Noachide VIII.
+                        Ges.</note>
+
+                    <note target="zer-1771-d1e2826" n="23" xml:id="zer-1771-d1e3405">Das. IX.
+                        Ges.</note>
+
+                    <note target="zer-1771-d1e2856" n="24" xml:id="zer-1771-d1e3409">S. <ref
+                            type="plink" target="zer-1771-d1e46451" n="#/Sulzer-1771/A/Mythologie"
+                            xml:id="zer-1771-d1e3411">⇾</ref> Mythologie.</note>
+
+                    <note target="zer-1771-d1e2882" n="25" xml:id="zer-1771-d1e3415">Richardson.
+                        Description des tableaux Tom. III. Part. I. p. 50.</note>
+
+                    <note target="zer-1771-d1e2929" n="26" xml:id="zer-1771-d1e3418">S. Winkelm. Anm
+                        über die Baukunst der Alten.</note>
+
+                    <note target="zer-1771-d1e2931" n="27" xml:id="zer-1771-d1e3421">Winkelm. Alleg.
+                        p. 92.</note>
+
+                    <note target="zer-1771-d1e2947" n="28" xml:id="zer-1771-d1e3424">Pausanias. L.
+                        IV.</note>
+
+                    <note target="zer-1771-d1e2949" n="29" xml:id="zer-1771-d1e3427">Mariette.
+                        Pierres gravées n. 17.</note>
+
+                    <note target="zer-1771-d1e2956" n="30" xml:id="zer-1771-d1e3431">S. Lucians
+                        Beschreibung davon.</note>
+
+                    <note target="zer-1771-d1e2961" n="31" xml:id="zer-1771-d1e3434">In dem
+                        Lustspiel der <hi rend="italic">Friede</hi>.</note>
+
+                    <note target="zer-1771-d1e2969" n="32" xml:id="zer-1771-d1e3440">S. <ref
+                            type="plink" target="zer-1771-d1e63858" n="#/Sulzer-1771/A/Statue"
+                            xml:id="zer-1771-d1e3442">⇾</ref> Statuen.</note>
+
+                    <note target="zer-1771-d1e2998" n="33" xml:id="zer-1771-d1e3446">Euphranoris
+                        Alexander Paris est, in quo laudatur, quod omnia simul intelligantur, iudex
+                        Dearum, Amator Helenae et tamen Achillis interfector. Plin. LXXXIV.
+                        8.</note>
+
+                    <note target="zer-1771-d1e3004" n="34" xml:id="zer-1771-d1e3449">S. <ref
+                            type="plink" target="zer-1771-d1e5535" n="#/Sulzer-1771/A/Antik"
+                            xml:id="zer-1771-d1e3451">⇾</ref> Antik.</note>
+
+                    <note target="zer-1771-d1e3066" n="35" xml:id="zer-1771-d1e3455">So klein dieser
+                        Ort ist, so bekannt muß er dadurch seyn, daß einer der größten jetztlebenden
+                        Monarchen sich daselbst zu den großen Thaten vorbereitet hat, die hernach
+                        vor unsern Augen ausgeführt worden sind.</note>
+
+                    <note target="zer-1771-d1e3074" n="36" xml:id="zer-1771-d1e3459">Mariette. n.
+                        14.</note>
+
+                    <note target="zer-1771-d1e3107" n="37" xml:id="zer-1771-d1e3462">Tac. Annal. II.
+                        42.</note>
+
+                    <note target="zer-1771-d1e3142" n="38" xml:id="zer-1771-d1e3465">S. Winkelmann
+                        von der Allegorie S. 99. wo noch viel dergleichen mit dem Namen der
+                        Allegorie beehrte Wortspiele vorkommen.</note>
+
+                    <note target="zer-1771-d1e3147" n="39" xml:id="zer-1771-d1e3468">S. <ref
+                            type="plink" target="zer-1771-d1e11637"
+                            n="#/Sulzer-1771/A/Bild (Zeichnende Künste)" xml:id="zer-1771-d1e3470"
+                            >⇾</ref> Bild.</note>
+
+                    <note target="zer-1771-d1e3227" n="40" xml:id="zer-1771-d1e3474">S. <ref
+                            type="plink" target="zer-1771-d1e37560"
+                            n="#/Sulzer-1771/A/Künste; Schöne Künste" xml:id="zer-1771-d1e3476"
+                            >⇾</ref> Künste.</note>
+
+                    <note target="zer-1771-d1e3231" n="41" xml:id="zer-1771-d1e3480"><ref
+                            type="plink" target="zer-1771-d1e37560"
+                            n="#/Sulzer-1771/A/Künste; Schöne Künste" xml:id="zer-1771-d1e3481"
+                            >⇾</ref> Ebendas.</note>
+
+                    <note target="zer-1771-d1e3239" n="42" xml:id="zer-1771-d1e3486">S. <ref
+                            type="plink" target="zer-1771-d1e58883" n="#/Sulzer-1771/A/Schaumünz"
+                            xml:id="zer-1771-d1e3488">⇾</ref> Schaumünze.</note>
+
+                    <note target="zer-1771-d1e3243" n="43" xml:id="zer-1771-d1e3492">S. Winkelmann
+                        von der Alleg. V. Cap. Beyspiele von allegorischen Vorstellungen auf
+                        Grabmälern findet man häufig beym <hi rend="italic">Pausanias</hi>.</note>
+
+                    <note target="zer-1771-d1e3248" n="44" xml:id="zer-1771-d1e3498">S. <ref
+                            type="plink" target="zer-1771-d1e15866" n="#/Sulzer-1771/A/Denkmal"
+                            xml:id="zer-1771-d1e3500">⇾</ref> Denkmal.</note>
+
+                    <note target="zer-1771-d1e3253" n="45" xml:id="zer-1771-d1e3504">S. <ref
+                            type="plink" target="zer-1771-d1e63858" n="#/Sulzer-1771/A/Statue"
+                            xml:id="zer-1771-d1e3506">⇾</ref> Statuen.</note>
+
+                    <note target="zer-1771-d1e3271" n="46" xml:id="zer-1771-d1e3510">S. du Bos Refl.
+                        sur la poesie et lapeint. T. I. sect. 6.</note>
+
+                    <note target="zer-1771-d1e3273" n="47" xml:id="zer-1771-d1e3513">Du Bos.</note>
+
+                    <note target="zer-1771-d1e3276" n="48" xml:id="zer-1771-d1e3517">S. <ref
+                            type="plink" target="zer-1771-d1e46451" n="#/Sulzer-1771/A/Mythologie"
+                            xml:id="zer-1771-d1e3519">⇾</ref> Mythologie.</note>
+
+                    <note target="zer-1771-d1e3287" n="49" xml:id="zer-1771-d1e3523">S. <ref
+                            type="plink" target="zer-1771-d1e29177" n="#/Sulzer-1771/A/Gemählde"
+                            xml:id="zer-1771-d1e3525">⇾</ref> Gemählde. der königl. Gallerie zu
+                        Dresden.</note>
+                </div>
+            </div>
+
+        </body>
+    </text>
+</TEI>
