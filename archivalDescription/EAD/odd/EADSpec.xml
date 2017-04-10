@@ -18550,7 +18550,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <datatype>
                                     <rng:data type="data.enumerated"/>
                                 </datatype>
-                                <valList>
+                                <valList type="closed">
                                     <valItem ident="AF"/>
                                     <valItem ident="AX"/>
                                     <valItem ident="AL"/>
