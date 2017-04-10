@@ -18548,7 +18548,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <desc>A unique code for the country in which the materials being
                                     described are held.</desc>
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <dataRef key="data.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="AF"/>
