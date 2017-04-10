@@ -3,7 +3,9 @@
 <!--<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "ead.dtd">
 --><!--Template updated 20080408 by J. Allison-Bunnell-->
 <!--Remember to name and save documents using the OCLC code + local filename. Documents that are revised/updated after initial submission much be submitted with precisely the same filename.-->
-<?xml-model href="../../../Documents/Projets/Cendari/EADinODD/EAD-schema.rnc" type="application/relax-ng-compact-syntax"?>
+<!--<?xml-model href="../../../Documents/Projets/Cendari/EADinODD/EAD-schema.rnc" type="application/relax-ng-compact-syntax"?>
+-->
+<?xml-model href="../odd/out/EADSpec.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <ead xmlns="urn:isbn:1-931666-22-9">
 	<!--The following section is header information that describes the finding aid-->
 	<eadheader langencoding="iso639-2b" scriptencoding="iso15924" relatedencoding="dc"
