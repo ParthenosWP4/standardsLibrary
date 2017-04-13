@@ -10199,7 +10199,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 <datatype>
                                     <dataRef key="data.enumerated"/>
                                 </datatype>
-                                <valList xmlns="http://www.tei-c.org/ns/1.0">
+                                <valList type="closed">
                                     <valItem ident="aar"/>
                                     <valItem ident="abk"/>
                                     <valItem ident="ace"/>
