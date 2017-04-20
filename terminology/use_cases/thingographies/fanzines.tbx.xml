@@ -1,0 +1,5036 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Thingography - fanzines</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>...</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>...</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <termEntry xml:id="S0">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>'68 Comeback</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S1">
+          <descrip type="subjectField" level="1">Titles</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>(I Can) Only Give You Everything</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S2">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>08191994</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>19 August</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S3">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>0902199x</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>9/2</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S4">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>1,4,5's</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>1,4,5s</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S5">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>12061995</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>December 6</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S6">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>1402 University Columbia, MO 65201</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S7">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>1973</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>'73</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S8">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>1994</tei:term>
+              <admin type="source">Geek Weekly #1, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>'94</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S9">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>1994-09-09</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>9/9/94</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S10">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>19950622</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>Thursday, 22 June 1995</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S11">
+          <descrip type="subjectField" level="1">Dates</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>19950623</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>Friday, 23 June 1995</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S12">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>2715-a Hemphill Park Austin, TX 78705</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>2715-a Hemphill Pk Austin, TX 78705</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>2715-a Hemphill PK. Austin, TX 78705</tei:term>
+              <admin type="source">Geek Weekly #3, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S13">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>3rd World Underground</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S14">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>424 S. Maple #3N Oak Park, IL 60302</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S15">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>502 Brentwood</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S16">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>7 Year Bitch</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S17">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <descrip type="subjectField" level="2">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>7-11</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S18">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>9th St Deli</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S19">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>AMF</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S20">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Abba</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.20</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S21">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Admiral Benbow Inn</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+            <tig>
+              <tei:term>The Admiral</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S22">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Aerosmith</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S23">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ain't Gotta Choose</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S24">
+          <descrip type="subjectField" level="1">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ajax</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S25">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <descrip type="subjectField" level="2">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ajax Records</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S26">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Al Green's Full Tabernacle Church</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S27">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Alcohol Drugs And Driving</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.12</admin>
+            </tig>
+            <tig>
+              <tei:term>Ad&amp;amp;d</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S28">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Alex Chilton</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S29">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Amped</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S30">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Amtrak</tei:term>
+              <admin type="source">Geek Weekly #1, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S31">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Amvets Thrift Store</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S32">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Andrea</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S33">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Andy Biscuit</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+            <tig>
+              <tei:term>Andy</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S34">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Anne</tei:term>
+              <admin type="source">Geek Weekly #4, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S35">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Antichrist</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S36">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Antone's</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S37">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Apathy Trend</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.12</admin>
+            </tig>
+            <tig>
+              <tei:term>A-trend</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S38">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Arizona</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S39">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Austin</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Austin, TX</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>This Town</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S40">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Austinites</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S41">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bangkok Gardens</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S42">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bar/none Records</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S43">
+          <descrip type="subjectField" level="1">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Barrister</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S44">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Barrister's</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S45">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Beale Street</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S46">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Beast Of Burden</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S47">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Beggar's Banquet</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S48">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bellingham, WA</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S49">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ben Is Dead</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S50">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Benjamin Hecker</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Brother</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Ben</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Ben Hecker</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S51">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Best Western</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S52">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Big Black</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S53">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Big Drag</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S54">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Big Horny Hustler</tei:term>
+              <admin type="source">Geek Weekly #3, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S55">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <descrip type="subjectField" level="2">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bill Jeffery</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S56">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bill Rainey</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S57">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <descrip type="subjectField" level="2">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Blackout Records</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Blackout</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S58">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bloodshot Records</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S59">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Blue Note</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S60">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Breeders</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S61">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brent Grulke</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S62">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brentwood Lounge</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S63">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <descrip type="subjectField" level="2">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brentwood Tavern</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Shed</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S64">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brian</tei:term>
+              <admin type="source">Geek Weekly #4, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S65">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brian Berger</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S66">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brian Hindman</tei:term>
+              <admin type="source">Geek Weekly #4, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S67">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bride Of Pinbot</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S68">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brien Hindman</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S69">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Britt Daniel</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S70">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brock Satan</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Brock</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S71">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brock Satans</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Brock</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S72">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brother Juniper</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S73">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Brother Juniper's College Inn</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S74">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Buddy Holly</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S75">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Budweiser</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S76">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Bust (magazine)</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Bust</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S77">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Butthole Surfers</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S78">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>CJ Stritzel</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>CJ</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S79">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Captain Beefheart</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+            <tig>
+              <tei:term>Beefheart</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S80">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Carl Perkins</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S81">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Carl Wedoff</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Carl</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S82">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Carole Feray</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>My Mommie</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Mom</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>My Mom</tei:term>
+              <admin type="source">Geek Weekly #1, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S83">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Carters</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S84">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Center For Southern Folklore</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S85">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chepo Pena</tei:term>
+              <admin type="source">"Geek Weekly #1, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Cheppo</tei:term>
+              <admin type="source">"Geek Weekly #1, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Chepo</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S86">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Cherry Bomb</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S87">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Cherry Smash Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+            <tig>
+              <tei:term>Cherry Smash</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S88">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chicago</tei:term>
+              <admin type="source">Geek Weekly #1, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>Chi-town</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Chicago, IL</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S89">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chicago IL</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S90">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chlorine</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S91">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chris Hamer</tei:term>
+              <admin type="source">Geek Weekly #4, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S92">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chuck</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S93">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Chuck Death</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S94">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Colin Escott</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S95">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Columbia Billiards Center</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S96">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Columbia, MO</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>Columbia, Missouri</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>Columbia</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Missouri</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Columbia Missouri</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S97">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Titles</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Cometbus</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S98">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Cowslingers</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S99">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Craig Koon</tei:term>
+              <admin type="source">Geek Weekly #3, p.22</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S100">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Crimson &amp; Clover</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>Crimson &amp;amp; Clover</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S101">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Cryin' Out Louds</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>Cols</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>The Crying Out Louds</tei:term>
+              <admin type="source">Geek Weekly #3, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>The Cols</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S102">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Cyclone</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S103">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dan Ball</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S104">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dana Barclay</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>Dana</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S105">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dark Twist (record Label)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Dark Twist</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S106">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dave</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>Dave Shouse</tei:term>
+              <admin type="source">Geek Weekly #4, p.23</admin>
+            </tig>
+            <tig>
+              <tei:term>Dave Dunlap</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S107">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dave Jungen</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S108">
+          <descrip type="subjectField" level="1">People</descrip>
+          <descrip type="subjectField" level="2">Writers</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dave Nickerson</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+            <tig>
+              <tei:term>Nickerson</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S109">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>David Dunlap</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S110">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>David Gedge</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S111">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>David Jungen</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S112">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Death Valley</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S113">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Deep Blues</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S114">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Denton</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S115">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dig It (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Dig It</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S116">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dildozer</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S117">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dixie Fried</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S118">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dixie Friend Backalley Brawl</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S119">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dodge Dart</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S120">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Dolly Parton</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S121">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Drew Barrymore</tei:term>
+              <admin type="source">Geek Weekly #3, p.31</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S122">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>ESP (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>ESP</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S123">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>EV Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S124">
+          <descrip type="subjectField" level="1">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Electric Lounge</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S125">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ellen's Soul Food</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S126">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Elmira, NY</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S127">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Elvis</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+            <tig>
+              <tei:term>Elvis Presley</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S128">
+          <descrip type="subjectField" level="1">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Emo's</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S129">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Emo's Austin</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Emo’s</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S130">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ennio Morricone</tei:term>
+              <admin type="source">Geek Weekly #4, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S131">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Eric Oblivian</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S132">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Estrus Records</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S133">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fag Rag</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S134">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fairfax Station, VA</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S135">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fakebook</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S136">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fast, Fucked &amp; Furious</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Fast, Fucked &amp;amp; Furious</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S137">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fastbacks</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S138">
+          <descrip type="subjectField" level="1">Fictional Characters</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Father Guido Sarducci</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Guido Sarducci</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S139">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fluffy Kitty</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+            <tig>
+              <tei:term>FK</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S140">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Flying Saucer Attack</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S141">
+          <descrip type="subjectField" level="1">Titles</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>For Lovers Only</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S142">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Formosa</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S143">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Four Mile Circus</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S144">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Frank Frost</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S145">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Frank Zappa</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+            <tig>
+              <tei:term>Zappa</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S146">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fresno, California</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S147">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fuckemos</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S148">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fun Date</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S149">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Furr's Cafeteria</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S150">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Furry Things</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S151">
+          <descrip type="subjectField" level="1">Organizations</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Fusebox</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S152">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>GW</tei:term>
+              <admin type="source">Geek Weekly #4, p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Geek Weekly</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S153">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Geek Weekly Fanzine</tei:term>
+              <admin type="source">Geek Weekly #3, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Geek Weekly</tei:term>
+              <admin type="source">Geek Weekly #3, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S154">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Gerard Cosloy</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S155">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Get Off My Back</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S156">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Gibson Brothers</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S157">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Gotta Let Me Go</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S158">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Graceland</tei:term>
+              <admin type="source">Geek Weekly #4, p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S159">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Grand Royale (magazine)</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Grand Royale</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S160">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <descrip type="subjectField" level="2">Organizations</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Grateful Dead</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S161">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Green's Lounge</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S162">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Greenella</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S163">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Greg Oblivian</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+            <tig>
+              <tei:term>Greg Oblivion</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S164">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Greyhound Bus Station In Austin</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Bus Station</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S165">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Grifters</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>The Grifters</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S166">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Guitar Wolf</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S167">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Haji (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Haji</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S168">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hamer Guitar</tei:term>
+              <admin type="source">Geek Weekly #4, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S169">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hampton Inn</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S170">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hangman Lager</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S171">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hash Browns'n'biscuits</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S172">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hate Bombs</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S173">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Heath Heemsbergen</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>Heath</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S174">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Heath Satan</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Heath</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S175">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Heath Satans</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Heath</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S176">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>High Society</tei:term>
+              <admin type="source">Geek Weekly #3, p.31</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S177">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hoboken, NJ</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S178">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <descrip type="subjectField" level="2">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hole In The Wall</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S179">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Holiday Inn</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S180">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Holly Springs, MS</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S181">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hollywood Casino</tei:term>
+              <admin type="source">Geek Weekly #6, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S182">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hormones</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+            <tig>
+              <tei:term>To_be_deleted:the Hormones</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>The Hormones</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S183">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Houston, TX</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Houston</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S184">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hugh</tei:term>
+              <admin type="source">Geek Weekly #4, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S185">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hunter Satan</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Hunter</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S186">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Hunter Satans</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Hunter</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S187">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>I Had</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S188">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>I Love Rock'n'roll</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S189">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>I&amp;#x27;m A Lonesome Fugitive</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+            <tig>
+              <tei:term>I'm A Lonesome Fugitive</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S190">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>I'm Possessed</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S191">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ih-35</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>I-35</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S192">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Imo's</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S193">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Inhalants</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>The Inhalants</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S194">
+          <descrip type="subjectField" level="1">Organizations</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>International Buckaroo Club</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S195">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Is Your Dad Gay?</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S196">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jack Yarber</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S197">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jackie Belvin</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Jackie</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Jackie Belvin Schell Hartle</tei:term>
+              <admin type="source">Geek Weekly #4, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S198">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jasmine Jopling</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S199">
+          <descrip type="subjectField" level="1">People</descrip>
+          <descrip type="subjectField" level="2">Writers</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jason Trent</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Oswald Caligula III</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S200">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Javelin Boot</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>The Boot</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S201">
+          <descrip type="subjectField" level="1">People</descrip>
+          <descrip type="subjectField" level="2">Writers</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jeff Breeze</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Breeze</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S202">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jeff Evans</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+            <tig>
+              <tei:term>Jeff's</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S203">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jeff Koyen</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S204">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jennifer Hecker</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.18</admin>
+            </tig>
+            <tig>
+              <tei:term>ME</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+            <tig>
+              <tei:term>Jennifer</tei:term>
+              <admin type="source">Geek Weekly #3, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S205">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jennifer Lasuprema</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Jennifer</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Jennifer Lasuprema Hecker</tei:term>
+              <admin type="source">Geek Weekly #3, p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Jennifer La</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S206">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jennifer Mcclure</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Jennifer</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Now-roommate</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S207">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jerry Garcia</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Jerry</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S208">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jerry Lee Lewis</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S209">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jesus Christ Superfly</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S210">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Jo Walston</tei:term>
+              <admin type="source">Geek Weekly #3, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S211">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Joan Jett</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S212">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>John Michael Mccarthy</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>Mike Mccarthy</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S213">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>John Stone</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S214">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>John Zorn</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S215">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Johnny Cash</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S216">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Junior Kimbrough</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Kimbrough</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S217">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Justin</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S218">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>K-tel</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S219">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Keg Fly</tei:term>
+              <admin type="source">Geek Weekly #4, p.60</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S220">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ken's Donuts</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+            <tig>
+              <tei:term>Ken's</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S221">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Kids Meal</tei:term>
+              <admin type="source">Geek Weekly #3, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S222">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Kreature Comforts Lowlife Guide To Memphis</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S223">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Kurt Cobain</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S224">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Lake Michigan</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S225">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <descrip type="subjectField" level="2">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Liberty Lunch</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S226">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Little Deputy Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S227">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Live</tei:term>
+              <admin type="source">Geek Weekly #4, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S228">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Lord High Fixers</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S229">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Loretta Switt</tei:term>
+              <admin type="source">Geek Weekly #4, p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S230">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Los Angeles, CA</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S231">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Lou Barlow</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S232">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Louis Farrakhan</tei:term>
+              <admin type="source">Geek Weekly #4, p.61</admin>
+            </tig>
+            <tig>
+              <tei:term>Farrakhan</tei:term>
+              <admin type="source">Geek Weekly #4, p.61</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S233">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Louisiana</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S234">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Lowell, MA</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S235">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Man...or Astroman?</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>M...oa?</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S236">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Margaret</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S237">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Martin Hawkins</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S238">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Marvin Hecker</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+            <tig>
+              <tei:term>My Daddy</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+            <tig>
+              <tei:term>Dad</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S239">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Massage Parlor</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S240">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Matt Ship</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S241">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Memorial Union</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S242">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Memphis</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+            <tig>
+              <tei:term>Bluff City</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+            <tig>
+              <tei:term>Memphis, TN</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>Memphis, Tennessee</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S243">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Memphis Goons</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S244">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Mexico</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S245">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Michael Corcoran</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S246">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Michael Jackson</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S247">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Mick Jagger</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>Mick</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S248">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Mike Tole</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S249">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Mike Tyson</tei:term>
+              <admin type="source">Geek Weekly #4, p.61</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S250">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Minneapolis, MN</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Minnesota</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S251">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Miss Universe</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S252">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Motards</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>The Motards</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S253">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Motel 6</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S254">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Music Box Theatre</tei:term>
+              <admin type="source">Geek Weekly #4, p.23</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S255">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Mystery Train</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S256">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nashville, TN</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S257">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nathaniel Shelton</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Nat</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S258">
+          <descrip type="subjectField" level="1">Organizations</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>National Rifle Association</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>NRA</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S259">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Neat Junk News</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S260">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Needle Express</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S261">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Neely's BBQ</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S262">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nelson Mandela</tei:term>
+              <admin type="source">Geek Weekly #4, p.61</admin>
+            </tig>
+            <tig>
+              <tei:term>Mandela</tei:term>
+              <admin type="source">Geek Weekly #4, p.61</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S263">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>New Bomb Turks</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S264">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>New York</tei:term>
+              <admin type="source">Geek Weekly #4, p.41</admin>
+            </tig>
+            <tig>
+              <tei:term>New York, NY</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>New York City, NY</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Manhattan</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S265">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>New York City</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S266">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nirvana</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S267">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Northerns</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S268">
+          <descrip type="subjectField" level="1">Titles</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nothing Ever Changes</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S269">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nuclear Escalation (card Game)</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Nucler Escalation</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S270">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nuclear Proliferation (card Game)</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Nuclear Proliferation</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S271">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Nuclear War (card Game)</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Nuclear WAR</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+            <tig>
+              <tei:term>Nuclear War</tei:term>
+              <admin type="source">Geek Weekly #1, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S272">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>OK Cola</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S273">
+          <descrip type="subjectField" level="1">Titles</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Objet Dart</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S274">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Oblivians</tei:term>
+              <admin type="source">Geek Weekly #4, p.16</admin>
+            </tig>
+            <tig>
+              <tei:term>The Oblivians</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S275">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ode To My Tye Dye</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S276">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Off My Back</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S277">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Offspring</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S278">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Oklahoma City</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S279">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Oklahoma City, OK</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S280">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Othar Turner</tei:term>
+              <admin type="source">Geek Weekly #6, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S281">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Othar Turner's Fife And Drum Band</tei:term>
+              <admin type="source">Geek Weekly #6, p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Fife And Drum Band</tei:term>
+              <admin type="source">Geek Weekly #6, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S282">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>P&amp;H Cafe</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>P&amp;amp;h Cafe</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>P&amp;amp;h</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S283">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Palace Brothers</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S284">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Panther Burns</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S285">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Parade</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S286">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Paul</tei:term>
+              <admin type="source">Geek Weekly #4, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S287">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Paul Lukas</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S288">
+          <descrip type="subjectField" level="1">Albums/Records</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Paul&amp;#x27;s Boutique</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Paul's Boutique</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S289">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pavement</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S290">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pearl Brewery</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S291">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Peek-a-boo</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>PAB</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>Peek-a-boo Records</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S292">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Peek-a-boo (zine)</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+            <tig>
+              <tei:term>Peek-a-fuckin'-boo</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S293">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pepsi</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S294">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pete Droge</tei:term>
+              <admin type="source">Geek Weekly #4, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S295">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Peter Fonda</tei:term>
+              <admin type="source">Geek Weekly #4, p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S296">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Peter Guralnick</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S297">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Peyote Stomp (record)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Peyote Stomp</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S298">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Phantom Surfers</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S299">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pink Slip Daddy</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S300">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Playboy</tei:term>
+              <admin type="source">Geek Weekly #3, p.31</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S301">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Popllama Products</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S302">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pork</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S303">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Portland, OR</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S304">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pravda Records</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S305">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Princess Diana</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Princess Di</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S306">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Product 19</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S307">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pulse! Magazine</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>Pulse!</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S308">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Punk House</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+            <tig>
+              <tei:term>Todd-n-brock's</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>T&amp;amp;b's</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S309">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Pure Joy</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S310">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Queen Of The Table Waters</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S311">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Quentin Tarantino</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S312">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Railroad Jerk</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S313">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rancid Hell Spawn</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S314">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Reed</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S315">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Resort Theory Recording Conglomerate</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S316">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Return To Cinder</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S317">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Revelators</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S318">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Richard Nixon</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.20</admin>
+            </tig>
+            <tig>
+              <tei:term>Nixon</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.20</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S319">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <descrip type="subjectField" level="2">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Riders In The Sky</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Riders In The SKY</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S320">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rise</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S321">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rise Records</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S322">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Robert "bilbo" Walker</tei:term>
+              <admin type="source">Geek Weekly #6, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S323">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rockville, MD</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S324">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rolling Stones</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S325">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rolling Stones Mastercard</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S326">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ron Williams</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Ron</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S327">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ross Johnson</tei:term>
+              <admin type="source">Geek Weekly #4, p.15</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S328">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Royal Trux</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S329">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Rrrecords</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S330">
+          <descrip type="subjectField" level="1">Songs</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Run Motherfucker</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S331">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Russian Cat Circus</tei:term>
+              <admin type="source">Geek Weekly #9, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S332">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ruth</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S333">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Ryan Mcdaniel</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+            <tig>
+              <tei:term>Ryan</tei:term>
+              <admin type="source">Geek Weekly #3, p.20</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S334">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sam Carr</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S335">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Samuel Smith's</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>Sam Smith</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S336">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>San Antonio, TX</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>San Antonio</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>SA</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S337">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>San Francisco</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S338">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>San Marcos, TX</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>San Marcos</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S339">
+          <descrip type="subjectField" level="1">Fictional Characters</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sassy Velour</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Sassy</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S340">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Satan</tei:term>
+              <admin type="source">Geek Weekly #3, p.22</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S341">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Satans</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>The Satans</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S342">
+          <descrip type="subjectField" level="1">Organizations</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Satans Fan Club</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S343">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Schwab's Dry Goods</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S344">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Scott</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Scott Taylor</tei:term>
+              <admin type="source">Geek Weekly #4, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S345">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Scott Bomar</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S346">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Screamin' Jay Hawkins</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Screemin' Jay Hawkins</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Screemin' Jay</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S347">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sean Vylent</tei:term>
+              <admin type="source">Geek Weekly #1, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Sean</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S348">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Seattle, WA</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S349">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sebadoh</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S350">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sell Out Young</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S351">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Shakespeare's</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S352">
+          <descrip type="subjectField" level="1">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Shangri-la Records</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S353">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Shangri-la Shindig</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S354">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sherman Willmott</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>Sherman</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S355">
+          <descrip type="subjectField" level="1">Movies/Films</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Shine On Sweet Starlet</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S356">
+          <descrip type="subjectField" level="1">Things</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Shiner Bock</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S357">
+          <descrip type="subjectField" level="1">Albums/Records</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Slanted And Enchanted</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>S&amp;amp;e</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S358">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sleep With You (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Sleep With You</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S359">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Slint</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S360">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Slugger (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Slugger</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.11</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S361">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Soda Pop</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S362">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sonic Youth</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S363">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sound Exchange</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S364">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <descrip type="subjectField" level="2">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sound Exchange (record Store)</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Sound Ex</tei:term>
+              <admin type="source">Geek Weekly #1, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S365">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Southern Culture On The Skids</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S366">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Southport</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S367">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Space Girls (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Space Girls</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S368">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Spindly Man</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S369">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Spoon</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S370">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Stanley Gallimore</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>Stan</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S371">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Starkweathers</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S372">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Stax Records</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>Stax</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S373">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Stephen Pipkin</tei:term>
+              <admin type="source">Geek Weekly #3, p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Steve</tei:term>
+              <admin type="source">Geek Weekly #3, p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Steve Deconstructionalist</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S374">
+          <descrip type="subjectField" level="1">People</descrip>
+          <descrip type="subjectField" level="2">Writers</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Steve</tei:term>
+              <admin type="source">Geek Weekly #4, p.5</admin>
+            </tig>
+            <tig>
+              <tei:term>Stephen Pipkin</tei:term>
+              <admin type="source">Geek Weekly #3, p.11</admin>
+            </tig>
+            <tig>
+              <tei:term>Steve Deconstructionalist</tei:term>
+              <admin type="source">Geek Weekly #4, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S375">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Steve Decon</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S376">
+          <descrip type="subjectField" level="1">Actors/Actresses</descrip>
+          <descrip type="subjectField" level="2">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Steve Martin</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S377">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Stretford</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S378">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Stupid Girl</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S379">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sun Records</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+            <tig>
+              <tei:term>Sun</tei:term>
+              <admin type="source">Geek Weekly #6, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S380">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sun Studios</tei:term>
+              <admin type="source">Geek Weekly #4, p.18</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S381">
+          <descrip type="subjectField" level="1">People</descrip>
+          <descrip type="subjectField" level="2">Writers</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Susan</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>Susan Shepard</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S382">
+          <descrip type="subjectField" level="1">Titles</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sympathy For The Devil</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S383">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Sympathy For The Record Industry</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Sympathy...</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S384">
+          <descrip type="subjectField" level="1">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Taco Land</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S385">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <descrip type="subjectField" level="2">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tacoland</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S386">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Teen Titans</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S387">
+          <descrip type="subjectField" level="1">Movies/Films</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Teenage Tupelo</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S388">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Teengenerate</tei:term>
+              <admin type="source">Geek Weekly #3, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Teengenerat E</tei:term>
+              <admin type="source">Geek Weekly #3, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S389">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Temple</tei:term>
+              <admin type="source">Geek Weekly #3, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S390">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Texas</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S391">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Texas Show List</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S392">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The 1-4-5s</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S393">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Clears</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Clears</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S394">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Drag</tei:term>
+              <admin type="source">Geek Weekly #1, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S395">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Drags</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Drags</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S396">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Dropouts</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Dropouts</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S397">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Empty Bottle</tei:term>
+              <admin type="source">Geek Weekly #4, p.23</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S398">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Fells</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>Fells</tei:term>
+              <admin type="source">Geek Weekly #1, p.3</admin>
+            </tig>
+            <tig>
+              <tei:term>The Fells'</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S399">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Flaming Lips</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Flaming Lips</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S400">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Hormones</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>Hormone</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>To_be_deleted:the Hormones</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Hormones</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S401">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Humpers</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S402">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Lamplighter Lounge</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Lamplighter</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S403">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The MC5</tei:term>
+              <admin type="source">Geek Weekly #3, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S404">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Makers</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Makers</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S405">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Midwest</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S406">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Paranoids</tei:term>
+              <admin type="source">Geek Weekly #4, p.39</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S407">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Pixies</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S408">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Rolling Stones</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+            <tig>
+              <tei:term>The Stones</tei:term>
+              <admin type="source">Geek Weekly #3, p.12</admin>
+            </tig>
+            <tig>
+              <tei:term>Stones</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S409">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Royal Pendletons</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+            <tig>
+              <tei:term>Royal Pendletons</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S410">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Sons Of Hercules</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>The Sons</tei:term>
+              <admin type="source">Geek Weekly #3, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S411">
+          <descrip type="subjectField" level="1">Movies/Films</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Sore Losers</tei:term>
+              <admin type="source">Geek Weekly #6, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S412">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Sparks Will Fly</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S413">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The University Of Texas</tei:term>
+              <admin type="source">Geek Weekly #4, p.60</admin>
+            </tig>
+            <tig>
+              <tei:term>UT</tei:term>
+              <admin type="source">Geek Weekly #4, p.60</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S414">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>The Velvet Underground</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S415">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Thinking Fellers Union Local 282</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>Thinking Fellers Local 282</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+            <tig>
+              <tei:term>The Think Fellers Union Local 282</tei:term>
+              <admin type="source">Geek Weekly #4, p.1</admin>
+            </tig>
+            <tig>
+              <tei:term>The Thinking Fellers</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Thinking Fellers</tei:term>
+              <admin type="source">Geek Weekly #6, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S416">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tim Hayes</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S417">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tim Inklebarger</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S418">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <descrip type="subjectField" level="2">Writers</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tim Stegall</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Tim</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S419">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Timothy Inklebarger</tei:term>
+              <admin type="source">Geek Weekly #4, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S420">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>To_be_deleted:[sub Pop Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Sub Pop</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S421">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>To_be_deleted:to_be_deleted:sub Pop Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Sub Pop</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Sub Pop Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.25</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S422">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Touch &amp; Go</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>Touch &amp;amp; Go</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S423">
+          <descrip type="subjectField" level="1">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tower Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S424">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Toxic Shock (record Label)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Toxic Shock</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S425">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Travis Higdon</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+            <tig>
+              <tei:term>Travis H</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S426">
+          <descrip type="subjectField" level="1">Artists</descrip>
+          <descrip type="subjectField" level="2">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Trevor Wallace</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S427">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tripp Lamkins</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>Tripp</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S428">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tucson, AZ</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Tuscon, AZ</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S429">
+          <descrip type="subjectField" level="1">Cities</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Tunica, MS</tei:term>
+              <admin type="source">Geek Weekly #6, p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S430">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Typoteen</tei:term>
+              <admin type="source">Geek Weekly #3, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S431">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>U-236</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S432">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Uma (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+            <tig>
+              <tei:term>Uma</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.7</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S433">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Unclean Records</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+            <tig>
+              <tei:term>Unclean</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S434">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Unhappy</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S435">
+          <descrip type="subjectField" level="1">Organizations</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>University Of Missouri</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+            <tig>
+              <tei:term>University</tei:term>
+              <admin type="source">Geek Weekly #4, p.37</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S436">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Untamed Youth</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S437">
+          <descrip type="subjectField" level="1">Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Urban Art Bar</tei:term>
+              <admin type="source">Geek Weekly #3, p.10</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S438">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>VHF</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S439">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Village Wine &amp; Cheese</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+            <tig>
+              <tei:term>Village Wine &amp;amp; Cheese</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S440">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Visitor</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S441">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wacky</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S442">
+          <descrip type="subjectField" level="1">Music/Show Venues</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wacky&amp;#x27;s</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+            <tig>
+              <tei:term>Wacky's</tei:term>
+              <admin type="source">Geek Weekly #1, p.4</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S443">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Waffle House</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S444">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Waffle House Just South Of Dallas On I-35e</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S445">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Walking And Wanting (song)</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Walking And Wanting</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Walking &amp;amp; Wanting</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S446">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wanda Wilson</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+            <tig>
+              <tei:term>Wanda</tei:term>
+              <admin type="source">Geek Weekly #4, p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S447">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Welcome To Austin, Would You Like Some Black Beans On That Stevie Ray Vaughn Album</tei:term>
+              <admin type="source">Geek Weekly #4, p.2</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S448">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wendy Bryan</tei:term>
+              <admin type="source">Geek Weekly #4, p.44</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S449">
+          <descrip type="subjectField" level="1">Places</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Westlake Hills</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S450">
+          <descrip type="subjectField" level="1">Record Labels</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Westworld</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>West World</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S451">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wet</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S452">
+          <descrip type="subjectField" level="1">Record Stores</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Whizz Records</tei:term>
+              <admin type="source">Geek Weekly #4, p.38</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S453">
+          <descrip type="subjectField" level="1">Businesses</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Whole Foods</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S454">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Will Power</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S455">
+          <descrip type="subjectField" level="1">Musicians</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>William Parker</tei:term>
+              <admin type="source">Geek Weekly #4, p.26</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S456">
+          <descrip type="subjectField" level="1">People</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wilroy Sanders</tei:term>
+              <admin type="source">Geek Weekly #6, p.5</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S457">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <descrip type="subjectField" level="2">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wipeout #7</tei:term>
+              <admin type="source">Geek Weekly #3, p.6</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S458">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Woggles</tei:term>
+              <admin type="source">Geek Weekly #4, p.17</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S459">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Wooden Indian Giftship</tei:term>
+              <admin type="source">Geek Weekly #4, p.19</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S460">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Xlent</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S461">
+          <descrip type="subjectField" level="1">Publications</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Yellow Submarine (zine)</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+            <tig>
+              <tei:term>Yellow Submarine/uncle Junky</tei:term>
+              <admin type="source">Geek Weekly #1, p.8</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S462">
+          <descrip type="subjectField" level="1">Bands</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Yo La Tengo</tei:term>
+              <admin type="source">Geek Weekly #2 [November Food'n'Fun issue] , p.14</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S463">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>You Can't Always Get What You Want</tei:term>
+              <admin type="source">Geek Weekly #3, p.13</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S464">
+          <descrip type="subjectField" level="1">Title</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>You Can't Win</tei:term>
+              <admin type="source">Geek Weekly #3, p.24</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S465">
+          <descrip type="subjectField" level="1">Restaurants/Bars</descrip>
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>Young Avenue Deli</tei:term>
+              <admin type="source">Geek Weekly #6, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry xml:id="S466">
+          <langSet xml:lang="en">
+            <tig>
+              <tei:term>[nuclear War (card Game)</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+            <tig>
+              <tei:term>Nuclear War</tei:term>
+              <admin type="source">Geek Weekly #1, p.9</admin>
+            </tig>
+          </langSet>
+        </termEntry>
+      </div>
+    </body>
+  </text>
+</TEI>
