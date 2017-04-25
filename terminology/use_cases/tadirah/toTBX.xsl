@@ -19,7 +19,8 @@
             <xsl:for-each select="collection(concat($inpath, '?select=*.xml'))">
                 <xsl:variable name="langcode" select="substring-before(tokenize(document-uri(.), '/')[last()],'.')"/>   <!-- get language code from filename -->
                 <xsl:variable name="filename" select="document-uri(.)"/>
-                
+
+
                 <!-- for each group -->
                 <xsl:for-each-group select="/html:html/html:body/*" group-starting-with="html:h1">
                     
@@ -38,7 +39,7 @@
                     
                     <xsl:variable name="subs">
                         <xsl:choose>
-                            <!-- if no h2 in group, its the top-top-level ("research activities") -->
+                            <!-- if the group has only two elements, its the top-top-level ("research activities") -->
                             <xsl:when test="count(current-group()) = 2">
                                 <!-- hard coded offsets to retrieve subordinated h1's -->
                                 <xsl:copy-of select="document($filename)/html:html/html:body/html:h1[position() > 1 and not(position() > 8)]"/>
