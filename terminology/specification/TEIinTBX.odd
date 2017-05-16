@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../Schemas/tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0"
   xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:tbx="http://www.tbx.org">
   <teiHeader>
@@ -318,37 +318,42 @@
       </div>
       <div>
         <schemaSpec ident="TBXinTEI" start="TEI teiCorpus">
+          
           <moduleRef key="tei"/>
-          <moduleRef key="header" except="biblFull xenoData"/>
+          <moduleRef key="header"/>
           <moduleRef key="core"/>
-          <moduleRef key="textstructure" include="TEI text div body"/>
-          <moduleRef key="namesdates"/>
-          <moduleRef key="linking"/>
-          <moduleRef key="analysis"/>
-          <moduleRef key="corpus"/>
+          <moduleRef key="textstructure" include="TEI text body div front back floatingText"/>
           <moduleRef key="dictionaries"/>
-          <!-- why include all these? -->
-          <!-- TBX is described from termEntry downwards -->
-          <elementSpec ident="termEntry" ns="http://www.tbx.org" mode="add">
-            <desc>groups the components of a single Terminological Entry as defined in ISO 16642
-              (TMF)</desc>
-            <!-- see TCW20 for TEI style rules e.g. each desc should be a headless sentence with implied subject "The component 
-           being defined ..."-->
+          <moduleRef key="linking"/>
+          
+          
+          
+          
+          <!-- ELEMENT DEFINITIONS -->
+          
+          
+          <!-- based on superEntry -->
+          <elementSpec ident="conceptEntry" mode="add">
+            <desc>groups the components of a single Terminological Entry as defined in ISO 16642 (TMF)</desc> <!-- see TCW20 for TEI style rules e.g. each desc should be a headless sentence with implied subject "The component being defined ..."-->
+            <equiv name="tbx:conceptEntry"/>
             <classes>
               <memberOf key="att.global"/>
+              <memberOf key="att.entryLike"/>
+              <memberOf key="att.sortable"/>
               <memberOf key="model.entryLike"/>
             </classes>
             <content>
-              <rng:group>
-                <rng:zeroOrMore>
-                  <rng:ref name="model.auxInfo"/>
-                </rng:zeroOrMore>
-                <rng:zeroOrMore>
-                  <rng:ref name="langSet"/>
-                </rng:zeroOrMore>
-              </rng:group>
+              <alternate minOccurs="1" maxOccurs="unbounded">
+                <elementRef key="form" minOccurs="0" maxOccurs="1"/>
+                <elementRef key="definition" minOccurs="0" maxOccurs="1"/>
+                <elementRef key="subjectField" minOccurs="0" maxOccurs="1"/>
+                <elementRef key="langSec" minOccurs="1" maxOccurs="unbounded"/>
+                <classRef key="model.auxInfo" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="etym" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="floatingText" minOccurs="0" maxOccurs="unbounded"/>
+              </alternate>
             </content>
-            <exemplum xml:lang="en">
+            <!-- <exemplum xml:lang="en">
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <termEntry xmlns="http://www.tbx.org" xml:id="c5">
                   <langSet xml:lang="en">
@@ -363,26 +368,35 @@
                   </langSet>
                 </termEntry>
               </egXML>
-            </exemplum>
+            </exemplum> -->
             <remarks><p>Informally a Terminological Entry may be defined as .... </p></remarks>
           </elementSpec>
-          <elementSpec ident="langSet" ns="http://www.tbx.org" mode="add">
-            <desc>groups all information relevant to the Language Section component as defined in
-              ISO 16642 (TMF)</desc>
+          
+          
+          <!-- based on entry -->
+          <elementSpec ident="langSec" mode="add">
+            <desc>groups all information relevant to the Language Section component as defined in ISO 16642 (TMF)</desc>
+            <equiv name="tbx:langSec"/>
             <classes>
               <memberOf key="att.global"/>
+              <memberOf key="att.entryLike"/>
+              <memberOf key="att.sortable"/>
             </classes>
             <content>
-              <rng:group>
-                <rng:zeroOrMore>
-                  <rng:ref name="model.auxInfo"/>
-                </rng:zeroOrMore>
-                <rng:zeroOrMore>
-                  <rng:ref name="tig"/>
-                </rng:zeroOrMore>
-              </rng:group>
+              <elementRef key="form" minOccurs="0" maxOccurs="unbounded"/>
+              <alternate minOccurs="1" maxOccurs="unbounded">
+                <!--<elementRef key="termSec"/>-->
+                <elementRef key="sense"/>
+                <elementRef key="model.entryPart.top"/>
+                <elementRef key="model.global"/>
+                <elementRef key="model.ptrLike"/>
+              </alternate>
+              <!--<classRef key="model.auxInfo" minOccurs="0" maxOccurs="unbounded"/>-->
             </content>
-            <exemplum xml:lang="en">
+            <attList>
+              <attDef ident="xml:lang" usage="req" mode="change"/>
+            </attList>
+            <!-- <exemplum xml:lang="en">
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <langSet xml:lang="en" xmlns="http://www.tbx.org">
                   <tig>
@@ -390,237 +404,226 @@
                   </tig>
                 </langSet>
               </egXML>
-            </exemplum>
+            </exemplum> -->
           </elementSpec>
           
           
-          <elementSpec ident="tig" ns="http://www.tbx.org" mode="add">
-            <desc>groups all information relevant to the Term Section component as defined in ISO
-              16642 (TMF)</desc>
-            <!-- as above -->
+          <!-- based on form -->
+          <!--<elementSpec ident="termSec" mode="add">
+            <desc>groups all information relevant to the Term Section component as defined in ISO 16642 (TMF)</desc>
+            <equiv name="tbx:termSec"/>
             <classes>
               <memberOf key="att.global"/>
+              <memberOf key="att.lexicographic"/>
             </classes>
             <content>
-              <rng:group>
-                <rng:choice>
-                  <rng:ref name="term"/>
-                  <rng:oneOrMore>
-                    <rng:ref name="form"/>
-                  </rng:oneOrMore>
-                </rng:choice>
-                <rng:choice>
-                  <rng:group>
-                    <rng:ref name="gramGrp"/>
-                  </rng:group>
-                  <rng:group><rng:zeroOrMore>
-                    <rng:ref name="termNote"/>
-                  </rng:zeroOrMore>
-                    <rng:zeroOrMore>
-                      <rng:ref name="model.auxInfo"/>
-                    </rng:zeroOrMore></rng:group>
-                </rng:choice>
-                <rng:zeroOrMore>
-                  <rng:ref name="termNote"/>
-                </rng:zeroOrMore>
-                <rng:zeroOrMore>
-                  <rng:ref name="model.auxInfo"/>
-                </rng:zeroOrMore>
-              </rng:group>
-            </content>
-            <exemplum xml:lang="en">
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <tig xmlns="http://www.tbx.org">
-                  <term>e-mail</term>
-                </tig>
-              </egXML>
-            </exemplum>
-          </elementSpec>
-          <elementSpec ident="term" ns="http://www.tbx.org" prefix="t_" mode="add">
-            <desc>...</desc>
-            <!-- ????? -->
-            <!-- if this is different from tei:term it should have a different name -->
-            <classes>
-              <memberOf key="att.global"/>
-            </classes>
-            <content>
-              <rng:text/>
-              <!-- no chance of <g>s? -->
-            </content>
-          </elementSpec>
-          <elementSpec ident="termNote" ns="http://www.tbx.org" mode="add">
-            <desc>...</desc>
-            <classes>
-              <memberOf key="att.global"/>
-              <memberOf key="att.typed"/>
-            </classes>
-            <content>
-              <rng:zeroOrMore>
-                <rng:choice>
-                  <rng:text/>
-                  <rng:ref name="model.limitedPhrase"/>
-                  <rng:ref name="model.metaMarkup"/>
-                </rng:choice>
-              </rng:zeroOrMore>
-            </content>
-          </elementSpec>
-          
-          <elementSpec ident="descrip" ns="http://www.tbx.org" mode="add">
-            <desc>provides descriptive information about the node in question.</desc>
-            <classes>
-              <memberOf key="att.global"/>
-              <memberOf key="att.typed"/>
-              <memberOf key="att.pointing"/>
-              <memberOf key="model.auxInfo"/>
-            </classes>
-            <content>
-              <rng:zeroOrMore>
-                <rng:choice>
-                  <rng:text/>
-                  <rng:ref name="model.limitedPhrase"/>
-                  <rng:ref name="model.metaMarkup"/>
-                </rng:choice>
-              </rng:zeroOrMore>
+              <alternate minOccurs="0" maxOccurs="unbounded">
+                <textNode/>
+                <elementRef key="model.gLike"/>
+                <elementRef key="model.phrase"/>
+                <elementRef key="model.inter"/>
+                <elementRef key="model.formPart"/>
+                <elementRef key="model.global"/>
+              </alternate>
             </content>
             <attList>
-              <attDef ident="type" mode="change" usage="req">
-                <valList type="semi">
-                  <valItem ident="definition">
-                    <desc>representation of a concept by a descriptive statement which serves to differentiate that concept from related concepts</desc>
-                  </valItem>
-                  <valItem ident="subjectField">
-                    <desc>field of special knowledge</desc>
-                  </valItem>
-                  <valItem ident="context">
-                    <desc>text which illustrates a concept or a term, by containing the concept designation itself</desc>
-                  </valItem>
+              <attDef ident="type" usage="opt" mode="change">
+                <valList type="closed">
+                  <valItem ident="simple"/>
+                  <valItem ident="lemma"/>
+                  <valItem ident="variant"/>
+                  <valItem ident="compound"/>
+                  <valItem ident="derivative"/>
+                  <valItem ident="inflected"/>
+                  <valItem ident="phrase"/>
                 </valList>
               </attDef>
             </attList>
-            <remarks>
-              <p>The <gi>descrip</gi> element can be nested within a <gi>descripGrp</gi></p>
-            </remarks>
-          </elementSpec>
+          </elementSpec>-->
           
-          <elementSpec ident="descripGrp" ns="http://www.tbx.org" mode="add">
-            <desc>...</desc>
+          
+          <!-- conceptEntry-level definition, which should not be called sense,
+            content based on sense, element name derived from descrip/@type="definition", in TBX DCT (data category as tag) style -->
+          <elementSpec ident="definition" mode="add">
+            <desc>representation of a concept by a descriptive statement which serves to differentiate that concept from related concepts</desc>
+            <!--<equiv name="tbx:definition"/>-->
             <classes>
               <memberOf key="att.global"/>
-              <memberOf key="model.auxInfo"/>
+              <memberOf key="att.lexicographic"/>
             </classes>
             <content>
-              <rng:group>
-                <rng:ref name="descrip"/>
-                <rng:zeroOrMore>
-                  <rng:ref name="admin"/>
-                </rng:zeroOrMore>
-              </rng:group>
-              <rng:text/>
+              <alternate minOccurs="1" maxOccurs="unbounded">
+                <textNode/>
+                <elementRef key="model.gLike"/>
+                <elementRef key="sense"/>
+                <elementRef key="model.entryPart.top"/>
+                <elementRef key="model.phrase"/>
+                <elementRef key="model.global"/>
+              </alternate>
             </content>
-            <exemplum>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <descripGrp xmlns="http://www.tbx.org">
-                  <descrip type="definition">This is a sample definition.</descrip>
-                  <admin type="source">Webster's</admin>
-                </descripGrp>
-              </egXML>
-            </exemplum>
           </elementSpec>
           
-          <elementSpec ident="transacGrp" ns="http://www.tbx.org" mode="add">
+          
+          <!-- content based on descrip, element name derived from descrip/@type="subjectField", in TBX DCT (data category as tag) style -->
+          <elementSpec ident="subjectField" mode="add">
+            <desc>representation of a concept by a descriptive statement which serves to differentiate that concept from related concepts</desc>
+            <equiv name="tbx:subjectField"/>
+            <classes>
+              <memberOf key="att.global"/>
+              <memberOf key="att.typed"/>
+              <memberOf key="att.pointing"/>
+              <!--<memberOf key="model.auxInfo"/>-->
+            </classes>
+            <content>
+              <alternate minOccurs="1" maxOccurs="unbounded">
+                <textNode/>
+                <elementRef key="model.limitedPhrase"/>
+                <!--<elementRef key="model.metaMarkup"/>-->
+              </alternate>
+            </content>
+          </elementSpec>
+          
+          
+          <elementSpec ident="transacGrp" mode="add">
             <desc>Groups together transaction information</desc>
+            <equiv name="tbx:transacGrp"/>
             <classes>
               <memberOf key="att.global"/>
               <memberOf key="model.auxInfo"/>
             </classes>
             <content>
-              <rng:group>
-                <rng:ref name="transac"/>
-                <rng:zeroOrMore>
-                  <rng:group>
-                    <rng:ref name="transacNote"/>
-                    <rng:ref name="date"/>
-                  </rng:group>
-                </rng:zeroOrMore>
-              </rng:group>
-              <rng:text/>
+              <sequence>
+                <elementRef key="transac"/>
+                <sequence minOccurs="0" maxOccurs="unbounded">
+                    <elementRef key="transacNote"/>
+                    <elementRef key="date"/>
+                </sequence>
+              </sequence>
+              <textNode/>
             </content>
           </elementSpec>
-          <elementSpec ident="transacNote" ns="http://www.tbx.org" mode="add">
+          
+          <elementSpec ident="transacNote" mode="add">
             <desc>...</desc>
+            <equiv name="tbx:transacNote"/>
             <classes>
               <memberOf key="att.global"/>
               <memberOf key="att.typed"/>
               <memberOf key="att.pointing"/>
             </classes>
             <content>
-              <rng:zeroOrMore>
-                <rng:choice>
-                  <rng:text/>
-                  <rng:ref name="model.limitedPhrase"/>
-                  <rng:ref name="model.metaMarkup"/>
-                </rng:choice>
-              </rng:zeroOrMore>
+              <alternate minOccurs="0" maxOccurs="unbounded">
+                <textNode/>
+                <elementRef key="model.limitedPhrase"/>
+                <!--<elementRef key="model.metaMarkup"/>-->
+              </alternate>
             </content>
           </elementSpec>
-          <elementSpec ident="transac" ns="http://www.tbx.org" mode="add">
+          
+          <elementSpec ident="transac" mode="add">
             <desc>...</desc>
+            <equiv name="tbx:transac"/>
             <classes>
               <memberOf key="att.global"/>
               <memberOf key="att.typed"/>
             </classes>
             <content>
-              <rng:zeroOrMore>
-                <rng:choice>
-                  <rng:text/>
-                  <rng:ref name="model.limitedPhrase"/>
-                  <rng:ref name="model.metaMarkup"/>
-                </rng:choice>
-              </rng:zeroOrMore>
+              <alternate minOccurs="0" maxOccurs="unbounded">
+                <textNode/>
+                <elementRef key="model.limitedPhrase"/>
+                <!--<elementRef key="model.metaMarkup"/>-->
+              </alternate>
             </content>
           </elementSpec>
-          <elementSpec ident="admin" ns="http://www.tbx.org" mode="add">
-            <desc>contains information of an administrative nature for the node in question</desc>
-            <classes>
-              <memberOf key="att.global"/>
-              <memberOf key="att.typed"/>
-              <memberOf key="model.auxInfo"/>
-            </classes>
-            <content>
-              <rng:zeroOrMore>
-                <rng:choice>
-                  <rng:text/>
-                  <rng:ref name="model.limitedPhrase"/>
-                  <rng:ref name="model.metaMarkup"/>
-                </rng:choice>
-              </rng:zeroOrMore>
-            </content>
-            <remarks>
-              <p>In the TBX standard the <gi>admin</gi> element can be nested within a
-                  <gi>adminGrp</gi> which is not defined in the present customisation</p>
-            </remarks>
+          
+          
+          
+          
+          <!-- MAPPINGS -->
+          <!-- explication of TBX equivalents for TEI constructs already included in the above -->
+          
+          <elementSpec ident="form" module="dictionaries" mode="change">
+            <equiv name="tbx:termSec"/>
+            <!--<altIdent>termSec</altIdent>-->
           </elementSpec>
-          <elementSpec ident="bpt" ns="http://www.tbx.org" mode="add">
-            <gloss>begin paired tags</gloss>
-            <desc>meta-markup tags that are used to mark up, i.e., encapsulate markup to distinguish
-              it from text</desc>
-            <classes>
-              <memberOf key="att.global"/>
-              <memberOf key="att.typed"/>
-              <memberOf key="model.metaMarkup"/>
-            </classes>
-            <content>
-              <rng:zeroOrMore>
-                <rng:choice>
-                  <rng:text/>
-                  <rng:ref name="model.limitedPhrase"/>
-                  <rng:ref name="model.metaMarkup"/>
-                </rng:choice>
-              </rng:zeroOrMore>
-            </content>
+          
+          <elementSpec ident="bibl" module="core" mode="change">
+            <equiv name="tbx:source"/>
           </elementSpec>
-          <!-- simplify global attributes -->
-          <classSpec ident="att.global.linking" type="atts" mode="change">
+          
+          <elementSpec ident="def" module="dictionaries" mode="change">
+            <equiv name="tbx:definition"/>
+          </elementSpec>
+          
+          <elementSpec ident="gram" module="dictionaries" mode="change">
+            <attList>
+              <attDef ident="type" usage="opt" mode="change">
+                <valList type="closed">
+                  <valItem ident="pos">
+                    <equiv name="tbx:partOfSpeech"/>
+                  </valItem>
+                  <valItem ident="gen">
+                    <equiv name="tbx:grammaticalGender"/>
+                  </valItem>
+                  <valItem ident="num">
+                    <equiv name="tbx:grammaticalNumber"/>
+                  </valItem>
+                  <valItem ident="animate">
+                    <equiv name="tbx:animacy"/>
+                  </valItem>
+                  <valItem ident="proper"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <elementSpec ident="etym" module="dictionaries" mode="change">
+            <equiv name="tbx:etymology"/>
+          </elementSpec>
+          
+          <elementSpec ident="pron" module="dictionaries" mode="change">
+            <equiv name="tbx:pronunciation"/>
+          </elementSpec>
+          
+          <elementSpec ident="usg" module="dictionaries" mode="change">
+            <attList>
+              <attDef ident="type" usage="opt" mode="change">
+                <valList type="closed">
+                  <valItem ident="geo">
+                    <equiv name="tbx:termLocation"/>
+                  </valItem>
+                  <valItem ident="time">
+                    <equiv name="tbx:temporalQualifier"/>
+                  </valItem>
+                  <valItem ident="dom"/>
+                  <valItem ident="register">
+                    <equiv name="tbx:register"/>
+                  </valItem>
+                  <valItem ident="style"/>
+                  <valItem ident="plev"/>
+                  <valItem ident="lang"/>
+                  <valItem ident="gram"/>
+                  <valItem ident="syn"/>
+                  <valItem ident="hyper"/>
+                  <valItem ident="colloc"/>
+                  <valItem ident="comp"/>
+                  <valItem ident="obj"/>
+                  <valItem ident="subj"/>
+                  <valItem ident="verb"/>
+                  <valItem ident="hint"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+        
+          <!-- more mappings to follow -->
+          
+     
+          
+          
+          <!-- ATTRIBUTES AND CLASS DEFINITIONS -->
+          
+          <!--<classSpec ident="att.global.linking" type="atts" mode="change">
             <attList>
               <attDef ident="corresp" mode="delete"/>
               <attDef ident="sameAs" mode="delete"/>
@@ -634,12 +637,13 @@
           <classSpec ident="att.global.analytic" type="atts" mode="delete"/>
           <classSpec ident="att.global.facs" type="atts" mode="delete"/>
           <classSpec ident="att.global.change" type="atts" mode="delete"/>
-          <!-- and remove some other attribute classes too -->
+          <!-\- and remove some other attribute classes too -\->
           <classSpec ident="att.declaring" type="atts" mode="delete"/>
-          <classSpec ident="att.datable" type="atts" mode="delete"/>
-          <classSpec ident="model.auxInfo" type="model" mode="add">
+          <classSpec ident="att.datable" type="atts" mode="delete"/>-->
+          
+          <!--<classSpec ident="model.auxInfo" type="model" mode="add">
             <desc>...</desc>
-            <!-- please explain what this class is for! -->
+            <!-\- please explain what this class is for! -\->
           </classSpec>
           <classSpec ident="model.ptrLike" type="model" mode="change">
             <classes mode="change">
@@ -650,11 +654,13 @@
             <classes mode="change">
               <memberOf mode="add" key="model.auxInfo"/>
             </classes>
-          </classSpec>
-          <classSpec ident="model.metaMarkup" type="model" mode="add">
+          </classSpec>-->
+          
+          <!--<classSpec ident="model.metaMarkup" type="model" mode="add">
             <desc>groups together all meta-markup elements intended to encapsulate legacy (non XML)
               markup in a textual segment</desc>
-          </classSpec>
+          </classSpec>-->
+          
         </schemaSpec>
       </div>
     </body>
