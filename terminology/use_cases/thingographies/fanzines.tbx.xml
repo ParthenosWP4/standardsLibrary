@@ -1,0 +1,5459 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:tbx="http://www.tbx.org">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Thingography - fanzines</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>...</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>...</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <conceptEntry xml:id="S0">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>'68 Comeback</orgName>
+              </orth>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S1">
+          <subjectField>Titles</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>(I Can) Only Give You Everything</orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S2">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>19 August</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>08191994</date>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S3">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>0902199x</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>9/2</date>
+                </orth>
+                <bibl>Geek Weekly #1, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S4">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>1,4,5</orgName>
+              </orth>
+              <form type="variant">
+                <orth>1,4,5s</orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S5">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>December 6</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>12061995</date>
+                </orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S6">
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>1402 University Columbia, MO 65201</orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S7">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>1973</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>'73</date>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S8">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>1994</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>'94</date>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S9">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>1994-09-09</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>9/9/94</date>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S10">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>Thursday, 22 June 1995</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>19950622</date>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S11">
+          <subjectField>Dates</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <date>Friday, 23 June 1995</date>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <date>19950623</date>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S12">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>2715-a Hemphill Park Austin, TX 78705</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>2715-a Hemphill PK. Austin, TX 78705</placeName>
+                </orth>
+                <bibl>Geek Weekly #3, p.5</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>2715-a Hemphill Pk Austin, TX 78705</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.2</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S13">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>3rd World Underground</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S14">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>424 S. Maple #3N Oak Park, IL 60302</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S15">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>502 Brentwood</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S16">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>7 Year Bitch</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S17">
+          <subjectField>Places</subjectField>
+          <subjectField>Businesses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>7-11</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S18">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>9th St Deli</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S19">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>AMF</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S20">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Abba</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S21">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Admiral Benbow Inn</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>The Admiral</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.16</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.16</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S22">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Aerosmith</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S23">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Ain't Gotta Choose</orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S24">
+          <subjectField>Record Labels</subjectField>
+          <subjectField>Record Stores</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Ajax Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Ajax</orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S25">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Al Green Full Tabernacle Church</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S26">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Alcohol Drugs And Driving</orth>
+              <form type="variant">
+                <orth>Ad&amp;amp;d</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.12</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S27">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Alex Chilton</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S28">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Amped</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S29">
+          <subjectField>Businesses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Amtrak</orgName>
+              </orth>
+              <bibl>Geek Weekly #1, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S30">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Amvets Thrift Store</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S31">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Andrea</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S32">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Andy Biscuit</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Andy</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.18</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S33">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Anne</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S34">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Antichrist</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S35">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Antone</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S36">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Apathy Trend</orth>
+              <form type="variant">
+                <orth>A-trend</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.12</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S37">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Arizona</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S38">
+          <subjectField>Places</subjectField>
+          <subjectField>People</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Welcome To Austin, Would You Like Some Black Beans On That Stevie Ray Vaughn Album</orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Austin, TX</placeName>
+                </orth>
+                <bibl>Geek Weekly #6, p.2</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Austinites</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>This Town</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.5</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>Austin</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.63</bibl>
+              </form>
+              <cit type="example">
+                <quote>Welcome To Austin, Would You Like Some Black Beans On That Stevie Ray Vaughn Album</quote>
+                <bibl>Geek Weekly #4, p.2</bibl>
+              </cit>
+              <bibl>Geek Weekly #4, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S39">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Bangkok Gardens</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S40">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Bar/none Records</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S41">
+          <subjectField>Music/Show Venues</subjectField>
+          <subjectField>Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Barrister</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S42">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Beale Street</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S43">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Beast Of Burden</orth>
+              <bibl>Geek Weekly #3, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S44">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Beggar Banquet</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S45">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Bellingham, WA</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S46">
+          <subjectField>Title</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Ben Is Dead</orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S47">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <subjectField>Bands</subjectField>
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Brother Juniper College Inn</placeName>
+              </orth>
+              <form type="variant">
+                <orth>Brother Juniper</orth>
+                <bibl>Geek Weekly #4, p.16</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Benjamin Hecker</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <form type="variant">
+                <orth>Gibson Brothers</orth>
+                <bibl>Geek Weekly #4, p.15</bibl>
+              </form>
+              <form type="variant">
+                <orth>Palace Brothers</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Ben Hecker</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.2</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Brother</persName>
+                </orth>
+                <bibl>Geek Weekly #1, p.5</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Ben</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S48">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Best Western</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.16</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S49">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Big Black</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S50">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Big Drag</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S51">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Big Horny Hustler</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S52">
+          <subjectField>Artists</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Bill Jeffery</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S53">
+          <subjectField>Artists</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Bill Rainey</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S54">
+          <subjectField>Record Labels</subjectField>
+          <subjectField>Record Stores</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Blackout Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Blackout</orth>
+                <bibl>Geek Weekly #1, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S55">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Bloodshot Records</orgName>
+              </orth>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S56">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Blue Note</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S57">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Breeders</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S58">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Brent Grulke</persName>
+              </orth>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S59">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Brentwood Lounge</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S60">
+          <subjectField>Places</subjectField>
+          <subjectField>Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Brentwood Tavern</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Shed</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S61">
+          <subjectField>Musicians</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Brian Hindman</orth>
+              <form type="variant">
+                <orth>
+                  <persName>Brian Berger</persName>
+                </orth>
+                <bibl>Geek Weekly #9, p.1</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Brian</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S62">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Bride Of Pinbot</orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S63">
+          <subjectField>Artists</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Brien Hindman</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S64">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Britt Daniel</persName>
+              </orth>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S65">
+          <subjectField>Musicians</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Brock Satan</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Brock</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S67">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Buddy Holly</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S68">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Budweiser</orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S69">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Bust (magazine)</orth>
+              <form type="variant">
+                <orth>Bust</orth>
+                <bibl>Geek Weekly #1, p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S70">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Butthole Surfers</orgName>
+              </orth>
+              <bibl>Geek Weekly #6, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S71">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>CJ Stritzel</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>CJ</persName>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S72">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Captain Beefheart</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Beefheart</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.26</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S73">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Carl Perkins</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S75">
+          <subjectField>People</subjectField>
+          <subjectField>Actors/Actresses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Carole Feray</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>My Mommie</persName>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>My Mom</persName>
+                </orth>
+                <bibl>Geek Weekly #1, p.7</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Mom</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S76">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Carters</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S77">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Center For Southern Folklore</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S78">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Chepo Pena</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Cheppo</persName>
+                </orth>
+                <bibl>"Geek Weekly #1, p.5</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Chepo</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.20</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S79">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Cherry Bomb</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S80">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Cherry Smash Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Cherry Smash</orth>
+                <bibl>Geek Weekly #3, p.25</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S81">
+          <subjectField>Places</subjectField>
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Chicago, IL</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Chicago IL</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>Chi-town</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.9</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>Chicago</placeName>
+                </orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S82">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Chlorine</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S83">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Chris Hamer</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S84">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Chuck Death</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Chuck</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.12</bibl>
+              </form>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S85">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Colin Escott</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.44</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S86">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Columbia Billiards Center</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S88">
+          <subjectField>Titles</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Cometbus</orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S89">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Cowslingers</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S90">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Craig Koon</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.63</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S91">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Crimson &amp;amp; Clover</orth>
+              <form type="variant">
+                <orth>Crimson &amp; Clover</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S92">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Crying Out Louds</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Cryin' Out Louds</orth>
+                <bibl>Geek Weekly #3, p.24</bibl>
+              </form>
+              <form type="variant">
+                <orth>The Cols</orth>
+                <bibl>Geek Weekly #3, p.24</bibl>
+              </form>
+              <form type="variant">
+                <orth>Cols</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S93">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Cyclone</orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S94">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Dan Ball</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S95">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Dana Barclay</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Dana</persName>
+                </orth>
+                <bibl>Geek Weekly #1, p.4</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S96">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Dark Twist (record Label)</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Dark Twist</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S97">
+          <subjectField>People</subjectField>
+          <subjectField>Writers</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Dave Nickerson</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Dave Jungen</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Dave Dunlap</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.8</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Nickerson</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Dave</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S98">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>David Dunlap</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S99">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>David Gedge</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S100">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>David Jungen</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S101">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Death Valley</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S102">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Deep Blues</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S103">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Denton</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S104">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Dig It (song)</orth>
+              <form type="variant">
+                <orth>Dig It</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S105">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Dildozer</orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S106">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Dixie Fried</orth>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S107">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Dixie Friend Backalley Brawl</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S108">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Dodge Dart</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S109">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Dolly Parton</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S110">
+          <subjectField>Actors/Actresses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Drew Barrymore</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.31</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S111">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>ESP (song)</orth>
+              <form type="variant">
+                <orth>ESP</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S112">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>EV Records</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S113">
+          <subjectField>Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Electric Lounge</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S114">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Ellen Soul Food</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S115">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Elmira, NY</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S116">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Elvis</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S117">
+          <subjectField>Venues</subjectField>
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Emo</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Emo’s</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.63</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S118">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Emo Austin</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S119">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Ennio Morricone</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S120">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Eric Oblivian</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S121">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Estrus Records</orgName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S122">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Fag Rag</orth>
+              <bibl>Geek Weekly #1, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S123">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Fairfax Station, VA</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S124">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Fakebook</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S125">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Fast, Fucked &amp;amp; Furious</orth>
+              <form type="variant">
+                <orth>Fast, Fucked &amp; Furious</orth>
+                <bibl>Geek Weekly #3, p.24</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S126">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Fastbacks</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S127">
+          <subjectField>Fictional Characters</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Father Guido Sarducci</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Guido Sarducci</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S128">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Fluffy Kitty</orgName>
+              </orth>
+              <form type="variant">
+                <orth>FK</orth>
+                <bibl>Geek Weekly #3, p.25</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S129">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Flying Saucer Attack</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S130">
+          <subjectField>Titles</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>For Lovers Only</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S131">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Formosa</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S132">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Four Mile Circus</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S133">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Frank Frost</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S134">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Frank Zappa</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Zappa</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.26</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S135">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Fresno, California</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S136">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Fuckemos</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S137">
+          <subjectField>Title</subjectField>
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Fun Date</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S138">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Furr Cafeteria</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S139">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Furry Things</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S140">
+          <subjectField>Organizations</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Fusebox</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S141">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Geek Weekly</orth>
+              <form type="variant">
+                <orth>GW</orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S142">
+          <subjectField>Publications</subjectField>
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Geek Weekly Fanzine</orth>
+              <bibl>Geek Weekly #3, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S143">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Gerard Cosloy</persName>
+              </orth>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S144">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Get Off My Back</orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S145">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Gotta Let Me Go</orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S146">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Graceland</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S147">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Grand Royale (magazine)</orth>
+              <form type="variant">
+                <orth>Grand Royale</orth>
+                <bibl>Geek Weekly #1, p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S148">
+          <subjectField>Organizations</subjectField>
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Grateful Dead</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S149">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Green Lounge</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S150">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Greenella</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S151">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Greg Oblivion</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Greg Oblivian</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.38</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S152">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Greyhound Bus Station In Austin</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Bus Station</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S153">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Grifters</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Grifters</orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S154">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Guitar Wolf</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S155">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Haji (song)</orth>
+              <form type="variant">
+                <orth>Haji</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S156">
+          <subjectField>Businesses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Hamer Guitar</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S157">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Hampton Inn</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.16</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S158">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Hangman Lager</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S159">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Hash Browns'n'biscuits</orth>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S160">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Hate Bombs</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S161">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Heath Heemsbergen</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Heath</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S162">
+          <subjectField>Title</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>High Society</orth>
+              <bibl>Geek Weekly #3, p.31</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S163">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Hoboken, NJ</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S164">
+          <subjectField>Restaurants/Bars</subjectField>
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Hole In The Wall</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S165">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Holiday Inn</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S166">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Holly Springs, MS</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S167">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Hollywood Casino</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S168">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Hormones</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Hormones</orth>
+                <bibl>Geek Weekly #4, p.26</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S169">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Houston, TX</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Houston</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S170">
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Hugh</orth>
+              <bibl>Geek Weekly #4, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S171">
+          <subjectField>Musicians</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Hunter Satan</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Hunter</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S172">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>I Had</orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S173">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>I Love Rock'n'roll</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S174">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>I&amp;#x27;m A Lonesome Fugitive</orth>
+              <form type="variant">
+                <orth>I'm A Lonesome Fugitive</orth>
+                <bibl>Geek Weekly #3, p.25</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S175">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>I'm Possessed</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S176">
+          <subjectField>Places</subjectField>
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Waffle House Just South Of Dallas On I-35e</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Ih-35</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>I-35</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S177">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Imo</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S178">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Inhalants</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S179">
+          <subjectField>Organizations</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>International Buckaroo Club</orgName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S180">
+          <subjectField>Title</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Is Your Dad Gay?</orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S181">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jack Yarber</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S182">
+          <subjectField>Actors/Actresses</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jackie Belvin</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Jackie</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S183">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jasmine Jopling</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S184">
+          <subjectField>People</subjectField>
+          <subjectField>Writers</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Oswald Caligula III</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Jason Trent</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.4</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S185">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Javelin Boot</orgName>
+              </orth>
+              <form type="variant">
+                <orth>The Boot</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S186">
+          <subjectField>People</subjectField>
+          <subjectField>Writers</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jeff Breeze</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Breeze</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S187">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jeff Evans</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Jeff</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.15</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S188">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jeff Koyen</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.44</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S189">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jennifer Lasuprema Hecker</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Jennifer Lasuprema</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.23</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Jennifer Hecker</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.2</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Jennifer La</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.5</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Jennifer</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.2</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>ME</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S191">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jerry Lee Lewis</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Jerry Garcia</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.6</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Jerry</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S192">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Jesus Christ Superfly</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S193">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Jo Walston</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S194">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Joan Jett</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S195">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>John Michael Mccarthy</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Mike Mccarthy</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S196">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>John Stone</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S197">
+          <subjectField>Artists</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>John Zorn</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S198">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Johnny Cash</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S199">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Junior Kimbrough</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Kimbrough</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S200">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Justin</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S201">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>K-tel</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S202">
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Keg Fly</orth>
+              <bibl>Geek Weekly #4, p.60</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S203">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Ken Donuts</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Ken</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S204">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Kids Meal</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S205">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Kreature Comforts Lowlife Guide To Memphis</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S206">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Kurt Cobain</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S207">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Lake Michigan</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S208">
+          <subjectField>Places</subjectField>
+          <subjectField>Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Liberty Lunch</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S209">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Little Deputy Records</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S210">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Live</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S211">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Lord High Fixers</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S212">
+          <subjectField>Actors/Actresses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Loretta Switt</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S213">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Los Angeles, CA</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S214">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Lou Barlow</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S215">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Louis Farrakhan</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Farrakhan</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.63</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.63</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S216">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Louisiana</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S217">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Lowell, MA</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S218">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Man...or Astroman?</orgName>
+              </orth>
+              <form type="variant">
+                <orth>M...oa?</orth>
+                <bibl>Geek Weekly #4, p.17</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S219">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Margaret</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S220">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Martin Hawkins</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.44</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S221">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Marvin Hecker</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>My Daddy</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.12</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Dad</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.12</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S222">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Massage Parlor</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S223">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Matt Ship</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S224">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Memorial Union</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S226">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Mexico</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S227">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Michael Corcoran</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S228">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Michael Jackson</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S229">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Mick Jagger</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Mick</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S230">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Mike Tole</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S231">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Mike Tyson</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.61</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S232">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Minneapolis, MN</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Minnesota</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S233">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Miss Universe</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S234">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Motards</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Motards</orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S235">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Motel 6</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S236">
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Music Box Theatre</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.23</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S237">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Mystery Train</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S238">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Nashville, TN</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S239">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Nathaniel Shelton</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Nat</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S240">
+          <subjectField>Organizations</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>National Rifle Association</orgName>
+              </orth>
+              <form type="variant">
+                <orth>NRA</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.16</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.16</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S241">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Neat Junk News</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S242">
+          <subjectField>Businesses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Needle Express</orgName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S243">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Neely BBQ</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S244">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Nelson Mandela</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Mandela</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.61</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.61</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S245">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>New Bomb Turks</orgName>
+              </orth>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S246">
+          <subjectField>Places</subjectField>
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>New York City</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>New York, NY</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.8</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>Manhattan</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>New York</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.41</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S247">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Nirvana</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S248">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Northerns</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S249">
+          <subjectField>Titles</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Nothing Ever Changes</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S250">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Nuclear Escalation (card Game)</orth>
+              <form type="variant">
+                <orth>Nucler Escalation</orth>
+                <bibl>Geek Weekly #1, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S251">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Nuclear Proliferation (card Game)</orth>
+              <form type="variant">
+                <orth>Nuclear Proliferation</orth>
+                <bibl>Geek Weekly #1, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S252">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Nuclear War (card Game)</orth>
+              <form type="variant">
+                <orth>Nuclear War</orth>
+                <bibl>Geek Weekly #1, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S253">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>OK Cola</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S254">
+          <subjectField>Titles</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Objet Dart</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S255">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Oblivians</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Oblivians</orth>
+                <bibl>Geek Weekly #6, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S256">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Ode To My Tye Dye</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S258">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Offspring</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S259">
+          <subjectField>Places</subjectField>
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Oklahoma City, OK</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Oklahoma City</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S260">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Othar Turner</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S261">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Othar Turner Fife And Drum Band</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Fife And Drum Band</orth>
+                <bibl>Geek Weekly #6, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S262">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>P&amp;amp;h Cafe</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>P&amp;H Cafe</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>P&amp;amp;h</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S263">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Panther Burns</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S264">
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Parade</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S265">
+          <subjectField>Albums/Records</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Paul Boutique</orth>
+              <form type="variant">
+                <orth>
+                  <persName>Paul Lukas</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.44</bibl>
+              </form>
+              <form type="variant">
+                <orth>Paul</orth>
+                <bibl>Geek Weekly #4, p.5</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S266">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Pavement</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S267">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Pearl Brewery</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S268">
+          <subjectField>Publications</subjectField>
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Peek-a-boo Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Peek-a-boo</orth>
+                <bibl>Geek Weekly #4, p.60</bibl>
+              </form>
+              <form type="variant">
+                <orth>PAB</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S269">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Peek-a-fuckin'-boo</orth>
+              <form type="variant">
+                <orth>Peek-a-boo (zine)</orth>
+                <bibl>Geek Weekly #3, p.20</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S270">
+          <subjectField>Businesses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Pepsi</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S271">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Pete Droge</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S272">
+          <subjectField>Actors/Actresses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Peter Fonda</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S273">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Peter Guralnick</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.44</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S274">
+          <subjectField>Title</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Peyote Stomp (record)</orth>
+              <form type="variant">
+                <orth>Peyote Stomp</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S275">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Phantom Surfers</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S276">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Pink Slip Daddy</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S277">
+          <subjectField>Title</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Playboy</orth>
+              <bibl>Geek Weekly #3, p.31</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S278">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Popllama Products</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S279">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Pork</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S280">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Portland, OR</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S281">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Pravda Records</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S282">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Princess Diana</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Princess Di</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S283">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Product 19</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S284">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Pulse! Magazine</orth>
+              <form type="variant">
+                <orth>Pulse!</orth>
+                <bibl>Geek Weekly #3, p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S285">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Todd-n-brock</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Punk House</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.2</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>T&amp;amp;b</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S286">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Pure Joy</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S287">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Queen Of The Table Waters</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S288">
+          <subjectField>Artists</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Quentin Tarantino</persName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S289">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Railroad Jerk</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S290">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Rancid Hell Spawn</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S291">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Reed</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S292">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Resort Theory Recording Conglomerate</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S293">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Return To Cinder</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S294">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Revelators</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S295">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Richard Nixon</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Nixon</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.20</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S296">
+          <subjectField>Actors/Actresses</subjectField>
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Riders In The SKY</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Riders In The Sky</persName>
+                </orth>
+                <bibl>Geek Weekly #1, p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S297">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Rise Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Rise</orth>
+                <bibl>Geek Weekly #3, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S298">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Robert "bilbo" Walker</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S299">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Rockville, MD</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S300">
+          <subjectField>Bands</subjectField>
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Rolling Stones Mastercard</orth>
+              <form type="variant">
+                <orth>The Rolling Stones</orth>
+                <bibl>Geek Weekly #3, p.13</bibl>
+              </form>
+              <form type="variant">
+                <orth>Rolling Stones</orth>
+                <bibl>Geek Weekly #3, p.12</bibl>
+              </form>
+              <form type="variant">
+                <orth>The Stones</orth>
+                <bibl>Geek Weekly #3, p.12</bibl>
+              </form>
+              <form type="variant">
+                <orth>Stones</orth>
+                <bibl>Geek Weekly #3, p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S301">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Ron Williams</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Ron</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.24</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S302">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Ross Johnson</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.15</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S303">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Royal Trux</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S304">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Rrrecords</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S305">
+          <subjectField>Songs</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Run Motherfucker</orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S306">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Russian Cat Circus</orgName>
+              </orth>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S307">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Ruth</orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S308">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Ryan Mcdaniel</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Ryan</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.20</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.20</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S309">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Sam Carr</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S310">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Samuel Smith</orth>
+              <form type="variant">
+                <orth>Sam Smith</orth>
+                <bibl>Geek Weekly #6, p.4</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S311">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>San Antonio, TX</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>San Antonio</placeName>
+                </orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <placeName>SA</placeName>
+                </orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S312">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>San Francisco</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S313">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>San Marcos, TX</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>San Marcos</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.4</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S314">
+          <subjectField>Fictional Characters</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Sassy Velour</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Sassy</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S315">
+          <subjectField>Bands</subjectField>
+          <subjectField>Organizations</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Satans Fan Club</orgName>
+              </orth>
+              <form type="variant">
+                <orth>The Satans</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <form type="variant">
+                <orth>Satans</orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <form type="variant">
+                <orth>Satan</orth>
+                <bibl>Geek Weekly #3, p.22</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S316">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Schwab Dry Goods</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S317">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Scott Bomar</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Scott</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S318">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Screemin' Jay Hawkins</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Screamin' Jay Hawkins</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.5</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Screemin' Jay</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.5</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S319">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Sean Vylent</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Sean</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S320">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Seattle, WA</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S321">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Sebadoh</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S322">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Sell Out Young</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S323">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Shakespeare</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S324">
+          <subjectField>Record Stores</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Shangri-la Records</orth>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S325">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Shangri-la Shindig</orth>
+              <bibl>Geek Weekly #6, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S326">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Sherman Willmott</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Sherman</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S327">
+          <subjectField>Movies/Films</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Shine On Sweet Starlet</orth>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S328">
+          <subjectField>Things</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Shiner Bock</orth>
+              <bibl>Geek Weekly #1, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S329">
+          <subjectField>Albums/Records</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Slanted And Enchanted</orth>
+              <form type="variant">
+                <orth>S&amp;amp;e</orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S330">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Sleep With You (song)</orth>
+              <form type="variant">
+                <orth>Sleep With You</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S331">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Slint</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S332">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Slugger (song)</orth>
+              <form type="variant">
+                <orth>Slugger</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.11</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S333">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Soda Pop</orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S334">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Sonic Youth</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S335">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Sound Exchange</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S336">
+          <subjectField>Record Stores</subjectField>
+          <subjectField>Businesses</subjectField>
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Sound Exchange (record Store)</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Sound Ex</orth>
+                <bibl>Geek Weekly #1, p.5</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S337">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Southern Culture On The Skids</orgName>
+              </orth>
+              <bibl>Geek Weekly #1, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S338">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Southport</placeName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S339">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Space Girls (song)</orth>
+              <form type="variant">
+                <orth>Space Girls</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S340">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Spindly Man</orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S341">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Spoon</orgName>
+              </orth>
+              <bibl>Geek Weekly #9, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S342">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Stanley Gallimore</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Stan</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.17</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S343">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Starkweathers</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.37</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S344">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Stax Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Stax</orth>
+                <bibl>Geek Weekly #4, p.17</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S345">
+          <subjectField>Actors/Actresses</subjectField>
+          <subjectField>Musicians</subjectField>
+          <subjectField>People</subjectField>
+          <subjectField>Writers</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Steve Deconstructionalist</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Stephen Pipkin</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.3</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Steve Martin</persName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.19</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Steve Decon</persName>
+                </orth>
+                <bibl>Geek Weekly #6, p.8</bibl>
+              </form>
+              <form type="variant">
+                <orth>
+                  <persName>Steve</persName>
+                </orth>
+                <bibl>Geek Weekly #3, p.11</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S346">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Stretford</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S347">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Stupid Girl</orth>
+              <bibl>Geek Weekly #3, p.12</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S348">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Sun Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Sun</orth>
+                <bibl>Geek Weekly #6, p.6</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.44</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S349">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Sun Studios</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.18</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S350">
+          <subjectField>People</subjectField>
+          <subjectField>Actors/Actresses</subjectField>
+          <subjectField>Writers</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Susan</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S351">
+          <subjectField>Titles</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Sympathy For The Devil</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S352">
+          <subjectField>Titles</subjectField>
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Sympathy For The Record Industry</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Sympathy...</orth>
+                <bibl>Geek Weekly #3, p.24</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S353">
+          <subjectField>Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Taco Land</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.3</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S354">
+          <subjectField>Restaurants/Bars</subjectField>
+          <subjectField>Music/Show Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Tacoland</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S355">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Teen Titans</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S356">
+          <subjectField>Movies/Films</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Teenage Tupelo</orth>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S357">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Teengenerat E</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Teengenerate</orth>
+                <bibl>Geek Weekly #4, p.37</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S358">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Temple</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S359">
+          <subjectField>Publications</subjectField>
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Texas Show List</orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Texas</placeName>
+                </orth>
+                <bibl>Geek Weekly #6, p.4</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S360">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The 1-4-5s</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S361">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Clears</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Clears</orth>
+                <bibl>Geek Weekly #6, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S362">
+          <subjectField>Places</subjectField>
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Drags</orgName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>The Drag</placeName>
+                </orth>
+                <bibl>Geek Weekly #1, p.2</bibl>
+              </form>
+              <form type="variant">
+                <orth>Drags</orth>
+                <bibl>Geek Weekly #1, p.3</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S363">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Dropouts</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Dropouts</orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S364">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>The Empty Bottle</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S365">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Fells'</orgName>
+              </orth>
+              <form type="variant">
+                <orth>The Fells</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+              </form>
+              <form type="variant">
+                <orth>Fells</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S366">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Flaming Lips</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Flaming Lips</orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S368">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Humpers</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S369">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>The Lamplighter Lounge</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Lamplighter</placeName>
+                </orth>
+                <bibl>Geek Weekly #6, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S370">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The MC5</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S371">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Makers</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Makers</orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S372">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>The Midwest</placeName>
+              </orth>
+              <bibl>Geek Weekly #4, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S373">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Paranoids</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.39</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S374">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Pixies</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S375">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Royal Pendletons</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Royal Pendletons</orth>
+                <bibl>Geek Weekly #6, p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S376">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Sons Of Hercules</orgName>
+              </orth>
+              <form type="variant">
+                <orth>The Sons</orth>
+                <bibl>Geek Weekly #3, p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S377">
+          <subjectField>Movies/Films</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>The Sore Losers</orth>
+              <bibl>Geek Weekly #6, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S378">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>The Sparks Will Fly</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S379">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>The University Of Texas</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>UT</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.60</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.60</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S380">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Velvet Underground</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S381">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>The Think Fellers Union Local 282</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Thinking Fellers Union Local 282</orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <form type="variant">
+                <orth>Thinking Fellers Local 282</orth>
+                <bibl>Geek Weekly #3, p.10</bibl>
+              </form>
+              <form type="variant">
+                <orth>The Thinking Fellers</orth>
+                <bibl>Geek Weekly #6, p.8</bibl>
+              </form>
+              <form type="variant">
+                <orth>Thinking Fellers</orth>
+                <bibl>Geek Weekly #6, p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.1</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S382">
+          <subjectField>People</subjectField>
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Tim Hayes</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S383">
+          <subjectField>Artists</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Timothy Inklebarger</orth>
+              <form type="variant">
+                <orth>
+                  <persName>Tim Inklebarger</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.30</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S385">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>sub Pop Records</orth>
+              <form type="variant">
+                <orth>Sub Pop Records</orth>
+                <bibl>Geek Weekly #3, p.25</bibl>
+              </form>
+              <form type="variant">
+                <orth>Sub Pop</orth>
+                <bibl>Geek Weekly #3, p.24</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S386">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>the Hormones</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S388">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Touch &amp;amp; Go</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Touch &amp; Go</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S389">
+          <subjectField>Record Stores</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Tower Records</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S390">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Toxic Shock (record Label)</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Toxic Shock</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S391">
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Travis Higdon</orth>
+              <form type="variant">
+                <orth>Travis H</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.13</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.60</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S392">
+          <subjectField>Artists</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Trevor Wallace</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.2</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S393">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Tripp Lamkins</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Tripp</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S394">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Tuscon, AZ</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Tucson, AZ</placeName>
+                </orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S395">
+          <subjectField>Cities</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Tunica, MS</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S396">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Typoteen</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S397">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>U-236</orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S398">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Uma (song)</orth>
+              <form type="variant">
+                <orth>Uma</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.7</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S399">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Unclean Records</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Unclean</orth>
+                <bibl>Geek Weekly #3, p.25</bibl>
+              </form>
+              <bibl>Geek Weekly #3, p.25</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S400">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Unhappy</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S402">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Untamed Youth</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S403">
+          <subjectField>Venues</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Urban Art Bar</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.10</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S404">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>VHF</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S405">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Village Wine &amp;amp; Cheese</placeName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <placeName>Village Wine &amp; Cheese</placeName>
+                </orth>
+                <bibl>Geek Weekly #4, p.38</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S406">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Visitor</orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S407">
+          <subjectField>Music/Show Venues</subjectField>
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Wacky</placeName>
+              </orth>
+              <bibl>Geek Weekly #1, p.4</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S409">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Walking And Wanting (song)</orth>
+              <form type="variant">
+                <orth>Walking &amp;amp; Wanting</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+              </form>
+              <form type="variant">
+                <orth>Walking And Wanting</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S410">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Wanda Wilson</persName>
+              </orth>
+              <form type="variant">
+                <orth>
+                  <persName>Wanda</persName>
+                </orth>
+                <bibl>Geek Weekly #4, p.14</bibl>
+              </form>
+              <bibl>Geek Weekly #4, p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S411">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Wendy Bryan</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.44</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S412">
+          <subjectField>Places</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Westlake Hills</placeName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S413">
+          <subjectField>Record Labels</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>West World</orgName>
+              </orth>
+              <form type="variant">
+                <orth>Westworld</orth>
+                <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.9</bibl>
+              </form>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S414">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Wet</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S415">
+          <subjectField>Record Stores</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Whizz Records</orth>
+              <bibl>Geek Weekly #4, p.38</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S416">
+          <subjectField>Businesses</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Whole Foods</orgName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S417">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Will Power</persName>
+              </orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S418">
+          <subjectField>Musicians</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>William Parker</persName>
+              </orth>
+              <bibl>Geek Weekly #4, p.26</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S419">
+          <subjectField>People</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <persName>Wilroy Sanders</persName>
+              </orth>
+              <bibl>Geek Weekly #6, p.5</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S420">
+          <subjectField>Title</subjectField>
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Wipeout #7</orth>
+              <bibl>Geek Weekly #3, p.6</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S421">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Woggles</orgName>
+              </orth>
+              <bibl>Geek Weekly #4, p.17</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S422">
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Wooden Indian Giftship</orth>
+              <bibl>Geek Weekly #4, p.19</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S423">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Xlent</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S424">
+          <subjectField>Publications</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>Yellow Submarine/uncle Junky</orth>
+              <form type="variant">
+                <orth>Yellow Submarine (zine)</orth>
+                <bibl>Geek Weekly #1, p.8</bibl>
+              </form>
+              <bibl>Geek Weekly #1, p.8</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S425">
+          <subjectField>Bands</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <orgName>Yo La Tengo</orgName>
+              </orth>
+              <bibl>Geek Weekly #2 [November Food'n'Fun issue] , p.14</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S426">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>You Can't Always Get What You Want</orth>
+              <bibl>Geek Weekly #3, p.13</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S427">
+          <subjectField>Title</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>You Can't Win</orth>
+              <bibl>Geek Weekly #3, p.24</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+        <conceptEntry xml:id="S428">
+          <subjectField>Restaurants/Bars</subjectField>
+          <langSec xml:lang="en">
+            <form type="lemma">
+              <orth>
+                <placeName>Young Avenue Deli</placeName>
+              </orth>
+              <bibl>Geek Weekly #6, p.9</bibl>
+            </form>
+          </langSec>
+        </conceptEntry>
+      </div>
+    </body>
+  </text>
+</TEI>

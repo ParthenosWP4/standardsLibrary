@@ -13,6 +13,4 @@
     - French and Spanish versions of the markdown files are still pending
 
 - modeling
-    - turn list items into termEntries
-    - turn section headings into meta descriptions, e.g.: <descrip type="meta">Research Activities</descrip>
-    - turn inline references "(see XY)" into refs
+    - list elements (research techniques + objects) are not aligned across languages -> sort manually

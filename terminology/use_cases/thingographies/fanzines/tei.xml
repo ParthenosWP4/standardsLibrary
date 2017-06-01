@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"
+  xml:lang="EN" xml:id="export">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full">
+          <title type="main">Geek Weekly #1</title>
+          <title type="desc">fanzine published in Austin, TX (Fall 1994)</title>
+        </title>
+        <author>
+          <persName/>
+        </author>
+      </titleStmt>
+
+      <editionStmt>
+        <edition>Edition created from new transcripts of this manuscript.</edition>
+        <respStmt xml:id="AU170">
+          <resp>Initial upload of this work's facsimile images and metadata to FromThePage.com for
+            editing</resp>
+          <persName>Jennifer Hecker</persName>
+        </respStmt>
+
+        <respStmt xml:id="OU170">
+          <resp>Adminstrator of the Austin Fanzine Project transcription project on
+            FromThePage.com</resp>
+          <persName>Jennifer Hecker</persName>
+        </respStmt>
+
+        <respStmt xml:id="U170">
+          <persName>Jennifer Hecker</persName>
+          <resp> made 120 edits between <date type="first_edit" when="2012-07-19T02:33:31Z">July 19,
+              2012</date> and <date type="last_edit" when="2016-12-12T16:08:06Z">December 12,
+              2016</date>. </resp>
+        </respStmt>
+        <respStmt xml:id="U783">
+          <persName/>
+          <resp> made 2 edits between <date type="first_edit" when="2017-04-05T19:22:59Z">April 5,
+              2017</date> and <date type="last_edit" when="2017-04-07T23:52:57Z">April 7,
+              2017</date>. </resp>
+        </respStmt>
+        <respStmt xml:id="U357">
+          <persName>Stefanie Lapka</persName>
+          <resp> made 2 edits between <date type="first_edit" when="2013-10-01T18:40:36Z">October 1,
+              2013</date> and <date type="last_edit" when="2013-10-01T18:43:17Z">October 1,
+              2013</date>. </resp>
+        </respStmt>
+        <respStmt xml:id="U93">
+          <persName>Robert Scott Patrick</persName>
+          <resp> made one edit on <date type="only_edit" when="2013-08-20T15:43:26Z">August 20,
+              2013</date>. </resp>
+        </respStmt>
+        <respStmt xml:id="U172">
+          <persName>sarah sundbeck</persName>
+          <resp> made one edit on <date type="only_edit" when="2012-07-24T15:04:26Z">July 24,
+              2012</date>. </resp>
+        </respStmt>
+      </editionStmt>
+
+      <publicationStmt>
+        <publisher>Dynamic TEI export from FromThePage</publisher>
+        <availability>
+          <p/>
+        </availability>
+        <date when="2017-04-11T01:46:57+00:00">April 11, 2017</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <collection>Austin Fanzine Project</collection>
+          </msIdentifier>
+          <physDesc>
+            <p/>
+          </physDesc>
+          <history>
+            <origin>
+              <placeName/>
+            </origin>
+            <provenance/>
+          </history>
+        </msDesc>
+
+        <listPerson>
+          <person xml:id="S8480">
+            <persName>Jennifer McClure</persName>
+            <note>
+              <p corresp="TTPS8480P0" xml:id="OTPS8480P0">Roommate of Jennifer LaSuprema in the fall
+                of 1994 at <rs ref="#S8448">2715-A Hemphill Park</rs> in Austin, TX. </p>
+            </note>
+          </person>
+          <person xml:id="S11853">
+            <persName>Jennifer LaSuprema</persName>
+          </person>
+          <person xml:id="S8459">
+            <persName>Susan Shepard</persName>
+          </person>
+          <person xml:id="S8470">
+            <persName>CJ Stritzel</persName>
+          </person>
+          <person xml:id="S8613">
+            <persName>Carole Feray</persName>
+          </person>
+          <person xml:id="S8472">
+            <persName>Wacky</persName>
+          </person>
+          <person xml:id="S8475">
+            <persName>Dana Barclay</persName>
+          </person>
+          <person xml:id="S8477">
+            <persName>Heath Heemsbergen</persName>
+            <note>
+              <p corresp="TTPS8477P0" xml:id="OTPS8477P0">Lead singer for <rs ref="#S8456">The
+                  Fells</rs>. </p>
+            </note>
+          </person>
+          <person xml:id="S8478">
+            <persName>Johnny Cash</persName>
+          </person>
+          <person xml:id="S8479">
+            <persName>Bjork</persName>
+          </person>
+          <person xml:id="S9063">
+            <persName>Chepo Pena</persName>
+          </person>
+          <person xml:id="S8614">
+            <persName>Benjamin Hecker</persName>
+          </person>
+          <person xml:id="S8495">
+            <persName>Sean Vylent</persName>
+            <note>
+              <p corresp="TTPS8495P0" xml:id="OTPS8495P0">Drummer for <rs ref="#S8660">The
+                  Satans</rs>. </p>
+            </note>
+          </person>
+        </listPerson>
+
+        <listPlace>
+          <place xml:id="S8451">
+            <placeName>CHICAGO</placeName>
+          </place>
+          <place xml:id="S8446">
+            <placeName>the Drag</placeName>
+          </place>
+          <place xml:id="S8447">
+            <placeName>punk house</placeName>
+            <note>
+              <p corresp="TTPS8447P0" xml:id="OTPS8447P0">Rental house at 502 Brentwood, Austin, TX
+                78757, where <rs ref="#S8669">Todd Hanke</rs>, <rs ref="#S8492">Brock</rs> ____, and
+                  <rs ref="#S8450">Jennifer LaSuprema</rs> (among others) lived for a time. A <rs
+                  ref="#S9476">shed</rs> in the back served as a rehearsal &amp; show space. <rs
+                  ref="#S8660">The Satans</rs> and <rs ref="#S8671">The Humpers</rs> (among others)
+                played there. </p>
+            </note>
+          </place>
+          <place xml:id="S9124">
+            <placeName>2715-A Hemphill Park Austin, TX 78705</placeName>
+          </place>
+          <place xml:id="S8460">
+            <placeName>Greyhound bus station in Austin</placeName>
+            <note>
+              <p corresp="TTPS8460P0" xml:id="OTPS8460P0">Main intercity bus terminal in Austin, TX.
+                It is located at 916 E Koenig Ln. </p>
+            </note>
+          </place>
+          <place xml:id="S8462">
+            <placeName>Arizona</placeName>
+          </place>
+          <place xml:id="S8474">
+            <placeName>Austin, TX</placeName>
+            <note>
+              <p corresp="TTPS8474P0" xml:id="OTPS8474P0">Austin is the capital of the state of
+                Texas and the seat of Travis County. Located in Central Texas on the eastern edge of
+                the American Southwest... (<rs ref="http://en.wikipedia.org/wiki/Austin,_Texas"
+                  >more</rs>) </p>
+            </note>
+          </place>
+          <place xml:id="S8611">
+            <placeName>Chicago, IL</placeName>
+          </place>
+          <place xml:id="S8629">
+            <placeName>Rockville, MD</placeName>
+          </place>
+          <place xml:id="S8631">
+            <placeName>Nashville, TN</placeName>
+          </place>
+          <place xml:id="S8641">
+            <placeName>New York, NY</placeName>
+          </place>
+          <place xml:id="S8638">
+            <placeName>Los Angeles, CA</placeName>
+          </place>
+          <place xml:id="S8640">
+            <placeName>Elmira, NY</placeName>
+          </place>
+          <place xml:id="S8650">
+            <placeName>Lake Michigan</placeName>
+          </place>
+          <place xml:id="S9476">
+            <placeName>Brentwood Tavern</placeName>
+            <note>
+              <p corresp="TTPS9476P0" xml:id="OTPS9476P0">the shed out behind the <rs ref="#S8447"
+                  >Punk House</rs> rental house at 502 Brentwood St, Austin, TX 78757 </p>
+            </note>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+
+    <profileDesc> </profileDesc>
+
+    <revisionDesc>
+      <listChange ordered="true">
+        <change xml:id="CHG210" who="U783" when="2017-04-07T23:52:57Z" target="#P2759"> Version 11
+          of page "GW#1 - p4 (3)": Changes to page transcript. </change>
+        <change xml:id="CHG209" who="U783" when="2017-04-05T19:22:59Z" target="#P2757"> Version 25
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG208" who="U170" when="2016-12-12T16:08:06Z" target="#P2757"> Version 24
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG207" who="U170" when="2014-06-05T18:34:31Z" target="#P2761"> Version 15
+          of page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG206" who="U170" when="2014-06-05T18:32:20Z" target="#P2760"> Version 33
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG205" who="U170" when="2014-06-05T18:31:04Z" target="#P2759"> Version 10
+          of page "GW#1 - p4 (3)": Changes to page transcript. </change>
+        <change xml:id="CHG204" who="U170" when="2014-06-05T18:28:53Z" target="#P2758"> Version 26
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG203" who="U170" when="2014-06-05T18:28:09Z" target="#P2758"> Version 25
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG202" who="U170" when="2014-06-05T18:27:27Z" target="#P2758"> Version 24
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG201" who="U170" when="2014-06-05T18:27:04Z" target="#P2758"> Version 23
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG200" who="U170" when="2014-06-05T18:25:20Z" target="#P2757"> Version 23
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG199" who="U170" when="2014-06-05T18:23:50Z" target="#P2767"> Version 7 of
+          page "GW#1 - p12 (BACK)": Changes to page transcript. </change>
+        <change xml:id="CHG198" who="U170" when="2014-06-05T18:22:37Z" target="#P2766"> Version 11
+          of page "GW#1 - p11 (LAST)": Changes to page transcript. </change>
+        <change xml:id="CHG197" who="U170" when="2014-06-05T18:20:27Z" target="#P2764"> Version 9 of
+          page "GW#1 - p9 (eight)": Changes to page transcript. </change>
+        <change xml:id="CHG196" who="U170" when="2014-06-05T18:19:55Z" target="#P2763"> Version 16
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG195" who="U170" when="2014-06-05T18:18:58Z" target="#P2762"> Version 9 of
+          page "GW#1 - p7 (6)": Changes to page transcript. </change>
+        <change xml:id="CHG194" who="U170" when="2014-06-05T18:17:31Z" target="#P2761"> Version 14
+          of page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG193" who="U170" when="2014-06-05T18:11:09Z" target="#P2756"> Version 17
+          of page "GW#1 - p1 (front cover)": Changes to page transcript. </change>
+        <change xml:id="CHG192" who="U170" when="2014-06-05T18:10:26Z" target="#P2760"> Version 32
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG191" who="U170" when="2014-06-05T18:09:20Z" target="#P2760"> Version 31
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG190" who="U170" when="2014-06-05T18:07:43Z" target="#P2756"> Version 16
+          of page "GW#1 - p1 (front cover)": Changes to page transcript. </change>
+        <change xml:id="CHG189" who="U170" when="2014-05-17T18:12:25Z" target="#P2757"> Version 22
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG188" who="U170" when="2014-02-13T21:08:10Z" target="#P2766"> Version 10
+          of page "GW#1 - p11 (LAST)": Changes to page transcript. </change>
+        <change xml:id="CHG187" who="U170" when="2014-02-13T21:06:00Z" target="#P2765"> Version 20
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG186" who="U170" when="2014-02-13T21:01:32Z" target="#P2766"> Version 9 of
+          page "GW#1 - p11 (LAST)": Changes to page transcript. </change>
+        <change xml:id="CHG185" who="U170" when="2014-02-13T21:00:07Z" target="#P2759"> Version 9 of
+          page "GW#1 - p4 (3)": Changes to page transcript. </change>
+        <change xml:id="CHG184" who="U170" when="2014-02-13T20:49:37Z" target="#P2763"> Version 15
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG183" who="U170" when="2014-02-13T20:40:50Z" target="#P2763"> Version 14
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG182" who="U170" when="2014-02-13T20:39:37Z" target="#P2763"> Version 13
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG181" who="U170" when="2014-02-13T20:36:12Z" target="#P2763"> Version 12
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG180" who="U170" when="2014-02-13T20:35:00Z" target="#P2765"> Version 19
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG179" who="U170" when="2014-02-13T20:32:35Z" target="#P2758"> Version 22
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG178" who="U170" when="2014-02-13T20:32:16Z" target="#P2758"> Version 21
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG177" who="U170" when="2014-02-13T20:30:42Z" target="#P2758"> Version 20
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG176" who="U170" when="2014-02-13T20:27:20Z" target="#P2763"> Version 11
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG175" who="U170" when="2014-02-13T19:57:19Z" target="#P2760"> Version 30
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG174" who="U170" when="2014-02-13T19:56:32Z" target="#P2760"> Version 29
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG173" who="U170" when="2014-02-13T17:09:35Z" target="#P2757"> Version 21
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG172" who="U170" when="2014-02-11T03:32:38Z" target="#P2765"> Version 18
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG171" who="U170" when="2014-02-11T03:01:37Z" target="#P2759"> Version 8 of
+          page "GW#1 - p4 (3)": Changes to page transcript. </change>
+        <change xml:id="CHG170" who="U170" when="2013-12-08T02:37:17Z" target="#P2757"> Version 20
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG169" who="U170" when="2013-12-08T02:34:48Z" target="#P2757"> Version 19
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG168" who="U170" when="2013-12-05T22:40:55Z" target="#P2765"> Version 17
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG167" who="U170" when="2013-12-05T22:40:55Z" target="#P2765"> Version 16
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG166" who="U357" when="2013-10-01T18:43:17Z" target="#P2760"> Version 28
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG165" who="U357" when="2013-10-01T18:40:36Z" target="#P2760"> Version 27
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG164" who="U93" when="2013-08-20T15:43:26Z" target="#P2756"> Version 15 of
+          page "GW#1 - p1 (front cover)": Changes to page transcript. </change>
+        <change xml:id="CHG163" who="U170" when="2013-07-29T17:57:10Z" target="#P2767"> Version 6 of
+          page "GW#1 - p12 (BACK)": Changes to page transcript. </change>
+        <change xml:id="CHG162" who="U170" when="2013-07-29T17:55:03Z" target="#P2765"> Version 15
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG161" who="U170" when="2013-07-29T17:54:33Z" target="#P2766"> Version 8 of
+          page "GW#1 - p11 (LAST)": Changes to page transcript. </change>
+        <change xml:id="CHG160" who="U170" when="2013-07-29T17:43:13Z" target="#P2758"> Version 19
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG159" who="U170" when="2013-07-29T17:40:28Z" target="#P2765"> Version 14
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG158" who="U170" when="2013-07-29T17:28:43Z" target="#P2766"> Version 7 of
+          page "GW#1 - p11 (LAST)": Changes to page transcript. </change>
+        <change xml:id="CHG157" who="U170" when="2013-07-29T17:21:36Z" target="#P2766"> Version 6 of
+          page "GW#1 - p11 (LAST)": Changes to page transcript. </change>
+        <change xml:id="CHG156" who="U170" when="2013-07-29T17:10:22Z" target="#P2765"> Version 13
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG155" who="U170" when="2013-07-29T17:04:06Z" target="#P2765"> Version 12
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG154" who="U170" when="2013-07-29T17:03:44Z" target="#P2765"> Version 11
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG153" who="U170" when="2013-07-29T17:03:32Z" target="#P2765"> Version 10
+          of page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG152" who="U170" when="2013-07-29T17:03:25Z" target="#P2765"> Version 9 of
+          page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG151" who="U170" when="2013-07-29T17:02:26Z" target="#P2765"> Version 8 of
+          page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG150" who="U170" when="2013-07-29T16:54:21Z" target="#P2760"> Version 26
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG149" who="U170" when="2013-07-29T16:54:07Z" target="#P2760"> Version 25
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG148" who="U170" when="2013-07-29T16:53:37Z" target="#P2760"> Version 24
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG147" who="U170" when="2013-07-29T16:52:37Z" target="#P2760"> Version 23
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG146" who="U170" when="2013-07-29T16:51:50Z" target="#P2760"> Version 22
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG145" who="U170" when="2013-07-29T16:50:49Z" target="#P2765"> Version 7 of
+          page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG144" who="U170" when="2013-07-29T16:46:14Z" target="#P2764"> Version 8 of
+          page "GW#1 - p9 (eight)": Changes to page transcript. </change>
+        <change xml:id="CHG143" who="U170" when="2013-07-29T16:44:41Z" target="#P2761"> Version 13
+          of page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG142" who="U170" when="2013-07-29T16:44:38Z" target="#P2761"> Version 12
+          of page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG141" who="U170" when="2013-07-29T16:44:34Z" target="#P2762"> Version 8 of
+          page "GW#1 - p7 (6)": Changes to page transcript. </change>
+        <change xml:id="CHG140" who="U170" when="2013-07-29T16:44:34Z" target="#P2761"> Version 11
+          of page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG139" who="U170" when="2013-07-29T16:44:34Z" target="#P2761"> Version 10
+          of page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG138" who="U170" when="2013-07-29T16:44:18Z" target="#P2764"> Version 7 of
+          page "GW#1 - p9 (eight)": Changes to page transcript. </change>
+        <change xml:id="CHG137" who="U170" when="2013-07-29T16:35:40Z" target="#P2764"> Version 6 of
+          page "GW#1 - p9 (eight)": Changes to page transcript. </change>
+        <change xml:id="CHG136" who="U170" when="2013-05-07T01:54:06Z" target="#P2760"> Version 21
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG135" who="U170" when="2013-05-07T01:53:49Z" target="#P2760"> Version 20
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG134" who="U170" when="2013-05-07T01:53:01Z" target="#P2758"> Version 18
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG133" who="U170" when="2013-05-07T01:50:18Z" target="#P2763"> Version 10
+          of page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG132" who="U170" when="2013-05-07T01:49:43Z" target="#P2763"> Version 9 of
+          page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG131" who="U170" when="2013-05-07T01:49:09Z" target="#P2763"> Version 8 of
+          page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG130" who="U170" when="2013-05-07T01:48:32Z" target="#P2763"> Version 7 of
+          page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG129" who="U170" when="2013-05-07T01:47:00Z" target="#P2763"> Version 6 of
+          page "GW#1 - p8 (7)": Changes to page transcript. </change>
+        <change xml:id="CHG128" who="U170" when="2013-05-07T01:28:30Z" target="#P2762"> Version 7 of
+          page "GW#1 - p7 (6)": Changes to page transcript. </change>
+        <change xml:id="CHG127" who="U170" when="2013-05-07T01:28:03Z" target="#P2761"> Version 9 of
+          page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG126" who="U170" when="2013-05-07T01:27:24Z" target="#P2762"> Version 6 of
+          page "GW#1 - p7 (6)": Changes to page transcript. </change>
+        <change xml:id="CHG125" who="U170" when="2013-05-07T01:19:56Z" target="#P2761"> Version 8 of
+          page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG124" who="U170" when="2013-05-06T23:05:06Z" target="#P2758"> Version 17
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG123" who="U170" when="2013-05-06T23:04:46Z" target="#P2758"> Version 16
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG122" who="U170" when="2013-05-06T23:02:31Z" target="#P2757"> Version 18
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG121" who="U170" when="2013-05-06T23:01:00Z" target="#P2760"> Version 19
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG120" who="U170" when="2013-05-06T23:00:46Z" target="#P2760"> Version 18
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG119" who="U170" when="2013-05-06T23:00:39Z" target="#P2760"> Version 17
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG118" who="U170" when="2013-05-06T23:00:27Z" target="#P2760"> Version 16
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG117" who="U170" when="2013-05-06T23:00:09Z" target="#P2760"> Version 15
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG116" who="U170" when="2013-05-06T22:59:20Z" target="#P2760"> Version 14
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG115" who="U170" when="2013-05-06T22:54:49Z" target="#P2760"> Version 13
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG114" who="U170" when="2013-05-06T22:54:11Z" target="#P2760"> Version 12
+          of page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG113" who="U170" when="2013-05-06T22:51:40Z" target="#P2758"> Version 15
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG112" who="U170" when="2013-04-29T19:41:27Z" target="#P2759"> Version 7 of
+          page "GW#1 - p4 (3)": Changes to page transcript. </change>
+        <change xml:id="CHG111" who="U170" when="2012-10-30T17:35:50Z" target="#P2765"> Version 6 of
+          page "GW#1 - p10 (SATANS)": Changes to page transcript. </change>
+        <change xml:id="CHG110" who="U170" when="2012-08-14T02:13:15Z" target="#P2757"> Version 17
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG109" who="U170" when="2012-08-14T02:12:57Z" target="#P2757"> Version 16
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG108" who="U170" when="2012-08-14T02:11:51Z" target="#P2758"> Version 14
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG107" who="U170" when="2012-08-14T02:11:50Z" target="#P2757"> Version 15
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG106" who="U170" when="2012-08-14T02:11:45Z" target="#P2758"> Version 13
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG105" who="U170" when="2012-08-14T02:11:45Z" target="#P2757"> Version 14
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG104" who="U170" when="2012-08-14T02:11:08Z" target="#P2758"> Version 12
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG103" who="U170" when="2012-08-14T02:11:08Z" target="#P2757"> Version 13
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG102" who="U170" when="2012-08-14T02:10:52Z" target="#P2758"> Version 11
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG101" who="U170" when="2012-08-14T02:10:52Z" target="#P2757"> Version 12
+          of page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG100" who="U170" when="2012-08-14T02:10:43Z" target="#P2758"> Version 10
+          of page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG99" who="U170" when="2012-08-14T02:10:43Z" target="#P2757"> Version 11 of
+          page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG98" who="U170" when="2012-08-01T00:51:01Z" target="#P2761"> Version 7 of
+          page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG97" who="U170" when="2012-07-30T22:49:11Z" target="#P2761"> Version 6 of
+          page "GW#1 - p6 (5)": Changes to page transcript. </change>
+        <change xml:id="CHG96" who="U170" when="2012-07-30T22:29:49Z" target="#P2760"> Version 11 of
+          page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG95" who="U172" when="2012-07-24T15:04:26Z" target="#P2760"> Version 10 of
+          page "GW#1 - p5 (CHEPPO)": Changes to page transcript. </change>
+        <change xml:id="CHG94" who="U170" when="2012-07-23T22:10:55Z" target="#P2767"> Version 5 of
+          page "GW#1 - p12 (BACK)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG93" who="U170" when="2012-07-23T22:10:55Z" target="#P2767"> Version 4 of
+          page "GW#1 - p12 (BACK)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG92" who="U170" when="2012-07-23T22:10:51Z" target="#P2767"> Version 3 of
+          page "GW#1 - p12 (BACK)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG91" who="U170" when="2012-07-23T22:10:51Z" target="#P2767"> Version 2 of
+          page "GW#1 - p12 (BACK)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG90" who="U170" when="2012-07-23T22:10:50Z" target="#P2767"> Version 1 of
+          page "GW#1 - p12 (BACK)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG89" who="U170" when="2012-07-23T22:09:51Z" target="#P2766"> Version 5 of
+          page "GW#1 - p11 (LAST)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG88" who="U170" when="2012-07-23T22:09:51Z" target="#P2766"> Version 4 of
+          page "GW#1 - p11 (LAST)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG87" who="U170" when="2012-07-23T22:09:48Z" target="#P2766"> Version 3 of
+          page "GW#1 - p11 (LAST)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG86" who="U170" when="2012-07-23T22:09:47Z" target="#P2766"> Version 2 of
+          page "GW#1 - p11 (LAST)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG85" who="U170" when="2012-07-23T22:09:47Z" target="#P2766"> Version 1 of
+          page "GW#1 - p11 (LAST)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG84" who="U170" when="2012-07-23T22:09:01Z" target="#P2765"> Version 5 of
+          page "GW#1 - p10 (SATANS)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG83" who="U170" when="2012-07-23T22:09:01Z" target="#P2765"> Version 4 of
+          page "GW#1 - p10 (SATANS)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG82" who="U170" when="2012-07-23T22:08:58Z" target="#P2765"> Version 3 of
+          page "GW#1 - p10 (SATANS)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG81" who="U170" when="2012-07-23T22:08:58Z" target="#P2765"> Version 2 of
+          page "GW#1 - p10 (SATANS)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG80" who="U170" when="2012-07-23T22:08:57Z" target="#P2765"> Version 1 of
+          page "GW#1 - p10 (SATANS)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG79" who="U170" when="2012-07-23T22:08:12Z" target="#P2764"> Version 5 of
+          page "GW#1 - p9 (eight)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG78" who="U170" when="2012-07-23T22:08:12Z" target="#P2764"> Version 4 of
+          page "GW#1 - p9 (eight)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG77" who="U170" when="2012-07-23T22:07:34Z" target="#P2764"> Version 3 of
+          page "GW#1 - p9 (eight)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG76" who="U170" when="2012-07-23T22:07:34Z" target="#P2764"> Version 2 of
+          page "GW#1 - p9 (eight)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG75" who="U170" when="2012-07-23T22:07:33Z" target="#P2764"> Version 1 of
+          page "GW#1 - p9 (eight)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG74" who="U170" when="2012-07-23T22:06:56Z" target="#P2763"> Version 5 of
+          page "GW#1 - p8 (7)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG73" who="U170" when="2012-07-23T22:06:56Z" target="#P2763"> Version 4 of
+          page "GW#1 - p8 (7)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG72" who="U170" when="2012-07-23T22:06:54Z" target="#P2763"> Version 3 of
+          page "GW#1 - p8 (7)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG71" who="U170" when="2012-07-23T22:06:53Z" target="#P2763"> Version 2 of
+          page "GW#1 - p8 (7)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG70" who="U170" when="2012-07-23T22:06:53Z" target="#P2763"> Version 1 of
+          page "GW#1 - p8 (7)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG69" who="U170" when="2012-07-23T22:05:44Z" target="#P2762"> Version 5 of
+          page "GW#1 - p7 (6)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG68" who="U170" when="2012-07-23T22:05:44Z" target="#P2762"> Version 4 of
+          page "GW#1 - p7 (6)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG67" who="U170" when="2012-07-23T22:02:34Z" target="#P2762"> Version 3 of
+          page "GW#1 - p7 (6)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG66" who="U170" when="2012-07-23T22:02:34Z" target="#P2762"> Version 2 of
+          page "GW#1 - p7 (6)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG65" who="U170" when="2012-07-23T22:02:34Z" target="#P2762"> Version 1 of
+          page "GW#1 - p7 (6)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG64" who="U170" when="2012-07-23T22:02:02Z" target="#P2761"> Version 5 of
+          page "GW#1 - p6 (5)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG63" who="U170" when="2012-07-23T22:02:02Z" target="#P2761"> Version 4 of
+          page "GW#1 - p6 (5)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG62" who="U170" when="2012-07-23T21:59:13Z" target="#P2761"> Version 3 of
+          page "GW#1 - p6 (5)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG61" who="U170" when="2012-07-23T21:59:12Z" target="#P2761"> Version 2 of
+          page "GW#1 - p6 (5)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG60" who="U170" when="2012-07-23T21:59:12Z" target="#P2761"> Version 1 of
+          page "GW#1 - p6 (5)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG59" who="U170" when="2012-07-23T21:58:07Z" target="#P2760"> Version 9 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG58" who="U170" when="2012-07-23T21:58:07Z" target="#P2760"> Version 8 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG57" who="U170" when="2012-07-23T21:58:06Z" target="#P2760"> Version 7 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG56" who="U170" when="2012-07-23T21:58:06Z" target="#P2760"> Version 6 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG55" who="U170" when="2012-07-23T21:58:01Z" target="#P2760"> Version 5 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG54" who="U170" when="2012-07-23T21:58:00Z" target="#P2760"> Version 4 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG53" who="U170" when="2012-07-23T21:57:55Z" target="#P2760"> Version 3 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG52" who="U170" when="2012-07-23T21:57:54Z" target="#P2760"> Version 2 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG51" who="U170" when="2012-07-23T21:57:54Z" target="#P2760"> Version 1 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG50" who="U170" when="2012-07-19T04:56:07Z" target="#P2758"> Version 9 of
+          page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG49" who="U170" when="2012-07-19T04:55:33Z" target="#P2757"> Version 10 of
+          page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG48" who="U170" when="2012-07-19T03:48:48Z" target="#P2756"> Version 14 of
+          page "GW#1 - p1 (front cover)": Changes to page transcript. </change>
+        <change xml:id="CHG47" who="U170" when="2012-07-19T03:46:46Z" target="#P2759"> Version 6 of
+          page "GW#1 - p4 (3)": Changes to page transcript. </change>
+        <change xml:id="CHG46" who="U170" when="2012-07-19T03:22:31Z" target="#P2758"> Version 8 of
+          page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG45" who="U170" when="2012-07-19T03:11:30Z" target="#P2758"> Version 7 of
+          page "GW#1 - p3 (2)": Changes to page transcript. </change>
+        <change xml:id="CHG44" who="U170" when="2012-07-19T02:52:01Z" target="#P2756"> Version 13 of
+          page "GW#1 - p1 (front cover)": Changes to page transcript. </change>
+        <change xml:id="CHG43" who="U170" when="2012-07-19T02:50:53Z" target="#P2756"> Version 12 of
+          page "GW#1 - p1 (front cover)": Changes to page transcript. </change>
+        <change xml:id="CHG42" who="U170" when="2012-07-19T02:42:39Z" target="#P2757"> Version 9 of
+          page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG41" who="U170" when="2012-07-19T02:33:31Z" target="#P2757"> Version 8 of
+          page "GW#1 - p2 (Howdy.)": Changes to page transcript. </change>
+        <change xml:id="CHG40" who="U170" when="2012-07-19T01:45:52Z" target="#P2767"> Version 0 of
+          page "GW#1 - p12 (BACK)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG39" who="U170" when="2012-07-19T01:45:36Z" target="#P2766"> Version 0 of
+          page "GW#1 - p11 (LAST)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG38" who="U170" when="2012-07-19T01:45:20Z" target="#P2765"> Version 0 of
+          page "GW#1 - p10 (SATANS)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG37" who="U170" when="2012-07-19T01:44:48Z" target="#P2764"> Version 0 of
+          page "GW#1 - p9 (eight)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG36" who="U170" when="2012-07-19T01:41:17Z" target="#P2763"> Version 0 of
+          page "GW#1 - p8 (7)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG35" who="U170" when="2012-07-19T01:41:08Z" target="#P2762"> Version 0 of
+          page "GW#1 - p7 (6)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG34" who="U170" when="2012-07-19T01:40:41Z" target="#P2761"> Version 0 of
+          page "GW#1 - p6 (5)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG33" who="U170" when="2012-07-19T01:38:27Z" target="#P2760"> Version 0 of
+          page "GW#1 - p5 (CHEPPO)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG32" who="U170" when="2012-07-19T01:37:50Z" target="#P2759"> Version 5 of
+          page "GW#1 - p4 (3)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG31" who="U170" when="2012-07-19T01:37:50Z" target="#P2759"> Version 4 of
+          page "GW#1 - p4 (3)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG30" who="U170" when="2012-07-19T01:37:17Z" target="#P2759"> Version 3 of
+          page "GW#1 - p4 (3)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG29" who="U170" when="2012-07-19T01:37:17Z" target="#P2759"> Version 2 of
+          page "GW#1 - p4 (3)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG28" who="U170" when="2012-07-19T01:37:16Z" target="#P2759"> Version 1 of
+          page "GW#1 - p4 (3)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG27" who="U170" when="2012-07-19T01:36:53Z" target="#P2759"> Version 0 of
+          page "GW#1 - p4 (3)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG26" who="U170" when="2012-07-19T01:36:17Z" target="#P2758"> Version 6 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG25" who="U170" when="2012-07-19T01:35:46Z" target="#P2758"> Version 5 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG24" who="U170" when="2012-07-19T01:35:45Z" target="#P2758"> Version 4 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG23" who="U170" when="2012-07-19T01:35:41Z" target="#P2758"> Version 3 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG22" who="U170" when="2012-07-19T01:35:41Z" target="#P2758"> Version 2 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG21" who="U170" when="2012-07-19T01:35:41Z" target="#P2758"> Version 1 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG20" who="U170" when="2012-07-19T01:34:51Z" target="#P2756"> Version 11 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG19" who="U170" when="2012-07-19T01:34:03Z" target="#P2757"> Version 7 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG18" who="U170" when="2012-07-19T01:32:17Z" target="#P2758"> Version 0 of
+          page "GW#1 - p3 (2)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG17" who="U170" when="2012-07-19T01:29:54Z" target="#P2757"> Version 6 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG16" who="U170" when="2012-07-19T01:29:54Z" target="#P2757"> Version 5 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG15" who="U170" when="2012-07-19T01:29:51Z" target="#P2757"> Version 4 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG14" who="U170" when="2012-07-19T01:29:51Z" target="#P2757"> Version 3 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG13" who="U170" when="2012-07-19T01:29:51Z" target="#P2757"> Version 2 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG12" who="U170" when="2012-07-19T01:29:20Z" target="#P2757"> Version 1 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG11" who="U170" when="2012-07-19T01:28:58Z" target="#P2756"> Version 10 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG10" who="U170" when="2012-07-19T01:28:45Z" target="#P2757"> Version 0 of
+          page "GW#1 - p2 (Howdy.)": Empty transcript -- probably initial upload of page facsimile. </change>
+        <change xml:id="CHG9" who="U170" when="2012-07-19T01:18:15Z" target="#P2756"> Version 9 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG8" who="U170" when="2012-07-19T01:18:15Z" target="#P2756"> Version 8 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG7" who="U170" when="2012-07-19T01:18:12Z" target="#P2756"> Version 7 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG6" who="U170" when="2012-07-19T01:18:12Z" target="#P2756"> Version 6 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG5" who="U170" when="2012-07-19T01:18:10Z" target="#P2756"> Version 5 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG4" who="U170" when="2012-07-19T01:18:10Z" target="#P2756"> Version 4 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG3" who="U170" when="2012-07-19T01:16:27Z" target="#P2756"> Version 3 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG2" who="U170" when="2012-07-19T01:16:26Z" target="#P2756"> Version 2 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG1" who="U170" when="2012-07-19T01:16:26Z" target="#P2756"> Version 1 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+        <change xml:id="CHG0" who="U170" when="2012-07-19T01:15:39Z" target="#P2756"> Version 0 of
+          page "GW#1 - p1 (front cover)": Empty transcript -- probably initial upload of page
+          facsimile. </change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <pb xml:id="F2756" n="1"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2756.jpg"/>
+      <div xml:id="OTP2756">
+        <fw type="pageNum">GW#1 - p1 (front cover)</fw>
+        <p corresp="TTP2756P0" xml:id="OTP2756P0">25¢<lb/> THIS IS <del rend="overstrike">MY</del>
+          <hi rend="underline">YOUR</hi><lb/> GEEK<lb/> WEEKLY<lb/> [image of false teeth]<lb/> WITH
+          CARDS<lb/> ROCK-N-ROLL<lb/> MOVIN' BLUES<lb/> GEEK REVOLUTION<lb/> ROSTER<lb/>
+          <rs ref="#S8451">CHICAGO</rs> TRAVEL<lb/> STORY<lb/> HANDY ADDRESSES<lb/> MUSIC &amp;
+          SHIT<lb/> - AND <lb break="no"/> INTERVIEWS [scratched out] - maybe next time<lb/> [image
+          of crabs]<lb/> WRITE<lb/> YOUR<lb/> NAME<lb/> HERE ______________________________<lb/>
+          [image of Saturn]<lb/> VOL. #1 FALL <rs ref="#S8453">1994</rs> NO. 1 </p>
+
+
+      </div>
+      <pb xml:id="F2757" n="2"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2757.jpg"/>
+      <div xml:id="OTP2757">
+        <fw type="pageNum">GW#1 - p2 (Howdy.)</fw>
+        <p corresp="TTP2757P0" xml:id="OTP2757P0">Howdy.<lb/>
+        </p>
+
+        <p corresp="TTP2757P1" xml:id="OTP2757P1"> Ok, so I've been saying I was gonna do this for a
+          few months now and here I am doing it, I can't fucking believe it! I am soooo proud!<lb/>
+        </p>
+
+        <p corresp="TTP2757P2" xml:id="OTP2757P2"> I really hope some people like what I'm doin'
+          here, cuz I know how graet it is to just fall in love with someone's zine. Please write me
+          letters and send shit to trade cuz I just recently moved and realized how much shit I own
+          and if you write me maybe I'll send you some of it. I love havin' cool shit, but maybe I
+          oughtta do a little tradin' around, you know kinda circulate some shit...<lb/>
+        </p>
+
+        <p corresp="TTP2757P3" xml:id="OTP2757P3"> Anyway, I just moved and I'm livin' with this
+          other girl named <rs ref="#S8480">Jennifer</rs>, so it's gonna get kinda confusing, I
+          think. It's a big<lb/> change livin' in a little, nice wood house really close to <rs
+            ref="#S8446">the Drag</rs>, with a GIRL instead of being like the only girl in a <rs
+            ref="#S8447">punk house</rs> with all these boys everywhere. It's not that I don't dig
+          boys or anything, it's just crazy to live with 'em, especially the ones I was livin,
+          with.<lb/>
+        </p>
+
+        <p corresp="TTP2757P4" xml:id="OTP2757P4"> So, I expect lots of visitors, bein' so centrally
+          located and all, and I also expect lots of mail!!<lb/>
+        </p>
+
+        <p corresp="TTP2757P5" xml:id="OTP2757P5"> enjoy,<lb/>
+          <rs ref="#S11853">Jennifer</rs>.<lb/>
+          <rs ref="#S9124">2715-A Hemphill Park<lb/> Austin, TX 78705</rs><lb/>
+        </p>
+
+        <p corresp="TTP2757P6" xml:id="OTP2757P6"> Just send me some stamps or some cool shit or a
+          zine or some money or something if you want another copy of this.<lb/>
+        </p>
+
+        <p corresp="TTP2757P7" xml:id="OTP2757P7"> [image of boy and girl farming] </p>
+
+
+        <note resp="#U170"/>
+        <note resp="#U170"/>
+      </div>
+      <pb xml:id="F2758" n="3"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2758.jpg"/>
+      <div xml:id="OTP2758">
+        <fw type="pageNum">GW#1 - p3 (2)</fw>
+        <p corresp="TTP2758P0" xml:id="OTP2758P0">THE GREAT ROCK-N<lb break="no"/> ROLL MASSACRE <rs
+            ref="#S8453">'94</rs><lb/>
+        </p>
+
+        <p corresp="TTP2758P1" xml:id="OTP2758P1"> It all started with the <rs ref="#S8454"
+            >Motards</rs>/<rs ref="#S8455">Drags</rs>/<rs ref="#S8456">Fells</rs> show at <rs
+            ref="#S8457">Electric Lounge</rs> on <rs ref="#S9549">19 August</rs>. I got this crazy
+          start and ended up going to the show with my <rs ref="#S8480">now-roommate</rs>. When I
+          showed up, <rs ref="#S8459">Susan</rs> was there which was really weird cuz I took her to
+          the <rs ref="#S8460">bus station</rs> two days earlier and I didn't expect to see her
+          again for a month or two. It turned out that she met up with this chick in <rs
+            ref="#S8461">Houston</rs> during her layover and ended up staying for a couple of days
+          and spending all her money or something and coming right back home. So blah, blah, the
+          show was great, the <rs ref="#S8454">Motards</rs> were rowdy-imagine! and the <rs
+            ref="#S8455">Drags</rs> blew me away- I'd never heard/seen them before (partly cuz
+          they're from <rs ref="#S8462">Arizona</rs>)- and, of course the <rs ref="#S8456"
+            >Fells</rs> were just beautiful. The only weird thing that happened was that <rs
+            ref="#S8470">CJ</rs> from the <rs ref="#S8455">Drags</rs> jumped on me and then gave me
+          a 7". Oh, and people kept asking <rs ref="#S8459">Susan</rs> if we were sisters, a thing
+          that hasn,t happened to us in a long time.<lb/>
+        </p>
+
+        <p corresp="TTP2758P2" xml:id="OTP2758P2"> But then, on Sunday night, after being denied <rs
+            ref="#S8459">Susan</rs>'s mom's car (a really plush Jeep-Trooper thing with a CD player
+          and AC and all), we headed for <rs ref="#S8464">San Antonio</rs> in my fucked up <rs
+            ref="#S9550">'73</rs> Superbeetle, <rs ref="#S8465">Ruth</rs>. Now, when I got <rs
+            ref="#S8465">Ruth</rs> a few years ago, I would drive her to <rs ref="#S8461"
+            >Houston</rs> a lot to go visit <rs ref="#S8613">my mommie</rs>, but she I haven't dared
+          to take her out on the open road in some time. She performed beautifully! She really came
+          through for me.<lb/>
+        </p>
+
+        <p corresp="TTP2758P3" xml:id="OTP2758P3"> And after tons of confusion and a brick plate
+          special from a <rs ref="#S8466">Furr's Cafeteria</rs> in <rs ref="#S8467">San Marcos</rs>,
+          we got to <rs ref="#S8468">Taco Land</rs> who had said over the phone that the <rs
+            ref="#S8469">Inhalants</rs>/<rs ref="#S8455">Drags</rs>/<rs ref="#S8456">Fells</rs> show
+          was indeed happening there<lb/> .....<lb/> 2 </p>
+
+
+      </div>
+      <pb xml:id="F2759" n="4"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2759.jpg"/>
+      <div xml:id="OTP2759">
+        <fw type="pageNum">GW#1 - p4 (3)</fw>
+        <p corresp="TTP2759P0" xml:id="OTP2759P0">Well the show wasn't happening there when we
+          arrived, nor was it planned. So we called <rs ref="#S8471">Wacky's</rs> and they said that
+          the show was going to be there. But, when we got there, no one was there and the guy,
+          presumably <rs ref="#S8472">Wacky</rs> himself, said he hadn't heard from any of the bands
+          since Wednesday. "But," he said, "we got dollar <rs ref="#S8473">Shiner Bock</rs>s
+          tonight." So we thought we'd take a break before driving home, and luckily, the bands
+          showed up.<lb/>
+        </p>
+
+        <p corresp="TTP2759P1" xml:id="OTP2759P1"> Turned out there were only a few locals there and
+          they were extremely questionable-not punk or rock. The dollar beer soon lubricated the
+          mostly <rs ref="#S8474">Austin</rs> crowd and the show got off to a great start. I already
+          loved watching the <rs ref="#S8469">Inhalants</rs> and now they've got <rs ref="#S8475"
+            >Dana</rs> ex-<rs ref="#S11908">Hormone</rs> on drums so they're doublecool. Then the
+            <rs ref="#S8455">Drags</rs> got on stage and kicked ass and this time <rs ref="#S8470"
+            >CJ</rs> just threw a 7" at me. Then it all fell apart- no pun needed- and the <rs
+            ref="#S8456">Fells</rs> fucking went to hell in front of us all. It was insane nad by
+          the end no one was playing their own instruments or anything and people were getting on
+          the stage and <rs ref="#S8477">Heath</rs> was under a ladder in back of the stage nursing
+          wounds, I suppose and everyone was drunk and <rs ref="#S8470">CJ</rs> was on stage and
+          people were screaming and hitting things and some guy kept falling on me no matter where I
+          moved.<lb/>
+        </p>
+
+        <p corresp="TTP2759P2" xml:id="OTP2759P2"> And through it all two little Mexican boys kept
+          trying to sell people roses for 2 bucks each and everytime they did you could see the
+          person think "Hmmm, that's two beers....nah"<lb/>
+        </p>
+
+        <p corresp="TTP2759P3" xml:id="OTP2759P3"> Afterward someone put on that new <rs
+            ref="#S8478">Johnny Cash</rs> record which sounded really weird after what had just
+          happened, but it was better than that fucking <rs ref="#S8479">Bjork</rs> record that I
+          keep fucking hearing everywhere I go even before the show that night. And everybody kinda
+          sat around and looked stunned. And the bar ran out of beer. </p>
+
+
+      </div>
+      <pb xml:id="F2760" n="5"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2760.jpg"/>
+      <div xml:id="OTP2760">
+        <fw type="pageNum">GW#1 - p5 (CHEPPO)</fw>
+        <p corresp="TTP2760P0" xml:id="OTP2760P0">
+          <rs ref="#S9063">CHEPPO</rs><lb/> TRIBUTE PAGE<lb/>
+        </p>
+
+        <p corresp="TTP2760P1" xml:id="OTP2760P1"> Bitch<lb/> Bitch<lb/> Bitch<lb/>
+        </p>
+
+        <p corresp="TTP2760P2" xml:id="OTP2760P2"> 1. I'm pissed that my <rs ref="#S8613">mom</rs>
+          and <rs ref="#S8614">brother</rs> live in <rs ref="#S8611">Chicago</rs> now and that so
+          many of my friends live far away.<lb/> 2. I'm pissed that rent and shit is so high in <rs
+            ref="#S8474">this town</rs>.<lb/> 3. I'm pissed that there weren't any Whore-o-Scopes or
+          a Dear Fag Hag column in the last Issue of the <rs ref="#S8615">Fag Rag</rs>.<lb/> 4. I'm
+          pissed that there aren't any really good clubs in <rs ref="#S8474">this town</rs>.<lb/> 5.
+          I'm pissed that I can't afford any new records right now.<lb/> 6. I'm pissed <rs
+            ref="#S8616">the Grifters</rs> haven't been here again sooner, like, now,
+          goddamnit!<lb/> -BUT<lb break="no"/> 1. I'm happy that there are so many new, good local
+          bands right now! We had quite a drought there for a while.<lb/> 2. I'm glad that my new
+          roommate has three newts. When I asked what their names were, she said Jonie and Chachie.
+          Hello- there are three of them, but only two names- I dunno maybe she should lay off the
+          pot for a while.<lb/> 3. I'm glad my bestest friend <rs ref="#S8459">Susan</rs> is back
+          and giving me her TV and VCR.<lb/> 4. I'm glad I can walk to <rs ref="#S9547">Sound
+            Ex</rs> now from my house.<lb/> 5. And last of all, sweet reader, I am so, so happy that
+          you are reading my humble piece of writing.<lb/>
+        </p>
+
+        <p corresp="TTP2760P3" xml:id="OTP2760P3"> [photo triptych of young boy making faces] </p>
+
+
+      </div>
+      <pb xml:id="F2761" n="6"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2761.jpg"/>
+      <div xml:id="OTP2761">
+        <fw type="pageNum">GW#1 - p6 (5)</fw>
+        <p corresp="TTP2761P0" xml:id="OTP2761P0">CARD GAMES ROCK<lb/>
+        </p>
+
+        <p corresp="TTP2761P1" xml:id="OTP2761P1"> First-- <rs ref="#S8652">NUCLEAR WAR</rs>. This
+          is a card/board game that originated in the '70s I think. First there was <rs ref="#S8652"
+            >Nuclear War</rs>, then there was another edition called <rs ref="#S8654">Nucler
+            Escalation</rs>, and finally <rs ref="#S8624">Nuclear Proliferation</rs>. The best way
+          to play is with all three editions put together and a whole mess of people. It sucks that
+          each edition is like $15 or $20, but if you really wanna play, I've got two editions and
+          If there are a a bunch of people who wanna play, it's cool to just play with two of the
+          sets.<lb/>
+        </p>
+
+        <p corresp="TTP2761P2" xml:id="OTP2761P2"> The basic setup is you get cards with some number
+          of people on them and some cards with bombs and stuff. Then everyone takes turns nuking
+          each other until one person is victorious. It's almost as much fun as burning someone with
+          a cigarette at <rs ref="#S8625">Emo's</rs>.<lb/>
+        </p>
+
+        <p corresp="TTP2761P3" xml:id="OTP2761P3"> [image of playing card from the board game
+          Nuclear War] <lb/>
+        </p>
+
+        <p corresp="TTP2761P4" xml:id="OTP2761P4"> Now- cool decks of cards. (see opposite
+          page)<lb/>
+        </p>
+
+        <p corresp="TTP2761P5" xml:id="OTP2761P5"> 5 </p>
+
+
+      </div>
+      <pb xml:id="F2762" n="7"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2762.jpg"/>
+      <div xml:id="OTP2762">
+        <fw type="pageNum">GW#1 - p7 (6)</fw>
+        <p corresp="TTP2762P0" xml:id="OTP2762P0"><rs ref="#S8626">Amtrak</rs> playing card from my
+          train trip -- [image of] guy hoein'<lb/> [image of] Sponge diver -- Nude male playing
+          cards [2]. A housewarming gift from <rs ref="#S8613">my mom</rs>.<lb/> Population card
+          from <rs ref="#S8652">Nuclear War</rs> [25,000,000 PEOPLE] </p>
+
+
+      </div>
+      <pb xml:id="F2763" n="8"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2763.jpg"/>
+      <div xml:id="OTP2763">
+        <fw type="pageNum">GW#1 - p8 (7)</fw>
+        <p corresp="TTP2763P0" xml:id="OTP2763P0">HANDY ADDRESSES --&gt; [mollusk diagram]<lb/>
+        </p>
+
+        <p corresp="TTP2763P1" xml:id="OTP2763P1"> Get all <rs ref="#S8456">the Fells</rs> and <rs
+            ref="#S8455">Drags</rs> 7"s.<lb/>
+        </p>
+
+        <p corresp="TTP2763P2" xml:id="OTP2763P2"> For music lovers:<lb/>
+        </p>
+
+        <p corresp="TTP2763P3" xml:id="OTP2763P3">
+          <rs ref="#S8628">NEEDLE EXPRESS</rs><lb/> 785-A Rockville Avenue<lb/>
+          <rs ref="#S8629">Rockville, MD</rs> 20852<lb/>
+        </p>
+
+        <p corresp="TTP2763P4" xml:id="OTP2763P4">
+          <rs ref="#S8630">RIDERS IN THE SKY</rs><lb/>
+          <rs ref="#S9553">INTERNATIONAL BUCKAROO CLUB</rs><lb/> PO BOX 121134<lb/>
+          <rs ref="#S8631">NASHVILLE, TN</rs> 37212-1134<lb/>
+        </p>
+
+        <p corresp="TTP2763P5" xml:id="OTP2763P5">
+          <rs ref="#S8632">ESTRUS RECORDS</rs><lb/> PO BOX 2125<lb/>
+          <rs ref="#S8633">Bellingham, WA</rs> 98227-2125<lb/>
+        </p>
+
+        <p corresp="TTP2763P6" xml:id="OTP2763P6">
+          <rs ref="#S8634">RRRecords</rs><lb/> 151 Paige St.<lb/>
+          <rs ref="#S8635">Lowell, MA</rs> 01852<lb/>
+        </p>
+
+        <p corresp="TTP2763P7" xml:id="OTP2763P7"> WRITE FAN LETTERS<lb/>
+        </p>
+
+        <p corresp="TTP2763P8" xml:id="OTP2763P8"> For zine lovers:<lb/>
+        </p>
+
+        <p corresp="TTP2763P9" xml:id="OTP2763P9">
+          <rs ref="#S8636">BUST</rs><lb/> PO Box 319, Ansonia Station<lb/>
+          <rs ref="#S8641">New York, NY</rs> 10023<lb/>
+        </p>
+
+        <p corresp="TTP2763P10" xml:id="OTP2763P10">
+          <rs ref="#S8637">GRAND ROYALE</rs><lb/> PO Box 26689<lb/>
+          <rs ref="#S8638">Los Angeles, CA</rs> 90026<lb/>
+        </p>
+
+        <p corresp="TTP2763P11" xml:id="OTP2763P11">
+          <rs ref="#S9548">YELLOW SUBMARINE/UNCLE JUNKY</rs><lb/> PO Box 81<lb/>
+          <rs ref="#S8640">Elmira, NY</rs> 14902-0081 </p>
+
+
+      </div>
+      <pb xml:id="F2764" n="9"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2764.jpg"/>
+      <div xml:id="OTP2764">
+        <fw type="pageNum">GW#1 - p9 (eight)</fw>
+        <p corresp="TTP2764P0" xml:id="OTP2764P0"><rs ref="#S8451">Chi-town</rs><lb/>
+        </p>
+
+        <p corresp="TTP2764P1" xml:id="OTP2764P1"> I went to <rs ref="#S8451">Chicago</rs> again
+          this summer &amp; I liked it a lot more than last time. Since <rs ref="#S8613">my mom</rs>
+          was out of the country, I got to stay in her house for free &amp; I also got to use her
+          car. This made it possible for me to do lots more stuff than the last time I was there
+          before. The three best things were going to <rs ref="#S8648">Blackout</rs> and <rs
+            ref="#S8649">Ajax Records</rs>, getting fucked up and going to <rs ref="#S8650">Lake
+            Michigan</rs> and getting to see <rs ref="#S8651">Southern Culture on the Skids</rs>.
+          That was one of the coolest shows I've ever seen. <rs ref="#S8451">Chicago</rs>'s a neat
+          town that you should definitely visit if you ever get the chance.<lb/>
+        </p>
+
+        <p corresp="TTP2764P2" xml:id="OTP2764P2">
+          <rs ref="#S10679">Nuclear War</rs> playing card.] </p>
+
+
+      </div>
+      <pb xml:id="F2765" n="10"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2765.jpg"/>
+      <div xml:id="OTP2765">
+        <fw type="pageNum">GW#1 - p10 (SATANS)</fw>
+        <p corresp="TTP2765P0" xml:id="OTP2765P0"><rs ref="#S8660">SATANS</rs><lb/>
+          <rs ref="#S9556">Brock</rs>
+          <rs ref="#S9557">Hunter</rs>
+          <rs ref="#S9558">Heath</rs> &amp; <rs ref="#S8495">Sean Vylent</rs><lb/>
+        </p>
+
+        <p corresp="TTP2765P1" xml:id="OTP2765P1"> I just got home from <rs ref="#S8660">the
+            Satans</rs>' show (<rs ref="#S8625">Emo's</rs>
+          <rs ref="#S9552">9/2</rs>) an I feel like I been rode hard and put up wet. The show rocked
+          and it was cool to see everybody get so fucking riled up. I thought I was gonna get killed
+          and it was a good thing <rs ref="#S9557">Hunter</rs> was wearing his protective
+          eyewear...<lb/>
+        </p>
+
+        <p corresp="TTP2765P2" xml:id="OTP2765P2"> Next week they're playing with <rs ref="#S8662"
+            >Pork</rs> and then having a party the next night at <rs ref="#S8447"
+            >Todd-n-Brock's</rs>. <rs ref="#S8459">Susan</rs> said that she'd buy a keg if they ever
+          got around to having the damn party. Now she says she might get two! <rs ref="#S8660">The
+            Satans</rs> are great to see in that <rs ref="#S9476">shed</rs> at <rs ref="#S8447"
+            >T&amp;B's</rs>. That's where they had their very first show. They are fucking ROCK
+          STARS!! (You really get this time warp feeling when you see them.)<lb/>
+        </p>
+
+        <p corresp="TTP2765P3" xml:id="OTP2765P3"> Interview next issue. </p>
+
+
+      </div>
+      <pb xml:id="F2766" n="11"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2766.jpg"/>
+      <div xml:id="OTP2766">
+        <fw type="pageNum">GW#1 - p11 (LAST)</fw>
+        <p corresp="TTP2766P0" xml:id="OTP2766P0">Geeks R neet.<lb/>
+        </p>
+
+        <p corresp="TTP2766P1" xml:id="OTP2766P1"> THE GEEK REVOLUTION!!<lb/> THE GEEK<lb/>
+          REVOLUTION!!<lb/>
+        </p>
+
+        <p corresp="TTP2766P2" xml:id="OTP2766P2"> You've seen it everywhere- the geek glasses, the
+          stupid shirts, dumb humor-- now find out how to properly nurture the budding little
+          neo-geek hiding inside you! The following is a list of geek icons whom you should devote
+          yourself to if you ever plan on getting nowhere:<lb/>
+        </p>
+
+        <p corresp="TTP2766P3" xml:id="OTP2766P3">
+          <rs ref="#S8674">JAD FAIR</rs>/<rs ref="#S8675">HALF JAPANESE</rs><lb/>
+          <rs ref="#S8676">DAVE BARRY</rs><lb/>
+        </p>
+
+        <p corresp="TTP2766P4" xml:id="OTP2766P4"> coler me -&gt; [coloring book image of <rs
+            ref="#S8673">Saturn</rs>]<lb/>
+        </p>
+
+        <p corresp="TTP2766P5" xml:id="OTP2766P5">
+          <rs ref="#S8677">ELVIS COSTELLO</rs><lb/>
+          <rs ref="#S9555">ENCYCLOPEDIA BROWN</rs><lb/>
+          <rs ref="#S8679">DANIEL JOHNSTON</rs><lb/>
+          <rs ref="#S8680">SOME CARTOONIST GUY NAMED CALLAHAN</rs><lb/>
+          <rs ref="#S8681">MAN OR ASTROMAN...</rs><lb/>
+          <rs ref="#S8682">JACKIE CHAN</rs><lb/>
+          <rs ref="#S8683">ALLY SHEEDY</rs>'S <rs ref="#S8684">CHARACTER</rs> IN <rs ref="#S9560"
+            >THE BREAKFAST CLUB</rs><lb/>
+          <rs ref="#S8686">DAIRY QUEEN EMPIRE</rs><lb/>
+          <rs ref="#S8687">CARLISLE MAXWELL</rs><lb/>
+          <rs ref="#S8688">JACKSON POLLACK</rs><lb/> MOST NEWSPAPER JOURNALISTS<lb/> STRAIGHT EDGE
+          KIDS<lb/>
+        </p>
+
+        <p corresp="TTP2766P6" xml:id="OTP2766P6"> Note that most of these geeks are also punks, or
+          at least qualify as being pretty fuckin' cool.<lb/>
+        </p>
+
+        <p corresp="TTP2766P7" xml:id="OTP2766P7"> LAST </p>
+
+
+      </div>
+      <pb xml:id="F2767" n="12"
+        facs="/home/fromthepage/fromthepage/releases/20120606195722/public/images/working/upload/2767.jpg"/>
+      <div xml:id="OTP2767">
+        <fw type="pageNum">GW#1 - p12 (BACK)</fw>
+        <p corresp="TTP2767P0" xml:id="OTP2767P0">[coloring book image of dinosaur]<lb/>
+        </p>
+
+        <p corresp="TTP2767P1" xml:id="OTP2767P1"> Simon says... EVOLVE </p>
+
+
+      </div>
+    </body>
+  </text>
+</TEI>

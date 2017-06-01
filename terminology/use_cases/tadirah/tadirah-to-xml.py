@@ -5,8 +5,8 @@ import sys
 import glob
 import time
 
-inpath = '../data/TaDiRAH'
-outpath = '../data/TaDiRAH/xml'
+inpath = '../tadirah'
+outpath = '../tadirah/xml'
 
 if not os.path.exists(outpath): os.makedirs(outpath)
 
@@ -21,6 +21,8 @@ for lang_in, lang_out in zip(lang_codes_in, lang_codes_out):
         for fname in filelist:
             with open(fname) as infile:
                 for line in infile:
+                    if '*' in line:
+                        line = line.replace('*', '\n') + '----------\n'
                     outfile.write(line)
                 outfile.write('\n')
 
