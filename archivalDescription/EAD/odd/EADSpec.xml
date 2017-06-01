@@ -54,7 +54,6 @@
             </div>
         </front>
         <body>
-            <!-- Presentation of the method and the purpose of ODD encoding of EAD -->
             <div>
                 <head>About EAD</head>
                 <p>EAD stands for Encoded Archival Description, and is a non-proprietary de facto
@@ -69,36 +68,94 @@
             </div>
             <div type="introduction">
                 <head>Introduction</head>
-                <p>...</p>
-
+                <p>The specification of EAD with TEI ODD is a part of a real strategy of defining specific
+                    customisation of EAD that could be used at various stages of the process of
+                    integrating heterogeneous sources.</p>
+                <p>This methodology is based on the specification and customisation method inspired from the
+                    long lasting experience of the Text Encoding Initiative (TEI) community. In the
+                    TEI framework, one has the possibility of model
+                    specific subset or extensions of the TEI guidelines while maintaining both the
+                    technical (XML schemas) and editorial (documentation) content within a single
+                    framework.
+                </p>
+                    <p>This work has lead us quite far in anticipating that the method we
+                    have developed may be of a wider interest within similar environments, but also,
+                    as we imagine it, for the future maintenance of the EAD standard. Finally this
+                    work can be seen as part of the wider endeavour of European research
+                    infrastructures in the humanities such as CLARIN and DARIAH to provide support
+                    for researchers to integrate the use of standards in their scholarly practices.
+                    This is the reason why the general workflow studied here has been introduced as
+                    a use case in the umbrella infrastructure project Parthenos which aims, among
+                    other things, at disseminating information and resources about methodological
+                    and technical standards in the humanities. </p>
+                <p>We used ODD to encode completely the EAD standard, as well as the guidelines
+                    provided by the Library of Congress. </p>
             </div>
             <div n="1" type="scope" xml:id="sec_scope">
                 <head>Scope</head>
-                <p>...</p>
+                <p>The EAD ODD is a XML-TEI document made up of three main parts. The first one is,
+                    like any other TEI document, the <gi>teiHeader</gi>, that comprises the metadata
+                    of the specification document. Here we state, among others pieces of
+                    information, the sources used to create the specification document in a
+                        <gi>sourceDesc</gi> element. Our two sources are the EAD Tag Library and the
+                    RelaxNG XML schema, both published on the Library of Congress website. The
+                    second part of the document is a presentation of our method (the foreword) with
+                    an introduction to the EAD standard and a description of the structure of the
+                    document. This part contains some text extracted from the introduction of the
+                    EAD Tag Library. The third part is the schema specification itself : the list of
+                    EAD elements and attributes and the way they relate to each others.</p>
             </div>
             <div n="2" type="normativeReferences" xml:id="sec_norm_refs">
                 <head>Normative references</head>
-                <p>...</p>
                 <listBibl>
-                    <bibl>...</bibl>
-
+                    <biblStruct type="webpage" xml:id="Library_of_Congress"
+                        corresp="http://zotero.org/groups/427927/items/XPDZH8WZ">
+                        <monogr>
+                            <title level="m">EAD: Encoded Archival Description (EAD Official Site,
+                                Library of Congress)</title>
+                            <author><name>Library of Congress</name></author>
+                            <imprint>
+                                <publisher>Library of Congress</publisher>
+                                <note type="accessed">2015-11-24T09:17:34Z</note>
+                                <note type="url">http://www.loc.gov/ead/</note>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct type="webpage" xml:id="zoteroItem_2Z29AVQV"
+                        corresp="http://zotero.org/groups/427927/items/2Z29AVQV">
+                        <monogr>
+                            <title level="m">Encoded Archival Description Tag Library - Version 2002
+                                (EAD Official Site, Library of Congress)</title>
+                            <imprint>
+                                <publisher>Library of Congress</publisher>
+                                <note type="accessed">2017-05-31T13:12:01Z</note>
+                                <note type="url">http://www.loc.gov/ead/tglib/index.html</note>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct type="document" xml:id="Experts_group_on_archival_description_ICA2016"
+                        corresp="http://zotero.org/groups/427927/items/Q2W989FC">
+                        <monogr>
+                            <title level="m">Records in Contexts, a conceptual model for archival
+                                description. Consultation Draft v0.1</title>
+                            <title type="short">Records in Contexts, a conceptual model for archival
+                                description.</title>
+                            <author><name>Experts group on archival description (ICA)</name></author>
+                            <imprint>
+                                <publisher>Conseil international des Archives</publisher>
+                                <date>2016</date>
+                                <note type="url"
+                                    >http://www.ica.org/sites/default/files/RiC-CM-0.1.pdf</note>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
                 </listBibl>
             </div>
-
-            <div>
-                <head>...</head>
-                <p>...</p>
-            </div>
-
-
         </body>
         <back>
             <div type="annex" xml:id="sec_schema">
                 <head>EAD specification</head>
                 <schemaSpec ident="EAD-schema" start="ead" ns="urn:isbn:1-931666-22-9">
-                    <!--<moduleRef key="tei"/>-->
-                    <!--<moduleRef key="iso-fs"/>-->
-
                     <elementSpec ident="abbr" module="EAD">
                         <gloss>Abbreviation</gloss>
                         <desc>A generic element for a shortened form of a word, including an
@@ -157,7 +214,6 @@
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>LANGCODE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="fonds" xmlns="urn:isbn:1-931666-22-9">
@@ -674,17 +730,6 @@
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- 
-ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-FROM	#IMPLIED, NMTOKEN
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, arc, arc
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TITLE	#IMPLIED, CDATA
-TO	#IMPLIED, NMTOKEN -->
                         <exemplum>
                             <teix:egXML>
                                 <c02 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -769,11 +814,6 @@ TO	#IMPLIED, NMTOKEN -->
                                     <rng:data type="NMTOKEN"/>
                                 </datatype>
                             </attDef>
-                            <!-- 
-ENCODINGANALOG	#IMPLIED, CDATA
-OTHERLEVEL	#IMPLIED, NMTOKEN
-RELATEDENCODING	#IMPLIED, CDATA
- -->
                         </attList>
                         <remarks>
                             <p>The Descriptive Identification <gi>did</gi> element is required to
@@ -815,10 +855,6 @@ RELATEDENCODING	#IMPLIED, CDATA
                             <!-- before presenting more detailed descriptions in <bioghist>, <scopecontent>, and <dsc>, 
                                 in order to provide first a basic description of the archival materials. -->
                         </content>
-                        <!-- LEVEL	#REQUIRED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-RELATEDENCODING	#IMPLIED, CDATA
-TYPE	#IMPLIED, NMTOKEN -->
                         <remarks>
                             <p>See also the <gi>eadgrp</gi> element.</p>
                         </remarks>
@@ -850,18 +886,6 @@ TYPE	#IMPLIED, NMTOKEN -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new replace, embed, showother, shownone
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList>-->
-
                         <exemplum>
                             <teix:egXML>
                                 <relatedmaterial xmlns="urn:isbn:1-931666-22-9">
@@ -1196,19 +1220,6 @@ XPOINTER	#IMPLIED, CDATA</attList>-->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <p xmlns="urn:isbn:1-931666-22-9">The Archibald MacLeish Papers are
@@ -1506,13 +1517,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="combined" xmlns="urn:isbn:1-931666-22-9">
@@ -1594,14 +1598,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="combined" xmlns="urn:isbn:1-931666-22-9">
@@ -1696,14 +1692,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1743,13 +1731,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1789,13 +1770,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1835,13 +1809,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1881,13 +1848,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1927,13 +1887,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -1973,13 +1926,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -2019,13 +1965,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -2065,13 +2004,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -2111,13 +2043,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:oneOrMore>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -2149,13 +2074,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="dsc"/>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LEVEL	#IMPLIED, class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries
-OTHERLEVEL	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                         <remarks>
                             <p>See the description under Component (Unnumbered) <gi>c</gi> and
                                 Component (First Level) <gi>c01</gi> for additional information.</p>
@@ -2382,15 +2300,6 @@ TPATTERN	#IMPLIED, NMTOKEN</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>
-ALIGN	#IMPLIED, left, right, center, justify, char
-CHAR	#IMPLIED, CDATA
-CHAROFF	#IMPLIED, NMTOKEN
-COLNAME	#IMPLIED, NMTOKEN
-COLNUM	#IMPLIED, NMTOKEN
-COLSEP	#IMPLIED, NMTOKEN
-COLWIDTH	#IMPLIED, CDATA
-ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <table frame="none" xmlns="urn:isbn:1-931666-22-9">
@@ -2460,13 +2369,6 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-PARENT	#IMPLIED, IDREFS
-TYPE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="combined" xmlns="urn:isbn:1-931666-22-9">
@@ -2658,13 +2560,6 @@ TYPE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-
-                        <!-- 
-                            <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="collection" xmlns="urn:isbn:1-931666-22-9">
@@ -2845,17 +2740,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 <rng:ref name="daodesc"/>
                             </rng:optional>
                         </content>
-                        <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c02 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -2987,12 +2871,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, extended, extended
-TITLE	#IMPLIED, CDATA
-</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c02 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -3051,16 +2929,6 @@ TITLE	#IMPLIED, CDATA
                                 <rng:ref name="daodesc"/>
                             </rng:optional>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, NMTOKEN
-LINKTYPE	#FIXED, locator, locator
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c02 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -3127,15 +2995,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-CALENDAR	gregorian, NMTOKEN
-CERTAINTY	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ERA	ce, NMTOKEN
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <bibref xmlns="urn:isbn:1-931666-22-9">
@@ -3489,13 +3348,6 @@ NORMAL	#IMPLIED, CDATA
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-TYPE	#IMPLIED, CDATA
-UNIT	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="in-depth" xmlns="urn:isbn:1-931666-22-9">
@@ -3567,7 +3419,6 @@ UNIT	#IMPLIED, CDATA</attList> -->
                                         <publisher>Schomburg Center for Research in Black
                                             Culture<lb/> The New York Public Library</publisher>
                                         <date>August, 1977</date>
-                                        <!--&schtp;-->
                                         <p> © <date>1999 </date> The New York Public Library, Astor,
                                             Lenox and Tilden Foundations. All rights reserved.</p>
                                     </titlepage>
@@ -3666,13 +3517,6 @@ UNIT	#IMPLIED, CDATA</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-OTHERTYPE	#IMPLIED, NMTOKEN
-TPATTERN	#IMPLIED, NMTOKEN
-TYPE	#IMPLIED, analyticover, combined, in-depth, othertype</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <dsc type="combined" xmlns="urn:isbn:1-931666-22-9">
@@ -4310,20 +4154,6 @@ ID	#IMPLIED, ID
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>
-ALIGN	#IMPLIED, left, right, center, justify, char
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-CHAR	#IMPLIED, CDATA
-CHAROFF	#IMPLIED, NMTOKEN
-COLNAME	#IMPLIED, NMTOKEN
-COLSEP	#IMPLIED, NMTOKEN
-ID	#IMPLIED, ID
-MOREROWS	#IMPLIED, NMTOKEN
-NAMEEND	#IMPLIED, NMTOKEN
-NAMEST	#IMPLIED, NMTOKEN
-ROWSEP	#IMPLIED, NMTOKEN
-VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <table frame="none" xmlns="urn:isbn:1-931666-22-9">
@@ -4488,10 +4318,6 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ABBR	#IMPLIED, CDATA
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <note xmlns="urn:isbn:1-931666-22-9">
@@ -4534,14 +4360,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-TYPE	#IMPLIED, CDATA
-UNIT	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="collection" xmlns="urn:isbn:1-931666-22-9">
@@ -4600,17 +4418,6 @@ UNIT	#IMPLIED, CDATA</attList> -->
                         <content>
                             <rng:empty/>
                         </content>
-                        <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <frontmatter xmlns="urn:isbn:1-931666-22-9">
@@ -4659,16 +4466,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                         <content>
                             <rng:empty/>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, NMTOKEN
-LINKTYPE	#FIXED, locator, locator
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <remarks>
                             <p>While XML Linking Language (XLink) Version 1.0, which is the basis
                                 for EAD linking elements, is a stable document, examples of EAD
@@ -4702,18 +4499,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <bioghist xmlns="urn:isbn:1-931666-22-9">
@@ -4762,15 +4547,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, NMTOKEN
-LINKTYPE	#FIXED, locator, locator
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <relatedmaterial xmlns="urn:isbn:1-931666-22-9">
@@ -4830,14 +4606,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <indexentry xmlns="urn:isbn:1-931666-22-9">
@@ -4921,11 +4689,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:optional>
                             </rng:group>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <eadheader xmlns="urn:isbn:1-931666-22-9">
@@ -5006,10 +4769,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <fileplan xmlns="urn:isbn:1-931666-22-9">
@@ -5106,9 +4865,6 @@ ID	#IMPLIED, ID</attList> -->
                                 <rng:ref name="div"/>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <frontmatter xmlns="urn:isbn:1-931666-22-9">
@@ -5163,15 +4919,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <controlaccess xmlns="urn:isbn:1-931666-22-9">
@@ -5235,16 +4982,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <controlaccess xmlns="urn:isbn:1-931666-22-9">
@@ -5334,14 +5071,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <controlaccess xmlns="urn:isbn:1-931666-22-9">
@@ -5409,10 +5138,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTHEAD	#IMPLIED, CDATA
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <chronlist xmlns="urn:isbn:1-931666-22-9">
@@ -5460,10 +5185,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <chronlist xmlns="urn:isbn:1-931666-22-9">
@@ -5502,9 +5223,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <chronlist xmlns="urn:isbn:1-931666-22-9">
@@ -5552,10 +5270,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <bibref xmlns="urn:isbn:1-931666-22-9">
@@ -5604,11 +5318,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:oneOrMore>
                             </rng:choice>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <index xmlns="urn:isbn:1-931666-22-9">
@@ -5699,39 +5408,6 @@ ID	#IMPLIED, ID</attList> -->
                         <classes>
                             <memberOf key="att.EADGlobal"/>
                         </classes>
-
-                        <!-- <ref name="a.common"/>
-                        <choice>
-                            <element name="namegrp">
-                                <ref name="a.common"/>
-                                <oneOrMore>
-                                    <choice>
-                                        <ref name="m.access.title"/>
-                                        <ref name="note"/>
-                                    </choice>
-                                </oneOrMore>
-                            </element>
-                            <ref name="m.access.title"/>
-                        </choice>
-                        <optional>
-                            <choice>
-                                <element name="ptrgrp">
-                                    <ref name="a.common"/>
-                                    <oneOrMore>
-                                        <choice>
-                                            <ref name="ptr"/>
-                                            <ref name="ref"/>
-                                        </choice>
-                                    </oneOrMore>
-                                </element>
-                                <ref name="ptr"/>
-                                <ref name="ref"/>
-                            </choice>
-                        </optional>
-                        <zeroOrMore>
-                            <ref name="indexentry"/>
-                        </zeroOrMore>-->
-
                         <content>
                             <rng:choice>
                                 <rng:ref name="namegrp"/>
@@ -5748,9 +5424,6 @@ ID	#IMPLIED, ID</attList> -->
                                 <rng:ref name="indexentry"/>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <index xmlns="urn:isbn:1-931666-22-9">
@@ -5805,9 +5478,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <eadheader langencoding="iso639-2b" xmlns="urn:isbn:1-931666-22-9">
@@ -5866,10 +5536,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <list type="deflist" xmlns="urn:isbn:1-931666-22-9">
@@ -5910,11 +5576,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c01 level="series" xmlns="urn:isbn:1-931666-22-9">
@@ -5993,12 +5654,6 @@ LABEL	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-SCRIPTCODE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <eadheader langencoding="iso639-2b" xmlns="urn:isbn:1-931666-22-9">
@@ -6062,11 +5717,6 @@ SCRIPTCODE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <eadheader langencoding="iso639-2b" xmlns="urn:isbn:1-931666-22-9">
@@ -6137,10 +5787,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <did xmlns="urn:isbn:1-931666-22-9">
@@ -6178,11 +5824,6 @@ TYPE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, extended, extended
-TITLE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <relatedmaterial xmlns="urn:isbn:1-931666-22-9">
@@ -6281,13 +5922,6 @@ TITLE	#IMPLIED, CDATA</attList> -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-CONTINUATION	#IMPLIED, continues, starts
-ID	#IMPLIED, ID
-MARK	#IMPLIED, CDATA
-NUMERATION	#IMPLIED, arabic, upperalpha, loweralpha, upperroman, lowerroman
-TYPE	#IMPLIED, simple, deflist, marked, ordered</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <bibliography xmlns="urn:isbn:1-931666-22-9">
@@ -6344,10 +5978,6 @@ TYPE	#IMPLIED, simple, deflist, marked, ordered</attList> -->
                                 <rng:ref name="head02"/>
                             </rng:optional>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <chronlist xmlns="urn:isbn:1-931666-22-9">
@@ -6386,13 +6016,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c03 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -6435,14 +6058,6 @@ LABEL	#IMPLIED, CDATA
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c02 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -6500,9 +6115,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <index xmlns="urn:isbn:1-931666-22-9">
@@ -6570,14 +6182,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-SHOW	#IMPLIED, embed, new
-</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="collection" xmlns="urn:isbn:1-931666-22-9">
@@ -6626,10 +6230,6 @@ SHOW	#IMPLIED, embed, new
                                 <rng:ref name="note"/>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <p>In the California Digital Library, access points are put in the
                                     <gi>eadheader</gi> for system use in the resource directory.
@@ -6676,11 +6276,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -6728,14 +6323,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <controlaccess xmlns="urn:isbn:1-931666-22-9">
@@ -6805,12 +6392,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <p>Note: The Public Record Office of the United Kingdom uses a 7 level
                                 system of intellectual units devised specifically for that
@@ -6905,11 +6486,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c01 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -6984,12 +6560,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="collection" xmlns="urn:isbn:1-931666-22-9">
@@ -7054,10 +6624,6 @@ LABEL	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <otherfindaid xmlns="urn:isbn:1-931666-22-9">
@@ -7116,9 +6682,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <bioghist xmlns="urn:isbn:1-931666-22-9">
@@ -7161,18 +6724,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-
-
-                        <!-- 
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN -->
-
                         <exemplum>
                             <teix:egXML>
                                 <scopecontent xmlns="urn:isbn:1-931666-22-9">
@@ -7292,15 +6843,6 @@ SOURCE	#IMPLIED, NMTOKEN -->
                             <attDef ident="authfilenumber" mode="delete"/>
                             <attDef ident="normal" mode="delete"/>
                         </attList>
-                        <!--                        <valList>
-                            ALTRENDER	#IMPLIED, CDATA
-                            AUDIENCE	#IMPLIED, external, internal
-                            ENCODINGANALOG	#IMPLIED, CDATA
-                            ID	#IMPLIED, ID
-                            LABEL	#IMPLIED, CDATA
-                            RULES	#IMPLIED, NMTOKEN
-                            SOURCE	#IMPLIED, NMTOKEN
-                        </valList>-->
                         <exemplum>
                             <teix:egXML>
                                 <c01 level="series" xmlns="urn:isbn:1-931666-22-9">
@@ -7360,17 +6902,6 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!--                        <attList>
-                            ALTRENDER	#IMPLIED, CDATA
-                            AUDIENCE	#IMPLIED, external, internal
-                            ENCODINGANALOG	#IMPLIED, CDATA
-                            ID	#IMPLIED, ID
-                            LABEL	#IMPLIED, CDATA
-                            RULES	#IMPLIED, NMTOKEN
-                            SOURCE	#IMPLIED, NMTOKEN
-                            TYPE	#IMPLIED, CDATA
-                            UNIT	#IMPLIED, CDATA
-                        </attList>-->
                         <exemplum>
                             <teix:egXML>
                                 <physdesc xmlns="urn:isbn:1-931666-22-9">
@@ -7431,16 +6962,6 @@ SOURCE	#IMPLIED, NMTOKEN -->
                                 </datatype>
                             </attDef>
                         </attList>
-                        <!--                        <valList>
-                            ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-PARENT	#IMPLIED, IDREFS
-TYPE	#IMPLIED, CDATA
-
-                        </valList>-->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc type="inventory" level="subgrp"
@@ -7518,11 +7039,6 @@ TYPE	#IMPLIED, CDATA
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c04 level="item" xmlns="urn:isbn:1-931666-22-9">
@@ -7574,10 +7090,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <prefercite xmlns="urn:isbn:1-931666-22-9">
@@ -7637,11 +7149,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <processinfo xmlns="urn:isbn:1-931666-22-9">
@@ -7692,11 +7199,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:optional>
                             </rng:group>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <eadheader audience="internal" langencoding="iso639-2b"
@@ -7750,17 +7252,6 @@ ID	#IMPLIED, ID</attList> -->
                         <content>
                             <rng:empty/>
                         </content>
-                        <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TARGET	#IMPLIED, IDREF
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <appraisal xmlns="urn:isbn:1-931666-22-9">
@@ -7815,9 +7306,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <index xmlns="urn:isbn:1-931666-22-9">
@@ -7852,15 +7340,6 @@ ID	#IMPLIED, ID</attList> -->
                         <content>
                             <rng:empty/>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, NMTOKEN
-LINKTYPE	#FIXED, locator, locator
-TARGET	#IMPLIED, IDREF
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <remarks>
                             <p>While XML Linking Language (XLink) Version 1.0, which is the basis
                                 for EAD linking elements, is a stable document, examples of EAD
@@ -7892,11 +7371,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -7944,10 +7418,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -8039,17 +7509,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-TARGET	#IMPLIED, IDREF
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <index xmlns="urn:isbn:1-931666-22-9">
@@ -8100,16 +7559,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, NMTOKEN
-LINKTYPE	#FIXED, locator, locator
-TARGET	#IMPLIED, IDREF
-TITLE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="collection" xmlns="urn:isbn:1-931666-22-9">
@@ -8187,11 +7636,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <relatedmaterial xmlns="urn:isbn:1-931666-22-9">
@@ -8284,12 +7728,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc type="inventory" level="subgrp"
@@ -8373,12 +7811,6 @@ LABEL	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, NMTOKEN
-LINKTYPE	#FIXED, resource, resource
-TITLE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c02 level="file" xmlns="urn:isbn:1-931666-22-9">
@@ -8439,11 +7871,6 @@ TITLE	#IMPLIED, CDATA</attList> -->
                                 </rng:oneOrMore>
                             </rng:choice>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <eadheader audience="internal" langencoding="iso639-2b"
@@ -8498,11 +7925,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-ROWSEP	#IMPLIED, NMTOKEN
-VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <table frame="none" xmlns="urn:isbn:1-931666-22-9">
@@ -8577,11 +7999,6 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                                 </attDef>
                             </attList>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-PLACEMENT	#IMPLIED, footer, header, watermark
-</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <runner placement="footer" xmlns="urn:isbn:1-931666-22-9"> Special
@@ -8621,11 +8038,6 @@ PLACEMENT	#IMPLIED, footer, header, watermark
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <archdesc level="fonds" xmlns="urn:isbn:1-931666-22-9">
@@ -8733,12 +8145,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <separatedmaterial xmlns="urn:isbn:1-931666-22-9">
@@ -8793,22 +8199,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 element 3.5.3 and MARC field 544 with indicator 0. </p>
                         </remarks>
                     </elementSpec>
-
-
-                    <!--<element name="seriesstmt">
-                        <ref name="a.common"/>
-                        <optional>
-                            <attribute name="encodinganalog"/>
-                        </optional>
-                        <oneOrMore>
-                            <choice>
-                                <ref name="titleproper"/>
-                                <ref name="num"/>
-                                <ref name="p"/>
-                            </choice>
-                        </oneOrMore>
-                    </element>-->
-
                     <elementSpec ident="seriesstmt" module="EAD">
                         <gloss>Series Statement</gloss>
                         <desc>A wrapper element within the <gi>filedesc</gi> portion of
@@ -8830,10 +8220,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -8882,11 +8268,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -8924,10 +8305,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <did xmlns="urn:isbn:1-931666-22-9">
@@ -8981,15 +8358,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-NORMAL	#IMPLIED, CDATA
-RULES	#IMPLIED, NMTOKEN
-SOURCE	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <controlaccess xmlns="urn:isbn:1-931666-22-9">
@@ -9056,11 +8424,6 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER 	#IMPLIED, CDATA
-AUDIENCE 	#IMPLIED, external, internal
-ENCODINGANALOG 	#IMPLIED, CDATA
-ID 	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -9141,13 +8504,6 @@ ID 	#IMPLIED, ID</attList> -->
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-COLSEP	#IMPLIED, NMTOKEN
-FRAME	#IMPLIED, top, bottom, topbot, all, sides, none
-ID	#IMPLIED, ID
-PGWIDE	#IMPLIED, NMTOKEN
-ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <table frame="none" xmlns="urn:isbn:1-931666-22-9">
@@ -9211,11 +8567,6 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-VALIGN	#IMPLIED, top, middle, bottom
-</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <table frame="none" xmlns="urn:isbn:1-931666-22-9">
@@ -9306,13 +8657,6 @@ VALIGN	#IMPLIED, top, middle, bottom
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>ALIGN	#IMPLIED, left, right, center, justify, char
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-COLS	#REQUIRED, NMTOKEN
-COLSEP	#IMPLIED, NMTOKEN
-ID	#IMPLIED, ID
-ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <odd xmlns="urn:isbn:1-931666-22-9">
@@ -9426,11 +8770,6 @@ ROWSEP	#IMPLIED, NMTOKEN</attList> -->
                                 </valList>
                             </attDef>
                         </attList>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID
-VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <table frame="none" xmlns="urn:isbn:1-931666-22-9">
@@ -9481,25 +8820,6 @@ VALIGN	#IMPLIED, top, middle, bottom</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>
-ACTUATE	#IMPLIED, onload, onrequest, actuateother, actuatenone
-ALTRENDER	#IMPLIED, CDATA
-ARCROLE	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-AUTHFILENUMBER	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ENTITYREF	#IMPLIED, ENTITY
-HREF	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-LINKTYPE	#FIXED, simple, simple
-NORMAL	#IMPLIED, CDATA
-RENDER	#IMPLIED, altrender, bold, bolddoublequote, bolditalic, boldsinglequote, boldsmcaps, boldunderline, doublequote, italic, nonproport, singlequote, smcaps, sub, super, underline
-RULES	#IMPLIED, NMTOKEN
-SHOW	#IMPLIED, new, replace, embed, showother, shownone
-SOURCE	#IMPLIED, NMTOKEN
-TITLE	#IMPLIED, CDATA
-TYPE	#IMPLIED, CDATA
-XPOINTER	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <c01 xmlns="urn:isbn:1-931666-22-9">
@@ -9586,10 +8906,6 @@ XPOINTER	#IMPLIED, CDATA</attList> -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <frontmatter xmlns="urn:isbn:1-931666-22-9">
@@ -9645,12 +8961,6 @@ ID	#IMPLIED, ID</attList> -->
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-RENDER	#IMPLIED, altrender, bold, bolddoublequote, bolditalic, boldsinglequote, boldsmcaps, boldunderline, doublequote, italic, nonproport, singlequote, smcaps, sub, super, underline
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -9726,10 +9036,6 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </rng:group>
                             <rng:text/>
                         </content>
-                        <!-- <attList>ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <filedesc xmlns="urn:isbn:1-931666-22-9">
@@ -9797,18 +9103,6 @@ ID	#IMPLIED, ID</attList> -->
                                     <valItem ident="inclusive"/>
                                 </valList>
                             </attDef>
-                            <!-- 
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-CALENDAR	gregorian, NMTOKEN
-CERTAINTY	#IMPLIED, CDATA
-DATECHAR	#IMPLIED, CDATA
-ENCODINGANALOG	#IMPLIED, CDATA
-ERA	ce, NMTOKEN
-ID	#IMPLIED, ID
-LABEL	#IMPLIED, CDATA
-NORMAL	#IMPLIED, CDATA
-TYPE	#IMPLIED, bulk, inclusive -->
                         </attList>
                         <exemplum>
                             <teix:egXML>
@@ -9924,16 +9218,6 @@ TYPE	#IMPLIED, bulk, inclusive -->
                                     <rng:text/>
                                 </datatype>
                             </attDef>
-                            <!-- 
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-COUNTRYCODE	#IMPLIED, NMTOKEN
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-IDENTIFIER	#IMPLIED, CDATA
-LABEL	#IMPLIED, CDATA
-REPOSITORYCODE	#IMPLIED, NMTOKEN
-TYPE	#IMPLIED, CDATA -->
                         </attList>
                         <exemplum>
                             <teix:egXML>
@@ -10064,12 +9348,6 @@ TYPE	#IMPLIED, CDATA -->
                                 </rng:choice>
                             </rng:oneOrMore>
                         </content>
-                        <!-- <attList>
-ALTRENDER	#IMPLIED, CDATA
-AUDIENCE	#IMPLIED, external, internal
-ENCODINGANALOG	#IMPLIED, CDATA
-ID	#IMPLIED, ID
-TYPE	#IMPLIED, CDATA</attList> -->
                         <exemplum>
                             <teix:egXML>
                                 <userestrict xmlns="urn:isbn:1-931666-22-9">
@@ -11169,9 +10447,7 @@ TYPE	#IMPLIED, CDATA</attList> -->
                             </attDef>
                         </attList>
                     </classSpec>
-
-                    <!-- A ajouter à <occupation>,
-                                <persname>, <subject>, and <title>   -->
+                    
                     <classSpec ident="att.normalized" type="atts" module="EAD">
                         <desc>Definition of the <att>normal</att> attribute</desc>
                         <attList>
@@ -11368,9 +10644,9 @@ TYPE	#IMPLIED, CDATA</attList> -->
                                     corporate body, or geographic location. In linking elements such
                                     as <gi>ptr</gi>, information that explains to application
                                     software the part that a remote resource plays in a link.</desc>
-                                <!--<datatype>
+                                <datatype>
                                     <rng:text/>
-                                </datatype>-->
+                                </datatype>
                             </attDef>
                         </attList>
                     </classSpec>
@@ -11999,15 +11275,10 @@ TYPE	#IMPLIED, CDATA</attList> -->
 
                     <!-- Model classes -->
 
-
                     <classSpec ident="model.desc.full" type="model" module="EAD">
                         <desc>Complete set of Descriptive elements for the <gi>did</gi>
                             element</desc>
                     </classSpec>
-
-                    <!-- A ajouter à 
-			<ref name="processinfo"/>
-			-->
 
                     <classSpec ident="model.desc.base" type="model" module="EAD">
                         <desc>Basic descriptive elements for the <gi>did</gi> element</desc>
