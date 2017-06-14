@@ -345,6 +345,7 @@
             <content>
               <alternate minOccurs="1" maxOccurs="unbounded">
                 <elementRef key="form" minOccurs="0" maxOccurs="1"/>
+                <elementRef key="descrip" minOccurs="0" maxOccurs="1"/>   <!-- review -->
                 <elementRef key="definition" minOccurs="0" maxOccurs="1"/>
                 <elementRef key="subjectField" minOccurs="0" maxOccurs="1"/>
                 <elementRef key="langSec" minOccurs="1" maxOccurs="unbounded"/>
@@ -385,7 +386,7 @@
             <content>
               <elementRef key="form" minOccurs="0" maxOccurs="unbounded"/>
               <alternate minOccurs="1" maxOccurs="unbounded">
-                <!--<elementRef key="termSec"/>-->
+                <elementRef key="termSec"/>   <!-- review -->
                 <elementRef key="sense"/>
                 <elementRef key="model.entryPart.top"/>
                 <elementRef key="model.global"/>
