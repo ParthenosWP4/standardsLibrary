@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="../resources/TBXinTEI/Schemas/tei_odds.rnc" type="application/relax-ng-compact-syntax"?> -->
 <?xml-model href="tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0"
   xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:tbx="http://www.tbx.org">
@@ -6,9 +7,7 @@
     <fileDesc>
       <titleStmt>
         <title>TBX Extension to TEI</title>
-        <author>
-          <persName>Laurent Romary</persName>
-        </author>
+        <author>Laurent Romary</author>
       </titleStmt>
       <publicationStmt>
         <authority>Inria</authority>
@@ -325,6 +324,7 @@
           <moduleRef key="textstructure" include="TEI text body div front back floatingText"/>
           <moduleRef key="dictionaries"/>
           <moduleRef key="linking"/>
+          <moduleRef key="namesdates"/>
           
           
           
@@ -408,8 +408,10 @@
           </elementSpec>
           
           
+          <!-- ################################## -->
+          
           <!-- based on form -->
-          <!--<elementSpec ident="termSec" mode="add">
+          <elementSpec ident="termSec" mode="add">
             <desc>groups all information relevant to the Term Section component as defined in ISO 16642 (TMF)</desc>
             <equiv name="tbx:termSec"/>
             <classes>
@@ -439,14 +441,48 @@
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>-->
+          </elementSpec>
+          
+          <elementSpec ident="descrip" mode="add">
+            <desc>representation of a concept by a descriptive statement which serves to differentiate that concept from related concepts</desc>
+            <classes>
+              <memberOf key="att.global"/>
+              <memberOf key="att.typed"/>
+              <memberOf key="att.pointing"/>
+              <!--<memberOf key="model.auxInfo"/>-->
+            </classes>
+            <content>
+              <alternate minOccurs="1" maxOccurs="unbounded">
+                <textNode/>
+                <elementRef key="model.limitedPhrase"/>
+                <!--<elementRef key="model.metaMarkup"/>-->
+              </alternate>
+            </content>
+            <attList>
+              <attDef ident="type" mode="change" usage="req">
+                <valList type="semi">
+                  <valItem ident="definition">
+                    <desc>representation of a concept by a descriptive statement which serves to differentiate that concept from related concepts</desc>
+                  </valItem>
+                  <valItem ident="subjectField">
+                    <desc>field of special knowledge</desc>
+                  </valItem>
+                  <valItem ident="context">
+                    <desc>text which illustrates a concept or a term, by containing the concept designation itself</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- ################################## -->
           
           
           <!-- conceptEntry-level definition, which should not be called sense,
             content based on sense, element name derived from descrip/@type="definition", in TBX DCT (data category as tag) style -->
           <elementSpec ident="definition" mode="add">
             <desc>representation of a concept by a descriptive statement which serves to differentiate that concept from related concepts</desc>
-            <!--<equiv name="tbx:definition"/>-->
+            <!--<equiv name="tbx:definition"/>--> <!--<equiv name="tbx:descripGrp"/> ?? -->
             <classes>
               <memberOf key="att.global"/>
               <memberOf key="att.lexicographic"/>
