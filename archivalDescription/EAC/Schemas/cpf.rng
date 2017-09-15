@@ -33,7 +33,7 @@
 	
 	EACWG MEMBERS:
 	
-	Anila Angjeli, BibliothÃ¨que nationale de France (National Library of France)
+	Anila Angjeli, Bibliothèque nationale de France (National Library of France)
 	Lina (Vasiliki) Bountouri, Laboratory on Digital Libraries and Electronic Publishing, 
 	  Ionian University
 	Karin Bredenberg, Riksarkivet (National Archives of Sweden)
@@ -956,7 +956,7 @@
 						<ref name="a.vocabularySource"/>
 					</optional>
 					<optional>
-						<attribute a:id="accuracy" name="accuarcy">
+						<attribute a:id="accuracy" name="accuracy">
 							<text/>
 						</attribute>
 					</optional>
