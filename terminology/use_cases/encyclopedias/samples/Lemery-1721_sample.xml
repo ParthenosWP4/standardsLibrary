@@ -77,6 +77,7 @@
                     <descrip type="context"><tei:hi rend="italic">Amygdalæ</tei:hi> sollen    <!-- etymology - also: author's confidence not very high -->
                         <tei:hi rend="italic">παρὰ τὰς ἀμώ χας ἔχειν</tei:hi> benennet worden seyn, das heist, weil
                         sie eine grüne Schale haben, und unter derselbigen gleichsam zerhackte Kerne zeigen,
+<<<<<<< Updated upstream
                         auch von einander springen, welches <tei:hi rend="italic">τὰς ἀμύχας</tei:hi> genennet wird.</descrip>
                     
                     <langSet xml:lang="la">
@@ -128,6 +129,64 @@
                 <termEntry xml:id="c4" xmlns="http://www.tbx.org">
                     <descrip type="superordinateConceptPartitive" target="#c1"/>
                     <descrip type="context">Die süsse <tei:hi rend="bold">Mandel</tei:hi> führet viel Oel, wenig Saltz und Feuchtigkeit.</descrip>
+=======
+                        auch von einander springen, welches <hi rend="italic">τὰς ἀμύχας</hi> genennet wird.</descrip>
+                </descripGrp>
+                <floatingText type="encyclopedicDesc">
+                    <p></p>
+                </floatingText>
+                
+                <langSet xml:lang="la">
+                    <tig>
+                        <term>Amygdala</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="fr">
+                    <tig>
+                        <term>Amande</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="de">
+                    <tig>
+                        <term>Mandel</term>
+                    </tig>
+                </langSet>
+            </termEntry>
+            
+            <!-- almond tree -->
+            <termEntry xml:id="c2" xmlns="http://www.tbx.org">
+                <descrip type="sequentiallyRelatedConcept" target="c1"/>
+                <descrip type="definition">Seine Blätter sind lang, schmal und spitzig, und
+                    schmecken bitter und unangenehm. Dem Pfirsichlaube sehen sie dermassen ähnlich, daß man
+                    sie nährlich von demselben unterscheiden soll, wann beyde von den Bäumen abgebrochen, es
+                    sey dann, weil sie zäher sind, und sich mehr beugen lassen. Die Blüte sieht der
+                    Pfirschenblüte ebenfalls gar gleich, doch ist sie viel weisser, und purgiret nicht. Auf
+                    dieselbe folget eine harte, holtzigte und lange Frucht, die ist mit einer rauchen,
+                    grünlichten und fleischichten Haut überzogen. Sie beschliesset einen langen platten
+                    Kern, den iederman wohl kennet.</descrip>
+                <langSet xml:lang="la">
+                    <tig>
+                        <term>Amygdalus</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="fr">
+                    <tig>
+                        <term>Amandier</term>
+                    </tig>
+                </langSet>
+                <langSet xml:lang="de">
+                    <tig>
+                        <term>Mandelbaum</term>
+                    </tig>
+                </langSet>
+            </termEntry>
+            
+            <!-- sweet almond -->
+            <termEntry xml:id="c4" xmlns="http://www.tbx.org">
+                <descrip type="superordinateConceptPartitive" target="c1"/>
+                <descripGrp>
+                    <descrip type="context">Die süsse <hi rend="bold">Mandel</hi> führet viel Oel, wenig Saltz und Feuchtigkeit.</descrip>
+>>>>>>> Stashed changes
                     <descrip type="context">Die süsse Mandel lindert, erweichet,
                         eröffnet, ist gut für die Brust, und stärcket die verlohrnen Kräfte. Sie wird zur
                         Mandelmilch und andern Sachen von den Apotheckern gebrauchet.</descrip>
