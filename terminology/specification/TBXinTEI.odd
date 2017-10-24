@@ -100,7 +100,8 @@
           <moduleRef key="core"/>
           <moduleRef key="textstructure" include="TEI text body div front back floatingText"/>
           <moduleRef key="dictionaries"/>
-          <!-- not core structure -->
+          
+          <!-- not core structure, used for equiv specifications and example encodings -->
           <moduleRef key="namesdates"/>
           <moduleRef key="linking"/>
           <moduleRef key="tagdocs"/>
@@ -311,58 +312,6 @@
 
         <specGrp xml:id="spec-equiv">
           <!-- Additional definitions of TBX equivalents for TEI constructs -->
-
-          <!-- INFO ZU EQUIV'S
-              - aufzählen, welche data categories berücksichtigt wurden (alle bis auf admin/*)
-              - aufzählen, welche data categories keine tei equivalente haben bzw.:
-                - ihre ungefähren equivalente, z.b. termType stellvertretend für seine attribute,
-                  die nicht selbst als equiv definiert werden können
-                - workarounds
-          
-              IN TEI-TBX NICHT VORHANDENE DC'S
-              - admin/
-                  - applicationSubset
-                  - businessUnitSubset
-                  - customerSubset
-                  - environmentSubset
-                  - productSubset
-                  - projectSubset
-                  - securitySubset
-                  - keyword
-                  - searchTerm
-                  - sortKey
-                  - annotatedNote: A note that can be coupled with an <adminNote> element to indicate the source of the note or other administrative information about the note.
-                  - noteSource: The source of a note that is expressed in a <admin> element having the type attribute value 'annotatedNote'.
-                  - domainExpert: Subject field specialist who provides information pertinent to a terminological entry, such as a definition or target language equivalent.
-                  - elementWorkingStatus: A code indicating the level of completeness and accuracy of an element (field, record, entry) within a language resource collection. (picklist)
-                      - archive element, consolidated element, exported element, imported element, starter element, working element
-                  - originatingDatabase: the database from which an entry or a group of entries are exported.
-                  - originatingInstitution: An institution (i.e., company, government agency, etc.) treated as a source of information for the purpose of bibliographic documentation.
-                  - originatingPerson: An individual treated as a source of information for the purpose of bibliographic documentation.
-                  - sourceIdentifier: An identifier that points to information about the source of information in a lexical or terminological entry.
-                  - sourceType: für translation (picklist) - background text, parallel text
-                  - subsetOwner: An identifier assigned to the individual responsible for administering a subset of lexical or terminological records.
-                  - transactionType: approval, check, exportation, importation, input, modification, origination, standardization, user access, withdrawal (picklist)
-                  - usageCount: The number of times an entry has been accessed.
-              - termNote/
-                  - administrative status: The status of a term with respect to its assignment to an administrative level within a certain working environment. (picklist)
-                      - admitted term admin-sts, legal term admin-sts, deprecated term admin-sts, superseded term admin-sts, preferred term admin-sts, regulated term admin-sts, standardized term admin-sts
-                  - language-planningQualifier: A qualifier assigned to a provisional term within a language planning or descriptive terminology environment. (picklist)
-                      - new term, non-standarized term, proposed term, recommended term
-                  - normativeAuthorization: A term status qualifier assigned by an authoritative body, such as a standards body or a governmental entity with a regulatory function. (picklist)
-                      - admitted term, legal term, preferred term, regulated term, standardized term, superseded term
-                  - processStatus: The status of a lexical unit or term with respect to its advancement within the standardization process. (picklist) - finalized, provisionally processed, unprocessed
-                  - proprietaryRestriction (picklist): service mark, trade name, trademark
-                  - termLocation: Type of graphic feature on a GUI associated with a text string defined as a term in a localization-oriented terminology database. (picklist)
-                  - grammaticalValency: The range of syntactic elements required or permitted by a lexical unit.
-                      - nicht equivalent: usg/@type="colloc"/"obj"/"subj"/"verb"
-                  - termProvenance: Classification of a term according to the methodology employed in creating the term. (picklist) - loan translation, neologism, transdisciplinary borrowing, translingual borrowing
-                  - timeRestriction: The indication of a period of time during or since which a term was or has been subject to specified usage.
-                  - transferComment: special features affecting equivalence between a .. term [in two languages]
-              - termComp/termElement: Any logically significant portion of a larger term. Used when breaking down a compound term into components or when documenting morphemes from an etymological viewpoint.
-              - ref/corpusTrace: Complete path name for a contextual resource
-              - hi/hotkey: A key or a combination of keys on a computer keyboard that, when pressed at one time, performs a task (such as starting an application) as an alternative to using a mouse or other input device.
-              -->
 
           <elementSpec ident="abbr" module="core" mode="change">
             <equiv name="tbx:termType"/>
@@ -676,6 +625,14 @@
 
           <elementSpec ident="xr" module="dictionaries" mode="change">
             <equiv name="tbx:see"/>
+          </elementSpec>
+          
+          <elementSpec ident="change" module="header" mode="change">
+            <equiv name="tbx:transactionType"/>
+          </elementSpec>
+          
+          <elementSpec ident="respStmt" module="core" mode="change">
+            <equiv name="tbx:responsibility"/>
           </elementSpec>
 
         </specGrp>
