@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="PureOdd.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0"
-  xmlns:tbx="http://www.tbx.org" xmlns:sch="http://www.ascc.net/xml/schematron">
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rnc" type="compact"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tbx="http://www.tbx.org"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -14,12 +14,14 @@
         <availability status="free">
           <p>This document is intended to be submitted as a new chapter of the TEI guidelines. It
             can be thus disseminated as widely as necessary, but please contact the author if you
-            want to fork it with modifications, so that these can be included in any future version.</p>
-          <licence
-            target="http://creativecommons.org/licenses/by/3.0/">
-            <p>The Creative Commons Attribution 3.0 Unported (CC BY 3.0) Licence
-              applies to this document.</p>
-            <p>You can quote this document as: <q>Romary, L., TBX extension to TEI; ODD specification. 2014</q></p>
+            want to fork it with modifications, so that these can be included in any future
+            version.</p>
+          <licence target="http://creativecommons.org/licenses/by/3.0/">
+            <p>The Creative Commons Attribution 3.0 Unported (CC BY 3.0) Licence applies to this
+              document.</p>
+            <p>
+              <!--You can quote this document as: <q>Romary, L., TBX extension to TEI; ODD specification. 2014</q>-->
+            </p>
           </licence>
         </availability>
       </publicationStmt>
@@ -33,8 +35,63 @@
       <div>
         <head>Modeling Onomasiological Data</head>
         <div>
-          <p>...</p>
+          <head>Introduction</head>
+          <p>mission statement, complementary to dictionaries chapter, modus operandi: modeling use
+            cases (-> preliminary typology of onomasiological data in the humanities)</p>
+          <p>definitions: onomasio- vs. semasiological, principles of terminology representation
+            (concept orientation, term autonomy), TMF principles (meta structure + data
+            categories)</p>
+          <p>relationship: TBX as TMF implementation, TEI-TBX as modifying TBX core (subsetting as
+            well as extending), TEI-TBX follows the TMF meta-structure and thus is a valid TML,
+            modifying only DCs</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples"> example meta structure </egXML>
         </div>
+        <div>
+          <head>Description of Elements and Data Categories</head>
+          <p>illustrate DCs with use cases, inkl. description of use case specifities</p>
+          <div>
+            <head>The Structure of an Entry</head>
+          </div>
+          <div>
+            <head>Concept-related Description</head>
+            <p>based on descrip</p>
+            <p>inkl. Concept relations</p>
+            <p>EXAMPLE -> USE CASE</p>
+          </div>
+          <div>
+            <head>Term-related Description</head>
+            <p>based on form</p>
+            <p>EXAMPLE ?</p>
+          </div>
+          <div>
+            <head>Encoding Inventories and Thing-ographies</head>
+            <p>EXAMPLE -> USE CASE</p>
+          </div>
+          <div>
+            <head>Encoding Historical Encyclopaedias</head>
+            <p>EXAMPLE -> USE CASE</p>
+          </div>
+          <div>
+            <head>Encoding Comparative Lexicographical Data</head>
+            <p>EXAMPLE -> USE CASE</p>
+          </div>
+          <div>
+            <head>Conceptual Systems / Ontologies / References and cross-references</head>
+            <p>EXAMPLE ?</p>
+          </div>
+        </div>
+        <div>
+          <head>Appendix</head>
+          <div>
+            <head>List of ISO Data Categories</head>
+            <p>TABLE</p>
+          </div>
+          <div>
+            <head>List of WordNet Supersenses</head>
+            <p>TABLE</p>
+          </div>
+        </div>
+
       </div>
       <div>
         <schemaSpec ident="TBXinTEI" start="TEI teiCorpus">
@@ -42,18 +99,22 @@
           <moduleRef key="header"/>
           <moduleRef key="core"/>
           <moduleRef key="textstructure" include="TEI text body div front back floatingText"/>
-          <moduleRef key="dictionaries" except="def"/>
-          
+          <moduleRef key="dictionaries"/>
+          <!-- not core structure -->
+          <moduleRef key="namesdates"/>
+          <moduleRef key="linking"/>
+          <moduleRef key="tagdocs"/>
+
           <specGrpRef target="#spec-term-entries"/>
           <specGrpRef target="#spec-equiv"/>
         </schemaSpec>
-          
+
         <specGrp xml:id="spec-term-entries">
           <!-- Elements needed for terminological entries -->
-          
+
           <elementSpec ident="conceptEntry">
-            <!-- based on superEntry -->
-            <desc>The root element of a terminological entry. It shall contain at least one language section.</desc> 
+            <desc>The root element of a terminological entry. It shall contain at least one language
+              section.</desc>
             <equiv name="tbx:conceptEntry"/>
             <classes>
               <memberOf key="att.global"/>
@@ -63,13 +124,10 @@
             </classes>
             <content>
               <alternate minOccurs="1" maxOccurs="unbounded">
-                <elementRef key="descrip" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="descripGrp" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="transacGrp" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="conceptDesc" minOccurs="0" maxOccurs="unbounded"/>
                 <elementRef key="langSec" minOccurs="1" maxOccurs="unbounded"/>
-                <elementRef key="etym" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="floatingText" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="model.entryPart.top"/>
+                <!-- provide headword + information shared by all langSec's -->
+                <elementRef key="model.entryPart.top" minOccurs="0" maxOccurs="unbounded"/>
               </alternate>
             </content>
             <exemplum xml:lang="en">
@@ -77,12 +135,14 @@
                 <conceptEntry/>
               </egXML>
             </exemplum>
-            <remarks><p>...</p></remarks>
+            <remarks>
+              <p>...</p>
+            </remarks>
           </elementSpec>
 
           <elementSpec ident="langSec">
-            <!-- based on entry -->
-            <desc>A nesting element that contains all the information in a terminological entry pertaining to one language, including all the <gi>termSec</gi> elements (terms and
+            <desc>A nesting element that contains all the information in a terminological entry
+              pertaining to one language, including all the <gi>termSec</gi> elements (terms and
               associated information) for that language.</desc>
             <equiv name="tbx:langSec"/>
             <classes>
@@ -90,15 +150,26 @@
             </classes>
             <content>
               <alternate minOccurs="1" maxOccurs="unbounded">
-                <elementRef key="descrip"/>
-                <elementRef key="descripGrp"/>
-                <elementRef key="transacGrp"/>
-                <elementRef key="termSec"/>
-                <elementRef key="model.entryPart"/>
-                <elementRef key="model.global"/>
-                <elementRef key="model.ptrLike"/>
+                <elementRef key="conceptDesc" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="termSec" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- provide information shared by all termSec's + possibility to use form, sense.. instead of termSec -->
+                <elementRef key="model.entryPart" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- model.global is included in entry element, but not needed to model TBX-in-TEI use cases -->
+                <!-- <elementRef key="model.global" minOccurs="0" maxOccurs="unbounded"/> -->
+                <elementRef key="model.noteLike" minOccurs="0" maxOccurs="unbounded"/>  <!-- instead of model.global -->
+                <elementRef key="model.ptrLike" minOccurs="0" maxOccurs="unbounded"/>
               </alternate>
             </content>
+            <constraintSpec scheme="schematron" ident="langSec">
+              <constraint>
+                <sch:pattern name="langSec_termSecOrSense">
+                  <sch:rule context="langSec">
+                    <sch:assert test="not(termSec and sense)">Either termSec or sense should be used
+                      to bundle lexicographic information.</sch:assert>
+                  </sch:rule>
+                </sch:pattern>
+              </constraint>
+            </constraintSpec>
             <attList>
               <attDef ident="xml:lang" usage="req" mode="change"/>
             </attList>
@@ -108,26 +179,30 @@
               </egXML>
             </exemplum>
           </elementSpec>
-          
+
           <elementSpec ident="termSec">
-            <!-- based on form -->
-            <desc>A <emph>term information group</emph>. A grouping element that contains child elements describing a term. It is often referred to as the <emph>term section</emph>.</desc>
+            <desc>A <emph>term information group</emph>. A grouping element that contains child
+              elements describing a term. It is often referred to as the <emph>term
+              section</emph>.</desc>
             <equiv name="tbx:termSec"/>
             <classes>
               <memberOf key="att.global"/>
               <memberOf key="att.lexicographic"/>
             </classes>
             <content>
-              <alternate minOccurs="0" maxOccurs="unbounded">
-                <textNode/>
-                <elementRef key="descrip"/>
-                <elementRef key="descripGrp"/>
-                <elementRef key="transacGrp"/>
-                <elementRef key="model.gLike"/>
-                <elementRef key="model.phrase"/>
-                <elementRef key="model.inter"/>
-                <elementRef key="model.formPart"/>
-                <elementRef key="model.global"/>
+              <alternate minOccurs="1" maxOccurs="unbounded">
+                <elementRef key="conceptDesc" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="model.gLike" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="model.phrase" minOccurs="0" maxOccurs="unbounded"/>  <!-- includes model.ptrLike -->
+                <elementRef key="model.formPart" minOccurs="1" maxOccurs="unbounded"/>
+                <!-- model.global is included in form, sense element, but not needed to model TBX-in-TEI use cases -->
+                <!-- <elementRef key="model.global" minOccurs="0" maxOccurs="unbounded"/> -->
+                <elementRef key="model.noteLike" minOccurs="0" maxOccurs="unbounded"/>  <!-- instead of model.global -->
+                <!-- use only a subset of model.inter -->
+                <elementRef key="model.biblLike" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="model.qLike" minOccurs="0" maxOccurs="unbounded"/>   <!-- includes floatingText -->
+                <!-- allow termSec to group most other information, similar to sense -->
+                <elementRef key="model.entryPart.top" minOccurs="0" maxOccurs="unbounded"/>
               </alternate>
             </content>
             <attList>
@@ -138,14 +213,16 @@
                     <equiv name="tbx:lemma"/>
                   </valItem>
                   <valItem ident="variant">
-                    <equiv name="tbx:termType"/> <!-- termType:variant -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "variant" -->
                   </valItem>
                   <valItem ident="compound"/>
                   <valItem ident="derivative"/>
                   <valItem ident="inflected"/>
                   <valItem ident="phrase"/>
                   <valItem ident="full">
-                    <equiv name="tbx:termType"/> <!-- termType:fullForm -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "fullForm" -->
                   </valItem>
                   <valItem ident="abbrev">
                     <equiv name="tbx:abbreviatedFormFor"/>
@@ -159,445 +236,153 @@
               </egXML>
             </exemplum>
           </elementSpec>
-          
-         <elementSpec ident="descrip">
-           <desc>An element that contains descriptive information about a concept, or relations to other concepts. The type of information that the element contains, and any restrictions
-             on the permissible values of the element, are determined by the value of the <att>type</att> attribute.</desc>
-              <classes>
-                <memberOf key="att.global"/>
-              </classes>
-              <content>
-                <alternate minOccurs="0" maxOccurs="unbounded">
-                  <elementRef key="model.entryPart"/>
-                  <elementRef key="model.entryPart.top"/>
-                  <elementRef key="model.limitedPhrase"/>
-                  <textNode/>
-                </alternate>
-              </content>
-              <constraintSpec scheme="schematron" ident="descrip">
-                  <constraint>
-                      <sch:pattern name="descrip_antonymConcept">
-                          <sch:rule context="descrip[@type='antonymConcept']">
-                              <sch:assert test="(.=not(*[not(local-name()='hi')]))and(parent::conceptEntry or parent::descripGrp/parent::conceptEntry)">Antonym concepts should occur at the
-                                  entry (concept) level. The antonym-concept in this element must be expressed in basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_associatedConcept">
-                          <sch:rule context="descrip[@type='associatedConcept']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')]))and (parent::conceptEntry or parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec)"
-                                  >Associated concepts should occur at the conceptEntry or the langSec level. The term in this element must be expressed in basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_audio">
-                          <sch:rule context="descrip[@type='audio']">
-                              <sch:assert
-                                  test="(.=not(*))and (parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec)"
-                                  >The content of this element must be plain text. It can occur at the concept (conceptEntry) level, the langSec level or the term (termSec)
-                                  level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_broaderConceptGeneric">
-                          <sch:rule context="descrip[@type='broaderConceptGeneric']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::conceptEntry or parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec)"
-                                  >Generic broader concepts should occur at the conceptEntry level or the langSec level. The term in this element must be expressed in basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_broaderConceptPartitive">
-                          <sch:rule context="descrip[@type='broaderConceptPartitive']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::conceptEntry or parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec)"
-                                  >Partitive broader concepts should occur at the conceptEntry level or the langSec level. The term in this element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_characteristic">
-                          <sch:rule context="descrip[@type='characteristic']">
-                              <sch:assert test="(.=not(*))and (parent::termSec or parent::descripGrp/parent::termSec)">A characteristic should only occur at the term (termSec) level. The
-                                  content of this element must be plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_classificationCode">
-                          <sch:rule context="descrip[@type='classificationCode']">
-                              <sch:assert
-                                  test="(.=not(*)) and (parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec)"
-                                  > The content of this element must be plainText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_conceptPosition">
-                          <sch:rule context="descrip[@type='conceptPosition']">
-                              <sch:assert test="(.=not(*)) and (parent::conceptEntry or parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec)">
-                                  Information about a concept position should occur at the conceptEntry level or the langSec level, and it must be expressed in plainText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_coordinateConceptGeneric">
-                          <sch:rule context="descrip[@type='coordinateConceptGeneric']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::conceptEntry or parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec)"
-                                  >Generic coordinate concepts should occur at the conceptEntry level or the langSec level. The term in this element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_coordinateConceptPartitive">
-                          <sch:rule context="descrip[@type='coordinateConceptPartitive']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::conceptEntry or parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec)"
-                                  >Partitive coordinate concepts should occur at the conceptEntry level or the langSec level. The term in this element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_context">
-                          <sch:rule context="descrip[@type='context']">
-                              <sch:assert test="parent::termSec or parent::descripGrp/parent::termSec">A context sentence can only occur at the term (termSec) level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_definition">
-                          <sch:rule context="descrip[@type='definition']">
-                              <sch:assert
-                                  test="parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec"
-                                  > A definition must occur at the conceptEntry level, the langSec level, or the term (termSec) level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_example">
-                          <sch:rule context="descrip[@type='example']">
-                              <sch:assert
-                                  test="parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec"
-                                  > An example must occur at the conceptEntry level, the langSec level, or the term (termSec) level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_explanation">
-                          <sch:rule context="descrip[@type='explanation']">
-                              <sch:assert
-                                  test="parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec"
-                                  > An explanation must occur at the conceptEntry level, the langSec level, or the term (termSec) level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_figure">
-                          <sch:rule context="descrip[@type='figure']">
-                              <sch:assert
-                                  test="(.=not(*)) and (parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec)"
-                                  > The content of this element must be plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_otherBinaryData">
-                          <sch:rule context="descrip[@type='otherBinaryData']">
-                              <sch:assert
-                                  test="(.=not(*)) and (parent::conceptEntry or parent::langSec or parent::termSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::termSec)"
-                                  >The content of this element must be plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_quantity">
-                          <sch:rule context="descrip[@type='quantity']">
-                              <sch:assert test="(.=not(*)) and (parent::termSec or parent::descripGrp/parent::termSec)">A quantity should occur at the term (termSec) level. The content of
-                                  this element must be plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_range">
-                          <sch:rule context="descrip[@type='range']">
-                              <sch:assert test="(.=not(*)) and (parent::termSec or parent::descripGrp/parent::termSec)">A range should occur at the term (termSec) level. The content of this
-                                  element must be plainText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_relatedConcept">
-                          <sch:rule context="descrip[@type='relatedConcept']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Related concepts should occur at the conceptEntry level or the langSec level. The content of this element must be expressed in basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_relatedConceptBroader">
-                          <sch:rule context="descrip[@type='relatedConceptBroader']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')]) )and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Broader related concepts should occur at the conceptEntry level or the langSec level. The content of this element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_relatedConceptNarrower">
-                          <sch:rule context="descrip[@type='relatedConceptNarrower']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Narrower related concepts should occur at the conceptEntry level or the langSec level. The content of this element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_reliabilityCode">
-                          <sch:rule context="descrip[@type='reliabilityCode']">
-                              <sch:assert
-                                  test="((.='1' or .='2' or .='3' or .='4' or .='5' or .='6' or .='7' or .='8' or .='9' or .='10') and (parent::langSec or parent::conceptEntry or parent::termSec or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::termSec))"
-                                  >A reliability code can be a value from 1 (least reliable) to 10 (most reliable).</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_sampleSentence">
-                          <sch:rule context="descrip[@type='sampleSentence']">
-                              <sch:assert test="parent::termSec or parent::descripGrp/parent::termSec"> A sample sentence can only occur at the term (termSec) level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_sequentiallyRelatedConcept">
-                          <sch:rule context="descrip[@type='sequentiallyRelatedConcept']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Sequentially related concepts should occur at the conceptEntry level or the langSec level. The content of this element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_spatiallyRelatedConcept">
-                          <sch:rule context="descrip[@type='spatiallyRelatedConcept']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Spatially related concepts should occur at the conceptEntry level or the langSec level. The content of the element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_subjectField">
-                          <sch:rule context="descrip[@type='subjectField']">
-                              <sch:assert test="(.=not(*)) and (parent::conceptEntry or parent::descripGrp/parent::conceptEntry)"> A subject field must be a plainText value. Subject fields
-                                  usually occur at the conceptEntry level.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_subordinateConceptGeneric">
-                          <sch:rule context="descrip[@type='subordinateConceptGeneric']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  > Generic subordinate concepts should occur at the conceptEntry level or the langSec level. The content of the element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_subordinateConceptPartitive">
-                          <sch:rule context="descrip[@type='subordinateConceptPartitive']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  > Partitive subordinate concepts should occur at the conceptEntry level or the langSec level. The content of the element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_superordinateConceptGeneric">
-                          <sch:rule context="descrip[@type='superordinateConceptGeneric']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Generic superordinate concepts should occur at the conceptEntry level or the langSec level. The content of the element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_superordinateConceptPartitive">
-                          <sch:rule context="descrip[@type='superordinateConceptPartitive']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Partitive superordinate concepts should occur at the conceptEntry level or the langSec level. The content of the element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_table">
-                          <sch:rule context="descrip[@type='table']">
-                              <sch:assert
-                                  test="(.=not(*)) and (parent::langSec or parent::conceptEntry or parent::termSec or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::termSec)"
-                                  > The content of this element must be plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_temporallyRelatedConcept">
-                          <sch:rule context="descrip[@type='temporallyRelatedConcept']">
-                              <sch:assert
-                                  test="(.=not(*[not(local-name()='hi')])) and (parent::langSec or parent::conceptEntry or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry)"
-                                  >Temporally related concepts should occur at the conceptEntry level or the langSec level. The content of the element must be expressed in
-                                  basicText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_thesaurusDescriptor">
-                          <sch:rule context="descrip[@type='thesaurusDescriptor']">
-                              <sch:assert test="(.=not(*)) and (parent::conceptEntry or parent::descripGrp/parent::conceptEntry)">Thesaurus descriptors should occur at the conceptEntry
-                                  level. The content of this element must be plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_unit">
-                          <sch:rule context="descrip[@type='unit']">
-                              <sch:assert test="(not (*) and (parent::termSec or parent::descripGrp/parent::termSec))"> Units should occur at the term (termSec) level. Units must be
-                                  expressed in plainText.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descrip_video">
-                          <sch:rule context="descrip[@type='video']">
-                              <sch:assert
-                                  test="(.=not(*)) and (parent::langSec or parent::conceptEntry or parent::termSec or parent::descripGrp/parent::langSec or parent::descripGrp/parent::conceptEntry or parent::descripGrp/parent::termSec)"
-                                  >The content of this element must be in plain text.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                  </constraint>
-              </constraintSpec>
-              <attList>
-                <attDef ident="type" usage="req">
-                    <desc>Indicates the data-category type of the <gi>descrip</gi> element, such as <val>definition</val> or <val>associated-concept</val>.</desc>
-                    <datatype>
-                        <dataRef key="teidata.text"/>
-                    </datatype>
-                </attDef>
-                <attDef ident="source" usage="opt" mode="change">
-                  <equiv name="tbx:xSource"/>
-                </attDef>
-                <attDef ident="url" usage="opt">
-                  <datatype>
-                    <dataRef key="teidata.pointer"/>
-                  </datatype>
-                </attDef>
-                <attDef ident="target">
-                  <datatype>
-                    <dataRef key="teidata.text"/>
-                  </datatype>
-                </attDef>
-              </attList>
-          </elementSpec>
 
-          <elementSpec ident="descripGrp">
-              <desc>Contains one <gi>descrip</gi> element as well as additional child elements for associated administrative information.</desc>
-              <classes>
-                <memberOf key="att.global"/>
-              </classes>
-              <content>
-                <elementRef key="descrip"/>
-                <alternate minOccurs="0" maxOccurs="unbounded">
-                    <elementRef key="descripNote"/>
-                    <elementRef key="transacGrp"/>
-                    <elementRef key="note"/>
-                    <classRef key="model.ptrLike"/>
-                </alternate>
-              </content>
-          </elementSpec>
-
-          <elementSpec ident="descripNote">
-              <desc>Element used to indicate the type of definition or context with which it is associated.</desc>
-              <classes>
-                <memberOf key="att.global"/>
-              </classes>
-              <content>
-                  <textNode/>
-              </content>
-              <constraintSpec scheme="schematron" ident="descripNote">
-                  <constraint>
-                      <sch:pattern name="descripNote_contextType">
-                          <sch:rule context="descripNote[@type='contextType']">
-                              <sch:assert
-                                  test=". ='definingContext' 
-                                  or .='explanatoryContext' 
-                                  or .='associativeContext' 
-                                  or .='linguisticContext' 
-                                  or .='metalinguisticContext' 
-                                  or .='translatedContext'"
-                                  > Contexts can only be of one of the following types: definingContext, explanatoryContext, associativeContext, linguisticContext, metalinguisticContext or
-                                  translatedContext.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                      <sch:pattern name="descripNote_definitionType">
-                          <sch:rule context="descripNote[@type='definitionType']">
-                              <sch:assert
-                                  test=".=
-                                  'intensionalDefinition' or .='extensionalDefinition' or .='partitiveDefinition' or .='translatedDefinition'"
-                                  > Definitions can only be of one of the following types: intensionalDefinition, extensionalDefinition, partitiveDefinition, or
-                                  translatedDefinition.</sch:assert>
-                          </sch:rule>
-                      </sch:pattern>
-                  </constraint>
-              </constraintSpec>
-              <attList>
-                  <attDef ident="type" usage="req">
-                      <desc>Indicates the data-category type of the <gi>descripNote</gi> element, such as <val>contextType</val>.</desc>
-                      <datatype>
-                          <dataRef key="teidata.text"/>
-                      </datatype>
-                  </attDef>
-              </attList>
-          </elementSpec>
-          
-         <elementSpec ident="transac">
-            <desc>A record that indicates the stage of the entry within the overal process of creation, approval, and use of a terminology entry. Currently this element is only used to
-              specify the type of transaction, and therefore only one value is currently specified for the <att>type</att> attribute. However, additional <att>type</att> attribute values
-              can be defined for additional purposes in a user-specific XCS file.</desc>
+          <elementSpec ident="conceptDesc">
+            <desc>An element that contains descriptive information about a concept, or relations to
+              other concepts. The type of information that the element contains, and any
+              restrictions on the permissible values of the element, are determined by the value of
+              the <att>type</att> attribute.</desc>
             <classes>
+              <memberOf key="att.datcat"/>
               <memberOf key="att.global"/>
             </classes>
             <content>
-              <textNode/>
+              <alternate minOccurs="0" maxOccurs="unbounded">
+                <textNode/>
+              </alternate>
             </content>
-            <constraintSpec scheme="schematron" ident="transac">
+            <constraintSpec scheme="schematron" ident="conceptDesc">
               <constraint>
-                <sch:pattern name="transac_transactionType">
-                  <sch:rule context="transac[@type='transactionType']">
-                    <sch:assert
-                      test=". =
-                      'origination' or .='input' or .='modification' or .='check' or .='approval' or 
-                      .='withdrawl' or .='standardization' or .='exportation' or .='importation' or .='proposal' or .='userAccess'"
-                      >The content of this element indicates the type of transaction and must be one of the following values: origination, input, modification, check, approval,
-                      withdrawal, standardization, exportation, importation, proposal, userAccess. </sch:assert>
+                <sch:pattern name="conceptDesc_typeOrCorresp">
+                  <sch:rule context="conceptDesc">
+                    <sch:assert test="@type or @corresp">The @type attribute must be specified in conceptDesc,
+                      except in the case where only a @corresp URI is needed.</sch:assert>
                   </sch:rule>
                 </sch:pattern>
               </constraint>
             </constraintSpec>
             <attList>
-              <attDef ident="type" usage="req">
-                <desc>The attribute value <val>transactionType</val> ensures that the content of the <gi>transac</gi> element will be a transaction type.</desc>
+              <attDef ident="type" usage="opt">
+                <desc>Indicates the data-category type of the <gi>conceptDesc</gi> element, such as
+                    <val>subjectField</val> or <val>associatedConcept</val>.</desc>
                 <datatype>
                   <dataRef key="teidata.text"/>
                 </datatype>
+                <valList type="closed">
+                  <valItem ident="conceptPosition"/>
+                  <valItem ident="subjectField"/>
+                  <valItem ident="antonymConcept"/>
+                  <valItem ident="associatedConcept"/>
+                  <valItem ident="broaderConcept"/>
+                  <valItem ident="broaderConceptGeneric"/>
+                  <valItem ident="broaderConceptPartitive"/>
+                  <valItem ident="narrowerConcept"/>
+                  <valItem ident="narrowerConceptGeneric"/>
+                  <valItem ident="narrowerConceptPartitive"/>
+                  <valItem ident="coordinateConceptGeneric"/>
+                  <valItem ident="coordinateConceptPartitive"/>
+                  <valItem ident="relatedConcept"/>
+                  <valItem ident="relatedConceptBroader"/>
+                  <valItem ident="sequentiallyRelatedConcept"/>
+                  <valItem ident="spatiallyRelatedConcept"/>
+                  <valItem ident="temporallyRelatedConcept"/>
+                  <valItem ident="subordinateConcept"/>
+                  <valItem ident="subordinateConceptGeneric"/>
+                  <valItem ident="subordinateConceptPartitive"/>
+                  <valItem ident="superordinateConcept"/>
+                  <valItem ident="superordinateConceptGeneric"/>
+                  <valItem ident="superordinateConceptPartitive"/>
+                </valList>
               </attDef>
-              
-            </attList>
-          </elementSpec>
-          
-          <elementSpec ident="transacGrp">
-            <desc>An element that includes child elements that provide information about a transaction. </desc>
-            <classes>
-              <memberOf key="att.global"/>
-            </classes>
-            <content>
-              <alternate>
-                <sequence>
-                  <elementRef key="transac"/>
-                  <alternate minOccurs="0" maxOccurs="unbounded">
-                    <elementRef key="transacNote"/>
-                    <elementRef key="date"/>
-                    <elementRef key="note"/>
-                    <classRef key="model.ptrLike"/>
-                  </alternate>
-                </sequence>
-              </alternate>
-            </content>
-          </elementSpec>
-          
-          <elementSpec ident="transacNote">
-            <desc>Information about a transaction, such as the name of the person who performed the transaction. The content of this element shall be plainText.</desc>
-            <classes>
-              <memberOf key="att.global"/>
-            </classes>
-            <content>
-              <textNode/>
-            </content>
-            <attList>
-              <attDef ident="type" usage="req">
+              <attDef ident="grade" usage="opt">
                 <datatype>
-                  <dataRef key="teidata.text"/>
+                  <dataRef key="teidata.percentage"/>
+                </datatype>
+              </attDef>
+              <attDef ident="target" usage="opt">
+                <datatype>
+                  <dataRef key="teidata.pointer"/>
                 </datatype>
               </attDef>
             </attList>
           </elementSpec>
+
         </specGrp>
-          
+
         <specGrp xml:id="spec-equiv">
           <!-- Additional definitions of TBX equivalents for TEI constructs -->
+
+          <!-- INFO ZU EQUIV'S
+              - aufzählen, welche data categories berücksichtigt wurden (alle bis auf admin/*)
+              - aufzählen, welche data categories keine tei equivalente haben bzw.:
+                - ihre ungefähren equivalente, z.b. termType stellvertretend für seine attribute,
+                  die nicht selbst als equiv definiert werden können
+                - workarounds
           
+              IN TEI-TBX NICHT VORHANDENE DC'S
+              - admin/
+                  - applicationSubset
+                  - businessUnitSubset
+                  - customerSubset
+                  - environmentSubset
+                  - productSubset
+                  - projectSubset
+                  - securitySubset
+                  - keyword
+                  - searchTerm
+                  - sortKey
+                  - annotatedNote: A note that can be coupled with an <adminNote> element to indicate the source of the note or other administrative information about the note.
+                  - noteSource: The source of a note that is expressed in a <admin> element having the type attribute value 'annotatedNote'.
+                  - domainExpert: Subject field specialist who provides information pertinent to a terminological entry, such as a definition or target language equivalent.
+                  - elementWorkingStatus: A code indicating the level of completeness and accuracy of an element (field, record, entry) within a language resource collection. (picklist)
+                      - archive element, consolidated element, exported element, imported element, starter element, working element
+                  - originatingDatabase: the database from which an entry or a group of entries are exported.
+                  - originatingInstitution: An institution (i.e., company, government agency, etc.) treated as a source of information for the purpose of bibliographic documentation.
+                  - originatingPerson: An individual treated as a source of information for the purpose of bibliographic documentation.
+                  - sourceIdentifier: An identifier that points to information about the source of information in a lexical or terminological entry.
+                  - sourceType: für translation (picklist) - background text, parallel text
+                  - subsetOwner: An identifier assigned to the individual responsible for administering a subset of lexical or terminological records.
+                  - transactionType: approval, check, exportation, importation, input, modification, origination, standardization, user access, withdrawal (picklist)
+                  - usageCount: The number of times an entry has been accessed.
+              - termNote/
+                  - administrative status: The status of a term with respect to its assignment to an administrative level within a certain working environment. (picklist)
+                      - admitted term admin-sts, legal term admin-sts, deprecated term admin-sts, superseded term admin-sts, preferred term admin-sts, regulated term admin-sts, standardized term admin-sts
+                  - language-planningQualifier: A qualifier assigned to a provisional term within a language planning or descriptive terminology environment. (picklist)
+                      - new term, non-standarized term, proposed term, recommended term
+                  - normativeAuthorization: A term status qualifier assigned by an authoritative body, such as a standards body or a governmental entity with a regulatory function. (picklist)
+                      - admitted term, legal term, preferred term, regulated term, standardized term, superseded term
+                  - processStatus: The status of a lexical unit or term with respect to its advancement within the standardization process. (picklist) - finalized, provisionally processed, unprocessed
+                  - proprietaryRestriction (picklist): service mark, trade name, trademark
+                  - termLocation: Type of graphic feature on a GUI associated with a text string defined as a term in a localization-oriented terminology database. (picklist)
+                  - grammaticalValency: The range of syntactic elements required or permitted by a lexical unit.
+                      - nicht equivalent: usg/@type="colloc"/"obj"/"subj"/"verb"
+                  - termProvenance: Classification of a term according to the methodology employed in creating the term. (picklist) - loan translation, neologism, transdisciplinary borrowing, translingual borrowing
+                  - timeRestriction: The indication of a period of time during or since which a term was or has been subject to specified usage.
+                  - transferComment: special features affecting equivalence between a .. term [in two languages]
+              - termComp/termElement: Any logically significant portion of a larger term. Used when breaking down a compound term into components or when documenting morphemes from an etymological viewpoint.
+              - ref/corpusTrace: Complete path name for a contextual resource
+              - hi/hotkey: A key or a combination of keys on a computer keyboard that, when pressed at one time, performs a task (such as starting an application) as an alternative to using a mouse or other input device.
+              -->
+
           <elementSpec ident="abbr" module="core" mode="change">
-            <equiv name="tbx:termType"/> <!-- termType:abbreviation -->
+            <equiv name="tbx:termType"/>
+            <!-- termNote[@type='termType'] == "abbreviation" -->
             <attList>
               <attDef ident="type" mode="change">
                 <valList type="open">
                   <valItem ident="suspension">
-                    <equiv name="tbx:termType"/> <!-- termType:clippedTerm -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "clippedTerm" -->
                   </valItem>
                   <valItem ident="contraction"/>
                   <valItem ident="brevigraph">
-                    <equiv name="tbx:termType"/> <!-- termType:symbol -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "symbol" -->
                   </valItem>
                   <valItem ident="superscription"/>
                   <valItem ident="acronym">
-                    <equiv name="tbx:termType"/> <!-- termType:acronym -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "acronym" -->
                   </valItem>
                   <valItem ident="title"/>
                   <valItem ident="organization"/>
@@ -606,27 +391,49 @@
               </attDef>
             </attList>
           </elementSpec>
-          
+
           <elementSpec ident="bibl" module="core" mode="change">
             <equiv name="tbx:source"/>
           </elementSpec>
-          
+
           <elementSpec ident="date" module="core" mode="change">
             <equiv name="tbx:date"/>
           </elementSpec>
-          
+
           <elementSpec ident="def" module="dictionaries" mode="change">
             <equiv name="tbx:definition"/>
+            <attList>
+              <attDef ident="valueDatcat" usage="opt" mode="change">
+                <valList type="open">
+                  <valItem ident="extensionalDefinition">
+                    <equiv name="tbx:definitionType"/>
+                    <!-- descrip[@type='definitionType'] == "extensionalDefinition" -->
+                  </valItem>
+                  <valItem ident="intensionalDefinition">
+                    <equiv name="tbx:definitionType"/>
+                    <!-- descrip[@type='definitionType'] == "intensionalDefinition" -->
+                  </valItem>
+                  <valItem ident="partitiveDefinition">
+                    <equiv name="tbx:definitionType"/>
+                    <!-- descrip[@type='definitionType'] == "partitiveDefinition" -->
+                  </valItem>
+                  <valItem ident="translatedDefinition">
+                    <equiv name="tbx:definitionType"/>
+                    <!-- descrip[@type='definitionType'] == "translatedDefinition" -->
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
           </elementSpec>
-          
+
           <elementSpec ident="etym" module="dictionaries" mode="change">
             <equiv name="tbx:etymology"/>
           </elementSpec>
-          
+
           <elementSpec ident="foreign" module="core" mode="change">
             <equiv name="tbx:foreign"/>
           </elementSpec>
-          
+
           <elementSpec ident="formula" module="core" mode="change">
             <equiv name="tbx:math"/>
             <attList>
@@ -639,7 +446,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          
+
           <elementSpec ident="gram" module="dictionaries" mode="change">
             <attList>
               <attDef ident="type" usage="opt" mode="change">
@@ -661,7 +468,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          
+
           <elementSpec ident="hi" module="core" mode="change">
             <equiv name="tbx:hi"/>
             <attList>
@@ -683,65 +490,67 @@
               </attDef>
             </attList>
           </elementSpec>
-          
+
           <elementSpec ident="hom" module="dictionaries" mode="change">
             <equiv name="tbx:homograph"/>
           </elementSpec>
-          
+
           <elementSpec ident="hyph" module="dictionaries" mode="change">
             <equiv name="tbx:hyphenation"/>
           </elementSpec>
-          
+
           <elementSpec ident="m" module="analysis" mode="change">
             <equiv name="tbx:morphologicalElement"/>
           </elementSpec>
-          
+
           <elementSpec ident="media" module="core" mode="change">
             <equiv name="tbx:xAudio"/>
             <equiv name="tbx:xGraphic"/>
             <equiv name="tbx:xVideo"/>
           </elementSpec>
-          
+
           <elementSpec ident="mentioned" module="core" mode="change">
             <equiv name="tbx:entailedTerm"/>
           </elementSpec>
-          
+
           <elementSpec ident="note" module="core" mode="change">
             <equiv name="tbx:note"/>
           </elementSpec>
-          
+
           <elementSpec ident="orth" module="dictionaries" mode="change">
             <equiv name="tbx:term"/>
             <attList>
               <attDef ident="type" usage="opt" mode="change">
                 <valList type="open">
                   <valItem ident="transliterated">
-                    <equiv name="tbx:termType"/> <!-- termType:transliteratedForm -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "transliteratedForm" -->
                   </valItem>
                 </valList>
               </attDef>
               <attDef ident="orig" usage="opt" mode="change">
-                <equiv name="tbx:termType"/> <!-- termType:transcribedForm -->
+                <equiv name="tbx:termType"/>
+                <!-- termNote[@type='termType'] == "transcribedForm" -->
               </attDef>
             </attList>
           </elementSpec>
- 
+
           <elementSpec ident="pron" module="dictionaries" mode="change">
             <equiv name="tbx:pronunciation"/>
           </elementSpec>
-          
+
           <elementSpec ident="ptr" module="core" mode="change">
             <equiv name="tbx:externalCrossReference"/>
           </elementSpec>
-          
+
           <elementSpec ident="ref" module="core" mode="change">
             <equiv name="tbx:crossReference"/>
           </elementSpec>
-          
+
           <elementSpec ident="syll" module="dictionaries" mode="change">
             <equiv name="tbx:syllabification"/>
           </elementSpec>
-          
+
           <elementSpec ident="tag" module="tagdocs" mode="change">
             <attList>
               <attDef ident="type" usage="opt" mode="change">
@@ -762,8 +571,58 @@
               </attDef>
             </attList>
           </elementSpec>
+
+          <elementSpec ident="cit" module="core" mode="change">
+            <attList>
+              <attDef ident="type" usage="opt" mode="change">
+                <valList type="open">
+                  <valItem ident="characteristic">
+                    <equiv name="tbx:characteristic"/>
+                  </valItem>
+                  <valItem ident="context">
+                    <equiv name="tbx:context"/>
+                  </valItem>
+                  <valItem ident="example">
+                    <equiv name="tbx:example"/>
+                  </valItem>
+                  <valItem ident="explanation">
+                    <equiv name="tbx:explanation"/>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="subtype" usage="opt" mode="change">
+                <valList type="open">
+                  <valItem ident="associativeContext">
+                    <equiv name="tbx:contextType"/>
+                    <!-- descrip[@type='contextType'] == "associativeContext" -->
+                  </valItem>
+                  <valItem ident="definingContext">
+                    <equiv name="tbx:contextType"/>
+                    <!-- descrip[@type='contextType'] == "definingContext" -->
+                  </valItem>
+                  <valItem ident="explanatoryContext">
+                    <equiv name="tbx:contextType"/>
+                    <!-- descrip[@type='contextType'] == "explanatoryContext" -->
+                  </valItem>
+                  <valItem ident="linguisticContext">
+                    <equiv name="tbx:contextType"/>
+                    <!-- descrip[@type='contextType'] == "linguisticContext" -->
+                  </valItem>
+                  <valItem ident="metalinguisticContext">
+                    <equiv name="tbx:contextType"/>
+                    <!-- descrip[@type='contextType'] == "metalinguisticContext" -->
+                  </valItem>
+                  <valItem ident="translatedContext">
+                    <equiv name="tbx:contextType"/>
+                    <!-- descrip[@type='contextType'] == "translatedContext" -->
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
           
           <elementSpec ident="usg" module="dictionaries" mode="change">
+            <equiv name="tbx:usageNote"/>
             <attList>
               <attDef ident="type" usage="opt" mode="change">
                 <valList type="closed">
@@ -773,7 +632,9 @@
                   <valItem ident="time">
                     <equiv name="tbx:temporalQualifier"/>
                   </valItem>
-                  <valItem ident="dom"/>
+                  <valItem ident="dom">
+                    <equiv name="tbx:subjectField"/>
+                  </valItem>
                   <valItem ident="register">
                     <equiv name="tbx:register"/>
                   </valItem>
@@ -782,15 +643,19 @@
                   <valItem ident="lang"/>
                   <valItem ident="gram"/>
                   <valItem ident="syn">
-                    <equiv name="tbx:termType"/> <!-- termType:synonym, synonymousPhrase -->
+                    <equiv name="tbx:termType"/>
+                    <!-- termNote[@type='termType'] == "synonym", "synonymousPhrase" -->
                   </valItem>
                   <valItem ident="hyper"/>
-                  <valItem ident="colloc"/>
                   <valItem ident="comp"/>
+                  <valItem ident="hint"/>
+
+                  <!-- the following can be included in the free-form text of tbx:grammaticalValency -->
+                  <valItem ident="colloc"/>
                   <valItem ident="obj"/>
                   <valItem ident="subj"/>
                   <valItem ident="verb"/>
-                  <valItem ident="hint"/>
+
                   <!-- the following are not TEI presets -->
                   <valItem ident="directionality">
                     <equiv name="tbx:directionality"/>
@@ -801,14 +666,14 @@
                   <valItem ident="ant">
                     <equiv name="tbx:antonymTerm"/>
                   </valItem>
-                  <valItem ident="ff">
+                  <valItem ident="falsefriend">
                     <equiv name="tbx:falseFriend"/>
                   </valItem>
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
-          
+
           <elementSpec ident="xr" module="dictionaries" mode="change">
             <equiv name="tbx:see"/>
           </elementSpec>
