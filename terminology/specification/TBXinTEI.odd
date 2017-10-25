@@ -26,7 +26,7 @@
         </availability>
       </publicationStmt>
       <sourceDesc>
-        <p>COMMITTEE DRAFT ISO/CD 30042 (N 1097)</p>
+        <p>based on COMMITTEE DRAFT ISO/CD 30042 (N 1097)</p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
@@ -84,7 +84,11 @@
           <head>Appendix</head>
           <div>
             <head>List of ISO Data Categories</head>
-            <p>A comprehensive selection of data categories for description of conceptual systems (cf. <bibl>ISO 12620 (1999). Terminology and other language and content resources – Specification of data cate- gories and management of a Data Category Registry for language resources. Standard, International Organization for Standardization, Geneva, Switzerland.</bibl>)</p>
+            <p>A comprehensive selection of data categories for description of conceptual systems
+              (cf. <bibl>ISO 12620 (1999). Terminology and other language and content resources –
+                Specification of data cate- gories and management of a Data Category Registry for
+                language resources. Standard, International Organization for Standardization,
+                Geneva, Switzerland.</bibl>)</p>
             <table>
               <row role="label">
                 <cell/>
@@ -95,25 +99,27 @@
               <row>
                 <cell role="label">Concept-related description</cell>
                 <cell>conceptPosition</cell>
-                <cell>The position of a concept in a concept system</cell>
+                <cell>The position of a concept in a concept system.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-141</cell>
               </row>
               <row>
                 <cell/>
                 <cell>subjectField</cell>
-                <cell>A field of special knowledge</cell>
+                <cell>A field of special knowledge.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-489</cell>
               </row>
               <row>
                 <cell role="label">Concept relations</cell>
                 <cell>antonymConcept</cell>
-                <cell>A concept which constitutes the opposite of the concept represented by a second term</cell>
+                <cell>A concept which constitutes the opposite of the concept represented by a
+                  second term.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-82</cell>
               </row>
               <row>
                 <cell/>
                 <cell>associatedConcept</cell>
-                <cell>A concept that exhibits a relation to the subject concept that can be established on the basis of non-hierarchical thematic connections.</cell>
+                <cell>A concept that exhibits a relation to the subject concept that can be
+                  established on the basis of non-hierarchical thematic connections.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-87</cell>
               </row>
               <row>
@@ -125,13 +131,15 @@
               <row>
                 <cell/>
                 <cell>broaderConceptGeneric</cell>
-                <cell>A concept two or more levels of abstraction higher than subject concept in a generic hierarchical concept system.</cell>
+                <cell>A concept two or more levels of abstraction higher than subject concept in a
+                  generic hierarchical concept system.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-94</cell>
               </row>
               <row>
                 <cell/>
                 <cell>broaderConceptPartitive</cell>
-                <cell>A concept two or more levels of abstraction higher than subject concept in a part-whole or meronymic hierarchical concept system.</cell>
+                <cell>A concept two or more levels of abstraction higher than subject concept in a
+                  part-whole or meronymic hierarchical concept system.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-95</cell>
               </row>
               <row>
@@ -155,93 +163,107 @@
               <row>
                 <cell/>
                 <cell>coordinateConceptGeneric</cell>
-                <cell>A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given generic concept system</cell>
+                <cell>A subordinate concept having the same nearest superordinate concept and same
+                  criterion of subdivision as some other concept in a given generic concept
+                  system.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-159</cell>
               </row>
               <row>
                 <cell/>
                 <cell>coordinateConceptPartitive</cell>
-                <cell>A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given partitive concept system</cell>
+                <cell>A subordinate concept having the same nearest superordinate concept and same
+                  criterion of subdivision as some other concept in a given partitive concept
+                  system.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-160</cell>
               </row>
               <row>
                 <cell/>
                 <cell>relatedConcept</cell>
-                <cell>A concept that has an associative relation to another concept</cell>
+                <cell>A concept that has an associative relation to another concept.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-435</cell>
               </row>
               <row>
                 <cell/>
                 <cell>relatedConceptBroader</cell>
-                <cell>A concept that is roughly broader at some level with respect to a related or associative concept, but without there comprising any clear-cut reference to a defined generic or partitive system</cell>
+                <cell>A concept that is roughly broader at some level with respect to a related or
+                  associative concept, but without there comprising any clear-cut reference to a
+                  defined generic or partitive system.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-436</cell>
               </row>
               <row>
                 <cell/>
                 <cell>relatedConceptNarrower</cell>
-                <cell>A concept that is roughly narrower at some level with respect to a related or associative concept, but without there comprisng any clear-cut reference to a defined generic or partitive system of concepts</cell>
+                <cell>A concept that is roughly narrower at some level with respect to a related or
+                  associative concept, but without there comprisng any clear-cut reference to a
+                  defined generic or partitive system of concepts.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-437</cell>
               </row>
               <row>
                 <cell/>
                 <cell>sequentiallyRelatedConcept</cell>
-                <cell>An associative relation based on spatial or temporal proximity</cell>
+                <cell>An associative relation based on spatial or temporal proximity.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-467</cell>
               </row>
               <row>
                 <cell/>
                 <cell>spatiallyRelatedConcept</cell>
-                <cell>A relation of dependence between concepts referring to objects based on their relative positions in space</cell>
+                <cell>A relation of dependence between concepts referring to objects based on their
+                  relative positions in space.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-477</cell>
               </row>
               <row>
                 <cell/>
                 <cell>temporallyRelatedConcept</cell>
-                <cell>A concept related to the subject concept through a sequential relation involving events in time</cell>
+                <cell>A concept related to the subject concept through a sequential relation
+                  involving events in time.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-2916</cell>
               </row>
               <row>
                 <cell/>
                 <cell>subordinateConcept</cell>
-                <cell>A concept in a hierarchical system that can be grouped together with at least one more concept of the same level to form a higher ranking concept</cell>
+                <cell>A concept in a hierarchical system that can be grouped together with at least
+                  one more concept of the same level to form a higher ranking concept.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-490</cell>
               </row>
               <row>
                 <cell/>
                 <cell>subordinateConceptGeneric</cell>
-                <cell>A concept in a generic relation having the broader intension</cell>
+                <cell>A concept in a generic relation having the broader intension.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-491</cell>
               </row>
               <row>
                 <cell/>
                 <cell>subordinateConceptPartitive</cell>
-                <cell>A concept in a partitive relation viewed as one of the parts making up the whole</cell>
+                <cell>A concept in a partitive relation viewed as one of the parts making up the
+                  whole.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-492</cell>
               </row>
               <row>
                 <cell/>
                 <cell>superordinateConcept</cell>
-                <cell>A concept which is either a generic concept or a comprehensive concept</cell>
+                <cell>A concept which is either a generic concept or a comprehensive concept.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-495</cell>
               </row>
               <row>
                 <cell/>
                 <cell>superordinateConceptGeneric</cell>
-                <cell>A concept in a generic relation having the narrower intension</cell>
+                <cell>A concept in a generic relation having the narrower intension.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-496</cell>
               </row>
               <row>
                 <cell/>
                 <cell>superordinateConceptPartitive</cell>
-                <cell>A concept that has a partitive relation with the subject concept, and represents the sum of the parts; a comprehensive concept</cell>
+                <cell>A concept that has a partitive relation with the subject concept, and
+                  represents the sum of the parts; a comprehensive concept.</cell>
                 <cell>http://www.datcatinfo.net/datcat/DC-2915</cell>
               </row>
             </table>
           </div>
           <div>
             <head>List of WordNet Supersenses</head>
-            <p>Supersenses can be used as controlled vocabulary for the DC subjectField, useful for encoding
-              inventories/thingographies (cf. <ref>https://wordnet.princeton.edu/man/lexnames.5WN.html</ref>)</p>
+            <p>Supersenses can be used as controlled vocabulary for the DC subjectField, useful for
+              encoding inventories/thingographies (cf.
+                <ref>https://wordnet.princeton.edu/man/lexnames.5WN.html</ref>)</p>
             <table>
               <row role="label">
                 <cell/>
@@ -348,7 +370,7 @@
                 <cell>noun.phenomenon</cell>
                 <cell>nouns denoting natural phenomena</cell>
               </row>
-              
+
               <row>
                 <cell/>
                 <cell>noun.plant</cell>
@@ -481,8 +503,8 @@
           <moduleRef key="core"/>
           <moduleRef key="textstructure" include="TEI text body div front back floatingText"/>
           <moduleRef key="dictionaries"/>
-          
-          <!-- not core structure, used for equiv specifications and example encodings -->
+
+          <!-- for equiv specifications and example encodings -->
           <moduleRef key="namesdates"/>
           <moduleRef key="linking"/>
           <moduleRef key="tagdocs"/>
@@ -513,16 +535,15 @@
               </alternate>
             </content>
             <exemplum xml:lang="en">
+              <!-- ADD EXAMPLE -->
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <conceptEntry/>
               </egXML>
             </exemplum>
-            <remarks>
-              <p>...</p>
-            </remarks>
           </elementSpec>
 
           <elementSpec ident="langSec">
+            <!-- UPDATE DESC -->
             <desc>A nesting element that contains all the information in a terminological entry
               pertaining to one language, including all the <gi>termSec</gi> elements (terms and
               associated information) for that language.</desc>
@@ -538,7 +559,8 @@
                 <elementRef key="model.entryPart" minOccurs="0" maxOccurs="unbounded"/>
                 <!-- model.global is included in entry element, but not needed to model TBX-in-TEI use cases -->
                 <!-- <elementRef key="model.global" minOccurs="0" maxOccurs="unbounded"/> -->
-                <elementRef key="model.noteLike" minOccurs="0" maxOccurs="unbounded"/>  <!-- instead of model.global -->
+                <elementRef key="model.noteLike" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- instead of model.global -->
                 <elementRef key="model.ptrLike" minOccurs="0" maxOccurs="unbounded"/>
               </alternate>
             </content>
@@ -556,6 +578,7 @@
               <attDef ident="xml:lang" usage="req" mode="change"/>
             </attList>
             <exemplum xml:lang="en">
+              <!-- ADD EXAMPLE -->
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <langSec xml:lang="en"/>
               </egXML>
@@ -563,6 +586,7 @@
           </elementSpec>
 
           <elementSpec ident="termSec">
+            <!-- UPDATE DESC -->
             <desc>A <emph>term information group</emph>. A grouping element that contains child
               elements describing a term. It is often referred to as the <emph>term
               section</emph>.</desc>
@@ -575,44 +599,63 @@
               <alternate minOccurs="1" maxOccurs="unbounded">
                 <elementRef key="conceptDesc" minOccurs="0" maxOccurs="unbounded"/>
                 <elementRef key="model.gLike" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="model.phrase" minOccurs="0" maxOccurs="unbounded"/>  <!-- includes model.ptrLike -->
+                <elementRef key="model.phrase" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- includes model.ptrLike -->
                 <elementRef key="model.formPart" minOccurs="1" maxOccurs="unbounded"/>
                 <!-- model.global is included in form, sense element, but not needed to model TBX-in-TEI use cases -->
                 <!-- <elementRef key="model.global" minOccurs="0" maxOccurs="unbounded"/> -->
-                <elementRef key="model.noteLike" minOccurs="0" maxOccurs="unbounded"/>  <!-- instead of model.global -->
+                <elementRef key="model.noteLike" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- instead of model.global -->
                 <!-- use only a subset of model.inter -->
                 <elementRef key="model.biblLike" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="model.qLike" minOccurs="0" maxOccurs="unbounded"/>   <!-- includes floatingText -->
+                <elementRef key="model.qLike" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- includes floatingText -->
                 <!-- allow termSec to group most other information, similar to sense -->
                 <elementRef key="model.entryPart.top" minOccurs="0" maxOccurs="unbounded"/>
               </alternate>
             </content>
             <attList>
               <attDef ident="type" usage="opt">
+                <desc>classifies form as simple, compound, etc.</desc>
                 <valList type="open">
-                  <valItem ident="simple"/>
+                  <valItem ident="simple">
+                    <desc>single free lexical item</desc>
+                  </valItem>
                   <valItem ident="lemma">
+                    <desc>the headword itself</desc>
                     <equiv name="tbx:lemma"/>
                   </valItem>
                   <valItem ident="variant">
+                    <desc>a variant form</desc>
                     <equiv name="tbx:termType"/>
                     <!-- termNote[@type='termType'] == "variant" -->
                   </valItem>
-                  <valItem ident="compound"/>
-                  <valItem ident="derivative"/>
-                  <valItem ident="inflected"/>
-                  <valItem ident="phrase"/>
+                  <valItem ident="compound">
+                    <desc>word formed from simple lexical items</desc>
+                  </valItem>
+                  <valItem ident="derivative">
+                    <desc>word derived from headword</desc>
+                  </valItem>
+                  <valItem ident="inflected">
+                    <desc>word in other than usual dictionary form</desc>
+                  </valItem>
+                  <valItem ident="phrase">
+                    <desc>multiple-word lexical item</desc>
+                  </valItem>
                   <valItem ident="full">
+                    <desc>expanded form</desc>
                     <equiv name="tbx:termType"/>
                     <!-- termNote[@type='termType'] == "fullForm" -->
                   </valItem>
                   <valItem ident="abbrev">
+                    <desc>abbreviated form</desc>
                     <equiv name="tbx:abbreviatedFormFor"/>
                   </valItem>
                 </valList>
               </attDef>
             </attList>
             <exemplum xml:lang="en">
+              <!-- ADD EXAMPLE -->
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <termSec type="compound"/>
               </egXML>
@@ -620,6 +663,7 @@
           </elementSpec>
 
           <elementSpec ident="conceptDesc">
+            <!-- UPDATE DESC -->
             <desc>An element that contains descriptive information about a concept, or relations to
               other concepts. The type of information that the element contains, and any
               restrictions on the permissible values of the element, are determined by the value of
@@ -637,8 +681,9 @@
               <constraint>
                 <sch:pattern name="conceptDesc_typeOrCorresp">
                   <sch:rule context="conceptDesc">
-                    <sch:assert test="@type or @corresp">The @type attribute must be specified in conceptDesc,
-                      except in the case where only a @corresp URI is needed.</sch:assert>
+                    <sch:assert test="@type or @corresp">The @type attribute must be specified in
+                      conceptDesc, except in the case where only a @corresp URI is
+                      needed.</sch:assert>
                   </sch:rule>
                 </sch:pattern>
               </constraint>
@@ -651,42 +696,101 @@
                   <dataRef key="teidata.text"/>
                 </datatype>
                 <valList type="closed">
-                  <valItem ident="conceptPosition"/>
-                  <valItem ident="subjectField"/>
-                  <valItem ident="antonymConcept"/>
-                  <valItem ident="associatedConcept"/>
-                  <valItem ident="broaderConcept"/>
-                  <valItem ident="broaderConceptGeneric"/>
-                  <valItem ident="broaderConceptPartitive"/>
-                  <valItem ident="narrowerConcept"/>
-                  <valItem ident="narrowerConceptGeneric"/>
-                  <valItem ident="narrowerConceptPartitive"/>
-                  <valItem ident="coordinateConceptGeneric"/>
-                  <valItem ident="coordinateConceptPartitive"/>
-                  <valItem ident="relatedConcept"/>
-                  <valItem ident="relatedConceptBroader"/>
-                  <valItem ident="sequentiallyRelatedConcept"/>
-                  <valItem ident="spatiallyRelatedConcept"/>
-                  <valItem ident="temporallyRelatedConcept"/>
-                  <valItem ident="subordinateConcept"/>
-                  <valItem ident="subordinateConceptGeneric"/>
-                  <valItem ident="subordinateConceptPartitive"/>
-                  <valItem ident="superordinateConcept"/>
-                  <valItem ident="superordinateConceptGeneric"/>
-                  <valItem ident="superordinateConceptPartitive"/>
+                  <valItem ident="conceptPosition">
+                    <desc>The position of a concept in a concept system</desc>
+                  </valItem>
+                  <valItem ident="subjectField">
+                    <desc>A field of special knowledge or term from a controlled vocabulary</desc>
+                  </valItem>
+                  <valItem ident="antonymConcept">
+                    <desc>A concept which constitutes the opposite of the concept represented by a second term</desc>
+                  </valItem>
+                  <valItem ident="associatedConcept">
+                    <desc>A concept that exhibits a relation to the subject concept that can be established on the basis of non-hierarchical thematic connections</desc>
+                  </valItem>
+                  <valItem ident="broaderConcept">
+                    <desc>A concept two or more levels of abstraction higher than subject concept</desc>
+                  </valItem>
+                  <valItem ident="broaderConceptGeneric">
+                    <desc>A concept two or more levels of abstraction higher than subject concept in a generic hierarchical concept system</desc>
+                  </valItem>
+                  <valItem ident="broaderConceptPartitive">
+                    <desc>A concept two or more levels of abstraction higher than subject concept in a part-whole or meronymic hierarchical concept system</desc>
+                  </valItem>
+                  <valItem ident="narrowerConcept">
+                    <desc>A concept two or more levels of abstraction lower than subject concept</desc>
+                  </valItem>
+                  <valItem ident="narrowerConceptGeneric">
+                    <desc>A concept two or more levels of abstraction lower than subject concept in a generic hierarchical concept system</desc>
+                  </valItem>
+                  <valItem ident="narrowerConceptPartitive">
+                    <desc>A concept two or more levels of abstraction lower than subject concept in a part-whole or meronymic hierarchical concept system</desc>
+                  </valItem>
+                  <valItem ident="coordinateConceptGeneric">
+                    <desc>A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given generic concept system</desc>
+                  </valItem>
+                  <valItem ident="coordinateConceptPartitive">
+                    <desc>A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given partitive concept system</desc>
+                  </valItem>
+                  <valItem ident="relatedConcept">
+                    <desc>A concept that has an associative relation to another concept</desc>
+                  </valItem>
+                  <valItem ident="relatedConceptBroader">
+                    <desc>A concept that is roughly broader at some level with respect to a related or associative concept, but without there comprising any clear-cut reference to a defined generic or partitive system</desc>
+                  </valItem>
+                  <valItem ident="relatedConceptNarrower">
+                    <desc>A concept that is roughly narrower at some level with respect to a related or associative concept, but without there comprisng any clear-cut reference to a defined generic or partitive system of concepts</desc>
+                  </valItem>
+                  <valItem ident="sequentiallyRelatedConcept">
+                    <desc>An associative relation based on spatial or temporal proximity</desc>
+                  </valItem>
+                  <valItem ident="spatiallyRelatedConcept">
+                    <desc>A relation of dependence between concepts referring to objects based on their relative positions in space</desc>
+                  </valItem>
+                  <valItem ident="temporallyRelatedConcept">
+                    <desc>A concept related to the subject concept through a sequential relation involving events in time</desc>
+                  </valItem>
+                  <valItem ident="subordinateConcept">
+                    <desc>A concept in a hierarchical system that can be grouped together with at least one more concept of the same level to form a higher ranking concept</desc>
+                  </valItem>
+                  <valItem ident="subordinateConceptGeneric">
+                    <desc>A concept in a generic relation having the broader intension</desc>
+                  </valItem>
+                  <valItem ident="subordinateConceptPartitive">
+                    <desc>A concept in a partitive relation viewed as one of the parts making up the whole</desc>
+                  </valItem>
+                  <valItem ident="superordinateConcept">
+                    <desc>A concept which is either a generic concept or a comprehensive concept</desc>
+                  </valItem>
+                  <valItem ident="superordinateConceptGeneric">
+                    <desc>A concept in a generic relation having the narrower intension</desc>
+                  </valItem>
+                  <valItem ident="superordinateConceptPartitive">
+                    <desc>A concept that has a partitive relation with the subject concept, and represents the sum of the parts; a comprehensive concept</desc>
+                  </valItem>
                 </valList>
               </attDef>
               <attDef ident="grade" usage="opt">
+                <!-- ADD DESC -->
+                <desc></desc>
                 <datatype>
                   <dataRef key="teidata.percentage"/>
                 </datatype>
               </attDef>
               <attDef ident="target" usage="opt">
+                <!-- ADD DESC -->
+                <desc></desc>
                 <datatype>
                   <dataRef key="teidata.pointer"/>
                 </datatype>
               </attDef>
             </attList>
+            <exemplum xml:lang="en">
+              <!-- ADD EXAMPLE -->
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <termSec type="compound"/>
+              </egXML>
+            </exemplum>
           </elementSpec>
 
         </specGrp>
@@ -950,7 +1054,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          
+
           <elementSpec ident="usg" module="dictionaries" mode="change">
             <equiv name="tbx:usageNote"/>
             <attList>
@@ -1035,11 +1139,11 @@
           <elementSpec ident="xr" module="dictionaries" mode="change">
             <equiv name="tbx:see"/>
           </elementSpec>
-          
+
           <elementSpec ident="change" module="header" mode="change">
             <equiv name="tbx:transactionType"/>
           </elementSpec>
-          
+
           <elementSpec ident="respStmt" module="core" mode="change">
             <!-- specifically, respStmt/name or persName -->
             <equiv name="tbx:responsibility"/>
