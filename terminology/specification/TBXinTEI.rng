@@ -5,12 +5,12 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2017-10-24T18:50:00Z. .
+Schema generated from ODD source 2017-11-24T01:32:04Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
   
---><!--This document is intended to be submitted as a new chapter of the TEI guidelines. It can be thus disseminated as widely as necessary, but please contact the author if you want to fork it with modifications, so that these can be included in any future version. [http://creativecommons.org/licenses/by/3.0/] The Creative Commons Attribution 3.0 Unported (CC BY 3.0) Licence applies to this document. -->
+--><!--This document is intended to be submitted as a new chapter of the TEI guidelines. It can be thus disseminated as widely as necessary, but please contact the author if you want to fork it with modifications, so that these can be included in any future version. [http://creativecommons.org/licenses/by/3.0/] The Creative Commons Attribution 3.0 Unported (CC BY 3.0) Licence applies to this document.-->
    <define name="macro.paraContent">
       <zeroOrMore>
          <choice>
@@ -757,6 +757,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
    <define name="att.global.attributes">
       <ref name="att.global.rendition.attributes"/>
       <ref name="att.global.linking.attributes"/>
+      <ref name="att.global.analytic.attributes"/>
       <ref name="att.global.responsibility.attributes"/>
       <ref name="att.global.attribute.xmlid"/>
       <ref name="att.global.attribute.n"/>
@@ -953,6 +954,34 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(uniform resource locator) specifies the URL from which the media concerned may be obtained.</a:documentation>
          <data type="anyURI"/>
       </attribute>
+   </define>
+   <define name="att.interpLike.attributes">
+      <ref name="att.source.attributes"/>
+      <ref name="att.interpLike.attribute.type"/>
+      <ref name="att.interpLike.attribute.inst"/>
+   </define>
+   <define name="att.interpLike.attribute.type">
+      <optional>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates what kind of phenomenon is being noted in the passage.
+Sample values include: 1] image; 2] character; 3] theme; 4] allusion</a:documentation>
+            <data type="token">
+               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.interpLike.attribute.inst">
+      <optional>
+         <attribute name="inst">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(instances) points to instances of the analysis or interpretation represented by the current element.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
    </define>
    <define name="att.measurement.attributes">
       <ref name="att.measurement.attribute.unit"/>
@@ -1578,6 +1607,13 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="model.segLike">
       <choice>
+         <ref name="s"/>
+         <ref name="cl"/>
+         <ref name="phr"/>
+         <ref name="w"/>
+         <ref name="m"/>
+         <ref name="c"/>
+         <ref name="pc"/>
          <ref name="seg"/>
       </choice>
    </define>
@@ -2115,6 +2151,10 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="model.global.meta">
       <choice>
          <ref name="index"/>
+         <ref name="span"/>
+         <ref name="spanGrp"/>
+         <ref name="interp"/>
+         <ref name="interpGrp"/>
          <ref name="link"/>
          <ref name="linkGrp"/>
          <ref name="timeline"/>
@@ -3614,6 +3654,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <ref name="att.global.linking.attribute.prev"/>
          <ref name="att.global.linking.attribute.exclude"/>
          <ref name="att.global.linking.attribute.select"/>
+         <ref name="att.global.analytic.attribute.ana"/>
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.written.attributes"/>
@@ -9811,6 +9852,290 @@ Sample values include: 1] pt(past tense) ; 2] pp(past participle) ; 3] prp(prese
          <empty/>
       </element>
    </define>
+   <define name="att.global.analytic.attributes">
+      <ref name="att.global.analytic.attribute.ana"/>
+   </define>
+   <define name="att.global.analytic.attribute.ana">
+      <optional>
+         <attribute name="ana">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="s">
+      <element name="s">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(s-unit) contains a sentence-like division of a text. [17.1. Linguistic Segment Categories 8.4.1. Segmentation]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="TBXinTEI-s-noNestedS-constraint-17">
+            <rule context="tei:s">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:tbx="http://www.tbx.org"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       test="tei:s">You may not nest one s element within
+      another: use seg instead</report>
+            </rule>
+         </pattern>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="cl">
+      <element name="cl">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(clause) represents a grammatical clause. [17.1. Linguistic Segment Categories]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="phr">
+      <element name="phr">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(phrase) represents a grammatical phrase. [17.1. Linguistic Segment Categories]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="w">
+      <element name="w">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(word) represents a grammatical (not necessarily orthographic) word. [17.1. Linguistic Segment Categories]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.gLike"/>
+               <ref name="seg"/>
+               <ref name="w"/>
+               <ref name="m"/>
+               <ref name="c"/>
+               <ref name="pc"/>
+               <ref name="model.global"/>
+               <ref name="model.lPart"/>
+               <ref name="model.hiLike"/>
+               <ref name="model.pPart.edit"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute name="lemma">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a lemma for the word, such as an uninflected dictionary entry form.</a:documentation>
+               <data type="string"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="lemmaRef">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a pointer to a definition of the lemma for the word, for example in an online lexicon.</a:documentation>
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="m">
+      <element name="m">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(morpheme) represents a grammatical morpheme. [17.1. Linguistic Segment Categories]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.gLike"/>
+               <ref name="model.hiLike"/>
+               <ref name="seg"/>
+               <ref name="m"/>
+               <ref name="c"/>
+               <ref name="model.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute name="baseForm">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the morpheme's base form.</a:documentation>
+               <data type="token">
+                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="c">
+      <element name="c">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) represents a character. [17.1. Linguistic Segment Categories]</a:documentation>
+         <ref name="macro.xtext"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="pc">
+      <element name="pc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [17.1. Linguistic Segment Categories]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.gLike"/>
+               <ref name="c"/>
+               <ref name="model.pPart.edit"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.segLike.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute name="force">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the extent to which this punctuation mark conventionally separates words or phrases</a:documentation>
+               <choice>
+                  <value>strong</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the punctuation mark is a word separator</a:documentation>
+                  <value>weak</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the punctuation mark is not a word separator</a:documentation>
+                  <value>inter</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the punctuation mark may or may not be a word separator</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="unit">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a name for the kind of unit delimited by this punctuation mark.</a:documentation>
+               <data type="token">
+                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="pre">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates whether this punctuation mark precedes or follows the unit it delimits.</a:documentation>
+               <data type="boolean"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="span">
+      <element name="span">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">associates an interpretative annotation directly with a span of text. [17.3. Spans and Interpretations]</a:documentation>
+         <ref name="macro.phraseSeq.limited"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="TBXinTEI-span-targetfrom-constraint-18">
+            <rule context="tei:span">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:tbx="http://www.tbx.org"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       test="@from and @target">
+Only one of the attributes @target and @from may be supplied on <name/>
+               </report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="TBXinTEI-span-targetto-constraint-19">
+            <rule context="tei:span">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:tbx="http://www.tbx.org"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       test="@to and @target">
+Only one of the attributes @target and @to may be supplied on <name/>
+               </report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="TBXinTEI-span-tonotfrom-constraint-20">
+            <rule context="tei:span">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:tbx="http://www.tbx.org"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       test="@to and not(@from)">
+If @to is supplied on <name/>, @from must be supplied as well</report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="TBXinTEI-span-tofrom-constraint-21">
+            <rule context="tei:span">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:tbx="http://www.tbx.org"
+                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
+The attributes @to and @from on <name/> may each contain only a single value</report>
+            </rule>
+         </pattern>
+         <ref name="att.global.attributes"/>
+         <ref name="att.interpLike.attributes"/>
+         <ref name="att.pointing.attributes"/>
+         <optional>
+            <attribute name="from">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the identifier of the node which is the starting point of the span of text being annotated; if not accompanied by a to attribute, gives the identifier of the node of the entire span of text being annotated.</a:documentation>
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="to">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the identifier of the node which is the end-point of the span of text being annotated.</a:documentation>
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="spanGrp">
+      <element name="spanGrp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(span group) collects together span tags. [17.3. Spans and Interpretations]</a:documentation>
+         <zeroOrMore>
+            <ref name="span"/>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.interpLike.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="interp">
+      <element name="interp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(interpretation) summarizes a specific interpretative annotation which can be linked to a span of text. [17.3. Spans and Interpretations]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.gLike"/>
+               <ref name="model.descLike"/>
+               <ref name="model.certLike"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.interpLike.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="interpGrp">
+      <element name="interpGrp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(interpretation group) collects together a set of related interpretations which share responsibility or type. [17.3. Spans and Interpretations]</a:documentation>
+         <group>
+      
+            <zeroOrMore>
+               <ref name="model.descLike"/>
+            </zeroOrMore>
+      
+      
+            <oneOrMore>
+               <ref name="interp"/>
+            </oneOrMore>
+      
+         </group>
+         <ref name="att.global.attributes"/>
+         <ref name="att.interpLike.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="att.global.linking.attributes">
       <ref name="att.global.linking.attribute.corresp"/>
       <ref name="att.global.linking.attribute.synch"/>
@@ -9941,7 +10266,7 @@ Sample values include: 1] pt(past tense) ; 2] pp(past participle) ; 3] prp(prese
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="TBXinTEI-ab-abstractModel-structure-p-constraint-17">
+                  id="TBXinTEI-ab-abstractModel-structure-p-constraint-22">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:tbx="http://www.tbx.org"
@@ -9952,7 +10277,7 @@ Sample values include: 1] pt(past tense) ; 2] pp(past participle) ; 3] prp(prese
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="TBXinTEI-ab-abstractModel-structure-l-constraint-18">
+                  id="TBXinTEI-ab-abstractModel-structure-l-constraint-23">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:tbx="http://www.tbx.org"
@@ -11727,7 +12052,7 @@ Suggested values include: 1] alternate; 2] default; 3] height; 4] id; 5] label; 
              prefix="s"
              uri="http://www.ascc.net/xml/schematron"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="TBXinTEI-constraintSpec-sch-constraint-21">
+                  id="TBXinTEI-constraintSpec-sch-constraint-26">
             <rule context="tei:constraintSpec">
                <sch:report xmlns:s="http://www.ascc.net/xml/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -11741,7 +12066,7 @@ Suggested values include: 1] alternate; 2] default; 3] height; 4] id; 5] label; 
              prefix="sch"
              uri="http://purl.oclc.org/dsdl/schematron"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="TBXinTEI-constraintSpec-isosch-constraint-22">
+                  id="TBXinTEI-constraintSpec-isosch-constraint-27">
             <rule context="tei:constraintSpec">
                <sch:report xmlns:s="http://www.ascc.net/xml/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -12156,10 +12481,10 @@ Suggested values include: 1] schematron(Schematron) ; 2] isoschematron(ISO Schem
          <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:tbx="http://www.tbx.org"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      name="langSec_termSecOrSense">
+                      name="langSec_termSecOrForm">
                   <sch:rule context="langSec">
-                    <sch:assert test="not(termSec and sense)">Either termSec or sense should be used
-                      to bundle lexicographic information.</sch:assert>
+                    <sch:assert test="not(termSec and form)">Only one of the elements termSec and
+                      form may be supplied</sch:assert>
                   </sch:rule>
                 </sch:pattern>
          <ref name="att.global.attribute.xmlid"/>
@@ -12177,6 +12502,7 @@ Suggested values include: 1] schematron(Schematron) ; 2] isoschematron(ISO Schem
          <ref name="att.global.linking.attribute.prev"/>
          <ref name="att.global.linking.attribute.exclude"/>
          <ref name="att.global.linking.attribute.select"/>
+         <ref name="att.global.analytic.attribute.ana"/>
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <attribute name="xml:lang">
@@ -12227,7 +12553,7 @@ Suggested values include: 1] schematron(Schematron) ; 2] isoschematron(ISO Schem
          <ref name="att.lexicographic.attributes"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies form as simple, compound, etc.
 Sample values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] derivative; 6] inflected; 7] phrase; 8] full; 9] abbrev</a:documentation>
                <text/>
             </attribute>
@@ -12241,6 +12567,9 @@ Sample values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] derivati
          <zeroOrMore>
             <choice>
                <text/>
+               <zeroOrMore>
+                  <ref name="relation"/>
+               </zeroOrMore>
             </choice>
          </zeroOrMore>
          <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
@@ -12248,75 +12577,78 @@ Sample values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] derivati
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       name="conceptDesc_typeOrCorresp">
                   <sch:rule context="conceptDesc">
-                    <sch:assert test="@type or @corresp">The @type attribute must be specified in conceptDesc,
-                      except in the case where only a @corresp URI is needed.</sch:assert>
+                    <sch:assert test="@type or @corresp">One of the attributes @type or @corresp
+                      must be supplied</sch:assert>
                   </sch:rule>
                 </sch:pattern>
          <ref name="att.datcat.attributes"/>
          <ref name="att.global.attributes"/>
+         <ref name="att.pointing.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates the data-category type of the conceptDesc element, such as subjectField or associatedConcept.</a:documentation>
                <choice>
                   <value>conceptPosition</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The position of a concept in a concept system</a:documentation>
                   <value>subjectField</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A field of special knowledge or term from a controlled vocabulary</a:documentation>
                   <value>antonymConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept which constitutes the opposite of the concept represented by a second term</a:documentation>
                   <value>associatedConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept that exhibits a relation to the subject concept that can be established on the basis of non-hierarchical thematic connections</a:documentation>
                   <value>broaderConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept two or more levels of abstraction higher than subject concept</a:documentation>
                   <value>broaderConceptGeneric</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept two or more levels of abstraction higher than subject concept in a generic hierarchical concept system</a:documentation>
                   <value>broaderConceptPartitive</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept two or more levels of abstraction higher than subject concept in a part-whole or meronymic hierarchical concept system</a:documentation>
                   <value>narrowerConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept two or more levels of abstraction lower than subject concept</a:documentation>
                   <value>narrowerConceptGeneric</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept two or more levels of abstraction lower than subject concept in a generic hierarchical concept system</a:documentation>
                   <value>narrowerConceptPartitive</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept two or more levels of abstraction lower than subject concept in a part-whole or meronymic hierarchical concept system</a:documentation>
                   <value>coordinateConceptGeneric</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given generic concept system</a:documentation>
                   <value>coordinateConceptPartitive</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given partitive concept system</a:documentation>
                   <value>relatedConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept that has an associative relation to another concept</a:documentation>
                   <value>relatedConceptBroader</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept that is roughly broader at some level with respect to a related or associative concept, but without there comprising any clear-cut reference to a defined generic or partitive system</a:documentation>
+                  <value>relatedConceptNarrower</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept that is roughly narrower at some level with respect to a related or associative concept, but without there comprisng any clear-cut reference to a defined generic or partitive system of concepts</a:documentation>
                   <value>sequentiallyRelatedConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An associative relation based on spatial or temporal proximity</a:documentation>
                   <value>spatiallyRelatedConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A relation of dependence between concepts referring to objects based on their relative positions in space</a:documentation>
                   <value>temporallyRelatedConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept related to the subject concept through a sequential relation involving events in time</a:documentation>
                   <value>subordinateConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept in a hierarchical system that can be grouped together with at least one more concept of the same level to form a higher ranking concept</a:documentation>
                   <value>subordinateConceptGeneric</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept in a generic relation having the broader intension</a:documentation>
                   <value>subordinateConceptPartitive</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept in a partitive relation viewed as one of the parts making up the whole</a:documentation>
                   <value>superordinateConcept</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept which is either a generic concept or a comprehensive concept</a:documentation>
                   <value>superordinateConceptGeneric</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept in a generic relation having the narrower intension</a:documentation>
                   <value>superordinateConceptPartitive</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A concept that has a partitive relation with the subject concept, and represents the sum of the parts; a comprehensive concept</a:documentation>
                </choice>
             </attribute>
          </optional>
          <optional>
             <attribute name="grade">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <data type="nonNegativeInteger"/>
+               <data type="double"/>
             </attribute>
          </optional>
          <optional>
-            <attribute name="target">
+            <attribute name="level">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <data type="anyURI"/>
+               <data type="nonNegativeInteger"/>
             </attribute>
          </optional>
          <empty/>

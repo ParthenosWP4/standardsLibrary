@@ -9,7 +9,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2017-10-24T18:50:10Z. .
+# Schema generated from ODD source 2017-11-24T01:33:15Z. .
 # TEI Edition: Version 3.0.0. Last updated on
 #	29th March 2016, revision 89ba24e
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -541,6 +541,7 @@ att.global.rendition.attribute.rendition =
 att.global.attributes =
   att.global.rendition.attributes,
   att.global.linking.attributes,
+  att.global.analytic.attributes,
   att.global.responsibility.attributes,
   att.global.attribute.xmlid,
   att.global.attribute.n,
@@ -668,6 +669,23 @@ att.resourced.attribute.url =
   
   ## (uniform resource locator) specifies the URL from which the media concerned may be obtained.
   attribute url { xsd:anyURI }
+att.interpLike.attributes =
+  att.source.attributes,
+  att.interpLike.attribute.type,
+  att.interpLike.attribute.inst
+att.interpLike.attribute.type =
+  
+  ## indicates what kind of phenomenon is being noted in the passage.
+  ## Sample values include: 1] image; 2] character; 3] theme; 4] allusion
+  attribute type {
+    xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+  }?
+att.interpLike.attribute.inst =
+  
+  ## (instances) points to instances of the analysis or interpretation represented by the current element.
+  attribute inst {
+    list { xsd:anyURI+ }
+  }?
 att.measurement.attributes =
   att.measurement.attribute.unit,
   att.measurement.attribute.quantity,
@@ -1145,7 +1163,7 @@ model.nameLike.agent_sequenceOptional = name?, orgName?, persName?
 model.nameLike.agent_sequenceOptionalRepeatable =
   name*, orgName*, persName*
 model.nameLike.agent_sequenceRepeatable = name+, orgName+, persName+
-model.segLike = seg
+model.segLike = s | cl | phr | w | m | c | pc | seg
 model.hiLike = hi
 model.hiLike_alternation = hi
 model.hiLike_sequence = hi
@@ -1269,7 +1287,18 @@ model.pPart.edit = model.pPart.editorial | model.pPart.transcriptional
 model.ptrLike = ptr | ref
 model.lPart = notAllowed
 model.global.meta =
-  index | link | linkGrp | timeline | join | joinGrp | alt | altGrp
+  index
+  | span
+  | spanGrp
+  | interp
+  | interpGrp
+  | link
+  | linkGrp
+  | timeline
+  | join
+  | joinGrp
+  | alt
+  | altGrp
 model.milestoneLike = milestone | gb | pb | lb | cb | anchor
 model.gLike = notAllowed
 model.oddDecl =
@@ -1861,6 +1890,7 @@ hi =
     att.global.linking.attribute.prev,
     att.global.linking.attribute.exclude,
     att.global.linking.attribute.select,
+    att.global.analytic.attribute.ana,
     att.global.responsibility.attribute.cert,
     att.global.responsibility.attribute.resp,
     att.written.attributes,
@@ -5633,6 +5663,271 @@ listNym =
     att.sortable.attributes,
     empty
   }
+att.global.analytic.attributes = att.global.analytic.attribute.ana
+att.global.analytic.attribute.ana =
+  
+  ## (analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears.
+  attribute ana {
+    list { xsd:anyURI+ }
+  }?
+s =
+  
+  ## (s-unit) contains a sentence-like division of a text. [17.1. Linguistic Segment Categories 8.4.1. Segmentation]
+  element s {
+    macro.phraseSeq
+    >> sch:pattern [
+         id = "TBXinTEI-s-noNestedS-constraint-17"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:s"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "tei:s"
+             "You may not nest one s element within\x{a}" ~
+             "      another: use seg instead"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    empty
+  }
+cl =
+  
+  ## (clause) represents a grammatical clause. [17.1. Linguistic Segment Categories]
+  element cl {
+    macro.phraseSeq,
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    empty
+  }
+phr =
+  
+  ## (phrase) represents a grammatical phrase. [17.1. Linguistic Segment Categories]
+  element phr {
+    macro.phraseSeq,
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    empty
+  }
+w =
+  
+  ## (word) represents a grammatical (not necessarily orthographic) word. [17.1. Linguistic Segment Categories]
+  element w {
+    (text
+     | model.gLike
+     | seg
+     | w
+     | m
+     | c
+     | pc
+     | model.global
+     | model.lPart
+     | model.hiLike
+     | model.pPart.edit)*,
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    
+    ## provides a lemma for the word, such as an uninflected dictionary entry form.
+    attribute lemma { xsd:string }?,
+    
+    ## provides a pointer to a definition of the lemma for the word, for example in an online lexicon.
+    attribute lemmaRef { xsd:anyURI }?,
+    empty
+  }
+m =
+  
+  ## (morpheme) represents a grammatical morpheme. [17.1. Linguistic Segment Categories]
+  element m {
+    (text | model.gLike | model.hiLike | seg | m | c | model.global)*,
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    
+    ## supplies the morpheme's base form.
+    attribute baseForm {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+    }?,
+    empty
+  }
+c =
+  
+  ## (character) represents a character. [17.1. Linguistic Segment Categories]
+  element c {
+    macro.xtext,
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    empty
+  }
+pc =
+  
+  ## (punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [17.1. Linguistic Segment Categories]
+  element pc {
+    (text | model.gLike | c | model.pPart.edit)*,
+    att.global.attributes,
+    att.segLike.attributes,
+    att.typed.attributes,
+    
+    ## indicates the extent to which this punctuation mark conventionally separates words or phrases
+    attribute force {
+      
+      ## the punctuation mark is a word separator
+      "strong"
+      | 
+        ## the punctuation mark is not a word separator
+        "weak"
+      | 
+        ## the punctuation mark may or may not be a word separator
+        "inter"
+    }?,
+    
+    ## provides a name for the kind of unit delimited by this punctuation mark.
+    attribute unit {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+    }?,
+    
+    ## indicates whether this punctuation mark precedes or follows the unit it delimits.
+    attribute pre { xsd:boolean }?,
+    empty
+  }
+span =
+  
+  ## associates an interpretative annotation directly with a span of text. [17.3. Spans and Interpretations]
+  element span {
+    macro.phraseSeq.limited
+    >> sch:pattern [
+         id = "TBXinTEI-span-targetfrom-constraint-18"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@from and @target"
+             "\x{a}" ~
+             "Only one of the attributes @target and @from may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "TBXinTEI-span-targetto-constraint-19"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@to and @target"
+             "\x{a}" ~
+             "Only one of the attributes @target and @to may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "TBXinTEI-span-tonotfrom-constraint-20"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@to and not(@from)"
+             "\x{a}" ~
+             "If @to is supplied on "
+             sch:name [ ]
+             ", @from must be supplied as well"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "TBXinTEI-span-tofrom-constraint-21"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test =
+               "contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')"
+             "\x{a}" ~
+             "The attributes @to and @from on "
+             sch:name [ ]
+             " may each contain only a single value"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.global.attributes,
+    att.interpLike.attributes,
+    att.pointing.attributes,
+    
+    ## gives the identifier of the node which is the starting point of the span of text being annotated; if not accompanied by a to attribute, gives the identifier of the node of the entire span of text being annotated.
+    attribute from { xsd:anyURI }?,
+    
+    ## gives the identifier of the node which is the end-point of the span of text being annotated.
+    attribute to { xsd:anyURI }?,
+    empty
+  }
+spanGrp =
+  
+  ## (span group) collects together span tags. [17.3. Spans and Interpretations]
+  element spanGrp {
+    span*, att.global.attributes, att.interpLike.attributes, empty
+  }
+interp =
+  
+  ## (interpretation) summarizes a specific interpretative annotation which can be linked to a span of text. [17.3. Spans and Interpretations]
+  element interp {
+    (text | model.gLike | model.descLike | model.certLike)*,
+    att.global.attributes,
+    att.interpLike.attributes,
+    empty
+  }
+interpGrp =
+  
+  ## (interpretation group) collects together a set of related interpretations which share responsibility or type. [17.3. Spans and Interpretations]
+  element interpGrp {
+    (model.descLike*, interp+),
+    att.global.attributes,
+    att.interpLike.attributes,
+    empty
+  }
 att.global.linking.attributes =
   att.global.linking.attribute.corresp,
   att.global.linking.attribute.synch,
@@ -5728,7 +6023,7 @@ ab =
   element ab {
     macro.paraContent
     >> sch:pattern [
-         id = "TBXinTEI-ab-abstractModel-structure-p-constraint-17"
+         id = "TBXinTEI-ab-abstractModel-structure-p-constraint-22"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -5749,7 +6044,7 @@ ab =
          "         "
        ]
     >> sch:pattern [
-         id = "TBXinTEI-ab-abstractModel-structure-l-constraint-18"
+         id = "TBXinTEI-ab-abstractModel-structure-l-constraint-23"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -7107,7 +7402,7 @@ constraintSpec =
          uri = "http://www.ascc.net/xml/schematron"
        ]
     >> sch:pattern [
-         id = "TBXinTEI-constraintSpec-sch-constraint-21"
+         id = "TBXinTEI-constraintSpec-sch-constraint-26"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -7129,7 +7424,7 @@ constraintSpec =
          uri = "http://purl.oclc.org/dsdl/schematron"
        ]
     >> sch:pattern [
-         id = "TBXinTEI-constraintSpec-isosch-constraint-22"
+         id = "TBXinTEI-constraintSpec-isosch-constraint-27"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -7490,7 +7785,7 @@ langSec =
       | model.noteLike*
       | model.ptrLike*)+)
     >> sch:pattern [
-         name = "langSec_termSecOrSense"
+         name = "langSec_termSecOrForm"
          "\x{a}" ~
          "                  "
          sch:rule [
@@ -7498,9 +7793,9 @@ langSec =
            "\x{a}" ~
            "                    "
            sch:assert [
-             test = "not(termSec and sense)"
-             "Either termSec or sense should be used\x{a}" ~
-             "                      to bundle lexicographic information."
+             test = "not(termSec and form)"
+             "Only one of the elements termSec and\x{a}" ~
+             "                      form may be supplied"
            ]
            "\x{a}" ~
            "                  "
@@ -7523,6 +7818,7 @@ langSec =
     att.global.linking.attribute.prev,
     att.global.linking.attribute.exclude,
     att.global.linking.attribute.select,
+    att.global.analytic.attribute.ana,
     att.global.responsibility.attribute.cert,
     att.global.responsibility.attribute.resp,
     
@@ -7550,7 +7846,7 @@ termSec =
     att.global.attributes,
     att.lexicographic.attributes,
     
-    ## 
+    ## classifies form as simple, compound, etc.
     ## Sample values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] derivative; 6] inflected; 7] phrase; 8] full; 9] abbrev
     attribute type { text }?,
     empty
@@ -7559,7 +7855,7 @@ conceptDesc =
   
   ## An element that contains descriptive information about a concept, or relations to other concepts. The type of information that the element contains, and any restrictions on the permissible values of the element, are determined by the value of the type attribute.
   element conceptDesc {
-    ((text)*)
+    ((text | relation*)*)
     >> sch:pattern [
          name = "conceptDesc_typeOrCorresp"
          "\x{a}" ~
@@ -7570,8 +7866,8 @@ conceptDesc =
            "                    "
            sch:assert [
              test = "@type or @corresp"
-             "The @type attribute must be specified in conceptDesc,\x{a}" ~
-             "                      except in the case where only a @corresp URI is needed."
+             "One of the attributes @type or @corresp\x{a}" ~
+             "                      must be supplied"
            ]
            "\x{a}" ~
            "                  "
@@ -7581,85 +7877,89 @@ conceptDesc =
        ],
     att.datcat.attributes,
     att.global.attributes,
+    att.pointing.attributes,
     
     ## Indicates the data-category type of the conceptDesc element, such as subjectField or associatedConcept.
     attribute type {
       
-      ##
+      ## The position of a concept in a concept system
       "conceptPosition"
       | 
-        ##
+        ## A field of special knowledge or term from a controlled vocabulary
         "subjectField"
       | 
-        ##
+        ## A concept which constitutes the opposite of the concept represented by a second term
         "antonymConcept"
       | 
-        ##
+        ## A concept that exhibits a relation to the subject concept that can be established on the basis of non-hierarchical thematic connections
         "associatedConcept"
       | 
-        ##
+        ## A concept two or more levels of abstraction higher than subject concept
         "broaderConcept"
       | 
-        ##
+        ## A concept two or more levels of abstraction higher than subject concept in a generic hierarchical concept system
         "broaderConceptGeneric"
       | 
-        ##
+        ## A concept two or more levels of abstraction higher than subject concept in a part-whole or meronymic hierarchical concept system
         "broaderConceptPartitive"
       | 
-        ##
+        ## A concept two or more levels of abstraction lower than subject concept
         "narrowerConcept"
       | 
-        ##
+        ## A concept two or more levels of abstraction lower than subject concept in a generic hierarchical concept system
         "narrowerConceptGeneric"
       | 
-        ##
+        ## A concept two or more levels of abstraction lower than subject concept in a part-whole or meronymic hierarchical concept system
         "narrowerConceptPartitive"
       | 
-        ##
+        ## A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given generic concept system
         "coordinateConceptGeneric"
       | 
-        ##
+        ## A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given partitive concept system
         "coordinateConceptPartitive"
       | 
-        ##
+        ## A concept that has an associative relation to another concept
         "relatedConcept"
       | 
-        ##
+        ## A concept that is roughly broader at some level with respect to a related or associative concept, but without there comprising any clear-cut reference to a defined generic or partitive system
         "relatedConceptBroader"
       | 
-        ##
+        ## A concept that is roughly narrower at some level with respect to a related or associative concept, but without there comprisng any clear-cut reference to a defined generic or partitive system of concepts
+        "relatedConceptNarrower"
+      | 
+        ## An associative relation based on spatial or temporal proximity
         "sequentiallyRelatedConcept"
       | 
-        ##
+        ## A relation of dependence between concepts referring to objects based on their relative positions in space
         "spatiallyRelatedConcept"
       | 
-        ##
+        ## A concept related to the subject concept through a sequential relation involving events in time
         "temporallyRelatedConcept"
       | 
-        ##
+        ## A concept in a hierarchical system that can be grouped together with at least one more concept of the same level to form a higher ranking concept
         "subordinateConcept"
       | 
-        ##
+        ## A concept in a generic relation having the broader intension
         "subordinateConceptGeneric"
       | 
-        ##
+        ## A concept in a partitive relation viewed as one of the parts making up the whole
         "subordinateConceptPartitive"
       | 
-        ##
+        ## A concept which is either a generic concept or a comprehensive concept
         "superordinateConcept"
       | 
-        ##
+        ## A concept in a generic relation having the narrower intension
         "superordinateConceptGeneric"
       | 
-        ##
+        ## A concept that has a partitive relation with the subject concept, and represents the sum of the parts; a comprehensive concept
         "superordinateConceptPartitive"
     }?,
     
     ##
-    attribute grade { xsd:nonNegativeInteger }?,
+    attribute grade { xsd:double }?,
     
     ##
-    attribute target { xsd:anyURI }?,
+    attribute level { xsd:nonNegativeInteger }?,
     empty
   }
 start = TEI | teiCorpus
