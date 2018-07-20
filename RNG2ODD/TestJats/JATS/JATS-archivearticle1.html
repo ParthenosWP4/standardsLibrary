@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:rng="http://relaxng.org/ns/structure/1.0"
+     xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MEI (Music Encoding Initiative)</title>
+            <respStmt>
+               <resp>automated and manual editing</resp>
+               <name xml:id="RV">Raffaele Viglianti</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Converted from RNG with XSLT script ../Styles/rng2odd.xsl</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>created on 2016-12-15T14:44:42.035+01:00</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change who="#RV" when="2016-12-15+01:00"> Converted RNG Datatypes Declarations into ODD Datatype Macros according to TEI guidelines. <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/html/ST.html#DTYPES">Chapter 1, §1.4.2</ref>. </change>
+         <change who="#RV" when="2016-12-15+01:00"> Converted RNG Attribute Classes Declarations into ODD Attribute Classes according to TEI guidelines. <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/html/ST.html#STECAT">Chapter 1, §1.3.1</ref>. </change>
+         <change who="#RV" when="2016-12-15+01:00"> Converted RNG Model Classes Declarations into ODD Model Classes according to TEI guidelines. <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ST.html#STECCM">Chapter 1, §1.3.2</ref>. See also <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDCLA">Chapter 22, §22.4.6</ref> for references to models. </change>
+         <change who="#RV" when="2016-12-15+01:00"> Converted RNG Model Classes Declarations into ODD Macro Classes (when appropriate) according to TEI guidelines. <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDENT">Chapter 22, §22.4.7</ref>. </change>
+         <change who="#RV" when="2016-12-15+01:00"> Converted RNG Element Declarations into ODD Element Declarations according to TEI guidelines. <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDcrystals">Chapter 22, §22.3</ref>. See also <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDCLA">Chapter 22, §22.4.6</ref> for references to models. </change>
+         <change who="#PR" when="2016-12-15+01:00">Changed order of content and attlist declarations, fixed problem generating @usage</change>
+         <change who="#RV" when="2016-12-15+01:00">Integrated Schematron rules within element declarations.</change>
+         <change who="#RV" when="2016-12-15+01:00">Integrated modules.</change>
+         <change who="#CR" when="2016-12-15+01:00">Adaptation for the EAC-CPF relaxNG schema</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <divGen type="toc"/>
+      </front>
+      <body>
+         <p>EAC-CPF</p>
+         <!--****-->
+         <!--Defintion of Model Classes-->
+         <!--Number of definitions found in original RNG: 0-->
+         <!--****-->
+         <elementSpec ident="article" module="EAC">
+            <content>
+               <rng:ref name="article-attlist"/>
+               <rng:ref name="article-full-model"/>
+            </content>
+         </elementSpec>
+         <elementSpec ident="front" module="EAC">
+            <content>
+               <rng:ref name="front-attlist"/>
+               <rng:ref name="front-model"/>
+            </content>
+         </elementSpec>
+         <elementSpec ident="body" module="EAC">
+            <content>
+               <rng:ref name="body-attlist"/>
+               <rng:ref name="body-model"/>
+            </content>
+         </elementSpec>
+         <elementSpec ident="back" module="EAC">
+            <content>
+               <rng:ref name="back-attlist"/>
+               <rng:ref name="back-model"/>
+            </content>
+         </elementSpec>
+         <elementSpec ident="sub-article" module="EAC">
+            <content>
+               <rng:ref name="sub-article-attlist"/>
+               <rng:ref name="sub-article-model"/>
+            </content>
+         </elementSpec>
+         <elementSpec ident="front-stub" module="EAC">
+            <content>
+               <rng:ref name="front-stub-attlist"/>
+               <rng:ref name="front-stub-model"/>
+            </content>
+         </elementSpec>
+         <elementSpec ident="response" module="EAC">
+            <content>
+               <rng:ref name="response-attlist"/>
+               <rng:ref name="article-short-model"/>
+            </content>
+         </elementSpec>
+         <classSpec ident="att.EAC" type="atts">
+            <attList/>
+         </classSpec>
+      </body>
+   </text>
+</TEI>
