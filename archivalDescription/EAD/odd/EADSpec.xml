@@ -2260,7 +2260,7 @@
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -2269,7 +2269,7 @@
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -2278,7 +2278,7 @@
                             </attDef>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="left"/>
@@ -4084,7 +4084,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="left"/>
@@ -4111,7 +4111,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -4135,7 +4135,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -4144,7 +4144,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="top"/>
@@ -5885,7 +5885,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="type" mode="change">
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed" mode="replace">
                                     <valItem ident="simple"/>
@@ -5896,7 +5896,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="numeration">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="arabic"/>
@@ -5908,7 +5908,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="continuation">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="continues"/>
@@ -6164,7 +6164,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="show">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="embed"/>
@@ -6173,7 +6173,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="actuate">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onload"/>
@@ -7906,7 +7906,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -7915,7 +7915,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="top"/>
@@ -7988,7 +7988,7 @@ ID	#IMPLIED, ID
                             <attList>
                                 <attDef ident="placement">
                                     <datatype>
-                                        <rng:data type="data.enumerated"/>
+                                        <rng:data type="teidata.enumerated"/>
                                     </datatype>
                                     <valList type="closed">
                                         <valItem ident="header"/>
@@ -8464,7 +8464,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="frame">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="top"/>
@@ -8477,7 +8477,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -8486,7 +8486,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -8495,7 +8495,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="pgwide">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -8557,7 +8557,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="top"/>
@@ -8627,7 +8627,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="colsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -8636,7 +8636,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="rowsep">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1"/>
@@ -8645,7 +8645,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="align">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="left"/>
@@ -8760,7 +8760,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="valign">
                                 <datatype>
-                                    <rng:data type="data.enumerated"/>
+                                    <rng:data type="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="top"/>
@@ -9415,7 +9415,7 @@ ID	#IMPLIED, ID
                             </attDef>
                             <attDef ident="audience" usage="opt">
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="internal"/>
@@ -9474,7 +9474,7 @@ ID	#IMPLIED, ID
                                     is written <gi>abstract</gi>, for the language of the finding
                                     aid and the language of the materials <gi>language</gi>.</desc>
                                 <datatype>
-                                    <dataRef key="data.enumerated"/>
+                                    <dataRef key="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="aar"/>
@@ -9978,7 +9978,7 @@ ID	#IMPLIED, ID
                                 <desc>The four-letter code for the writing script used with a given
                                     language.</desc>
                                 <datatype>
-                                    <dataRef key="data.enumerated"/>
+                                    <dataRef key="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="Adlm"/>
@@ -10195,7 +10195,7 @@ ID	#IMPLIED, ID
                                 <desc>A unique code for the country in which the materials being
                                     described are held.</desc>
                                 <datatype>
-                                    <dataRef key="data.enumerated"/>
+                                    <dataRef key="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="AF"/>
@@ -10548,7 +10548,7 @@ ID	#IMPLIED, ID
                                 <desc>The hierarchical level of the materials being described by the
                                     element.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="class"/>
@@ -10737,7 +10737,7 @@ ID	#IMPLIED, ID
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onLoad"/>
@@ -10753,7 +10753,7 @@ ID	#IMPLIED, ID
                                     conjunction with the ACTUATE attribute to determine link
                                     behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="new"/>
@@ -10940,7 +10940,7 @@ ID	#IMPLIED, ID
                                     must be requested by the user. It is used in conjunction with
                                     the SHOW attribute to determine link behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="onLoad"/>
@@ -10961,7 +10961,7 @@ ID	#IMPLIED, ID
                                     conjunction with the ACTUATE attribute to determine link
                                     behavior.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="new"/>
@@ -11018,7 +11018,7 @@ ID	#IMPLIED, ID
                             <attDef ident="xlink:type" ns="http://www.w3.org/1999/xlink">
                                 <desc>Indicates the XLink element type.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="simple">
@@ -11108,7 +11108,7 @@ ID	#IMPLIED, ID
                                 <desc>Horizontal position of the text within a column. Available in
                                         <gi>colspec</gi> and <gi>entry</gi>.</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="left">
@@ -11190,7 +11190,7 @@ ID	#IMPLIED, ID
                                 <desc>If the columns in the table are to be separated by vertical
                                     rules</desc>
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="1">
@@ -11240,7 +11240,7 @@ ID	#IMPLIED, ID
                         <attList>
                             <attDef ident="render">
                                 <datatype>
-                                    <rng:ref name="data.enumerated"/>
+                                    <rng:ref name="teidata.enumerated"/>
                                 </datatype>
                                 <valList type="closed">
                                     <valItem ident="altrender"/>

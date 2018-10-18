@@ -1843,7 +1843,7 @@ SOURCE	#IMPLIED, NMTOKEN</attList> -->
                                     <rng:ref name="dateRange"/>
                                     <rng:ref name="dateSet"/>
                                 </rng:choice>
-                            </rng:optional>	
+                            </rng:optional>
                             <rng:optional>
                                 <rng:ref name="placeEntry"/>
                             </rng:optional>
@@ -5958,7 +5958,7 @@ ID	#IMPLIED, ID</attList> -\->
                                     classification scheme or typology.</desc>
                                 <datatype>
                                     <ref xmlns="http://relaxng.org/ns/structure/1.0"
-                                        name="data.enumerated"/>
+                                        name="teidata.enumerated"/>
                                 </datatype>
                             </attDef>
                         </attList>

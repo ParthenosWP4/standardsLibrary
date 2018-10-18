@@ -1,0 +1,2516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../rnc/tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+    xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:olac="http://www.language-archives.org/OLAC/1.0/" xmlns:iso="http://www.iso.org/ns/1.0"
+    xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <!-- to be kept in mind - possibility to integrate description of collections within desc -> organization ->descunit -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>EAG Specification in TEI-ODD</title>
+                <author>Maud Medves</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>rev1</edition>
+            </editionStmt>
+            <publicationStmt>
+                <date>2012-09-18</date>
+                <availability>
+                    <p>CC-BY</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>...</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="foreword">
+                <head>Foreword</head>
+                <p>...</p>
+            </div>
+        </front>
+        <body>
+            <div n="1" type="introduction">
+                <head>EAG (CENDARI) documentation - Version 1.1 (6/06/2013)</head>
+                <p>Encoded Archival Guide (EAG) is a standard for encoding information about archive
+                    repositories, and this document describes EAG(CENDARI) a version of EAG designed
+                    to meet the needs of CENDARI. The original version of EAG was created by the
+                    Spanish Ministry of Culture in 2002 and is referred to within this document as
+                    EAG(Spain), although the documentation that is referred to is that created by
+                        APEnet<hi rend="superscript">
+                        <note place="foot" xml:id="ftn0" n="0">
+                            <p>
+                                <hi rend="FootnoteReference">
+                                    <seg rend="superscript"/>
+                                </hi>
+                                <ref target="settings.xml"
+                                    >http://www.apex-project.eu/index.php/outcomes/standards</ref>
+                            </p>
+                        </note>
+                    </hi>. During the period of developing EAG(CENDARI) APEx (the sequel to the APEnet project) also released a new version of EAG, referred to in this document as EAG(APEx)<hi rend="superscript">
+                        <note place="foot" xml:id="ftn1" n="1">
+                            <p>
+                                <hi rend="FootnoteReference">
+                                    <seg rend="superscript"/>
+                                </hi>
+                                <ref target="comments.xml"
+                                    >http://www.apenet.eu/index.php?option=com_content&amp;view=article&amp;id=50&amp;Itemid=65#EAG</ref>
+                            </p>
+                        </note>
+                    </hi>. The International Council on Archives also released a related standard in 2008, the International Standard for Describing Institutions with Archival Holdings (ISDIAH). Rather than an encoding ISDIAH describes the information that needs to be encoded.</p>
+                <p>There are two aims for this documentation:</p>
+                <list type="ordered">
+                    <item>Provide an introduction to EAG(CENDARI) that is designed to be accessible
+                        to both encoders and the less technical readers.</item>
+                    <item>2) Document the differences between EAG(CENDARI), and the related
+                        standards. (i.e., EAG(Spain), EAG(APEnet), &amp; ISDIAH).</item>
+                </list>
+            </div>
+            <div n="2" type="scope">
+                <div>
+                    <head>General structure of an EAG document</head>
+                    <p>The EAG information model is intended to represent both the description of an
+                        institution with archival holdings and the metadata attached to such a
+                        description. This is reflected in the two main parts of an &lt;EAG&gt; root
+                        element, namely &lt;eagheader&gt; and &lt;archguide&gt;.</p>
+                    <p>ex. 1.a</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <eag xmlns="http://www.ministryculture.es/" audience="external">
+                            <eagheader>...</eagheader>
+                            <archguide>...</archguide>
+                        </eag>
+                    </egXML>
+                    <p>The root element &lt;eag&gt; owns two mandatory attributes.</p>
+                    <p>The attribute @xmnls provides the linking to the EAG namespace location. The
+                        default value of @xmnls is http://www.ministryculture.es.</p>
+                    <p>The attribute @audience informs about the external or internal use of the
+                        document. Therefore the two possible values of @audience are external and
+                        internal. By default use the value external.</p>
+                </div>
+                <div>
+                    <head>EAG header (&lt;eagheader&gt;)</head>
+                    <p>The EAG header records all relevant information to identify the EAG document,
+                        names all relevant international standards, the language(s) used within the
+                        document, and the person(s) responsible for its maintenance.</p>
+                    <p>It is organized as a series of subcomponents:</p>
+                    <list type="unordered">
+                        <item>&lt;eagid&gt; provides a unique identifier for the EAG document /
+                            archive description.</item>
+                        <item>&lt;mainhist&gt; gathers information about the maintenance history of
+                            the document and is organized as a series of maintenance events.</item>
+                        <item>&lt;languagedecl&gt; records the languages used in the document</item>
+                    </list>
+                    <p>ex. 2.a</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <eagheader countryencoding="iso3166" municipalityencoding="UN/LOCODE"
+                            langencoding="iso639-1" scriptencoding="iso15924"
+                            repositoryencoding="iso15511" dateencoding="iso8601" status="edited">
+                            <eagid>...</eagid>
+                            <mainhist>...</mainhist>
+                            <languagedecl>...</languagedecl>
+                        </eagheader>
+                    </egXML>
+                    <p>The element &lt;eagheader&gt; possesses 5 mandatory attributes, whose goal is
+                        to list the standards used within the document.</p>
+                    <list type="unordered">
+                        <item>The default value of the attribute @countryencoding is iso3166. The
+                            country codes are indeed attributed following ISO 3166 alpha 2 standard.
+                            The list of codes is to be found in Annex 1.</item>
+                        <item>The default value of the attribute @langencoding is iso639-1. The
+                            language codes are indeed attributed following ISO 639-1 standard. A
+                            selection of most used codes is to be found in Annex 3. <note>CENDARI
+                                customization: in CENDARI we suggest to remain compliant with the
+                                most general recommendations of W3C concerning language values and
+                                in particular language codes to be used in @langcode (BCP 47). This
+                                will ensure a higher operability between our data and other types of
+                                data expressed in other formats in a context where we are likely to
+                                be working with a wide variety of such formats in CENDARI. We have
+                                therefore chosen to use ISO 639-1 rather than ISO 639-2b.</note>
+                        </item>
+                        <item>The default value of the attribute @ scriptencoding is iso15924. The
+                            script codes are indeed attributed following ISO 15924 standard. A
+                            selection of most used codes is to be found in Annex 2.</item>
+                        <item>There is no default value for the attribute @repositoryencoding. You
+                            must insert here the standard you used to attribute a code to
+                            @repositorycode in &lt;repositorid&gt;. In a context where institutions
+                            with archival holdings have several identifiers and we want to record
+                            them all, it is recommended to list the broadest number of PIDs an
+                            archive may have. There might therefore be several standards listed for
+                            @repositoryencoding: i.a. iso15511 (for ISIL), national standards,
+                            Cendari.</item>
+                        <item>The default value for the attribute @dateencoding is iso8601. All
+                            dates in the document must be encoded following ISO 8601 rules. A
+                            definition of ISO 8601 standard is to be found in Annex 4.</item>
+                    </list>
+                    <note>Cendari customization: a new attribute @municipalityencoding was
+                        introduced to refer to the standard UN/LOCODE if the said standard is used
+                        to identify the city in the description part of the document. The default
+                        value of the attribute @ municipalityencoding is UN/LOCODE. The city codes
+                        are indeed attributed following UN/LOCODE standard, which you can find here
+                            (<ref target="http://www.unece.org/cefact/locode/service/location.html"
+                            >http://www.unece.org/cefact/locode/service/location.html</ref>).</note>
+                    <p>There also exists a @status attribute, whose goal is to indicate the editing
+                        status of the document. There are three possible values corresponding to the
+                        status of the document, namely draft, deleted, edited. By default use the
+                        value edited.</p>
+                    <div type="sub">
+                        <head>2.1 EAG identification number (&lt;eagid&gt;)</head>
+                        <p>&lt;eagid&gt; records the identification number of the EAG document /
+                            archive description. It is automatically generated when a new EAG
+                            document is created on the CENDARI server.</p>
+                        <p>This should not be mixed up with any specific identifier attached to the
+                            archive itself. See &lt;repositorid&gt; below.</p>
+                    </div>
+                    <div type="sub">
+                        <head>2.2 Maintenance history (&lt;mainhist&gt;)</head>
+                        <p>&lt;mainhist&gt; stands for maintenance history - it consists of a series
+                            of &lt;mainevent&gt; (maintenance event) that record every change made,
+                            the date, the person responsible for the changes and the source that
+                            provided the content. There are as many maintenance events as
+                            required.</p>
+                        <p>ex. 2.2.a</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <mainhist>
+                                <mainevent maintype="create">
+                                    <date normal="2012-11-14"/>
+                                    <respevent>
+                                        <person xmlns="http://www.tei-c.org/ns/1.0">
+                                            <persName>
+                                                <forename>Anna</forename>
+                                                <surname>Bohn</surname>
+                                            </persName>
+                                            <affiliation>
+                                                <orgName type="institution">FUB</orgName>
+                                            </affiliation>
+                                        </person>
+                                    </respevent>
+                                    <source>http://www.nb.rs</source>
+                                </mainevent>
+                            </mainhist>
+                        </egXML>
+                        <p>There are three types of maintenance events: creation, update, deletion.
+                            One must provide a date, a person responsible for the update and the
+                            source.</p>
+                        <p>Please note that the date is not given in the text of the element but
+                            inside the @normal attribute.</p>
+                        <p>Cendari customization: to encode more precisely information about a
+                            person, a new &lt;person&gt; element and its &lt;persName&gt; and
+                            &lt;affiliation&gt; children elements were introduced taken up from the
+                            TEI vocabulary.</p>
+                        <p>To simplify the encoding, it was decided to indicate just the institution
+                            the person belongs to and not the full description of his/her function.
+                            The granularity of the data is variable: if needed you can also indicate
+                            a department or even a laboratory (using the @type attribute). If the
+                            full description of the function needs to be encoded, there exists an
+                            &lt;occupation&gt; element.</p>
+                        <p>CENDARI customization: The &lt;source&gt; element is repeatable (in case
+                            two sources of information were used) and a @xml:id attribute can be
+                            attached to it so that, in the descriptive part of the EAG document, it
+                            can be referred to when needed by means of a @source attribute (e.g.,
+                            indicate that the authorized form of name comes from the one source,
+                            while the archive's history was from another).</p>
+                        <p>ex. 2.2.b</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <eag>
+                                <eagheader>
+                                    <mainhist>
+                                        <mainevent> […] <source xml:id="source1"
+                                                >http://www.warszawa.ap.gov.pl/</source>
+                                        </mainevent>
+                                    </mainhist>
+                                </eagheader>
+                                <archguide>
+                                    <identity> […] </identity>
+                                    <desc> […] <repositorhist xml:lang="pl" source="#source1">
+                                            <p>Oddział mławski archiwum powołany został 21 lipca
+                                                1950 roku […]</p>
+                                            <p>Pierwsza zmiana terytorialnego zasięgu działania
+                                                nastąpiła w roku 1956, kiedy przyłączono powołany
+                                                wtedy powiat żuromiński.</p>
+                                        </repositorhist> […] </desc>
+                                </archguide>
+                            </eag>
+                        </egXML>
+                    </div>
+                    <div type="sub">
+                        <head>2.3 Language declaration (&lt;languagedecl&gt;)</head>
+                        <p>&lt;languagedecl&gt; lists the language(s) used in the archival
+                            description. It includes as many &lt;language&gt; elements as there are
+                            languages used in the document.</p>
+                        <p>ex. 2.3.a</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <languagedecl>
+                                <language langcode="en" scriptcode="Latn">English</language>
+                                <language langcode="ru" scriptcode="Cyrl">Russian</language>
+                            </languagedecl>
+                        </egXML>
+                        <p>The @langcode attribute displays the language code according to ISO 639-1
+                            (see Annex 3) while the @scriptcode attribute displays the script code
+                            according to ISO 15924 (see Annex 2). Those two attributes are mandatory
+                            when the &lt;language&gt; element occurs.</p>
+                    </div>
+                </div>
+                <div>
+                    <head>Archival guide (&lt;archguide&gt;)</head>
+                    <p>The archival guide groups all information used to identify and describe a
+                        repository. It is divided into two parts, &lt;identity&gt; and &lt;desc&gt;.
+                        The &lt;identity&gt; section provides detailed information to identify the
+                        described repository, such as its name(s) and identification number(s). The
+                        &lt;desc&gt; section holds describing information about the repository, such
+                        as its location, history, contact person, etc.</p>
+                    <p>ex. 3.a</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <archguide>
+                            <identity>...</identity>
+                            <desc>...</desc>
+                        </archguide>
+                    </egXML>
+                    <div type="sub">
+                        <head>3.1 Identity area (&lt;identity&gt;)</head>
+                        <p>&lt;identity&gt; gathers information to identify the described
+                            repository, the different forms of name it has and refers to its
+                            identification number.</p>
+                        <p>ex. 3.1.a</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <identity>
+                                <repositorid countrycode="RS" type="CENDARI">YYYYYYYY</repositorid>
+                                <repositorid countrycode="RS" type="ISIL">XXXXXX</repositorid>
+                                <autform xml:lang="rs">Народна библиотека Србије</autform>
+                                <parform xml:lang="en">National Library of Serbia</parform>
+                            </identity>
+                        </egXML>
+                        <p>&lt;repositorid&gt; records the repository's identifier.</p>
+                        <p>One of CENDARI customizations was to make the &lt;repositorid&gt; element
+                            repeatable and introduce an @type attribute to indicate what standard or
+                            identification system is referred to. </p>
+                        <p>The element &lt;repositorid&gt; possesses two attributes. @countrycode is
+                            mandatory, @repositorycode has been deprecated in favour of the element
+                            content (see below).</p>
+                        <p>The attribute @countrycode records the name of the country the repository
+                            is located in according to ISO 3166-1 (see Annex 1 for the list of
+                            country codes).</p>
+                        <p>The attribute @repositorycode records the code identifying the repository
+                            according to national or international standards. Record minimally the
+                            internal Cendari identifier of the repository. When existing, please
+                            record its ISIL identifier or its national identifier (according to
+                            Archon, etc.)</p>
+                        <p>Cendari customization: Unlike the EAG (Spain) schema, &lt;repositorid&gt;
+                            is not an empty element and can contain text. It is recommended to use
+                            the element content rather than the attribute @repositorycode to record
+                            the repository identifier in order to avoid redirection.</p>
+                        <p>records the authorized form of the repository's name (= official name) in
+                            its original language.</p>
+                        <p>CENDARI customization: It is important to note that the element
+                            &lt;autform&gt; is repeatable to allow two (or more) authorized forms of
+                            name, when for example a country has several official languages and
+                            several official denominations of the repository co-exist (in this case
+                            the @xml:lang attribute must be used).</p>
+                        <p>CENDARI customization: An @source attribute has been introduced in the
+                            context of CENDARI to refer to the source from which the authorized form
+                            of name originated. When used, it has to refer to a source listed in the
+                            header part of the document. Same applies to all sub-elements belonging
+                            to &lt;identity&gt; and &lt;archguide&gt;.</p>
+                        <p>&lt;parform&gt; records the parallel form(s) of the repository's name.
+                            They “indicate the various forms in which the authorised form of name
+                            occurs in other languages or script form(s)” (ISDIAH 5.1.3). In this
+                            case, use the @xml:lang attribute to specify the language.</p>
+                        <p>&lt;parform&gt; is repeatable and can support an @source attribute to
+                            specify where the form of the name originates.</p>
+                        <p>&lt;nonpreform&gt; records the non-preferred form(s) of the repository's
+                            name. “This could include other forms of the same name, acronyms, other
+                            institutional names, or changes of name over time.”(ISDIAH 5.1.4)</p>
+                        <p>CENDARI customization: Temporal attributes (like @when, @notBefore,
+                            @from, etc.) have been introduced so that the period of time during
+                            which the name was used can be specified. See <ref
+                                target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html//ref-att.datable.w3c.html"
+                                >http://www.tei-c.org/release/doc/tei-p5-doc/en/html//ref-att.datable.w3c.html</ref>
+                            for further description.</p>
+                        <p>ex. 3.1.b</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <identity>
+                                <autform xml:lang="rs">Архив Србије</autform>
+                                <parform xml:lang="en">National Archives of Serbia</parform>
+                                <nonpreform notBefore="1898" notAfter="1918">Државна Архива
+                                    Краљевине Србије</nonpreform>
+                                <nonpreform notBefore="1918" notAfter="1945">Државна
+                                    Архива</nonpreform>
+                                <nonpreform notBefore="1945" notAfter="1948">Државна Архива
+                                    Федеративне Народне Републике Југославије</nonpreform>
+                                <nonpreform notBefore="1948" notAfter="1958">Државна Архива Народне
+                                    Републике Србије</nonpreform>
+                                <nonpreform notBefore="1958" notAfter="1969">Државни Архив НР
+                                    Србије</nonpreform>
+                            </identity>
+                        </egXML>
+                    </div>
+                    <div type="sub">
+                        <head>3.2 Description area (&lt;desc&gt;)</head>
+                        <p>&lt;desc&gt;gathers informative description about the repository, its
+                            location, administrative hierarchy and the services it offers.</p>
+                        <p>ex. 3.2.a</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <desc>
+                                <location>
+                                    <country>Serbia</country>
+                                    <postalcode>11000</postalcode>
+                                    <municipality>Београд</municipality>
+                                    <street>Скерлићева 1</street>
+                                </location>
+                                <telephone>to be completed</telephone>
+                                <email href="nbs@nb.rs">nbs@nb.rs</email>
+                                <access question="yes"/>
+                                <repositorhist xml:lang="en">
+                                    <p>The establishment of the Library is connected to an
+                                        historical event in February 1832, when Dimitrije Davidovic,
+                                        publisher of the first Serbian newspaper, sent a letter
+                                        about setting up a Library to Prince Milos Obrenovic. The
+                                        same year in November, Prince Milos ordered the obligatory
+                                        deposit of copies to the National Library. In the foundation
+                                        of the Library there was no Library establishing act, no
+                                        permanent location nor official name. The Library grew up
+                                        stage-by-stage, from several institutions and private
+                                        libraries.</p> […] </repositorhist>
+                                <controlaccess>
+                                    <head>Typology</head>
+                                    <subject>national</subject>
+                                </controlaccess>
+                            </desc>
+                        </egXML>
+                        <p>First there is a group of subelements recording the contact details of
+                            the archive.</p>
+                        <p>&lt;location&gt; records the location(s) of the archival institution
+                            (street, number, postal code, city, state, etc.). It contains an
+                            address. It is repeatable to better serve the purpose of ISDIAH 5.2.1:
+                            "Indicate any other addresses which can be used to contact the archival
+                            institution (for example correspondence, administrative, etc.)."</p>
+                        <p>CENDARI customization: Cendari introduced this new element named
+                            &lt;location&gt; to gather the following subelements: geographical area
+                            (&lt;geogarea&gt;), country (&lt;country&gt;, mandatory element), region
+                            or province (&lt;firstdem&gt;), city (&lt;municipality&gt;, mandatory),
+                            street (&lt;street&gt;) and postcode (&lt;postalcode&gt;).</p>
+                        <p>The element &lt;location&gt; bears an @type attribute permitting to
+                            specify what type of address is recorded (postal, visitors, etc.). Two
+                            @latitute and @longitude attributes are also available and record the
+                            geographical coordinates of the location.</p>
+                        <p>CENDARI customization: the two elements &lt;municipality&gt; and
+                            &lt;country&gt; bears a @key attribute used to refer to codes from
+                            UN/LOCODE (for municipality) and from ISO 3166-1 (for &lt;country&gt;).
+                            It permits to avoid ambiguity in city names (in case of homonymy) and
+                            country names (in case of multilingualism).</p>
+                        <p>See Annex 1 for the list of country codes and the UN/LOCODE webpage (<ref
+                                target="http://www.unece.org/cefact/locode/service/location.html"
+                                >http://www.unece.org/cefact/locode/service/location.html</ref>) for
+                            the list of municipalities (browse by country).</p>
+                        <p>ex. 3.2.b</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <country key="FR">France</country>
+                        </egXML>
+                        <p>&lt;telephone&gt;, &lt;fax&gt;, &lt;email&gt; and &lt;webpage&gt; gather
+                            additional contact details, which can be used to contact and/or
+                            communicate with the repository.</p>
+                        <p>In &lt;email&gt; and &lt;webpage&gt;, it is recommended to include the
+                            email address or URL twice, both as text and as value of the attribute
+                            @href, for a better use in browsers.</p>
+                        <p>ex. 3.2.c</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <email href="nbs@nb.rs">nbs@nb.rs</email>
+                        </egXML>
+                        <p>Then comes &lt;access&gt;, an element, which provides “information about
+                            the conditions, requirements and procedures for access to, and use of
+                            institutional services” (ISDIAH 5.4.2).</p>
+                        <p>The value of the attribute @question indicates whether the public has
+                            free access to the archive ("yes") or whether there are conditions
+                            governing the access ("no").</p>
+                        <p>A subelement &lt;restaccess&gt; can be added and provides detailed
+                            information about the “access policies, including any restrictions
+                            and/or regulations for the use of materials and facilities. Information
+                            about registration, appointments, readers’ tickets, letters of
+                            introduction, admission fees, etc. [can be recorded here]. Where
+                            appropriate, make reference to the relevant legislation.” (ISDIAH
+                            5.4.2)</p>
+                        <p>ex. 3.2.d</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <access question="yes">
+                                <restaccess>ID card needed</restaccess>
+                            </access>
+                        </egXML>
+                        <p>A series of elements is then encountered that contributes to a more
+                            in-depth description of the repository.</p>
+                        <p>&lt;resprepositor&gt; records information about the repository officer(s)
+                            in charge.</p>
+                        <p>Cendari customization: to better fit the corresponding ISDIAH field, it
+                            was decided to widen the scope of the original EAG element. Not only the
+                            repository director but "(all) the officers in charge" (ISDIAH 5.2.4)
+                            should be recorded here.</p>
+                        <p>Cendari customization: for this purpose, the &lt;person&gt; element was
+                            taken up from the TEI vocabulary (similarly to &lt;respevent&gt;, see
+                            above). Additionally the &lt;person&gt; element can be repeated as many
+                            times as needed and the &lt;occupation&gt; element is used to specify
+                            the function of the officer. His/her personal email can also be recorded
+                            here by using the &lt;email&gt; element (child element of
+                            &lt;residence&gt;).</p>
+                        <p>ex. 3.2.e</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <resprepositor>
+                                <person xmlns="http://www.tei-c.org/ns/1.0">
+                                    <persName>
+                                        <forename>Angelika </forename>
+                                        <surname>Menne-Haritz</surname>
+                                    </persName>
+                                    <residence>
+                                        <email>angelika.menne-haritz@...</email>
+                                    </residence>
+                                    <occupation>Leiterin der Stiftung</occupation>
+                                </person>
+                            </resprepositor>
+                        </egXML>
+                        <p>&lt;repositorhist&gt; details the repository history and is structured in
+                            a series of paragraphs &lt;p&gt;. “This element may include information
+                            on dates of establishment, changes of names, changes of legislative
+                            mandates, or of any other sources of authority for the institution with
+                            archival holdings.” (ISDIAH 5.3.1)</p>
+                        <p>If this type of information is available in several languages, use the
+                            @xml:lang attribute on &lt;repositorhist&gt; to indicate the language
+                            used (do not use it on &lt;p&gt;) and duplicate the element (= use two
+                            &lt;repositorhist&gt; after another).</p>
+                        <p>ex. 3.2.f</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <repositorhist xml:lang="en" source="#source2">
+                                <p>The establishment of the Library is connected to an historical
+                                    event...</p>
+                                <p>During World War I, the Library building and collections...</p>
+                                […] </repositorhist>
+                            <repositorhist xml:lang="fr" source="#source2">
+                                <p>La création de la Bibliothèque est liée à un évènement
+                                    historique...</p>
+                                <p>Pendant la première guerre mondiale, le bâtiment et les
+                                    collections de la Bibliothèque...</p> […] </repositorhist>
+                        </egXML>
+                        <p>&lt;holdings&gt; provides an overview of the holdings of the archival
+                            institution. Record in this element "a short description of the holdings
+                            of the archival institution, describing how and when they were formed."
+                            (ISDIAH 5.3.6) The element &lt;holdings&gt; is structured in a series of
+                            paragraphs &lt;p&gt;.</p>
+                        <p>Cendari customization: the &lt;holdings&gt; element was introduced by
+                            Apex in its revision EAG 2012 and adopted by Cendari. Additionally it
+                            was decided to allow an @xml: lang attribute to record the language.
+                            Similarly to &lt;repositorhist&gt;, this attribute is used on
+                            &lt;holdings&gt; (not on &lt;p&gt;), which can be duplicated if the
+                            information is available in several languages (= use two
+                            &lt;holdings&gt; after another).</p>
+                        <p>ex. 3.2.g</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <holdings xml:lang="de" source="#source1">
+                                <p>Das Landesarchiv Berlin verwahrt als zentrales Staatsarchiv des
+                                    Landes Berlin die schriftliche Überlieferung von Berliner
+                                    Behörden und Einrichtungen. Es ist zuständig für die obersten
+                                    Landesbehörden (Senatskanzlei und Senatsverwaltungen), für die
+                                    Bezirke, die Gerichte und sonstigen öffentlichen Stellen des
+                                    Landes sowie für die Mittel- und Unterbehörden des Bundes, die
+                                    ihren Dienstsitz in Berlin haben. Gleichzeitig nimmt das
+                                    Landesarchiv die Funktion eines Parlamentsarchivs wahr.</p>
+                            </holdings>
+                        </egXML>
+                        <p>&lt;repositorguides&gt; provides “a general overview of the published
+                            and/or unpublished finding aids and guides prepared by the institution
+                            with archival holdings and any other relevant publications.” (ISDIAH
+                            5.3.8)</p>
+                        <p>&lt;repositorguides&gt; is structured into several &lt;repositorguide&gt;
+                            elements. That means that each finding aid has to be recorded in a
+                            single &lt;repositorguide&gt; element (whether there is one or several
+                            of them).</p>
+                        <p>The attribute @xml:lang can be used to document the language of the
+                            document. The attribute @href, as shown in the example below, can be
+                            used for linking an online holdings guide.</p>
+                        <p>Cendari customization: to better structure the bibliographical elements,
+                            it was decided to mimic the &lt;bibl&gt; element taken from the TEI
+                            vocabulary and allow annotated plain text. It is therefore possible to
+                            record its author (&lt;author&gt;), editor, (&lt;editor&gt;) publisher
+                            (&lt;publisher&gt;), publication date (&lt;date&gt;), publication place
+                            (&lt;pubPlace&gt;) and title (&lt;title&gt;).</p>
+                        <p>ex. 3.2.h</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <repositorguides>
+                                <repositorguide
+                                    href="http://www.landesarchiv-berlin.de/php- bestand"
+                                    >Beständeübersicht</repositorguide>
+                            </repositorguides>
+                        </egXML>
+                        <p>ex. 3.2.i</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <repositorguides>
+                                <repositorguide xml:lang="de"><title>Tektonik des Geheimen
+                                        Staatsarchivs PK.</title> Bearbeitet von <author>Rita
+                                        Klauschenz</author>, <author>Sven Kriese</author> und
+                                        <author>Mathis Leibetseder</author>, herausgegeben von
+                                        <editor>Jürgen Kloosterhuis</editor>.
+                                        <pubPlace>Berlin</pubPlace>
+                                    <date>2011</date>(Veröffentlichungen aus den Archiven
+                                    Preußischer Kulturbesitz, Arbeitsbericht 12).</repositorguide>
+                            </repositorguides>
+                        </egXML>
+                        <p>&lt;notes&gt; stands for maintenance notes. They “document additional
+                            information relating to the creation of and maintenance of the
+                            description.” (ISDIAH 5.6.9)</p>
+                        <p>&lt;controlaccess&gt; provides the possibility to enter key terms. The
+                            purpose is to “classify institutions with archival holdings, in
+                            accordance with any relevant national or international conventions,
+                            rules or controlled vocabularies.” (ISDIAH 5.1.5)</p>
+                        <p>CENDARI customization: we decided to distinguish between a typology
+                            classification (what type of institution with archival holdings is it?)
+                            and a theme classification (does the repository hold content on the
+                            first World War or on the medieval period?).</p>
+                        <p>The element is structured as follows: there is a first
+                            &lt;controlaccess&gt; wrapping element encapsulating as many
+                            &lt;controlaccess&gt; children as necessary. In turn these sub-elements
+                            contain a &lt;head&gt; and &lt;subject&gt; elements. The &lt;head&gt;
+                            element provides the classification term and &lt;subject&gt; provides
+                            the key term.</p>
+                        <p>CENDARI issue: There are two classification categories (Typology and
+                            Theme) and two controlled vocabulary lists related to them (see Annex
+                            5).</p>
+                        <p>ex. 3.2.j</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <controlaccess>
+                                <controlaccess>
+                                    <head>Typology</head>
+                                    <subject>national</subject>
+                                </controlaccess>
+                                <controlaccess>
+                                    <head>Theme</head>
+                                    <subject>WW1</subject>
+                                </controlaccess>
+                            </controlaccess>
+                        </egXML>
+                        <p>CENDARI customization: There are a number of elements that have not been
+                            included within EAG(CENDARI) subset that were included in the
+                            description area of EAG(Spain):</p>
+                        <list>
+                            <item>ISDIAH 5.3.4 - Administrative structure.</item>
+                            <item>ISDIAH 5.3.6 - Building(s).</item>
+                            <item>ISDIAH 5.4.1 - Opening Times.</item>
+                            <item>ISDIAH 5.4.3 – Accessibility.</item>
+                            <item>ISDIAH 5.5.1 – Research Services.</item>
+                            <item>ISDIAH 5.5.2 – Reproduction Services.</item>
+                        </list>
+                        <p>These elements were not considered core to the CENDARI research
+                            environment, and as such it was decided time should not be spent
+                            collecting the data. Especially as in some cases (e.g., opening times,
+                            research services, and reproduction services) the data may be subject to
+                            frequent changes.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="annex" xml:id="sec_schema">
+                <head>EAG specification</head>
+                <schemaSpec ident="EAG-schema" start="eag_eag" prefix="tei_">
+                    <moduleRef key="tei"/>
+                    <moduleRef key="namesdates"
+                        include="affiliation forename person persName occupation orgName residence roleName surname"/>
+                    <moduleRef key="core"
+                        include="author date editor email pubPlace publisher title"/>
+
+
+                    <!--<moduleRef key="iso-fs"/>-->
+
+
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="access"
+                        module="EAG">
+                        <gloss>Conditions for access and use</gloss>
+                        <desc>Conditions and requirements for access and use of the archival holdings.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:zeroOrMore>
+                                <rng:ref name="restaccess"/>
+                            </rng:zeroOrMore>
+                        </content>
+                        <attList>
+                            <attDef ident="question" usage="req">
+                                <desc>Indicates whether the institution with archival holdings is in free access to the public ("yes") or if it has access with special permission ("no"). Mandatory.</desc>
+                                <valList>
+                                    <valItem ident="yes"/>
+                                    <valItem ident="no"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                        <exemplum>
+                            <teix:egXML>
+                                <access question="yes">
+                                    <restaccess xml:lang="eng">To prepare for your personal use of the reference service, or should you require written information, you may send an informal written reference [...].</restaccess>
+                                    <termsOfUse href="http://www.bundesarchiv.de/benutzung/voraussetzungen/allgemeinehinweise/index.html.en" xml:lang="eng">General information on access and use</termsOfUse>
+                                </access>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+                    
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="agencyCode" module="EAG">
+                        <gloss>Institution identifier</gloss>
+                        <desc>Identifier of the agency responsible for the maintenance of the description.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"></memberOf>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <agencyCode>ES-8019-ACA</agencyCode>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>In Cendari's case, the identifier by default is EU-... <!-- to be completed--></p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="agencyName" module="EAG">
+                        <gloss>Maintenance agency's name</gloss>
+                        <desc>Name of the agency(ies) responsible for the maintenance of the description.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <agencyName xml:lang="spa">Archivo de la Corona de Aragon</agencyName>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>In Cendari's case, the default name of the maintenance agency is Cendari.</p>
+                        </remarks>
+                    </elementSpec>
+                    
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="archguide" module="EAG">
+                        <gloss>Archival Guide</gloss>
+                        <desc>Wrapper for the description of the archival institution itself (could describe one archival institution but different places/departments).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:ref name="identity"/>
+                            <rng:ref name="desc"/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide>
+                                    <identity>[...]</identity>
+                                    <desc>
+                                        <repositories>
+                                            <repository>[...]</repository>
+                                        </repositories>
+                                    </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="autform" module="EAG">
+                        <gloss>Name of institution</gloss>
+                        <desc>Name of the institution, authorized form of name.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <autform xml:lang="gre">Γενικά Αρχεία του Κράτους - Κεντρική Υπηρεσία</autform>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <autform xml:lang="ger">Bundesarchiv</autform>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <!-- <charge> disappeared in EAG 2012 - what should replace it?
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="charge" module="EAG">
+                        <gloss>Charge or Function</gloss>
+                        <desc>Element that records the charge of a person or his/her
+                            function.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <respevent xmlns="http://www.ministryculture.es/">
+                                    <surnames>Arnold</surnames>
+                                    <firstname>Kerstin</firstname>
+                                    <charge>wiss. Mitarbeiterin, Projekt Verbundfindmittel</charge>
+                                </respevent>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+                    -->
+                    <!-- to be worked out! one goes in <repositoryType>... the other, I don't know...
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="controlaccess" module="EAG">
+                        <gloss>Controlled Access Headings</gloss>
+                        <desc>Wrapping element providing the possibility to enter key terms relating
+                            the description of one archival institution within another or with the
+                            description of a person, family or corporation having played a certain
+                            role within the history of the archival institution.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:choice>
+                                <rng:oneOrMore>
+                                    <rng:ref name="controlaccess"/>
+                                </rng:oneOrMore>
+                                <rng:group>
+                                    <rng:ref name="head"/>
+                                    <rng:oneOrMore>
+                                        <rng:ref name="subject"/>
+                                    </rng:oneOrMore>
+                                </rng:group>
+                            </rng:choice>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <controlaccess>
+                                            <controlaccess>
+                                                <head>Titularidad</head>
+                                                <subject>Archivos de titularidad pública</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Gestión</head>
+                                                <subject>Archivos gestionados por la Administración
+                                                  Central del Estado</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Ciclo vital</head>
+                                                <subject>Archivos históricos</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Tipología</head>
+                                                <subject>Archivos generales del Estado</subject>
+                                            </controlaccess>
+                                        </controlaccess> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+                    -->
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="country" module="EAG">
+                        <gloss>Country location of the repository</gloss>
+                        <desc>Records the location(s) of the archival institution, and more
+                            specifically names the country in which the repository is located
+                            (ISDIAH 5.2.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.canonical"/>
+                        </classes>
+                        <content>
+                            <rng:choice>
+                                <rng:value>Albania</rng:value>
+                                <rng:value>Andorra</rng:value>
+                                <rng:value>Australia</rng:value>
+                                <rng:value>Austria</rng:value>
+                                <rng:value>Belarus</rng:value>
+                                <rng:value>Belgium</rng:value>
+                                <rng:value>Bosnia and Herzegovina</rng:value>
+                                <rng:value>Bulgaria</rng:value>
+                                <rng:value>Canada</rng:value>
+                                <rng:value>Croatia</rng:value>
+                                <rng:value>Czech Republic</rng:value>
+                                <rng:value>Denmark</rng:value>
+                                <rng:value>Estonia</rng:value>
+                                <rng:value>Finland</rng:value>
+                                <rng:value>France</rng:value>
+                                <rng:value>Germany</rng:value>
+                                <rng:value>Greece</rng:value>
+                                <rng:value>Hungary</rng:value>
+                                <rng:value>Iceland</rng:value>
+                                <rng:value>India</rng:value>
+                                <rng:value>Ireland</rng:value>
+                                <rng:value>Italy</rng:value>
+                                <rng:value>Japan</rng:value>
+                                <rng:value>Latvia</rng:value>
+                                <rng:value>Liechtenstein</rng:value>
+                                <rng:value>Lithuania</rng:value>
+                                <rng:value>Luxembourg</rng:value>
+                                <rng:value>Macedonia</rng:value>
+                                <rng:value>Malta</rng:value>
+                                <rng:value>Moldova</rng:value>
+                                <rng:value>Montenegro</rng:value>
+                                <rng:value>Netherlands</rng:value>
+                                <rng:value>New Zealand</rng:value>
+                                <rng:value>Norway</rng:value>
+                                <rng:value>Poland</rng:value>
+                                <rng:value>Portugal</rng:value>
+                                <rng:value>Romania</rng:value>
+                                <rng:value>Russia</rng:value>
+                                <rng:value>San Marino</rng:value>
+                                <rng:value>Serbia</rng:value>
+                                <rng:value>Slovakia</rng:value>
+                                <rng:value>Slovenia</rng:value>
+                                <rng:value>South Africa</rng:value>
+                                <rng:value>Spain</rng:value>
+                                <rng:value>Sweden</rng:value>
+                                <rng:value>Switzerland</rng:value>
+                                <rng:value>Tanzania</rng:value>
+                                <rng:value>Togo</rng:value>
+                                <rng:value>Turkey</rng:value>
+                                <rng:value>Ukraine</rng:value>
+                                <rng:value>United Kingdom</rng:value>
+                                <rng:value>United States</rng:value>
+                                <rng:value>Vatican City</rng:value>
+                            </rng:choice>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <country xml:lang="ger">Deutschland</country>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="date"
+                        module="EAG">
+                        <gloss>Date</gloss>
+                        <desc xml:lang="es">Elemento que consigna una fecha en formato normalizado,
+                            de acuerdo con la ISO 8601, utilizando para ello el atributo normal. Si
+                            es necesario, es posible incluir el tipo de fecha registrada (fecha de
+                            creación o de acumulación) mediante el atributo datechar (valor
+                            “creation” o “accumulation”), y su grado de precisión mediante el
+                            atributo certainty (valor “circa”, “approximately”, “before” o
+                            “after”).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.normalised"/>
+                        </classes>
+                        <!-- 
+	calendar		gregorian, NMTOKEN
+	certainty		#IMPLIED, circa, approximately, before, after
+	datechar		#IMPLIED, CDATA	
+	era					ce, NMTOKEN			
+	
+ -->
+                        <content>
+                            <rng:empty/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <date calendar="gregorian" era="ce" normal="2009-03-11"
+                                    xmlns="http://www.ministryculture.es/"/>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <organization>
+                                            <class classcode="1" fathercode="none">Fondos de los
+                                                Organismos de la Época de los Austrias:
+                                                Consejos</class>
+                                            <descunit classcode="1.1" fathercode="1" level="fonds">
+                                                <unitid href="creal.xml">CREAL</unitid>
+                                                <unittitle>Consejo Real de Castilla</unittitle>
+                                                <date calendar="gregorian" era="ce"
+                                                  normal="1437/1678" datechar="accumulation"/>
+                                                <extent><num unit="bundle">764</num></extent>
+                                                <sections><section>Consejo Real</section></sections>
+                                            </descunit> [...] <descunit classcode="1.5"
+                                                fathercode="1" level="fonds">
+                                                <unitid href="cguerra.xml">CGUERRA</unitid>
+                                                <unittitle>Consejo de Guerra</unittitle>
+                                                <date calendar="gregorian" era="ce"
+                                                  normal="1386/1706" datechar="creation"/>
+                                                <extent><num unit="bundle">4015</num>
+                                                  <num unit="volume">436</num></extent>
+                                                <sections><section>Guerra y
+                                                  Marina</section></sections>
+                                            </descunit> [...] </organization> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Displaying the exact date, when the EAG document has been created or
+                                revised.</p>
+                            <p>Mandatory.</p>
+                            <p>Please use "normalised date" according to ISO 8601 (YYYY-MM-DD);</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="desc"
+                        module="EAG">
+                        <gloss>Description Area</gloss>
+                        <desc xml:lang="en">Describing information about the repository, such as its
+                            location, contact details, administrative hierarchy, services,
+                            etc.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:interleave>
+                                <rng:oneOrMore>
+                                    <rng:ref name="location"/>
+                                </rng:oneOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="telephone"/>
+                                </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="fax"/>
+                                </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="email"/>
+                                </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="webpage"/>
+                                </rng:zeroOrMore>
+                                <rng:optional>
+                                    <rng:ref name="access"/>
+                                </rng:optional>
+                                <rng:optional>
+                                    <rng:ref name="resprepositor"/>
+                                </rng:optional>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="repositorhist"/>
+                                </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="holdings"/>
+                                </rng:zeroOrMore>
+                                <rng:optional>
+                                    <rng:ref name="repositorguides"/>
+                                </rng:optional>
+                                <rng:optional>
+                                    <rng:ref name="notes"/>
+                                </rng:optional>
+                                <rng:ref name="controlaccess"/>
+                            </rng:interleave>
+                        </content>
+                        <remarks>
+                            <p>Mandatory.</p>
+                            <p>Due to the fact that <gi>desc</gi> is just a wrapping element, that
+                                does not contain any value itself, there is no detailed example
+                                given at this point. The contents used in the subelements of
+                                    <gi>desc</gi> are explained below.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="eag"
+                        module="EAG">
+                        <gloss>Encoded Archival Guide</gloss>
+                        <desc>Mandatory root element – indicates a description of an institution with archival holdings formatted in XML and encoded according to the EAG standard.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.EAGGlobalBis"/>
+                        </classes>
+                        <content>
+                            <rng:group>
+                                <rng:ref name="control"/>
+                                <rng:ref name="archguide"/>
+                                <rng:ref name="relations"/>
+                            </rng:group>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <eag audience="external" xmlns="http://www.archivesportaleurope.net/Portal/profiles/eag_2012/"
+                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <control>[...]</control> <archguide>[...]</archguide> <relations>[...]</relations>
+                                </eag>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="control"
+                        module="EAG">
+                        <gloss>Control area</gloss>
+                        <desc>Control element of the EAG file, contains all the information concerning the file itself and its maintenance.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.encodings"/>
+                        </classes>
+                        <content>
+                            <rng:optional>
+                                <rng:ref name="recordId"/>
+                            </rng:optional>
+                            <rng:ref name="maintenanceAgency"/>
+                            <rng:ref name="maintenanceStatus"/>
+                            <rng:ref name="maintenanceHistory"/>
+                            <rng:optional>
+                                <rng:ref name="localControl"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="conventionDeclaration"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="languageDeclaration"/>
+                            </rng:optional>
+                            <rng:ref name="sources"/>
+                        </content>
+                        <attList>
+                            <attDef ident="status" usage="req">
+                                <desc>Information about the document's editing status.
+                                    Mandatory.</desc>
+                                <valList>
+                                    <valItem ident="draft"/>
+                                    <valItem ident="edited"/>
+                                    <valItem ident="deleted"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                        <exemplum>
+                            <teix:egXML>
+                                <control xml:base="http://www.archivesportaleurope.eu/" xml:lang="eng">
+                                    <recordId>DE-0000000000001</recordId>
+                                    <maintenanceAgency>
+                                        <agencyCode>DE-0000000000001</agencyCode>
+                                        <agencyName xml:lang="ger">Bundesarchiv</agencyName>
+                                    </maintenanceAgency>
+                                    <maintenanceStatus>revised</maintenanceStatus>
+                                    <maintenanceHistory xml:lang="ger">
+                                        <maintenanceEvent xml:lang="ger">
+                                            <agent xml:lang="ger">Kerstin Arnold</agent>
+                                            <agentType>human</agentType>
+                                            <eventDateTime xml:lang="ger" standardDateTime="2012-06-08T13:57:08">08.06.2012</eventDateTime>
+                                            <eventType>created</eventType>
+                                        </maintenanceEvent>
+                                        <maintenanceEvent xml:lang="ger">
+                                            <agent xml:lang="mul">automatically created agent</agent>
+                                            <agentType>machine</agentType>
+                                            <eventDateTime xml:lang="eng" standardDateTime="2012-06-21T18:17:22">21.06.2012</eventDateTime>
+                                            <eventType>revised</eventType>
+                                        </maintenanceEvent>
+                                    </maintenanceHistory>
+                                    <conventionDeclaration xml:lang="eng">
+                                        <abbreviation xml:lang="eng">EAG</abbreviation>
+                                        <citation xml:lang="eng" lastDateTimeVerified="2012-06-29T13:15:27" href="http://www.archivesportaleurope.eu/">EAG (Encoded Archival Guide) 2012</citation>
+                                    </conventionDeclaration>
+                                    <localControl xml:lang="eng" localType="detailLevel">
+                                        <term xml:lang="eng" lastDateTimeVerified="2012-06- 29T13:15:27" scriptCod="Latn" transliteration="http://www.archivesportaleurope.eu/scripts/EAG/" vocabularySource="http://www.archivesportaleurope.eu/vocabularies/EAG/">simple</term>
+                                    </localControl>
+                                    <sources xml:base="http://www.archivesportaleurope.eu/"
+                                        xml:lang="eng">
+                                        <source lastDateTimeVerified="2012-06-29T13:15:27">
+                                            <sourceEntry scriptCod="Latn" transliteration="http://www.archivesportaleurope.eu/scripts/EAG/" xml:lang="eng"> Webpage of the Federal Archives of Germany, viewed 9th July 2012</sourceEntry>
+                                        </source>
+                                    </sources>
+                                </control>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="recordId"
+                        module="EAG">
+                        <gloss>EAG identifier</gloss>
+                        <desc>Identifier of the description of the institution (identifier for the EAG-file).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <recordId>GRGSA-CSA_005-1</recordId>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory in EAG 2012, but optional in Cendari.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="email"
+                        module="EAG">
+                        <gloss>Mail Address(es)</gloss>
+                        <desc>Provides the additional contact details of the archival institution:
+                            mail address(es). Record the general email which can be used to contact
+                            the archival institution. This element is used to define the labelling
+                            for the link shown in the online archival description (ISDIAH
+                            5.2.2).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.xlink"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <email href="berlin@barch.bund.de"
+                                    xmlns="http://www.ministryculture.es/">E-Mail versenden</email>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <email href="mailto:ags@cult.mec.es"
+                                            >ags@cult.mec.es</email>
+                                        <email href="mailto:ags2@cult.mec.es"
+                                            >ags2@cult.mec.es</email> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                            <p>The attribute HREF contains the actual mail address, while the
+                                content of the element <gi>email</gi> can serve as a label for the
+                                link displayed in the HTML presentation. That might be a general
+                                text such as "send mail" or the repetition of the mail address. The
+                                latter would provide the benefit of including the mail address
+                                itself when printing the HTML page.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="fax"
+                        module="EAG">
+                        <gloss>Fax</gloss>
+                        <desc>Provides the additional contact details of the archival institution:
+                            fax number(s). (ISDIAH 5.2.2).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <fax xmlns="http://www.ministryculture.es/">03018/7770-111</fax>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="firstdem"
+                        module="EAG">
+                        <gloss>First Demarcation</gloss>
+                        <desc xml:lang="en">Records the location(s) of the archival institution ,
+                            and more specifically names the first administrative demarcation of the
+                            country in which the repository is located, concerning Germany i.e.
+                            Bayern, Berlin, Brandenburg, etc (ISDIAH 5.2.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <firstdem xmlns="http://www.ministryculture.es/">Bayern</firstdem>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+
+                    <!-- <elementSpec ns="http://www.ministryculture.es/"   prefix="eag_"  ident="firstname" module="EAG">
+                        <gloss>First Name(s)</gloss>
+                        <desc xml:lang="es">Element that records the first name of a person.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <respevent xmlns="http://www.ministryculture.es/">
+                                    <surnames>Arnold</surnames>
+                                    <firstname>Kerstin</firstname>
+                                    <charge>wiss. Mitarbeiterin, Projekt Verbundfindmittel</charge>
+                                </respevent>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>First name(s) of the editor, including academic titles.</p>
+                        </remarks>
+                    </elementSpec> -->
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="geogarea"
+                        module="EAG">
+                        <gloss>Geographical Area</gloss>
+                        <desc>Records the location(s) of the archival institution, and more
+                            specifically names the geographical area in which the repository is
+                            located (ISDIAH 5.2.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <geogarea xmlns="http://www.ministryculture.es/">Europe</geogarea>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="head"
+                        module="EAG">
+                        <gloss>Head</gloss>
+                        <desc xml:lang="es">Elemento que consigna un encabezamiento.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:choice>
+                                <rng:value>Typology</rng:value>
+                                <rng:value>Theme</rng:value>
+                            </rng:choice>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <controlaccess>
+                                            <controlaccess>
+                                                <head>Titularidad</head>
+                                                <subject>Archivos de titularidad pública</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Gestión</head>
+                                                <subject>Archivos gestionados por la Administración
+                                                  Central del Estado</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Ciclo vital</head>
+                                                <subject>Archivos históricos</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Tipología</head>
+                                                <subject>Archivos generales del Estado</subject>
+                                            </controlaccess>
+                                        </controlaccess> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="holdings"
+                        module="EAG">
+                        <gloss>Archival and other holdings</gloss>
+                        <desc>Record a short description of the holdings of the institution with
+                            archival holdings, describing how and when they were formed. Provide
+                            information on volume of holdings, media formats, thematic coverage,
+                            etc. (ISDIAH 5.3.7).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="p"/>
+                            </rng:oneOrMore>
+                        </content>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="identity"
+                        module="EAG">
+                        <gloss>Identity Area</gloss>
+                        <desc>Detailed information to identify the described repository.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:zeroOrMore>
+                                <rng:ref name="repositorid"/>
+                            </rng:zeroOrMore>
+                            <rng:oneOrMore>
+                                <rng:ref name="autform"/>
+                            </rng:oneOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="parform"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                                <rng:ref name="nonpreform"/>
+                            </rng:zeroOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <identity xmlns="http://www.ministryculture.es/">
+                                    <repositorid countrycode="DE" repositorycode="DE-ARCH-220"/>
+                                    <autform>Stiftung Archivgut der Parteien und
+                                        Massenorganisationen der DDR im Bundesarchiv </autform>
+                                    <parform>Abkürzung: SAPMO</parform>
+                                    <nonpreform>BArch Berlin</nonpreform>
+                                </identity>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/">
+                                    <identity>
+                                        <repositorid countrycode="ES" repositorycode="AGS"/>
+                                        <autform>Archivo General de Simancas</autform>
+                                        <nonpreform>Reales Archivos de Simancas</nonpreform>
+                                        <nonpreform>Archivo de la Corona de Castilla</nonpreform>
+                                    </identity> [...] </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="language"
+                        module="EAG">
+                        <gloss>Language and Script of the Description </gloss>
+                        <desc xml:lang="en">Displaying the languages and scripts used within the EAG
+                            document, e.g. "german", "english", "french". Please record the encoding
+                            language in ISO 639-1 and the encoding script in ISO 15924.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.languagecoded"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <p>For further examples see above (<gi>languagedecl</gi>)</p>
+                            <teix:egXML>
+                                <eagheader status="edited" langencoding="iso639-1"
+                                    scriptencoding="iso15924" dateencoding="iso8601"
+                                    countryencoding="iso3166-1" repositoryencoding="iso15511"
+                                    xmlns="http://www.ministryculture.es/"> [...] <languagedecl>
+                                        <language langcode="es" scriptcode="latn"/>
+                                    </languagedecl>
+                                </eagheader>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="languagedecl" module="EAG">
+                        <gloss>Language(s)</gloss>
+                        <desc xml:lang="en">Element grouping the language(s) used within the EAG
+                            document.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="language"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <languagedecl xmlns="http://www.ministryculture.es/">
+                                    <language langcode="ger" scriptcode="Latn">deutsch</language>
+                                    <language langcode="eng" scriptcode="Latn">englisch</language>
+                                    <language langcode="fre" scriptcode="Latn"
+                                        >französisch</language>
+                                    <language langcode="rus" scriptcode="Cyrl">russisch</language>
+                                </languagedecl>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <eagheader status="edited" langencoding="iso639-1"
+                                    scriptencoding="iso15924" dateencoding="iso8601"
+                                    countryencoding="iso3166-1" repositoryencoding="iso15511"
+                                    xmlns="http://www.ministryculture.es/"> [...] <languagedecl>
+                                        <language langcode="es" scriptcode="latn"/>
+                                    </languagedecl>
+                                </eagheader>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory, if "language(s)" is used.</p>
+                            <p>May be used various times.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="location"
+                        module="EAG">
+                        <gloss>Location</gloss>
+                        <desc>Element grouping the elements of the repository geographical
+                            address.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.typed"/>
+                        </classes>
+                        <content>
+                            <rng:optional>
+                                <rng:ref name="geogarea"/>
+                            </rng:optional>
+                            <rng:ref name="country"/>
+                            <rng:optional>
+                                <rng:ref name="firstdem"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="postalcode"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="municipality"/>
+                            </rng:optional>
+                            <rng:zeroOrMore>
+                                <rng:ref name="street"/>
+                            </rng:zeroOrMore>
+                        </content>
+                        <attList>
+                            <attDef ident="longitude">
+                                <desc>Contains the expression of a geographic coordinate,
+                                    representing the longitude.</desc>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="latitude">
+                                <desc>Contains the expression of a geographic coordinate,
+                                    representing the latitude.</desc>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="maintenanceAgency" module="EAG">
+                        <gloss>Maintenance Agency</gloss>
+                        <desc>Description of the agency responsible of the maintenance of the EAG file.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:ref name="agencyCode"/>
+                            <rng:ref name="agencyName"/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <maintenanceAgency>
+                                    <agencyCode>ES-8019-ACA</agencyCode>
+                                    <agencyName xml:lang="spa">">Archivo de la Corona de Aragon </agencyName>
+                                </maintenanceAgency>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory</p>
+                        </remarks>
+                    </elementSpec>
+                    
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="maintenanceEvent" module="EAG">
+                        <gloss>Maintenance Event</gloss>
+                        <desc>Information about one single maintenance event. An EAG instance can contain several maintenance events.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:ref name="agent"/>
+                            <rng:ref name="agentType"/>
+                            <rng:ref name="date"/>
+                            <rng:ref name="eventType"/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <maintenanceEvent xml:lang="eng">
+                                    <agent xml:lang="eng">Kerstin Arnold</agent>
+                                    <agentType>human</agentType>
+                                    <eventDateTime xml:lang="eng" standardDateTime="2012-06-08T13:57:08">08.06.2012</eventDateTime>
+                                    <eventType>created</eventType>
+                                </maintenanceEvent>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory</p>
+                            <p>May be used as many times as needed.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="maintenanceHistory" module="EAG">
+                        <gloss>Maintenance History</gloss>
+                        <desc>Wrapping element grouping information about the maintenance history of the description.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="maintenanceEvent"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <maintenanceHistory xml:lang="eng">
+                                    <maintenanceEvent xml:lang="eng">
+                                        <agent xml:lang="eng">Kerstin Arnold</agent>
+                                        <agentType>human</agentType>
+                                        <eventDateTime xml:lang="eng" standardDateTime="2012-06-08T13:57:08">08.06.2012</eventDateTime>
+                                        <eventType>created</eventType>
+                                    </maintenanceEvent>
+                                    <maintenanceEvent xml:lang="eng">
+                                        <agent xml:lang="eng">automatically created agent</agent>
+                                        <agentType>machine</agentType>
+                                        <eventDateTime xml:lang="eng" standardDateTime="2012-06-21T18:17:22">21.06.2012</eventDateTime>
+                                        <eventType>revised</eventType>
+                                    </maintenanceEvent>
+                                </maintenanceHistory>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory</p>
+                        </remarks>
+                    </elementSpec>
+                                        
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="maintenanceStatus" module="EAG">
+                        <gloss>Maintenance Status</gloss>
+                        <desc>Status of the current maintenance state. The only allowed statuses are the following: new, cancelled, deleted, deletedReplaced, deletedMerged, deletedSplit, derived or revised.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:choice>
+                                <rng:value>new</rng:value>
+                                <rng:value>cancelled</rng:value>
+                                <rng:value>deleted</rng:value>
+                                <rng:value>deletedReplaced</rng:value>
+                                <rng:value>deletedMerged</rng:value>
+                                <rng:value>deletedSplit</rng:value>
+                                <rng:value>derived</rng:value>
+                                <rng:value>revised</rng:value>
+                            </rng:choice>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <maintenanceStatus>revised</maintenanceStatus>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory</p>
+                        </remarks>
+                    </elementSpec>
+                    
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="municipality" module="EAG">
+                        <gloss>Municipality</gloss>
+                        <desc>Records the location(s) of the archival institution, and more
+                            specifically names the city the repository is located in (ISDIAH
+                            5.2.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.canonical"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <municipality xmlns="http://www.ministryculture.es/"
+                                    >Berlin</municipality>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="nonpreform" module="EAG">
+                        <gloss>Non-Preferred Form of Repository Name</gloss>
+                        <desc>Record any other name(s) by which the institution with archival
+                            holdings may be known. This could include other forms of the same name,
+                            acronyms, other institutional names, or changes of name over time,
+                            including, if possible, relevant dates (ISDIAH 5.1.4).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.datable.w3c"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <p>For further example see above (<gi>identity</gi>)</p>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/">
+                                    <identity>
+                                        <repositorid countrycode="ES" repositorycode="AGS"/>
+                                        <autform>Archivo General de Simancas</autform>
+                                        <nonpreform>Reales Archivos de Simancas</nonpreform>
+                                        <nonpreform>Archivo de la Corona de Castilla</nonpreform>
+                                    </identity> [...] </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>May be used various times.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="notes"  module="EAG">
+                        <gloss>Notes</gloss>
+                        <desc>Further commentary about the repository.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="p"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <notes xmlns="http://www.ministryculture.es/">
+                                    <p>Eine telefonische Platzreservierung (0331/5674-270) ist
+                                        empfehlenswert.<lb/><lb/>Bestellungen von Archivalien für
+                                        denselben Tag müssen bis 10.30 Uhr bzw. 13.00 Uhr abgegeben
+                                        werden. Danach bestellte Archivalien können zu einem
+                                        späteren Termin eingesehen werden.<lb/><lb/> Sollten Ihnen
+                                        bereits Signaturen bekannt sein, ist eine Aktenbestellung
+                                        auch telefonisch (0331/5674-270), per Fax (0331/5674-212)
+                                        oder per E-Mail (poststelle@blha.brandenburg.de)
+                                        möglich.<lb/></p>
+                                    <p> Um einen weitestgehenden Schutz der Originale zu erreichen,
+                                        werden bereits verfilmte Archivalien in der Regel in Form
+                                        eines Mikrofilms vor- gelegt. Sofortkopien durch den
+                                        Benutzer über einen Reader-Printer sind möglich.</p>
+                                    <p>Bitte beachten Sie, dass es keine Verpflegungsmöglichkeit vor
+                                        Ort gibt.</p>
+                                </notes>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="p" module="EAG">
+                        <gloss>Paragraph</gloss>
+                        <desc>Free text - equivalent to a paragraph.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <repositorhist xmlns="http://www.ministryculture.es/">
+                                    <p>Mit dem Zusammenbruch der DDR im Jahr 1989 wandelte sich auch
+                                        deren Parteienlandschaft. Massenorganisationen lösten sich
+                                        auf oder definierten sich neu. Wichtige Archive und
+                                        Bibliotheken der DDR verloren ihre Träger- institutionen und
+                                        damit ihre Existenzgrundlage. Bereits Anfang 1990 ein-
+                                        setzende Diskussionen über den Fortbestand und die
+                                        dauerhafte Sicherung der Archive und Bibliotheken der
+                                        Parteien und Massenorganisationen der DDR fanden jedoch
+                                        zunächst in den zuständigen Gremien keine Mehrheit. Auch bei
+                                        den Verhandlungen über den Einigungsvertrag gelang es nicht,
+                                        in das Einigungsver- tragsgesetz vom 23. September 1990 eine
+                                        entsprechende Regelung für das Archivgut der Parteien und
+                                        Massenorganisationen aufzunehmen.<lb/>
+                                        <lb/> Am 20. März 1991 brachten dann die Fraktionen der
+                                        CDU/CSU und der FDP einen Gesetzentwurf zur Änderung des
+                                        Bundesarchivgesetzes im Bundestag ein (Bundestags-Drucksache
+                                        12/288). Danach sollte die Zuständigkeit des Bundes- archivs
+                                        auf Archivbestände der Parteien und Massenorganisationen der
+                                        DDR erweitert werden, sofern sie die Wahrnehmung staatlicher
+                                        Aufgaben betreffen. Der federführende Innenausschuss des
+                                        Deutschen Bundestages einigte sich am 15. Januar 1992
+                                        darauf, im Bundesarchiv eine unselbstständige Stiftung unter
+                                        dem Namen "Stiftung Archiv der Parteien und
+                                        Massenorganisationen der DDR" zu errichten, die
+                                        entsprechende Unterlagen auf Dauer sichern, nutzbar machen
+                                        und ergänzen sollte (BT-Drs. 12/1967). Der Gesetzentwurf
+                                        wurde mit den Stimmen der CDU/CSU, der FDP und der SPD im
+                                        Bundestag verabschiedet, die Änderung des
+                                        Bundesarchivgesetzes trat am 13. März 1992 in Kraft. Ein
+                                        knappes Jahr später, am 4. Januar 1993, nahm die Stiftung
+                                        ihre Arbeit auf.</p>
+                                    <p><emph render="bold">Archivgut:</emph> Unterlagen zentraler
+                                        Organe der SED, des FDGB, der FDJ und anderer Organisationen
+                                        sowie Nachlässe</p>
+                                    <p><emph render="bold">Bibliothek:</emph> Publikationen und
+                                        vielfältige Graue Literatur aus den Organisationen der DDR,
+                                        dazu Amtsdruckschriften seit 1871 und Belegexemplare von den
+                                        Benutzern der Berliner Abteilungen</p>
+                                </repositorhist>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <repositorhist>
+                                            <p>En el úlltimo tercio del siglo XV, en plenas luchas
+                                                de bandos nobiliarios, una de estas poderosas
+                                                familias, los Almirantes de Castilla, construyeron
+                                                un castillo en la histórica villa de Simancas,
+                                                cercana a Valladolid.</p> [...] </repositorhist>
+                                        [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>May be used various times.</p>
+                            <p>Mandatory, if "repository history" is used.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="parform"
+                        module="EAG">
+                        <gloss>Parallel form of name</gloss>
+                        <desc>Indicate the various forms in which the authorised form of name of an
+                            archival institution occurs in other languages or script form(s).
+                            (ISDIAH 5.1.3)</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <!--                        <attList>
+                            <attDef ident="xml:lang" mode="replace" usage="req">
+                                <valList>
+                                    <valItem ident="en"/>
+                                </valList>
+                            </attDef>
+                        </attList>-->
+                        <exemplum>
+                            <p>For further example see above (<gi>identity</gi>)</p>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/">
+                                    <identity> [...] <autform>Arxiu Nacional de Catalunya</autform>
+                                        <parform>Archivo Nacional de Cataluña</parform>
+                                    </identity> [...] </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>May be used various times.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="postalcode" module="EAG">
+                        <gloss>Postal Code</gloss>
+                        <desc>Contact details of the repository: postal code.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <postalcode xmlns="http://www.ministryculture.es/"
+                                    >12205</postalcode>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="repositorguide" module="EAG">
+                        <gloss>Holdings Guide</gloss>
+                        <desc>Record the title and other pertinent details of the published and/or
+                            unpublished finding aids and guides prepared by the institution with
+                            archival holdings and of any other relevant publications. Use ISO 690
+                            Information and documentation - Bibliographic references and other
+                            national or international cataloguing rules (ISDIAH 5.3.8).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.xlink"/>
+                        </classes>
+                        <content>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="author"/>
+                                    <rng:ref name="tei_date"/>
+                                    <rng:ref name="pubPlace"/>
+                                    <rng:ref name="publisher"/>
+                                    <rng:ref name="editor"/>
+                                    <rng:ref name="title"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <repositorguides>
+                                            <repositorguide>Angel de la Plaza Bores, Archivo General
+                                                de Simancas. Guía del Investigador, Madrid, 1992,
+                                                4a. ed.</repositorguide>
+                                        </repositorguides> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <p>The element <gi>repositorguide</gi> can be used in combination with
+                                the attribute HREF, as shown in this example, for linking an online
+                                holdings guide. If the attribute HREF is used, the content of the
+                                element serves as label for this link. Nevertheless the element can
+                                also be used without the attribute to name a printed holdings
+                                guide.</p>
+                            <teix:egXML>
+                                <repositorguides xmlns="http://www.ministryculture.es/">
+                                    <repositorguide
+                                        href="http://startext.net-build.de:8080/barch/MidosaSEARCH/ Bestaendeuebersicht/index.htm"
+                                        >Online-Beständeübersicht</repositorguide>
+                                </repositorguides>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory, if "repository guides" is used.</p>
+                            <p>May be used various times.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="repositorguides" module="EAG">
+                        <gloss>Repository Guides</gloss>
+                        <desc>References of one or more archival guides concerning the described
+                            repository's holdings, either printed or online.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="repositorguide"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <repositorguides>
+                                            <repositorguide>Angel de la Plaza Bores, Archivo General
+                                                de Simancas. Guía del Investigador, Madrid, 1992,
+                                                4a. ed.</repositorguide>
+                                        </repositorguides> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="repositorhist" module="EAG">
+                        <gloss>Repository History</gloss>
+                        <desc>Record any relevant information about the history of the institution
+                            with archival holdings. This element may include information on dates of
+                            establishment, changes of names, changes of legislative mandates, or of
+                            any other sources of authority for the institution with archival
+                            holdings (ISDIAH 5.3.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="p"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <repositorhist>
+                                            <p>En el úlltimo tercio del siglo XV, en plenas luchas
+                                                de bandos nobiliarios, una de estas poderosas
+                                                familias, los Almirantes de Castilla, construyeron
+                                                un castillo en la histórica villa de Simancas,
+                                                cercana a Valladolid.</p> [...] </repositorhist>
+                                        [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="repositorid" module="EAG">
+                        <gloss>Repository Identifier</gloss>
+                        <desc xml:lang="en">Record the numeric or alpha-numeric code identifying the
+                            institution with archival holdings in accordance with the relevant
+                            international and national standards (ISDIAH 5.1.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.coded"/>
+                            <memberOf key="att.typed"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/">
+                                    <identity> [...] </identity>
+                                    <desc> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="respevent"
+                        module="EAG">
+                        <gloss>Person Responsible for the Event</gloss>
+                        <desc>Element grouping information about the person responsible for the
+                            maintenance event (creation, update and deletion of the EAG
+                            document).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <!--
+                            <rng:ref name="surnames"/>
+                            <rng:ref name="firstname"/> -->
+                            <rng:ref name="person"/>
+                            <rng:optional>
+                                <rng:ref name="charge"/>
+                            </rng:optional>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <respevent xmlns="http://www.ministryculture.es/">
+                                    <person>
+                                        <respevent>
+                                            <person xmlns="http://www.tei-c.org/ns/1.0">
+                                                <persName>
+                                                  <forename>Kerstin</forename>
+                                                  <surname>Arnold</surname>
+                                                </persName>
+                                                <affiliation>Bundesarchiv</affiliation>
+                                                <occupation>wiss. Mitarbeiterin, Projekt
+                                                  Verbundfindmittel</occupation>
+                                            </person>
+                                        </respevent>
+                                    </person>
+                                </respevent>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="resprepositor" module="EAG">
+                        <gloss>Archive Directorship</gloss>
+                        <desc>Information about the person responsible for the repository.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <!-- <rng:ref name="surnames"/>
+                            <rng:ref name="firstname"/> -->
+                            <rng:oneOrMore>
+                                <rng:ref name="person"/>
+                            </rng:oneOrMore>
+                            <rng:optional>
+                                <rng:ref name="charge"/>
+                            </rng:optional>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <resprepositor>
+                                            <person xmlns="http://www.tei-c.org/ns/1.0">
+                                                <persName>
+                                                  <forename>José Luis</forename>
+                                                  <surname>Rodríguez de Diego</surname>
+                                                </persName>
+                                                <occupation>Director</occupation>
+                                            </person>
+                                        </resprepositor> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_"
+                        ident="restaccess" module="EAG">
+                        <gloss>Restricted Access Specification</gloss>
+                        <desc>Detailed annotation of the conditions governing access and/or use as
+                            well as possible restrictions.</desc>
+                        <classes>
+                            <memberOf key="EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <access question="no" xmlns="http://www.ministryculture.es/">
+                                    <restaccess>El acceso está restringido a los empleados de los
+                                        servicios generales de la propia empresa.</restaccess>
+                                </access>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="source"
+                        module="EAG">
+                        <gloss>Employed Source</gloss>
+                        <desc>Display the source of evidence used in describing the (archival) institution.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:ref name="sourceEntry"/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <source xmlns="http://www.ministryculture.es/" lastDateTimeVerified="2012-06-29T13:15:27">
+                                    <sourceEntry scriptCod="Latn" transliteration="http://www.archivesportaleurope.eu/scripts/EAG/" xml:lang="ger">Die Inhalte dieser Archivinformationsseite sind anhand der Homepage des Bundesarchivs zusammengestellt worden. Es handelt sich jedoch nur um eine vorläufige Fassung für die Testrelease des Verbundfindmittels im DFG-Projekt "Ausbau des 'Netzwerks SED-/FDGB-Archivgut' zu einer Referenzanwendung für ein Archivportal Deutschland". Im späteren Verlauf des Projekts wird das Bundesarchiv mit MIDEX in die Lage versetzt, diese Informationen selbst zu korrigieren, zu ergänzen und zu pflegen.</sourceEntry>
+                                </source>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p/>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="sources" module="EAG">
+                        <gloss>Sources</gloss>
+                        <desc>Contains information about the sources consulted in creating the description.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore>
+                                <rng:ref name="source"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <sources xml:base="http://www.archivesportaleurope.eu/" xml:lang="eng">
+                                    <source lastDateTimeVerified="2012-06-29T13:15:27">
+                                        <sourceEntry scriptCod="Latn" transliteration="http://www.archivesportaleurope.eu/scripts/EAG/" xml:lang="eng">Webpage of the Federal Archives of Germany, viewed 9th July 2012</sourceEntry>
+                                    </source>
+                                </sources>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Even if the information about the sources consulted the description is not mandatory, it is recommended to list them in this element.</p>
+                        </remarks>
+                    </elementSpec>
+                    
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="street"
+                        module="EAG">
+                        <gloss>Street and number</gloss>
+                        <desc>Records the location(s) of the archival institution, and more
+                            specifically the contact details of the repository: street and house
+                            number (ISDIAH 5.2.1).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <street xmlns="http://www.ministryculture.es/">Finckensteinallee
+                                    63</street>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="subject"
+                        module="EAG">
+                        <gloss>Subject</gloss>
+                        <desc>Record the type of the institution with archival holdings (ISDIAH
+                            5.1.5).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.access"/>
+                        </classes>
+                        <content>
+                            <rng:choice>
+                                <rng:value>national</rng:value>
+                                <rng:value>governmental</rng:value>
+                                <rng:value>regional</rng:value>
+                                <rng:value>municipal</rng:value>
+                                <rng:value>ecclesiastical</rng:value>
+                                <rng:value>business</rng:value>
+                                <rng:value>political and non-governmental</rng:value>
+                                <rng:value>university and research</rng:value>
+                                <rng:value>audio-visual</rng:value>
+                                <rng:value>personal</rng:value>
+                                <rng:value>other</rng:value>
+                                <rng:value>WW1</rng:value>
+                                <rng:value>MM</rng:value>
+                            </rng:choice>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <controlaccess>
+                                            <controlaccess>
+                                                <head>Titularidad</head>
+                                                <subject>Archivos de titularidad pública</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Gestión</head>
+                                                <subject>Archivos gestionados por la Administración
+                                                  Central del Estado</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Ciclo vital</head>
+                                                <subject>Archivos históricos</subject>
+                                            </controlaccess>
+                                            <controlaccess>
+                                                <head>Tipología</head>
+                                                <subject>Archivos generales del Estado</subject>
+                                            </controlaccess>
+                                        </controlaccess> [...] </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Controlled vocabulary.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <!-- <elementSpec ns="http://www.ministryculture.es/"   prefix="eag_"  ident="surnames" module="EAG">
+                        <gloss>Surname(s)</gloss>
+                        <desc xml:lang="es">Element that records the surname of a person.</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <respevent xmlns="http://www.ministryculture.es/">
+                                    <surnames>Arnold</surnames>
+                                    <firstname>Kerstin</firstname>
+                                    <charge>wiss. Mitarbeiterin, Projekt Verbundfindmittel</charge>
+                                </respevent>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Surname(s) of the editor; mandatory, if <gi>respevent</gi> is
+                                used.</p>
+                        </remarks>
+                    </elementSpec> -->
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="telephone"
+                        module="EAG">
+                        <gloss>Telephone</gloss>
+                        <desc>Provides the additional contact details of the archival institution:
+                            telephone number(s). (ISDIAH 5.2.2).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <telephone xmlns="http://www.ministryculture.es/"
+                                    >983-590003</telephone>
+                                <telephone xmlns="http://www.ministryculture.es/"
+                                    >983-590311</telephone>
+                                <telephone xmlns="http://www.ministryculture.es/"
+                                    >983-590750</telephone>
+                            </teix:egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ns="http://www.ministryculture.es/" prefix="eag_" ident="webpage"
+                        module="EAG">
+                        <gloss>Web Page</gloss>
+                        <desc>Provides the address of the website of the archival institution.
+                            Record the URL of the homepage of the archival institution. This element
+                            is used to define the labelling for the link shown in the online
+                            archival description (ISDIAH 5.2.3).</desc>
+                        <classes>
+                            <memberOf key="att.EAGGlobal"/>
+                            <memberOf key="att.source"/>
+                            <memberOf key="att.xlink"/>
+                        </classes>
+                        <content>
+                            <rng:text/>
+                        </content>
+                        <exemplum>
+                            <teix:egXML>
+                                <webpage href="http://www.bundesarchiv.de"
+                                    xmlns="http://www.ministryculture.es/">Internetauftritt des
+                                    Bundesarchivs</webpage>
+                            </teix:egXML>
+                        </exemplum>
+                        <exemplum>
+                            <teix:egXML>
+                                <archguide xmlns="http://www.ministryculture.es/"> [...] <desc>
+                                        [...] <webpage
+                                            href="http://www.mcu.es/lab/archivos/ags.html">
+                                            http://www.mcu.es/lab/archivos/ags.html</webpage> [...]
+                                    </desc>
+                                </archguide>
+                            </teix:egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>Mandatory.</p>
+                        </remarks>
+                    </elementSpec>
+
+
+                    <!-- Attribute classes -->
+
+                    <classSpec ident="att.EAGGlobal" prefix="eag_" type="atts">
+                        <desc>Describes all global attribute for the EAG spec</desc>
+                        <attList>
+                            <attDef ident="xml:lang">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="xml:id" usage="opt">
+                                <gloss>identifier</gloss>
+                                <desc>provides a unique identifier for the element bearing the
+                                    attribute.</desc>
+                                <datatype>
+                                    <data xmlns="http://relaxng.org/ns/structure/1.0" type="ID"/>
+                                </datatype>
+                                <valDesc>any valid XML identifier.</valDesc>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+                    <!-- attention, @xml:lang doesn't exist in the EAG(Spain) schema, this is a Cendari addition. Same with @xml:id, it was an addition (@id was dropped)-->
+
+                    <classSpec ident="att.EAGGlobalBis" prefix="eag_" type="atts">
+                        <desc>Describes global attributes for EAG spec (with restrictions for the
+                            moment).</desc>
+                        <attList>
+                            <attDef ident="audience">
+                                <valList>
+                                    <valItem ident="internal"/>
+                                    <valItem ident="external"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <!--                    <classSpec ident="att.originated" type="atts">
+                        <desc>Groups together various attributes used to provide the source of
+                            information of elements.</desc>
+                        <attList>
+                            <attDef ident="source" usage="opt">
+                                <desc>contains a list of one or more pointers indicating sources
+                                    from which the content of the corresponding element has been
+                                    taken up.</desc>
+                                <datatype maxOccurs="unbounded">
+                                    <ref xmlns="http://relaxng.org/ns/structure/1.0"
+                                        name="teidata.pointer"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>-->
+
+                    <classSpec ident="att.coded" prefix="eag_" type="atts">
+                        <desc>Groups together various attribute used to provide additional codes on
+                            elements.</desc>
+                        <attList>
+                            <attDef ident="countrycode">
+                                <desc>Name of the country the repository is located in encoded
+                                    according to ISO 3166-1, e.g. "DE" for "Germany", "GB" for
+                                    "Great Britain and Northern Ireland", "FR" for "France";
+                                    mandatory;</desc>
+                                <datatype>
+                                    <rng:data type="token"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="repositorycode">
+                                <desc>Unique code identifying the repository encoded according to
+                                    ISO 15511 (ISIL), i.e. using capital letters to indicate the
+                                    country ("DE-......." for repositories in Germany).
+                                    Mandatory.</desc>
+                                <datatype>
+                                    <rng:data type="token"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.typed" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="subtype" mode="delete"/>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.languagecoded" type="atts" prefix="eag_">
+                        <attList>
+                            <attDef ident="langcode">
+                                <desc>Language encoded according to ISO 639-1, e.g. "de" for
+                                    "german", "en" for "english", "fr" for "french"; mandatory, if
+                                        <gi>language</gi> is used.</desc>
+                                <datatype>
+                                    <rng:data type="token"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="scriptcode">
+                                <desc>Script encoded according to ISO 15924, e.g. "Latn" for
+                                    "Latin", "Cyrl" for "Cyrillic", "Grek" for "Greek", "Hebr" for
+                                    "Hebrew", "Arab" for "Arabic"; mandatory, if <gi>language</gi>
+                                    is used.</desc>
+                                <datatype>
+                                    <rng:data type="token"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.normalised" type="atts" module="EAG" prefix="eag_">
+                        <attList>
+                            <attDef ident="normal" usage="req">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.access" type="atts" module="EAD" prefix="eag_">
+                        <attList>
+                            <attDef ident="rules">
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="authfilenumber">
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="normal">
+                                <desc>A consistent form, usually from a controlled vocabulary list
+                                    to facilitate retrieval</desc>
+                                <datatype>
+                                    <rng:text/>
+                                </datatype>
+                                <remarks>
+                                    <p>In <gi>date</gi>, the NORMAL attribute follows ISO 8601
+                                        Representation of Dates and Times, as specified in the
+                                        DATEENCODING attribute in <gi>eagheader</gi>.</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <!-- attribute for declaring various encodings within an EAG document -->
+                    <classSpec ident="att.encodings" type="atts" module="EAG" prefix="eag_">
+                        <attList>
+                            <attDef ident="countryencoding" usage="req">
+                                <desc>International standard used to encode the countries named
+                                    within the document. Default value. Mandatory.</desc>
+                                <valList type="closed">
+                                    <valItem ident="iso3166-1"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="municipalityencoding" usage="rec">
+                                <desc>International standard used to provide codes to represent the
+                                    names of locations used in trade and transport in the world.
+                                    Default value. Recommended.</desc>
+                                <defaultVal>UN/LOCODE</defaultVal>
+                                <valList type="closed">
+                                    <valItem ident="UN/LOCODE"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="langencoding" usage="req">
+                                <desc>International standard used to encode the languages named
+                                    within the document. Default value. Mandatory.</desc>
+                                <defaultVal>iso639-1</defaultVal>
+                                <valList type="closed">
+                                    <valItem ident="iso639-1"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="scriptencoding" usage="req">
+                                <desc>International standard used to encode the scripts named within
+                                    the document. Default value. Mandatory.</desc>
+                                <valList type="closed">
+                                    <valItem ident="iso15924"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="repositoryencoding" usage="rec">
+                                <desc>International standard used to encode the repositories named
+                                    within the document. Mandatory.</desc>
+                                <datatype>
+                                    <rng:data type="NMTOKEN"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="dateencoding" usage="req">
+                                <desc>International standard used to encode the dates named within
+                                    the document. Default value.</desc>
+                                <valList type="closed">
+                                    <valItem ident="iso8601"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <!-- XLINK attributes -->
+                    <classSpec ident="att.xlink" type="atts" prefix="eag_">
+                        <desc> Provides the definition of all XLink attributes needed for
+                            MLIF.</desc>
+                        <attList>
+                            <attDef ident="href">
+                                <!-- in EAD this attribute is in the W3 namespace: ns="http://www.w3.org/1999/xlink" -->
+                                <desc>Supplies the data to find a remote resource.</desc>
+                                <datatype>
+                                    <text xmlns="http://relaxng.org/ns/structure/1.0"/>
+                                </datatype>
+                                <remarks>
+                                    <p>Specifies a document (URI) and an XPointer</p>
+                                </remarks>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                </schemaSpec>
+            </div>
+        </back>
+    </text>
+</TEI>
