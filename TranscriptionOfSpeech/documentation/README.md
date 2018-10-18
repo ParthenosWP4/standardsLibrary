@@ -1,2 +1,0 @@
-## Transcription of Speech
-
